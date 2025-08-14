@@ -1,0 +1,6 @@
+.env
+.DS_Store
+datasets/
+clip-roberta/
+clip-roberta-finetuned/
+*.pt
