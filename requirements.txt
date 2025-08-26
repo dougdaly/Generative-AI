@@ -1,0 +1,35 @@
+# Core
+numpy>=1.24
+pandas>=2.0
+scikit-learn>=1.3
+matplotlib>=3.7
+seaborn>=0.12
+
+# Deep Learning / GenAI
+torch>=2.0
+torchvision>=0.15
+transformers>=4.31
+diffusers>=0.20
+accelerate>=0.21
+
+# LangChain / LangGraph
+langchain>=0.0.330
+langgraph>=0.0.15
+
+# CLIP and multimodal
+open_clip_torch>=2.20
+
+# APIs
+openai>=1.3
+stability-sdk>=0.8.5
+huggingface-hub>=0.17
+
+# Notebook environment
+jupyterlab>=4.0
+ipykernel>=6.25
+tqdm>=4.66
+
+# Optional: experiment tracking / utils
+datasets>=2.14
+Pillow>=10.0
+
