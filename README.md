@@ -10,6 +10,7 @@ The notebooks are built with the latest Python libraries, support multiple GPU p
 ## 📂 Contents & Topics
 
 ### 🔹 Multi-Agent Workflows (LangGraph / LangChain)
+- **mtg-card-generator.ipynb** → shows the benefits of using multiple agents for a complex task: building new creature cards for a popular trading card game (Magic: The Gathering)
 - **langGraph-multi-agent-workflow.ipynb** → combines a search agent + image generation agent (OpenAI) to generate a grid of famous athletes by country.  
 - **langGraph-alphabet.ipynb** → creates an AI-powered children’s alphabet poster with words + images.  
 
