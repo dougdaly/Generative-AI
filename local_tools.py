@@ -7,6 +7,7 @@ from openai import OpenAI
 from support import get_device
 from langchain_tavily import TavilySearch # For web search
 from langchain_core.messages import convert_to_messages
+from langchain_core.prompts import PromptTemplate, MessagesPlaceholder
 
 # For putting images into a grid
 import matplotlib.pyplot as plt
@@ -22,12 +23,23 @@ import glob
 #   Identify the GPU device
 device = get_device()
 #   Initialize OpenAI client
-client = OpenAI()
+#client = OpenAI()
 
 
 # Tools
 #       For web search agent
-web_search = TavilySearch(max_results=3)
+@tool
+def searchWeb(query: Annotated[str, "The search query."]):
+    """Use this to search the web for recent information. 
+    You should use this tool when you need to find information about current events, 
+    or if you need to find information that is not in your training data.
+    Input should be a search query."""
+    try:
+        web_search = TavilySearch(max_results=3)
+        results = web_search.run(query)
+    except BaseException as e:
+        return f"Failed to execute. Error: {repr(e)}"
+    return results
 
 #       For image generator agent using dall-e-3.
 repl = PythonREPL()
@@ -47,6 +59,7 @@ def python_repl_tool(
     )
 
 #       For image generator agent using dall-e-3
+@tool
 def genImage(input)->str:
     '''Generate an image based on a text prompt'''
     response = client.images.generate(
@@ -59,6 +72,7 @@ def genImage(input)->str:
     url = response.data[0].url
     return url
 #       For image generator agent using dall-e-3
+@tool
 def saveImage(url:str, filename:str)->str:
     '''Save an image from a URL to a local file'''
     response = requests.get(url)
@@ -73,6 +87,7 @@ def saveImage(url:str, filename:str)->str:
 
 
 #       For image generation agent using stable diffusion or the dall-e-3.
+@tool
 def saveThumbnail(filename:str, thumbnail_filename:str)->str:
     '''Create and save a 100x100 pixel thumbnail of an image'''
     img = PIL.Image.open(filename)
@@ -87,16 +102,30 @@ def saveThumbnail(filename:str, thumbnail_filename:str)->str:
 
 # Helper functions
 #       Generic system prompt for ai agents
-def make_system_prompt(suffix: str) -> str:
-    return (
-        "You are a helpful AI assistant, collaborating with other assistants."
-        " Use the provided tools to progress towards answering the question."
-        " If you are unable to fully answer, that's OK, another assistant with different tools "
-        " will help where you left off. Execute what you can to make progress."
-        " If you or any of the other assistants have the final answer or deliverable,"
-        " prefix your response with FINAL ANSWER so the team knows to stop."
-        f" {suffix}"
-    )
+def make_system_prompt(prefix: str) -> PromptTemplate:
+    template = f"{prefix}" + """
+            You are a helpful AI agent designed to answer questions.
+            You have access to a set of tools that you can use to help answer questions.
+            When you need to use a tool, you should think about which tool to use and why.
+            You have access to the following tools: {tools}
+
+            Use the following format:
+
+            Question: the input question you must answer
+            Thought: you should always think about what to do
+            Action: the action to take, should be one of [{tool_names}]
+            Action Input: the input to the action
+            Observation: the result of the action
+            Final Answer: the final answer to the original input question
+
+            Begin!
+
+            Question: {input}
+            Thought:{agent_scratchpad}
+
+            """
+    prompt = PromptTemplate.from_template(template)
+    return prompt
 
 
 #       Makes the status output look nice
@@ -144,7 +173,7 @@ def display_image_grid():
     def find_images_glob(folder_path):
         image_files = []
         # You can specify multiple patterns for different image types
-        image_files.extend(glob.glob(os.path.join(folder_path, '*thumbnail.png')))
+        image_files.extend(glob.glob(os.path.join(folder_path, '*thumb.png')))
         image_files.sort()
         images = [PIL.Image.open(image_file) for image_file in image_files]
         return images

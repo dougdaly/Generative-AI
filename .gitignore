@@ -4,3 +4,4 @@ datasets/
 clip-roberta/
 clip-roberta-finetuned/
 *.pt
+temp*.ipynb
