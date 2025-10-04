@@ -1,0 +1,400 @@
+# Define key parameters for Pokemon and their mapping to MTG features
+from typing import Dict, Literal
+
+# PARAMETERS & Fetchers -- descriptions of Pokemon & MTG card features
+POKEAPI = "https://pokeapi.co/api/v2"
+
+# MTG color and rarity types
+Rarity = Literal["common","uncommon","rare","mythic"]
+Color  = Literal["W","U","B","R","G","C"]
+
+GEN_TO_REGION = {
+    "generation-i": "Kanto",
+    "generation-ii": "Johto",
+    "generation-iii": "Hoenn",
+    "generation-iv": "Sinnoh",
+    "generation-v": "Unova",
+    "generation-vi": "Kalos",
+    "generation-vii": "Alola",
+    "generation-viii": "Galar",
+    "generation-ix": "Paldea",
+}
+
+# From "Collect Reference Data" section
+MYTHICAL_POKEMON = ['Mew', 'Celebi', 'Jirachi', 'Deoxys', 'Phione', 'Manaphy', 'Darkrai', 'Shaymin', 'Arceus', 
+                     'Victini', 'Keldeo', 'Meloetta', 'Genesect', 'Diancie', 'Hoopa', 'Volcanion', 'Magearna', 
+                     'Marshadow', 'Zeraora', 'Meltan', 'Melmetal', 'Zarude', 'Pecharunt']
+
+REGION_BG = {
+    "kanto":  "Kanto region countryside with rolling hills, cherry trees, and a red wooden bridge",
+    "johto":  "Johto shrine forests and terraced villages, stone steps under red maples, calm lake shores",
+    "hoenn":  "Hoenn tropical archipelago—basalt cliffs, coral coves, and a distant volcanic peak",
+    "sinnoh": "Sinnoh alpine valley—snow-dusted pines, glacial rivers, and ancient stone ruins",
+    "unova":  "Unova canal city and farmland—iron bridges, brick rowhouses, and golden autumn fields",
+    "kalos":  "Kalos pastoral countryside—lavender rows, limestone walls, and a manor on a distant hill",
+    "alola":  "Alola island coast—black-sand beaches, lava rocks, and palm groves in warm trade winds",
+    "galar":  "Galar misty moors—stone fences, windmills on ridges, and low clouds over green downs",
+    "paldea": "Paldea sunbaked plateaus—olive groves, tiled farmhouses, and ochre cliffs above blue lakes",
+}
+
+
+REGION_STYLE = {
+    "kanto":  {"mood":"bright, serene morning",    "palette":"fresh greens, sky blue, soft pink"},
+    "johto":  {"mood":"quiet, traditional calm",    "palette":"maple red, moss green, stone gray"},
+    "hoenn":  {"mood":"vivid, tropical light",      "palette":"teal sea, coral, sunlit greens"},
+    "sinnoh": {"mood":"crisp, northern air",        "palette":"icy blue, pine green, snow white"},
+    "unova":  {"mood":"lively, urban-meets-rural",  "palette":"brick red, iron gray, harvest gold"},
+    "kalos":  {"mood":"elegant, pastoral charm",    "palette":"lavender, cream limestone, sage"},
+    "alola":  {"mood":"warm, breezy island",        "palette":"turquoise, palm green, volcanic black"},
+    "galar":  {"mood":"cool, windswept",            "palette":"heather purple, slate, meadow green"},
+    "paldea": {"mood":"sunlit, rustic",             "palette":"terracotta, olive, deep blue"},
+}
+
+REGION_PALETTES = {
+    "kanto": [
+        ("#6FCF97", "spring-green"), ("#87CEEB", "sky-blue"),
+        ("#F6A6B2", "sakura-pink"), ("#2E6F40", "deep-pine"),
+        ("#F3E7C6", "warm-cream"),
+    ],
+    "johto": [
+        ("#C73B3B", "maple-red"), ("#6B8F71", "moss-green"),
+        ("#8A8F9A", "stone-gray"), ("#5DA9E9", "lake-blue"),
+        ("#F2C14E", "lantern-gold"),
+    ],
+    "hoenn": [
+        ("#2BB7B3", "teal-sea"), ("#FF7F6A", "coral"),
+        ("#3C3C47", "basalt"), ("#2F8F5B", "palm-green"),
+        ("#FFD166", "sun-yellow"),
+    ],
+    "sinnoh": [
+        ("#A8D0E6", "icy-blue"), ("#F7FAFC", "snow-white"),
+        ("#2E5E4E", "pine-green"), ("#556B7A", "slate"),
+        ("#7E6BC4", "aurora-violet"),
+    ],
+    "unova": [
+        ("#B5523B", "brick-red"), ("#5A646E", "iron-gray"),
+        ("#E0A106", "harvest-gold"), ("#4C9ED9", "canal-blue"),
+        ("#7CA982", "field-green"),
+    ],
+    "kalos": [
+        ("#B497C7", "lavender"), ("#EEE3CB", "limestone-cream"),
+        ("#97A97C", "sage"), ("#8B3E4D", "wine"),
+        ("#8EC5E5", "clear-sky"),
+    ],
+    "alola": [
+        ("#2ECAD5", "turquoise-sea"), ("#2E8B57", "palm-green"),
+        ("#1E1E20", "volcanic-black"), ("#FF6B8A", "hibiscus-pink"),
+        ("#F3D6A0", "warm-sand"),
+    ],
+    "galar": [
+        ("#7A6C9D", "heather-purple"), ("#5B6770", "slate-gray"),
+        ("#6AA84F", "meadow-green"), ("#D0D6DB", "fog-gray"),
+        ("#F08A24", "ember-orange"),
+    ],
+    "paldea": [
+        ("#C46A4B", "terracotta"), ("#7A8F28", "olive"),
+        ("#2F5DA8", "deep-blue"), ("#E8D4A2", "wheat"),
+        ("#C38E26", "sun-ochre"),
+    ],
+}
+
+# Map PokéAPI shape → plain-English form phrase
+SHAPE_PHRASE = {
+    "quadruped": "quadrupedal creature",
+    "upright": "bipedal creature",
+    "legs": "two-legged creature",
+    "wings": "winged creature",
+    "bug-wings": "insectoid creature with wings",
+    "fish": "fish-like creature",
+    "tentacles": "tentacled creature",
+    "heads": "multi-headed creature",
+    "humanoid": "humanoid creature (not human)",
+    "ball": "round-bodied creature",
+    "blob": "plump round creature",
+    "squiggle": "serpentine creature",
+    "armor": "armored creature",
+    "arms": "armless creature (distinct body with no visible arms)",
+}
+SHAPES = set(SHAPE_PHRASE.keys())
+
+REGION_TO_GEN: Dict[str, str] = {
+    "kanto":"generation-i","johto":"generation-ii","hoenn":"generation-iii",
+    "sinnoh":"generation-iv","unova":"generation-v","kalos":"generation-vi",
+    "alola":"generation-vii","galar":"generation-viii","paldea":"generation-ix",
+}
+GEN_TO_REGION = {v:k for (k,v) in REGION_TO_GEN.items()}
+
+# Feature taxonomy by pokemon
+KINDS = {"generation","region","type","move","ability","species","pokemon"}
+# Every pokemon is a particular type (or combination of types)
+TYPE_SET = {"normal","fire","water","grass","electric","ice","fighting","poison","ground","flying",
+            "psychic","bug","rock","ghost","dragon","dark","steel","fairy"}
+
+# Famous/Iconic moves for particular pokemon
+ICONIC_MOVES={"tackle","quick-attack","yawn","thunderbolt","shadow-ball","water-gun"}
+
+
+# Pokémon types to MTG colors
+TYPE_TO_COLORS = {
+    "grass": ["G"], "fire": ["R"], "water": ["U"], "electric": ["U","R"],
+    "psychic": ["U","B"], "fighting": ["R","G"], "fairy": ["W"],
+    "dark": ["B"], "ghost": ["U","B"], "steel": ["W","C"],
+    "dragon": ["G","R","U"], "normal": ["W","G"], "ice": ["U","W"],
+    "rock": ["R","W"], "ground": ["G","W"], "bug": ["G"], "poison": ["B","G"],
+}
+
+# Pokémon types to MTG subtypes
+TYPE_TO_MTG_SUBTYPE = {
+    "ghost": "Spirit",
+    "dragon": "Dragon",
+    "fairy": "Faerie",
+    "bug": "Insect",
+    "steel": "Construct",
+    "rock": "Elemental",
+    "ice": "Elemental",
+    "fire": "Elemental",
+    "water": "Elemental",
+    "electric": "Elemental",
+    "grass": "Plant Beast",
+    "poison": "Horror",
+    "psychic": "Horror",
+    "dark": "Horror",
+    "fighting": "Warrior",
+    "ground": "Beast",
+    "normal": "Beast",
+}
+
+# Map of Pokemon abilities to MTG abilities
+ABILITY_MAP: dict[str, str] = {
+    # Core from your prior map (kept intact for consistency)
+    "Levitate": "Flying",
+    "Pressure": "Menace",
+    "Cursed Body": "Deathtouch",
+    "Intimidate": "Menace",
+    "Swift Swim": "Haste",
+    "Chlorophyll": "Vigilance",
+    "Lightning Rod": "First strike",
+    "Poison Touch": "Deathtouch",
+    "Huge Power": "Trample",
+    "Sturdy": "Indestructible",
+    "Acupressure": "Prowess",
+    "Adaptability": "Double strike",
+    "Aftermath": "Undying",
+    "Aerilate": "Flying",
+    "Agility": "Haste",
+    "Ancient Power": "Bolster",
+    "Analytic": "Prowess",
+    "Anger Shell": "Enrage",
+    "Anticipation": "Flash",
+    "Arena Trap": "Defender",
+    "Armor Tail": "Ward",
+    "Assist": "Convoke",
+    "Aura Break": "Hexproof",
+    "Aura Sphere": "Unblockable",
+    "Aroma Veil": "Ward",
+    "As One Spectrier": "Lifelink",
+    "Assist (move)": "Convoke",  # alias safety if you use moves table
+    "Ball Fetch": "Investigate",
+    "Barrier": "Ward",
+    "Battle Bond": "Mentor",
+    "Beads Of Ruin": "Wither",
+    "Berserk": "Trample",
+    "Battery": "Convoke",
+    "Beast Boost": "Exalted",
+    "Blaze": "Prowess",
+    "Bloom Scent (alias Flower Gift)": "Anthem",
+    "Brine": "Exploit",
+    "Bulletproof": "Hexproof",
+    "Calm Mind": "Bolster",
+    "Charge": "Rampage",
+    "Charming (alias Charm)": "Pacifism",
+    "Charm": "Pacifism",
+    "Chilling Neigh": "Frost breath",  # flavor tag; treat as "Tap target creature"
+    "Clear Body": "Hexproof",
+    "Color Change": "Changeling",
+    "Comatose": "Defender",
+    "Cosmic Power": "Hexproof",
+    "Cotton Down": "Falter",  # “Creatures can’t block” vibe
+    "Corrosion": "Wither",
+    "Cute Charm": "Goad",
+    "Damp": "Protection from red",
+    "Dancer": "Prowess",
+    "Dauntless Shield": "Ward",
+    "Dark Aura": "Intimidate",  # Menace synonym
+    "Dazzling": "First strike",
+    "Defeatist": "Can’t block",
+    "Delta Stream": "Protection from Flying",  # pseudo “Reach + Fog flyers”
+    "Dragon Breath": "Firebreathing",  # “: +1/+0” style
+    "Dragons Maw": "Firebreathing",
+    "Dream Eater": "Lifelink",
+    "Drought": "Anthem",
+    "Dry Skin": "Protection from red",
+    "Earth Eater": "Lifelink",
+    "Electric Surge": "Prowess",
+    "Electromorphosis": "Prowess",
+    "Effect Spore": "Infect",
+    "Extrasensory": "Skulk",
+    "Fairy Aura": "Anthem",
+    "Filter": "Protection",
+    "Fighting": "Fight",
+    "Flame Body": "Wither",
+    "Flash Fire": "Protection from red",
+    "Flower Gift": "Anthem",
+    "Flower Veil": "Hexproof",
+    "Fluffy": "Ward",
+    "Flying (alias Gale Wings)": "Flying",
+    "Future Sight": "Foretell",
+    "Full Metal Body": "Indestructible",
+    "Galvanize": "Prowess",
+    "Gale Wings": "Flying",
+    "Gooey": "Kicker {tax}",  # “enter tapped”/slow; use as “Stun”
+    "Grassy Surge": "Landfall",
+    "Grim Neigh": "Menace",
+    "Gulp Missile": "Ninjutsu",
+    "Gust": "Flying",
+    "Hadron Engine": "Improvise",
+    "Harvest": "Recover",
+    "Haze": "Cleanse",  # “remove counters”; treat as “Reset counters”
+    "Heavy Metal": "Indestructible",
+    "Hidden Power": "Modal",
+    "Honey Gather": "Treasure",
+    "Hustle": "Double strike",
+    "Hyper Cutter": "First strike",
+    "Ice Face": "Totem armor",
+    "Ice Scales": "Ward",
+    "Illusion": "Ward",
+    "Innards Out": "Death trigger",
+    "Intrepid Sword": "First strike",
+    "Iron Barbs": "Wither",
+    "Justified": "Exalted",
+    "Klutz": "Can’t equip",
+    "Libero": "Changeling",
+    "Light Metal": "Hexproof",
+    "Light Screen": "Prevent damage",
+    "Lightning Rod": "First strike",
+    "Liquid Voice": "Convoke",
+    "Long Reach": "Reach",
+    "Magic Bounce": "Hexproof",
+    "Magic Coat": "Ward",
+    "Minds Eye": "Scry",
+    "Mimicry": "Changeling",
+    "Miracle Eye": "True sight",  # treat as “Can’t be hexproof/shroud”
+    "Mist Ball": "Flying",
+    "Misty Surge": "Fog",
+    "Mold Breaker": "Trample",
+    "Motor Drive": "Haste",
+    "Moxie": "Exalted",
+    "Multitype": "Changeling",
+    "Mummy": "Wither",
+    "Mycelium Might": "Convoke",
+    "Nature Power": "Domain",
+    "Neutralizing Gas": "Humility",
+    "No Guard": "Deathtouch",
+    "Normalize": "Colorless",
+    "Opportunist": "Exploit",
+    "Orichalcum Pulse": "Riot",
+    "Pastel Veil": "Hexproof",
+    "Perish Body": "Vanishing",
+    "Pickpocket": "Ninjutsu",
+    "Pickup": "Investigate",
+    "Pixilate": "Lifelink",
+    "Plus": "Alliance",
+    "Minus": "Alliance",
+    "Poison Point": "Infect",
+    "Power Construct": "Level up",
+    "Power Of Alchemy": "Improvise",
+    "Power Spot": "Convoke",
+    "Power Trick": "Switch power/toughness",
+    "Pressure": "Menace",
+    "Protean": "Changeling",
+    "Protosynthesis": "Adapt",
+    "Psychic": "Scry",
+    "Psychic Surge": "Scry",
+    "Psycho Boost": "Overload",
+    "Purifying Salt": "Protection from black",
+    "Pure Power": "Double strike",
+    "Quick Draw": "First strike",
+    "Quark Drive": "Surge",
+    "Queenly Majesty": "Dethrone",
+    "Rattled": "Frenzy",
+    "Receiver": "Graft",
+    "Reckless": "Trample",
+    "Refrigerate": "Tap target",  # frost
+    "Rivalry": "Provoke",
+    "RKS System": "Modal",
+    "Rocky Payload": "Fortification",
+    "Roar": "Falter",  # force blocks / remove blockers vibe
+    "Role Play": "Clone",
+    "Rough Skin": "Wither",
+    "Sap Sipper": "Lifelink",
+    "Sand Force": "Landfall",
+    "Scrappy": "Menace",
+    "Secret Power": "Kicker",
+    "Seed Sower": "Landfall",
+    "Shed Skin": "Regenerate",
+    "Sheer Force": "Trample",
+    "Shield Dust": "Hexproof",
+    "Sharpness": "Deathtouch",
+    "Simple": "Level up",
+    "Skill Link": "Double strike",
+    "Skill Swap": "Switch abilities",
+    "Skull Bash (alias Stamina)": "Indestructible",
+    "Soul Heart": "Exalted",
+    "Soundproof": "Hexproof",
+    "Spikes": "Defender",  # defensive hazard; could be “Reach”
+    "Stall": "Defender",
+    "Stamina": "Indestructible",
+    "Stalwart": "Vigilance",
+    "Static": "Stun",  # use stun counters
+    "Stench": "Menace",
+    "Steelworker": "Indestructible",
+    "Steely Spirit": "Anthem",
+    "Steam Engine": "Riot",
+    "Sticky Hold": "Ward",
+    "Storm Drain": "Hexproof",
+    "Strength": "Trample",
+    "Strong Jaw": "Deathtouch",
+    "Supersweet Syrup": "Goad",
+    "Supreme Overlord": "Eminence",
+    "Surge Surfer": "Haste",
+    "Sweet Veil": "Hexproof",
+    "Swift Swim": "Haste",
+    "Sword Of Ruin": "Wither",
+    "Synchronize": "Hexproof",
+    "Tablets Of Ruin": "Wither",
+    "Tailwind": "Vigilance",
+    "Tangling Hair": "Tap target",
+    "Telepathy": "Reveal hands",
+    "Technician": "Proweess",
+    "Teleport": "Flicker",
+    "Teravolt": "Trample",
+    "Tough Claws": "First strike",
+    "Torrent": "Prowess",
+    "Toxic Debris": "Infect",
+    "Trace": "Copy",
+    "Transistor": "Prowess",
+    "Triage": "Lifelink",
+    "Trick": "Exchange control",
+    "Turboblaze": "Trample",
+    "Unaware": "Hexproof",
+    "Unnerve": "Intimidate",
+    "Unseen Fist": "Ninjutsu",
+    "Uproar": "Riot",
+    "Vessel Of Ruin": "Wither",
+    "Victory Star": "Anthem",
+    "Volt Absorb": "Lifelink",
+    "Wandering Spirit": "Flicker",
+    "Ward (alias Wonder Skin)": "Ward",
+    "Water Absorb": "Lifelink",
+    "Water Bubble": "Ward",
+    "Water Compaction": "Ward",
+    "Weak Armor": "Haste",
+    "Well Baked Body": "Protection from red",
+    "White Smoke": "Hexproof",
+    "Whirlwind": "Cyclone",  # flavor; treat as “Return all creatures to owners’ hands”
+    "Wind Power": "Prowess",
+    "Wind Rider": "Flying",
+    "Wonder Guard": "Protection from everything",
+    "Wonder Skin": "Ward",
+    "Z-Merge (alias As One Spectrier)": "Lifelink",
+}
