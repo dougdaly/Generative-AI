@@ -1,0 +1,9 @@
+pandas
+numpy
+scikit-learn
+lightgbm
+shap
+pyarrow
+faiss-cpu    # (M2)
+streamlit
+hydra-core
