@@ -11,6 +11,9 @@ from collections import defaultdict
 
 CPT5 = re.compile(r"^\d{5}$")
 PROC_CANON = {"PROC-123": "20610"}  # collapse demo alias → real CPT (add more if you have them)
+ICD_RE = re.compile(r'\b[A-TV-Z]\d[\dA-Z](?:\.?\d[\dA-Z]*)?\b')   # e.g. M75.41, M75.0x, E11.40
+CPT_RE = re.compile(r'\b\d{5}\b')                                 # 5-digit CPT like 20610
+
 
 def _canon_proc(code: str) -> str:
     return PROC_CANON.get(code, code)
@@ -20,20 +23,12 @@ def _prefer_cpt(proc_codes: set[str]) -> set[str]:
     return cpts or proc_codes
 
 
-ICD_RE = re.compile(r'^[A-TV-Z]\d[\dA-Z](?:\.?\d[\dA-Z]*)?[*Xx]?$')  # loose ICD-ish
-CPT_RE = re.compile(r'^\d{4,5}[A-Z]?$')
-
 def add_edge_once(G, u, v, **attrs):
     for _, vv, dd in G.out_edges(u, data=True):
         if vv == v and all(dd.get(k) == attrs.get(k) for k in attrs):
             return
     G.add_edge(u, v, **attrs)
 
-# --- put these at module top if not present ---
-import re
-
-ICD_RE = re.compile(r'\b[A-TV-Z]\d[\dA-Z](?:\.?\d[\dA-Z]*)?\b')   # e.g. M75.41, M75.0x, E11.40
-CPT_RE = re.compile(r'\b\d{5}\b')                                 # 5-digit CPT like 20610
 
 def _norm_icd(s: str) -> str:
     return s.upper().strip()
@@ -69,7 +64,6 @@ def _norm_icd(s: str) -> str:
 def _icd_prefix(pattern: str) -> str:
     p = (pattern or '').upper().replace('.', '')
     return p[:-1] if p.endswith(('X','*')) else p
-
 
 
 def _iter_grounded(raw):
