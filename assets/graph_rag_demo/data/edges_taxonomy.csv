@@ -1,0 +1,8 @@
+src_label|src_code|etype|dst_label|dst_code|condition
+Procedure|PROC-123|COVERED_BY|Coverage|cms-arthro|
+Procedure|PROC-123|INDICATED_FOR|Diagnosis|M75.0x|
+Procedure|PROC-123|REQUIRES_MODIFIER|Modifier|50|if bilateral
+Procedure|PROC-456|COVERED_BY|Coverage|cms-ncs|
+Diagnosis|M75.01|IS_A|Diagnosis|M75.0x
+Diagnosis|M75.02|IS_A|Diagnosis|M75.0x
+Diagnosis|M75.00|IS_A|Diagnosis|M75.0x

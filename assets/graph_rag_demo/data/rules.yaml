@@ -1,0 +1,5 @@
+items:
+  - id: ncs_auth
+    text: "NCS requires prior auth unless E11.40 documented"
+    scope: "Coverage"
+

@@ -1,0 +1,5 @@
+# CMS Coverage — Nerve Conduction Studies
+Policy ID: cms-ncs
+Coverage: Nerve conduction study (PROC-456) generally requires prior authorization.
+Exception: Prior auth is not required when diagnosis E11.40 is documented.
+

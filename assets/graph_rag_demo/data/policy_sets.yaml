@@ -1,0 +1,77 @@
+sets:
+  - id: cpt:arthro_block
+    kind: cpt_range
+    start: 20600
+    end: 20611
+
+# Diagnosis sets (ICD families)
+  - id: icd:frozen_shoulder
+    kind: icd_family
+    pattern: M75.0x
+  - id: icd:shoulder_impingement
+    kind: icd_family
+    pattern: M75.4x
+  - id: icd:rotator_cuff
+    kind: icd_family
+    pattern: M75.1x
+  - id: icd:tendinitis
+    kind: icd_family
+    pattern: M75.2x
+  - id: icd:cervicalgia
+    kind: icd_family
+    pattern: M54.2x
+  - {id: icd:frozen_shoulder,       kind: icd_family, pattern: M75.0x}
+  - {id: icd:rotator_cuff,          kind: icd_family, pattern: M75.1x}
+  - {id: icd:shoulder_impingement,  kind: icd_family, pattern: M75.4x}
+  - {id: icd:tendinitis,            kind: icd_family, pattern: M75.2x}
+  - {id: icd:cervicalgia,           kind: icd_family, pattern: M54.2x}
+
+  # Procedure sets
+  - id: cpt:joint_injection
+    kind: proc_list
+    members: [PROC-123, PROC-456, PROC-789]
+  - id: cpt:trigger_point
+    kind: proc_list
+    members: [20552, 20553]
+  - id: cpt:tendon_injection
+    kind: proc_list
+    members: [20550, 20551]
+  - id: cpt:arthro_single
+    kind: proc_list
+    members: [PROC-123]   
+  - {id: cpt:arthro_block,     kind: cpt_range,  start: 20600, end: 20611}
+  - {id: cpt:joint_injection,  kind: proc_list,  members: [20552,20553]}
+  - {id: cpt:tendon_injection, kind: proc_list,  members: [20550,20551]}
+
+
+policies:
+
+  - policy: cms-injection
+    payer: CMS
+    title: CMS Coverage — Joint Injection
+    proc_sets: [cpt:joint_injection]
+    dx_sets:   [icd:shoulder_impingement, icd:rotator_cuff]
+
+  - policy: cms-trigger
+    payer: CMS
+    title: CMS Coverage — Trigger Point Injection
+    proc_sets: [cpt:trigger_point]
+    dx_sets:   [icd:cervicalgia]
+    notes:
+      - "Limit 3 sessions per rolling 12 weeks."
+
+  - policy: cms-tendon
+    payer: CMS
+    title: CMS Coverage — Tendon Injection
+    proc_sets: [cpt:tendon_injection]
+    dx_sets:   [icd:tendinitis, icd:rotator_cuff]
+    notes:
+      - "Ultrasound guidance required if prior failure of conservative therapy."
+
+  - policy: cms-arthro
+    payer: CMS
+    title: CMS Coverage — Arthrocentesis
+    proc_sets: [cpt:arthro_block]
+    dx_sets:   [icd:frozen_shoulder, icd:rotator_cuff]
+    notes: ["Append modifier 50 if bilateral."]
+

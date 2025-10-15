@@ -1,0 +1,57 @@
+nodes:
+  Diagnosis:
+    short: DX
+    source:
+      kind: csv
+      path: data/icd10.csv
+      id_template: "DX:{code}"
+      fields: [code, name]
+
+  Procedure:
+    short: PX
+    source:
+      kind: csv
+      path: data/procedures.csv
+      id_template: "PX:{code}"
+      fields: [code, name]
+
+  Coverage:
+    short: COV
+    source:
+      kind: yaml
+      path: data/coverage.yaml
+      id_template: "COV:{policy}"
+      fields: [policy, payer, title]
+
+  Modifier:
+    short: MD
+    source:
+      kind: csv
+      path: data/modifiers.csv
+      id_template: "MD:{code}"
+      fields: [code, name]
+
+  Rule:
+    short: RULE
+    source:
+      kind: yaml
+      path: data/rules.yaml
+      id_template: "RULE:{id}"
+      fields: [id, text, scope]
+
+docs:
+  # load every .txt/.md in a directory (recursively)
+  - kind: dir
+    path: assets/graph_rag_demo/data/docs
+
+edges:
+  - kind: csv
+    path: data/edges_taxonomy.csv
+  - kind: yaml
+    path: data/policy_sets.yaml  
+
+synonyms:
+  kind: csv
+  path: data/synonyms.csv
+  # columns: term,label,code
+

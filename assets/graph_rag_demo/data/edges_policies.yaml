@@ -1,0 +1,18 @@
+sets:
+  - id: cpt:arthrocentesis
+    kind: cpt_range
+    start: 20600
+    end: 20611
+
+  - id: icd:m75_frozen_shoulder
+    kind: icd_family
+    pattern: M75.0x
+
+policies:
+  - policy: cms-arthro
+    payer: CMS
+    title: CMS Coverage — Arthrocentesis
+    proc_sets: [cpt:arthrocentesis]
+    dx_sets:   [icd:m75_frozen_shoulder]
+    notes:
+      - "Append modifier 50 if bilateral."

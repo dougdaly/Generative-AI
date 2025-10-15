@@ -1,0 +1,8 @@
+# CMS Coverage — Arthrocentesis
+Policy ID: cms-arthro
+Coverage: Arthrocentesis (PROC-123) is covered when medically necessary.
+Requires diagnosis M75.0x or clinical indication of frozen shoulder.
+For bilateral procedures, append modifier 50.
+Covered diagnoses include M75.0x (frozen shoulder). Prior auth not required when arthrocentesis is medically necessary.
+Covered diagnoses include M75.0x (frozen shoulder / adhesive capsulitis).
+
