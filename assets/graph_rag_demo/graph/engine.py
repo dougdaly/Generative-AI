@@ -8,58 +8,19 @@ from .reason import expand_subgraph, analyze
 from .render import render_answer
 import re
 from collections import defaultdict
-
-CPT5 = re.compile(r"^\d{5}$")
-PROC_CANON = {"PROC-123": "20610"}  # collapse demo alias → real CPT (add more if you have them)
-ICD_RE = re.compile(r'\b[A-TV-Z]\d[\dA-Z](?:\.?\d[\dA-Z]*)?\b')   # e.g. M75.41, M75.0x, E11.40
-CPT_RE = re.compile(r'\b\d{5}\b')                                 # 5-digit CPT like 20610
+from .params import CPT5, PROC_CANON, ICD_RE, norm_code
 
 
 def _canon_proc(code: str) -> str:
     return PROC_CANON.get(code, code)
 
-def _prefer_cpt(proc_codes: set[str]) -> set[str]:
-    cpts = {c for c in proc_codes if CPT5.match(c)}
-    return cpts or proc_codes
-
-
+# Ensure edges are not duplicated
 def add_edge_once(G, u, v, **attrs):
     for _, vv, dd in G.out_edges(u, data=True):
         if vv == v and all(dd.get(k) == attrs.get(k) for k in attrs):
             return
     G.add_edge(u, v, **attrs)
 
-
-def _norm_icd(s: str) -> str:
-    return s.upper().strip()
-
-def _norm_cpt(s: str) -> str:
-    return s.strip()
-
-def enrich_ground(query: str, raw: dict) -> dict:
-    """
-    Make 'raw' robust by scraping explicit codes from the query and
-    ensuring both specific & family ICDs can flow downstream.
-    """
-    raw = raw or {}
-    procs  = set(raw.get("procedures") or [])
-    dxs    = set(raw.get("diagnoses") or [])
-    mods   = set(raw.get("modifiers")  or [])
-
-    # 1) Scrape explicit codes from the query
-    for tok in ICD_RE.findall(query):
-        dxs.add(_norm_icd(tok))
-    for tok in CPT_RE.findall(query):
-        procs.add(_norm_cpt(tok))
-
-    # 2) Ensure codes exist as strings (your _iter_grounded handles strings fine)
-    #    Keep both specifics (M75.41) and families (M75.0x) if present.
-    #    No dedup needed beyond set().
-
-    return {"procedures": procs, "diagnoses": dxs, "modifiers": mods}
-
-def _norm_icd(s: str) -> str:
-    return re.sub(r'[^A-Z0-9]', '', (s or '').upper())
 
 def _icd_prefix(pattern: str) -> str:
     p = (pattern or '').upper().replace('.', '')
@@ -126,10 +87,6 @@ def _iter_grounded(raw):
             continue
         for pair in emit(items, lbl):
             yield pair
-
-
-def norm_code(code: str) -> str:
-    return re.sub(r'[^A-Z0-9]', '', (code or '').upper())
 
 def parse_wildcard(code: str) -> str | None:
     """
@@ -215,21 +172,21 @@ class GraphRAG:
 
         if kind == 'icd_family':
             pref = _icd_prefix(spec.get('pattern', ''))
-            return bool(pref) and _norm_icd(code).startswith(pref)
+            return bool(pref) and norm_code(code).startswith(pref)
 
         if kind == 'dx_list':
             # Prefer a pre-normalized membership set if your index provides it
             members_norm = spec.get('members_norm')
             if isinstance(members_norm, set):
-                return _norm_icd(code) in members_norm
+                return norm_code(code) in members_norm
             # Fallback: normalize on the fly
             members = spec.get('members') or []
-            return _norm_icd(code) in {_norm_icd(x) for x in members}
+            return norm_code(code) in {norm_code(x) for x in members}
 
         if kind == 'icd_range':
-            start = _norm_icd(spec.get('start', ''))
-            end   = _norm_icd(spec.get('end', ''))
-            c     = _norm_icd(code)
+            start = norm_code(spec.get('start', ''))
+            end   = norm_code(spec.get('end', ''))
+            c     = norm_code(code)
             return len(c) == len(start) == len(end) and start <= c <= end
 
         return False
@@ -308,9 +265,8 @@ class GraphRAG:
             self.doc_by_node[roll_id] = uniq
 
     def answer(self, query: str) -> str:
+        # Ground query -- from text into a dict of procedures, diagnoses and modifiers
         raw = ground(query, self.syn)
-        raw = enrich_ground(query, raw)
-        ICD_RE = re.compile(r'\b[A-TV-Z]\d[\dA-Z](?:\.?\d[\dA-Z]*)?\b')
  
         # collect codes
         seed_nodes = []
@@ -339,7 +295,6 @@ class GraphRAG:
                 proc_codes.add(code)
             elif label == "Diagnosis":
                 dx_codes.add(code)
-        CPT5 = re.compile(r"^\d{5}$")
 
         def _prefer_cpt(proc_codes: set[str]) -> set[str]:
             cpts = {c for c in proc_codes if CPT5.match(c)}
@@ -394,12 +349,6 @@ class GraphRAG:
 
         # ---- MULTI-MATCH MEMBERSHIP (no breaks) ----
         QG = self.G.copy()
-
-        def add_edge_once(G, u, v, **attrs):
-            for _, vv, dd in G.out_edges(u, data=True):
-                if vv == v and all(dd.get(k) == attrs.get(k) for k in attrs):
-                    return
-            G.add_edge(u, v, **attrs)
 
         def attach_membership_edges(label: str, code: str, set_label: str, sid: str):
             nid = self._by_code(label, code) or self._nid(label, code)

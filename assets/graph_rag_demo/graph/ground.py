@@ -1,15 +1,7 @@
 import re
 from typing import Dict, Set, Iterable, Tuple
+from .params import ICD_RE, CPT_RE, norm_code
 
-def detect_entities(q: str):
-    ql = q.lower()
-    hits = []
-    for term, (typ, key) in SYN.items():
-        if term in ql:
-            hits.append((typ, key))
-    for m in re.findall(r"[A-Z][0-9][0-9]\.[0-9A-Z]{1,2}", q):
-        hits.append(("Diagnosis", m))
-    return list(set(hits))
 
 # Expecting synonyms as a list of (term, kind, code)
 # kind ∈ {"Procedure","Diagnosis","Modifier"}
@@ -42,4 +34,27 @@ def ground(query: str, synonyms: Iterable[Tuple[str,str,str]] = None) -> Dict[st
             elif kind == "Modifier":
                 md.add(code)
 
-    return {"procedures": px, "diagnoses": dx, "modifiers": md}
+    return enrich_ground(query, {"procedures": px, "diagnoses": dx, "modifiers": md})
+
+
+def enrich_ground(query: str, raw: dict) -> dict:
+    """
+    Make 'raw' robust by scraping explicit codes from the query and
+    ensuring both specific & family ICDs can flow downstream.
+    """
+    raw = raw or {}
+    procs  = set(raw.get("procedures") or [])
+    dxs    = set(raw.get("diagnoses") or [])
+    mods   = set(raw.get("modifiers")  or [])
+
+    # 1) Scrape explicit codes from the query
+    for tok in ICD_RE.findall(query):
+        dxs.add(norm_code(tok))
+    for tok in CPT_RE.findall(query):
+        procs.add(tok.strip())
+
+    # 2) Ensure codes exist as strings (your _iter_grounded handles strings fine)
+    #    Keep both specifics (M75.41) and families (M75.0x) if present.
+    #    No dedup needed beyond set().
+
+    return {"procedures": procs, "diagnoses": dxs, "modifiers": mods}
