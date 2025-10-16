@@ -8,11 +8,9 @@ from .reason import expand_subgraph, analyze
 from .render import render_answer
 import re
 from collections import defaultdict
-from .params import CPT5, PROC_CANON, ICD_RE, norm_code
+from .params import CPT5, SHORT, ICD_RE, norm_code
 
 
-def _canon_proc(code: str) -> str:
-    return PROC_CANON.get(code, code)
 
 # Ensure edges are not duplicated
 def add_edge_once(G, u, v, **attrs):
@@ -21,21 +19,18 @@ def add_edge_once(G, u, v, **attrs):
             return
     G.add_edge(u, v, **attrs)
 
+    
 
-def _icd_prefix(pattern: str) -> str:
-    p = (pattern or '').upper().replace('.', '')
-    return p[:-1] if p.endswith(('X','*')) else p
-
-
-def _iter_grounded(raw):
+def _iter_grounded(raw, *, stable=False, dedupe=False):
     """
-    Yield (label, code) from ground() output.
-    Accept strings, sets, lists, tuples, dicts.
-    Preserve the label implied by the top-level key.
+    Normalize a heterogeneous grounding result into (label, code) pairs.
+    - key2label: dict mapping bucket keys to default labels.
+    - stable: deterministic ordering (sorts buckets/items).
+    - dedupe: remove duplicate (label, code).
     """
     if not raw:
         return
-
+    
     key2label = {
         "procedures": "Procedure",
         "diagnoses":  "Diagnosis",
@@ -43,50 +38,73 @@ def _iter_grounded(raw):
         "coverage":   "Coverage",
     }
 
-    def emit(items, default_label):
-        if items is None:
-            return
-        if isinstance(items, dict):
-            lbl = items.get("label") or default_label
-            code = items.get("code")
-            if lbl and code:
-                yield lbl, code
-            return
-        # normalize to iterable
-        if isinstance(items, (set, list, tuple)):
-            iterable = items
-        else:
-            iterable = [items]
+    buckets = raw.items()
+    if stable:
+        buckets = sorted(buckets, key=lambda kv: kv[0])
 
-        for it in iterable:
+    seen = set()
+    for key, items in buckets:
+        default_label = key2label.get(key)  # <- crucial
+        seq = list(items) if not isinstance(items, list) else items
+        if stable:
+            seq = sorted(seq, key=lambda x: str(x))
+
+        for it in seq:
+            out_pairs = []  # zero, one, or multiple (label, code)
+
             if isinstance(it, tuple):
                 if len(it) == 3:
-                    _, lbl, code = it
+                    # e.g. ("arthrocentesis","Procedure","PROC-123")
+                    _, label, code = it
+                    out_pairs.append((label, code))
                 elif len(it) == 2:
-                    lbl, code = it
-                else:
-                    continue
-                yield lbl, code
+                    # e.g. ("PROC-123","20610") or ("Procedure","20610")
+                    a, b = it
+                    if default_label and not any(x in (a,b) for x in ("Procedure","Diagnosis","Modifier","Coverage")):
+                        out_pairs.append((default_label, b))
+                    else:
+                        # assume (label, code)
+                        out_pairs.append((a, b))
+
             elif isinstance(it, dict):
-                lbl = it.get("label") or default_label
-                code = it.get("code")
-                if lbl and code:
-                    yield lbl, code
+                # {"term": "...", "label": "Procedure", "code": "20610"}
+                label = it.get("label") or default_label
+                code  = it.get("code")
+                if label and code:
+                    out_pairs.append((label, code))
+
             elif isinstance(it, str):
                 s = it.strip()
                 if ":" in s:
                     lbl, code = s.split(":", 1)
-                    yield lbl, code
+                    out_pairs.append((lbl, code))
+                elif default_label:
+                    # trust the bucket label
+                    out_pairs.append((default_label, s))
                 else:
-                    # key controls the label — no cross-label spray
-                    yield default_label, s
+                    # last-ditch heuristic
+                    guesses = []
+                    if any(ch.isalpha() for ch in s):  # looks like ICD-ish
+                        guesses.append(("Diagnosis", s))
+                    if s.isdigit():
+                        guesses.append(("Procedure", s))
+                    if not guesses:
+                        guesses = [("Procedure", s), ("Diagnosis", s)]
+                    out_pairs.extend(guesses)
 
-    for k, items in raw.items():
-        lbl = key2label.get(k)
-        if not lbl:
-            continue
-        for pair in emit(items, lbl):
-            yield pair
+            # yield, with optional dedupe + light normalization
+            for (lbl, code) in out_pairs:
+                lbl = (lbl or "").strip().title()
+                code = (str(code) or "").strip()
+                if not lbl or not code:
+                    continue
+                if dedupe:
+                    k = (lbl, code)
+                    if k in seen:
+                        continue
+                    seen.add(k)
+                yield (lbl, code)
+
 
 def parse_wildcard(code: str) -> str | None:
     """
@@ -171,7 +189,10 @@ class GraphRAG:
         kind = spec.get('kind')
 
         if kind == 'icd_family':
-            pref = _icd_prefix(spec.get('pattern', ''))
+            # Remove wildcard and dot in a ICD code
+            pref = spec.get('pattern', '').upper().replace('.', '').strip()
+            if pref.endswith(('X','*')):
+                pref = pref[:-1]
             return bool(pref) and norm_code(code).startswith(pref)
 
         if kind == 'dx_list':
@@ -191,6 +212,47 @@ class GraphRAG:
 
         return False
 
+    def _attach_rollup_children(self, QG, seed_nodes, max_children=3):
+        """
+        For any Diagnosis seed that is a roll-up (e.g., M75.0x), import a few specific
+        children (M75.00, M75.01, M75.02) and the IS_A edges into QG, so the 'Why'
+        shows concrete codes. Optionally add them to seeds.
+        """
+        def add_node_from_master(nid):
+            if nid in QG:
+                return
+            attrs = dict(self.G.nodes[nid]) if nid in self.G else {}
+            if not attrs:
+                return
+            QG.add_node(nid, **attrs)
+
+        # collect roll-up DX seeds in QG
+        rollups = []
+        for nid in list(seed_nodes):
+            at = QG.nodes.get(nid, {})
+            if at.get("label") == "Diagnosis" and at.get("rollup"):
+                rollups.append(nid)
+
+        for rid in rollups:
+            # Prefer children already present in the master graph with explicit IS_A to the roll-up
+            kids = []
+            for u, v, d in self.G.in_edges(rid, data=True):
+                if d.get("etype") == "IS_A" and self.G.nodes[u].get("label") == "Diagnosis":
+                    kids.append(u)
+
+            # If there are many, keep a small, stable subset for readability
+            kids = sorted(kids)[:max_children]
+
+            for kid in kids:
+                add_node_from_master(kid)      # bring child node into QG
+                add_node_from_master(rid)      # ensure roll-up is in QG
+                # add IS_A edge kid -> roll-up (dedup)
+                exists = any(v == rid and ed.get("etype") == "IS_A"
+                            for _, v, ed in QG.out_edges(kid, data=True))
+                if not exists:
+                    QG.add_edge(kid, rid, etype="IS_A")
+                # Optionally: let seeds include a couple specifics so expand_subgraph keeps them
+                seed_nodes.add(kid)
 
     def _nid(self, label: str, code: str) -> str:
         return f"{self._short(label)}:{code}"
@@ -264,202 +326,113 @@ class GraphRAG:
                     break
             self.doc_by_node[roll_id] = uniq
 
+    # Answers the query. 4 steps: Ground, Attach, Policy Check, and Render
     def answer(self, query: str) -> str:
-        # Ground query -- from text into a dict of procedures, diagnoses and modifiers
+        # GROUND
+        # Goal: turn messy text into clean, deterministic (label, code) pairs + code sets.
+        # Input: query, known synonyms (and optionally an LLM)
+        # Output: pairs, proc_codes, dx_codes, modifiers
+            # Convert query into dict of signals, there the keys are Procedure, Diagnosis, Modifier
         raw = ground(query, self.syn)
- 
-        # collect codes
-        seed_nodes = []
-        proc_codes = set(raw.get("procedures", []))
-        dx_codes   = set(raw.get("diagnoses", []))
+        pairs = list(_iter_grounded(raw, stable=True, dedupe=True))
+        proc_codes = {c for (l,c) in pairs if l=="Procedure"}
+        dx_codes   = {c for (l,c) in pairs if l=="Diagnosis"}
+        for tok in ICD_RE.findall(query): dx_codes.add(tok.upper())
 
-        # enrich from query text
-        for tok in ICD_RE.findall(query):
-            dx_codes.add(tok.upper())
-
-        # ensure every DX code exists as a node and is seeded
-        for dxc in list(dx_codes):
-            nid = self._by_code("Diagnosis", dxc)
-            if not nid:
-                nid = self._nid("Diagnosis", dxc)
-                if nid not in self.G:
-                    self.G.add_node(nid, label="Diagnosis", code=dxc, name=dxc)
-            seed_nodes.append(nid)
-
-        # Seeds + the literal codes we’ll test for membership
-        for label, code in _iter_grounded(raw):
-            nid = self._by_code(label, code)
-            if nid:
-                seed_nodes.append(nid)
-            if label == "Procedure":
-                proc_codes.add(code)
-            elif label == "Diagnosis":
-                dx_codes.add(code)
-
-        def _prefer_cpt(proc_codes: set[str]) -> set[str]:
-            cpts = {c for c in proc_codes if CPT5.match(c)}
-            return cpts or proc_codes  # if any 5-digit CPTs exist, ignore non-CPTs
-
-        # in answer(), after collecting proc_codes:
-        proc_codes = _prefer_cpt(proc_codes)
-        proc_codes = {_canon_proc(c) for c in proc_codes}
-
+        def _prefer_cpt(codes): 
+            cpts = {c for c in codes if CPT5.match(c)}
+            return cpts or codes
         preferred_procs = _prefer_cpt(proc_codes)
 
-        # Re-seed using only preferred procs
-        seed_nodes = []
-        for label, code in _iter_grounded(raw):
-            if label == "Procedure":
-                code = _canon_proc(code)
-                if code not in preferred_procs:
-                    continue  # drop PROC-123, etc.
-            nid = self._by_code(label, code)
-            if nid:
-                seed_nodes.append(nid)
-        
-        # Ensure every CPT proc code exists as a node; seed it if missing
-        for pc in list(proc_codes):
-            nid = self._by_code("Procedure", pc)
-            if not nid:
-                nid = self._nid("Procedure", pc)
-                if nid not in self.G:
-                    self.G.add_node(nid, label="Procedure", code=pc, name=pc)
-                seed_nodes.append(nid)
+        # ATTACH
+        # Goal: materialize what the query needs:
+        # - ensure the code nodes exist,
+        # - add membership (IS_IN) edges from codes to the sets they hit,
+        # - ensure policy nodes connect to the relevant sets (USES_*).
+        # Do this in a small per-query graph QG (or a copy/induced subgraph) to avoid leakage.
+        QG = nx.MultiDiGraph()
+        seed_nodes = set()
 
-        # Double-guard: strip any stray non-preferred proc nodes
-        seed_nodes = [
-            n for n in seed_nodes
-            if not (
-                self.G.nodes[n].get("label") == "Procedure" and
-                self.G.nodes[n].get("code") not in preferred_procs
-            )
-        ]
-
-        if not seed_nodes:
-            return "Couldn’t ground the jargon—include a procedure and a diagnosis."
-        # If any DX seed is a roll-up, add its children to seeds (nice paths)
-        extra = []
-        for nid in list(seed_nodes):
-            at = self.G.nodes[nid]
-            if at.get('label') == "Diagnosis" and at.get('rollup'):
-                for u, v, d in self.G.in_edges(nid, data=True):
-                    if d.get('etype') == 'IS_A' and self.G.nodes[u].get('label') == "Diagnosis":
-                        extra.append(u)
-        seed_nodes.extend(extra)
-
-        # ---- MULTI-MATCH MEMBERSHIP (no breaks) ----
-        QG = self.G.copy()
-
-        def attach_membership_edges(label: str, code: str, set_label: str, sid: str):
+        def ensure(label, code):
             nid = self._by_code(label, code) or self._nid(label, code)
-            # ensure node exists in QG with attrs
             if nid not in QG:
-                # copy attrs from master if present; else synthesize
-                if nid in self.G:
-                    QG.add_node(nid, **self.G.nodes[nid])
-                else:
-                    QG.add_node(nid, label=label, code=code, name=code)
+                # clone attrs if exists in self.G, else synthesize
+                attrs = dict(self.G.nodes[nid]) if nid in self.G else {"label":label,"code":code,"name":code}
+                QG.add_node(nid, **attrs)
+            seed_nodes.add(nid)
+            return nid
+
+        # seed DX + preferred PX
+        for dxc in dx_codes: ensure("Diagnosis", dxc)
+        for pc  in preferred_procs: ensure("Procedure", pc)
+
+        def add_edge_once(G,u,v,**attrs):
+            for _,vv,dd in G.out_edges(u, data=True):
+                if vv==v and all(dd.get(k)==attrs.get(k) for k in attrs): return
+            G.add_edge(u,v,**attrs)
+
+        def attach_membership_edges(label, code, set_label, sid):
+            node = ensure(label, code)
             set_nid = self._nid(set_label, sid)
             if set_nid not in QG:
-                # sets should exist from master; but just in case:
-                attrs = self.G.nodes.get(set_nid, {"label": set_label, "code": sid, "set_id": sid, "name": sid})
-                QG.add_node(set_nid, **attrs)
-            add_edge_once(QG, nid, set_nid, etype="IS_IN")
-            # roll-up child attachments for DX
-            if label == "Diagnosis":
-                at = QG.nodes[nid]
-                if at.get("rollup") or str(code).upper().endswith(("X","*")):
-                    for u, v, d in QG.in_edges(nid, data=True):
-                        if d.get("etype") == "IS_A" and QG.nodes[u].get("label") == "Diagnosis":
-                            add_edge_once(QG, u, set_nid, etype="IS_IN")
+                # bring set node & attrs from master graph/index
+                spec = self._get_set_spec(sid) or {}
+                QG.add_node(set_nid, label=set_label, set_id=sid, code=sid,
+                            kind=spec.get("kind",""), name=sid)
+            add_edge_once(QG, node, set_nid, etype="IS_IN")
 
+
+
+        # For each policy, connect its ProcSets/DxSets and attach membership edges for matches
         matched_cov = []
-        matched_sets_by_policy = {}             # cov_nid -> {"proc": set(), "dx": set()}
-        dx_sets_any_by_code  = defaultdict(set) # dxc -> set(dx_set_ids) (policy-agnostic)
-        dx_sets_qual_by_code = defaultdict(set) # dxc -> set(dx_set_ids) (policy+proc matched)
-        dx_qual_policies     = defaultdict(set) # dxc -> set(policy_ids)
+        matched_sets_by_policy = {}
 
         for p in getattr(self, "_policies", []):
             pol_id = p["policy"]
-            cov = self._nid("Coverage", pol_id)      # <-- use cov consistently
-            psids = p.get("proc_sets", [])
-            dsids = p.get("dx_sets",   [])
+            cov = self._nid("Coverage", pol_id)
+            # pull coverage node into QG
+            if cov not in QG:
+                QG.add_node(cov, **self.G.nodes.get(cov, {"label":"Coverage","policy":pol_id,"name":pol_id}))
 
             proc_hits, dx_hits = set(), set()
-            dx_hits_by_code_local = defaultdict(set)
 
-            # PROCEDURES: only preferred CPTs
             for c in preferred_procs:
-                for sid in psids:
+                for sid in p.get("proc_sets", []):
                     if self._proc_in_set(c, sid):
                         proc_hits.add(sid)
-                        attach_membership_edges("Procedure", c, "ProcSet", sid)  # adds to QG
+                        attach_membership_edges("Procedure", c, "ProcSet", sid)
                         add_edge_once(QG, cov, self._nid("ProcSet", sid), etype="USES_PROCSET")
 
-            # DIAGNOSES
             for dxc in dx_codes:
-                for sid in dsids:
+                for sid in p.get("dx_sets", []):
                     if self._dx_in_set(dxc, sid):
                         dx_hits.add(sid)
-                        dx_hits_by_code_local[dxc].add(sid)
-                        dx_sets_any_by_code[dxc].add(sid)
-                        attach_membership_edges("Diagnosis", dxc, "DxSet", sid)  # adds to QG
+                        attach_membership_edges("Diagnosis", dxc, "DxSet", sid)
                         add_edge_once(QG, cov, self._nid("DxSet", sid), etype="USES_DXSET")
 
             matched_sets_by_policy[cov] = {"proc": proc_hits, "dx": dx_hits}
-
-            # QUALIFY only when both sides hit under this policy
             if proc_hits and dx_hits:
                 matched_cov.append(cov)
-                for dxc, sids in dx_hits_by_code_local.items():
-                    for sid in sids:
-                        dx_sets_qual_by_code[dxc].add(sid)
-                    dx_qual_policies[dxc].add(pol_id)
 
-        # ensure every DX appears (even if empty) for rendering
-        for dxc in dx_codes:
-            dx_sets_any_by_code.setdefault(dxc, set())
-            dx_sets_qual_by_code.setdefault(dxc, set())
-            dx_qual_policies.setdefault(dxc, set())
+        # Link child diagnoses to parent family
+        self._attach_rollup_children(QG, seed_nodes, max_children=3)
+        
 
+        # POLICY_CHECK (compute the verdict from attached edges)
+        # Goal: intersect the sets per policy and compute facts. No new edges—pure reading.
+        SG = expand_subgraph(G=QG, seeds=list(seed_nodes), depth=3)
 
-        # Expand enough to include sets & policies
-        SG = expand_subgraph(G=QG, seeds=seed_nodes, depth=3)
+        # covered if any policy has both proc and dx hits
+        covered = any(v["proc"] and v["dx"] for v in matched_sets_by_policy.values())
 
-        focus_proc_nodes = {
-            (self._by_code("Procedure", c) or self._nid("Procedure", c))
-            for c in preferred_procs
-        }
-        SG = expand_subgraph(G=QG, seeds=seed_nodes, depth=3)
-        facts = analyze(SG, seed_nodes, focus_procs=focus_proc_nodes)
-        # include matched sets for the renderer (optional)
-        facts.setdefault("matched_sets_by_policy", matched_sets_by_policy)
-        facts.setdefault("policies", matched_cov)
-        facts.setdefault("dx_sets_any_by_code",  {k: sorted(v) for k,v in dx_sets_any_by_code.items()})
-        facts.setdefault("dx_sets_qual_by_code", {k: sorted(v) for k,v in dx_sets_qual_by_code.items()})
-        facts.setdefault("dx_qual_policies",     {k: sorted(v) for k,v in dx_qual_policies.items()})
+        facts = analyze(SG, list(seed_nodes), focus_procs={
+            (self._by_code("Procedure", c) or self._nid("Procedure", c)) for c in preferred_procs
+        })
+        facts["covered"] = covered
+        facts["policies"] = list(matched_cov)
+        facts["matched_sets_by_policy"] = matched_sets_by_policy
 
-        # ---- Enrich facts for the renderer (safe no-ops if analyze already set them) ----
-        # Flatten across policies for quick “matched sets” badges
-        all_proc_sets = set().union(*(v["proc"] for v in matched_sets_by_policy.values())) if matched_sets_by_policy else set()
-        all_dx_sets   = set().union(*(v["dx"]   for v in matched_sets_by_policy.values())) if matched_sets_by_policy else set()
-
-        facts.setdefault("policies", matched_cov)
-        facts.setdefault("matched_sets_by_policy", matched_sets_by_policy)
-        facts.setdefault("matched_sets", {"proc": all_proc_sets, "dx": all_dx_sets})
-
-        facts["dx_sets_any_by_code"]  = {k: sorted(v) for k, v in dx_sets_any_by_code.items()}
-        facts["dx_sets_qual_by_code"] = {k: sorted(v) for k, v in dx_sets_qual_by_code.items()}
-        facts["dx_qual_policies"]     = {k: sorted(v) for k, v in dx_qual_policies.items()}
-
-        # Ensure sets/policies are eligible for citations
-        nodes_seen = set(facts.get("nodes_seen", facts.get("seeds", [])))
-        nodes_seen |= set(matched_cov)
-        for s in all_proc_sets:
-            nodes_seen.add(self._nid("ProcSet", s))
-        for s in all_dx_sets:
-            nodes_seen.add(self._nid("DxSet", s))
-        facts["nodes_seen"] = list(nodes_seen)
+        # RENDER: give the answer
         return render_answer(facts, self.doc_by_node, SG=SG)
 
 

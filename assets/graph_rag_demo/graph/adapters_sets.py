@@ -61,7 +61,6 @@ def add_sets_and_policies(eng, yaml_data: dict):
                        name=p.get("title") or pol_id)
 
         for sid in p.get("proc_sets", []):
-#            G.add_edge(eng._nid("Coverage", pol_id), eng._nid("ProcSet", sid), etype="USES_PROCSET")
             add_edge_once(G, eng._nid("Coverage", pol_id), eng._nid("ProcSet", sid), etype="USES_PROCSET")
         for sid in p.get("dx_sets", []):
             #G.add_edge(eng._nid("Coverage", pol_id), eng._nid("DxSet",   sid), etype="USES_DXSET")

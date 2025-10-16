@@ -5,12 +5,7 @@ import csv, yaml, networkx as nx
 from collections import defaultdict
 import re, textwrap
 import pandas as pd
-
-SHORT = {
-    "Diagnosis": "DX", "Procedure": "PX", "Modifier": "MD", "Coverage": "COV",
-    "ProcSet": "PS", "DxSet": "DS"
-}
-
+from .params import SHORT
 
 def _load_csv_records(path: Path, fields: list[str]) -> list[dict]:
     df = pd.read_csv(path, dtype=str, keep_default_na=False, encoding="utf-8", sep='|')
