@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="300" class="diagram" viewBox="0 0 860 300">
+  <style>
+    .diagram { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    .title { font-weight: 800; font-size: 22px; fill: #111; }
+    .label { font-weight: 600; font-size: 14px; fill: #111; }
+    .small { font-size: 12px; fill: #444; }
+    .box   { fill: #fffdf7; stroke: #1f2937; stroke-width: 1.6; rx: 10; ry: 10; }
+    .boxGrey { fill: #f2f5f9; stroke: #1f2937; stroke-width: 1.6; rx: 10; ry: 10; }
+    .head { fill: #eef7ff; stroke: #1f2937; stroke-width: 1.6; rx: 10; ry: 10; }
+    .arrow { stroke: #1f2937; stroke-width: 1.6; fill: none; }
+    .skip  { stroke: #2563eb; stroke-width: 1.8; fill: none; stroke-dasharray: 6 5; }
+    .loss  { stroke: #ef4444; stroke-width: 1.6; fill: none; stroke-dasharray: 6 4; }
+    .prior { fill: #fff; stroke: #1f2937; stroke-width: 1.4; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,3 L0,6 z" fill="#1f2937" />
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,3 L0,6 z" fill="#2563eb" />
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,3 L0,6 z" fill="#ef4444" />
+    </marker>
+  </defs>
+<text class="title" x="430.0" y="36" text-anchor="middle">Autoencoder (AE)</text><rect class="box" x="40" y="88" width="120" height="56" /><text class="label" x="100" y="122" text-anchor="middle">Image in</text><rect class="box" x="210" y="88" width="150" height="56" /><text class="label" x="285" y="112" text-anchor="middle">Encoder</text><text class="small" x="285" y="132" text-anchor="middle">fφ</text><rect class="box" x="396" y="88" width="90" height="56" /><text class="label" x="441" y="122" text-anchor="middle">Latent</text><rect class="boxGrey" x="514" y="88" width="150" height="56" /><text class="label" x="589" y="112" text-anchor="middle">Decoder</text><text class="small" x="589" y="132" text-anchor="middle">gθ</text><rect class="box" x="702" y="88" width="120" height="56" /><text class="label" x="762" y="112" text-anchor="middle">Reconstruction</text><text class="small" x="762" y="132" text-anchor="middle">x̂</text><line class="arrow" x1="160" y1="116" x2="210" y2="116" marker-end="url(#arrow)"/><line class="arrow" x1="360" y1="116" x2="396" y2="116" marker-end="url(#arrow)"/><line class="arrow" x1="486" y1="116" x2="514" y2="116" marker-end="url(#arrow)"/><line class="arrow" x1="664" y1="116" x2="702" y2="116" marker-end="url(#arrow)"/><line class="loss" x1="762" y1="168" x2="100" y2="168" marker-end="url(#arrowRed)"/><text class="small" x="430" y="156" text-anchor="middle">reconstruction loss (BCE/MSE)</text></svg>
