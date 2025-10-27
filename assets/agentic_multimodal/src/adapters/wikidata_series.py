@@ -5,6 +5,27 @@ WIKIDATA_SPARQL = "https://query.wikidata.org/sparql"
 WIKIDATA_SEARCH = "https://www.wikidata.org/w/api.php"
 UA = {"User-Agent": "agentic-multimodal/0.2 (+your_email@example.com)"}
 
+# Add prompt hint based on year
+def era_hint(year):
+    y = int(year) if (year and year.isdigit()) else None
+    if not y: return ""
+    if y < 1500: return "medieval attire"
+    if y < 1700: return "Renaissance attire"
+    if y < 1800: return "18th-century attire, powdered wig"
+    if y < 1900: return "19th-century attire"
+    if y < 1950: return "early 20th-century attire"
+    return "modern attire"
+
+def person_prompt(name, year=None):
+    prompt = f"""cartoon portrait, {name}, solo, single subject, one person,
+                bust-length, centered, cropped at shoulders, clean background, flat shading, flat colors, minimal lines""".strip()
+    neg_prompt = """group, crowd, second person, extra face, extra head, duplicate, twins,
+                    reflection, mirror, collage, poster wall, background portrait, statues,
+                    disembodied face, body doubles, text, watermark, logo, hands, full body""".strip()
+    if year is not None:
+        prompt += ","+era_hint(year)
+    return prompt, neg_prompt
+
 def wd_sparql(query: str, retries: int = 4, timeout: int = 30) -> dict:
     last = None
     for i in range(retries):
@@ -125,16 +146,6 @@ def _dedupe_series_rows(rows):
     out.sort(key=lambda x: (_yr(x.get("start")), _yr(x.get("end"))))
     return out
 
-# Add prompt hint based on year
-def era_hint(year):
-    y = int(year) if (year and year.isdigit()) else None
-    if not y: return ""
-    if y < 1500: return "medieval attire"
-    if y < 1700: return "Renaissance attire"
-    if y < 1800: return "18th-century attire, powdered wig"
-    if y < 1900: return "19th-century attire"
-    if y < 1950: return "early 20th-century attire"
-    return "modern attire"
 
 def series_by_positions(position_qids: list[str], title: str) -> dict:
     values = " ".join(f"wd:{ensure_qid(q)}" for q in position_qids)
@@ -157,14 +168,14 @@ def series_by_positions(position_qids: list[str], title: str) -> dict:
         name  = b["personLabel"]["value"]
         start = _norm_year(b.get("start", {}).get("value"))
         end   = _norm_year(b.get("end", {}).get("value"))
-        attire = era_hint(start)
+        prompt, neg_prompt = person_prompt(name, start)
         rows.append({
             "qid": qid,
             "name": name,
             "start": start,
             "end": end,
-            "prompt": f"cartoon portrait, {name}, single subject, bust, clean background, flat shading,"+attire,
-            "neg_prompt": "blurry, lowres, multiple subjects",
+            "prompt": prompt,
+            "neg_prompt": neg_prompt,
         })
     items = _dedupe_series_rows(rows)
     return {"title": title, "ordered_by":"start", "items": items}
@@ -200,11 +211,12 @@ def series_by_award(award_qid: str, title: str, restrict_to_subaward_qids: Optio
     for b in data["results"]["bindings"]:
         name = b["personLabel"]["value"]
         year = _norm_year(b.get("when", {}).get("value"))
+        prompt, neg_prompt = person_prompt(name, year)
         items.append({
             "name": name,
             "start": year, "end": "",  # awards are points; put year in 'start'
-            "prompt": f"cartoon portrait, {name}, bust, clean background, flat shading",
-            "neg_prompt": "blurry, lowres"
+            "prompt": prompt,
+            "neg_prompt": neg_prompt,
         })
     # group by year to get a nice chronological poster
     return {"title": title, "ordered_by": "start", "items": _dedupe_span(items)}

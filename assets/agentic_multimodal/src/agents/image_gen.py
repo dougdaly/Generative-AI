@@ -4,6 +4,19 @@ from diffusers import StableDiffusionXLPipeline
 from PIL import Image, ImageDraw, ImageFont
 from schemas import PresidentList
 
+# Set up diffusion model for image generation
+
+def get_sdxl(device=None, model_id="stabilityai/stable-diffusion-xl-base-1.0"):
+    if device is None:
+        device = "cuda" if torch.cuda.is_available() else ("mps" if torch.backends.mps.is_available() else "cpu")
+    dtype = torch.float16 if device=="cuda" else torch.float32
+    pipe = StableDiffusionXLPipeline.from_pretrained(model_id, torch_dtype=dtype)
+    pipe.to(device)
+    pipe.enable_attention_slicing()
+    return pipe, device
+
+
+
 def ensure_pipe(device):
     pipe = StableDiffusionXLPipeline.from_pretrained(
         "stabilityai/stable-diffusion-xl-base-1.0", 
