@@ -31,3 +31,21 @@ class GeoSet(BaseModel):
     region_filter: dict     # e.g., {"continent":"Europe"} or {"country":"United States"}
     areas: List[GeoFeature] # polygons or area IDs
     points: List[GeoFeature]# capitals, cities, etc.
+
+class Person(BaseModel):
+    id: str           # QID
+    name: str
+    birth: str|None
+    death: str|None
+    roles: list[str]  # e.g., "President of the United States"
+    image_url: str|None
+    meta: dict = {}   # source, conf, aliases
+
+class Place(BaseModel):
+    id: str           # QID
+    name: str
+    country: str|None
+    capital: str|None
+    polygon: list[tuple[float,float]]|None  # simplified ring
+    center: tuple[float,float]|None
+    meta: dict = {}

@@ -2,6 +2,8 @@ import torch
 import os
 import shutil
 import kagglehub
+from pathlib import Path
+from IPython.display import Markdown
 
 def get_device(ngpu = 1):
     """ 
@@ -54,3 +56,22 @@ def move_files_recursively(source_dir, destination_dir):
                 shutil.move(source_file_path, destination_file_path)
             except Exception as e:
                 print(f"Error moving {source_file_path}: {e}")
+
+
+def tree_markdown(root, max_depth=6, ignore=("__pycache__", ".DS_Store", ".git")):
+    root = Path(root)
+    lines = [f"```{root.name}/"]
+    def walk(p, prefix, depth):
+        if depth > max_depth:
+            return
+        children = sorted([c for c in p.iterdir() if c.name not in ignore], key=lambda x: (x.is_file(), x.name.lower()))
+        for i, c in enumerate(children):
+            is_last = i == len(children)-1
+            branch = "└── " if is_last else "├── "
+            lines.append(prefix + branch + c.name)
+            if c.is_dir():
+                extension = "    " if is_last else "│   "
+                walk(c, prefix + extension, depth + 1)
+    walk(root, "", 1)
+    lines.append("```")
+    return Markdown("\n".join(lines))
