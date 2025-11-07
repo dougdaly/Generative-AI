@@ -3,6 +3,9 @@
 datasets/
 clip-roberta/
 clip-roberta-finetuned/
+*_cache*
+*.pyc
 *.pt
 temp*.ipynb
+temp*.sh
 Untitled*.ipynb

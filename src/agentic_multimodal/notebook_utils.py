@@ -41,6 +41,9 @@ import uuid
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Tuple
 from pathlib import Path
+from pydantic import ValidationError
+from agentic_multimodal.services.registry import make_registry as _make_reg
+from agentic_multimodal.services.settings import Settings  # for debug helper
 
 # Soft IPython import so this module also works in non-notebook contexts
 try:
@@ -111,89 +114,16 @@ class RegistryBundle:
     manifest_path: Path
 
 
-def make_registry(
-    root: Path | str,
-    *,
-    results_subdir: str = "agentic_multimodal",
-    rate_limit_per_sec: int = 5,
-) -> Tuple[Any, Any, Path]:
-    """Instantiate settings, cache, tools, and return (registry, settings, manifest_path).
-
-    Expectations (import paths):
-    - agentic_multimodal.services.settings.Settings
-    - agentic_multimodal.services.cache.Cache
-    - agentic_multimodal.services.registry.Registry
-    - agentic_multimodal.skills.web_fetcher.WebFetcher
-    - agentic_multimodal.skills.data.wikidata_series.WikidataSeries
-    - agentic_multimodal.skills.data.wikidata_geo.WikidataGeo
-    - agentic_multimodal.skills.gen.sdxl.GenPerson / GenFlag / GenMap (or your impls)
-    - agentic_multimodal.skills.gen.poster_renderer.PosterRenderer
-    - agentic_multimodal.skills.gen.map_renderer.MapRenderer
-    """
-    root = resolve_root(Path(root))
-
-    # Lazy imports with crisp error messages
+def debug_settings(env_path: Path | None = None):
     try:
-        from agentic_multimodal.services.settings import Settings  # type: ignore
-        from agentic_multimodal.services.cache import Cache  # type: ignore
-        from agentic_multimodal.services.registry import Registry  # type: ignore
-        from agentic_multimodal.skills.web_fetcher import WebFetcher  # type: ignore
-        from agentic_multimodal.skills.data.wikidata_series import (
-            WikidataSeries,
-        )  # type: ignore
-        from agentic_multimodal.skills.data.wikidata_geo import (
-            WikidataGeo,
-        )  # type: ignore
-        from agentic_multimodal.skills.gen.sdxl import (
-            GenPerson,
-            GenFlag,
-            GenMap,
-        )  # type: ignore
-        from agentic_multimodal.skills.gen.poster_renderer import (
-            PosterRenderer,
-        )  # type: ignore
-        from agentic_multimodal.skills.gen.map_renderer import (
-            MapRenderer,
-        )  # type: ignore
-    except ImportError as e:  # pragma: no cover
-        raise RuntimeError(
-            "Missing expected module. Ensure your package layout matches the suggested\n"
-            "structure and that you've `pip install -e .` the repo.\n"
-            f"Original import error: {e}"
-        )
-
-    # Settings & cache
-    env_path = root / ".env"
-    settings = Settings(_env_file=str(env_path) if env_path.exists() else None)
-
-    out_dir = results_dir_for(results_subdir, root=root)
-    cache = Cache(base_dir=out_dir)
-
-    # Registry & tool wiring
-    reg = Registry()
-
-    http = WebFetcher(
-        base_url=getattr(settings, "WIKIDATA_ENDPOINT", "https://query.wikidata.org/sparql"),
-        rate_limit_per_sec=rate_limit_per_sec,
-        cache=cache,
-    )
-
-    # Data adapters
-    reg.register(WikidataSeries(http=http, cache=cache))
-    reg.register(WikidataGeo(http=http, cache=cache))
-
-    # Generators (swap in your preferred implementations as needed)
-    # If you only have one class implementing multiple tools, register instances per name.
-    reg.register(GenPerson(model_id=getattr(settings, "SDXL_MODEL_ID", "stabilityai/sdxl"), cache=cache))
-    reg.register(GenFlag(cache=cache))
-    reg.register(GenMap(cache=cache))
-
-    # Renderers
-    reg.register(PosterRenderer(out_dir=out_dir / "runs"))
-    reg.register(MapRenderer(out_dir=out_dir / "runs"))
-
-    manifest_path = out_dir / "manifest.jsonl"
-    return reg, settings, manifest_path
+        s = Settings(_env_file=str(env_path) if env_path and env_path.exists() else None)
+        print("✅ Settings OK"); return s
+    except ValidationError as e:
+        print("❌ Settings validation failed:")
+        for err in e.errors():
+            loc = ".".join(str(x) for x in err.get("loc", []))
+            print(f"- {loc}: {err['msg']}  (input={err.get('input')!r})")
+        raise
 
 # --- Flow execution ---------------------------------------------------------
 
@@ -251,3 +181,30 @@ async def run_flow(prompt: str, reg: Any) -> Dict[str, Any]:
     # Unknown kind: surface the router's decision for inspection
     return {"run_id": run_id, "kind": str(kind), "request": getattr(req, "model_dump", lambda: req)()} 
 
+def make_people_poster(
+    reg,
+    *,
+    series_key: str,
+    title: str,
+    layout: str = "per_term",     # "per_term" | "per_person_auto"
+    outdir: str = None,
+    outpath: str = None,
+    cols: int = 6,
+    gen_kwargs: dict | None = None,   # steps, guidance_scale, size, seed...
+):
+    people = reg.series.run(series_key)
+    from agentic_multimodal.skills.adapters import name_year_pairs
+    from agentic_multimodal.skills.image_gen import generate_person_images
+
+    pairs = name_year_pairs(people, mode=layout)
+    outdir = outdir or f"artifacts/{series_key}_{layout}_portraits"
+    paths = generate_person_images(pairs, outdir=outdir, **(gen_kwargs or {}))
+
+    if layout == "per_term":
+        spec = reg.adapters.people_per_term(people, title=title, image_paths=paths, cols=cols)
+    else:
+        spec = reg.adapters.people_per_person(people, title=title, image_paths=paths, cols=cols)
+
+    outpath = outpath or f"artifacts/poster_{series_key}_{layout}.webp"
+    reg.render.poster(spec, outpath=outpath)
+    return outpath
