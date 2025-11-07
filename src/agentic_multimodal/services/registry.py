@@ -11,7 +11,6 @@ from agentic_multimodal.skills.data.wikidata_geo import WikidataGeo, WikidataGeo
 
 from agentic_multimodal.skills.series.positions import PositionsProvider
 from agentic_multimodal.skills.series.award import AwardProvider
-from agentic_multimodal.skills.series.potus import POTUSProvider
 from agentic_multimodal.skills.series.aliases import PreconfiguredProvider
 
 from agentic_multimodal.skills.geo.europe_flags import EuropeCountriesWithFlags
@@ -97,26 +96,17 @@ def make_registry(
         checkpointer=checkpointer,
         series=series,
         geo=geo,
-        render=render,        # <---
-        adapters=adapters,    # <---
-    )
-    return SimpleNamespace(
-        root=root_path,
-        settings=settings,
-        llm=llm,
-        checkpointer=checkpointer,
-        series=series,
-        geo=geo,
+        render=render,       
+        adapters=adapters,
     )
 
-def _build_series() -> WikidataSeries:
+# services/registry.py
+def _build_series():
     sparql = WikidataSPARQL()
-    s = WikidataSeries(sparql, language="en")
+    s = WikidataSeries(sparql, language="[AUTO_LANGUAGE],en")
     s.register(PositionsProvider())
     s.register(AwardProvider())
-    s.register(PreconfiguredProvider(
-        "potus", "U.S. Presidents", base=PositionsProvider(), position_qids=["Q11696"]
-    ))
+    s.register(PreconfiguredProvider("potus","U.S. Presidents", base=PositionsProvider(), position_qids=["Q11696"]))
     s.register(PreconfiguredProvider(
         "monarchs_eng_gb_uk", "Monarchs of England/GB/UK",
         base=PositionsProvider(),

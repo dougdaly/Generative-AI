@@ -181,14 +181,19 @@ def get_claim_values(qids: Sequence[str], prop: str) -> Dict[str, List[str]]:
             out.setdefault(s, []).append(str(o))
     return out
 
-def series_members(series_qid: str, limit: int = 1000, lang: str = "en") -> List[Dict[str, object]]:
-    """Items where ?item wdt:P179 wd:<series_qid> (part of the series)."""
+def series_members(series_qid: str, limit: int = 1000, lang_chain: str = "[AUTO_LANGUAGE],en") -> List[Dict[str, object]]:
+    """
+    Items where ?item wdt:P179 wd:<series_qid> (part of a series).
+    Returns both ?item and ?label where ?label always resolves (falls back to QID).
+    """
     q = f"""
-    SELECT ?item ?itemLabel WHERE {{
+    SELECT ?item ?label WHERE {{
       ?item wdt:P179 wd:{series_qid} .
-      SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang}". }}
+      SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang_chain}" . }}
+      # Fallback: if ?itemLabel is missing, use the QID tail
+      BIND( COALESCE(?itemLabel, STRAFTER(STR(?item), "/entity/")) AS ?label )
     }}
-    ORDER BY ?itemLabel
+    ORDER BY ?label
     LIMIT {int(limit)}
     """
     return run(q)

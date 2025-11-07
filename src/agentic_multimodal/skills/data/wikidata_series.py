@@ -32,7 +32,9 @@ class WikidataSeries:
     def available(self) -> List[str]:
         return sorted(self._providers.keys())
 
-    def run(self, key: str, **params) -> List[Person]:
-        if key not in self._providers:
-            raise KeyError(f"Unknown series '{key}'. Have: {self.available()}")
-        return self._providers[key].fetch(self.sparql, language=self.language, **params)
+    def run(self, key: str, **overrides):
+        prov = self._providers[key]
+        params = {**getattr(prov, "_fixed", {}), **overrides}
+        params.setdefault("language", self.language)  # ensure it’s there
+        base = getattr(prov, "base", prov)            # unwrap alias
+        return base.fetch(self.sparql, **params)      # pass once
