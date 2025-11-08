@@ -50,6 +50,10 @@ def _award_year(terms) -> str | None:
         if y: return y
     return None
 
+def _label_for_award(name: str, year: str | None) -> str:
+    return f"{name}\n{year}" if year else name
+
+
 def _hash_path(path: str) -> str:
     h = hashlib.sha1()
     with open(path, "rb") as f:
@@ -65,16 +69,16 @@ def _asset_from_path(path: str) -> ImageAsset:
 def people_to_posterspec_per_person(people: List[Person], *, title: str, image_paths: Iterable[str], cols: int = 6) -> PosterSpec:
     items: List[PosterItem] = []
     for p, path in zip(people, image_paths):
-        # leader vs award heuristic stays the same
         has_end = any(getattr(t, "end", None) for t in p.terms)
         if has_end:
-            ys, ye = _span_first_last_years(p.terms)  # returns string years already
-            label = _label_for_span(p.name, ys, ye)   # now formats with en dash and open end
+            ys, ye = _span_first_last_years(p.terms)   # strings
+            label = _label_for_span(p.name, ys, ye)    # keeps en-dash for leaders
         else:
-            y = _award_year(p.terms)                  # string year or None
-            label = _label_for_span(p.name, y, None)
+            y = _award_year(p.terms)                   # year string
+            label = _label_for_award(p.name, y)        # ← no trailing dash
         items.append(PosterItem(image=_asset_from_path(path), label=label))
     return PosterSpec(title=title, grid_cols=cols, items=items)
+
 
 
 def people_to_posterspec_per_term(people: List[Person], *, title: str, image_paths: Iterable[str], cols: int = 6) -> PosterSpec:

@@ -69,19 +69,9 @@ def make_registry(
         country_qid="Q16", instance_of_qids=["Q11828004", "Q190113"],
     ))
 
-    try:
-        from agentic_multimodal.skills.gen_map_renderer import render_map
-    except Exception:
-        render_map = None
-
-    from agentic_multimodal.skills.adapters.people_to_poster import (
-        people_to_posterspec_per_person,
-        people_to_posterspec_per_term,
-    )
-
     render = SimpleNamespace(
-        poster=compose_poster_spec,   # may be None if you haven't implemented yet
-        map=render_map,               # same
+        poster=compose_poster_spec, 
+        map=render_map,
     )
 
     adapters = SimpleNamespace(
