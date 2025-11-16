@@ -3,6 +3,8 @@ import hashlib
 from agentic_multimodal.schemas.entities import Person
 from agentic_multimodal.schemas.artifacts import ImageAsset, PosterItem, PosterSpec
 from typing import Iterable, List, Optional, Tuple
+from agentic_multimodal.skills.image_gen import generate_person_images   # your SDXL wrapper
+from pathlib import Path
 
 import re
 _QID = re.compile(r"^Q\d+$")

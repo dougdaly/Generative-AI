@@ -13,7 +13,7 @@ from agentic_multimodal.skills.series.positions import PositionsProvider
 from agentic_multimodal.skills.series.award import AwardProvider
 from agentic_multimodal.skills.series.aliases import PreconfiguredProvider
 
-from agentic_multimodal.skills.geo.europe_flags import EuropeCountriesWithFlags
+from agentic_multimodal.skills.geo.region_flags import RegionCountriesWithFlags
 from agentic_multimodal.skills.geo.subdivisions import SubdivisionsByCountryProvider
 
 from agentic_multimodal.skills.gen_poster_renderer import compose_poster_spec
@@ -22,6 +22,11 @@ from agentic_multimodal.skills.adapters.people_to_poster import (
     people_to_posterspec_per_person,
     people_to_posterspec_per_term,
 )
+from agentic_multimodal.skills.series.candidates import AthletesByCitizenship, CurrentNationalLeaders
+from agentic_multimodal.skills.series.rankers import PageviewsRanker, OverridesRanker
+from agentic_multimodal.skills.series.per_country import PerCountrySelector
+from agentic_multimodal.skills.selectors.famous_by_country import FamousPersonsByCountry
+
 
 
 def make_registry(
@@ -41,8 +46,9 @@ def make_registry(
     geo = WikidataGeoSets(geo_client, language="en")
 
     # generic providers
-    geo.register(EuropeCountriesWithFlags())
+    geo.register(RegionCountriesWithFlags())
     geo.register(SubdivisionsByCountryProvider())  # key="subdivisions"
+    geo.register(FamousPersonsByCountry())
 
     # handy aliases (preconfigured params)
     # QIDs:
@@ -57,7 +63,25 @@ def make_registry(
         def fetch(self, client, *, language="en", **params):
             base = SubdivisionsByCountryProvider()
             return base.fetch(client, language=language, **{**self._fixed, **params})
+    class _GeoAlias:
+        def __init__(self, key, title, **fixed):
+            self.key, self.title, self._fixed = key, title, fixed
+        def fetch(self, client, *, language="en", **params):
+            base = RegionCountriesWithFlags()
+            return base.fetch(client, language=language, **{**self._fixed, **params})
 
+    geo.register(_GeoAlias(
+        key="europe_countries_flags",
+        title="Europe — countries, flags & capital coords",
+        region_qids=["Q46"],                   # Europe
+        instance_of_qids=["Q6256"],            # sovereign states
+    ))
+    geo.register(_GeoAlias(
+        key="asia_countries_flags",
+        title="Asia — countries, flags & capital coords",
+        region_qids=["Q48"],
+        instance_of_qids=["Q6256"],
+    ))
     geo.register(_Alias(
         key="us_states_flags",
         title="U.S. states — flags & capital coords",
@@ -91,7 +115,7 @@ def make_registry(
     )
 
 # services/registry.py
-def _build_series():
+def _build_series() -> WikidataSeries:
     sparql = WikidataSPARQL()
     s = WikidataSeries(sparql, language="[AUTO_LANGUAGE],en")
     s.register(PositionsProvider())
@@ -105,5 +129,19 @@ def _build_series():
     s.register(PreconfiguredProvider(
         "nobel_physics", "Nobel Prize in Physics — Laureates",
         base=AwardProvider(), award_qid="Q38104",
+    ))
+    # Generic selectors:
+    pv = PageviewsRanker(days=60)
+    s.register(PerCountrySelector(
+        key="per_country_popular_person_sports",
+        title="Most popular sportsperson by country",
+        provider=AthletesByCitizenship(),
+        ranker=pv,
+    ))
+    s.register(PerCountrySelector(
+        key="per_country_current_leader",
+        title="Current national leader by country",
+        provider=CurrentNationalLeaders(),
+        ranker=pv,   # pageviews also works for leaders; swap if you prefer sitelinks
     ))
     return s

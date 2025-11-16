@@ -1,3 +1,5 @@
+# Deprecated file: europe_flags.py
+
 from typing import Dict, List, Optional
 from agentic_multimodal.schemas.entities import Country
 from agentic_multimodal.skills.data.wikidata_geo import WikidataGeo, GeoProvider

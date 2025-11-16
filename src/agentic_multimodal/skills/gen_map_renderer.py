@@ -1,10 +1,158 @@
 from __future__ import annotations
 from typing import Optional, Tuple
 import os, math, hashlib
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageOps
+from dataclasses import dataclass
+from math import log, tan, pi
+import io, hashlib, requests
+
 
 # ------------ helpers -----------------------------------------------------------
-from PIL import Image, ImageDraw, ImageFont
+# ---- 1) pure geo projection (no pixels) ----
+def _mercator_xy(lon: float, lat: float) -> tuple[float, float]:
+    # clamp latitude to avoid infinities (~85 deg)
+    lat = max(min(lat, 85.05112878), -85.05112878)
+    x = lon
+    y = (180.0/pi) * log(tan(pi/4.0 + (lat*pi/180.0)/2.0))
+    return x, y
+
+def _equirect_xy(lon: float, lat: float) -> tuple[float, float]:
+    return lon, lat
+
+# ---- 2) viewport projector (pixels) ----
+# skills/gen_map_renderer.py (or wherever your projector lives)
+from dataclasses import dataclass
+import math
+
+@dataclass(frozen=True)
+class ViewportProjector:
+    west: float; south: float; east: float; north: float
+    width: int; height: int; margin: int = 20
+    projection: str = "mercator"  # "mercator" | "equirect"
+
+    def __post_init__(self):
+        # expose bbox and inner drawable area
+        object.__setattr__(self, "bbox", (self.west, self.south, self.east, self.north))
+        Wm = max(1, self.width  - 2*self.margin)
+        Hm = max(1, self.height - 2*self.margin)
+        object.__setattr__(self, "_Wm", Wm)
+        object.__setattr__(self, "_Hm", Hm)
+
+        if self.projection == "mercator":
+            # clamp to Mercator safe range
+            south = max(min(self.south, 85.05112878), -85.05112878)
+            north = max(min(self.north, 85.05112878), -85.05112878)
+            def m(lat_deg: float) -> float:
+                lat = math.radians(max(min(lat_deg, 85.05112878), -85.05112878))
+                return math.log(math.tan(math.pi/4.0 + lat/2.0))
+            yS, yN = m(south), m(north)
+            object.__setattr__(self, "_mSouth", yS)
+            object.__setattr__(self, "_mNorth", yN)
+        else:
+            # equirectangular: linear lat
+            object.__setattr__(self, "_mSouth", math.radians(self.south))
+            object.__setattr__(self, "_mNorth", math.radians(self.north))
+
+    def project(self, lon: float, lat: float) -> tuple[int, int]:
+        """
+        lon,lat in degrees → (x,y) pixels.
+        """
+        # normalize lon to bbox span if needed
+        L = self.east - self.west
+        x_norm = (lon - self.west) / L
+
+        if self.projection == "mercator":
+            # top at north (smaller y), bottom at south
+            def m(lat_deg: float) -> float:
+                lat = math.radians(max(min(lat_deg, 85.05112878), -85.05112878))
+                return math.log(math.tan(math.pi/4.0 + lat/2.0))
+            y_lat = m(lat)
+            y_norm = (self._mNorth - y_lat) / (self._mNorth - self._mSouth)
+        else:  # equirectangular
+            y_lat = math.radians(lat)
+            y_norm = (math.radians(self.north) - y_lat) / (math.radians(self.north) - math.radians(self.south))
+
+        x_px = self.margin + int(round(x_norm * self._Wm))
+        y_px = self.margin + int(round(y_norm * self._Hm))
+        return x_px, y_px
+
+def _fetch_image_cached(url: str, cache_dir: str, timeout: int = 8, retries: int = 1) -> Image.Image | None:
+    os.makedirs(cache_dir, exist_ok=True)
+    key = hashlib.sha1(url.encode("utf-8")).hexdigest()[:16] + ".bin"
+    path = os.path.join(cache_dir, key)
+
+    # cache hit
+    if os.path.isfile(path):
+        try:
+            return Image.open(path).convert("RGB")
+        except Exception:
+            pass  # fall through to re-download
+
+    # download
+    for _ in range(retries + 1):
+        try:
+            r = requests.get(url, timeout=timeout)
+            if r.status_code == 200:
+                im = Image.open(io.BytesIO(r.content)).convert("RGB")
+                im.save(path)  # simple cache
+                return im
+        except Exception:
+            continue
+    return None
+
+def _circle_thumb(im: Image.Image, diameter: int) -> tuple[Image.Image, Image.Image]:
+    d = max(8, int(diameter))  # guard tiny
+    im = im.resize((d, d), Image.Resampling.LANCZOS)
+    mask = Image.new("L", (d, d), 0)
+    ImageDraw.Draw(mask).ellipse((0, 0, d-1, d-1), fill=255)
+    return im, mask
+
+
+def _measure_text(draw, text, font):
+    bbox = draw.multiline_textbbox((0,0), text, font=font, spacing=2)
+    return bbox[0], bbox[1], bbox[2]-bbox[0], bbox[3]-bbox[1]
+
+def _draw_text(draw, text, xy, font):
+    draw.multiline_text(
+        xy, text, font=font, fill="black", spacing=2,
+        stroke_width=3, stroke_fill="white",
+        align="center"
+    )
+
+def _too_close(used_xy: list[tuple[int, int]], x: int, y: int, min_sep_px: int) -> bool:
+    """Return True if (x,y) is within min_sep_px of any prior (ux,uy)."""
+    if not used_xy or min_sep_px <= 0:
+        return False
+    r2 = min_sep_px * min_sep_px
+    for ux, uy in used_xy:
+        dx = x - ux
+        dy = y - uy
+        if dx*dx + dy*dy <= r2:
+            return True
+    return False
+
+
+def _raster_url(url: str, timeout=6.0):
+    if not url: return None
+    if url.lower().endswith(".svg"):
+        return None  # optional: rasterize via cairosvg if you want
+    try:
+        r = requests.get(url, timeout=timeout, headers={"User-Agent":"Mozilla/5.0"})
+        r.raise_for_status()
+        return Image.open(io.BytesIO(r.content)).convert("RGBA")
+    except Exception:
+        return None
+
+def _round_mask(w, h, radius):
+    m = Image.new("L", (w, h), 0)
+    d = ImageDraw.Draw(m)
+    d.rounded_rectangle((0, 0, w-1, h-1), radius=radius, fill=255)
+    return m
+
+def _circle_mask(d):
+    m = Image.new("L", (d, d), 0)
+    ImageDraw.Draw(m).ellipse((0, 0, d-1, d-1), fill=255)
+    return m
 
 def _pastel_fill_for(name: str) -> tuple[int,int,int]:
     # stable pastel color per country
@@ -15,37 +163,32 @@ def _pastel_fill_for(name: str) -> tuple[int,int,int]:
     b = 160 + (h      ) % 80
     return (r, g, b)
 
-def _paint_basemap(canvas, draw, bbox, W, H, margin, upscale):
-    try:
-        from agentic_multimodal.skills.data.natural_earth import iter_admin0_polys
-    except Exception:
-        return
+def _paint_basemap(canvas, draw, proj, upscale):
+    from agentic_multimodal.skills.data.natural_earth import iter_admin0_polys
 
-    # Sea fill first
-    sea = (198, 221, 247)           # light blue
-    draw.rectangle([0,0,W,H], fill=sea)
+    W, H = canvas.size
+    sea = (198, 221, 247)
+    draw.rectangle([0, 0, W, H], fill=sea)
 
-    # Country fills with holes
-    for feat in iter_admin0_polys(bbox) or []:
+    # country fills
+    for feat in iter_admin0_polys(proj.bbox) or []:
         fill = _pastel_fill_for(feat["name"])
         for poly in feat["polys"]:
-            outer_px = [_project(lon, lat, bbox, W, H, margin) for (lon,lat) in poly["outer"]]
-            # Fill exterior
+            outer_px = [proj.project(lon, lat) for (lon, lat) in poly["outer"]]
             draw.polygon(outer_px, fill=fill)
-            # Punch holes by painting sea inside them
             for hole in poly["holes"]:
-                hole_px = [_project(lon, lat, bbox, W, H, margin) for (lon,lat) in hole]
+                hole_px = [proj.project(lon, lat) for (lon, lat) in hole]
                 draw.polygon(hole_px, fill=sea)
 
-    # Thin border stroke
     border = (150, 161, 173)
-    for feat in iter_admin0_polys(bbox) or []:
+    for feat in iter_admin0_polys(proj.bbox) or []:
         for poly in feat["polys"]:
-            outer_px = [_project(lon, lat, bbox, W, H, margin) for (lon,lat) in poly["outer"]]
-            draw.line(outer_px, fill=border, width=max(1, upscale))
+            outer_px = [proj.project(lon, lat) for (lon, lat) in poly["outer"]]
+            draw.line(outer_px + outer_px[:1], fill=border, width=max(1, upscale))
             for hole in poly["holes"]:
-                hole_px = [_project(lon, lat, bbox, W, H, margin) for (lon,lat) in hole]
-                draw.line(hole_px, fill=border, width=max(1, upscale))
+                hole_px = [proj.project(lon, lat) for (lon, lat) in hole]
+                draw.line(hole_px + hole_px[:1], fill=border, width=max(1, upscale))
+
 
 def _fetch_url_bytes(url: str, timeout: int = 15) -> Optional[bytes]:
     try:
@@ -118,15 +261,6 @@ def _lonlat_bbox(markers):
     pad_y = max(1.0, (north - south) * 0.08)
     return (west - pad_x, south - pad_y, east + pad_x, north + pad_y)
 
-def _project(lon, lat, bbox, w, h, margin):
-    west, south, east, north = bbox
-    # Plate Carree
-    x = (lon - west) / (east - west + 1e-9)
-    y = 1.0 - (lat - south) / (north - south + 1e-9)
-    x_px = int(margin + x * (w - 2 * margin))
-    y_px = int(margin + y * (h - 2 * margin))
-    return x_px, y_px
-
 def _rasterize_svg_to_png(svg_bytes: bytes, out_png_path: str, px: int) -> Optional[str]:
     try:
         import cairosvg
@@ -193,16 +327,29 @@ def _load_marker_image(marker, cache_dir: str, marker_px: int) -> Optional[Image
 
 
 # ---- PUBLIC API -------------------------------------------------------------
-
 def render_map(spec, *, size=(2000,1200), margin=40,
-               marker_px=84, label_font_px=20,
-               outdir="artifacts/maps",
-               show_labels=True,
-               show_country_names=True,
-               show_capital_names=False,
-               min_flag_separation_px=36,
-               min_label_separation_px=48,
-               max_labels=None) -> str:
+            marker_px=84, label_font_px=20,
+            outdir="artifacts/maps",
+            show_labels=True,
+            show_country_names=True,
+            show_capital_names=False,
+            min_flag_separation_px=36,
+            min_label_separation_px=48,
+            max_labels: int|None =None,
+            show_pick_images: bool=True,
+            pick_image_size_px=44,
+            show_flag_markers=False,
+            flag_marker_size_px=40,
+            flag_corner_radius_px=6,
+            label_offset_px=8,
+            fetch_timeout=8.0,          
+            fetch_retries=1,            
+            cache_dir=None,     
+        ) -> str:
+
+    if cache_dir is None:
+        cache_dir = os.path.join(outdir, "_http_cache")
+    os.makedirs(cache_dir, exist_ok=True)
 
     upscale = 2  # supersample factor
     W0, H0 = size
@@ -215,8 +362,10 @@ def render_map(spec, *, size=(2000,1200), margin=40,
     draw = ImageDraw.Draw(canvas)
     font = ImageFont.truetype(_resolve_font(), label_font_px)
 
-    bbox = _lonlat_bbox(spec.markers)
-    _paint_basemap(canvas, draw, bbox, W, H, margin, upscale)
+    (west, south, east, north) = _lonlat_bbox(spec.markers)
+    proj = ViewportProjector(west, south, east, north, width=W, height=H, margin=margin, projection="mercator")
+    _paint_basemap(canvas, draw, proj, upscale)
+
     # Title
     title = getattr(spec, "title", None) or getattr(spec, "region", "Map")
     tw, th = draw.textbbox((0,0), title, font=font)[2:]
@@ -230,50 +379,95 @@ def render_map(spec, *, size=(2000,1200), margin=40,
     used_for_flags = []
     used_for_labels = []
     labels_drawn = 0
+    def _fetch_thumb(url: str) -> Image.Image | None:
+        if not url:
+            return None
+        os.makedirs(cache_dir, exist_ok=True)
+        key = hashlib.sha1(url.encode("utf-8")).hexdigest()[:24]
+        path = os.path.join(cache_dir, key + ".png")
+        if os.path.exists(path):
+            try:
+                return Image.open(path).convert("RGBA")
+            except Exception:
+                pass
+        if not fetch_images:
+            return None
+        try:
+            import requests
+            from io import BytesIO
+            r = requests.get(url, timeout=fetch_timeout)
+            r.raise_for_status()
+            im = Image.open(BytesIO(r.content)).convert("RGBA")
+            im.thumbnail((pick_thumb_px, pick_thumb_px), Image.Resampling.LANCZOS)
+            im.save(path, "PNG", optimize=True)
+            return im
+        except Exception:
+            return None
+
+    # --- draw markers ---
     for m in spec.markers:
-        if m.lon is None or m.lat is None:
-            continue
-        x, y = _project(m.lon, m.lat, bbox, W, H, margin)
+        x, y = proj.project(m.lon, m.lat)
 
-        # --- flag de-overlap ---
-        def _too_close(pts, x, y, min_d):
-            for (px, py) in pts:
-                if (px - x)**2 + (py - y)**2 < (min_d**2):
-                    return True
-            return False
+        used_portrait = False
+        used_flag = False
+        meta = m.meta or {}
 
-        place_flag = not _too_close(used_for_flags, x, y, min_flag_separation_px)
-        im = _load_marker_image(m, cache_dir, marker_px) if place_flag else None
+        # ---- 1) Portrait (prefer local path; then URL) ----
+        im = None
+        if show_pick_images:
+            img_path = meta.get("pick_image_path")  # must be a string now
+            if img_path and os.path.exists(img_path):
+                im = Image.open(img_path).convert("RGBA")
+            else:
+                img_url = meta.get("pick_image_url")
+                if img_url:
+                    im = _fetch_image_cached(img_url, cache_dir, timeout=fetch_timeout, retries=fetch_retries)
 
-        if im is None:
-            # draw pin if we skipped the flag or couldn't load
-            r = max(2, marker_px // 8)
-            draw.ellipse([(x-r, y-r), (x+r, y+r)], fill="#666c7a", outline=None)
-        else:
-            canvas.paste(im, (int(x - im.width//2), int(y - im.height//2)), im)
-            used_for_flags.append((x, y))
+        if im:
+            # circular thumb; diameter = pick_image_size_px
+            thumb, mask = _circle_thumb(im, int(pick_image_size_px)*upscale)
+            tx = int(x - thumb.width  / 2)
+            ty = int(y - thumb.height / 2)
+            canvas.paste(thumb, (tx, ty), mask)
+            used_portrait = True
 
-        # --- label de-overlap ---
-        label = ""
-        if show_labels and show_country_names:
+        # ---- 2) Flag box (only if no portrait) ----
+        if not used_portrait and show_flag_markers:
+            flag_url = meta.get("flag_url")
+            if flag_url:
+                fl = _fetch_image_cached(flag_url, cache_dir, timeout=fetch_timeout, retries=fetch_retries)
+                if fl:
+                    flag_box = _round_rect(fl, size_px=int(flag_marker_size_px), radius_px=int(flag_corner_radius_px))
+                    fx = int(x - flag_box.width  / 2)
+                    fy = int(y - flag_box.height / 2)
+                    # use alpha channel if present
+                    canvas.paste(flag_box, (fx, fy), flag_box.split()[-1] if flag_box.mode == "RGBA" else None)
+                    used_flag = True
+
+        # ---- 3) Tiny dot (only if neither portrait nor flag) ----
+        if not used_portrait and not used_flag:
+            r_dot = max(2, int(marker_px / 3))
+            draw.ellipse((x - r_dot, y - r_dot, x + r_dot, y + r_dot), fill=(38,132,255))
+
+        # ---- Label placement: nudge based on what we drew ----
+        if show_labels:
             label = (m.label or "").strip()
+            if label and not _too_close(used_for_labels, x, y, min_label_separation_px):
+                # baseline offset: dot
+                dy = 6 + (marker_px // 2)
+                # bump if portrait or flag is present
+                if used_portrait:
+                    dy = 6 + int(pick_image_size_px / 2)
+                elif used_flag:
+                    dy = 6 + int(flag_marker_size_px / 2)
 
-        if show_labels and show_capital_names:
-            cap = (m.meta or {}).get("capital_name")
-            if cap:
-                label = f"{label}\n{cap}" if label else cap
+                bx, by, bw, bh = _measure_text(draw, label, font)
+                lx, ly = int(x - bw/2), int(y + dy)
+                _draw_text(draw, label, (lx, ly), font)
+                used_for_labels.append((x, y))
+                labels_drawn += 1
 
-        if show_labels and label:
-            # simple screen-space declutter
-            if not _too_close(used_for_labels, x, y, min_label_separation_px):
-                if max_labels is None or labels_drawn < max_labels:
-                    bbox_t = draw.textbbox((0,0), label, font=font)
-                    lw, lh = bbox_t[2]-bbox_t[0], bbox_t[3]-bbox_t[1]
-                    lx, ly = int(x - lw/2), int(y + marker_px*0.55)
-                    draw.text((lx, ly), label, font=font, fill="black",
-                            stroke_width=3, stroke_fill="white")
-                    used_for_labels.append((x, y))
-                    labels_drawn += 1
+
     # Output
     safe_title = "".join(ch if ch.isalnum() or ch in " -_." else "_" for ch in title)
     if not safe_title.strip():

@@ -5,6 +5,16 @@ from typing import List, Optional, Tuple
 # Domain entities (research)
 # -------------------------
 
+class Country(BaseModel):
+    model_config = ConfigDict(frozen=True)
+    qid: str
+    name: str
+    capital_name: Optional[str] = None
+    capital_coords: Optional[Tuple[float, float]] = None  # (lon, lat)
+    flag_svg_url: Optional[str] = None
+    population: Optional[int] = None          # NEW
+    area_km2: Optional[float] = None          # NEW
+
 class OfficeTerm(BaseModel):
     model_config = ConfigDict(frozen=True)
     start: Optional[str] = None   # ISO 'YYYY-MM-DD'
@@ -21,11 +31,3 @@ class Person(BaseModel):
     name: str
     image_url: Optional[str] = None
     terms: List[OfficeTerm] = Field(default_factory=list)
-
-class Country(BaseModel):
-    model_config = ConfigDict(frozen=True)
-    qid: str
-    name: str
-    capital_name: Optional[str] = None
-    capital_coords: Optional[Tuple[float, float]] = None  # (lon, lat)
-    flag_svg_url: Optional[str] = None

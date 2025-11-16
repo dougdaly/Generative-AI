@@ -51,20 +51,62 @@ class WikidataHTTPError(Exception):
     status: int
     text: str
 
+# skills/data/wikidata_sparql.py
+import hashlib, os, time, json
+import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+
 class WikidataSPARQL:
-    def __init__(self, endpoint: str = WIKIDATA_SPARQL_URL, headers: Dict[str, str] = None, timeout: int = 30):
-        self.endpoint = endpoint
-        self.headers = headers or HEADERS
+    endpoint = "https://query.wikidata.org/sparql"
+    headers  = {
+        "Accept": "application/sparql-results+json",
+        # add a real UA per WDQS policy
+        "User-Agent": "AgenticMultimodal/1.0 (https://github.com/yourrepo; you@example.com)"
+    }
+
+    def __init__(self, timeout=45, cache_dir=".wdqs_cache"):
         self.timeout = timeout
+        self.cache_dir = cache_dir
+        os.makedirs(cache_dir, exist_ok=True)
 
-    def run(self, query: str) -> List[Dict]:
-        r = requests.get(self.endpoint, params={"query": query, "format": "json"},
-                         headers=self.headers, timeout=self.timeout)
-        if r.status_code != 200:
-            raise WikidataHTTPError(r.status_code, r.text)
+        # Robust session with retry & backoff
+        self.session = requests.Session()
+        retry = Retry(
+            total=5,                # retry both connect/read
+            connect=3,
+            read=3,
+            backoff_factor=0.75,    # exponential backoff (0.75, 1.5, 3.0, ...)
+            status_forcelist=(429, 500, 502, 503, 504),
+            allowed_methods=frozenset(["GET"]),
+            raise_on_status=False,
+        )
+        self.session.mount("https://", HTTPAdapter(max_retries=retry))
+
+    def _key(self, q: str) -> str:
+        return hashlib.sha1(q.encode("utf-8")).hexdigest()[:16] + ".json"
+
+    def run(self, query: str):
+        # memoize to avoid hammering WDQS
+        key = self._key(query)
+        path = os.path.join(self.cache_dir, key)
+        if os.path.exists(path):
+            with open(path, "r") as f:
+                return json.load(f)
+
+        # WDQS supports a 'timeout' param (ms). Use generous, still bounded.
+        params = {"query": query, "format": "json", "timeout": str(60000)}  # 60s server-side
+
+        # Simple client-side rate limit (<= 1 req/sec per WDQS etiquette)
+        time.sleep(1.05)
+
+        r = self.session.get(self.endpoint, params=params, headers=self.headers, timeout=self.timeout)
+        r.raise_for_status()
         data = r.json()
-        return data.get("results", {}).get("bindings", [])
-
+        out = data.get("results", {}).get("bindings", [])
+        with open(path, "w") as f:
+            json.dump(out, f)
+        return out
 
 
 # ---- Config ----
