@@ -15,7 +15,8 @@ The notebooks are built with the latest Python libraries, support multiple GPU p
 - **langGraph-alphabet.ipynb** → creates an AI-powered children’s alphabet poster with words + images.  
 
 ### 🔹 GANs (Generative Adversarial Networks)
-- **GAN_demo.ipynb** → trains a GAN on a celebrity dataset, demonstrating generator vs discriminator competition and pitfalls of the approach.  
+- **dcgan_faces_tutorial.ipynb** → trains a GAN on a celebrity dataset, demonstrating generator vs discriminator competition and pitfalls of the approach.
+- **GAN_for_images_MLP_vs_CNN** → Proves "NN architecture matters". Compares the results of building a GAN with a dense NN vs a CNN. The dense NN fails as it does not have a sense of space.
 
 ### 🔹 CLIP (Contrastive Language–Image Pretraining)
 - **CLIP-from-ground-up.ipynb** → builds a CLIP model from scratch on Flickr dataset (images + captions).  
