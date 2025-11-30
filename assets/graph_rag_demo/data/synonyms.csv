@@ -1,23 +1,15 @@
 term|label|code
-joint tap|Procedure|PROC-123
-arthrocentesis|Procedure|PROC-123
-ncs|Procedure|PROC-456
-nerve conduction|Procedure|PROC-456
 frozen shoulder|Diagnosis|M75.0x
-frozen shoulder|Diagnosis|M75.01
-M75.01|Diagnosis|M75.0x
-M75.02|Diagnosis|M75.0x
-E11.40|Diagnosis|E11.40
-bilateral|Modifier|50
+rotator cuff tear|Diagnosis|M75.1x
+rotator cuff|Diagnosis|M75.1x
+shoulder impingement|Diagnosis|M75.4x
+neck pain|Diagnosis|M54.2x
+cervicalgia|Diagnosis|M54.2x
+tendinitis|Diagnosis|M75.2x
+diabetic neuropathy|Diagnosis|E11.4x
 arthrocentesis|Procedure|20610
+joint tap|Procedure|20610
 tpi|Procedure|20552
 trigger point injection|Procedure|20552
 tendon sheath injection|Procedure|20550
-frozen shoulder|Diagnosis|M75.0x
-rotator cuff tear|Diagnosis|M75.1x
-shoulder impingement|Diagnosis|M75.4x
-neck pain|Diagnosis|M54.2x
-tendinitis|Diagnosis|M75.2x
-joint injection|Procedure|20552
-rotator cuff|Diagnosis|M75.1x
-cervicalgia|Diagnosis|M54.2x
+bilateral|Modifier|50

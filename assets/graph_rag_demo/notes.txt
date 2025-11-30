@@ -1,0 +1,25 @@
+At top (node_docs.yaml) describes nodes, docs, edges, and synonyms.
+
+For our nodes: 
+- diagnosis  (icd10.csv, 75000 rows) map diagnosis code to a description.
+- procedure (procedures.csv) map 7 procedure codes to something interesting, plus another 50 which just map to "demo procedure xxx" (where xxx is the value of the procedure code).
+- coverage (coverage.yaml) have 2 policies which both map to the payer "CMS" and map to a separate coverage description.
+- modifier (modifiers.csv) maps 1 modifier code to a name (50 -> bilateral)
+- rule (rules.yaml) has one rule "ncs_auth" which states 'requires prior auth unless E11.40 documented'
+
+For our edges - described in edges_taxonomy.csv and policy_sets.yaml
+edges_taxonomy maps src_label/src_code to dest_label/dest_code via a connection called 'etype'; also has 'condition' with only 1 example "if bilateral"
+policy_sets.yaml maps codes to labels. icd for diagnosis, cpt for procedures, cms for policies. There are 5 diagnosis sets, 4 procedure sets and 4 policy sets.
+
+For synonyms - synonyms.csv - covers 7 diagnoses, 5 procedures, and modifier. 
+
+For docs - we have clinic_policy.md (3 lines), nerve_conduction.md, and anthrocentesis.md
+
+There's also a 'icd10_cm_min.csv' which has a mapping of just 5 codes. Maybe this was for initial development and is no longer used?
+code,name
+M75.0x,Adhesive capsulitis of shoulder (frozen shoulder)
+M75.01,Adhesive capsulitis of right shoulder
+M75.02,Adhesive capsulitis of left shoulder
+E11.40,Type 2 diabetes mellitus with diabetic neuropathy, unspecified
+M25.561,Pain in right knee
+
