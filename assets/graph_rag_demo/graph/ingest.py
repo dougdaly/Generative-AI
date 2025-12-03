@@ -5,7 +5,6 @@ import csv
 def load_docs(dir_path: Path) -> dict[str,str]:
     return {p.stem: p.read_text(encoding="utf-8") for p in dir_path.glob("*.md")}
 
-# assets/graph_rag_demo/graph/ingest.py
 import pandas as pd
 from pathlib import Path
 

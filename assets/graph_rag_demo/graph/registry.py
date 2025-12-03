@@ -108,29 +108,50 @@ def _compile_patterns(keys: set[str]) -> list[re.Pattern]:
             pats.append(re.compile(rf"\b{re.escape(k)}\b", flags=re.IGNORECASE))
     return pats
 
+
 def match_keys_for_node(node_attrs: dict, synonyms: list[tuple[str,str,str]]) -> set[str]:
     """keys = code variants + normalized official name + synonyms for (label,code)."""
     label = node_attrs.get("label","")
-    code  = node_attrs.get("code","")
+    code  = node_attrs.get("code","") or ""
     name  = node_attrs.get("name","") or ""
-    keys = set()
+    keys: set[str] = set()
 
-    # your existing helpers
+    # existing helpers
     keys |= set(_code_variants(code, label))
     keys |= set(_normalize_name(name))
 
-    # NEW: add synonyms for this exact (label, code)
-    syn_terms = [term for (term, lab, cod) in synonyms if lab == label and cod == code]
-    keys |= {t.strip().lower() for t in syn_terms if t}
+    # attach synonyms for this node
+    norm_code_no_dot = code.replace(".", "")
+
+    for term, lab, syn_code in synonyms:
+        if lab != label:
+            continue
+        if not syn_code:
+            continue
+
+        syn_code = syn_code.strip()
+        # 1) exact code match (e.g. M75.01)
+        if syn_code == code:
+            keys.add(term.strip().lower())
+            continue
+
+        # 2) wildcard family match (e.g. M75.0x, M75.1x)
+        if syn_code.endswith(("x", "X")):
+            # remove dot and 'x', treat as prefix
+            family_prefix = syn_code[:-1].replace(".", "")
+            if norm_code_no_dot.startswith(family_prefix):
+                keys.add(term.strip().lower())
 
     return keys
 
 
+
 def build_doc_index(G, docs: dict[str,str], synonyms: list[tuple[str,str,str]]) -> dict:
+    """Creates the citation index -- maps docs to nodes """
     doc_by_node: dict[str, list[tuple[str, str]]] = {}
     def _add_cite(nid, doc_id, snippet):
         doc_by_node.setdefault(nid, []).append((doc_id, snippet))
-    # Pre-lower docs once
+    # pre lowercase all docs
     lowered = {doc_id: txt.lower() for doc_id, txt in docs.items()}
     for nid, attrs in G.nodes(data=True):
         if attrs.get("label") == "Diagnosis" and nid not in doc_by_node:
@@ -151,6 +172,7 @@ def build_doc_index(G, docs: dict[str,str], synonyms: list[tuple[str,str,str]]) 
             doc_by_node[nid] = hits
     return doc_by_node
 
+
 def build_doc_by_node(G, docs: dict[str, str], syn_list: list[tuple[str,str,str]]):
     # invert synonyms: (label, code) -> terms
     syn = defaultdict(set)
@@ -158,7 +180,7 @@ def build_doc_by_node(G, docs: dict[str, str], syn_list: list[tuple[str,str,str]
         if term and label and code:
             syn[(label, code)].add(term.strip().lower())
 
-    # pre-lower docs for matching (keep original for snippets)
+    # pre-lowercase docs for matching (keep original for snippets)
     docs_lower = {doc_id: txt.lower() for doc_id, txt in docs.items()}
 
     out = defaultdict(list)

@@ -1,0 +1,486 @@
+id,question,graph_output,decision,reason,disclaimer
+1001,Is 95900 covered for E11.40?,"A: Yes — covered when medically necessary for the indicated diagnosis.
+
+Why (reason path):
+  Diagnosis:E1140 --IS_IN→ DxSet:icd:diabetic_neuropathy
+  Procedure:95900 --IS_IN→ ProcSet:cpt:ncs
+  Coverage:cms-ncs --USES_PROCSET→ ProcSet:cpt:ncs
+  Coverage:cms-ncs --USES_DXSET→ DxSet:icd:diabetic_neuropathy
+
+Matched sets:
+  cms-ncs: ProcSet[cpt:ncs] & DxSet[icd:diabetic_neuropathy]
+
+Citations:
+- cms-ncs: CMS Coverage — Nerve Conduction Studies
+- icd10: E1140 — Type 2 diabetes mellitus with diabetic neuropathy, unspecified",COVERED,"Nerve conduction study (CPT 95900) is covered when performed for diabetic neuropathy (ICD-10 E11.40) under the policy ""CMS Coverage - Nerve Conduction Studies"". The diagnosis E11.40 maps to DxSet[icd:diabetic_neuropathy], and 95900 is in ProcSet[cpt:ncs], which together satisfy the configured coverage rule.","This response is informational only and does not constitute a final coverage determination. Please refer to the official plan documents and payer policies, and confirm with the payer for binding decisions."
+1002,Is nerve conduction study (95900) covered for R20.0 (numbness) under clinic policy?,"A: Coverage not found for this pairing in the local graph.
+
+Why (reason path):
+  Procedure:95900 --IS_IN→ ProcSet:cpt:ncs
+  Coverage:cms-ncs --USES_PROCSET→ ProcSet:cpt:ncs
+
+Matched sets:
+
+Citations:
+- cms-ncs: CMS Coverage — Nerve Conduction Studies
+- icd10: R200 — Anesthesia of skin",NOT_COVERED,"Nerve conduction study (CPT 95900) is covered under the policy
+""CMS Coverage — Nerve Conduction Studies"" for specific diagnoses configured in this system,
+but R20.0 (numbness) is not among those covered diagnoses.
+As a result, this procedure–diagnosis pairing is not covered under the current configuration.","This response is informational only and does not constitute a final coverage determination. Please refer to the official plan documents and payer policies, and confirm with the payer for binding decisions."
+1003,Is 20552 covered for M75.11?,"A: Coverage not found for this pairing in the local graph.
+
+Per-diagnosis:
+  M75.11: ✗ matches DxSet[icd:rotator_cuff] but not with this procedure
+  M7511: ✗ matches DxSet[icd:rotator_cuff] but not with this procedure
+
+Why (reason path):
+  Diagnosis:M75.11 --IS_IN→ DxSet:icd:rotator_cuff
+  Diagnosis:M7511 --IS_IN→ DxSet:icd:rotator_cuff
+  Procedure:20552 --IS_IN→ ProcSet:cpt:trigger_point
+  Coverage:cms-arthro --USES_DXSET→ DxSet:icd:rotator_cuff
+  Coverage:cms-tendon --USES_DXSET→ DxSet:icd:rotator_cuff
+  Coverage:cms-trigger --USES_PROCSET→ ProcSet:cpt:trigger_point
+
+Matched sets:
+
+Citations:
+- cms-arthro: CMS Coverage — Arthrocentesis
+- cms-tendon: CMS Coverage — Tendon Injection
+- cms-trigger: CMS Coverage — Trigger Point Injection",NOT_COVERED,"Trigger point injection (CPT 20552) is only covered under the policy
+""CMS Coverage — Nerve Conduction Studies"" for specific diagnoses configured in this system,
+but R20.0 (numbness) is not among those covered diagnoses.
+As a result, this procedure–diagnosis pairing is not covered under the current configuration.","This response is informational only and does not constitute a final coverage determination. Please refer to the official plan documents and payer policies, and confirm with the payer for binding decisions."
+1004,Is 20610 covered for M75.11?,"A: Yes — covered when medically necessary for the indicated diagnosis.
+
+Per-diagnosis:
+  M75.11: ✓ qualifies under cms-arthro via DxSet[icd:rotator_cuff]
+  M7511: ✓ qualifies under cms-arthro via DxSet[icd:rotator_cuff]
+
+Why (reason path):
+  Diagnosis:M75.11 --IS_IN→ DxSet:icd:rotator_cuff
+  Diagnosis:M7511 --IS_IN→ DxSet:icd:rotator_cuff
+  Procedure:20610 --IS_IN→ ProcSet:cpt:arthro_block
+  Coverage:cms-arthro --USES_PROCSET→ ProcSet:cpt:arthro_block
+  Coverage:cms-arthro --USES_DXSET→ DxSet:icd:rotator_cuff
+  Coverage:cms-tendon --USES_DXSET→ DxSet:icd:rotator_cuff
+
+Matched sets:
+  cms-arthro: ProcSet[cpt:arthro_block] & DxSet[icd:rotator_cuff]
+
+Citations:
+- cms-arthro: CMS Coverage — Arthrocentesis
+- cms-tendon: CMS Coverage — Tendon Injection ",COVERED,"Arthrocentesis (CPT 20610) is covered when performed for rotator cuff (M75.11) under the policy ""CMS Coverage — Arthrocentesis"". The diagnosis M75.11 maps to DxSet [icd:rotator_cuff], and 20610 is in ProcSet [cpt:arthro_block], which together satisfy the configured coverage rule.","This response is informational only and does not constitute a final coverage determination. Please refer to the official plan documents and payer policies, and confirm with the payer for binding decisions."
+1005,Is arthrocentesis (20610) covered for M75.01 and M75.41?,"A: Yes — covered when medically necessary for the indicated diagnosis.
+
+Per-diagnosis:
+  M7501: ✓ qualifies under cms-arthro via DxSet[icd:frozen_shoulder]
+  M7541: ✗ no matching policy set
+
+Why (reason path):
+  Diagnosis:M7501 --IS_IN→ DxSet:icd:frozen_shoulder
+  Procedure:20610 --IS_IN→ ProcSet:cpt:arthro_block
+  Coverage:cms-arthro --USES_PROCSET→ ProcSet:cpt:arthro_block
+  Coverage:cms-arthro --USES_DXSET→ DxSet:icd:frozen_shoulder
+
+Matched sets:
+  cms-arthro: ProcSet[cpt:arthro_block] & DxSet[icd:frozen_shoulder]
+
+Citations:
+- cms-arthro: CMS Coverage — Arthrocentesis
+- icd10: M7501 — Adhesive capsulitis of right shoulder
+- icd10: M7541 — Impingement syndrome of right shoulder ",HUMAN,"Arthrocentesis (CPT 20610) is covered when performed for adhesive capsulitis (M7501) under the policy ""CMS Coverage — Arthrocentesis"", which links ProcSet[cpt:arthro_block] with DxSet[icd:frozen_shoulder]. 
+
+Arthrocentesis (CPT 20610) is only covered under the policy ""CMS Coverage — Arthrocentesis"" for specific diagnoses configured in this system, but M7541 (Impingement syndrome) is not among those covered diagnoses. As a result, this procedure-diagnosis pairing is not covered under the current configuration.
+
+Because this order includes both a covered diagnosis (M7501) and a diagnosis that is not covered (M7541), this combination should be reviewed manually rather than auto-approved.","This response is informational only and does not constitute a final coverage determination. Please refer to the official plan documents and payer policies, and confirm with the payer for binding decisions."
+1006,Is joint injection (20552) covered for M75.41?,"A: Coverage not found for this pairing in the local graph.
+
+Why (reason path):
+  Procedure:20552 --IS_IN→ ProcSet:cpt:trigger_point
+  Coverage:cms-trigger --USES_PROCSET→ ProcSet:cpt:trigger_point
+
+Matched sets:
+
+Citations:
+- cms-trigger: CMS Coverage — Trigger Point Injection
+- icd10: M7541 — Impingement syndrome of right shoulder",NOT_COVERED,"Trigger point injection (CPT 20552) is only covered under the policy
+""CMS Coverage — Trigger Point Injection"" for specific diagnoses configured in this system,
+but for M75.41 (impingement syndrome) is not among those covered diagnoses. As a result, this procedure-diagnosis pairing is not covered under the current configuration.","This response is informational only and does not constitute a final coverage determination. Please refer to the official plan documents and payer policies, and confirm with the payer for binding decisions."
+1007,Bilateral arthrocentesis (20610) for M75.01 — any modifier?,"A: Yes — covered when medically necessary for the indicated diagnosis.
+
+Why (reason path):
+  Diagnosis:M7501 --IS_IN→ DxSet:icd:frozen_shoulder
+  Procedure:20610 --IS_IN→ ProcSet:cpt:arthro_block
+  Coverage:cms-arthro --USES_PROCSET→ ProcSet:cpt:arthro_block
+  Coverage:cms-arthro --USES_DXSET→ DxSet:icd:frozen_shoulder
+
+Matched sets:
+  cms-arthro: ProcSet[cpt:arthro_block] & DxSet[icd:frozen_shoulder]
+
+Citations:
+- cms-arthro: CMS Coverage — Arthrocentesis
+- icd10: M7501 — Adhesive capsulitis of right shoulder ",COVERED,"Arthrocentesis (CPT 20610) is covered for diagnosis M75.01 (frozen shoulder) under the policy
+""CMS Coverage — Arthrocentesis"", which links ProcSet[cpt:arthro_block] with DxSet[icd:frozen_shoulder].
+Because this is a bilateral procedure, clinic policy and the CMS note require appending modifier 50
+and clearly documenting laterality for both shoulders.""","This response is informational only and does not constitute a final coverage determination. Please refer to the official plan documents and payer policies, and confirm with the payer for binding decisions."
+1008,Is arthrocentesis (20610) covered for M54.2?,"A: Coverage not found for this pairing in the local graph.
+
+Why (reason path):
+  Diagnosis:M542 --IS_IN→ DxSet:icd:cervicalgia
+  Procedure:20610 --IS_IN→ ProcSet:cpt:arthro_block
+  Coverage:cms-arthro --USES_PROCSET→ ProcSet:cpt:arthro_block
+  Coverage:cms-trigger --USES_DXSET→ DxSet:icd:cervicalgia
+
+Matched sets:
+
+Citations:
+- cms-arthro: CMS Coverage — Arthrocentesis
+- cms-trigger: CMS Coverage — Trigger Point Injection
+- icd10: M542 — Cervicalgia ",NOT_COVERED,"Arthrocentesis (CPT 20610) is only covered under the policy ""CMS Coverage — Arthrocentesis"" for specific diagnoses configured in this system, but M54.2 (Cervicalgia) is not among those covered diagnoses. As a result, this procedure-diagnosis pairing is not covered under the current configuration.","This response is informational only and does not constitute a final coverage determination. Please refer to the official plan documents and payer policies, and confirm with the payer for binding decisions."
+1009,Is 95900 covered for M75.01?,"A: Coverage not found for this pairing in the local graph.
+
+Why (reason path):
+  Diagnosis:M7501 --IS_IN→ DxSet:icd:frozen_shoulder
+  Procedure:95900 --IS_IN→ ProcSet:cpt:ncs
+  Coverage:cms-arthro --USES_DXSET→ DxSet:icd:frozen_shoulder
+  Coverage:cms-ncs --USES_PROCSET→ ProcSet:cpt:ncs
+
+Matched sets:
+
+Citations:
+- cms-arthro: CMS Coverage — Arthrocentesis
+- cms-ncs: CMS Coverage — Nerve Conduction Studies
+- icd10: M7501 — Adhesive capsulitis of right shoulder ",NOT_COVERED,"Nerve conduction study (CPT 95900) is only covered under the policy ""CMS Coverage — Nerve Conduction Studies"" for specific diagnoses configured in this system, but it is not covered for M75.01 (adhesive capsulitis of right shoulder). As a result, this procedure-diagnosis pairing is not covered under the current configuration.","This response is informational only and does not constitute a final coverage determination. Please refer to the official plan documents and payer policies, and confirm with the payer for binding decisions."
+1010,Is arthrocentesis covered for frozen shoulder?,"A: Yes — covered when medically necessary for the indicated diagnosis.
+
+Per-diagnosis:
+  M750*: ✓ qualifies under cms-arthro via DxSet[icd:frozen_shoulder]
+  M7500: ✗ no matching policy set
+  M7501: ✗ no matching policy set
+  M7502: ✗ no matching policy set
+
+Why (reason path):
+  Diagnosis:M750* --IS_IN→ DxSet:icd:frozen_shoulder
+  Procedure:20610 --IS_IN→ ProcSet:cpt:arthro_block
+  Coverage:cms-arthro --USES_PROCSET→ ProcSet:cpt:arthro_block
+  Coverage:cms-arthro --USES_DXSET→ DxSet:icd:frozen_shoulder
+  Diagnosis:M7500 --IS_A→ Diagnosis:M750*
+  Diagnosis:M7501 --IS_A→ Diagnosis:M750*
+  Diagnosis:M7502 --IS_A→ Diagnosis:M750*
+
+Matched sets:
+  cms-arthro: ProcSet[cpt:arthro_block] & DxSet[icd:frozen_shoulder]
+
+Citations:
+- cms-arthro: CMS Coverage — Arthrocentesis
+- icd10: M7500 — Adhesive capsulitis of unspecified shoulder
+- icd10: M7501 — Adhesive capsulitis of right shoulder
+- icd10: M7502 — Adhesive capsulitis of left shoulder ",COVERED,"Arthrocentesis (CPT 20610) is covered for diagnosis M75.01 (frozen shoulder) under the policy
+""CMS Coverage — Arthrocentesis"", which links ProcSet[cpt:arthro_block] with DxSet[icd:frozen_shoulder].","This response is informational only and does not constitute a final coverage determination. Please refer to the official plan documents and payer policies, and confirm with the payer for binding decisions."
+1011,Is joint injection covered for a rotator cuff tear?,"A: Coverage not found for this pairing in the local graph.
+
+Per-diagnosis:
+  M751*: ✗ matches DxSet[icd:rotator_cuff] but not with this procedure
+  M75100: ✗ no matching policy set
+  M75101: ✗ no matching policy set
+  M75102: ✗ no matching policy set
+
+Why (reason path):
+  Diagnosis:M751* --IS_IN→ DxSet:icd:rotator_cuff
+  Coverage:cms-arthro --USES_DXSET→ DxSet:icd:rotator_cuff
+  Coverage:cms-tendon --USES_DXSET→ DxSet:icd:rotator_cuff
+  Diagnosis:M75100 --IS_A→ Diagnosis:M751*
+  Diagnosis:M75101 --IS_A→ Diagnosis:M751*
+  Diagnosis:M75102 --IS_A→ Diagnosis:M751*
+
+Matched sets:
+
+Citations:
+- cms-arthro: CMS Coverage — Arthrocentesis
+- cms-tendon: CMS Coverage — Tendon Injection
+- icd10: M75100 — Unspecified rotator cuff tear or rupture of unspecified shoulder, not specified as traumatic
+- icd10: M75101 — Unspecified rotator cuff tear or rupture of right shoulder, not specified as traumatic
+- icd10: M75102 — Unspecified rotator cuff tear or rupture of left shoulder, not specified as traumatic",NOT_COVERED,"Arthrocentesis (CPT 20610) is only covered under the policy ""CMS Coverage — Arthrocentesis"" for specific diagnoses configured in this system, but M75.1 (Rotator cuff tear) is not among those covered diagnoses. As a result, this procedure-diagnosis pairing is not covered under the current configuration.","This response is informational only and does not constitute a final coverage determination. Please refer to the official plan documents and payer policies, and confirm with the payer for binding decisions."
+1012,Is nerve conduction study covered for neck pain?,"A: Coverage not found for this pairing in the local graph.
+
+Per-diagnosis:
+  M542: ✗ no matching policy set
+  M542*: ✗ matches DxSet[icd:cervicalgia] but not with this procedure
+
+Why (reason path):
+  Diagnosis:M542* --IS_IN→ DxSet:icd:cervicalgia
+  Procedure:95900 --IS_IN→ ProcSet:cpt:ncs
+  Coverage:cms-trigger --USES_DXSET→ DxSet:icd:cervicalgia
+  Coverage:cms-ncs --USES_PROCSET→ ProcSet:cpt:ncs
+  Diagnosis:M542 --IS_A→ Diagnosis:M542*
+
+Matched sets:
+
+Citations:
+- cms-ncs: CMS Coverage — Nerve Conduction Studies
+- cms-trigger: CMS Coverage — Trigger Point Injection
+- icd10: M542 — Cervicalgia",NOT_COVERED,"Nerve conduction study (CPT 95900) is only covered under the policy ""CMS Coverage —Nerve Conduction Studies"" for specific diagnoses configured in this system, but M542 (Cervicalgia) is not among those covered diagnoses. As a result, this procedure-diagnosis pairing is not covered under the current configuration.","This response is informational only and does not constitute a final coverage determination. Please refer to the official plan documents and payer policies, and confirm with the payer for binding decisions."
+1013,Is arthrocentesis covered for a rotator cuff tear?,"A: Yes — covered when medically necessary for the indicated diagnosis.
+
+Per-diagnosis:
+  M751*: ✓ qualifies under cms-arthro via DxSet[icd:rotator_cuff]
+  M75100: ✗ no matching policy set
+  M75101: ✗ no matching policy set
+  M75102: ✗ no matching policy set
+
+Why (reason path):
+  Diagnosis:M751* --IS_IN→ DxSet:icd:rotator_cuff
+  Procedure:20610 --IS_IN→ ProcSet:cpt:arthro_block
+  Coverage:cms-arthro --USES_PROCSET→ ProcSet:cpt:arthro_block
+  Coverage:cms-arthro --USES_DXSET→ DxSet:icd:rotator_cuff
+  Coverage:cms-tendon --USES_DXSET→ DxSet:icd:rotator_cuff
+  Diagnosis:M75100 --IS_A→ Diagnosis:M751*
+  Diagnosis:M75101 --IS_A→ Diagnosis:M751*
+  Diagnosis:M75102 --IS_A→ Diagnosis:M751*
+
+Matched sets:
+  cms-arthro: ProcSet[cpt:arthro_block] & DxSet[icd:rotator_cuff]
+
+Citations:
+- cms-arthro: CMS Coverage — Arthrocentesis
+- cms-tendon: CMS Coverage — Tendon Injection
+- icd10: M75100 — Unspecified rotator cuff tear or rupture of unspecified shoulder, not specified as traumatic
+- icd10: M75101 — Unspecified rotator cuff tear or rupture of right shoulder, not specified as traumatic
+- icd10: M75102 — Unspecified rotator cuff tear or rupture of left shoulder, not specified as traumatic ",COVERED,"Arthrocentesis (CPT 20610) is covered for diagnosis M75.1 (rotator cuff) under the policy
+""CMS Coverage — Arthrocentesis"", which links ProcSet[cpt:arthro_block] with DxSet[icd:rotator_cuff].","This response is informational only and does not constitute a final coverage determination. Please refer to the official plan documents and payer policies, and confirm with the payer for binding decisions."
+1014,Is joint injection covered for shoulder impingement?,"A: Coverage not found for this pairing in the local graph.
+
+Per-diagnosis:
+  M754*: ✗ no matching policy set
+  M7540: ✗ no matching policy set
+  M7541: ✗ no matching policy set
+  M7542: ✗ no matching policy set
+
+Why (reason path):
+  Procedure:20552 --IS_IN→ ProcSet:cpt:trigger_point
+  Coverage:cms-trigger --USES_PROCSET→ ProcSet:cpt:trigger_point
+  Diagnosis:M7540 --IS_A→ Diagnosis:M754*
+  Diagnosis:M7541 --IS_A→ Diagnosis:M754*
+  Diagnosis:M7542 --IS_A→ Diagnosis:M754*
+
+Matched sets:
+
+Citations:
+- cms-trigger: CMS Coverage — Trigger Point Injection
+- icd10: M7540 — Impingement syndrome of unspecified shoulder
+- icd10: M7541 — Impingement syndrome of right shoulder
+- icd10: M7542 — Impingement syndrome of left shoulder",NOT_COVERED,"Joint injection (CPT 20552) is only covered under the policy ""CMS Coverage —Trigger Point Injection"" for specific diagnoses configured in this system, but M754 (Impingement syndrome) is not among those covered diagnoses. As a result, this procedure-diagnosis pairing is not covered under the current configuration.","This response is informational only and does not constitute a final coverage determination. Please refer to the official plan documents and payer policies, and confirm with the payer for binding decisions."
+1015,Is 20552 covered for neck pain?,"A: Yes — covered when medically necessary for the indicated diagnosis.
+
+Per-diagnosis:
+  M542: ✗ no matching policy set
+  M542*: ✓ qualifies under cms-trigger via DxSet[icd:cervicalgia]
+
+Why (reason path):
+  Diagnosis:M542* --IS_IN→ DxSet:icd:cervicalgia
+  Procedure:20552 --IS_IN→ ProcSet:cpt:trigger_point
+  Coverage:cms-trigger --USES_PROCSET→ ProcSet:cpt:trigger_point
+  Coverage:cms-trigger --USES_DXSET→ DxSet:icd:cervicalgia
+  Diagnosis:M542 --IS_A→ Diagnosis:M542*
+
+Matched sets:
+  cms-trigger: ProcSet[cpt:trigger_point] & DxSet[icd:cervicalgia]
+
+Citations:
+- cms-trigger: CMS Coverage — Trigger Point Injection
+- icd10: M542 — Cervicalgia ",COVERED,"Trigger point injection (CPT 20552) is covered for diagnosis M542 (cervicalgia) under the policy
+""CMS Coverage — Trigger Point Injection"", which links ProcSet[cpt:trigger_point] with DxSet[icd:cervicalgia].","This response is informational only and does not constitute a final coverage determination. Please refer to the official plan documents and payer policies, and confirm with the payer for binding decisions."
+1016,Is 20610 covered for cervicalgia?,"A: Coverage not found for this pairing in the local graph.
+
+Per-diagnosis:
+  M542: ✗ no matching policy set
+  M542*: ✗ matches DxSet[icd:cervicalgia] but not with this procedure
+
+Why (reason path):
+  Diagnosis:M542* --IS_IN→ DxSet:icd:cervicalgia
+  Procedure:20610 --IS_IN→ ProcSet:cpt:arthro_block
+  Coverage:cms-arthro --USES_PROCSET→ ProcSet:cpt:arthro_block
+  Coverage:cms-trigger --USES_DXSET→ DxSet:icd:cervicalgia
+  Diagnosis:M542 --IS_A→ Diagnosis:M542*
+
+Matched sets:
+
+Citations:
+- cms-arthro: CMS Coverage — Arthrocentesis
+- cms-trigger: CMS Coverage — Trigger Point Injection
+- icd10: M542 — Cervicalgia ",NOT_COVERED,"Arthrocentesis (CPT 20610) is only covered under the policy ""CMS Coverage — Arthrocentesis"" for specific diagnoses configured in this system, but M542 (Cervicalgia) is not among those covered diagnoses. As a result, this procedure-diagnosis pairing is not covered under the current configuration.","This response is informational only and does not constitute a final coverage determination. Please refer to the official plan documents and payer policies, and confirm with the payer for binding decisions."
+1017,Is 95900 covered for diabetic neuropathy?,"A: Yes — covered when medically necessary for the indicated diagnosis.
+
+Per-diagnosis:
+  E114*: ✓ qualifies under cms-ncs via DxSet[icd:diabetic_neuropathy]
+  E1140: ✗ no matching policy set
+  E1141: ✗ no matching policy set
+  E1142: ✗ no matching policy set
+
+Why (reason path):
+  Diagnosis:E114* --IS_IN→ DxSet:icd:diabetic_neuropathy
+  Procedure:95900 --IS_IN→ ProcSet:cpt:ncs
+  Coverage:cms-ncs --USES_PROCSET→ ProcSet:cpt:ncs
+  Coverage:cms-ncs --USES_DXSET→ DxSet:icd:diabetic_neuropathy
+  Diagnosis:E1140 --IS_A→ Diagnosis:E114*
+  Diagnosis:E1141 --IS_A→ Diagnosis:E114*
+  Diagnosis:E1142 --IS_A→ Diagnosis:E114*
+
+Matched sets:
+  cms-ncs: ProcSet[cpt:ncs] & DxSet[icd:diabetic_neuropathy]
+
+Citations:
+- cms-ncs: CMS Coverage — Nerve Conduction Studies
+- icd10: E1140 — Type 2 diabetes mellitus with diabetic neuropathy, unspecified
+- icd10: E1141 — Type 2 diabetes mellitus with diabetic mononeuropathy
+- icd10: E1142 — Type 2 diabetes mellitus with diabetic polyneuropathy ",COVERED,"Nerve conduction studies (CPT 95900) is covered for diagnosis E1140 (diabetic neuropathy) under the policy
+""CMS Coverage — Nerve Conduction Studies"", which links ProcSet[cpt:ncs] with DxSet[icd:diabetic_neuropathy].","This response is informational only and does not constitute a final coverage determination. Please refer to the official plan documents and payer policies, and confirm with the payer for binding decisions."
+1018,Is joint tap covered for M54.2?,"A: Coverage not found for this pairing in the local graph.
+
+Per-diagnosis:
+  M542: ✗ matches DxSet[icd:cervicalgia] but not with this procedure
+  M542*: ✗ matches DxSet[icd:cervicalgia] but not with this procedure
+
+Why (reason path):
+  Diagnosis:M542 --IS_IN→ DxSet:icd:cervicalgia
+  Diagnosis:M542 --IS_A→ Diagnosis:M542*
+  Diagnosis:M542* --IS_IN→ DxSet:icd:cervicalgia
+  Procedure:20610 --IS_IN→ ProcSet:cpt:arthro_block
+  Coverage:cms-arthro --USES_PROCSET→ ProcSet:cpt:arthro_block
+  Coverage:cms-trigger --USES_DXSET→ DxSet:icd:cervicalgia
+
+Matched sets:
+
+Citations:
+- cms-arthro: CMS Coverage — Arthrocentesis
+- cms-trigger: CMS Coverage — Trigger Point Injection
+- icd10: M542 — Cervicalgia ",NOT_COVERED,"Arthrocentesis (CPT 20610) is only covered under the policy ""CMS Coverage — Arthrocentesis"" for specific diagnoses configured in this system, but M542 (Cervicalgia) is not among those covered diagnoses. As a result, this procedure-diagnosis pairing is not covered under the current configuration.","This response is informational only and does not constitute a final coverage determination. Please refer to the official plan documents and payer policies, and confirm with the payer for binding decisions."
+1019,Is arthrocentesis covered for M75.01?,"A: Yes — covered when medically necessary for the indicated diagnosis.
+
+Why (reason path):
+  Diagnosis:M7501 --IS_IN→ DxSet:icd:frozen_shoulder
+  Procedure:20610 --IS_IN→ ProcSet:cpt:arthro_block
+  Coverage:cms-arthro --USES_PROCSET→ ProcSet:cpt:arthro_block
+  Coverage:cms-arthro --USES_DXSET→ DxSet:icd:frozen_shoulder
+
+Matched sets:
+  cms-arthro: ProcSet[cpt:arthro_block] & DxSet[icd:frozen_shoulder]
+
+Citations:
+- cms-arthro: CMS Coverage — Arthrocentesis
+- icd10: M7501 — Adhesive capsulitis of right shoulder ",COVERED,"Arthrocentesis (CPT 20610) is covered for diagnosis M75.01 (frozen shoulder) under the policy
+""CMS Coverage — Arthrocentesis"", which links ProcSet[cpt:arthro_block] with DxSet[icd:frozen_shoulder].","This response is informational only and does not constitute a final coverage determination. Please refer to the official plan documents and payer policies, and confirm with the payer for binding decisions."
+1020,Is arthrocentesis covered for frozen shoulder and rotator cuff tear?,"A: Yes — covered when medically necessary for the indicated diagnosis.
+
+Per-diagnosis:
+  M750*: ✓ qualifies under cms-arthro via DxSet[icd:frozen_shoulder]
+  M7500: ✗ no matching policy set
+  M7501: ✗ no matching policy set
+  M7502: ✗ no matching policy set
+  M751*: ✓ qualifies under cms-arthro via DxSet[icd:rotator_cuff]
+  M75100: ✗ no matching policy set
+  M75101: ✗ no matching policy set
+  M75102: ✗ no matching policy set
+
+Why (reason path):
+  Diagnosis:M750* --IS_IN→ DxSet:icd:frozen_shoulder
+  Diagnosis:M751* --IS_IN→ DxSet:icd:rotator_cuff
+  Procedure:20610 --IS_IN→ ProcSet:cpt:arthro_block
+  Coverage:cms-arthro --USES_PROCSET→ ProcSet:cpt:arthro_block
+  Coverage:cms-arthro --USES_DXSET→ DxSet:icd:frozen_shoulder
+  Coverage:cms-arthro --USES_DXSET→ DxSet:icd:rotator_cuff
+  Coverage:cms-tendon --USES_DXSET→ DxSet:icd:rotator_cuff
+  Diagnosis:M75100 --IS_A→ Diagnosis:M751*
+  Diagnosis:M75101 --IS_A→ Diagnosis:M751*
+  Diagnosis:M75102 --IS_A→ Diagnosis:M751*
+  Diagnosis:M7500 --IS_A→ Diagnosis:M750*
+  Diagnosis:M7501 --IS_A→ Diagnosis:M750*
+  Diagnosis:M7502 --IS_A→ Diagnosis:M750*
+
+Matched sets:
+  cms-arthro: ProcSet[cpt:arthro_block] & DxSet[icd:frozen_shoulder, icd:rotator_cuff]
+
+Citations:
+- cms-arthro: CMS Coverage — Arthrocentesis
+- cms-tendon: CMS Coverage — Tendon Injection
+- icd10: M7500 — Adhesive capsulitis of unspecified shoulder
+- icd10: M7501 — Adhesive capsulitis of right shoulder
+- icd10: M7502 — Adhesive capsulitis of left shoulder
+- icd10: M75100 — Unspecified rotator cuff tear or rupture of unspecified shoulder, not specified as traumatic
+- icd10: M75101 — Unspecified rotator cuff tear or rupture of right shoulder, not specified as traumatic
+- icd10: M75102 — Unspecified rotator cuff tear or rupture of left shoulder, not specified as traumatic ",COVERED,"Arthrocentesis (CPT 20610) is covered for diagnoses M75.0 (frozen shoulder) under the policy
+""CMS Coverage — Arthrocentesis"", which links ProcSet[cpt:arthro_block] with DxSet[icd:frozen_shoulder].
+
+Arthrocentesis (CPT 20610) is covered for diagnoses M75.1 (rotator cuff) under the policy
+""CMS Coverage — Arthrocentesis"", which links ProcSet[cpt:arthro_block] with DxSet[icd:rotator_cuff].","This response is informational only and does not constitute a final coverage determination. Please refer to the official plan documents and payer policies, and confirm with the payer for binding decisions."
+1021,Is joint injection covered for M54.2 and M75.01?,"A: Yes — covered when medically necessary for the indicated diagnosis.
+
+Per-diagnosis:
+  M542: ✓ qualifies under cms-trigger via DxSet[icd:cervicalgia]
+  M7501: ✗ matches DxSet[icd:frozen_shoulder] but not with this procedure
+
+Why (reason path):
+  Diagnosis:M7501 --IS_IN→ DxSet:icd:frozen_shoulder
+  Diagnosis:M542 --IS_IN→ DxSet:icd:cervicalgia
+  Procedure:20552 --IS_IN→ ProcSet:cpt:trigger_point
+  Coverage:cms-arthro --USES_DXSET→ DxSet:icd:frozen_shoulder
+  Coverage:cms-trigger --USES_PROCSET→ ProcSet:cpt:trigger_point
+  Coverage:cms-trigger --USES_DXSET→ DxSet:icd:cervicalgia
+
+Matched sets:
+  cms-trigger: ProcSet[cpt:trigger_point] & DxSet[icd:cervicalgia]
+
+Citations:
+- cms-arthro: CMS Coverage — Arthrocentesis
+- cms-trigger: CMS Coverage — Trigger Point Injection
+- icd10: M542 — Cervicalgia
+- icd10: M7501 — Adhesive capsulitis of right shoulder ",HUMAN,"Arthrocentesis (CPT 20610) is covered when performed for cervicalgia (M542) under the policy ""CMS Coverage — Arthrocentesis"", which links ProcSet[cpt:trigger_point] with DxSet[icd:cervicalgia]. 
+
+Arthrocentesis (CPT 20610) is only covered under the policy ""CMS Coverage — Arthrocentesis"" for specific diagnoses configured in this system, but M7501 (Frozen shoulder) is not among those covered diagnoses. As a result, this procedure-diagnosis pairing is not covered under the current configuration.
+
+Because this order includes both a covered diagnosis (M542) and a diagnosis that is not covered (M75.01), this combination should be reviewed manually rather than auto-approved.","This response is informational only and does not constitute a final coverage determination. Please refer to the official plan documents and payer policies, and confirm with the payer for binding decisions."
+1022,Is 95900 covered for M75.01 and M75.41?,"A: Coverage not found for this pairing in the local graph.
+
+Per-diagnosis:
+  M7501: ✗ matches DxSet[icd:frozen_shoulder] but not with this procedure
+  M7541: ✗ no matching policy set
+
+Why (reason path):
+  Diagnosis:M7501 --IS_IN→ DxSet:icd:frozen_shoulder
+  Procedure:95900 --IS_IN→ ProcSet:cpt:ncs
+  Coverage:cms-arthro --USES_DXSET→ DxSet:icd:frozen_shoulder
+  Coverage:cms-ncs --USES_PROCSET→ ProcSet:cpt:ncs
+
+Matched sets:
+
+Citations:
+- cms-arthro: CMS Coverage — Arthrocentesis
+- cms-ncs: CMS Coverage — Nerve Conduction Studies
+- icd10: M7501 — Adhesive capsulitis of right shoulder
+- icd10: M7541 — Impingement syndrome of right shoulder",NOT_COVERED,"Nerve conduction studies (CPT 95900) is only covered under the policy ""CMS Coverage — Nerve Conduction Studies"" for specific diagnoses configured in this system, but M75.01 (Frozen shoulder) and M75.41 (Impingement syndrome) are not among those covered diagnoses. As a result, these procedure-diagnosis pairings are not covered under the current configuration.","This response is informational only and does not constitute a final coverage determination. Please refer to the official plan documents and payer policies, and confirm with the payer for binding decisions."
+1023,Is arthrocentesis covered for M75.11 and R20.0?,"A: Yes — covered when medically necessary for the indicated diagnosis.
+
+Per-diagnosis:
+  M75.11: ✓ qualifies under cms-arthro via DxSet[icd:rotator_cuff]
+  M7511: ✓ qualifies under cms-arthro via DxSet[icd:rotator_cuff]
+  R200: ✗ no matching policy set
+
+Why (reason path):
+  Diagnosis:M75.11 --IS_IN→ DxSet:icd:rotator_cuff
+  Diagnosis:M7511 --IS_IN→ DxSet:icd:rotator_cuff
+  Procedure:20610 --IS_IN→ ProcSet:cpt:arthro_block
+  Coverage:cms-arthro --USES_PROCSET→ ProcSet:cpt:arthro_block
+  Coverage:cms-arthro --USES_DXSET→ DxSet:icd:rotator_cuff
+  Coverage:cms-tendon --USES_DXSET→ DxSet:icd:rotator_cuff
+
+Matched sets:
+  cms-arthro: ProcSet[cpt:arthro_block] & DxSet[icd:rotator_cuff]
+
+Citations:
+- cms-arthro: CMS Coverage — Arthrocentesis
+- cms-tendon: CMS Coverage — Tendon Injection
+- icd10: R200 — Anesthesia of skin ",HUMAN,"Arthrocentesis (CPT 20610) is covered when performed for rotator cuff (M7511) under the policy ""CMS Coverage — Arthrocentesis"", which links ProcSet[cpt:trigger_point] with DxSet[icd:rotator_cuff].
+
+Arthrocentesis (CPT 20610) is only covered under the policy ""CMS Coverage — Arthrocentesis"" for specific diagnoses configured in this system, but R20.0 (Anesthesia of the skin) is not among those covered diagnoses. As a result, this procedure-diagnosis pairing is not covered under the current configuration.
+
+Because this order includes both a covered diagnosis (M7511) and a diagnosis that is not covered (R200), this combination should be reviewed manually rather than auto-approved.","This response is informational only and does not constitute a final coverage determination. Please refer to the official plan documents and payer policies, and confirm with the payer for binding decisions."

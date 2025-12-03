@@ -11,5 +11,7 @@ arthrocentesis|Procedure|20610
 joint tap|Procedure|20610
 tpi|Procedure|20552
 trigger point injection|Procedure|20552
+joint injection|Procedure|20552
 tendon sheath injection|Procedure|20550
+nerve conduction study|Procedure|95900
 bilateral|Modifier|50

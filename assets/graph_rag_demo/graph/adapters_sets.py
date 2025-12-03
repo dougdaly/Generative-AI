@@ -36,7 +36,7 @@ def add_sets_and_policies(eng, yaml_data: dict):
                 eng._nid("ProcSet", sid),
                 label="ProcSet",
                 set_id=sid,
-                code=sid,          # ← add this
+                code=sid,          
                 kind=kind,
                 name=sid
             )
@@ -45,7 +45,7 @@ def add_sets_and_policies(eng, yaml_data: dict):
                 eng._nid("DxSet", sid),
                 label="DxSet",
                 set_id=sid,
-                code=sid,          # ← add this
+                code=sid,          
                 kind=kind,
                 name=sid
     )
@@ -63,7 +63,6 @@ def add_sets_and_policies(eng, yaml_data: dict):
         for sid in p.get("proc_sets", []):
             add_edge_once(G, eng._nid("Coverage", pol_id), eng._nid("ProcSet", sid), etype="USES_PROCSET")
         for sid in p.get("dx_sets", []):
-            #G.add_edge(eng._nid("Coverage", pol_id), eng._nid("DxSet",   sid), etype="USES_DXSET")
             add_edge_once(G, eng._nid("Coverage", pol_id), eng._nid("DxSet",   sid), etype="USES_DXSET")
 
         # docs for citations

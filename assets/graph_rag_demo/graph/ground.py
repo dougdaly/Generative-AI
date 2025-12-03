@@ -11,22 +11,17 @@ def ground(query: str, synonyms: Iterable[Tuple[str,str,str]] = None) -> Dict[st
       {"procedures": {...}, "diagnoses": {...}, "modifiers": {...}}
     Only codes whose 'term' appears in the query (case-insensitive) are included.
     """
-    q = " " + re.sub(r"\s+", " ", query.lower()) + " "
+    q_norm = query.lower()
     px, dx, md = set(), set(), set()
 
-    # Allow injecting synonyms at call-time OR import from engine
-    if synonyms is None:
-        try:
-            from .engine import GraphRAG  # optional fallback
-        except Exception:
-            synonyms = []
-        else:
-            # if you really want, you can wire this up via a global/engine
-            synonyms = []  # better: pass explicitly eng.syn
-
     for term, kind, code in synonyms:
-        t = f" {term.strip().lower()} "
-        if t in q:
+        term_norm = term.strip().lower()
+        if not term_norm:
+            continue
+
+        # word-boundary style match: handles punctuation, start/end of string
+        pattern = r'(?<!\w)' + re.escape(term_norm) + r'(?!\w)'
+        if re.search(pattern, q_norm):
             if kind == "Procedure":
                 px.add(code)
             elif kind == "Diagnosis":
@@ -52,9 +47,4 @@ def enrich_ground(query: str, raw: dict) -> dict:
         dxs.add(norm_code(tok))
     for tok in CPT_RE.findall(query):
         procs.add(tok.strip())
-
-    # 2) Ensure codes exist as strings (your _iter_grounded handles strings fine)
-    #    Keep both specifics (M75.41) and families (M75.0x) if present.
-    #    No dedup needed beyond set().
-
     return {"procedures": procs, "diagnoses": dxs, "modifiers": mods}

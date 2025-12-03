@@ -55,4 +55,3 @@ def attach_is_a(G, specific: str, general: str):
     g = f"Diagnosis:{general}"
     if s in G and g in G: 
         add_edge_once(G, s, g, "IS_A")
-#        add_edge(G, s, "IS_A", g)

@@ -82,7 +82,8 @@ def analyze(SG, seed_nodes, focus_procs=None):
     seed_procs_all = [n for n in seeds if label_of.get(n) == "Procedure"]
     seed_procs = [n for n in seed_procs_all if not focus_procs or n in focus_procs]
 
-    PS_from_seeds = set()
+    # Collect seeds' set memberships
+    PS_from_seeds, DS_from_seeds = set(), set()
     for p in seed_procs:
         for et, v in out[p]:
             if et == "IS_IN" and label_of.get(v) == "ProcSet":
@@ -90,15 +91,6 @@ def analyze(SG, seed_nodes, focus_procs=None):
         for et, u in inc[p]:
             if et in ("IS_IN","HAS_MEMBER") and label_of.get(u) == "ProcSet":
                 PS_from_seeds.add(u)
-        # Collect seeds' set memberships
-        PS_from_seeds, DS_from_seeds = set(), set()
-        for p in seed_procs:
-            for et, v in out[p]:
-                if et == "IS_IN" and label_of.get(v) == "ProcSet":
-                    PS_from_seeds.add(v)
-            for et, u in inc[p]:
-                if et in ("IS_IN","HAS_MEMBER") and label_of.get(u) == "ProcSet":
-                    PS_from_seeds.add(u)
 
     # Allow roll-up DX or specifics to count
     for dnode in seed_dx:
