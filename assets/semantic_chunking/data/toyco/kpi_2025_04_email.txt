@@ -1,0 +1,25 @@
+From: VP Operations <vp-ops@toyco.example>
+To: exec-team@toyco.example
+Subject: April FY25 KPIs – quick readout
+
+Hey team,
+
+Quick April readout before the full Q2 FY25 deck:
+
+- Top line looks good on the surface: Online revenue is up again vs March.
+- However, small-biz retention is noisy. We're still digesting the April price increase.
+
+A few messy notes (data team is still cleaning this stuff up):
+
+* Online SMB cancellations jumped right after we rolled out the new pricing page.
+* It's mostly month-to-month self-serve accounts churning, especially those that originally came in through promo-heavy campaigns.
+* Enterprise and larger SMB accounts look fine; no unusual churn there.
+* Retail is boring as usual – flat to slightly down.
+
+This feels like a smaller repeat of what we saw in Q1 FY25 right after the first round of pricing changes. We'll know more once we get a full quarter of post-change behavior.
+
+More in the retrospective doc, but tl;dr:
+- Short-term revenue lift: yes.
+- Long-term LTV/CAC impact: unclear.
+
+- Alex

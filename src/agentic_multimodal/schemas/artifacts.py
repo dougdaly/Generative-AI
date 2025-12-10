@@ -37,6 +37,7 @@ class MapMarker(BaseModel):
 class MapSpec(BaseModel):
     model_config = ConfigDict(frozen=True)
     region: str
-    markers: List[MapMarker]
     title: Optional[str] = None
+    markers: List["MapMarker"] = Field(default_factory=list)
+    meta: Dict[str, Any] = Field(default_factory=dict) 
     path: Optional[str] = None

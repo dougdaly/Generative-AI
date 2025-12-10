@@ -1,8 +1,8 @@
-# skills/adapters/countries_to_map.py
 from typing import Callable, Dict, Iterable, Optional, List, Tuple
 from agentic_multimodal.schemas.entities import Country, Person
 from agentic_multimodal.schemas.artifacts import MapMarker, MapSpec, ImageAsset
 import hashlib
+from types import SimpleNamespace
 
 LabelFn = Callable[[Country, Optional[Person]], str]
 ImageFn = Callable[[Country, Optional[Person]], Optional[ImageAsset]]
@@ -29,8 +29,6 @@ def _as_image_url(p) -> str | None:
         return p.get("image_url") or p.get("image") or p.get("thumb") or p.get("url")
     return None
 
-# --- update defaults to use helpers ---
-from types import SimpleNamespace
 
 def label_country_plus_pick(c, p):
     if not p:

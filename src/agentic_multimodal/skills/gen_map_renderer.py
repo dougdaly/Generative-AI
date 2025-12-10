@@ -3,26 +3,98 @@ from typing import Optional, Tuple
 import os, math, hashlib
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 from dataclasses import dataclass
-from math import log, tan, pi
 import io, hashlib, requests
+_MERC_MAX = 85.05112878
 
 
 # ------------ helpers -----------------------------------------------------------
 # ---- 1) pure geo projection (no pixels) ----
 def _mercator_xy(lon: float, lat: float) -> tuple[float, float]:
     # clamp latitude to avoid infinities (~85 deg)
-    lat = max(min(lat, 85.05112878), -85.05112878)
+    lat = max(min(lat, _MERC_MAX), -_MERC_MAX)
     x = lon
-    y = (180.0/pi) * log(tan(pi/4.0 + (lat*pi/180.0)/2.0))
+    y = (180.0/math.pi) * math.log(math.tan(math.pi/4.0 + (lat*math.pi/180.0)/2.0))
     return x, y
 
 def _equirect_xy(lon: float, lat: float) -> tuple[float, float]:
     return lon, lat
 
+def _extract_route_meta(spec):
+    """
+    Try to read route metadata from spec.meta if present.
+    Returns (route_waypoints, route_bbox) or (None, None).
+
+    route_waypoints expected as list of (lat, lon)
+    route_bbox expected as (min_lat, max_lat, min_lon, max_lon)
+    """
+    meta = getattr(spec, "meta", None)
+    if not isinstance(meta, dict):
+        return None, None
+
+    wps = meta.get("route_waypoints")
+    bbox = meta.get("bbox")
+    return wps, bbox
+
+def _merc_y(lat: float) -> float:
+    lat = max(min(lat, _MERC_MAX), -_MERC_MAX)
+    rad = math.radians(lat)
+    return math.log(math.tan(math.pi / 4.0 + rad / 2.0))
+
+def _inv_merc_y(y: float) -> float:
+    rad = 2.0 * math.atan(math.exp(y)) - math.pi / 2.0
+    return math.degrees(rad)
+
+def _pad_bbox_to_aspect(
+    west: float, south: float, east: float, north: float,
+    *,
+    width_px: int, height_px: int,
+    margin_px: int = 0,
+    lat_cap: float | None = 70.0,
+):
+    Wm = max(1, width_px  - 2 * margin_px)
+    Hm = max(1, height_px - 2 * margin_px)
+    canvas_ratio = Wm / Hm
+
+    # ---- Mercator-space spans ----
+    x_span = max(1e-9, math.radians(east - west))  # ✅ fix
+    y_s = _merc_y(south)
+    y_n = _merc_y(north)
+    y_span = max(1e-9, y_n - y_s)
+
+    current_ratio = x_span / y_span
+
+    # Too wide → pad latitude in Mercator y
+    if current_ratio > canvas_ratio:
+        target_y_span = x_span / canvas_ratio
+        extra = target_y_span - y_span
+        pad = extra / 2.0
+
+        new_y_s = y_s - pad
+        new_y_n = y_n + pad
+
+        south = _inv_merc_y(new_y_s)
+        north = _inv_merc_y(new_y_n)
+
+        if lat_cap is not None:
+            south = max(south, -lat_cap)
+            north = min(north,  lat_cap)
+
+    # Too tall → pad longitude in degrees (via radians math)
+    elif current_ratio < canvas_ratio:
+        target_x_span = y_span * canvas_ratio
+        extra = target_x_span - x_span
+        pad = extra / 2.0
+
+        pad_deg = math.degrees(pad)  # ✅ fix
+        west -= pad_deg
+        east += pad_deg
+
+        west = max(-180.0, west)
+        east = min(180.0, east)
+
+    return west, south, east, north
+
 # ---- 2) viewport projector (pixels) ----
-# skills/gen_map_renderer.py (or wherever your projector lives)
-from dataclasses import dataclass
-import math
 
 @dataclass(frozen=True)
 class ViewportProjector:
@@ -163,7 +235,30 @@ def _pastel_fill_for(name: str) -> tuple[int,int,int]:
     b = 160 + (h      ) % 80
     return (r, g, b)
 
-def _paint_basemap(canvas, draw, proj, upscale):
+def _draw_route(draw, proj, route_waypoints, *, upscale=1):
+    """
+    Draw a route polyline from waypoints.
+    route_waypoints: list[Waypoint]
+    """
+    if not route_waypoints or len(route_waypoints) < 2:
+        return
+
+    pts = []
+    for wp in route_waypoints:
+        try:
+            x, y = proj.project(wp.lon, wp.lat)  # NOTE: projector expects lon,lat
+            pts.append((x, y))
+        except Exception:
+            continue
+
+    if len(pts) >= 2:
+        # Keep it simple. A dark-ish line reads well over pastel fills.
+        # Avoid fancy styling for v1.
+        width = max(3, int(5 * upscale))
+        draw.line(pts, fill=(10, 30, 80), width=width)
+
+
+def _paint_basemap(canvas, draw, proj, upscale, *, fill_countries: bool = True):
     from agentic_multimodal.skills.data.natural_earth import iter_admin0_polys
 
     W, H = canvas.size
@@ -175,7 +270,9 @@ def _paint_basemap(canvas, draw, proj, upscale):
         fill = _pastel_fill_for(feat["name"])
         for poly in feat["polys"]:
             outer_px = [proj.project(lon, lat) for (lon, lat) in poly["outer"]]
-            draw.polygon(outer_px, fill=fill)
+            if fill_countries:
+                draw.polygon(outer_px, fill=fill)
+            # holes
             for hole in poly["holes"]:
                 hole_px = [proj.project(lon, lat) for (lon, lat) in hole]
                 draw.polygon(hole_px, fill=sea)
@@ -185,9 +282,7 @@ def _paint_basemap(canvas, draw, proj, upscale):
         for poly in feat["polys"]:
             outer_px = [proj.project(lon, lat) for (lon, lat) in poly["outer"]]
             draw.line(outer_px + outer_px[:1], fill=border, width=max(1, upscale))
-            for hole in poly["holes"]:
-                hole_px = [proj.project(lon, lat) for (lon, lat) in hole]
-                draw.line(hole_px + hole_px[:1], fill=border, width=max(1, upscale))
+
 
 
 def _fetch_url_bytes(url: str, timeout: int = 15) -> Optional[bytes]:
@@ -232,6 +327,18 @@ def _ensure_dir(p: str) -> None:
 def _hash(s: str) -> str:
     return hashlib.sha1(s.encode("utf-8")).hexdigest()[:16]
 
+def _round_rect(im: Image.Image, *, size_px: int, radius_px: int) -> Image.Image:
+    """Resize image to square and apply rounded-rect alpha mask."""
+    sz = max(8, int(size_px))
+    r  = max(0, int(radius_px))
+
+    im = im.convert("RGBA").resize((sz, sz), Image.Resampling.LANCZOS)
+
+    mask = _round_mask(sz, sz, r)  # you already have _round_mask
+    im.putalpha(mask)
+    return im
+
+
 def _resolve_font():
     # reuse your resolver if you prefer: from skills.image_gen import resolve_font
     candidates = [
@@ -267,14 +374,6 @@ def _rasterize_svg_to_png(svg_bytes: bytes, out_png_path: str, px: int) -> Optio
         _ensure_dir(out_png_path)
         cairosvg.svg2png(bytestring=svg_bytes, write_to=out_png_path, output_width=px, output_height=px)
         return out_png_path
-    except Exception:
-        return None
-
-def _fetch_url_bytes(url: str) -> Optional[bytes]:
-    # Try your service fetcher if available; else bail.
-    try:
-        from agentic_multimodal.services.io_web_fetcher import fetch_bytes
-        return fetch_bytes(url, timeout=15)
     except Exception:
         return None
 
@@ -328,7 +427,7 @@ def _load_marker_image(marker, cache_dir: str, marker_px: int) -> Optional[Image
 
 # ---- PUBLIC API -------------------------------------------------------------
 def render_map(spec, *, size=(2000,1200), margin=40,
-            marker_px=84, label_font_px=20,
+            marker_px=84, label_font_px=32, 
             outdir="artifacts/maps",
             show_labels=True,
             show_country_names=True,
@@ -344,7 +443,9 @@ def render_map(spec, *, size=(2000,1200), margin=40,
             label_offset_px=8,
             fetch_timeout=8.0,          
             fetch_retries=1,            
-            cache_dir=None,     
+            cache_dir=None,
+            fill_countries: bool = True,
+            title_scale: float = 1.5,
         ) -> str:
 
     if cache_dir is None:
@@ -362,14 +463,40 @@ def render_map(spec, *, size=(2000,1200), margin=40,
     draw = ImageDraw.Draw(canvas)
     font = ImageFont.truetype(_resolve_font(), label_font_px)
 
-    (west, south, east, north) = _lonlat_bbox(spec.markers)
-    proj = ViewportProjector(west, south, east, north, width=W, height=H, margin=margin, projection="mercator")
-    _paint_basemap(canvas, draw, proj, upscale)
+    title_font_px = max(label_font_px + 4, int(label_font_px * title_scale))
+    title_font = ImageFont.truetype(_resolve_font(), title_font_px)
+    
+    route_waypoints, route_bbox = _extract_route_meta(spec)
+
+    if route_bbox:
+        # route_bbox is (min_lat, max_lat, min_lon, max_lon)
+        min_lat, max_lat, min_lon, max_lon = route_bbox
+        west, south, east, north = (min_lon, min_lat, max_lon, max_lat)
+    else:
+        (west, south, east, north) = _lonlat_bbox(spec.markers)
+    # Pad the bounding box to match aspect ratio
+    west, south, east, north = _pad_bbox_to_aspect(
+        west, south, east, north,
+        width_px=W, height_px=H,
+        margin_px=margin,
+        lat_cap=70.0,
+    )
+    proj = ViewportProjector(
+        west, south, east, north,
+        width=W, height=H, margin=margin, projection="mercator"
+    )
+    _paint_basemap(canvas, draw, proj, upscale, fill_countries=fill_countries)
+    if route_waypoints:
+        _draw_route(draw, proj, route_waypoints, upscale=upscale)
 
     # Title
     title = getattr(spec, "title", None) or getattr(spec, "region", "Map")
-    tw, th = draw.textbbox((0,0), title, font=font)[2:]
-    draw.text(((W - tw)//2, 8), title, font=font, fill="#1f2d3a")
+
+    tb = draw.textbbox((0, 0), title, font=title_font)
+    tw = tb[2] - tb[0]
+    th = tb[3] - tb[1]
+
+    draw.text(((W - tw) // 2, 8), title, font=title_font, fill="#1f2d3a")
 
     # Marker cache dir
     cache_dir = os.path.join(outdir, "_cache")
@@ -390,7 +517,8 @@ def render_map(spec, *, size=(2000,1200), margin=40,
                 return Image.open(path).convert("RGBA")
             except Exception:
                 pass
-        if not fetch_images:
+        # Seems None is returned based on the logic
+        if not fetch_images: # fetch_images is not defined ???
             return None
         try:
             import requests
@@ -398,7 +526,7 @@ def render_map(spec, *, size=(2000,1200), margin=40,
             r = requests.get(url, timeout=fetch_timeout)
             r.raise_for_status()
             im = Image.open(BytesIO(r.content)).convert("RGBA")
-            im.thumbnail((pick_thumb_px, pick_thumb_px), Image.Resampling.LANCZOS)
+            im.thumbnail((pick_thumb_px, pick_thumb_px), Image.Resampling.LANCZOS) # pick_thumb_px is not defined
             im.save(path, "PNG", optimize=True)
             return im
         except Exception:

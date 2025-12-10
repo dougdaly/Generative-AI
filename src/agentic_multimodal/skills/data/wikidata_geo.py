@@ -4,6 +4,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Dict, List, Optional, Protocol, runtime_checkable, Iterable
 from agentic_multimodal.schemas.entities import Country
+from agentic_multimodal.skills.data.wikidata_search_label import search_labels
 
 
 from .wikidata_sparql import WikidataSPARQL
@@ -20,6 +21,42 @@ PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
 def _as_items(qids: Iterable[str]) -> str:
     """Render VALUES list like: wd:Q30 wd:Q90 …"""
     return " ".join(f"wd:{qid.lstrip('wd:')}" for qid in qids)
+
+from typing import Optional, Tuple
+from agentic_multimodal.skills.data.wikidata_search_label import _get
+
+def coords_for_qid(qid: str) -> Optional[Tuple[float, float]]:
+    """
+    Returns (lat, lon) from Wikidata P625, or None.
+    Uses the same _get transport as search_labels.
+    """
+    if not qid or not qid.startswith("Q"):
+        return None
+
+    data = _get({
+        "action": "wbgetentities",
+        "format": "json",
+        "ids": qid,
+        "props": "claims",
+    })
+
+    ent = data.get("entities", {}).get(qid, {})
+    claims = ent.get("claims", {})
+    p625 = claims.get("P625")
+    if not p625:
+        return None
+
+    mainsnak = p625[0].get("mainsnak", {})
+    datavalue = mainsnak.get("datavalue", {})
+    value = datavalue.get("value", {})
+
+    lat = value.get("latitude")
+    lon = value.get("longitude")
+    if lat is None or lon is None:
+        return None
+
+    return (float(lat), float(lon))
+
 
 @dataclass
 class WikidataGeo:
@@ -108,12 +145,13 @@ class WikidataGeo:
 class GeoProvider(Protocol):
     key: str
     title: str
-    def fetch(self, client: "WikidataGeo", *, language: str = "en", **params) -> List[Country]: ...
+    def fetch(self, geo: "WikidataGeo", *, language: str = "en", **params) -> List[Country]: ...
 
 class WikidataGeoSets:
     """Thin dispatcher that hosts named geo sets built from WikidataGeo."""
     def __init__(self, geo_client: "WikidataGeo", *, language: str = "e n"):
         self.geo = geo_client
+        self.client = geo_client
         self.language = language
         self._providers: Dict[str, GeoProvider] = {}
 
@@ -127,6 +165,86 @@ class WikidataGeoSets:
         if key not in self._providers:
             raise KeyError(f"Unknown geo set '{key}'. Have: {self.available()}")
         return self._providers[key].fetch(self.geo, language=self.language, **params)
+
+_BAD_DESC_TOKENS = (
+    "people from", "residents of", "demonym",
+    "episode of", "pandemic", "covid",
+    "auditions", "film", "song", "album",
+)
+
+_GOOD_DESC_TOKENS = (
+    "city", "capital", "town", "municip",
+    "human settlement", "metropolis",
+    "province", "state", "country",
+)
+
+def _candidate_queries(label: str):
+    s = (label or "").strip()
+    if not s:
+        return []
+
+    out = [s]
+
+    # If "City, Country", try "City" and "City Country"
+    if "," in s:
+        left = s.split(",", 1)[0].strip()
+        right = s.split(",", 1)[1].strip()
+        if left:
+            out.append(left)
+        if left and right:
+            out.append(f"{left} {right}")
+
+    # Also try removing parentheses or extra punctuation
+    out.append(s.replace(",", " "))
+    out.append(" ".join(s.split()))
+
+    # Deduplicate while preserving order
+    seen = set()
+    deduped = []
+    for q in out:
+        qn = q.lower()
+        if qn not in seen:
+            seen.add(qn)
+            deduped.append(q)
+    return deduped
+
+def geocode_place(self, label: str):
+    lang = getattr(self, "language", "en")
+
+    last_top = None
+
+    for q in _candidate_queries(label):
+        hits = search_labels(q, language=lang, limit=20)
+
+        if not hits:
+            continue
+
+        # Bucket hits by description quality
+        good = []
+        meh = []
+        bad = []
+
+        for h in hits:
+            desc = (getattr(h, "description", "") or "").lower()
+
+            if any(t in desc for t in _BAD_DESC_TOKENS):
+                bad.append(h)
+            elif any(t in desc for t in _GOOD_DESC_TOKENS):
+                good.append(h)
+            else:
+                meh.append(h)
+
+        ordered = good + meh + bad
+
+        for h in ordered:
+            coords = coords_for_qid(h.qid)
+            if coords:
+                return coords
+
+        last_top = [(h.qid, getattr(h, "label", ""), getattr(h, "description", "")) for h in hits[:5]]
+
+    raise ValueError(f"No coordinates found for '{label}'. Top hits: {last_top or []}")
+
 
 
 __all__ = ["WikidataGeo", "WikidataGeoSets"]

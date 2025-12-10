@@ -1,13 +1,13 @@
 from __future__ import annotations
 
-from types import SimpleNamespace
+from types import SimpleNamespace, MethodType
 
 from agentic_multimodal.services.settings import Settings
 from agentic_multimodal.services.llm_factory import build_llm, LLM
 
 from agentic_multimodal.skills.data.wikidata_sparql import WikidataSPARQL
 from agentic_multimodal.skills.data.wikidata_series import WikidataSeries
-from agentic_multimodal.skills.data.wikidata_geo import WikidataGeo, WikidataGeoSets
+from agentic_multimodal.skills.data.wikidata_geo import WikidataGeo, WikidataGeoSets, geocode_place
 
 from agentic_multimodal.skills.series.positions import PositionsProvider
 from agentic_multimodal.skills.series.award import AwardProvider
@@ -26,7 +26,7 @@ from agentic_multimodal.skills.series.candidates import AthletesByCitizenship, C
 from agentic_multimodal.skills.series.rankers import PageviewsRanker, OverridesRanker
 from agentic_multimodal.skills.series.per_country import PerCountrySelector
 from agentic_multimodal.skills.selectors.famous_by_country import FamousPersonsByCountry
-
+from agentic_multimodal.graphs.factory import build
 
 
 def make_registry(
@@ -57,37 +57,37 @@ def make_registry(
     #   U.S. state ...... Q35657
     #   CA province ..... Q11828004
     #   CA territory .... Q190113
-    class _Alias:
+    class _GeoCountryAlias:
         def __init__(self, key, title, **fixed):
             self.key, self.title, self._fixed = key, title, fixed
         def fetch(self, client, *, language="en", **params):
             base = SubdivisionsByCountryProvider()
             return base.fetch(client, language=language, **{**self._fixed, **params})
-    class _GeoAlias:
+    class _GeoContinentAlias:
         def __init__(self, key, title, **fixed):
             self.key, self.title, self._fixed = key, title, fixed
         def fetch(self, client, *, language="en", **params):
             base = RegionCountriesWithFlags()
             return base.fetch(client, language=language, **{**self._fixed, **params})
 
-    geo.register(_GeoAlias(
+    geo.register(_GeoContinentAlias(
         key="europe_countries_flags",
         title="Europe — countries, flags & capital coords",
         region_qids=["Q46"],                   # Europe
         instance_of_qids=["Q6256"],            # sovereign states
     ))
-    geo.register(_GeoAlias(
+    geo.register(_GeoContinentAlias(
         key="asia_countries_flags",
         title="Asia — countries, flags & capital coords",
         region_qids=["Q48"],
         instance_of_qids=["Q6256"],
     ))
-    geo.register(_Alias(
+    geo.register(_GeoCountryAlias(
         key="us_states_flags",
         title="U.S. states — flags & capital coords",
         country_qid="Q30", instance_of_qids=["Q35657"],
     ))
-    geo.register(_Alias(
+    geo.register(_GeoCountryAlias(
         key="ca_provinces_territories_flags",
         title="Canada — provinces & territories (flags & capital coords)",
         country_qid="Q16", instance_of_qids=["Q11828004", "Q190113"],
@@ -103,7 +103,7 @@ def make_registry(
         people_per_term=people_to_posterspec_per_term,
     )
 
-    return SimpleNamespace(
+    reg = SimpleNamespace(
         root=root_path,
         settings=settings,
         llm=llm,
@@ -113,6 +113,12 @@ def make_registry(
         render=render,       
         adapters=adapters,
     )
+
+    reg.graphs = SimpleNamespace(
+        geo=build("geo:v1", reg, checkpointer=checkpointer),
+    )
+    reg.geo.geocode_place = MethodType(geocode_place, reg.geo)
+    return reg
 
 # services/registry.py
 def _build_series() -> WikidataSeries:
