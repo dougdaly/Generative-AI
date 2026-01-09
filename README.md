@@ -3,12 +3,14 @@
 This repository contains a collection of demos showcasing **Generative AI techniques**.  
 The notebooks are built with the latest Python libraries, support multiple GPU providers, and include references and explanations where relevant.  
 
-👉 The goal: demonstrate practical implementations of GenAI concepts — from **image generation** to **multi-modal AI** — in a way that is both educational and extensible.  
+👉 The goal: demonstrate practical implementations of GenAI concepts — such as **image generation**, **RAG methodologies**, **agent orchestration with LangGraph, A2A and MCP**, and **multi-modal AI** — in a way that is both educational and extensible.  
 
 ---
 
 ## 📂 Contents & Topics
-
+### 🔹 Tool & Agent sharing across team**s (A2A, MCP, FastAPI)
+- **a2a_olympics.ipynb** → leverages A2A protocol to select optimal agents for selected tasks. Compares results against contract with a general-purpose agent.
+- **archival_restore.ipynb** → applies model context protocol (MCP) to develop an image enhancement approach optimal for OCR exploitation on a 130 year-old diary.
 ### 🔹 Multi-Agent Workflows (LangGraph / LangChain)
 - **mtg-card-generator.ipynb** → shows the benefits of using multiple agents for a complex task: building new creature cards for a popular trading card game (Magic: The Gathering)
 - **langGraph-multi-agent-workflow.ipynb** → combines a search agent + image generation agent (OpenAI) to generate a grid of famous athletes by country.  
@@ -25,6 +27,8 @@ The notebooks are built with the latest Python libraries, support multiple GPU p
 ### 🔹 Retrieval-Augmented Generation (RAG)
 - **Building_a_multimodal_RAG.ipynb** → queries both stored text and images with multimodal input.  
 
+### 🔹 Multimodal orchestration
+- **Agentic-Multimodal.ipynb** → solves a common problem with creating images with text by combining an orchestrator agent, image generation through a CLIP model, and a research tool for factual data. Builds posters of leaders with names & time in office, maps of the world with country & capital with a picture of a nation's celebrity, and maps a great circle route between two places on the globe.
 ### 🔹 Diffusion Models
 - **annotated_diffusion.ipynb** → step-by-step theory & math of progressive noise addition with MNIST fashion dataset.  
 - **score_based_diffusion.ipynb** → implements score-based diffusion with ODE solver.  
