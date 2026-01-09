@@ -1,3 +1,0 @@
-agentic_multimodal
-pokemon_mtg
-recsys-transparent
