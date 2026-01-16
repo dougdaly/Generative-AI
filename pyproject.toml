@@ -1,5 +1,9 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
-name = "agentic-multimodal"
+name = "generative-ai"
 version = "0.1.0"
 requires-python = ">=3.10"
 dependencies = [
@@ -10,12 +14,30 @@ dependencies = [
   "structlog>=24",
   "pillow>=10",
   "numpy>=1.26",
-  "matplotlib>=3.9",           # for quick previews if needed
-  # generation & maps (pin to your stack):
-  # "diffusers", "transformers", "torch", "accelerate", "xformers",
-  # "pyproj", "shapely", "cartopy", "cairosvg",
+  "matplotlib>=3.9",
+  "torch",     
 ]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[project.optional-dependencies]
+a2a = [
+  "fastapi>=0.110",
+  "uvicorn[standard]>=0.27",
+  "jsonschema>=4.21",
+  "python-dotenv>=1.0",
+]
+
+dev = [
+  "pytest>=8",
+  "ruff>=0.6",
+]
+
+agentic_multimodal = [
+   "diffusers", "transformers",  "accelerate", "xformers",
+   "pyproj", "shapely", "cartopy", "cairosvg",
+]

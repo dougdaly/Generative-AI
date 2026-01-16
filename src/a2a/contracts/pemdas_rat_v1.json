@@ -1,0 +1,12 @@
+{
+  "$id": "pemdas_rat_v1.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["type", "n", "d"],
+  "properties": {
+    "type": { "const": "rat:v1" },
+    "n": { "type": "integer" },
+    "d": { "type": "integer", "not": { "const": 0 } }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "pemdas.eval:v1",
+  "$id": "pemdas_eval_v1.json",
+  "type": "object",
+  "required": [
+    "type",
+    "expression"
+  ],
+  "properties": {
+    "type": {
+      "const": "pemdas.eval:v1"
+    },
+    "expression": {
+      "type": "string",
+      "minLength": 1
+    },
+    "max_steps": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1000
+    }
+  },
+  "additionalProperties": false
+}

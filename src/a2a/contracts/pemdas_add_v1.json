@@ -1,0 +1,12 @@
+{
+  "$id": "pemdas_add_v1.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["type", "a", "b"],
+  "properties": {
+    "type": { "const": "pemdas.add:v1" },
+    "a": { "$ref": "pemdas_rat_v1.json" },
+    "b": { "$ref": "pemdas_rat_v1.json" }
+  },
+  "additionalProperties": false
+}

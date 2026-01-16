@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pemdas_result_v1.json",
+  "type": "object",
+  "required": ["ok", "type", "op", "inputs", "result"],
+  "properties": {
+    "ok": { "type": "boolean" },
+    "type": { "const": "pemdas.result:v1" },
+    "op": { "enum": ["add", "mult"] },
+    "inputs": {
+      "type": "object",
+      "required": ["a", "b"],
+      "properties": {
+        "a": { "$ref": "pemdas_rat_v1.json" },
+        "b": { "$ref": "pemdas_rat_v1.json" }
+      },
+      "additionalProperties": false
+    },
+    "result": { "$ref": "pemdas_rat_v1.json" }
+  },
+  "additionalProperties": false
+}

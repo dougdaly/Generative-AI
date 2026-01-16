@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "a2a.request:v1",
+  "$id": "a2a_request_v1.json",
+  "type": "object",
+  "properties": {
+    "type": {
+      "const": "a2a.request:v1"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "RFC 3339 / ISO 8601 timestamp, e.g. 2026-01-13T16:20:00Z"
+    },
+    "request_id": {
+      "type": "string",
+      "description": "UUID string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "trace_id": {
+      "type": "string",
+      "description": "UUID string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "message_type": {
+      "type": "string",
+      "description": "Type of the payload (versioned), e.g. pemdas.add:v1 or olympics.task.solve:v1",
+      "minLength": 1
+    },
+    "payload": {
+      "description": "Message-type specific payload. Validate against schema for message_type."
+    },
+    "source": {
+      "type": "object",
+      "description": "Endpoint metadata for tracing/routing",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "skill": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "additionalProperties": true
+    },
+    "dest": {
+      "type": "object",
+      "description": "Endpoint metadata for tracing/routing",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "skill": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "type",
+    "timestamp",
+    "request_id",
+    "trace_id",
+    "message_type",
+    "payload",
+    "source",
+    "dest"
+  ],
+  "additionalProperties": false
+}

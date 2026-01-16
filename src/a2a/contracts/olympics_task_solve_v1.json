@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "olympics.task.solve:v1",
+  "$id": "olympics_task_solve.json",
+  "type": "object",
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Event id, e.g. T1, T2, T3"
+    },
+    "prompt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "contract": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable semantic contract / constraints"
+    },
+    "input_artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "description": "Optional: references or embedded artifacts needed for the task"
+    }
+  },
+  "required": [
+    "task_id",
+    "prompt",
+    "contract"
+  ],
+  "additionalProperties": false
+}

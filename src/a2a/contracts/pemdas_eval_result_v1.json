@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pemdas_eval_result_v1.json",
+  "title": "pemdas.eval.result:v1",
+  "type": "object",
+  "required": ["ok", "type", "expression", "final", "result", "step_count", "steps"],
+  "properties": {
+    "ok": { "const": true },
+    "type": { "const": "pemdas.eval.result:v1" },
+    "expression": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[0-9+\\-*/()\\s]+$"
+    },
+    "final": { "type": "string" },
+    "result": { "$ref": "pemdas_rat_v1.json" },
+    "step_count": { "type": "integer", "minimum": 0 },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["i", "before", "call", "result", "after"],
+        "properties": {
+          "i": { "type": "integer", "minimum": 1 },
+          "before": { "type": "string" },
+          "after": { "type": "string" },
+          "call": {
+            "type": "object",
+            "required": [
+              "agent",
+              "dest_url",
+              "trace_id",
+              "message_type",
+              "a",
+              "b",
+              "request_id",
+              "latency_ms"
+            ],
+            "properties": {
+              "agent": { "enum": ["ADD", "MULT"] },
+              "dest_url": { "type": "string", "format": "uri" },
+              "trace_id": { "type": "string", "format": "uuid" },
+              "message_type": { "enum": ["pemdas.add:v1", "pemdas.mult:v1"] },
+              "a": { "$ref": "pemdas_rat_v1.json" },
+              "b": { "$ref": "pemdas_rat_v1.json" },
+              "request_id": { "type": "string", "format": "uuid" },
+              "latency_ms": { "type": "number", "minimum": 0 },
+              "note": { "type": "string" }
+            },
+            "additionalProperties": false
+          },
+          "result": { "$ref": "pemdas_rat_v1.json" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

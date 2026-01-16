@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: generative-ai
+Version: 0.1.0
+Requires-Python: >=3.10
+Requires-Dist: pydantic>=2.7
+Requires-Dist: pydantic-settings>=2.2
+Requires-Dist: httpx>=0.27
+Requires-Dist: diskcache>=5.6
+Requires-Dist: structlog>=24
+Requires-Dist: pillow>=10
+Requires-Dist: numpy>=1.26
+Requires-Dist: matplotlib>=3.9
+Requires-Dist: torch
+Provides-Extra: a2a
+Requires-Dist: fastapi>=0.110; extra == "a2a"
+Requires-Dist: uvicorn[standard]>=0.27; extra == "a2a"
+Requires-Dist: jsonschema>=4.21; extra == "a2a"
+Requires-Dist: python-dotenv>=1.0; extra == "a2a"
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"
+Requires-Dist: ruff>=0.6; extra == "dev"
+Provides-Extra: agentic-multimodal
+Requires-Dist: diffusers; extra == "agentic-multimodal"
+Requires-Dist: transformers; extra == "agentic-multimodal"
+Requires-Dist: accelerate; extra == "agentic-multimodal"
+Requires-Dist: xformers; extra == "agentic-multimodal"
+Requires-Dist: pyproj; extra == "agentic-multimodal"
+Requires-Dist: shapely; extra == "agentic-multimodal"
+Requires-Dist: cartopy; extra == "agentic-multimodal"
+Requires-Dist: cairosvg; extra == "agentic-multimodal"

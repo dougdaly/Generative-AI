@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "olympics.task.score:v1",
+  "$id": "olympics_task_score.json",
+  "type": "object",
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "score": {
+      "type": "number"
+    },
+    "details": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "task_id",
+    "score"
+  ],
+  "additionalProperties": true
+}
