@@ -1,0 +1,173 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "supply_problem_v1.json",
+  "type": "object",
+  "required": [
+    "type",
+    "components",
+    "suppliers",
+    "assembly_options",
+    "shipping_options",
+    "tariffs",
+    "constraints",
+    "budget"
+  ],
+  "properties": {
+    "type": { "const": "supply.problem:v1" },
+
+    "components": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/component_req" }
+    },
+
+    "suppliers": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/supplier" }
+    },
+
+    "assembly_options": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/assembly" }
+    },
+
+    "shipping_options": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/shipping" }
+    },
+
+    "tariffs": { "$ref": "#/$defs/tariffs" },
+
+    "constraints": { "$ref": "#/$defs/constraints" },
+
+    "budget": { "$ref": "#/$defs/budget" }
+  },
+  "additionalProperties": false,
+
+  "$defs": {
+    "country": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 3,
+      "pattern": "^[A-Z]{2,3}$"
+    },
+
+    "component_req": {
+      "type": "object",
+      "required": ["id", "qty"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "qty": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
+    },
+
+    "supplier": {
+      "type": "object",
+      "required": ["component_id", "country", "unit_cost", "lead_days"],
+      "properties": {
+        "component_id": { "type": "string", "minLength": 1 },
+        "country": { "$ref": "#/$defs/country" },
+        "unit_cost": { "type": "number", "minimum": 0 },
+        "lead_days": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+
+    "assembly": {
+      "type": "object",
+      "required": ["country", "labor_cost", "lead_days"],
+      "properties": {
+        "country": { "$ref": "#/$defs/country" },
+        "labor_cost": { "type": "number", "minimum": 0 },
+        "lead_days": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+
+    "shipping": {
+      "type": "object",
+      "required": ["mode", "cost", "lead_days"],
+      "properties": {
+        "mode": { "type": "string", "enum": ["SEA", "AIR", "GROUND"] },
+        "cost": { "type": "number", "minimum": 0 },
+        "lead_days": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+
+    "tariff_component_import": {
+      "type": "object",
+      "required": ["from", "to", "rate"],
+      "properties": {
+        "from": { "$ref": "#/$defs/country" },
+        "to": { "$ref": "#/$defs/country" },
+        "rate": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "additionalProperties": false
+    },
+
+    "tariff_finished_good_to_us": {
+      "type": "object",
+      "required": ["from", "rate"],
+      "properties": {
+        "from": { "$ref": "#/$defs/country" },
+        "rate": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "additionalProperties": false
+    },
+
+    "tariffs": {
+      "type": "object",
+      "required": ["component_import", "finished_good_to_us"],
+      "properties": {
+        "component_import": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/tariff_component_import" }
+        },
+        "finished_good_to_us": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/tariff_finished_good_to_us" }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "banned_rule": {
+      "type": "object",
+      "required": ["component_id", "supplier_country", "ship_mode"],
+      "properties": {
+        "component_id": { "type": "string", "minLength": 1 },
+        "supplier_country": { "$ref": "#/$defs/country" },
+        "ship_mode": { "type": "string", "enum": ["SEA", "AIR", "GROUND"] }
+      },
+      "additionalProperties": false
+    },
+
+    "constraints": {
+      "type": "object",
+      "required": ["max_total_lead_days", "banned"],
+      "properties": {
+        "max_total_lead_days": { "type": "integer", "minimum": 0 },
+        "banned": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/banned_rule" }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "budget": {
+      "type": "object",
+      "required": ["max_evaluations"],
+      "properties": {
+        "max_evaluations": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
+    }
+  }
+}
+

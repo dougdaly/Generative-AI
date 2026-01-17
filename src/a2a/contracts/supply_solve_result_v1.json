@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "supply_solve_result_v1.json",
+  "type": "object",
+  "required": [
+    "type",
+    "ok",
+    "best_plan",
+    "best_price",
+    "evaluations_used",
+    "evaluation_budget",
+    "strategy_config",
+    "trace"
+  ],
+  "properties": {
+    "type": { "const": "supply.solve.result:v1" },
+    "ok": { "type": "boolean" },
+
+    "best_plan": { "$ref": "supply_plan_v1.json" },
+    "best_price": { "$ref": "supply_price_breakdown_v1.json" },
+
+    "evaluations_used": { "type": "integer", "minimum": 0 },
+    "evaluation_budget": { "type": "integer", "minimum": 1 },
+
+    "lower_bound": { "type": "number", "minimum": 0 },
+    "gap_to_bound_pct": { "type": "number", "minimum": 0 },
+
+    "strategy_config": { "$ref": "supply_strategy_config_v1.json" },
+
+    "trace": {
+      "type": "array",
+      "items": { "$ref": "supply_trace_event_v1.json" }
+    }
+  },
+  "additionalProperties": false
+}

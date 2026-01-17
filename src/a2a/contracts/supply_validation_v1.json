@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "supply_validation_v1.json",
+  "type": "object",
+  "required": ["type", "ok", "reasons"],
+  "properties": {
+    "type": { "const": "supply.validation:v1" },
+    "ok": { "type": "boolean" },
+    "reasons": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}
+

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "supply_trace_event_v1.json",
+  "title": "supply.trace.event:v1",
+  "type": "object",
+  "required": [
+    "type",
+    "eval_i",
+    "action",
+    "candidate",
+    "validation",
+    "price",
+    "best_so_far_cost"
+  ],
+  "properties": {
+    "type": { "const": "supply.trace.event:v1" },
+
+    "eval_i": { "type": "integer", "minimum": 1 },
+
+    "action": {
+      "type": "string",
+      "enum": [
+        "seed_greedy",
+        "mutate_supplier",
+        "mutate_assembly",
+        "mutate_shipping",
+        "mixed_mutation",
+        "beam_keep",
+        "beam_drop"
+      ]
+    },
+
+    "reason": { "type": "string" },
+
+    "candidate": { "$ref": "supply_plan_v1.json" },
+    "validation": { "$ref": "supply_validation_v1.json" },
+    "price": { "$ref": "supply_price_breakdown_v1.json" },
+
+    "best_so_far_cost": { "type": "number", "minimum": 0 },
+    "latency_ms": { "type": "number", "minimum": 0 },
+
+    "note": { "type": "string" }
+  },
+  "additionalProperties": false
+}
+

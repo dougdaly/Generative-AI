@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "supply_price_v1.json",
+  "type": "object",
+  "required": ["type", "problem", "plan"],
+  "properties": {
+    "type": { "const": "supply.price:v1" },
+    "problem": { "$ref": "supply_problem_v1.json" },
+    "plan": { "$ref": "supply_plan_v1.json" }
+  },
+  "additionalProperties": false
+}
+

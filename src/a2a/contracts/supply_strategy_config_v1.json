@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "supply_strategy_config_v1.json",
+  "title": "supply.strategy.config:v1",
+  "type": "object",
+  "required": [
+    "type",
+    "selection_method",
+    "strategy_selected"
+  ],
+  "properties": {
+    "type": { "const": "supply.strategy.config:v1" },
+
+    "selection_method": {
+      "type": "string",
+      "enum": ["fixed", "policy", "adaptive"]
+    },
+
+    "strategy_requested": {
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "#/$defs/strategy_name" }
+      ]
+    },
+
+    "strategy_selected": { "$ref": "#/$defs/strategy_name" },
+
+    "policy_name": { "type": "string" },
+    "policy_version": { "type": "string" },
+
+    "params": {
+      "type": "object",
+      "properties": {
+        "random_seed": { "type": "integer" },
+
+        "greedy": {
+          "type": "object",
+          "properties": {
+            "mutations_per_step": { "type": "integer", "minimum": 1 }
+          },
+          "additionalProperties": false
+        },
+
+        "beam": {
+          "type": "object",
+          "properties": {
+            "beam_width": { "type": "integer", "minimum": 1 }
+          },
+          "additionalProperties": false
+        },
+
+        "random_restart": {
+          "type": "object",
+          "properties": {
+            "restarts": { "type": "integer", "minimum": 1 },
+            "steps_per_restart": { "type": "integer", "minimum": 1 }
+          },
+          "additionalProperties": false
+        },
+
+        "anneal": {
+          "type": "object",
+          "properties": {
+            "t_start": { "type": "number", "exclusiveMinimum": 0 },
+            "t_end": { "type": "number", "exclusiveMinimum": 0 },
+            "cooling": { "type": "number", "exclusiveMinimum": 0, "exclusiveMaximum": 1 }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": false,
+
+  "$defs": {
+    "strategy_name": {
+      "type": "string",
+      "enum": ["greedy", "beam", "random_restart", "anneal"]
+    }
+  }
+}

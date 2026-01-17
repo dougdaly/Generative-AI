@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "supply_solve_v1.json",
+  "type": "object",
+  "required": ["type", "problem", "evaluation_budget", "strategy_config"],
+  "properties": {
+    "type": { "const": "supply.solve:v1" },
+    "problem": { "$ref": "supply_problem_v1.json" },
+    "evaluation_budget": { "type": "integer", "minimum": 1 },
+    "strategy_config": { "$ref": "supply_strategy_config_v1.json" }
+  },
+  "additionalProperties": false
+}

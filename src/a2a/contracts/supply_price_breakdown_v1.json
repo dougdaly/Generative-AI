@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "supply_price_breakdown_v1.json",
+  "type": "object",
+  "required": ["type", "ok", "total_cost", "line_items", "total_lead_days"],
+  "properties": {
+    "type": { "const": "supply.price_breakdown:v1" },
+    "ok": { "type": "boolean" },
+    "total_cost": { "type": "number", "minimum": 0 },
+    "total_lead_days": { "type": "integer", "minimum": 0 },
+    "line_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["kind", "amount"],
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "component_cost",
+              "component_tariff",
+              "assembly_labor",
+              "shipping",
+              "finished_good_tariff",
+              "penalty"
+            ]
+          },
+          "amount": { "type": "number" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
+

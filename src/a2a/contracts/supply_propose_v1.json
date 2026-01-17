@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "supply_propose_v1.json",
+  "type": "object",
+  "required": ["type", "problem", "n_candidates"],
+  "properties": {
+    "type": { "const": "supply.propose:v1" },
+    "problem": { "$ref": "supply_problem_v1.json" },
+    "base_plan": { "$ref": "supply_plan_v1.json" },
+    "n_candidates": { "type": "integer", "minimum": 1, "maximum": 50 },
+    "mutation": {
+      "type": "string",
+      "enum": ["greedy", "swap_one_supplier", "swap_assembly", "swap_shipping", "mixed"]
+    }
+  },
+  "additionalProperties": false
+}
+
