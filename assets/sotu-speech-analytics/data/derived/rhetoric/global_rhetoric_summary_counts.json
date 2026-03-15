@@ -1,0 +1,6378 @@
+{
+  "tone_counts": [
+    {
+      "year": 2010,
+      "topic_id": 2,
+      "tone": "neutral",
+      "count": 2
+    },
+    {
+      "year": 2010,
+      "topic_id": 4,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 2,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 4,
+      "tone": "unifying",
+      "count": 13
+    },
+    {
+      "year": 2010,
+      "topic_id": 10,
+      "tone": "grave",
+      "count": 9
+    },
+    {
+      "year": 2010,
+      "topic_id": 10,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 16,
+      "tone": "grave",
+      "count": 3
+    },
+    {
+      "year": 2010,
+      "topic_id": 0,
+      "tone": "unifying",
+      "count": 5
+    },
+    {
+      "year": 2010,
+      "topic_id": 1,
+      "tone": "grave",
+      "count": 5
+    },
+    {
+      "year": 2010,
+      "topic_id": 0,
+      "tone": "grave",
+      "count": 6
+    },
+    {
+      "year": 2010,
+      "topic_id": 1,
+      "tone": "unifying",
+      "count": 8
+    },
+    {
+      "year": 2010,
+      "topic_id": 7,
+      "tone": "unifying",
+      "count": 11
+    },
+    {
+      "year": 2010,
+      "topic_id": 12,
+      "tone": "neutral",
+      "count": 10
+    },
+    {
+      "year": 2010,
+      "topic_id": 12,
+      "tone": "grave",
+      "count": 8
+    },
+    {
+      "year": 2010,
+      "topic_id": 12,
+      "tone": "unifying",
+      "count": 9
+    },
+    {
+      "year": 2010,
+      "topic_id": 0,
+      "tone": "adversarial",
+      "count": 6
+    },
+    {
+      "year": 2010,
+      "topic_id": 10,
+      "tone": "neutral",
+      "count": 3
+    },
+    {
+      "year": 2010,
+      "topic_id": 17,
+      "tone": "grave",
+      "count": 3
+    },
+    {
+      "year": 2010,
+      "topic_id": 17,
+      "tone": "unifying",
+      "count": 3
+    },
+    {
+      "year": 2010,
+      "topic_id": 14,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2010,
+      "topic_id": 17,
+      "tone": "upbeat",
+      "count": 6
+    },
+    {
+      "year": 2010,
+      "topic_id": 1,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2010,
+      "topic_id": 10,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 12,
+      "tone": "urgent",
+      "count": 8
+    },
+    {
+      "year": 2010,
+      "topic_id": 15,
+      "tone": "upbeat",
+      "count": 7
+    },
+    {
+      "year": 2010,
+      "topic_id": 12,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 1,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 7,
+      "tone": "urgent",
+      "count": 2
+    },
+    {
+      "year": 2010,
+      "topic_id": 15,
+      "tone": "urgent",
+      "count": 3
+    },
+    {
+      "year": 2010,
+      "topic_id": 13,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 13,
+      "tone": "urgent",
+      "count": 2
+    },
+    {
+      "year": 2010,
+      "topic_id": 15,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 15,
+      "tone": "unifying",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 13,
+      "tone": "unifying",
+      "count": 4
+    },
+    {
+      "year": 2010,
+      "topic_id": 6,
+      "tone": "unifying",
+      "count": 7
+    },
+    {
+      "year": 2010,
+      "topic_id": 14,
+      "tone": "neutral",
+      "count": 2
+    },
+    {
+      "year": 2010,
+      "topic_id": 14,
+      "tone": "unifying",
+      "count": 4
+    },
+    {
+      "year": 2010,
+      "topic_id": 2,
+      "tone": "unifying",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 14,
+      "tone": "grave",
+      "count": 3
+    },
+    {
+      "year": 2010,
+      "topic_id": 14,
+      "tone": "urgent",
+      "count": 2
+    },
+    {
+      "year": 2010,
+      "topic_id": 11,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 17,
+      "tone": "neutral",
+      "count": 2
+    },
+    {
+      "year": 2010,
+      "topic_id": 8,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 12,
+      "tone": "conciliatory",
+      "count": 2
+    },
+    {
+      "year": 2010,
+      "topic_id": 0,
+      "tone": "neutral",
+      "count": 9
+    },
+    {
+      "year": 2010,
+      "topic_id": 0,
+      "tone": "conciliatory",
+      "count": 2
+    },
+    {
+      "year": 2010,
+      "topic_id": 13,
+      "tone": "grave",
+      "count": 3
+    },
+    {
+      "year": 2010,
+      "topic_id": 16,
+      "tone": "conciliatory",
+      "count": 2
+    },
+    {
+      "year": 2010,
+      "topic_id": 8,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 16,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 16,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 16,
+      "tone": "unifying",
+      "count": 3
+    },
+    {
+      "year": 2010,
+      "topic_id": 16,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 11,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 11,
+      "tone": "unifying",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 8,
+      "tone": "unifying",
+      "count": 2
+    },
+    {
+      "year": 2010,
+      "topic_id": 7,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 4,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 2,
+      "tone": "unifying",
+      "count": 8
+    },
+    {
+      "year": 2012,
+      "topic_id": 16,
+      "tone": "grave",
+      "count": 5
+    },
+    {
+      "year": 2012,
+      "topic_id": 16,
+      "tone": "unifying",
+      "count": 2
+    },
+    {
+      "year": 2012,
+      "topic_id": 1,
+      "tone": "unifying",
+      "count": 8
+    },
+    {
+      "year": 2012,
+      "topic_id": 7,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2012,
+      "topic_id": 4,
+      "tone": "unifying",
+      "count": 7
+    },
+    {
+      "year": 2012,
+      "topic_id": 7,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 15,
+      "tone": "grave",
+      "count": 2
+    },
+    {
+      "year": 2012,
+      "topic_id": 10,
+      "tone": "grave",
+      "count": 7
+    },
+    {
+      "year": 2012,
+      "topic_id": 8,
+      "tone": "adversarial",
+      "count": 3
+    },
+    {
+      "year": 2012,
+      "topic_id": 10,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 15,
+      "tone": "upbeat",
+      "count": 17
+    },
+    {
+      "year": 2012,
+      "topic_id": 12,
+      "tone": "upbeat",
+      "count": 9
+    },
+    {
+      "year": 2012,
+      "topic_id": 12,
+      "tone": "unifying",
+      "count": 7
+    },
+    {
+      "year": 2012,
+      "topic_id": 15,
+      "tone": "unifying",
+      "count": 10
+    },
+    {
+      "year": 2012,
+      "topic_id": 8,
+      "tone": "unifying",
+      "count": 6
+    },
+    {
+      "year": 2012,
+      "topic_id": 1,
+      "tone": "neutral",
+      "count": 2
+    },
+    {
+      "year": 2012,
+      "topic_id": 15,
+      "tone": "neutral",
+      "count": 4
+    },
+    {
+      "year": 2012,
+      "topic_id": 1,
+      "tone": "upbeat",
+      "count": 6
+    },
+    {
+      "year": 2012,
+      "topic_id": 17,
+      "tone": "unifying",
+      "count": 8
+    },
+    {
+      "year": 2012,
+      "topic_id": 17,
+      "tone": "adversarial",
+      "count": 2
+    },
+    {
+      "year": 2012,
+      "topic_id": 17,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2012,
+      "topic_id": 8,
+      "tone": "urgent",
+      "count": 3
+    },
+    {
+      "year": 2012,
+      "topic_id": 1,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 9,
+      "tone": "unifying",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 6,
+      "tone": "upbeat",
+      "count": 5
+    },
+    {
+      "year": 2012,
+      "topic_id": 6,
+      "tone": "urgent",
+      "count": 3
+    },
+    {
+      "year": 2012,
+      "topic_id": 6,
+      "tone": "unifying",
+      "count": 5
+    },
+    {
+      "year": 2012,
+      "topic_id": 6,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 6,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 6,
+      "tone": "neutral",
+      "count": 2
+    },
+    {
+      "year": 2012,
+      "topic_id": 8,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 8,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 8,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 11,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 11,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 15,
+      "tone": "urgent",
+      "count": 2
+    },
+    {
+      "year": 2012,
+      "topic_id": 15,
+      "tone": "adversarial",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 12,
+      "tone": "urgent",
+      "count": 2
+    },
+    {
+      "year": 2012,
+      "topic_id": 8,
+      "tone": "grave",
+      "count": 2
+    },
+    {
+      "year": 2012,
+      "topic_id": 14,
+      "tone": "neutral",
+      "count": 2
+    },
+    {
+      "year": 2012,
+      "topic_id": 12,
+      "tone": "neutral",
+      "count": 3
+    },
+    {
+      "year": 2012,
+      "topic_id": 17,
+      "tone": "grave",
+      "count": 7
+    },
+    {
+      "year": 2012,
+      "topic_id": 17,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 9,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 17,
+      "tone": "neutral",
+      "count": 3
+    },
+    {
+      "year": 2012,
+      "topic_id": 12,
+      "tone": "conciliatory",
+      "count": 4
+    },
+    {
+      "year": 2012,
+      "topic_id": 1,
+      "tone": "adversarial",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 12,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 10,
+      "tone": "adversarial",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 0,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 13,
+      "tone": "unifying",
+      "count": 5
+    },
+    {
+      "year": 2012,
+      "topic_id": 16,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 16,
+      "tone": "neutral",
+      "count": 2
+    },
+    {
+      "year": 2012,
+      "topic_id": 13,
+      "tone": "grave",
+      "count": 2
+    },
+    {
+      "year": 2012,
+      "topic_id": 13,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 7,
+      "tone": "unifying",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 7,
+      "tone": "defiant",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 13,
+      "tone": "defiant",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 0,
+      "tone": "neutral",
+      "count": 2
+    },
+    {
+      "year": 2012,
+      "topic_id": 2,
+      "tone": "humble",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 3,
+      "tone": "unifying",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 1,
+      "tone": "unifying",
+      "count": 15
+    },
+    {
+      "year": 2014,
+      "topic_id": 10,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2014,
+      "topic_id": 15,
+      "tone": "upbeat",
+      "count": 11
+    },
+    {
+      "year": 2014,
+      "topic_id": 7,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 12,
+      "tone": "neutral",
+      "count": 3
+    },
+    {
+      "year": 2014,
+      "topic_id": 0,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 12,
+      "tone": "conciliatory",
+      "count": 3
+    },
+    {
+      "year": 2014,
+      "topic_id": 12,
+      "tone": "unifying",
+      "count": 9
+    },
+    {
+      "year": 2014,
+      "topic_id": 7,
+      "tone": "unifying",
+      "count": 3
+    },
+    {
+      "year": 2014,
+      "topic_id": 10,
+      "tone": "grave",
+      "count": 3
+    },
+    {
+      "year": 2014,
+      "topic_id": 10,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 6,
+      "tone": "upbeat",
+      "count": 8
+    },
+    {
+      "year": 2014,
+      "topic_id": 4,
+      "tone": "unifying",
+      "count": 6
+    },
+    {
+      "year": 2014,
+      "topic_id": 15,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 17,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 12,
+      "tone": "upbeat",
+      "count": 4
+    },
+    {
+      "year": 2014,
+      "topic_id": 15,
+      "tone": "unifying",
+      "count": 3
+    },
+    {
+      "year": 2014,
+      "topic_id": 11,
+      "tone": "unifying",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 15,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 7,
+      "tone": "urgent",
+      "count": 2
+    },
+    {
+      "year": 2014,
+      "topic_id": 1,
+      "tone": "upbeat",
+      "count": 5
+    },
+    {
+      "year": 2014,
+      "topic_id": 1,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 14,
+      "tone": "conciliatory",
+      "count": 2
+    },
+    {
+      "year": 2014,
+      "topic_id": 9,
+      "tone": "unifying",
+      "count": 5
+    },
+    {
+      "year": 2014,
+      "topic_id": 9,
+      "tone": "grave",
+      "count": 2
+    },
+    {
+      "year": 2014,
+      "topic_id": 1,
+      "tone": "grave",
+      "count": 3
+    },
+    {
+      "year": 2014,
+      "topic_id": 6,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 6,
+      "tone": "unifying",
+      "count": 3
+    },
+    {
+      "year": 2014,
+      "topic_id": 1,
+      "tone": "adversarial",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 3,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 17,
+      "tone": "unifying",
+      "count": 5
+    },
+    {
+      "year": 2014,
+      "topic_id": 17,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 8,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 17,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2014,
+      "topic_id": 1,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 17,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 14,
+      "tone": "unifying",
+      "count": 5
+    },
+    {
+      "year": 2014,
+      "topic_id": 14,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 8,
+      "tone": "unifying",
+      "count": 3
+    },
+    {
+      "year": 2014,
+      "topic_id": 14,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 0,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 16,
+      "tone": "unifying",
+      "count": 2
+    },
+    {
+      "year": 2014,
+      "topic_id": 16,
+      "tone": "neutral",
+      "count": 3
+    },
+    {
+      "year": 2014,
+      "topic_id": 16,
+      "tone": "grave",
+      "count": 5
+    },
+    {
+      "year": 2014,
+      "topic_id": 16,
+      "tone": "urgent",
+      "count": 2
+    },
+    {
+      "year": 2014,
+      "topic_id": 13,
+      "tone": "unifying",
+      "count": 3
+    },
+    {
+      "year": 2014,
+      "topic_id": 13,
+      "tone": "neutral",
+      "count": 4
+    },
+    {
+      "year": 2014,
+      "topic_id": 13,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 13,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 5,
+      "tone": "unifying",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 4,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 2,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 2,
+      "tone": "unifying",
+      "count": 2
+    },
+    {
+      "year": 2014,
+      "topic_id": 3,
+      "tone": "unifying",
+      "count": 6
+    },
+    {
+      "year": 2014,
+      "topic_id": 3,
+      "tone": "grave",
+      "count": 2
+    },
+    {
+      "year": 2014,
+      "topic_id": 4,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 2,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 2,
+      "tone": "unifying",
+      "count": 7
+    },
+    {
+      "year": 2016,
+      "topic_id": 12,
+      "tone": "unifying",
+      "count": 2
+    },
+    {
+      "year": 2016,
+      "topic_id": 12,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 11,
+      "tone": "upbeat",
+      "count": 5
+    },
+    {
+      "year": 2016,
+      "topic_id": 8,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 8,
+      "tone": "unifying",
+      "count": 3
+    },
+    {
+      "year": 2016,
+      "topic_id": 1,
+      "tone": "unifying",
+      "count": 8
+    },
+    {
+      "year": 2016,
+      "topic_id": 7,
+      "tone": "future-oriented",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 7,
+      "tone": "neutral",
+      "count": 3
+    },
+    {
+      "year": 2016,
+      "topic_id": 7,
+      "tone": "grave",
+      "count": 3
+    },
+    {
+      "year": 2016,
+      "topic_id": 7,
+      "tone": "unifying",
+      "count": 8
+    },
+    {
+      "year": 2016,
+      "topic_id": 4,
+      "tone": "unifying",
+      "count": 9
+    },
+    {
+      "year": 2016,
+      "topic_id": 4,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 15,
+      "tone": "neutral",
+      "count": 4
+    },
+    {
+      "year": 2016,
+      "topic_id": 4,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 10,
+      "tone": "upbeat",
+      "count": 3
+    },
+    {
+      "year": 2016,
+      "topic_id": 10,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 1,
+      "tone": "grave",
+      "count": 3
+    },
+    {
+      "year": 2016,
+      "topic_id": 10,
+      "tone": "grave",
+      "count": 2
+    },
+    {
+      "year": 2016,
+      "topic_id": 7,
+      "tone": "upbeat",
+      "count": 3
+    },
+    {
+      "year": 2016,
+      "topic_id": 6,
+      "tone": "unifying",
+      "count": 3
+    },
+    {
+      "year": 2016,
+      "topic_id": 6,
+      "tone": "upbeat",
+      "count": 3
+    },
+    {
+      "year": 2016,
+      "topic_id": 6,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 14,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 14,
+      "tone": "unifying",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 14,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2016,
+      "topic_id": 12,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 0,
+      "tone": "neutral",
+      "count": 6
+    },
+    {
+      "year": 2016,
+      "topic_id": 8,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 17,
+      "tone": "unifying",
+      "count": 2
+    },
+    {
+      "year": 2016,
+      "topic_id": 17,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 17,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 15,
+      "tone": "unifying",
+      "count": 3
+    },
+    {
+      "year": 2016,
+      "topic_id": 15,
+      "tone": "upbeat",
+      "count": 6
+    },
+    {
+      "year": 2016,
+      "topic_id": 15,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 1,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 11,
+      "tone": "unifying",
+      "count": 3
+    },
+    {
+      "year": 2016,
+      "topic_id": 15,
+      "tone": "adversarial",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 10,
+      "tone": "defiant",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 13,
+      "tone": "unifying",
+      "count": 2
+    },
+    {
+      "year": 2016,
+      "topic_id": 9,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 3,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 16,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 13,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 0,
+      "tone": "grave",
+      "count": 4
+    },
+    {
+      "year": 2016,
+      "topic_id": 13,
+      "tone": "grave",
+      "count": 2
+    },
+    {
+      "year": 2016,
+      "topic_id": 5,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 13,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 16,
+      "tone": "urgent",
+      "count": 8
+    },
+    {
+      "year": 2016,
+      "topic_id": 16,
+      "tone": "grave",
+      "count": 6
+    },
+    {
+      "year": 2016,
+      "topic_id": 12,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 13,
+      "tone": "neutral",
+      "count": 3
+    },
+    {
+      "year": 2016,
+      "topic_id": 7,
+      "tone": "urgent",
+      "count": 2
+    },
+    {
+      "year": 2016,
+      "topic_id": 16,
+      "tone": "unifying",
+      "count": 2
+    },
+    {
+      "year": 2016,
+      "topic_id": 0,
+      "tone": "unifying",
+      "count": 8
+    },
+    {
+      "year": 2016,
+      "topic_id": 4,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 7,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 0,
+      "tone": "conciliatory",
+      "count": 5
+    },
+    {
+      "year": 2016,
+      "topic_id": 0,
+      "tone": "urgent",
+      "count": 2
+    },
+    {
+      "year": 2016,
+      "topic_id": 15,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 2,
+      "tone": "unifying",
+      "count": 12
+    },
+    {
+      "year": 2018,
+      "topic_id": 4,
+      "tone": "upbeat",
+      "count": 6
+    },
+    {
+      "year": 2018,
+      "topic_id": 4,
+      "tone": "unifying",
+      "count": 22
+    },
+    {
+      "year": 2018,
+      "topic_id": 9,
+      "tone": "unifying",
+      "count": 7
+    },
+    {
+      "year": 2018,
+      "topic_id": 3,
+      "tone": "unifying",
+      "count": 8
+    },
+    {
+      "year": 2018,
+      "topic_id": 10,
+      "tone": "upbeat",
+      "count": 4
+    },
+    {
+      "year": 2018,
+      "topic_id": 17,
+      "tone": "upbeat",
+      "count": 7
+    },
+    {
+      "year": 2018,
+      "topic_id": 14,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 1,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "topic_id": 1,
+      "tone": "unifying",
+      "count": 3
+    },
+    {
+      "year": 2018,
+      "topic_id": 8,
+      "tone": "neutral",
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "topic_id": 12,
+      "tone": "upbeat",
+      "count": 4
+    },
+    {
+      "year": 2018,
+      "topic_id": 12,
+      "tone": "unifying",
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "topic_id": 15,
+      "tone": "upbeat",
+      "count": 3
+    },
+    {
+      "year": 2018,
+      "topic_id": 11,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 11,
+      "tone": "unifying",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 14,
+      "tone": "unifying",
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "topic_id": 14,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 10,
+      "tone": "defiant",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 15,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 8,
+      "tone": "grave",
+      "count": 4
+    },
+    {
+      "year": 2018,
+      "topic_id": 9,
+      "tone": "grave",
+      "count": 4
+    },
+    {
+      "year": 2018,
+      "topic_id": 9,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 8,
+      "tone": "unifying",
+      "count": 6
+    },
+    {
+      "year": 2018,
+      "topic_id": 7,
+      "tone": "unifying",
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "topic_id": 3,
+      "tone": "grave",
+      "count": 8
+    },
+    {
+      "year": 2018,
+      "topic_id": 3,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 12,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 12,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 7,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 1,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 8,
+      "tone": "urgent",
+      "count": 3
+    },
+    {
+      "year": 2018,
+      "topic_id": 8,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 13,
+      "tone": "urgent",
+      "count": 4
+    },
+    {
+      "year": 2018,
+      "topic_id": 13,
+      "tone": "grave",
+      "count": 3
+    },
+    {
+      "year": 2018,
+      "topic_id": 16,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "topic_id": 16,
+      "tone": "grave",
+      "count": 3
+    },
+    {
+      "year": 2018,
+      "topic_id": 2,
+      "tone": "grave",
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "topic_id": 16,
+      "tone": "adversarial",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 16,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 16,
+      "tone": "neutral",
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "topic_id": 13,
+      "tone": "adversarial",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 12,
+      "tone": "adversarial",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 13,
+      "tone": "unifying",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 2,
+      "tone": "upbeat",
+      "count": 3
+    },
+    {
+      "year": 2020,
+      "topic_id": 4,
+      "tone": "upbeat",
+      "count": 11
+    },
+    {
+      "year": 2020,
+      "topic_id": 4,
+      "tone": "defiant",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 7,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 10,
+      "tone": "upbeat",
+      "count": 16
+    },
+    {
+      "year": 2020,
+      "topic_id": 16,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 4,
+      "tone": "unifying",
+      "count": 11
+    },
+    {
+      "year": 2020,
+      "topic_id": 1,
+      "tone": "unifying",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 1,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 2,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 1,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 8,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 15,
+      "tone": "upbeat",
+      "count": 6
+    },
+    {
+      "year": 2020,
+      "topic_id": 1,
+      "tone": "adversarial",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 0,
+      "tone": "defiant",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 1,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 13,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 13,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 13,
+      "tone": "unifying",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 13,
+      "tone": "urgent",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 2,
+      "tone": "unifying",
+      "count": 11
+    },
+    {
+      "year": 2020,
+      "topic_id": 4,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 3,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 3,
+      "tone": "unifying",
+      "count": 13
+    },
+    {
+      "year": 2020,
+      "topic_id": 3,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 6,
+      "tone": "unifying",
+      "count": 5
+    },
+    {
+      "year": 2020,
+      "topic_id": 9,
+      "tone": "unifying",
+      "count": 10
+    },
+    {
+      "year": 2020,
+      "topic_id": 9,
+      "tone": "grave",
+      "count": 6
+    },
+    {
+      "year": 2020,
+      "topic_id": 9,
+      "tone": "neutral",
+      "count": 3
+    },
+    {
+      "year": 2020,
+      "topic_id": 14,
+      "tone": "upbeat",
+      "count": 7
+    },
+    {
+      "year": 2020,
+      "topic_id": 14,
+      "tone": "unifying",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 14,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 14,
+      "tone": "adversarial",
+      "count": 3
+    },
+    {
+      "year": 2020,
+      "topic_id": 8,
+      "tone": "adversarial",
+      "count": 3
+    },
+    {
+      "year": 2020,
+      "topic_id": 11,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 11,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 2,
+      "tone": "neutral",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 11,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 9,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 11,
+      "tone": "unifying",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 17,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 12,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 12,
+      "tone": "unifying",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 8,
+      "tone": "unifying",
+      "count": 3
+    },
+    {
+      "year": 2020,
+      "topic_id": 8,
+      "tone": "grave",
+      "count": 5
+    },
+    {
+      "year": 2020,
+      "topic_id": 3,
+      "tone": "grave",
+      "count": 8
+    },
+    {
+      "year": 2020,
+      "topic_id": 8,
+      "tone": "neutral",
+      "count": 4
+    },
+    {
+      "year": 2020,
+      "topic_id": 12,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 16,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 16,
+      "tone": "grave",
+      "count": 5
+    },
+    {
+      "year": 2020,
+      "topic_id": 13,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 0,
+      "tone": "adversarial",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 16,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 9,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 4,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 2,
+      "tone": "neutral",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 2,
+      "tone": "unifying",
+      "count": 5
+    },
+    {
+      "year": 2022,
+      "topic_id": 7,
+      "tone": "unifying",
+      "count": 7
+    },
+    {
+      "year": 2022,
+      "topic_id": 0,
+      "tone": "unifying",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 5,
+      "tone": "grave",
+      "count": 17
+    },
+    {
+      "year": 2022,
+      "topic_id": 5,
+      "tone": "unifying",
+      "count": 9
+    },
+    {
+      "year": 2022,
+      "topic_id": 16,
+      "tone": "unifying",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 13,
+      "tone": "urgent",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 13,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 5,
+      "tone": "neutral",
+      "count": 4
+    },
+    {
+      "year": 2022,
+      "topic_id": 5,
+      "tone": "urgent",
+      "count": 3
+    },
+    {
+      "year": 2022,
+      "topic_id": 13,
+      "tone": "unifying",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 13,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 10,
+      "tone": "grave",
+      "count": 6
+    },
+    {
+      "year": 2022,
+      "topic_id": 1,
+      "tone": "unifying",
+      "count": 3
+    },
+    {
+      "year": 2022,
+      "topic_id": 8,
+      "tone": "unifying",
+      "count": 9
+    },
+    {
+      "year": 2022,
+      "topic_id": 11,
+      "tone": "upbeat",
+      "count": 12
+    },
+    {
+      "year": 2022,
+      "topic_id": 11,
+      "tone": "unifying",
+      "count": 12
+    },
+    {
+      "year": 2022,
+      "topic_id": 1,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 10,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 17,
+      "tone": "grave",
+      "count": 3
+    },
+    {
+      "year": 2022,
+      "topic_id": 10,
+      "tone": "unifying",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 15,
+      "tone": "urgent",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 12,
+      "tone": "unifying",
+      "count": 4
+    },
+    {
+      "year": 2022,
+      "topic_id": 15,
+      "tone": "upbeat",
+      "count": 13
+    },
+    {
+      "year": 2022,
+      "topic_id": 15,
+      "tone": "unifying",
+      "count": 3
+    },
+    {
+      "year": 2022,
+      "topic_id": 17,
+      "tone": "unifying",
+      "count": 6
+    },
+    {
+      "year": 2022,
+      "topic_id": 15,
+      "tone": "neutral",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 7,
+      "tone": "upbeat",
+      "count": 6
+    },
+    {
+      "year": 2022,
+      "topic_id": 4,
+      "tone": "upbeat",
+      "count": 3
+    },
+    {
+      "year": 2022,
+      "topic_id": 10,
+      "tone": "urgent",
+      "count": 3
+    },
+    {
+      "year": 2022,
+      "topic_id": 10,
+      "tone": "adversarial",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 12,
+      "tone": "adversarial",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 12,
+      "tone": "upbeat",
+      "count": 4
+    },
+    {
+      "year": 2022,
+      "topic_id": 14,
+      "tone": "unifying",
+      "count": 5
+    },
+    {
+      "year": 2022,
+      "topic_id": 14,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 14,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 9,
+      "tone": "grave",
+      "count": 4
+    },
+    {
+      "year": 2022,
+      "topic_id": 3,
+      "tone": "unifying",
+      "count": 3
+    },
+    {
+      "year": 2022,
+      "topic_id": 17,
+      "tone": "upbeat",
+      "count": 3
+    },
+    {
+      "year": 2022,
+      "topic_id": 14,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 6,
+      "tone": "unifying",
+      "count": 4
+    },
+    {
+      "year": 2022,
+      "topic_id": 12,
+      "tone": "urgent",
+      "count": 4
+    },
+    {
+      "year": 2022,
+      "topic_id": 8,
+      "tone": "urgent",
+      "count": 4
+    },
+    {
+      "year": 2022,
+      "topic_id": 17,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 14,
+      "tone": "urgent",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 11,
+      "tone": "neutral",
+      "count": 3
+    },
+    {
+      "year": 2022,
+      "topic_id": 11,
+      "tone": "grave",
+      "count": 3
+    },
+    {
+      "year": 2022,
+      "topic_id": 7,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 1,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 11,
+      "tone": "urgent",
+      "count": 4
+    },
+    {
+      "year": 2022,
+      "topic_id": 8,
+      "tone": "grave",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 3,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 8,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 2,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 3,
+      "tone": "neutral",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 9,
+      "tone": "unifying",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 8,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 4,
+      "tone": "unifying",
+      "count": 7
+    },
+    {
+      "year": 2022,
+      "topic_id": 6,
+      "tone": "urgent",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 16,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 3,
+      "tone": "grave",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 2,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 9,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 3,
+      "tone": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 4,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 7,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 2,
+      "tone": "neutral",
+      "count": 3
+    },
+    {
+      "year": 2024,
+      "topic_id": 2,
+      "tone": "grave",
+      "count": 11
+    },
+    {
+      "year": 2024,
+      "topic_id": 4,
+      "tone": "grave",
+      "count": 3
+    },
+    {
+      "year": 2024,
+      "topic_id": 4,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 5,
+      "tone": "urgent",
+      "count": 3
+    },
+    {
+      "year": 2024,
+      "topic_id": 5,
+      "tone": "unifying",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 5,
+      "tone": "grave",
+      "count": 3
+    },
+    {
+      "year": 2024,
+      "topic_id": 5,
+      "tone": "adversarial",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 13,
+      "tone": "neutral",
+      "count": 5
+    },
+    {
+      "year": 2024,
+      "topic_id": 2,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 13,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 12,
+      "tone": "urgent",
+      "count": 5
+    },
+    {
+      "year": 2024,
+      "topic_id": 5,
+      "tone": "defiant",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 0,
+      "tone": "grave",
+      "count": 5
+    },
+    {
+      "year": 2024,
+      "topic_id": 0,
+      "tone": "unifying",
+      "count": 6
+    },
+    {
+      "year": 2024,
+      "topic_id": 9,
+      "tone": "grave",
+      "count": 10
+    },
+    {
+      "year": 2024,
+      "topic_id": 9,
+      "tone": "unifying",
+      "count": 6
+    },
+    {
+      "year": 2024,
+      "topic_id": 11,
+      "tone": "unifying",
+      "count": 3
+    },
+    {
+      "year": 2024,
+      "topic_id": 9,
+      "tone": "adversarial",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 8,
+      "tone": "adversarial",
+      "count": 5
+    },
+    {
+      "year": 2024,
+      "topic_id": 0,
+      "tone": "adversarial",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 7,
+      "tone": "upbeat",
+      "count": 3
+    },
+    {
+      "year": 2024,
+      "topic_id": 7,
+      "tone": "unifying",
+      "count": 9
+    },
+    {
+      "year": 2024,
+      "topic_id": 10,
+      "tone": "grave",
+      "count": 3
+    },
+    {
+      "year": 2024,
+      "topic_id": 2,
+      "tone": "adversarial",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 4,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 10,
+      "tone": "unifying",
+      "count": 4
+    },
+    {
+      "year": 2024,
+      "topic_id": 11,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 4,
+      "tone": "unifying",
+      "count": 14
+    },
+    {
+      "year": 2024,
+      "topic_id": 10,
+      "tone": "upbeat",
+      "count": 10
+    },
+    {
+      "year": 2024,
+      "topic_id": 15,
+      "tone": "upbeat",
+      "count": 7
+    },
+    {
+      "year": 2024,
+      "topic_id": 14,
+      "tone": "upbeat",
+      "count": 3
+    },
+    {
+      "year": 2024,
+      "topic_id": 12,
+      "tone": "unifying",
+      "count": 5
+    },
+    {
+      "year": 2024,
+      "topic_id": 2,
+      "tone": "unifying",
+      "count": 7
+    },
+    {
+      "year": 2024,
+      "topic_id": 1,
+      "tone": "unifying",
+      "count": 8
+    },
+    {
+      "year": 2024,
+      "topic_id": 1,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 1,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 3,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 0,
+      "tone": "neutral",
+      "count": 4
+    },
+    {
+      "year": 2024,
+      "topic_id": 17,
+      "tone": "unifying",
+      "count": 6
+    },
+    {
+      "year": 2024,
+      "topic_id": 14,
+      "tone": "neutral",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 14,
+      "tone": "defiant",
+      "count": 3
+    },
+    {
+      "year": 2024,
+      "topic_id": 14,
+      "tone": "unifying",
+      "count": 7
+    },
+    {
+      "year": 2024,
+      "topic_id": 5,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 8,
+      "tone": "defiant",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 17,
+      "tone": "neutral",
+      "count": 9
+    },
+    {
+      "year": 2024,
+      "topic_id": 10,
+      "tone": "neutral",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 17,
+      "tone": "upbeat",
+      "count": 9
+    },
+    {
+      "year": 2024,
+      "topic_id": 6,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 6,
+      "tone": "unifying",
+      "count": 5
+    },
+    {
+      "year": 2024,
+      "topic_id": 1,
+      "tone": "neutral",
+      "count": 4
+    },
+    {
+      "year": 2024,
+      "topic_id": 6,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 17,
+      "tone": "grave",
+      "count": 3
+    },
+    {
+      "year": 2024,
+      "topic_id": 17,
+      "tone": "adversarial",
+      "count": 6
+    },
+    {
+      "year": 2024,
+      "topic_id": 17,
+      "tone": "urgent",
+      "count": 3
+    },
+    {
+      "year": 2024,
+      "topic_id": 12,
+      "tone": "adversarial",
+      "count": 3
+    },
+    {
+      "year": 2024,
+      "topic_id": 2,
+      "tone": "urgent",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 12,
+      "tone": "neutral",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 8,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 8,
+      "tone": "urgent",
+      "count": 4
+    },
+    {
+      "year": 2024,
+      "topic_id": 8,
+      "tone": "neutral",
+      "count": 6
+    },
+    {
+      "year": 2024,
+      "topic_id": 8,
+      "tone": "grave",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 12,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 8,
+      "tone": "conciliatory",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 4,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 3,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 3,
+      "tone": "unifying",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 8,
+      "tone": "unifying",
+      "count": 6
+    },
+    {
+      "year": 2024,
+      "topic_id": 7,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 16,
+      "tone": "grave",
+      "count": 8
+    },
+    {
+      "year": 2024,
+      "topic_id": 16,
+      "tone": "urgent",
+      "count": 3
+    },
+    {
+      "year": 2024,
+      "topic_id": 16,
+      "tone": "adversarial",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 16,
+      "tone": "conciliatory",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 16,
+      "tone": "neutral",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 13,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 12,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 11,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 11,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 9,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 7,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 16,
+      "tone": "unifying",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 2,
+      "tone": "neutral",
+      "count": 6
+    },
+    {
+      "year": 2026,
+      "topic_id": 2,
+      "tone": "upbeat",
+      "count": 14
+    },
+    {
+      "year": 2026,
+      "topic_id": 4,
+      "tone": "upbeat",
+      "count": 8
+    },
+    {
+      "year": 2026,
+      "topic_id": 7,
+      "tone": "upbeat",
+      "count": 7
+    },
+    {
+      "year": 2026,
+      "topic_id": 8,
+      "tone": "neutral",
+      "count": 6
+    },
+    {
+      "year": 2026,
+      "topic_id": 8,
+      "tone": "upbeat",
+      "count": 5
+    },
+    {
+      "year": 2026,
+      "topic_id": 8,
+      "tone": "grave",
+      "count": 5
+    },
+    {
+      "year": 2026,
+      "topic_id": 10,
+      "tone": "grave",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 3,
+      "tone": "neutral",
+      "count": 5
+    },
+    {
+      "year": 2026,
+      "topic_id": 10,
+      "tone": "upbeat",
+      "count": 20
+    },
+    {
+      "year": 2026,
+      "topic_id": 12,
+      "tone": "upbeat",
+      "count": 5
+    },
+    {
+      "year": 2026,
+      "topic_id": 15,
+      "tone": "upbeat",
+      "count": 4
+    },
+    {
+      "year": 2026,
+      "topic_id": 1,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 0,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 0,
+      "tone": "adversarial",
+      "count": 8
+    },
+    {
+      "year": 2026,
+      "topic_id": 2,
+      "tone": "unifying",
+      "count": 32
+    },
+    {
+      "year": 2026,
+      "topic_id": 0,
+      "tone": "neutral",
+      "count": 7
+    },
+    {
+      "year": 2026,
+      "topic_id": 3,
+      "tone": "upbeat",
+      "count": 3
+    },
+    {
+      "year": 2026,
+      "topic_id": 3,
+      "tone": "unifying",
+      "count": 15
+    },
+    {
+      "year": 2026,
+      "topic_id": 3,
+      "tone": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 2,
+      "tone": "grave",
+      "count": 5
+    },
+    {
+      "year": 2026,
+      "topic_id": 9,
+      "tone": "grave",
+      "count": 16
+    },
+    {
+      "year": 2026,
+      "topic_id": 9,
+      "tone": "unifying",
+      "count": 22
+    },
+    {
+      "year": 2026,
+      "topic_id": 4,
+      "tone": "unifying",
+      "count": 10
+    },
+    {
+      "year": 2026,
+      "topic_id": 12,
+      "tone": "unifying",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 12,
+      "tone": "adversarial",
+      "count": 5
+    },
+    {
+      "year": 2026,
+      "topic_id": 17,
+      "tone": "upbeat",
+      "count": 12
+    },
+    {
+      "year": 2026,
+      "topic_id": 2,
+      "tone": "defiant",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 3,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 1,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 2,
+      "tone": "conciliatory",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 0,
+      "tone": "unifying",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 10,
+      "tone": "adversarial",
+      "count": 5
+    },
+    {
+      "year": 2026,
+      "topic_id": 12,
+      "tone": "neutral",
+      "count": 5
+    },
+    {
+      "year": 2026,
+      "topic_id": 13,
+      "tone": "neutral",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 8,
+      "tone": "adversarial",
+      "count": 12
+    },
+    {
+      "year": 2026,
+      "topic_id": 17,
+      "tone": "adversarial",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 14,
+      "tone": "adversarial",
+      "count": 3
+    },
+    {
+      "year": 2026,
+      "topic_id": 14,
+      "tone": "upbeat",
+      "count": 5
+    },
+    {
+      "year": 2026,
+      "topic_id": 17,
+      "tone": "neutral",
+      "count": 4
+    },
+    {
+      "year": 2026,
+      "topic_id": 14,
+      "tone": "unifying",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 14,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 11,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 15,
+      "tone": "neutral",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 9,
+      "tone": "upbeat",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 14,
+      "tone": "neutral",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 1,
+      "tone": "unifying",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 17,
+      "tone": "unifying",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 9,
+      "tone": "neutral",
+      "count": 3
+    },
+    {
+      "year": 2026,
+      "topic_id": 9,
+      "tone": "adversarial",
+      "count": 3
+    },
+    {
+      "year": 2026,
+      "topic_id": 0,
+      "tone": "urgent",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 8,
+      "tone": "defiant",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 1,
+      "tone": "grave",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 1,
+      "tone": "adversarial",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 12,
+      "tone": "urgent",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 9,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 2,
+      "tone": "adversarial",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 2,
+      "tone": "unusual",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 4,
+      "tone": "conciliatory",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 4,
+      "tone": "adversarial",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 9,
+      "tone": "tribute",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 13,
+      "tone": "upbeat",
+      "count": 3
+    },
+    {
+      "year": 2026,
+      "topic_id": 16,
+      "tone": "adversarial",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 13,
+      "tone": "grave",
+      "count": 3
+    },
+    {
+      "year": 2026,
+      "topic_id": 16,
+      "tone": "grave",
+      "count": 6
+    },
+    {
+      "year": 2026,
+      "topic_id": 16,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 16,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 7,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 3,
+      "tone": "grave",
+      "count": 9
+    },
+    {
+      "year": 2026,
+      "topic_id": 13,
+      "tone": "defiant",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 13,
+      "tone": "adversarial",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 5,
+      "tone": "neutral",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 5,
+      "tone": "upbeat",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 8,
+      "tone": "urgent",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 15,
+      "tone": "grave",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 4,
+      "tone": "neutral",
+      "count": 1
+    }
+  ],
+  "device_counts": [
+    {
+      "year": 2010,
+      "topic_id": 2,
+      "device": "values_frame",
+      "count": 2
+    },
+    {
+      "year": 2010,
+      "topic_id": 4,
+      "device": "values_frame",
+      "count": 11
+    },
+    {
+      "year": 2010,
+      "topic_id": 10,
+      "device": "warning_threat",
+      "count": 8
+    },
+    {
+      "year": 2010,
+      "topic_id": 16,
+      "device": "warning_threat",
+      "count": 2
+    },
+    {
+      "year": 2010,
+      "topic_id": 10,
+      "device": "scoreboard",
+      "count": 3
+    },
+    {
+      "year": 2010,
+      "topic_id": 10,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 0,
+      "device": "values_frame",
+      "count": 19
+    },
+    {
+      "year": 2010,
+      "topic_id": 1,
+      "device": "anecdote",
+      "count": 4
+    },
+    {
+      "year": 2010,
+      "topic_id": 1,
+      "device": "values_frame",
+      "count": 4
+    },
+    {
+      "year": 2010,
+      "topic_id": 0,
+      "device": "attack_contrast",
+      "count": 5
+    },
+    {
+      "year": 2010,
+      "topic_id": 4,
+      "device": "anecdote",
+      "count": 3
+    },
+    {
+      "year": 2010,
+      "topic_id": 7,
+      "device": "values_frame",
+      "count": 6
+    },
+    {
+      "year": 2010,
+      "topic_id": 12,
+      "device": "policy_proposal",
+      "count": 22
+    },
+    {
+      "year": 2010,
+      "topic_id": 12,
+      "device": "warning_threat",
+      "count": 8
+    },
+    {
+      "year": 2010,
+      "topic_id": 12,
+      "device": "attack_contrast",
+      "count": 2
+    },
+    {
+      "year": 2010,
+      "topic_id": 10,
+      "device": "policy_proposal",
+      "count": 2
+    },
+    {
+      "year": 2010,
+      "topic_id": 17,
+      "device": "policy_proposal",
+      "count": 6
+    },
+    {
+      "year": 2010,
+      "topic_id": 14,
+      "device": "policy_proposal",
+      "count": 7
+    },
+    {
+      "year": 2010,
+      "topic_id": 17,
+      "device": "scoreboard",
+      "count": 5
+    },
+    {
+      "year": 2010,
+      "topic_id": 1,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 12,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 1,
+      "device": "policy_proposal",
+      "count": 4
+    },
+    {
+      "year": 2010,
+      "topic_id": 15,
+      "device": "policy_proposal",
+      "count": 9
+    },
+    {
+      "year": 2010,
+      "topic_id": 1,
+      "device": "warning_threat",
+      "count": 2
+    },
+    {
+      "year": 2010,
+      "topic_id": 12,
+      "device": "call_to_action",
+      "count": 4
+    },
+    {
+      "year": 2010,
+      "topic_id": 1,
+      "device": "call_to_action",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 7,
+      "device": "warning_threat",
+      "count": 3
+    },
+    {
+      "year": 2010,
+      "topic_id": 15,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 13,
+      "device": "warning_threat",
+      "count": 5
+    },
+    {
+      "year": 2010,
+      "topic_id": 17,
+      "device": "warning_threat",
+      "count": 2
+    },
+    {
+      "year": 2010,
+      "topic_id": 15,
+      "device": "values_frame",
+      "count": 2
+    },
+    {
+      "year": 2010,
+      "topic_id": 13,
+      "device": "policy_proposal",
+      "count": 5
+    },
+    {
+      "year": 2010,
+      "topic_id": 6,
+      "device": "policy_proposal",
+      "count": 7
+    },
+    {
+      "year": 2010,
+      "topic_id": 14,
+      "device": "values_frame",
+      "count": 2
+    },
+    {
+      "year": 2010,
+      "topic_id": 2,
+      "device": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 14,
+      "device": "warning_threat",
+      "count": 4
+    },
+    {
+      "year": 2010,
+      "topic_id": 11,
+      "device": "policy_proposal",
+      "count": 3
+    },
+    {
+      "year": 2010,
+      "topic_id": 2,
+      "device": "call_to_action",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 7,
+      "device": "call_to_action",
+      "count": 2
+    },
+    {
+      "year": 2010,
+      "topic_id": 8,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 12,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 17,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 0,
+      "device": "policy_proposal",
+      "count": 2
+    },
+    {
+      "year": 2010,
+      "topic_id": 0,
+      "device": "call_to_action",
+      "count": 2
+    },
+    {
+      "year": 2010,
+      "topic_id": 16,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 8,
+      "device": "attack_contrast",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 16,
+      "device": "policy_proposal",
+      "count": 7
+    },
+    {
+      "year": 2010,
+      "topic_id": 16,
+      "device": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 7,
+      "device": "policy_proposal",
+      "count": 3
+    },
+    {
+      "year": 2010,
+      "topic_id": 8,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 8,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "topic_id": 4,
+      "device": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 2,
+      "device": "tribute",
+      "count": 4
+    },
+    {
+      "year": 2012,
+      "topic_id": 16,
+      "device": "warning_threat",
+      "count": 6
+    },
+    {
+      "year": 2012,
+      "topic_id": 16,
+      "device": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 1,
+      "device": "values_frame",
+      "count": 3
+    },
+    {
+      "year": 2012,
+      "topic_id": 2,
+      "device": "values_frame",
+      "count": 4
+    },
+    {
+      "year": 2012,
+      "topic_id": 7,
+      "device": "values_frame",
+      "count": 4
+    },
+    {
+      "year": 2012,
+      "topic_id": 1,
+      "device": "anecdote",
+      "count": 4
+    },
+    {
+      "year": 2012,
+      "topic_id": 4,
+      "device": "values_frame",
+      "count": 7
+    },
+    {
+      "year": 2012,
+      "topic_id": 15,
+      "device": "warning_threat",
+      "count": 3
+    },
+    {
+      "year": 2012,
+      "topic_id": 10,
+      "device": "warning_threat",
+      "count": 7
+    },
+    {
+      "year": 2012,
+      "topic_id": 8,
+      "device": "attack_contrast",
+      "count": 3
+    },
+    {
+      "year": 2012,
+      "topic_id": 10,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 15,
+      "device": "scoreboard",
+      "count": 4
+    },
+    {
+      "year": 2012,
+      "topic_id": 12,
+      "device": "scoreboard",
+      "count": 2
+    },
+    {
+      "year": 2012,
+      "topic_id": 12,
+      "device": "policy_proposal",
+      "count": 19
+    },
+    {
+      "year": 2012,
+      "topic_id": 15,
+      "device": "policy_proposal",
+      "count": 27
+    },
+    {
+      "year": 2012,
+      "topic_id": 8,
+      "device": "policy_proposal",
+      "count": 11
+    },
+    {
+      "year": 2012,
+      "topic_id": 1,
+      "device": "policy_proposal",
+      "count": 9
+    },
+    {
+      "year": 2012,
+      "topic_id": 17,
+      "device": "policy_proposal",
+      "count": 14
+    },
+    {
+      "year": 2012,
+      "topic_id": 1,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 9,
+      "device": "anecdote",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 6,
+      "device": "policy_proposal",
+      "count": 15
+    },
+    {
+      "year": 2012,
+      "topic_id": 6,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 6,
+      "device": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 8,
+      "device": "call_to_action",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 7,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 11,
+      "device": "call_to_action",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 11,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 15,
+      "device": "anecdote",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 15,
+      "device": "attack_contrast",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 8,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 8,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 14,
+      "device": "policy_proposal",
+      "count": 2
+    },
+    {
+      "year": 2012,
+      "topic_id": 17,
+      "device": "values_frame",
+      "count": 3
+    },
+    {
+      "year": 2012,
+      "topic_id": 9,
+      "device": "call_to_action",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 12,
+      "device": "call_to_action",
+      "count": 3
+    },
+    {
+      "year": 2012,
+      "topic_id": 17,
+      "device": "warning_threat",
+      "count": 4
+    },
+    {
+      "year": 2012,
+      "topic_id": 17,
+      "device": "attack_contrast",
+      "count": 2
+    },
+    {
+      "year": 2012,
+      "topic_id": 1,
+      "device": "attack_contrast",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 12,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 10,
+      "device": "attack_contrast",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 12,
+      "device": "attack_contrast",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 0,
+      "device": "values_frame",
+      "count": 2
+    },
+    {
+      "year": 2012,
+      "topic_id": 13,
+      "device": "values_frame",
+      "count": 3
+    },
+    {
+      "year": 2012,
+      "topic_id": 16,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 16,
+      "device": "values_frame",
+      "count": 2
+    },
+    {
+      "year": 2012,
+      "topic_id": 13,
+      "device": "warning_threat",
+      "count": 3
+    },
+    {
+      "year": 2012,
+      "topic_id": 13,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 13,
+      "device": "policy_proposal",
+      "count": 2
+    },
+    {
+      "year": 2012,
+      "topic_id": 2,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 0,
+      "device": "attack_contrast",
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "topic_id": 3,
+      "device": "anecdote",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 1,
+      "device": "policy_proposal",
+      "count": 13
+    },
+    {
+      "year": 2014,
+      "topic_id": 1,
+      "device": "anecdote",
+      "count": 6
+    },
+    {
+      "year": 2014,
+      "topic_id": 1,
+      "device": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 10,
+      "device": "scoreboard",
+      "count": 2
+    },
+    {
+      "year": 2014,
+      "topic_id": 15,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 7,
+      "device": "values_frame",
+      "count": 4
+    },
+    {
+      "year": 2014,
+      "topic_id": 12,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 0,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 12,
+      "device": "policy_proposal",
+      "count": 14
+    },
+    {
+      "year": 2014,
+      "topic_id": 12,
+      "device": "call_to_action",
+      "count": 4
+    },
+    {
+      "year": 2014,
+      "topic_id": 1,
+      "device": "values_frame",
+      "count": 5
+    },
+    {
+      "year": 2014,
+      "topic_id": 10,
+      "device": "warning_threat",
+      "count": 2
+    },
+    {
+      "year": 2014,
+      "topic_id": 10,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 10,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 6,
+      "device": "policy_proposal",
+      "count": 11
+    },
+    {
+      "year": 2014,
+      "topic_id": 4,
+      "device": "values_frame",
+      "count": 5
+    },
+    {
+      "year": 2014,
+      "topic_id": 15,
+      "device": "policy_proposal",
+      "count": 14
+    },
+    {
+      "year": 2014,
+      "topic_id": 17,
+      "device": "policy_proposal",
+      "count": 10
+    },
+    {
+      "year": 2014,
+      "topic_id": 11,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 15,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 7,
+      "device": "policy_proposal",
+      "count": 2
+    },
+    {
+      "year": 2014,
+      "topic_id": 14,
+      "device": "policy_proposal",
+      "count": 6
+    },
+    {
+      "year": 2014,
+      "topic_id": 9,
+      "device": "anecdote",
+      "count": 5
+    },
+    {
+      "year": 2014,
+      "topic_id": 6,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 9,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 3,
+      "device": "anecdote",
+      "count": 8
+    },
+    {
+      "year": 2014,
+      "topic_id": 1,
+      "device": "call_to_action",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 8,
+      "device": "call_to_action",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 14,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 8,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 8,
+      "device": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 14,
+      "device": "call_to_action",
+      "count": 2
+    },
+    {
+      "year": 2014,
+      "topic_id": 9,
+      "device": "call_to_action",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 0,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 8,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 16,
+      "device": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 16,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 16,
+      "device": "warning_threat",
+      "count": 4
+    },
+    {
+      "year": 2014,
+      "topic_id": 16,
+      "device": "policy_proposal",
+      "count": 6
+    },
+    {
+      "year": 2014,
+      "topic_id": 13,
+      "device": "policy_proposal",
+      "count": 3
+    },
+    {
+      "year": 2014,
+      "topic_id": 13,
+      "device": "warning_threat",
+      "count": 4
+    },
+    {
+      "year": 2014,
+      "topic_id": 13,
+      "device": "attack_contrast",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 13,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 5,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 4,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 4,
+      "device": "tribute",
+      "count": 2
+    },
+    {
+      "year": 2014,
+      "topic_id": 2,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 2,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 3,
+      "device": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "topic_id": 2,
+      "device": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 2,
+      "device": "values_frame",
+      "count": 5
+    },
+    {
+      "year": 2016,
+      "topic_id": 2,
+      "device": "call_to_action",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 12,
+      "device": "policy_proposal",
+      "count": 3
+    },
+    {
+      "year": 2016,
+      "topic_id": 11,
+      "device": "policy_proposal",
+      "count": 7
+    },
+    {
+      "year": 2016,
+      "topic_id": 8,
+      "device": "policy_proposal",
+      "count": 5
+    },
+    {
+      "year": 2016,
+      "topic_id": 1,
+      "device": "policy_proposal",
+      "count": 7
+    },
+    {
+      "year": 2016,
+      "topic_id": 7,
+      "device": "values_frame",
+      "count": 13
+    },
+    {
+      "year": 2016,
+      "topic_id": 7,
+      "device": "warning_threat",
+      "count": 3
+    },
+    {
+      "year": 2016,
+      "topic_id": 4,
+      "device": "values_frame",
+      "count": 10
+    },
+    {
+      "year": 2016,
+      "topic_id": 7,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 15,
+      "device": "policy_proposal",
+      "count": 10
+    },
+    {
+      "year": 2016,
+      "topic_id": 4,
+      "device": "policy_proposal",
+      "count": 2
+    },
+    {
+      "year": 2016,
+      "topic_id": 10,
+      "device": "scoreboard",
+      "count": 3
+    },
+    {
+      "year": 2016,
+      "topic_id": 10,
+      "device": "warning_threat",
+      "count": 3
+    },
+    {
+      "year": 2016,
+      "topic_id": 1,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 1,
+      "device": "values_frame",
+      "count": 3
+    },
+    {
+      "year": 2016,
+      "topic_id": 7,
+      "device": "policy_proposal",
+      "count": 4
+    },
+    {
+      "year": 2016,
+      "topic_id": 6,
+      "device": "values_frame",
+      "count": 2
+    },
+    {
+      "year": 2016,
+      "topic_id": 6,
+      "device": "policy_proposal",
+      "count": 5
+    },
+    {
+      "year": 2016,
+      "topic_id": 14,
+      "device": "policy_proposal",
+      "count": 2
+    },
+    {
+      "year": 2016,
+      "topic_id": 14,
+      "device": "scoreboard",
+      "count": 2
+    },
+    {
+      "year": 2016,
+      "topic_id": 12,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 0,
+      "device": "values_frame",
+      "count": 20
+    },
+    {
+      "year": 2016,
+      "topic_id": 17,
+      "device": "policy_proposal",
+      "count": 2
+    },
+    {
+      "year": 2016,
+      "topic_id": 17,
+      "device": "attack_contrast",
+      "count": 2
+    },
+    {
+      "year": 2016,
+      "topic_id": 15,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 15,
+      "device": "warning_threat",
+      "count": 3
+    },
+    {
+      "year": 2016,
+      "topic_id": 15,
+      "device": "attack_contrast",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 15,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 10,
+      "device": "attack_contrast",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 13,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 9,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 3,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 16,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 13,
+      "device": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 0,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 13,
+      "device": "warning_threat",
+      "count": 2
+    },
+    {
+      "year": 2016,
+      "topic_id": 5,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 13,
+      "device": "values_frame",
+      "count": 2
+    },
+    {
+      "year": 2016,
+      "topic_id": 16,
+      "device": "warning_threat",
+      "count": 12
+    },
+    {
+      "year": 2016,
+      "topic_id": 16,
+      "device": "policy_proposal",
+      "count": 2
+    },
+    {
+      "year": 2016,
+      "topic_id": 12,
+      "device": "call_to_action",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 13,
+      "device": "policy_proposal",
+      "count": 3
+    },
+    {
+      "year": 2016,
+      "topic_id": 11,
+      "device": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 16,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 16,
+      "device": "attack_contrast",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 0,
+      "device": "policy_proposal",
+      "count": 2
+    },
+    {
+      "year": 2016,
+      "topic_id": 0,
+      "device": "call_to_action",
+      "count": 2
+    },
+    {
+      "year": 2016,
+      "topic_id": 1,
+      "device": "anecdote",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "topic_id": 2,
+      "device": "anecdote",
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "topic_id": 2,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 4,
+      "device": "scoreboard",
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "topic_id": 4,
+      "device": "values_frame",
+      "count": 20
+    },
+    {
+      "year": 2018,
+      "topic_id": 4,
+      "device": "anecdote",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 9,
+      "device": "tribute",
+      "count": 6
+    },
+    {
+      "year": 2018,
+      "topic_id": 3,
+      "device": "anecdote",
+      "count": 12
+    },
+    {
+      "year": 2018,
+      "topic_id": 9,
+      "device": "anecdote",
+      "count": 5
+    },
+    {
+      "year": 2018,
+      "topic_id": 2,
+      "device": "tribute",
+      "count": 11
+    },
+    {
+      "year": 2018,
+      "topic_id": 10,
+      "device": "scoreboard",
+      "count": 4
+    },
+    {
+      "year": 2018,
+      "topic_id": 17,
+      "device": "scoreboard",
+      "count": 3
+    },
+    {
+      "year": 2018,
+      "topic_id": 17,
+      "device": "policy_proposal",
+      "count": 4
+    },
+    {
+      "year": 2018,
+      "topic_id": 14,
+      "device": "policy_proposal",
+      "count": 3
+    },
+    {
+      "year": 2018,
+      "topic_id": 1,
+      "device": "scoreboard",
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "topic_id": 1,
+      "device": "anecdote",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 4,
+      "device": "tribute",
+      "count": 3
+    },
+    {
+      "year": 2018,
+      "topic_id": 8,
+      "device": "policy_proposal",
+      "count": 11
+    },
+    {
+      "year": 2018,
+      "topic_id": 12,
+      "device": "policy_proposal",
+      "count": 6
+    },
+    {
+      "year": 2018,
+      "topic_id": 15,
+      "device": "policy_proposal",
+      "count": 3
+    },
+    {
+      "year": 2018,
+      "topic_id": 15,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 11,
+      "device": "policy_proposal",
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "topic_id": 10,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 4,
+      "device": "policy_proposal",
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "topic_id": 1,
+      "device": "policy_proposal",
+      "count": 3
+    },
+    {
+      "year": 2018,
+      "topic_id": 8,
+      "device": "warning_threat",
+      "count": 3
+    },
+    {
+      "year": 2018,
+      "topic_id": 9,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 7,
+      "device": "values_frame",
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "topic_id": 8,
+      "device": "call_to_action",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 8,
+      "device": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 3,
+      "device": "warning_threat",
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "topic_id": 3,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 12,
+      "device": "call_to_action",
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "topic_id": 7,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 14,
+      "device": "call_to_action",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 13,
+      "device": "warning_threat",
+      "count": 7
+    },
+    {
+      "year": 2018,
+      "topic_id": 13,
+      "device": "policy_proposal",
+      "count": 3
+    },
+    {
+      "year": 2018,
+      "topic_id": 16,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 16,
+      "device": "policy_proposal",
+      "count": 4
+    },
+    {
+      "year": 2018,
+      "topic_id": 16,
+      "device": "warning_threat",
+      "count": 4
+    },
+    {
+      "year": 2018,
+      "topic_id": 3,
+      "device": "tribute",
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "topic_id": 12,
+      "device": "attack_contrast",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "topic_id": 2,
+      "device": "values_frame",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 2,
+      "device": "scoreboard",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 4,
+      "device": "scoreboard",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 4,
+      "device": "values_frame",
+      "count": 16
+    },
+    {
+      "year": 2020,
+      "topic_id": 7,
+      "device": "values_frame",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 10,
+      "device": "scoreboard",
+      "count": 14
+    },
+    {
+      "year": 2020,
+      "topic_id": 16,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 4,
+      "device": "policy_proposal",
+      "count": 4
+    },
+    {
+      "year": 2020,
+      "topic_id": 4,
+      "device": "tribute",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 10,
+      "device": "policy_proposal",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 1,
+      "device": "anecdote",
+      "count": 3
+    },
+    {
+      "year": 2020,
+      "topic_id": 2,
+      "device": "tribute",
+      "count": 14
+    },
+    {
+      "year": 2020,
+      "topic_id": 1,
+      "device": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 8,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 15,
+      "device": "scoreboard",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 1,
+      "device": "policy_proposal",
+      "count": 3
+    },
+    {
+      "year": 2020,
+      "topic_id": 0,
+      "device": "attack_contrast",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 15,
+      "device": "policy_proposal",
+      "count": 4
+    },
+    {
+      "year": 2020,
+      "topic_id": 13,
+      "device": "policy_proposal",
+      "count": 4
+    },
+    {
+      "year": 2020,
+      "topic_id": 13,
+      "device": "warning_threat",
+      "count": 3
+    },
+    {
+      "year": 2020,
+      "topic_id": 4,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 2,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 3,
+      "device": "tribute",
+      "count": 14
+    },
+    {
+      "year": 2020,
+      "topic_id": 3,
+      "device": "anecdote",
+      "count": 4
+    },
+    {
+      "year": 2020,
+      "topic_id": 6,
+      "device": "policy_proposal",
+      "count": 5
+    },
+    {
+      "year": 2020,
+      "topic_id": 9,
+      "device": "anecdote",
+      "count": 6
+    },
+    {
+      "year": 2020,
+      "topic_id": 9,
+      "device": "policy_proposal",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 9,
+      "device": "tribute",
+      "count": 8
+    },
+    {
+      "year": 2020,
+      "topic_id": 9,
+      "device": "values_frame",
+      "count": 3
+    },
+    {
+      "year": 2020,
+      "topic_id": 14,
+      "device": "policy_proposal",
+      "count": 10
+    },
+    {
+      "year": 2020,
+      "topic_id": 14,
+      "device": "attack_contrast",
+      "count": 3
+    },
+    {
+      "year": 2020,
+      "topic_id": 8,
+      "device": "policy_proposal",
+      "count": 8
+    },
+    {
+      "year": 2020,
+      "topic_id": 11,
+      "device": "policy_proposal",
+      "count": 4
+    },
+    {
+      "year": 2020,
+      "topic_id": 11,
+      "device": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 17,
+      "device": "policy_proposal",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 12,
+      "device": "policy_proposal",
+      "count": 4
+    },
+    {
+      "year": 2020,
+      "topic_id": 8,
+      "device": "warning_threat",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 8,
+      "device": "attack_contrast",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 9,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 3,
+      "device": "warning_threat",
+      "count": 4
+    },
+    {
+      "year": 2020,
+      "topic_id": 9,
+      "device": "call_to_action",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "topic_id": 8,
+      "device": "values_frame",
+      "count": 4
+    },
+    {
+      "year": 2020,
+      "topic_id": 16,
+      "device": "policy_proposal",
+      "count": 3
+    },
+    {
+      "year": 2020,
+      "topic_id": 16,
+      "device": "warning_threat",
+      "count": 4
+    },
+    {
+      "year": 2020,
+      "topic_id": 3,
+      "device": "attack_contrast",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "topic_id": 0,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 2,
+      "device": "none",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 2,
+      "device": "tribute",
+      "count": 5
+    },
+    {
+      "year": 2022,
+      "topic_id": 7,
+      "device": "values_frame",
+      "count": 8
+    },
+    {
+      "year": 2022,
+      "topic_id": 0,
+      "device": "values_frame",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 5,
+      "device": "warning_threat",
+      "count": 19
+    },
+    {
+      "year": 2022,
+      "topic_id": 5,
+      "device": "tribute",
+      "count": 4
+    },
+    {
+      "year": 2022,
+      "topic_id": 16,
+      "device": "anecdote",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 5,
+      "device": "values_frame",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 5,
+      "device": "call_to_action",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 13,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 13,
+      "device": "values_frame",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 5,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 5,
+      "device": "policy_proposal",
+      "count": 6
+    },
+    {
+      "year": 2022,
+      "topic_id": 13,
+      "device": "policy_proposal",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 10,
+      "device": "warning_threat",
+      "count": 8
+    },
+    {
+      "year": 2022,
+      "topic_id": 10,
+      "device": "values_frame",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 1,
+      "device": "policy_proposal",
+      "count": 5
+    },
+    {
+      "year": 2022,
+      "topic_id": 8,
+      "device": "policy_proposal",
+      "count": 14
+    },
+    {
+      "year": 2022,
+      "topic_id": 11,
+      "device": "scoreboard",
+      "count": 3
+    },
+    {
+      "year": 2022,
+      "topic_id": 10,
+      "device": "scoreboard",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 17,
+      "device": "warning_threat",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 10,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 15,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 12,
+      "device": "policy_proposal",
+      "count": 8
+    },
+    {
+      "year": 2022,
+      "topic_id": 15,
+      "device": "policy_proposal",
+      "count": 16
+    },
+    {
+      "year": 2022,
+      "topic_id": 17,
+      "device": "policy_proposal",
+      "count": 11
+    },
+    {
+      "year": 2022,
+      "topic_id": 15,
+      "device": "anecdote",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 15,
+      "device": "values_frame",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 7,
+      "device": "call_to_action",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 7,
+      "device": "policy_proposal",
+      "count": 3
+    },
+    {
+      "year": 2022,
+      "topic_id": 4,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 2,
+      "device": "anecdote",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 10,
+      "device": "attack_contrast",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 12,
+      "device": "attack_contrast",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 14,
+      "device": "policy_proposal",
+      "count": 9
+    },
+    {
+      "year": 2022,
+      "topic_id": 11,
+      "device": "anecdote",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 14,
+      "device": "anecdote",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 14,
+      "device": "attack_contrast",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 9,
+      "device": "anecdote",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 9,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 3,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 6,
+      "device": "policy_proposal",
+      "count": 5
+    },
+    {
+      "year": 2022,
+      "topic_id": 11,
+      "device": "warning_threat",
+      "count": 6
+    },
+    {
+      "year": 2022,
+      "topic_id": 11,
+      "device": "policy_proposal",
+      "count": 22
+    },
+    {
+      "year": 2022,
+      "topic_id": 7,
+      "device": "warning_threat",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 12,
+      "device": "call_to_action",
+      "count": 3
+    },
+    {
+      "year": 2022,
+      "topic_id": 1,
+      "device": "call_to_action",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 11,
+      "device": "values_frame",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "topic_id": 9,
+      "device": "call_to_action",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 8,
+      "device": "anecdote",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 3,
+      "device": "tribute",
+      "count": 4
+    },
+    {
+      "year": 2022,
+      "topic_id": 8,
+      "device": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 8,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 2,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 3,
+      "device": "anecdote",
+      "count": 3
+    },
+    {
+      "year": 2022,
+      "topic_id": 9,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 4,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 12,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 4,
+      "device": "values_frame",
+      "count": 7
+    },
+    {
+      "year": 2022,
+      "topic_id": 6,
+      "device": "call_to_action",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 2,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 16,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 3,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 9,
+      "device": "tribute",
+      "count": 3
+    },
+    {
+      "year": 2022,
+      "topic_id": 4,
+      "device": "call_to_action",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "topic_id": 4,
+      "device": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 2,
+      "device": "values_frame",
+      "count": 9
+    },
+    {
+      "year": 2024,
+      "topic_id": 4,
+      "device": "values_frame",
+      "count": 16
+    },
+    {
+      "year": 2024,
+      "topic_id": 4,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 5,
+      "device": "warning_threat",
+      "count": 5
+    },
+    {
+      "year": 2024,
+      "topic_id": 5,
+      "device": "policy_proposal",
+      "count": 3
+    },
+    {
+      "year": 2024,
+      "topic_id": 5,
+      "device": "attack_contrast",
+      "count": 3
+    },
+    {
+      "year": 2024,
+      "topic_id": 13,
+      "device": "policy_proposal",
+      "count": 4
+    },
+    {
+      "year": 2024,
+      "topic_id": 5,
+      "device": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 2,
+      "device": "none",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 13,
+      "device": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 12,
+      "device": "call_to_action",
+      "count": 4
+    },
+    {
+      "year": 2024,
+      "topic_id": 2,
+      "device": "warning_threat",
+      "count": 5
+    },
+    {
+      "year": 2024,
+      "topic_id": 0,
+      "device": "warning_threat",
+      "count": 5
+    },
+    {
+      "year": 2024,
+      "topic_id": 0,
+      "device": "values_frame",
+      "count": 4
+    },
+    {
+      "year": 2024,
+      "topic_id": 9,
+      "device": "anecdote",
+      "count": 5
+    },
+    {
+      "year": 2024,
+      "topic_id": 9,
+      "device": "warning_threat",
+      "count": 6
+    },
+    {
+      "year": 2024,
+      "topic_id": 9,
+      "device": "call_to_action",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 11,
+      "device": "policy_proposal",
+      "count": 4
+    },
+    {
+      "year": 2024,
+      "topic_id": 11,
+      "device": "tribute",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 9,
+      "device": "attack_contrast",
+      "count": 3
+    },
+    {
+      "year": 2024,
+      "topic_id": 8,
+      "device": "attack_contrast",
+      "count": 5
+    },
+    {
+      "year": 2024,
+      "topic_id": 0,
+      "device": "attack_contrast",
+      "count": 3
+    },
+    {
+      "year": 2024,
+      "topic_id": 0,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 7,
+      "device": "call_to_action",
+      "count": 3
+    },
+    {
+      "year": 2024,
+      "topic_id": 7,
+      "device": "policy_proposal",
+      "count": 4
+    },
+    {
+      "year": 2024,
+      "topic_id": 10,
+      "device": "warning_threat",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 2,
+      "device": "attack_contrast",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 10,
+      "device": "values_frame",
+      "count": 4
+    },
+    {
+      "year": 2024,
+      "topic_id": 10,
+      "device": "scoreboard",
+      "count": 11
+    },
+    {
+      "year": 2024,
+      "topic_id": 15,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 14,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 15,
+      "device": "policy_proposal",
+      "count": 6
+    },
+    {
+      "year": 2024,
+      "topic_id": 0,
+      "device": "policy_proposal",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 12,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 12,
+      "device": "policy_proposal",
+      "count": 8
+    },
+    {
+      "year": 2024,
+      "topic_id": 1,
+      "device": "policy_proposal",
+      "count": 9
+    },
+    {
+      "year": 2024,
+      "topic_id": 1,
+      "device": "anecdote",
+      "count": 3
+    },
+    {
+      "year": 2024,
+      "topic_id": 1,
+      "device": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 3,
+      "device": "tribute",
+      "count": 3
+    },
+    {
+      "year": 2024,
+      "topic_id": 2,
+      "device": "anecdote",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 1,
+      "device": "values_frame",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 7,
+      "device": "tribute",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 17,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 14,
+      "device": "policy_proposal",
+      "count": 12
+    },
+    {
+      "year": 2024,
+      "topic_id": 8,
+      "device": "warning_threat",
+      "count": 3
+    },
+    {
+      "year": 2024,
+      "topic_id": 17,
+      "device": "policy_proposal",
+      "count": 24
+    },
+    {
+      "year": 2024,
+      "topic_id": 10,
+      "device": "policy_proposal",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 6,
+      "device": "policy_proposal",
+      "count": 6
+    },
+    {
+      "year": 2024,
+      "topic_id": 6,
+      "device": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 6,
+      "device": "anecdote",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 17,
+      "device": "warning_threat",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 17,
+      "device": "attack_contrast",
+      "count": 8
+    },
+    {
+      "year": 2024,
+      "topic_id": 17,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 14,
+      "device": "attack_contrast",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 14,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 12,
+      "device": "attack_contrast",
+      "count": 4
+    },
+    {
+      "year": 2024,
+      "topic_id": 2,
+      "device": "call_to_action",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 8,
+      "device": "policy_proposal",
+      "count": 16
+    },
+    {
+      "year": 2024,
+      "topic_id": 9,
+      "device": "tribute",
+      "count": 3
+    },
+    {
+      "year": 2024,
+      "topic_id": 4,
+      "device": "policy_proposal",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 4,
+      "device": "anecdote",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 8,
+      "device": "call_to_action",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "topic_id": 0,
+      "device": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 8,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 8,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 16,
+      "device": "warning_threat",
+      "count": 7
+    },
+    {
+      "year": 2024,
+      "topic_id": 16,
+      "device": "policy_proposal",
+      "count": 6
+    },
+    {
+      "year": 2024,
+      "topic_id": 16,
+      "device": "attack_contrast",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 16,
+      "device": "call_to_action",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 16,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 13,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 13,
+      "device": "attack_contrast",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "topic_id": 2,
+      "device": "tribute",
+      "count": 4
+    },
+    {
+      "year": 2024,
+      "topic_id": 7,
+      "device": "values_frame",
+      "count": 5
+    },
+    {
+      "year": 2024,
+      "topic_id": 16,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 2,
+      "device": "tribute",
+      "count": 41
+    },
+    {
+      "year": 2026,
+      "topic_id": 2,
+      "device": "scoreboard",
+      "count": 6
+    },
+    {
+      "year": 2026,
+      "topic_id": 4,
+      "device": "values_frame",
+      "count": 14
+    },
+    {
+      "year": 2026,
+      "topic_id": 7,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 7,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 7,
+      "device": "scoreboard",
+      "count": 5
+    },
+    {
+      "year": 2026,
+      "topic_id": 8,
+      "device": "scoreboard",
+      "count": 4
+    },
+    {
+      "year": 2026,
+      "topic_id": 4,
+      "device": "scoreboard",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 8,
+      "device": "policy_proposal",
+      "count": 6
+    },
+    {
+      "year": 2026,
+      "topic_id": 10,
+      "device": "scoreboard",
+      "count": 19
+    },
+    {
+      "year": 2026,
+      "topic_id": 3,
+      "device": "values_frame",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 12,
+      "device": "policy_proposal",
+      "count": 11
+    },
+    {
+      "year": 2026,
+      "topic_id": 15,
+      "device": "scoreboard",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 1,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 0,
+      "device": "scoreboard",
+      "count": 3
+    },
+    {
+      "year": 2026,
+      "topic_id": 0,
+      "device": "attack_contrast",
+      "count": 11
+    },
+    {
+      "year": 2026,
+      "topic_id": 2,
+      "device": "anecdote",
+      "count": 7
+    },
+    {
+      "year": 2026,
+      "topic_id": 0,
+      "device": "policy_proposal",
+      "count": 4
+    },
+    {
+      "year": 2026,
+      "topic_id": 3,
+      "device": "anecdote",
+      "count": 14
+    },
+    {
+      "year": 2026,
+      "topic_id": 3,
+      "device": "tribute",
+      "count": 15
+    },
+    {
+      "year": 2026,
+      "topic_id": 0,
+      "device": "tribute",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 9,
+      "device": "anecdote",
+      "count": 21
+    },
+    {
+      "year": 2026,
+      "topic_id": 9,
+      "device": "tribute",
+      "count": 16
+    },
+    {
+      "year": 2026,
+      "topic_id": 12,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 12,
+      "device": "attack_contrast",
+      "count": 6
+    },
+    {
+      "year": 2026,
+      "topic_id": 17,
+      "device": "policy_proposal",
+      "count": 11
+    },
+    {
+      "year": 2026,
+      "topic_id": 9,
+      "device": "policy_proposal",
+      "count": 4
+    },
+    {
+      "year": 2026,
+      "topic_id": 2,
+      "device": "attack_contrast",
+      "count": 4
+    },
+    {
+      "year": 2026,
+      "topic_id": 17,
+      "device": "tribute",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 1,
+      "device": "anecdote",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 17,
+      "device": "anecdote",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 3,
+      "device": "scoreboard",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 10,
+      "device": "policy_proposal",
+      "count": 3
+    },
+    {
+      "year": 2026,
+      "topic_id": 10,
+      "device": "attack_contrast",
+      "count": 5
+    },
+    {
+      "year": 2026,
+      "topic_id": 8,
+      "device": "warning_threat",
+      "count": 6
+    },
+    {
+      "year": 2026,
+      "topic_id": 13,
+      "device": "policy_proposal",
+      "count": 4
+    },
+    {
+      "year": 2026,
+      "topic_id": 15,
+      "device": "policy_proposal",
+      "count": 4
+    },
+    {
+      "year": 2026,
+      "topic_id": 8,
+      "device": "attack_contrast",
+      "count": 13
+    },
+    {
+      "year": 2026,
+      "topic_id": 17,
+      "device": "attack_contrast",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 14,
+      "device": "attack_contrast",
+      "count": 3
+    },
+    {
+      "year": 2026,
+      "topic_id": 14,
+      "device": "policy_proposal",
+      "count": 7
+    },
+    {
+      "year": 2026,
+      "topic_id": 14,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 14,
+      "device": "anecdote",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 11,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 17,
+      "device": "scoreboard",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 1,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 9,
+      "device": "attack_contrast",
+      "count": 6
+    },
+    {
+      "year": 2026,
+      "topic_id": 8,
+      "device": "call_to_action",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 1,
+      "device": "warning_threat",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 0,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 1,
+      "device": "attack_contrast",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 9,
+      "device": "call_to_action",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 2,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 2,
+      "device": "none",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 4,
+      "device": "tribute",
+      "count": 3
+    },
+    {
+      "year": 2026,
+      "topic_id": 4,
+      "device": "attack_contrast",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 16,
+      "device": "attack_contrast",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 13,
+      "device": "warning_threat",
+      "count": 5
+    },
+    {
+      "year": 2026,
+      "topic_id": 16,
+      "device": "warning_threat",
+      "count": 4
+    },
+    {
+      "year": 2026,
+      "topic_id": 16,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 16,
+      "device": "tribute",
+      "count": 2
+    },
+    {
+      "year": 2026,
+      "topic_id": 7,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 16,
+      "device": "anecdote",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 3,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 2,
+      "device": "policy_proposal",
+      "count": 3
+    },
+    {
+      "year": 2026,
+      "topic_id": 13,
+      "device": "values_frame",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 5,
+      "device": "policy_proposal",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 5,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 15,
+      "device": "warning_threat",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 9,
+      "device": "scoreboard",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "topic_id": 4,
+      "device": "policy_proposal",
+      "count": 1
+    }
+  ]
+}

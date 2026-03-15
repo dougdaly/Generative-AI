@@ -1,0 +1,54 @@
+{
+  "type": "supply.problem:v1",
+  "components": [
+    { "id": "PCB", "qty": 1 },
+    { "id": "CASE", "qty": 1 },
+    { "id": "BAT", "qty": 1 }
+  ],
+  "suppliers": [
+    { "component_id": "PCB", "country": "CN", "unit_cost": 6.0, "lead_days": 14 },
+    { "component_id": "PCB", "country": "VN", "unit_cost": 8.0, "lead_days": 9 },
+
+    { "component_id": "CASE", "country": "MX", "unit_cost": 4.0, "lead_days": 6 },
+    { "component_id": "CASE", "country": "US", "unit_cost": 6.5, "lead_days": 2 },
+
+    { "component_id": "BAT", "country": "CN", "unit_cost": 5.0, "lead_days": 12 },
+    { "component_id": "BAT", "country": "US", "unit_cost": 9.0, "lead_days": 3 }
+  ],
+  "assembly_options": [
+    { "country": "VN", "labor_cost": 3.0, "lead_days": 5 },
+    { "country": "MX", "labor_cost": 6.0, "lead_days": 3 },
+    { "country": "US", "labor_cost": 12.0, "lead_days": 2 }
+  ],
+  "shipping_options": [
+    { "mode": "SEA", "cost": 1.5, "lead_days": 12 },
+    { "mode": "AIR", "cost": 8.0, "lead_days": 2 },
+    { "mode": "GROUND", "cost": 3.0, "lead_days": 4 }
+  ],
+  "tariffs": {
+    "component_import": [
+      { "from": "CN", "to": "VN", "rate": 0.18 },
+      { "from": "VN", "to": "VN", "rate": 0.00 },
+      { "from": "MX", "to": "VN", "rate": 0.05 },
+      { "from": "US", "to": "VN", "rate": 0.02 },
+
+      { "from": "CN", "to": "US", "rate": 0.25 },
+      { "from": "VN", "to": "US", "rate": 0.10 },
+      { "from": "MX", "to": "US", "rate": 0.00 },
+      { "from": "US", "to": "US", "rate": 0.00 }
+    ],
+    "finished_good_to_us": [
+      { "from": "VN", "rate": 0.12 },
+      { "from": "MX", "rate": 0.05 },
+      { "from": "US", "rate": 0.00 }
+    ]
+  },
+  "constraints": {
+    "max_total_lead_days": 25,
+    "banned": []
+  },
+  "budget": {
+    "max_evaluations": 200
+  }
+}
+

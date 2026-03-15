@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+sotu_analytics/cli.py
+sotu_analytics.egg-info/PKG-INFO
+sotu_analytics.egg-info/SOURCES.txt
+sotu_analytics.egg-info/dependency_links.txt
+sotu_analytics.egg-info/requires.txt
+sotu_analytics.egg-info/top_level.txt

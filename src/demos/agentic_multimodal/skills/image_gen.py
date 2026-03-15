@@ -230,7 +230,8 @@ def generate_person_images(
     Returns: list[str] of paths aligned with input order.
     """
     os.makedirs(outdir, exist_ok=True)
-    pipe_txt, dev = ensure_sdxl(device)                 # your existing text2img
+    device_str = str(device) if device is not None else None
+    pipe_txt, dev = ensure_sdxl(device_str=device_str)
     pipe_ref  = ensure_sdxl_img2img(dev)                # add this helper (from prior message)
     gen = None
     if seed is not None:
@@ -278,3 +279,97 @@ def generate_person_images(
         paths.append(out_path)
 
     return paths
+
+def generate_prompt_images(
+    picks,                      # [{"name":..., "prompt":..., "ref_url":..., "seed":...}, ...]
+    outdir,
+    steps=28,
+    cfg=6.0,
+    size=(512, 768),
+    seed=1337,
+    style_prompt="clean vector-cartoon, flat shading, studio backdrop",
+    ref_strength=0.35,
+    ref_cfg=4.5,
+    negative_prompt="text, letters, watermark, logo, caption, typography",
+    skip_existing=True,
+    device=None,
+):
+    """
+    Generic SDXL generator.
+    - If pick has ref_url: img2img stylize (uses style_prompt)
+    - Else: text2img using pick["prompt"]
+
+    Returns list[str] paths aligned with input order.
+    """
+    os.makedirs(outdir, exist_ok=True)
+
+    # NOTE: do not pass `device` positionally here.
+    # ensure_sdxl signature is (model_id=None, device_str=None)
+    device_str = str(device) if device is not None else None
+    pipe_txt, dev = ensure_sdxl(device_str=device_str)
+    pipe_ref = ensure_sdxl_img2img(dev)
+
+    paths: List[str] = []
+    for i, raw in enumerate(picks, 1):
+        p = dict(raw)
+        name = p.get("name")
+        prompt = p.get("prompt")
+        ref_url = p.get("ref_url")
+        item_seed = p.get("seed")
+
+        assert name, f"missing name at index {i}"
+        assert prompt or ref_url, f"missing prompt/ref_url for {name!r} at index {i}"
+
+        base = f"{i:03d}_{name}".replace("/", "_")
+        out_path = os.path.join(outdir, f"{base}.png")
+
+        if skip_existing and os.path.exists(out_path):
+            paths.append(out_path)
+            continue
+
+        g = torch.Generator(device=dev).manual_seed(item_seed or (seed + i))
+
+        if ref_url:
+            im = _download_and_portrait_crop(ref_url, size)
+            if im is None:
+                # fallback: text2img using prompt
+                img = pipe_txt(
+                    prompt=prompt,
+                    negative_prompt=negative_prompt,
+                    num_inference_steps=steps,
+                    guidance_scale=cfg,
+                    generator=g,
+                    width=size[0],
+                    height=size[1],
+                ).images[0]
+            else:
+                img = pipe_ref(
+                    prompt=style_prompt,
+                    negative_prompt=negative_prompt,
+                    image=im,
+                    strength=ref_strength,
+                    guidance_scale=ref_cfg,
+                    num_inference_steps=min(36, steps + 2),
+                    generator=g,
+                ).images[0]
+        else:
+            img = pipe_txt(
+                prompt=prompt,
+                negative_prompt=negative_prompt,
+                num_inference_steps=steps,
+                guidance_scale=cfg,
+                generator=g,
+                width=size[0],
+                height=size[1],
+            ).images[0]
+
+        img.save(out_path)
+        paths.append(out_path)
+
+    return paths
+
+def batch_generate_subject_images(picks, *, outdir="cache/group_subjects", **kw) -> list[str]:
+    """
+    Convenience wrapper used by group_poster_flow.
+    """
+    return generate_prompt_images(picks, outdir=outdir, **kw)

@@ -1,0 +1,47 @@
+{
+  "type": "supply.problem:v1",
+  "components": [
+    { "id": "SENSOR", "qty": 2 },
+    { "id": "CPU", "qty": 1 }
+  ],
+  "suppliers": [
+    { "component_id": "SENSOR", "country": "CN", "unit_cost": 2.0, "lead_days": 10 },
+    { "component_id": "SENSOR", "country": "MX", "unit_cost": 3.0, "lead_days": 5 },
+
+    { "component_id": "CPU", "country": "CN", "unit_cost": 11.0, "lead_days": 16 },
+    { "component_id": "CPU", "country": "US", "unit_cost": 15.0, "lead_days": 4 }
+  ],
+  "assembly_options": [
+    { "country": "MX", "labor_cost": 4.0, "lead_days": 3 },
+    { "country": "US", "labor_cost": 8.0, "lead_days": 2 }
+  ],
+  "shipping_options": [
+    { "mode": "SEA", "cost": 1.0, "lead_days": 14 },
+    { "mode": "AIR", "cost": 9.0, "lead_days": 2 },
+    { "mode": "GROUND", "cost": 3.0, "lead_days": 3 }
+  ],
+  "tariffs": {
+    "component_import": [
+      { "from": "CN", "to": "MX", "rate": 0.10 },
+      { "from": "US", "to": "MX", "rate": 0.00 },
+      { "from": "MX", "to": "MX", "rate": 0.00 },
+      { "from": "CN", "to": "US", "rate": 0.20 },
+      { "from": "US", "to": "US", "rate": 0.00 },
+      { "from": "MX", "to": "US", "rate": 0.00 }
+    ],
+    "finished_good_to_us": [
+      { "from": "MX", "rate": 0.05 },
+      { "from": "US", "rate": 0.00 }
+    ]
+  },
+  "constraints": {
+    "max_total_lead_days": 15,
+    "banned": [
+      { "component_id": "CPU", "supplier_country": "CN", "ship_mode": "SEA" }
+    ]
+  },
+  "budget": {
+    "max_evaluations": 50
+  }
+}
+

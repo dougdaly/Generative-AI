@@ -1,0 +1,680 @@
+{
+  "0": {
+    "label": "politics and democracy",
+    "confidence": "high",
+    "keywords": [
+      "disagreements",
+      "national priorities",
+      "better politics",
+      "rebuilding trust",
+      "compromise"
+    ],
+    "rationale": "The excerpts emphasize the importance of effective governance and the challenges of partisan politics in the context of American democracy.",
+    "excerpts": [
+      "These disagreements, about the role of government in our lives, about our national priorities and our national security, they've been taking place for over 200 years. They're the very essence of our democracy. But what frustrates the American people is a Washington where every day is Election Day.",
+      "It's the worst-kept secret in Washington. And a lot of you aren't enjoying being trapped in that kind of rancor. But that means if we want a better politics -- and I'm addressing the American people now -- if we want a better politics, it’s not enough just to change a congressman or change a senator or even change a President.",
+      "It’s an important debate one that dates back to our very founding. But when that debate prevents us from carrying out even the most basic functions of our democracy when our differences shut down government or threaten the full faith and credit of the United States then we are not doing right by the American people. As President, I’m committed to making Washington work better, and rebuilding the trust of the people who sent us here.",
+      "It is not easy. Our brand of democracy is hard. But I can promise that a little over a year from now, when I no longer hold this office, I will be right there with you as a citizen, inspired by those voices of fairness and vision, of grit and good humor and kindness that helped America travel so far.",
+      "There are a whole lot of folks in this chamber, good people who would like to see more cooperation, would like to see a more elevated debate in Washington, but feel trapped by the imperatives of getting elected, by the noise coming out of your base. I know; you’ve told me. It's the worst-kept secret in Washington.",
+      "It doesn’t work if we think that our political opponents are unpatriotic or trying to weaken America. Democracy grinds to a halt without a willingness to compromise, or when even basic facts are contested, or when we listen only to those who agree with us. Our public life withers when only the most extreme voices get all the attention."
+    ],
+    "ngram_terms": [
+      "just",
+      "change",
+      "know",
+      "it's",
+      "democracy",
+      "better",
+      "country",
+      "politics",
+      "vote",
+      "like",
+      "believe",
+      "democrats"
+    ],
+    "prompt": "You are labeling a topic cluster from a State of the Union speech (0).\n\nReturn JSON with keys:\n- label: 1-4 words, neutral policy/theme noun phrase\n- confidence: low|med|high\n- keywords: up to 6\n- rationale: 1 sentence grounded in evidence\n\nRules:\n- Ignore personal names and applause/gallery scaffolding.\n- Prefer conventional topic names (e.g., \"border security\", \"drug prices\", \"neonatal care\").\n- If the cluster is mostly a personal story, label the underlying policy/theme, not the person.\n\nTop n-gram candidates:\n- just\n- change\n- know\n- it's\n- democracy\n- better\n- country\n- politics\n- vote\n- like\n- believe\n- democrats\n\nRepresentative excerpts:\n1) These disagreements, about the role of government in our lives, about our national priorities and our national security, they've been taking place for over 200 years. They're the very essence of our democracy. But what frustrates the American people is a Washington where every day is Election Day.\n2) It's the worst-kept secret in Washington. And a lot of you aren't enjoying being trapped in that kind of rancor. But that means if we want a better politics -- and I'm addressing the American people now -- if we want a better politics, it’s not enough just to change a congressman or change a senator or even change a President.\n3) It’s an important debate one that dates back to our very founding. But when that debate prevents us from carrying out even the most basic functions of our democracy when our differences shut down government or threaten the full faith and credit of the United States then we are not doing right by the American people. As President, I’m committed to making Washington work better, and rebuilding the trust of the people who sent us here.\n4) It is not easy. Our brand of democracy is hard. But I can promise that a little over a year from now, when I no longer hold this office, I will be right there with you as a citizen, inspired by those voices of fairness and vision, of grit and good humor and kindness that helped America travel so far.\n5) There are a whole lot of folks in this chamber, good people who would like to see more cooperation, would like to see a more elevated debate in Washington, but feel trapped by the imperatives of getting elected, by the noise coming out of your base. I know; you’ve told me. It's the worst-kept secret in Washington.\n6) It doesn’t work if we think that our political opponents are unpatriotic or trying to weaken America. Democracy grinds to a halt without a willingness to compromise, or when even basic facts are contested, or when we listen only to those who agree with us. Our public life withers when only the most extreme voices get all the attention.\n\nReturn JSON only.\n",
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "1": {
+    "label": "Economic Opportunity",
+    "confidence": "high",
+    "keywords": [
+      "jobs",
+      "workers",
+      "workforce",
+      "training",
+      "employment"
+    ],
+    "rationale": "The excerpts emphasize the importance of creating economic opportunities, job creation, and workforce development.",
+    "excerpts": [
+      "It’s made it harder for a hardworking family to pull itself out of poverty, harder for young people to start their careers, tougher for workers to retire when they want to. And although none of these trends are unique to America, they do offend our uniquely American belief that everybody who works hard should get a fair shot. For the past seven years, our goal has been a growing economy that works also better for everybody.",
+      "That’s why I’ve been asking CEOs to give more long-term unemployed workers a fair shot at that new job and new chance to support their families; this week, many will come to the White House to make that commitment real. Tonight, I ask every business leader in America to join us and to do the same because we are stronger when America fields a full team. Of course, it’s not enough to train today’s workforce.",
+      "And I want a jobs bill on my desk without delay. But the truth is, these steps won't make up for the 7 million jobs that we've lost over the last 2 years. The only way to move to full employment is to lay a new foundation for long-term economic growth and finally address the problems that America's families have confronted for years.",
+      "My administration is determined to give our citizens the opportunities they need regardless of age or background. Through our Pledge to American Workers, over 400 companies will also provide new jobs and education opportunities to almost 15 million Americans. My budget also contains an exciting vision for our nation’s high schools.",
+      "As tax cuts create new jobs, let us invest in workforce development and job training. Let us open great vocational schools so our future workers can learn a craft and realize their full potential. And let us support working families by supporting paid family leave.",
+      "America is about giving everybody willing to work a chance, a hand up. And I’d welcome a serious discussion about strategies we can all support, like expanding tax cuts for low-income workers who don't have children. But there are some areas where we just have to be honest -- it has been difficult to find agreement over the last seven years."
+    ],
+    "ngram_terms": [
+      "jobs",
+      "work",
+      "job",
+      "americans",
+      "new",
+      "workers",
+      "years",
+      "help",
+      "family",
+      "workforce",
+      "make",
+      "time"
+    ],
+    "prompt": "You are labeling a topic cluster from a State of the Union speech (0).\n\nReturn JSON with keys:\n- label: 1-4 words, neutral policy/theme noun phrase\n- confidence: low|med|high\n- keywords: up to 6\n- rationale: 1 sentence grounded in evidence\n\nRules:\n- Ignore personal names and applause/gallery scaffolding.\n- Prefer conventional topic names (e.g., \"border security\", \"drug prices\", \"neonatal care\").\n- If the cluster is mostly a personal story, label the underlying policy/theme, not the person.\n\nTop n-gram candidates:\n- jobs\n- work\n- job\n- americans\n- new\n- workers\n- years\n- help\n- family\n- workforce\n- make\n- time\n\nRepresentative excerpts:\n1) It’s made it harder for a hardworking family to pull itself out of poverty, harder for young people to start their careers, tougher for workers to retire when they want to. And although none of these trends are unique to America, they do offend our uniquely American belief that everybody who works hard should get a fair shot. For the past seven years, our goal has been a growing economy that works also better for everybody.\n2) That’s why I’ve been asking CEOs to give more long-term unemployed workers a fair shot at that new job and new chance to support their families; this week, many will come to the White House to make that commitment real. Tonight, I ask every business leader in America to join us and to do the same because we are stronger when America fields a full team. Of course, it’s not enough to train today’s workforce.\n3) And I want a jobs bill on my desk without delay. But the truth is, these steps won't make up for the 7 million jobs that we've lost over the last 2 years. The only way to move to full employment is to lay a new foundation for long-term economic growth and finally address the problems that America's families have confronted for years.\n4) My administration is determined to give our citizens the opportunities they need regardless of age or background. Through our Pledge to American Workers, over 400 companies will also provide new jobs and education opportunities to almost 15 million Americans. My budget also contains an exciting vision for our nation’s high schools.\n5) As tax cuts create new jobs, let us invest in workforce development and job training. Let us open great vocational schools so our future workers can learn a craft and realize their full potential. And let us support working families by supporting paid family leave.\n6) America is about giving everybody willing to work a chance, a hand up. And I’d welcome a serious discussion about strategies we can all support, like expanding tax cuts for low-income workers who don't have children. But there are some areas where we just have to be honest -- it has been difficult to find agreement over the last seven years.\n\nReturn JSON only.\n",
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "2": {
+    "label": "national pride",
+    "confidence": "high",
+    "keywords": [
+      "heroes",
+      "service",
+      "patriotism",
+      "salute",
+      "generation",
+      "defense"
+    ],
+    "rationale": "The excerpts emphasize themes of heroism, service, and national pride, reflecting a strong focus on the contributions and sacrifices of American citizens throughout history.",
+    "excerpts": [
+      "Mr. Speaker, Mr. Vice President, members of Congress, distinguished guests, and fellow Americans: Last month, I went to Andrews Air Force Base and welcomed home some of our last troops to serve in Iraq. Together, we offered a final, proud salute to the colors under which more than a million of our fellow citizens fought -- and several thousand gave their lives. We gather tonight knowing that this generation of heroes has made the United States...",
+      "Rush Limbaugh, thank you for your decades of tireless devotion to our country. And, Rush, in recognition of all that you have done for our nation, the millions of people a day that you speak to and that you inspire, and all of the incredible work that you have done for charity, I am proud to announce tonight that you will be receiving our country’s highest civilian honor, the Presidential Medal of Freedom. I will now ask the First Lady of the...",
+      "Welcome home, Sergeant Williams. Thank you very much. As the world bears witness tonight, America is a land of heroes.",
+      "Well, thank you very much, everybody. It's really an honor. Speaker Johnson, Vice President Vance, First Lady of the United States.",
+      "Take care of that very important service. Thank you very much. From 1776 to today, every generation of Americans has stepped forward to defend life, liberty and the pursuit of happiness.",
+      "General McGee, our nation salutes you. Thank you, sir. From the pilgrims to the Founders, from the soldiers at Valley Forge to the marchers at Selma, and from President Lincoln to the Reverend Martin Luther King, Americans have always rejected limits on our children’s future."
+    ],
+    "ngram_terms": [
+      "like",
+      "great",
+      "honor",
+      "know",
+      "i'm",
+      "americans",
+      "time",
+      "states",
+      "united states",
+      "nation",
+      "united",
+      "years"
+    ],
+    "prompt": "You are labeling a topic cluster from a State of the Union speech (0).\n\nReturn JSON with keys:\n- label: 1-4 words, neutral policy/theme noun phrase\n- confidence: low|med|high\n- keywords: up to 6\n- rationale: 1 sentence grounded in evidence\n\nRules:\n- Ignore personal names and applause/gallery scaffolding.\n- Prefer conventional topic names (e.g., \"border security\", \"drug prices\", \"neonatal care\").\n- If the cluster is mostly a personal story, label the underlying policy/theme, not the person.\n\nTop n-gram candidates:\n- like\n- great\n- honor\n- know\n- i'm\n- americans\n- time\n- states\n- united states\n- nation\n- united\n- years\n\nRepresentative excerpts:\n1) Mr. Speaker, Mr. Vice President, members of Congress, distinguished guests, and fellow Americans: Last month, I went to Andrews Air Force Base and welcomed home some of our last troops to serve in Iraq. Together, we offered a final, proud salute to the colors under which more than a million of our fellow citizens fought -- and several thousand gave their lives. We gather tonight knowing that this generation of heroes has made the United States...\n2) Rush Limbaugh, thank you for your decades of tireless devotion to our country. And, Rush, in recognition of all that you have done for our nation, the millions of people a day that you speak to and that you inspire, and all of the incredible work that you have done for charity, I am proud to announce tonight that you will be receiving our country’s highest civilian honor, the Presidential Medal of Freedom. I will now ask the First Lady of the...\n3) Welcome home, Sergeant Williams. Thank you very much. As the world bears witness tonight, America is a land of heroes.\n4) Well, thank you very much, everybody. It's really an honor. Speaker Johnson, Vice President Vance, First Lady of the United States.\n5) Take care of that very important service. Thank you very much. From 1776 to today, every generation of Americans has stepped forward to defend life, liberty and the pursuit of happiness.\n6) General McGee, our nation salutes you. Thank you, sir. From the pilgrims to the Founders, from the soldiers at Valley Forge to the marchers at Selma, and from President Lincoln to the Reverend Martin Luther King, Americans have always rejected limits on our children’s future.\n\nReturn JSON only.\n",
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "3": {
+    "label": "military service",
+    "confidence": "high",
+    "keywords": [
+      "helicopter",
+      "deployment",
+      "Afghanistan",
+      "machine gunners",
+      "catastrophic crash",
+      "enemy territory"
+    ],
+    "rationale": "The excerpts emphasize the dangers and heroism of military personnel, including specific mentions of deployments, combat situations, and the impact on soldiers' lives.",
+    "excerpts": [
+      "Along with some of his fellow Rangers, he walked me through the program a strong, impressive young man, with an easy manner, sharp as a tack. We joked around, and took pictures, and I told him to stay in touch. A few months later, on his tenth deployment, Cory was nearly killed by a massive roadside bomb in Afghanistan.",
+      "They were right in front of him, two machine gunners, who escaped the wrath of the previous planes. Eric maneuvered his helicopter with all of those lives and souls to face the enemy and let his gunners eliminate the threat turned the helicopter around so the gunners could take care of business, saving the lives of his fellow warriors from what could have been a catastrophic crash deep in enemy territory. Only after safely landing the helicopter...",
+      "His father was caught trying to escape, and was tortured to death. Today he lives in Seoul, where he rescues other defectors, and broadcasts into North Korea what the regime fears the most the truth. Today he has a new leg, but Seong-ho, I understand you still keep those crutches as a reminder of how far you have come.",
+      "what's happened to his legs, of the bullets and keep on flying and landing and people knew what was happening. Everybody in the back of the helicopter knew because they saw the blood pouring down the aisle. Chief Warrant Officer Slover is still recovering from his serious wounds, but I'm thrilled to say that he is here tonight with his wife Amy.",
+      "He was badly wounded and almost killed by enemy machine guns in Luzon. And 81 years ago this month, he liberated the largest internment camp in the Philippines, one of the largest anywhere in the world. But he earned many honors, including a Purple Heart and a Bronze Star, came home started a family and tonight he is in the gallery looking forward to July 4th, 2026, his 100th birthday.",
+      "On Easter Sunday of 2008, Chris was out on patrol in Baghdad when his Bradley Fighting Vehicle was hit by a roadside bomb. That night, he made the ultimate sacrifice for our country. Sergeant Hake now rests in eternal glory in Arlington, and his wife Kelli is in the Gallery tonight, joined by their son, who is now a 13-year-old and doing very, very well."
+    ],
+    "ngram_terms": [
+      "years",
+      "helicopter",
+      "day",
+      "going",
+      "mission",
+      "eric",
+      "old",
+      "iain",
+      "world",
+      "wife",
+      "son",
+      "just"
+    ],
+    "prompt": "You are labeling a topic cluster from a State of the Union speech (0).\n\nReturn JSON with keys:\n- label: 1-4 words, neutral policy/theme noun phrase\n- confidence: low|med|high\n- keywords: up to 6\n- rationale: 1 sentence grounded in evidence\n\nRules:\n- Ignore personal names and applause/gallery scaffolding.\n- Prefer conventional topic names (e.g., \"border security\", \"drug prices\", \"neonatal care\").\n- If the cluster is mostly a personal story, label the underlying policy/theme, not the person.\n\nTop n-gram candidates:\n- years\n- helicopter\n- day\n- going\n- mission\n- eric\n- old\n- iain\n- world\n- wife\n- son\n- just\n\nRepresentative excerpts:\n1) Along with some of his fellow Rangers, he walked me through the program a strong, impressive young man, with an easy manner, sharp as a tack. We joked around, and took pictures, and I told him to stay in touch. A few months later, on his tenth deployment, Cory was nearly killed by a massive roadside bomb in Afghanistan.\n2) They were right in front of him, two machine gunners, who escaped the wrath of the previous planes. Eric maneuvered his helicopter with all of those lives and souls to face the enemy and let his gunners eliminate the threat turned the helicopter around so the gunners could take care of business, saving the lives of his fellow warriors from what could have been a catastrophic crash deep in enemy territory. Only after safely landing the helicopter...\n3) His father was caught trying to escape, and was tortured to death. Today he lives in Seoul, where he rescues other defectors, and broadcasts into North Korea what the regime fears the most the truth. Today he has a new leg, but Seong-ho, I understand you still keep those crutches as a reminder of how far you have come.\n4) what's happened to his legs, of the bullets and keep on flying and landing and people knew what was happening. Everybody in the back of the helicopter knew because they saw the blood pouring down the aisle. Chief Warrant Officer Slover is still recovering from his serious wounds, but I'm thrilled to say that he is here tonight with his wife Amy.\n5) He was badly wounded and almost killed by enemy machine guns in Luzon. And 81 years ago this month, he liberated the largest internment camp in the Philippines, one of the largest anywhere in the world. But he earned many honors, including a Purple Heart and a Bronze Star, came home started a family and tonight he is in the gallery looking forward to July 4th, 2026, his 100th birthday.\n6) On Easter Sunday of 2008, Chris was out on patrol in Baghdad when his Bradley Fighting Vehicle was hit by a roadside bomb. That night, he made the ultimate sacrifice for our country. Sergeant Hake now rests in eternal glory in Arlington, and his wife Kelli is in the Gallery tonight, joined by their son, who is now a 13-year-old and doing very, very well.\n\nReturn JSON only.\n",
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "4": {
+    "label": "national progress: unity and freedom",
+    "confidence": "high",
+    "keywords": [
+      "progress",
+      "achievement",
+      "freedom",
+      "equality",
+      "citizens"
+    ],
+    "rationale": "The excerpts emphasize the continuous progress and achievements of the nation, highlighting themes of freedom, equality, and the collective effort of citizens.",
+    "excerpts": [
+      "From 1776 to today, every generation of Americans has stepped forward to defend life, liberty and the pursuit of happiness. And they really doing it for the next generation, but now it's our turn. Together, we're building a nation where every child has the chance to reach higher and go further, where government answers to the people, not the powerful and where the interests of hardworking American citizens are always our first and ultimate...",
+      "But for more than two hundred years, we have put those things aside and placed our collective shoulder to the wheel of progress to create and build and expand the possibilities of individual achievement; to free other nations from tyranny and fear; to promote justice, and fairness, and equality under the law, so that the words set to paper by our founders are made real for every citizen. The America we want for our kids a rising America where...",
+      "Now is our moment to meet and overcome the challenges of our time. And we will, as one people. One America.",
+      "We wired the globe with our ingenuity, we captivated the planet with American culture, and now we are pioneering the next great American breakthroughs that will change the entire world. All of this and so much more is the enduring legacy, unmatched glory of the hardworking patriots who built and defended this country and who still carry the hopes and freedoms on all of humanity's backs. For years, they were forgotten, betrayed and cast aside,...",
+      "The vision I will lay out this evening demonstrates how we are building the world’s most prosperous and inclusive society one where every citizen can join in America’s unparalleled success and where every community can take part in America’s extraordinary rise. From the instant I took office, I moved rapidly to revive the U.S. economy slashing a record number of job-killing regulations, enacting historic and record-setting tax cuts, and fighting...",
+      "A new tide of optimism was already sweeping across our land. Each day since, we have gone forward with a clear vision and a righteous mission to make America great again for all Americans. Over the last year, we have made incredible progress and achieved extraordinary success."
+    ],
+    "ngram_terms": [
+      "americans",
+      "nation",
+      "country",
+      "world",
+      "great",
+      "future",
+      "god",
+      "freedom",
+      "home",
+      "come",
+      "new",
+      "work"
+    ],
+    "prompt": "You are labeling a topic cluster from a State of the Union speech (0).\n\nReturn JSON with keys:\n- label: 1-4 words, neutral policy/theme noun phrase\n- confidence: low|med|high\n- keywords: up to 6\n- rationale: 1 sentence grounded in evidence\n\nRules:\n- Ignore personal names and applause/gallery scaffolding.\n- Prefer conventional topic names (e.g., \"border security\", \"drug prices\", \"neonatal care\").\n- If the cluster is mostly a personal story, label the underlying policy/theme, not the person.\n\nTop n-gram candidates:\n- americans\n- nation\n- country\n- world\n- great\n- future\n- god\n- freedom\n- home\n- come\n- new\n- work\n\nRepresentative excerpts:\n1) From 1776 to today, every generation of Americans has stepped forward to defend life, liberty and the pursuit of happiness. And they really doing it for the next generation, but now it's our turn. Together, we're building a nation where every child has the chance to reach higher and go further, where government answers to the people, not the powerful and where the interests of hardworking American citizens are always our first and ultimate...\n2) But for more than two hundred years, we have put those things aside and placed our collective shoulder to the wheel of progress to create and build and expand the possibilities of individual achievement; to free other nations from tyranny and fear; to promote justice, and fairness, and equality under the law, so that the words set to paper by our founders are made real for every citizen. The America we want for our kids a rising America where...\n3) Now is our moment to meet and overcome the challenges of our time. And we will, as one people. One America.\n4) We wired the globe with our ingenuity, we captivated the planet with American culture, and now we are pioneering the next great American breakthroughs that will change the entire world. All of this and so much more is the enduring legacy, unmatched glory of the hardworking patriots who built and defended this country and who still carry the hopes and freedoms on all of humanity's backs. For years, they were forgotten, betrayed and cast aside,...\n5) The vision I will lay out this evening demonstrates how we are building the world’s most prosperous and inclusive society one where every citizen can join in America’s unparalleled success and where every community can take part in America’s extraordinary rise. From the instant I took office, I moved rapidly to revive the U.S. economy slashing a record number of job-killing regulations, enacting historic and record-setting tax cuts, and fighting...\n6) A new tide of optimism was already sweeping across our land. Each day since, we have gone forward with a clear vision and a righteous mission to make America great again for all Americans. Over the last year, we have made incredible progress and achieved extraordinary success.\n\nReturn JSON only.\n",
+    "model": "qwen2.5:14b-instruct-q4_K_M",
+    "disambiguation": {
+      "status": "ok",
+      "original_label": "national progress",
+      "prompt": "Two or more clusters were labeled \"national progress\". Make them distinct.\n\n    You have all necessary information below. Do not ask questions.\n\n    Task:\n    - Provide a refined label for each topic as: \"national progress: <2-4 word qualifier>\"\n    - Do NOT repeat \"national progress\" inside the qualifier.\n    - Qualifier must be grounded in the excerpts/ngrams.\n    - Keep labels neutral and policy/theme focused.\n\n    Return JSON mapping topic_id -> refined_label.\n    Example:\n    {\"3\": \"national progress: jobs and wages\", \"7\": \"national progress: trade and industry\"}\n\n    Topic 4 ngrams: americans, nation, country, world, great, future, god, freedom, home, come\nExcerpts:\n- From 1776 to today, every generation of Americans has stepped forward to defend life, liberty and the pursuit of happiness. And they really doing it for the next generation, but now it's our turn. Together, we're building a nation where every child has the chance to reach higher and go further, where government answers to the people, not the powerful and where the interests of hardworking American citizens are always our first and ultimate...\n- But for more than two hundred years, we have put those things aside and placed our collective shoulder to the wheel of progress to create and build and expand the possibilities of individual achievement; to free other nations from tyranny and fear; to promote justice, and fairness, and equality under the law, so that the words set to paper by our founders are made real for every citizen. The America we want for our kids a rising America where...\n- Now is our moment to meet and overcome the challenges of our time. And we will, as one people. One America.\n- We wired the globe with our ingenuity, we captivated the planet with American culture, and now we are pioneering the next great American breakthroughs that will change the entire world. All of this and so much more is the enduring legacy, unmatched glory of the hardworking patriots who built and defended this country and who still carry the hopes and freedoms on all of humanity's backs. For years, they were forgotten, betrayed and cast aside,...\n\n---\nTopic 7 ngrams: future, want, world, nation, change, just, year, work, going, years\nExcerpts:\n- We're going to do better and better and better. This is the golden age of America. When I last spoke in this chamber 12 months ago, I had just inherited a nation in crisis with a stagnant economy, inflation at record levels, a wide open border, horrendous recruitment for military and police, rampant crime at home and wars and chaos all over the world.\n- We do not allow fear or division to break our spirit. In this new decade, it's time the American people get a Government that matches their decency, that embodies their strength. And tonight I'd like to talk about how together we can deliver on that promise.\n- That’s why I believe this can be a breakthrough year for America. After five years of grit and determined effort, the United States is better-positioned for the 21st century than any other nation on Earth. The question for everyone in this chamber, running through every decision we make this year, is whether we are going to help or hinder this progress.\n- And we face such choices right now. Will we respond to the changes of our time with fear, turning inward as a nation, turning against each other as a people? Or will we face the future with confidence in who we are, in what we stand for, in the incredible things that we can do together?\n\n\n    Return JSON only. No prose.\n    ",
+      "response": {
+        "4": "national progress: unity and freedom",
+        "7": "national progress: future confidence"
+      }
+    }
+  },
+  "5": {
+    "label": "Ukraine-Russia conflict",
+    "confidence": "high",
+    "keywords": [
+      "Putin",
+      "Ukraine",
+      "sanctions",
+      "allies",
+      "freedom",
+      "democracy"
+    ],
+    "rationale": "The excerpts consistently discuss the conflict between Russia and Ukraine, emphasizing sanctions, support for Ukraine, and the threat posed by Putin.",
+    "excerpts": [
+      "To our fellow Ukrainian Americans who forge a deep bond that connects our two nations, we stand with you. Putin may circle Kyiv with tanks, but he will never gain the hearts and souls of the Ukrainian people. He will never extinguish their love of freedom.",
+      "We are inflicting pain on Russia and supporting the people of Ukraine. Putin is now isolated from the world more than ever. Together with our allies, we are right now enforcing powerful economic sanctions.",
+      "Let me be clear, our forces are not engaged and will not engage in conflict with Russian forces in Ukraine. Our forces are not going to Europe to fight in Ukraine, but to defend our NATO Allies in the event that Putin decides to keep moving west. For that purpose, we’ve mobilized American ground forces, air squadrons, and ship deployments to protect NATO countries including Poland, Romania, Latvia, Lithuania, and Estonia.",
+      "Ukraine can stop Putin if we stand with Ukraine and provide the weapons that it needs to defend itself. That is all Ukraine is asking. They’re not asking for American soldiers.",
+      "What makes our moment rare is that freedom and democracy are under attack at both at home and overseas at the very same time. Overseas, Putin of Russia is on the march, invading Ukraine and sowing chaos throughout Europe and beyond. If anybody in this room thinks Putin will stop at Ukraine, I assure you: He will not.",
+      "But now assistance to Ukraine is being blocked by those who want to walk away from our world leadership. It wasn’t long ago when a Republican president named Ronald Reagan thundered, “Mr. Gorbachev, tear down this wall.” Now my predecessor, a former Republican president, tells Putin, quote, “Do whatever the hell you want.”"
+    ],
+    "ngram_terms": [
+      "ukraine",
+      "putin",
+      "world",
+      "russia",
+      "russian",
+      "ukrainian",
+      "allies",
+      "europe",
+      "assistance",
+      "war",
+      "stand",
+      "nations"
+    ],
+    "prompt": "You are labeling a topic cluster from a State of the Union speech (0).\n\nReturn JSON with keys:\n- label: 1-4 words, neutral policy/theme noun phrase\n- confidence: low|med|high\n- keywords: up to 6\n- rationale: 1 sentence grounded in evidence\n\nRules:\n- Ignore personal names and applause/gallery scaffolding.\n- Prefer conventional topic names (e.g., \"border security\", \"drug prices\", \"neonatal care\").\n- If the cluster is mostly a personal story, label the underlying policy/theme, not the person.\n\nTop n-gram candidates:\n- ukraine\n- putin\n- world\n- russia\n- russian\n- ukrainian\n- allies\n- europe\n- assistance\n- war\n- stand\n- nations\n\nRepresentative excerpts:\n1) To our fellow Ukrainian Americans who forge a deep bond that connects our two nations, we stand with you. Putin may circle Kyiv with tanks, but he will never gain the hearts and souls of the Ukrainian people. He will never extinguish their love of freedom.\n2) We are inflicting pain on Russia and supporting the people of Ukraine. Putin is now isolated from the world more than ever. Together with our allies, we are right now enforcing powerful economic sanctions.\n3) Let me be clear, our forces are not engaged and will not engage in conflict with Russian forces in Ukraine. Our forces are not going to Europe to fight in Ukraine, but to defend our NATO Allies in the event that Putin decides to keep moving west. For that purpose, we’ve mobilized American ground forces, air squadrons, and ship deployments to protect NATO countries including Poland, Romania, Latvia, Lithuania, and Estonia.\n4) Ukraine can stop Putin if we stand with Ukraine and provide the weapons that it needs to defend itself. That is all Ukraine is asking. They’re not asking for American soldiers.\n5) What makes our moment rare is that freedom and democracy are under attack at both at home and overseas at the very same time. Overseas, Putin of Russia is on the march, invading Ukraine and sowing chaos throughout Europe and beyond. If anybody in this room thinks Putin will stop at Ukraine, I assure you: He will not.\n6) But now assistance to Ukraine is being blocked by those who want to walk away from our world leadership. It wasn’t long ago when a Republican president named Ronald Reagan thundered, “Mr. Gorbachev, tear down this wall.” Now my predecessor, a former Republican president, tells Putin, quote, “Do whatever the hell you want.”\n\nReturn JSON only.\n",
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "6": {
+    "label": "Higher Education Affordability",
+    "confidence": "high",
+    "keywords": [
+      "college",
+      "student loans",
+      "tuition",
+      "affordability",
+      "education",
+      "work-study"
+    ],
+    "rationale": "The excerpts emphasize the need to make higher education more affordable through various measures such as capping student loan interest rates, increasing Pell Grants, and reducing tuition costs.",
+    "excerpts": [
+      "We’re working to redesign high schools and partner them with colleges and employers that offer the real-world education and hands-on training that can lead directly to a job and career. We’re shaking up our system of higher education to give parents more information, and colleges more incentives to offer better value, so that no middle-class kid is priced out of a college education. We’re offering millions the opportunity to cap their monthly...",
+      "When kids do graduate, the most daunting challenge can be the cost of college. At a time when Americans owe more in tuition debt than credit card debt, this Congress needs to stop the interest rates on student loans from doubling in July. Extend the tuition tax credit we started that saves millions of middle-class families thousands of dollars, and give more young people the chance to earn their way through college by doubling the number of...",
+      "Extend the tuition tax credit we started that saves millions of middle-class families thousands of dollars, and give more young people the chance to earn their way through college by doubling the number of work-study jobs in the next five years. Of course, it’s not enough for us to increase student aid. We can’t just keep subsidizing skyrocketing tuition; we’ll run out of money.",
+      "And we have to make college affordable for every American. No hardworking student should be stuck in the red. We’ve already reduced student loan payments to 10 percent of a borrower’s income.",
+      "And I want to make sure that college is more affordable. Let’s continue increasing the Pell Grants to working- and middle-class families and increase record investments in HBCUs and minority-serving institutions, including Hispanic institutions. When I was told I couldn’t universally just change the way in which we did dealt with student loans, I fixed two student loan programs that already existed to reduce the burden of student debt for nearly...",
+      "Still, in this economy, a high school diploma no longer guarantees a good job. That's why I urge the Senate to follow the House and pass a bill that will revitalize our community colleges, which are a career pathway to the children of so many working families. To make college more affordable, this bill will finally end the unwarranted taxpayer subsidies that go to banks for student loans."
+    ],
+    "ngram_terms": [
+      "college",
+      "education",
+      "student",
+      "students",
+      "schools",
+      "high",
+      "year",
+      "just",
+      "years",
+      "states",
+      "make",
+      "school"
+    ],
+    "prompt": "You are labeling a topic cluster from a State of the Union speech (0).\n\nReturn JSON with keys:\n- label: 1-4 words, neutral policy/theme noun phrase\n- confidence: low|med|high\n- keywords: up to 6\n- rationale: 1 sentence grounded in evidence\n\nRules:\n- Ignore personal names and applause/gallery scaffolding.\n- Prefer conventional topic names (e.g., \"border security\", \"drug prices\", \"neonatal care\").\n- If the cluster is mostly a personal story, label the underlying policy/theme, not the person.\n\nTop n-gram candidates:\n- college\n- education\n- student\n- students\n- schools\n- high\n- year\n- just\n- years\n- states\n- make\n- school\n\nRepresentative excerpts:\n1) We’re working to redesign high schools and partner them with colleges and employers that offer the real-world education and hands-on training that can lead directly to a job and career. We’re shaking up our system of higher education to give parents more information, and colleges more incentives to offer better value, so that no middle-class kid is priced out of a college education. We’re offering millions the opportunity to cap their monthly...\n2) When kids do graduate, the most daunting challenge can be the cost of college. At a time when Americans owe more in tuition debt than credit card debt, this Congress needs to stop the interest rates on student loans from doubling in July. Extend the tuition tax credit we started that saves millions of middle-class families thousands of dollars, and give more young people the chance to earn their way through college by doubling the number of...\n3) Extend the tuition tax credit we started that saves millions of middle-class families thousands of dollars, and give more young people the chance to earn their way through college by doubling the number of work-study jobs in the next five years. Of course, it’s not enough for us to increase student aid. We can’t just keep subsidizing skyrocketing tuition; we’ll run out of money.\n4) And we have to make college affordable for every American. No hardworking student should be stuck in the red. We’ve already reduced student loan payments to 10 percent of a borrower’s income.\n5) And I want to make sure that college is more affordable. Let’s continue increasing the Pell Grants to working- and middle-class families and increase record investments in HBCUs and minority-serving institutions, including Hispanic institutions. When I was told I couldn’t universally just change the way in which we did dealt with student loans, I fixed two student loan programs that already existed to reduce the burden of student debt for nearly...\n6) Still, in this economy, a high school diploma no longer guarantees a good job. That's why I urge the Senate to follow the House and pass a bill that will revitalize our community colleges, which are a career pathway to the children of so many working families. To make college more affordable, this bill will finally end the unwarranted taxpayer subsidies that go to banks for student loans.\n\nReturn JSON only.\n",
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "7": {
+    "label": "national progress: future confidence",
+    "confidence": "high",
+    "keywords": [
+      "breakthrough",
+      "position",
+      "future",
+      "choices",
+      "together"
+    ],
+    "rationale": "The excerpts emphasize the nation's advancement and the collective effort required to achieve it.",
+    "excerpts": [
+      "We're going to do better and better and better. This is the golden age of America. When I last spoke in this chamber 12 months ago, I had just inherited a nation in crisis with a stagnant economy, inflation at record levels, a wide open border, horrendous recruitment for military and police, rampant crime at home and wars and chaos all over the world.",
+      "We do not allow fear or division to break our spirit. In this new decade, it's time the American people get a Government that matches their decency, that embodies their strength. And tonight I'd like to talk about how together we can deliver on that promise.",
+      "That’s why I believe this can be a breakthrough year for America. After five years of grit and determined effort, the United States is better-positioned for the 21st century than any other nation on Earth. The question for everyone in this chamber, running through every decision we make this year, is whether we are going to help or hinder this progress.",
+      "And we face such choices right now. Will we respond to the changes of our time with fear, turning inward as a nation, turning against each other as a people? Or will we face the future with confidence in who we are, in what we stand for, in the incredible things that we can do together?",
+      "Our Constitution begins with those three simple words, words we’ve come to recognize mean all the people, not just some; words that insist we rise and fall together, and that's how we might perfect our Union. And that brings me to the fourth, and maybe the most important thing that I want to say tonight. The future we want -- all of us want -- opportunity and security for our families, a rising standard of living, a sustainable, peaceful planet...",
+      "The future we want -- all of us want -- opportunity and security for our families, a rising standard of living, a sustainable, peaceful planet for our kids -- all that is within our reach. But it will only happen if we work together. It will only happen if we can have rational, constructive debates."
+    ],
+    "ngram_terms": [
+      "future",
+      "want",
+      "world",
+      "nation",
+      "change",
+      "just",
+      "year",
+      "work",
+      "going",
+      "years",
+      "time",
+      "new"
+    ],
+    "prompt": "You are labeling a topic cluster from a State of the Union speech (0).\n\nReturn JSON with keys:\n- label: 1-4 words, neutral policy/theme noun phrase\n- confidence: low|med|high\n- keywords: up to 6\n- rationale: 1 sentence grounded in evidence\n\nRules:\n- Ignore personal names and applause/gallery scaffolding.\n- Prefer conventional topic names (e.g., \"border security\", \"drug prices\", \"neonatal care\").\n- If the cluster is mostly a personal story, label the underlying policy/theme, not the person.\n\nTop n-gram candidates:\n- future\n- want\n- world\n- nation\n- change\n- just\n- year\n- work\n- going\n- years\n- time\n- new\n\nRepresentative excerpts:\n1) We're going to do better and better and better. This is the golden age of America. When I last spoke in this chamber 12 months ago, I had just inherited a nation in crisis with a stagnant economy, inflation at record levels, a wide open border, horrendous recruitment for military and police, rampant crime at home and wars and chaos all over the world.\n2) We do not allow fear or division to break our spirit. In this new decade, it's time the American people get a Government that matches their decency, that embodies their strength. And tonight I'd like to talk about how together we can deliver on that promise.\n3) That’s why I believe this can be a breakthrough year for America. After five years of grit and determined effort, the United States is better-positioned for the 21st century than any other nation on Earth. The question for everyone in this chamber, running through every decision we make this year, is whether we are going to help or hinder this progress.\n4) And we face such choices right now. Will we respond to the changes of our time with fear, turning inward as a nation, turning against each other as a people? Or will we face the future with confidence in who we are, in what we stand for, in the incredible things that we can do together?\n5) Our Constitution begins with those three simple words, words we’ve come to recognize mean all the people, not just some; words that insist we rise and fall together, and that's how we might perfect our Union. And that brings me to the fourth, and maybe the most important thing that I want to say tonight. The future we want -- all of us want -- opportunity and security for our families, a rising standard of living, a sustainable, peaceful planet...\n6) The future we want -- all of us want -- opportunity and security for our families, a rising standard of living, a sustainable, peaceful planet for our kids -- all that is within our reach. But it will only happen if we work together. It will only happen if we can have rational, constructive debates.\n\nReturn JSON only.\n",
+    "model": "qwen2.5:14b-instruct-q4_K_M",
+    "disambiguation": {
+      "status": "ok",
+      "original_label": "national progress",
+      "prompt": "Two or more clusters were labeled \"national progress\". Make them distinct.\n\n    You have all necessary information below. Do not ask questions.\n\n    Task:\n    - Provide a refined label for each topic as: \"national progress: <2-4 word qualifier>\"\n    - Do NOT repeat \"national progress\" inside the qualifier.\n    - Qualifier must be grounded in the excerpts/ngrams.\n    - Keep labels neutral and policy/theme focused.\n\n    Return JSON mapping topic_id -> refined_label.\n    Example:\n    {\"3\": \"national progress: jobs and wages\", \"7\": \"national progress: trade and industry\"}\n\n    Topic 4 ngrams: americans, nation, country, world, great, future, god, freedom, home, come\nExcerpts:\n- From 1776 to today, every generation of Americans has stepped forward to defend life, liberty and the pursuit of happiness. And they really doing it for the next generation, but now it's our turn. Together, we're building a nation where every child has the chance to reach higher and go further, where government answers to the people, not the powerful and where the interests of hardworking American citizens are always our first and ultimate...\n- But for more than two hundred years, we have put those things aside and placed our collective shoulder to the wheel of progress to create and build and expand the possibilities of individual achievement; to free other nations from tyranny and fear; to promote justice, and fairness, and equality under the law, so that the words set to paper by our founders are made real for every citizen. The America we want for our kids a rising America where...\n- Now is our moment to meet and overcome the challenges of our time. And we will, as one people. One America.\n- We wired the globe with our ingenuity, we captivated the planet with American culture, and now we are pioneering the next great American breakthroughs that will change the entire world. All of this and so much more is the enduring legacy, unmatched glory of the hardworking patriots who built and defended this country and who still carry the hopes and freedoms on all of humanity's backs. For years, they were forgotten, betrayed and cast aside,...\n\n---\nTopic 7 ngrams: future, want, world, nation, change, just, year, work, going, years\nExcerpts:\n- We're going to do better and better and better. This is the golden age of America. When I last spoke in this chamber 12 months ago, I had just inherited a nation in crisis with a stagnant economy, inflation at record levels, a wide open border, horrendous recruitment for military and police, rampant crime at home and wars and chaos all over the world.\n- We do not allow fear or division to break our spirit. In this new decade, it's time the American people get a Government that matches their decency, that embodies their strength. And tonight I'd like to talk about how together we can deliver on that promise.\n- That’s why I believe this can be a breakthrough year for America. After five years of grit and determined effort, the United States is better-positioned for the 21st century than any other nation on Earth. The question for everyone in this chamber, running through every decision we make this year, is whether we are going to help or hinder this progress.\n- And we face such choices right now. Will we respond to the changes of our time with fear, turning inward as a nation, turning against each other as a people? Or will we face the future with confidence in who we are, in what we stand for, in the incredible things that we can do together?\n\n\n    Return JSON only. No prose.\n    ",
+      "response": {
+        "4": "national progress: unity and freedom",
+        "7": "national progress: future confidence"
+      }
+    }
+  },
+  "8": {
+    "label": "Border Security",
+    "confidence": "high",
+    "keywords": [
+      "illegal aliens",
+      "law enforcement",
+      "National Guard",
+      "ICE",
+      "sanctuary cities"
+    ],
+    "rationale": "The excerpts emphasize the need for stricter border security measures and the protection of American citizens from illegal immigration.",
+    "excerpts": [
+      "So, tonight, I'm inviting every legislator to join with my administration in reaffirming a fundamental principle. If you agree with this statement, then stand up and show your support. The first duty of the American government is to protect American citizens, not illegal aliens.",
+      "How do you not stand? I'm asking this Congress to pass tough legislation to ensure that violent and dangerous repeat offenders are put behind bars and, importantly, that they stay there. Starting last summer, I deployed our National Guard and federal law enforcement to restore law and order to our most dangerous cities, including Memphis, Tennessee, big success; New Orleans, Louisiana, big success; and our nation's capital itself, Washington...",
+      "I ask Congress to pass the Justice for Victims of Sanctuary Cities Act immediately. The United States of America should be a sanctuary for law-abiding Americans, not criminal aliens. In the last three years, ICE has arrested over 5,000 wicked human traffickers.",
+      "That is why I'm also asking you to end deadly sanctuary cities that protect the criminals and enact serious penalties for public officials who block the removal of criminal aliens, in many cases, drug lords, murderers all over our country. They're blocking the removal of these people out of our country and you should be ashamed of yourself. And perhaps most importantly, I'm asking you to approve the Save America Act to stop illegal aliens and...",
+      "We have proposed new legislation that will fix our immigration laws, and support our ICE and Border Patrol Agents, so that this cannot ever happen again. The United States is a compassionate nation. We are proud that we do more than any other country to help the needy, the struggling, and the underprivileged all over the world.",
+      "The opponents of action are out of excuses. We should be working on comprehensive immigration reform right now. But if election-year politics keeps Congress from acting on a comprehensive plan, let’s at least agree to stop expelling responsible young people who want to staff our labs, start new businesses, defend this country."
+    ],
+    "ngram_terms": [
+      "country",
+      "border",
+      "law",
+      "immigration",
+      "right",
+      "americans",
+      "new",
+      "protect",
+      "illegal",
+      "congress",
+      "aliens",
+      "stop"
+    ],
+    "prompt": "You are labeling a topic cluster from a State of the Union speech (0).\n\nReturn JSON with keys:\n- label: 1-4 words, neutral policy/theme noun phrase\n- confidence: low|med|high\n- keywords: up to 6\n- rationale: 1 sentence grounded in evidence\n\nRules:\n- Ignore personal names and applause/gallery scaffolding.\n- Prefer conventional topic names (e.g., \"border security\", \"drug prices\", \"neonatal care\").\n- If the cluster is mostly a personal story, label the underlying policy/theme, not the person.\n\nTop n-gram candidates:\n- country\n- border\n- law\n- immigration\n- right\n- americans\n- new\n- protect\n- illegal\n- congress\n- aliens\n- stop\n\nRepresentative excerpts:\n1) So, tonight, I'm inviting every legislator to join with my administration in reaffirming a fundamental principle. If you agree with this statement, then stand up and show your support. The first duty of the American government is to protect American citizens, not illegal aliens.\n2) How do you not stand? I'm asking this Congress to pass tough legislation to ensure that violent and dangerous repeat offenders are put behind bars and, importantly, that they stay there. Starting last summer, I deployed our National Guard and federal law enforcement to restore law and order to our most dangerous cities, including Memphis, Tennessee, big success; New Orleans, Louisiana, big success; and our nation's capital itself, Washington...\n3) I ask Congress to pass the Justice for Victims of Sanctuary Cities Act immediately. The United States of America should be a sanctuary for law-abiding Americans, not criminal aliens. In the last three years, ICE has arrested over 5,000 wicked human traffickers.\n4) That is why I'm also asking you to end deadly sanctuary cities that protect the criminals and enact serious penalties for public officials who block the removal of criminal aliens, in many cases, drug lords, murderers all over our country. They're blocking the removal of these people out of our country and you should be ashamed of yourself. And perhaps most importantly, I'm asking you to approve the Save America Act to stop illegal aliens and...\n5) We have proposed new legislation that will fix our immigration laws, and support our ICE and Border Patrol Agents, so that this cannot ever happen again. The United States is a compassionate nation. We are proud that we do more than any other country to help the needy, the struggling, and the underprivileged all over the world.\n6) The opponents of action are out of excuses. We should be working on comprehensive immigration reform right now. But if election-year politics keeps Congress from acting on a comprehensive plan, let’s at least agree to stop expelling responsible young people who want to staff our labs, start new businesses, defend this country.\n\nReturn JSON only.\n",
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "9": {
+    "label": "Reproductive Rights",
+    "confidence": "high",
+    "keywords": [
+      "daughter",
+      "mother",
+      "IVF",
+      "Roe v. Wade",
+      "Alabama",
+      "Supreme Court"
+    ],
+    "rationale": "The excerpts emphasize the impact of reproductive rights policies on families, particularly in the context of IVF and the overturning of Roe v. Wade.",
+    "excerpts": [
+      "Sarah Beckstrom died in order to defend our capital. And we are honored to be joined by her wonderful parents. Gary and Evalea, your daughter was a true American patriot, and she will be greatly missed.",
+      "Joining us tonight is Kate Cox, a wife and mother from Dallas. She’d become pregnant again and had a fetus with a fatal condition. Her doctor told Kate that her own life and her ability to have future in the children in the future were at risk if she didn’t act.",
+      "She scheduled treatments to have that second child, but the Alabama Supreme Court shut down IVF treatments across the state, unleashed by a Supreme Court decision overturning Roe v. Wade. She was told her dream would have to wait. What her family had gone through should never have happened.",
+      "This was a conversation that I had with her that night with her son laying hopelessly in bed, blood all over. Everybody is praying. She said sir, he will be OK.",
+      "What her family had gone through should never have happened. Unless Congress acts, it could happen again. So, tonight, let’s stand up for families like hers.",
+      "Many of these gang members took advantage of glaring loopholes in our laws to enter the country as unaccompanied alien minors and wound up in Kayla and Nisa’s high school. Evelyn, Elizabeth, Freddy, and Robert: Tonight, everyone in this chamber is praying for you. Everyone in America is grieving for you."
+    ],
+    "ngram_terms": [
+      "year",
+      "like",
+      "life",
+      "old",
+      "mother",
+      "home",
+      "year old",
+      "daughter",
+      "going",
+      "child",
+      "right",
+      "families"
+    ],
+    "prompt": "You are labeling a topic cluster from a State of the Union speech (0).\n\nReturn JSON with keys:\n- label: 1-4 words, neutral policy/theme noun phrase\n- confidence: low|med|high\n- keywords: up to 6\n- rationale: 1 sentence grounded in evidence\n\nRules:\n- Ignore personal names and applause/gallery scaffolding.\n- Prefer conventional topic names (e.g., \"border security\", \"drug prices\", \"neonatal care\").\n- If the cluster is mostly a personal story, label the underlying policy/theme, not the person.\n\nTop n-gram candidates:\n- year\n- like\n- life\n- old\n- mother\n- home\n- year old\n- daughter\n- going\n- child\n- right\n- families\n\nRepresentative excerpts:\n1) Sarah Beckstrom died in order to defend our capital. And we are honored to be joined by her wonderful parents. Gary and Evalea, your daughter was a true American patriot, and she will be greatly missed.\n2) Joining us tonight is Kate Cox, a wife and mother from Dallas. She’d become pregnant again and had a fetus with a fatal condition. Her doctor told Kate that her own life and her ability to have future in the children in the future were at risk if she didn’t act.\n3) She scheduled treatments to have that second child, but the Alabama Supreme Court shut down IVF treatments across the state, unleashed by a Supreme Court decision overturning Roe v. Wade. She was told her dream would have to wait. What her family had gone through should never have happened.\n4) This was a conversation that I had with her that night with her son laying hopelessly in bed, blood all over. Everybody is praying. She said sir, he will be OK.\n5) What her family had gone through should never have happened. Unless Congress acts, it could happen again. So, tonight, let’s stand up for families like hers.\n6) Many of these gang members took advantage of glaring loopholes in our laws to enter the country as unaccompanied alien minors and wound up in Kayla and Nisa’s high school. Evelyn, Elizabeth, Freddy, and Robert: Tonight, everyone in this chamber is praying for you. Everyone in America is grieving for you.\n\nReturn JSON only.\n",
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "10": {
+    "label": "economic growth",
+    "confidence": "high",
+    "keywords": [
+      "jobs",
+      "economy",
+      "growth",
+      "unemployment",
+      "wages",
+      "inflation"
+    ],
+    "rationale": "The excerpts emphasize the creation of jobs, economic growth rates, and the contrast between corporate profits and stagnant wages, indicating a focus on economic performance and labor market conditions.",
+    "excerpts": [
+      "That's just part of a manufacturing surge that's created nearly 900,000 new jobs in the past six years. And we’ve done all this while cutting our deficits by almost three-quarters. Anyone claiming that America’s economy is in decline is peddling fiction.",
+      "Over more than three decades, even before the Great Recession hit, massive shifts in technology and global competition had eliminated a lot of good, middle-class jobs, and weakened the economic foundations that families depend on. Today, after four years of economic growth, corporate profits and stock prices have rarely been higher, and those at the top have never done better. But average wages have barely budged.",
+      "In fact our economy created over 6.5 million new jobs just last year, more jobs created in one year than ever before in the history of America. Our economy grew at a rate of 5.7 percent last year, the strongest growth in nearly 40 years, the first step in bringing fundamental change to an economy that hasn’t worked for the working people of this nation for too long. For the past 40 years, we were told that if we gave tax breaks to those at the...",
+      "They're not making money like they used to but we're making a lot of money. There was no inflation, tremendous growth. And the big story was how Donald Trump called the economy correctly and 22 Nobel Prize winners in economics didn't, they got it totally wrong.",
+      "Long before the recession, jobs and manufacturing began leaving our shores. Technology made businesses more efficient, but also made some jobs obsolete. Folks at the top saw their incomes rise like never before, but most hardworking Americans struggled with costs that were growing, paychecks that weren’t, and personal debt that kept piling up.",
+      "But average wages have barely budged. Inequality has deepened. Upward mobility has stalled."
+    ],
+    "ngram_terms": [
+      "jobs",
+      "years",
+      "year",
+      "economy",
+      "just",
+      "americans",
+      "time",
+      "history",
+      "rate",
+      "unemployment",
+      "percent",
+      "lowest"
+    ],
+    "prompt": "You are labeling a topic cluster from a State of the Union speech (0).\n\nReturn JSON with keys:\n- label: 1-4 words, neutral policy/theme noun phrase\n- confidence: low|med|high\n- keywords: up to 6\n- rationale: 1 sentence grounded in evidence\n\nRules:\n- Ignore personal names and applause/gallery scaffolding.\n- Prefer conventional topic names (e.g., \"border security\", \"drug prices\", \"neonatal care\").\n- If the cluster is mostly a personal story, label the underlying policy/theme, not the person.\n\nTop n-gram candidates:\n- jobs\n- years\n- year\n- economy\n- just\n- americans\n- time\n- history\n- rate\n- unemployment\n- percent\n- lowest\n\nRepresentative excerpts:\n1) That's just part of a manufacturing surge that's created nearly 900,000 new jobs in the past six years. And we’ve done all this while cutting our deficits by almost three-quarters. Anyone claiming that America’s economy is in decline is peddling fiction.\n2) Over more than three decades, even before the Great Recession hit, massive shifts in technology and global competition had eliminated a lot of good, middle-class jobs, and weakened the economic foundations that families depend on. Today, after four years of economic growth, corporate profits and stock prices have rarely been higher, and those at the top have never done better. But average wages have barely budged.\n3) In fact our economy created over 6.5 million new jobs just last year, more jobs created in one year than ever before in the history of America. Our economy grew at a rate of 5.7 percent last year, the strongest growth in nearly 40 years, the first step in bringing fundamental change to an economy that hasn’t worked for the working people of this nation for too long. For the past 40 years, we were told that if we gave tax breaks to those at the...\n4) They're not making money like they used to but we're making a lot of money. There was no inflation, tremendous growth. And the big story was how Donald Trump called the economy correctly and 22 Nobel Prize winners in economics didn't, they got it totally wrong.\n5) Long before the recession, jobs and manufacturing began leaving our shores. Technology made businesses more efficient, but also made some jobs obsolete. Folks at the top saw their incomes rise like never before, but most hardworking Americans struggled with costs that were growing, paychecks that weren’t, and personal debt that kept piling up.\n6) But average wages have barely budged. Inequality has deepened. Upward mobility has stalled.\n\nReturn JSON only.\n",
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "11": {
+    "label": "public health initiatives",
+    "confidence": "high",
+    "keywords": [
+      "cancer",
+      "care",
+      "vaccines",
+      "treatments",
+      "Congress",
+      "health"
+    ],
+    "rationale": "The excerpts emphasize new initiatives for cancer research, vaccine distribution, and overall public health improvements.",
+    "excerpts": [
+      "My administration will take all necessary steps to safeguard our citizens from this threat. We have launched ambitious new initiatives to substantially improve care for Americans with kidney disease, Alzheimer’s, and those struggling with mental health. And because Congress was so good as to fund my request, new cures for childhood cancer, and we will eradicate the AIDS epidemic in America by the end of this decade.",
+      "And we are launching a new initiative that will give us the capacity to respond faster and more effectively to bioterrorism or an infectious disease, a plan that will counter threats at home and strengthen public health abroad. As we have for over 60 years, America takes these actions because our destiny is connected to those beyond our shores. But we also do it because it is right.",
+      "We achieved this because we provided free vaccines, treatments, tests, and masks. Of course, continuing this costs money. I will soon send Congress a request.",
+      "I will soon send Congress a request. The vast majority of Americans have used these tools and may want to again, so I expect Congress to pass it quickly. Fourth, we will continue vaccinating the world.",
+      "For the loved ones we’ve all lost, for the families that we can still save, let’s make America the country that cures cancer once and for all. Medical research is critical. We need the same level of commitment when it comes to developing clean energy sources.",
+      "The pandemic no longer controls our lives. The vaccine that saved us from COVID is are now being used to beat cancer. Turning setback into comeback."
+    ],
+    "ngram_terms": [
+      "new",
+      "cancer",
+      "americans",
+      "congress",
+      "health",
+      "right",
+      "let",
+      "year",
+      "covid",
+      "treatments",
+      "care",
+      "vaccines"
+    ],
+    "prompt": "You are labeling a topic cluster from a State of the Union speech (0).\n\nReturn JSON with keys:\n- label: 1-4 words, neutral policy/theme noun phrase\n- confidence: low|med|high\n- keywords: up to 6\n- rationale: 1 sentence grounded in evidence\n\nRules:\n- Ignore personal names and applause/gallery scaffolding.\n- Prefer conventional topic names (e.g., \"border security\", \"drug prices\", \"neonatal care\").\n- If the cluster is mostly a personal story, label the underlying policy/theme, not the person.\n\nTop n-gram candidates:\n- new\n- cancer\n- americans\n- congress\n- health\n- right\n- let\n- year\n- covid\n- treatments\n- care\n- vaccines\n\nRepresentative excerpts:\n1) My administration will take all necessary steps to safeguard our citizens from this threat. We have launched ambitious new initiatives to substantially improve care for Americans with kidney disease, Alzheimer’s, and those struggling with mental health. And because Congress was so good as to fund my request, new cures for childhood cancer, and we will eradicate the AIDS epidemic in America by the end of this decade.\n2) And we are launching a new initiative that will give us the capacity to respond faster and more effectively to bioterrorism or an infectious disease, a plan that will counter threats at home and strengthen public health abroad. As we have for over 60 years, America takes these actions because our destiny is connected to those beyond our shores. But we also do it because it is right.\n3) We achieved this because we provided free vaccines, treatments, tests, and masks. Of course, continuing this costs money. I will soon send Congress a request.\n4) I will soon send Congress a request. The vast majority of Americans have used these tools and may want to again, so I expect Congress to pass it quickly. Fourth, we will continue vaccinating the world.\n5) For the loved ones we’ve all lost, for the families that we can still save, let’s make America the country that cures cancer once and for all. Medical research is critical. We need the same level of commitment when it comes to developing clean energy sources.\n6) The pandemic no longer controls our lives. The vaccine that saved us from COVID is are now being used to beat cancer. Turning setback into comeback.\n\nReturn JSON only.\n",
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "12": {
+    "label": "budget reform",
+    "confidence": "high",
+    "keywords": [
+      "deficit",
+      "spending",
+      "reform",
+      "savings",
+      "trust",
+      "economy"
+    ],
+    "rationale": "The excerpts emphasize the need for fiscal responsibility, reducing the deficit, and reforming budget practices.",
+    "excerpts": [
+      "And I'd urge Democrats and Republicans to pass a bill that helps correct some of these problems. I'm also calling on Congress to continue down the path of earmark reform, Democrats and Republicans Democrats and Republicans. Look, you've trimmed some of this spending, you've embraced some meaningful change, but restoring the public trust demands more.",
+      "And if I have to enforce this discipline by veto, I will. We will continue to go through the budget, line by line, page by page, to eliminate programs that we can't afford and don't work. We've already identified $20 billion in savings for next year.",
+      "Now, I am grateful to the House for passing such a bill last year. And this year, I'm eager to help advance the bipartisan effort in the Senate. I know there have been questions about whether we can afford such changes in a tough economy.",
+      "And if this Congress wants to help, work with me to fix an upside-down tax code that gives big tax breaks to help the wealthy save, but does little to nothing for middle-class Americans. Offer every American access to an automatic IRA on the job, so they can save at work just like everyone in this chamber can. And since the most important investment many families make is their home, send me legislation that protects taxpayers from footing the...",
+      "Let’s work together to close those loopholes, end those incentives to ship jobs overseas, and lower tax rates for businesses that create jobs here at home. Moreover, we can take the money we save with this transition to tax reform to create jobs rebuilding our roads, upgrading our ports, unclogging our commutes because in today’s global economy, first-class jobs gravitate to first-class infrastructure. We’ll need Congress to protect more than...",
+      "I’ve been delivering real results in fiscally responsible ways. We’ve already cut the federal deficit we’ve already cut the federal deficit by over $1 trillion. I signed a bipartisan deal to cut another trillion dollars in the next decade."
+    ],
+    "ngram_terms": [
+      "congress",
+      "year",
+      "make",
+      "work",
+      "bipartisan",
+      "jobs",
+      "tax",
+      "pass",
+      "americans",
+      "new",
+      "deficit",
+      "let"
+    ],
+    "prompt": "You are labeling a topic cluster from a State of the Union speech (0).\n\nReturn JSON with keys:\n- label: 1-4 words, neutral policy/theme noun phrase\n- confidence: low|med|high\n- keywords: up to 6\n- rationale: 1 sentence grounded in evidence\n\nRules:\n- Ignore personal names and applause/gallery scaffolding.\n- Prefer conventional topic names (e.g., \"border security\", \"drug prices\", \"neonatal care\").\n- If the cluster is mostly a personal story, label the underlying policy/theme, not the person.\n\nTop n-gram candidates:\n- congress\n- year\n- make\n- work\n- bipartisan\n- jobs\n- tax\n- pass\n- americans\n- new\n- deficit\n- let\n\nRepresentative excerpts:\n1) And I'd urge Democrats and Republicans to pass a bill that helps correct some of these problems. I'm also calling on Congress to continue down the path of earmark reform, Democrats and Republicans Democrats and Republicans. Look, you've trimmed some of this spending, you've embraced some meaningful change, but restoring the public trust demands more.\n2) And if I have to enforce this discipline by veto, I will. We will continue to go through the budget, line by line, page by page, to eliminate programs that we can't afford and don't work. We've already identified $20 billion in savings for next year.\n3) Now, I am grateful to the House for passing such a bill last year. And this year, I'm eager to help advance the bipartisan effort in the Senate. I know there have been questions about whether we can afford such changes in a tough economy.\n4) And if this Congress wants to help, work with me to fix an upside-down tax code that gives big tax breaks to help the wealthy save, but does little to nothing for middle-class Americans. Offer every American access to an automatic IRA on the job, so they can save at work just like everyone in this chamber can. And since the most important investment many families make is their home, send me legislation that protects taxpayers from footing the...\n5) Let’s work together to close those loopholes, end those incentives to ship jobs overseas, and lower tax rates for businesses that create jobs here at home. Moreover, we can take the money we save with this transition to tax reform to create jobs rebuilding our roads, upgrading our ports, unclogging our commutes because in today’s global economy, first-class jobs gravitate to first-class infrastructure. We’ll need Congress to protect more than...\n6) I’ve been delivering real results in fiscally responsible ways. We’ve already cut the federal deficit we’ve already cut the federal deficit by over $1 trillion. I signed a bipartisan deal to cut another trillion dollars in the next decade.\n\nReturn JSON only.\n",
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "13": {
+    "label": "nuclear nonproliferation",
+    "confidence": "high",
+    "keywords": [
+      "nuclear weapons",
+      "sanctions",
+      "diplomacy",
+      "Iran",
+      "international cooperation",
+      "peace"
+    ],
+    "rationale": "The excerpts emphasize the importance of reducing nuclear weapons and the efforts to halt Iran's nuclear program through diplomatic means and international sanctions.",
+    "excerpts": [
+      "It says America will always act, alone if necessary, to protect our people and our allies; but on issues of global concern, we will mobilize the world to work with us, and make sure other countries pull their own weight. That’s our approach to conflicts like Syria, where we’re partnering with local forces and leading international efforts to help that broken society pursue a lasting peace. That’s why we built a global coalition, with sanctions...",
+      "Now, even as we prosecute two wars, we're also confronting perhaps the greatest danger to the American people, the threat of nuclear weapons. I've embraced the vision of John F. Kennedy and Ronald Reagan through a strategy that reverses the spread of these weapons and seeks a world without them. To reduce our stockpiles and launchers, while ensuring our deterrent, the United States and Russia are completing negotiations on the farthest reaching...",
+      "From the coalitions we’ve built to secure nuclear materials, to the missions we’ve led against hunger and disease; from the blows we’ve dealt to our enemies, to the enduring power of our moral example, America is back. Anyone who tells you otherwise, anyone who tells you that America is in decline or that our influence has waned, doesn’t know what they’re talking about. That’s not the message we get from leaders around the world who are eager to...",
+      "As we rebuild America’s strength and confidence at home, we are also restoring our strength and standing abroad. Around the world, we face rogue regimes, terrorist groups, and rivals like China and Russia that challenge our interests, our economy, and our values. In confronting these dangers, we know that weakness is the surest path to conflict, and unmatched power is the surest means of our defense.",
+      "But a peaceful resolution of this issue is still possible, and far better, and if Iran changes course and meets its obligations, it can rejoin the community of nations. The renewal of American leadership can be felt across the globe. Our oldest alliances in Europe and Asia are stronger than ever.",
+      "As we speak, American diplomacy is supporting Israelis and Palestinians as they engage in difficult but necessary talks to end the conflict there; to achieve dignity and an independent state for Palestinians, and lasting peace and security for the State of Israel a Jewish state that knows America will always be at their side. And it is American diplomacy, backed by pressure, that has halted the progress of Iran’s nuclear program and rolled parts..."
+    ],
+    "ngram_terms": [
+      "nuclear",
+      "world",
+      "iran",
+      "united",
+      "states",
+      "united states",
+      "military",
+      "nations",
+      "sanctions",
+      "countries",
+      "diplomacy",
+      "allies"
+    ],
+    "prompt": "You are labeling a topic cluster from a State of the Union speech (0).\n\nReturn JSON with keys:\n- label: 1-4 words, neutral policy/theme noun phrase\n- confidence: low|med|high\n- keywords: up to 6\n- rationale: 1 sentence grounded in evidence\n\nRules:\n- Ignore personal names and applause/gallery scaffolding.\n- Prefer conventional topic names (e.g., \"border security\", \"drug prices\", \"neonatal care\").\n- If the cluster is mostly a personal story, label the underlying policy/theme, not the person.\n\nTop n-gram candidates:\n- nuclear\n- world\n- iran\n- united\n- states\n- united states\n- military\n- nations\n- sanctions\n- countries\n- diplomacy\n- allies\n\nRepresentative excerpts:\n1) It says America will always act, alone if necessary, to protect our people and our allies; but on issues of global concern, we will mobilize the world to work with us, and make sure other countries pull their own weight. That’s our approach to conflicts like Syria, where we’re partnering with local forces and leading international efforts to help that broken society pursue a lasting peace. That’s why we built a global coalition, with sanctions...\n2) Now, even as we prosecute two wars, we're also confronting perhaps the greatest danger to the American people, the threat of nuclear weapons. I've embraced the vision of John F. Kennedy and Ronald Reagan through a strategy that reverses the spread of these weapons and seeks a world without them. To reduce our stockpiles and launchers, while ensuring our deterrent, the United States and Russia are completing negotiations on the farthest reaching...\n3) From the coalitions we’ve built to secure nuclear materials, to the missions we’ve led against hunger and disease; from the blows we’ve dealt to our enemies, to the enduring power of our moral example, America is back. Anyone who tells you otherwise, anyone who tells you that America is in decline or that our influence has waned, doesn’t know what they’re talking about. That’s not the message we get from leaders around the world who are eager to...\n4) As we rebuild America’s strength and confidence at home, we are also restoring our strength and standing abroad. Around the world, we face rogue regimes, terrorist groups, and rivals like China and Russia that challenge our interests, our economy, and our values. In confronting these dangers, we know that weakness is the surest path to conflict, and unmatched power is the surest means of our defense.\n5) But a peaceful resolution of this issue is still possible, and far better, and if Iran changes course and meets its obligations, it can rejoin the community of nations. The renewal of American leadership can be felt across the globe. Our oldest alliances in Europe and Asia are stronger than ever.\n6) As we speak, American diplomacy is supporting Israelis and Palestinians as they engage in difficult but necessary talks to end the conflict there; to achieve dignity and an independent state for Palestinians, and lasting peace and security for the State of Israel a Jewish state that knows America will always be at their side. And it is American diplomacy, backed by pressure, that has halted the progress of Iran’s nuclear program and rolled parts...\n\nReturn JSON only.\n",
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "14": {
+    "label": "Prescription Drug Costs",
+    "confidence": "high",
+    "keywords": [
+      "prescription drugs",
+      "health care",
+      "cost",
+      "Medicare",
+      "insurance",
+      "Affordable Care Act"
+    ],
+    "rationale": "The excerpts consistently discuss lowering prescription drug costs and improving health care affordability through Medicare and the Affordable Care Act.",
+    "excerpts": [
+      "Costs we're going to go way up and that's what happened. And now I'm bringing them way down on health care and everything else. I'm also ending the wildly inflated cost of prescription drugs like has never happened before.",
+      "And while we’re at it let Medicare negotiate lower prices for prescription drugs, like the VA already does. Look, the American Rescue Plan is helping millions of families on Affordable Care Act plans save $2,400 a year on their health care premiums. Let’s close the coverage gap and make those savings permanent.",
+      "Over 100 million of you can no longer be denied health insurance because of a preexisting condition. But my predecessor and many in this chamber want to take the that prescription drug away by repealing Affordable Care Act. I’m not going to let that happen.",
+      "And I want to and what to do next, I want to cap the cost of insulin at $35 a month for every American who needs it everyone. For years, people have talked about it. But finally, we got it done and gave Medicare the power to negotiate lower prices on prescription drugs, just like the VA is able to do for veterans.",
+      "But finally, we got it done and gave Medicare the power to negotiate lower prices on prescription drugs, just like the VA is able to do for veterans. That’s not just saving seniors money. It’s saving taxpayers money.",
+      "Top business leaders and most Americans support my plan. And here’s the plan: First cut the cost of prescription drugs. Just look at insulin."
+    ],
+    "ngram_terms": [
+      "health",
+      "care",
+      "americans",
+      "insurance",
+      "drugs",
+      "medicare",
+      "health care",
+      "prescription",
+      "year",
+      "drug",
+      "let",
+      "health insurance"
+    ],
+    "prompt": "You are labeling a topic cluster from a State of the Union speech (0).\n\nReturn JSON with keys:\n- label: 1-4 words, neutral policy/theme noun phrase\n- confidence: low|med|high\n- keywords: up to 6\n- rationale: 1 sentence grounded in evidence\n\nRules:\n- Ignore personal names and applause/gallery scaffolding.\n- Prefer conventional topic names (e.g., \"border security\", \"drug prices\", \"neonatal care\").\n- If the cluster is mostly a personal story, label the underlying policy/theme, not the person.\n\nTop n-gram candidates:\n- health\n- care\n- americans\n- insurance\n- drugs\n- medicare\n- health care\n- prescription\n- year\n- drug\n- let\n- health insurance\n\nRepresentative excerpts:\n1) Costs we're going to go way up and that's what happened. And now I'm bringing them way down on health care and everything else. I'm also ending the wildly inflated cost of prescription drugs like has never happened before.\n2) And while we’re at it let Medicare negotiate lower prices for prescription drugs, like the VA already does. Look, the American Rescue Plan is helping millions of families on Affordable Care Act plans save $2,400 a year on their health care premiums. Let’s close the coverage gap and make those savings permanent.\n3) Over 100 million of you can no longer be denied health insurance because of a preexisting condition. But my predecessor and many in this chamber want to take the that prescription drug away by repealing Affordable Care Act. I’m not going to let that happen.\n4) And I want to and what to do next, I want to cap the cost of insulin at $35 a month for every American who needs it everyone. For years, people have talked about it. But finally, we got it done and gave Medicare the power to negotiate lower prices on prescription drugs, just like the VA is able to do for veterans.\n5) But finally, we got it done and gave Medicare the power to negotiate lower prices on prescription drugs, just like the VA is able to do for veterans. That’s not just saving seniors money. It’s saving taxpayers money.\n6) Top business leaders and most Americans support my plan. And here’s the plan: First cut the cost of prescription drugs. Just look at insulin.\n\nReturn JSON only.\n",
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "15": {
+    "label": "Energy Policy",
+    "confidence": "high",
+    "keywords": [
+      "clean energy",
+      "oil",
+      "jobs",
+      "manufacturing",
+      "independence",
+      "innovation"
+    ],
+    "rationale": "The excerpts emphasize the importance of energy policy, including clean energy, oil, and manufacturing, and its role in job creation and economic growth.",
+    "excerpts": [
+      "Support the same kind of research and innovation that led to the computer chip and the Internet; to new American jobs and new American industries. And nowhere is the promise of innovation greater than in American-made energy. Over the last three years, we’ve opened millions of new acres for oil and gas exploration, and tonight, I’m directing my administration to open more than 75 percent of our potential offshore oil and gas resources.",
+      "But here's the thing: Even if you doubt the evidence, providing incentives for energy efficiency and clean energy are the right thing to do for our future, because the nation that leads the clean energy economy will be the nation that leads the global economy. And America must be that nation. Third, we need to export more of our goods, because the more products we make and sell to other countries, the more jobs we support right here in America.",
+      "Now, one of the biggest factors in bringing more jobs back is our commitment to American energy. The all-of-the-above energy strategy I announced a few years ago is working, and today, America is closer to energy independence than we’ve been in decades. One of the reasons why is natural gas if extracted safely, it’s the bridge fuel that can power our economy with less of the carbon pollution that causes climate change.",
+      "Their energy bills will be $100 billion lower over the next decade, and America will have less pollution, more manufacturing, more jobs for construction workers who need them. Send me a bill that creates these jobs. Building this new energy future should be just one part of a broader agenda to repair America’s infrastructure.",
+      "In the coming months, I’ll build on that success by setting new standards for our trucks, so we can keep driving down oil imports and what we pay at the pump. Taken together, our energy policy is creating jobs and leading to a cleaner, safer planet. Over the past eight years, the United States has reduced our total carbon pollution more than any other nation on Earth.",
+      "They're making serious investments in clean energy because they want those jobs. Well, I do not accept second place for the United States of America. As hard as it may be, as uncomfortable and contentious as the debates may become, it's time to get serious about fixing the problems that are hampering our growth."
+    ],
+    "ngram_terms": [
+      "jobs",
+      "energy",
+      "new",
+      "years",
+      "clean",
+      "oil",
+      "world",
+      "gas",
+      "clean energy",
+      "manufacturing",
+      "economy",
+      "factories"
+    ],
+    "prompt": "You are labeling a topic cluster from a State of the Union speech (0).\n\nReturn JSON with keys:\n- label: 1-4 words, neutral policy/theme noun phrase\n- confidence: low|med|high\n- keywords: up to 6\n- rationale: 1 sentence grounded in evidence\n\nRules:\n- Ignore personal names and applause/gallery scaffolding.\n- Prefer conventional topic names (e.g., \"border security\", \"drug prices\", \"neonatal care\").\n- If the cluster is mostly a personal story, label the underlying policy/theme, not the person.\n\nTop n-gram candidates:\n- jobs\n- energy\n- new\n- years\n- clean\n- oil\n- world\n- gas\n- clean energy\n- manufacturing\n- economy\n- factories\n\nRepresentative excerpts:\n1) Support the same kind of research and innovation that led to the computer chip and the Internet; to new American jobs and new American industries. And nowhere is the promise of innovation greater than in American-made energy. Over the last three years, we’ve opened millions of new acres for oil and gas exploration, and tonight, I’m directing my administration to open more than 75 percent of our potential offshore oil and gas resources.\n2) But here's the thing: Even if you doubt the evidence, providing incentives for energy efficiency and clean energy are the right thing to do for our future, because the nation that leads the clean energy economy will be the nation that leads the global economy. And America must be that nation. Third, we need to export more of our goods, because the more products we make and sell to other countries, the more jobs we support right here in America.\n3) Now, one of the biggest factors in bringing more jobs back is our commitment to American energy. The all-of-the-above energy strategy I announced a few years ago is working, and today, America is closer to energy independence than we’ve been in decades. One of the reasons why is natural gas if extracted safely, it’s the bridge fuel that can power our economy with less of the carbon pollution that causes climate change.\n4) Their energy bills will be $100 billion lower over the next decade, and America will have less pollution, more manufacturing, more jobs for construction workers who need them. Send me a bill that creates these jobs. Building this new energy future should be just one part of a broader agenda to repair America’s infrastructure.\n5) In the coming months, I’ll build on that success by setting new standards for our trucks, so we can keep driving down oil imports and what we pay at the pump. Taken together, our energy policy is creating jobs and leading to a cleaner, safer planet. Over the past eight years, the United States has reduced our total carbon pollution more than any other nation on Earth.\n6) They're making serious investments in clean energy because they want those jobs. Well, I do not accept second place for the United States of America. As hard as it may be, as uncomfortable and contentious as the debates may become, it's time to get serious about fixing the problems that are hampering our growth.\n\nReturn JSON only.\n",
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "16": {
+    "label": "Counterterrorism",
+    "confidence": "high",
+    "keywords": [
+      "Al Qaeda",
+      "Afghanistan",
+      "troops",
+      "war",
+      "terrorists"
+    ],
+    "rationale": "The excerpts emphasize the efforts to combat Al Qaeda and other terrorist organizations through military and diplomatic means.",
+    "excerpts": [
+      "That’s the lesson we’ve learned from our actions abroad over the last few years. Ending the Iraq war has allowed us to strike decisive blows against our enemies. From Pakistan to Yemen, the al Qaeda operatives who remain are scrambling, knowing that they can’t escape the reach of the United States of America.",
+      "We've prohibited torture and strengthened partnerships from the Pacific to South Asia to the Arabian Peninsula. And in the last year, hundreds of Al Qaida's fighters and affiliates, including many senior leaders, have been captured or killed, far more than in 2008. And in Afghanistan, we're increasing our troops and training Afghan security forces so they can begin to take the lead in July of 2011 and our troops can begin to come home.",
+      "As we defend American lives, we are working to end America’s wars in the Middle East. In Afghanistan, the determination and valor of our warfighters has allowed us to make tremendous progress, and peace talks are now underway. I am not looking to kill hundreds of thousands of people in Afghanistan, many of them totally innocent.",
+      "From Pakistan to Yemen, the al Qaeda operatives who remain are scrambling, knowing that they can’t escape the reach of the United States of America. From this position of strength, we’ve begun to wind down the war in Afghanistan. Ten thousand of our troops have come home.",
+      "And that’s exactly what we’re doing. For more than a year, America has led a coalition of more than 60 countries to cut off ISIL’s financing, disrupt their plots, stop the flow of terrorist fighters, and stamp out their vicious ideology. With nearly 10,000 air strikes, we’re taking out their leadership, their oil, their training camps, their weapons.",
+      "When you come after Americans, we go after you. And it may take time, but we have long memories, and our reach has no limits. Our foreign policy hast to be focused on the threat from ISIL and al Qaeda, but it can’t stop there."
+    ],
+    "ngram_terms": [
+      "afghanistan",
+      "war",
+      "home",
+      "troops",
+      "israel",
+      "al",
+      "world",
+      "iraq",
+      "come",
+      "year",
+      "terrorists",
+      "gaza"
+    ],
+    "prompt": "You are labeling a topic cluster from a State of the Union speech (0).\n\nReturn JSON with keys:\n- label: 1-4 words, neutral policy/theme noun phrase\n- confidence: low|med|high\n- keywords: up to 6\n- rationale: 1 sentence grounded in evidence\n\nRules:\n- Ignore personal names and applause/gallery scaffolding.\n- Prefer conventional topic names (e.g., \"border security\", \"drug prices\", \"neonatal care\").\n- If the cluster is mostly a personal story, label the underlying policy/theme, not the person.\n\nTop n-gram candidates:\n- afghanistan\n- war\n- home\n- troops\n- israel\n- al\n- world\n- iraq\n- come\n- year\n- terrorists\n- gaza\n\nRepresentative excerpts:\n1) That’s the lesson we’ve learned from our actions abroad over the last few years. Ending the Iraq war has allowed us to strike decisive blows against our enemies. From Pakistan to Yemen, the al Qaeda operatives who remain are scrambling, knowing that they can’t escape the reach of the United States of America.\n2) We've prohibited torture and strengthened partnerships from the Pacific to South Asia to the Arabian Peninsula. And in the last year, hundreds of Al Qaida's fighters and affiliates, including many senior leaders, have been captured or killed, far more than in 2008. And in Afghanistan, we're increasing our troops and training Afghan security forces so they can begin to take the lead in July of 2011 and our troops can begin to come home.\n3) As we defend American lives, we are working to end America’s wars in the Middle East. In Afghanistan, the determination and valor of our warfighters has allowed us to make tremendous progress, and peace talks are now underway. I am not looking to kill hundreds of thousands of people in Afghanistan, many of them totally innocent.\n4) From Pakistan to Yemen, the al Qaeda operatives who remain are scrambling, knowing that they can’t escape the reach of the United States of America. From this position of strength, we’ve begun to wind down the war in Afghanistan. Ten thousand of our troops have come home.\n5) And that’s exactly what we’re doing. For more than a year, America has led a coalition of more than 60 countries to cut off ISIL’s financing, disrupt their plots, stop the flow of terrorist fighters, and stamp out their vicious ideology. With nearly 10,000 air strikes, we’re taking out their leadership, their oil, their training camps, their weapons.\n6) When you come after Americans, we go after you. And it may take time, but we have long memories, and our reach has no limits. Our foreign policy hast to be focused on the threat from ISIL and al Qaeda, but it can’t stop there.\n\nReturn JSON only.\n",
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "17": {
+    "label": "Tax Equity",
+    "confidence": "high",
+    "keywords": [
+      "tax breaks",
+      "corporate minimum tax",
+      "fair share",
+      "tax reform",
+      "Buffett Rule",
+      "tax code"
+    ],
+    "rationale": "The excerpts emphasize the need for fair taxation, closing loopholes, and ensuring that the wealthy pay their fair share, indicating a strong focus on tax equity.",
+    "excerpts": [
+      "But we need to do more, and that means making choices. Right now, we’re poised to spend nearly $1 trillion more on what was supposed to be a temporary tax break for the wealthiest 2 percent of Americans. Right now, because of loopholes and shelters in the tax code, a quarter of all millionaires pay lower tax rates than millions of middle-class households.",
+      "But that’s still less than working people pay in federal taxes. It’s time to raise the corporate minimum tax to at least 21 percent so every big corporation finally begins to pay their fair share. I also want to end tax breaks for Big Pharma, Big Oil, private jets, massive executive pay when it was only supposed to be a million a million dollars that could be deducted.",
+      "We've already identified $20 billion in savings for next year. To help working families, we'll extend our middle class tax cuts. But at a time of record deficits, we will not continue tax cuts for oil companies, for investment fund managers, and for those making over $250,000 a year.",
+      "And under my plan, nobody earning less than $400,000 a year will pay an additional penny in new taxes. Nobody. The one thing all Americans agree on is that the tax system is not fair.",
+      "But in return, we need to change our tax code so that people like me, and an awful lot of members of Congress, pay our fair share of taxes. Tax reform should follow the Buffett Rule. If you make more than $1 million a year, you should not pay less than 30 percent in taxes.",
+      "That’s why I’ve proposed closing loopholes so the very wealthy don’t pay a lower tax rate than a teacher or a firefighter. So that’s my plan. It will grow the economy and lower costs for families."
+    ],
+    "ngram_terms": [
+      "tax",
+      "pay",
+      "taxes",
+      "make",
+      "americans",
+      "cut",
+      "year",
+      "families",
+      "percent",
+      "big",
+      "credit",
+      "child"
+    ],
+    "prompt": "You are labeling a topic cluster from a State of the Union speech (0).\n\nReturn JSON with keys:\n- label: 1-4 words, neutral policy/theme noun phrase\n- confidence: low|med|high\n- keywords: up to 6\n- rationale: 1 sentence grounded in evidence\n\nRules:\n- Ignore personal names and applause/gallery scaffolding.\n- Prefer conventional topic names (e.g., \"border security\", \"drug prices\", \"neonatal care\").\n- If the cluster is mostly a personal story, label the underlying policy/theme, not the person.\n\nTop n-gram candidates:\n- tax\n- pay\n- taxes\n- make\n- americans\n- cut\n- year\n- families\n- percent\n- big\n- credit\n- child\n\nRepresentative excerpts:\n1) But we need to do more, and that means making choices. Right now, we’re poised to spend nearly $1 trillion more on what was supposed to be a temporary tax break for the wealthiest 2 percent of Americans. Right now, because of loopholes and shelters in the tax code, a quarter of all millionaires pay lower tax rates than millions of middle-class households.\n2) But that’s still less than working people pay in federal taxes. It’s time to raise the corporate minimum tax to at least 21 percent so every big corporation finally begins to pay their fair share. I also want to end tax breaks for Big Pharma, Big Oil, private jets, massive executive pay when it was only supposed to be a million a million dollars that could be deducted.\n3) We've already identified $20 billion in savings for next year. To help working families, we'll extend our middle class tax cuts. But at a time of record deficits, we will not continue tax cuts for oil companies, for investment fund managers, and for those making over $250,000 a year.\n4) And under my plan, nobody earning less than $400,000 a year will pay an additional penny in new taxes. Nobody. The one thing all Americans agree on is that the tax system is not fair.\n5) But in return, we need to change our tax code so that people like me, and an awful lot of members of Congress, pay our fair share of taxes. Tax reform should follow the Buffett Rule. If you make more than $1 million a year, you should not pay less than 30 percent in taxes.\n6) That’s why I’ve proposed closing loopholes so the very wealthy don’t pay a lower tax rate than a teacher or a firefighter. So that’s my plan. It will grow the economy and lower costs for families.\n\nReturn JSON only.\n",
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  }
+}

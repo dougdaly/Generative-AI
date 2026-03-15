@@ -65,7 +65,7 @@ class WikidataSPARQL:
         "User-Agent": "AgenticMultimodal/1.0 (https://github.com/yourrepo; you@example.com)"
     }
 
-    def __init__(self, timeout=45, cache_dir=".wdqs_cache"):
+    def __init__(self, timeout=120, cache_dir=".wdqs_cache"):
         self.timeout = timeout
         self.cache_dir = cache_dir
         os.makedirs(cache_dir, exist_ok=True)
@@ -73,12 +73,12 @@ class WikidataSPARQL:
         # Robust session with retry & backoff
         self.session = requests.Session()
         retry = Retry(
-            total=5,                # retry both connect/read
+            total=5,
             connect=3,
             read=3,
-            backoff_factor=0.75,    # exponential backoff (0.75, 1.5, 3.0, ...)
+            backoff_factor=0.75,
             status_forcelist=(429, 500, 502, 503, 504),
-            allowed_methods=frozenset(["GET"]),
+            allowed_methods=frozenset(["GET", "POST"]),  
             raise_on_status=False,
         )
         self.session.mount("https://", HTTPAdapter(max_retries=retry))
@@ -100,7 +100,13 @@ class WikidataSPARQL:
         # Simple client-side rate limit (<= 1 req/sec per WDQS etiquette)
         time.sleep(1.05)
 
-        r = self.session.get(self.endpoint, params=params, headers=self.headers, timeout=self.timeout)
+        r = self.session.post(
+            self.endpoint,
+            params=params,
+            data={"query": query},                 # <-- POST body
+            headers=self.headers,
+            timeout=(10, self.timeout),            # <-- (connect, read)
+        )
         r.raise_for_status()
         data = r.json()
         out = data.get("results", {}).get("bindings", [])

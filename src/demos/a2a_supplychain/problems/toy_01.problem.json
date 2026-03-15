@@ -1,0 +1,42 @@
+{
+  "type": "supply.problem:v1",
+  "components": [
+    { "id": "WIDGET", "qty": 1 },
+    { "id": "GIZMO", "qty": 1 }
+  ],
+  "suppliers": [
+    { "component_id": "WIDGET", "country": "CN", "unit_cost": 10.0, "lead_days": 12 },
+    { "component_id": "WIDGET", "country": "US", "unit_cost": 14.0, "lead_days": 3 },
+
+    { "component_id": "GIZMO", "country": "US", "unit_cost": 8.0, "lead_days": 2 },
+    { "component_id": "GIZMO", "country": "MX", "unit_cost": 9.0, "lead_days": 5 }
+  ],
+  "assembly_options": [
+    { "country": "MX", "labor_cost": 5.0, "lead_days": 3 },
+    { "country": "US", "labor_cost": 9.0, "lead_days": 2 }
+  ],
+  "shipping_options": [
+    { "mode": "GROUND", "cost": 2.0, "lead_days": 2 },
+    { "mode": "AIR", "cost": 7.0, "lead_days": 1 },
+    { "mode": "SEA", "cost": 1.0, "lead_days": 10 }
+  ],
+  "tariffs": {
+    "component_import": [
+      { "from": "CN", "to": "MX", "rate": 0.10 },
+      { "from": "US", "to": "MX", "rate": 0.00 },
+      { "from": "MX", "to": "MX", "rate": 0.00 }
+    ],
+    "finished_good_to_us": [
+      { "from": "MX", "rate": 0.05 },
+      { "from": "US", "rate": 0.00 }
+    ]
+  },
+  "constraints": {
+    "max_total_lead_days": 20,
+    "banned": []
+  },
+  "budget": {
+    "max_evaluations": 20
+  }
+}
+

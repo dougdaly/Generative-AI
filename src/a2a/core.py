@@ -111,7 +111,7 @@ class AgentCard:
     url: str
     skills: list[str]                  # keep simple: list of skill ids/strings
     raw: dict[str, Any]                # original JSON card
-    card_sha256: str                   # hash of raw JSON for reproducibility
+    card_sha256: str = ""              # hash of raw JSON for reproducibility
     version: Optional[str] = None      # optional version string
 
 

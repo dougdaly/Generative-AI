@@ -1,9 +1,17 @@
-# skills/gen_poster_renderer.py
+from __future__ import annotations
 from math import ceil, sqrt
 from typing import Tuple
 from PIL import Image, ImageDraw, ImageFont
 from agentic_multimodal.schemas.artifacts import PosterSpec, PosterItem
 from agentic_multimodal.skills.image_gen import resolve_font 
+
+
+import os
+from pathlib import Path
+from typing import Tuple, Optional
+
+from agentic_multimodal.schemas.artifacts import PosterSpec
+
 
 def compose_poster_spec(
     spec: PosterSpec,
@@ -102,3 +110,44 @@ def compose_poster_spec(
             canvas.save(outpath)
     return canvas
 
+
+def render_poster(
+    spec: PosterSpec,
+    *,
+    outdir: str = "artifacts/posters",
+    outpath: str | None = None,
+    out_format: str = "WEBP",
+    out_quality: int = 80,
+    **kw,
+) -> str:
+    """
+    Wrapper that ensures a saved image + returns the output path.
+    compose_poster_spec() builds the PIL canvas; we give it an outpath.
+    """
+    from pathlib import Path
+
+    Path(outdir).mkdir(parents=True, exist_ok=True)
+
+    if outpath is None:
+        # cheap safe filename from title
+        safe = "".join(c if c.isalnum() or c in (" ", "-", "_") else "_" for c in (spec.title or "poster"))
+        safe = "_".join(safe.strip().split())[:80] or "poster"
+        outpath = str(Path(outdir) / f"{safe}.{out_format.lower()}")
+
+    # Compose (and save if compose_poster_spec honors outpath)
+    canvas = compose_poster_spec(
+        spec,
+        outpath=outpath,
+        out_format=out_format,
+        out_quality=out_quality,
+        **kw,
+    )
+
+    # If compose_poster_spec doesn't save internally, this guarantees it.
+    if not Path(outpath).exists():
+        fmt = out_format.upper()
+        if fmt == "JPG":
+            fmt = "JPEG"
+        canvas.save(outpath, format=fmt, quality=out_quality)
+
+    return outpath

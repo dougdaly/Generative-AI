@@ -77,3 +77,22 @@ def person_prompt(name: str, year: Optional[str] = None, tags: Optional[Iterable
             if cfg.get("neg"): neg += ", " + cfg["neg"]
 
     return pos, neg
+
+
+def subject_portrait(*, subject_type: str, name: str, style: str = "photo", no_text: bool = True) -> str:
+    forbid = "No text, no letters, no watermark, no logo." if no_text else ""
+
+    st = subject_type.lower()
+    if st in ("animals", "animal"):
+        return (
+            f"A centered studio portrait of a {name}, professional wildlife photography, "
+            f"{style}, sharp focus, neutral background, high detail. {forbid}"
+        )
+
+    if st in ("plants", "plant", "flowers", "flower"):
+        return (
+            f"A centered close-up portrait of {name}, botanical photography, "
+            f"{style}, natural lighting, crisp detail, simple background. {forbid}"
+        )
+
+    return f"A centered portrait of {name}, {style}. {forbid}"

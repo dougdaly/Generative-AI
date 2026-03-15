@@ -1,0 +1,118 @@
+project:
+  name: sotu-speech-analytics
+  version: v1
+
+data:
+  speeches:
+    - year: 2010
+      source_url: "https://millercenter.org/the-presidency/presidential-speeches/january-27-2010-2010-state-union-address"
+      raw_path: "assets/sotu-speech-analytics/data/raw/january-27-2010-state-union-address.txt"
+    - year: 2012
+      source_url: "https://millercenter.org/the-presidency/presidential-speeches/january-24-2012-2012-state-union-address"
+      raw_path: "assets/sotu-speech-analytics/data/raw/january-24-2012-state-union-address.txt"
+    - year: 2014
+      source_url: "https://millercenter.org/the-presidency/presidential-speeches/january-28-2014-2014-state-union-address"
+      raw_path: "assets/sotu-speech-analytics/data/raw/january-28-2014-state-union-address.txt"
+    - year: 2016
+      source_url: "https://millercenter.org/the-presidency/presidential-speeches/january-12-2016-2016-state-union-address"
+      raw_path: "assets/sotu-speech-analytics/data/raw/january-12-2016-state-union-address.txt"
+    - year: 2018
+      source_url: "https://millercenter.org/the-presidency/presidential-speeches/january-30-2018-state-union-address"
+      raw_path: "assets/sotu-speech-analytics/data/raw/january-30-2018-state-union-address.txt"
+    - year: 2020
+      source_url: "https://millercenter.org/the-presidency/presidential-speeches/february-4-2020-state-union-address"
+      raw_path: "assets/sotu-speech-analytics/data/raw/february-4-2020-state-union-address.txt"
+    - year: 2022
+      source_url: "https://millercenter.org/the-presidency/presidential-speeches/march-1-2022-state-union-address"
+      raw_path: "assets/sotu-speech-analytics/data/raw/march-1-2022-state-union-address.txt"
+    - year: 2024
+      source_url: "https://millercenter.org/the-presidency/presidential-speeches/march-7-2024-state-union-address"
+      raw_path: "assets/sotu-speech-analytics/data/raw/march-7-2024-state-union-address.txt"
+    - year: 2026
+      source_url: "https://millercenter.org/the-presidency/presidential-speeches/february-24-2026-state-union-address"
+      raw_path: "assets/sotu-speech-analytics/data/raw/february-24-2026-state-union-address.txt"
+
+cleaning:
+  drop_line_prefixes: ["AUDIENCE:"]
+  strip_speaker_prefixes:
+    - "THE PRESIDENT:"
+    - "PRESIDENT:"
+    - "THE VICE PRESIDENT:"
+    - "VICE PRESIDENT:"
+    - "SPEAKER:"
+  stage_direction_keywords:
+    - applause
+    - laughter
+    - cheers
+    - boo
+    - audience
+    - chant
+    - standing ovation
+    - ovation
+    - inaudible
+    - crosstalk
+    - holds up
+    - is presented
+  remove_stage_directions: true
+  apply_bracket_corrections: true
+  minimal_dysfluency_cleanup: true
+  restart_dedupe: true
+
+chunking:
+  sentences_per_chunk: 3
+  overlap_sentences: 1
+  max_tokens_per_chunk: 180
+
+embeddings:
+  model_name: "sentence-transformers/all-MiniLM-L6-v2"
+  normalize: true
+  batch_size: 64
+
+topics:
+  k: 10
+  scope: "global"   # global or per_speech
+  random_state: 0
+  ngram_range: [1, 2]
+  top_terms: 12
+
+moves:
+  enabled: false  # flip true when you pick a local LLM approach
+  labels:
+    - accomplishment
+    - threat
+    - values
+    - policy
+    - bipartisanship
+    - contrast
+    - anecdote
+    - call_to_action
+
+metrics:
+  values_lexicon:
+    - freedom
+    - democracy
+    - dignity
+    - justice
+    - rights
+    - equality
+    - liberty
+  conflict_lexicon:
+    - opponent
+    - extremists
+    - radical
+    - blame
+    - failed
+    - crisis
+    - threat
+
+coalition:
+  groups:
+    workers: ["worker", "workers", "job", "jobs", "union", "labor"]
+    families: ["family", "families", "parents", "kids", "children"]
+    seniors: ["senior", "seniors", "retire", "retirement", "medicare"]
+    veterans: ["veteran", "veterans", "troops", "military", "service member"]
+    small_business: ["small business", "entrepreneur", "main street"]
+    women: ["women", "woman", "girls"]
+    students: ["students", "schools", "education", "college"]
+    immigration: ["border", "immigration", "migrant", "asylum"]
+

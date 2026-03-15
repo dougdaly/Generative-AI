@@ -1,0 +1,9 @@
+numpy
+pandas
+scikit-learn
+sentence-transformers
+matplotlib
+wordcloud
+spacy
+pyyaml
+tqdm

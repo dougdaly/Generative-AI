@@ -1,0 +1,10 @@
+{
+  "type": "supply.plan:v1",
+  "component_sources": [
+    { "component_id": "WIDGET", "country": "CN" },
+    { "component_id": "GIZMO", "country": "US" }
+  ],
+  "assembly_country": "MX",
+  "ship_mode": "GROUND"
+}
+

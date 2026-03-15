@@ -1,0 +1,14 @@
+{
+  "type": "supply.price_breakdown:v1",
+  "ok": true,
+  "total_cost": 27.2,
+  "total_lead_days": 17,
+  "line_items": [
+    { "kind": "component_cost", "amount": 18.0 },
+    { "kind": "component_tariff", "amount": 1.0 },
+    { "kind": "assembly_labor", "amount": 5.0 },
+    { "kind": "shipping", "amount": 2.0 },
+    { "kind": "finished_good_tariff", "amount": 1.2 }
+  ]
+}
+

@@ -52,6 +52,7 @@ def validate_json(schema: dict, instance: object, *, where: str) -> None:
     if errors:
         e = errors[0]
         raise ValueError(f"Schema validation failed at {where}: {e.message}") from e
+
 def validate_envelope_and_payload(obj: Dict[str, Any], *, kind: SchemaKind) -> None:
     """Validate an A2A envelope and its payload.
 

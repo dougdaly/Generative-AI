@@ -6,8 +6,11 @@ from agentic_multimodal.services.settings import Settings
 from agentic_multimodal.services.llm_factory import build_llm, LLM
 
 from agentic_multimodal.skills.data.wikidata_sparql import WikidataSPARQL
+from agentic_multimodal.skills.image_prompts import subject_portrait 
+
 from agentic_multimodal.skills.data.wikidata_series import WikidataSeries
 from agentic_multimodal.skills.data.wikidata_geo import WikidataGeo, WikidataGeoSets, geocode_place
+from agentic_multimodal.skills.image_gen import batch_generate_subject_images
 
 from agentic_multimodal.skills.series.positions import PositionsProvider
 from agentic_multimodal.skills.series.award import AwardProvider
@@ -16,7 +19,7 @@ from agentic_multimodal.skills.series.aliases import PreconfiguredProvider
 from agentic_multimodal.skills.geo.region_flags import RegionCountriesWithFlags
 from agentic_multimodal.skills.geo.subdivisions import SubdivisionsByCountryProvider
 
-from agentic_multimodal.skills.gen_poster_renderer import compose_poster_spec
+from agentic_multimodal.skills.gen_poster_renderer import render_poster
 from agentic_multimodal.skills.gen_map_renderer import render_map
 from agentic_multimodal.skills.adapters.people_to_poster import (
     people_to_posterspec_per_person,
@@ -40,6 +43,7 @@ def make_registry(
     settings = settings or Settings()          # reads env by default
     llm = llm or build_llm(settings)
     series = series or _build_series()
+    sparql = WikidataSPARQL()
 
  # --- GEO dispatcher ---
     geo_client = WikidataGeo.default()
@@ -94,7 +98,7 @@ def make_registry(
     ))
 
     render = SimpleNamespace(
-        poster=compose_poster_spec, 
+        poster=render_poster,
         map=render_map,
     )
 
@@ -102,7 +106,6 @@ def make_registry(
         people_per_person=people_to_posterspec_per_person,
         people_per_term=people_to_posterspec_per_term,
     )
-
     reg = SimpleNamespace(
         root=root_path,
         settings=settings,
@@ -112,6 +115,9 @@ def make_registry(
         geo=geo,
         render=render,       
         adapters=adapters,
+        sparql=sparql,
+        image_prompts=SimpleNamespace(subject_portrait=subject_portrait),
+        image_gen=SimpleNamespace(batch_generate=batch_generate_subject_images),
     )
 
     reg.graphs = SimpleNamespace(

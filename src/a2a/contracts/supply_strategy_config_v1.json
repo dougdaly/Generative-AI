@@ -44,7 +44,8 @@
         "beam": {
           "type": "object",
           "properties": {
-            "beam_width": { "type": "integer", "minimum": 1 }
+            "beam_width": { "type": "integer", "minimum": 1 },
+            "candidates_per_parent": { "type": "integer", "minimum": 1 }
           },
           "additionalProperties": false
         },

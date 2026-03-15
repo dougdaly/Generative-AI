@@ -38,7 +38,7 @@
 
     "best_so_far_cost": { "type": "number", "minimum": 0 },
     "latency_ms": { "type": "number", "minimum": 0 },
-
+    "data": { "type": "string" },
     "note": { "type": "string" }
   },
   "additionalProperties": false

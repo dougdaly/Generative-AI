@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sotu-analytics"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "pandas",
+  "scikit-learn",
+  "sentence-transformers",
+  "matplotlib",
+  "wordcloud",
+  "spacy",
+  "pyyaml",
+  "tqdm",
+]
+
+[tool.setuptools]
+packages = ["sotu_analytics"]
+

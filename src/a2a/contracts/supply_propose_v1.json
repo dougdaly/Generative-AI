@@ -11,7 +11,8 @@
     "mutation": {
       "type": "string",
       "enum": ["greedy", "swap_one_supplier", "swap_assembly", "swap_shipping", "mixed"]
-    }
+    },
+    "seed": { "type": "integer", "minimum": 0 }
   },
   "additionalProperties": false
 }
