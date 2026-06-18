@@ -14,12 +14,14 @@ from functools import lru_cache
 from diffusers import StableDiffusionXLPipeline
 from diffusers.schedulers import DPMSolverMultistepScheduler
 
+from src.support import get_device
 
 
 def ensure_sdxl_img2img(device):
+    device = torch.device(device)
     pipe = StableDiffusionXLImg2ImgPipeline.from_pretrained(
         "stabilityai/stable-diffusion-xl-base-1.0",
-        torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
+        torch_dtype=torch.float16 if device.type == "cuda" else torch.float32,
         use_safetensors=True,
     ).to(device)
     pipe.enable_attention_slicing()
@@ -37,7 +39,7 @@ def stylize_from_reference(ref_url, *, out_w=512, out_h=768, seed=1337,
     left = (w - crop)//2; top = max(0, (h - int(crop*1.3))//2)
     im = im.crop((left, top, left+crop, top+int(crop*1.3))).resize((out_w, out_h), Image.LANCZOS)
 
-    pipe = ensure_sdxl_img2img("cuda" if torch.cuda.is_available() else ("mps" if torch.backends.mps.is_available() else "cpu"))
+    pipe = ensure_sdxl_img2img(get_device())
     g = torch.Generator(device=pipe.device).manual_seed(seed)
     out = pipe(
         prompt=style_prompt,
@@ -51,11 +53,6 @@ def stylize_from_reference(ref_url, *, out_w=512, out_h=768, seed=1337,
 
 _DEFAULT_SDXL = "stabilityai/stable-diffusion-xl-base-1.0"
 
-def _auto_device():
-    if torch.cuda.is_available(): return torch.device("cuda")
-    if torch.backends.mps.is_available(): return torch.device("mps")
-    return torch.device("cpu")
-
 def _coerce_model_id(model_id):
     # precedence: explicit arg → env → default
     mid = (model_id or os.getenv("SDXL_MODEL_ID") or _DEFAULT_SDXL)
@@ -68,7 +65,7 @@ def _coerce_model_id(model_id):
 
 def ensure_sdxl(model_id=None, device_str=None):
     model_id = _coerce_model_id(model_id)
-    device   = torch.device(device_str) if device_str else _auto_device()
+    device   = torch.device(device_str) if device_str else get_device()
     dtype    = torch.float16 if device.type == "cuda" else torch.float32
 
     pipe = StableDiffusionXLPipeline.from_pretrained(
@@ -91,16 +88,6 @@ def ensure_sdxl(model_id=None, device_str=None):
         try: pipe.enable_xformers_memory_efficient_attention()
         except Exception: pass
     return pipe, device
-
-
-# ---------- device helpers ----------
-def get_device() -> torch.device:
-    if torch.cuda.is_available():
-        return torch.device("cuda")
-    # Apple M-series
-    if getattr(torch.backends, "mps", None) and torch.backends.mps.is_available():
-        return torch.device("mps")
-    return torch.device("cpu")
 
 # ---------- font resolver (reused by poster renderer) ----------
 def resolve_font(preferred: Optional[str] = None) -> str:
