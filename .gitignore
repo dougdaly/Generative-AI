@@ -1,15 +1,17 @@
 .env
 .DS_Store
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*_cache*
+temp*.ipynb
+temp*.sh
+Untitled*.ipynb
+
 archive/
 datasets/
 clip-roberta/
 clip-roberta-finetuned/
-*_cache*
-*.pyc
-*.pt
-temp*.ipynb
-temp*.sh
-Untitled*.ipynb
 
 # Local recommender demo data
 assets/recsys-transparent/data/
@@ -18,10 +20,14 @@ assets/recsys-transparent/data/
 assets/diffusers/
 
 # Large results folders
-results/archival-restore
+results/
+results/archival_restore/
 
 # Generated model outputs
 outputs/lora/
+runs/
+checkpoint-*/
+events.out.tfevents*
 
 # Model weights / checkpoint artifacts
 *.safetensors
@@ -32,3 +38,6 @@ outputs/lora/
 *.pt
 *.pth
 *.onnx
+*.bin
+*.zip
+*.tar.gz
