@@ -12,3 +12,16 @@ Untitled*.ipynb
 
 # Local cloned repos / external assets
 assets/diffusers/
+
+# Generated model outputs
+outputs/lora/
+
+# Model weights / checkpoint artifacts
+*.safetensors
+*.weights.h5
+*.h5
+*.keras
+*.ckpt
+*.pt
+*.pth
+*.onnx
