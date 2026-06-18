@@ -1,0 +1,658 @@
+{
+  "bullet_reviews": [
+    {
+      "section": "Professional Experience",
+      "role_heading": "Principal Consultant",
+      "role_subheading": "Daly Engineers LLC | Jan 2026 - Present",
+      "bullet": "Led analytical readiness assessment for Oracle/EBS and Maximo data migrated to BigQuery, establishing cross-domain enterprise data integration for construction operations and financial analytics at Consolidated Edison.",
+      "quality_score": 8,
+      "priority_score": 8,
+      "final_score": 8,
+      "keep_recommendation": "keep",
+      "sole_evidence_for": [
+        "enterprise data integration",
+        "BigQuery migration",
+        "cross-domain integration"
+      ],
+      "redundant_with": [],
+      "reason": "Strong evidence of enterprise data integration and BigQuery use in a production context, relevant to target signals.",
+      "tags": [
+        "enterprise data integration",
+        "BigQuery",
+        "production AI systems"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "Principal Consultant",
+      "role_subheading": "Daly Engineers LLC | Jan 2026 - Present",
+      "bullet": "Developed automated data profiling, type inference, duplicate detection, candidate key analysis, and cross-system join validation frameworks across 100+ source tables with millions of operational and financial records.",
+      "quality_score": 8,
+      "priority_score": 8,
+      "final_score": 8,
+      "keep_recommendation": "keep",
+      "sole_evidence_for": [
+        "data quality frameworks",
+        "data profiling automation"
+      ],
+      "redundant_with": [],
+      "reason": "Demonstrates technical complexity and leadership in data engineering and data quality automation at scale, supporting enterprise integration and observability.",
+      "tags": [
+        "data engineering",
+        "observability",
+        "enterprise integration"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "Principal Consultant",
+      "role_subheading": "Daly Engineers LLC | Jan 2026 - Present",
+      "bullet": "Created a phased analytical maturity roadmap adopted as the foundation for anomaly detection, construction analytics, and AI-enabled decision support initiatives.",
+      "quality_score": 8,
+      "priority_score": 8,
+      "final_score": 8,
+      "keep_recommendation": "keep",
+      "sole_evidence_for": [
+        "technical roadmap ownership",
+        "AI-enabled decision support"
+      ],
+      "redundant_with": [],
+      "reason": "Strong evidence of technical roadmap ownership and AI system planning with measurable business impact.",
+      "tags": [
+        "technical roadmap",
+        "AI decision support",
+        "business impact"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "Principal Consultant",
+      "role_subheading": "Daly Engineers LLC | Jan 2026 - Present",
+      "bullet": "Architected and implemented a governed analytics assistant leveraging Gemini, BigQuery, and tool-calling architectures to enforce analyst rules and operational controls with predictable, auditable execution.",
+      "quality_score": 10,
+      "priority_score": 10,
+      "final_score": 10,
+      "keep_recommendation": "keep",
+      "sole_evidence_for": [
+        "governed analytics assistant",
+        "tool orchestration",
+        "AI governance",
+        "production AI systems"
+      ],
+      "redundant_with": [
+        "ConEd Governed Analytics Assistant project bullet"
+      ],
+      "reason": "Unique and essential evidence of production AI system architecture, tool orchestration, governance, and enterprise integration with measurable operational controls.",
+      "tags": [
+        "governance",
+        "tool orchestration",
+        "production AI",
+        "BigQuery"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "Principal Consultant",
+      "role_subheading": "Apex Systems / NBCUniversal | Jan 2026 - Present",
+      "bullet": "Built AWS-based AI and graph analytics pipelines using SageMaker, Terraform, S3, and containerized workloads to support NBCUniversal's digital twin initiatives.",
+      "quality_score": 8,
+      "priority_score": 8,
+      "final_score": 8,
+      "keep_recommendation": "keep",
+      "sole_evidence_for": [
+        "AWS AI pipelines",
+        "graph analytics",
+        "digital twin"
+      ],
+      "redundant_with": [
+        "NBCUniversal Digital Twin and Graph Analytics project bullets"
+      ],
+      "reason": "Strong evidence of production AI system development, graph analytics, and cloud architecture ownership.",
+      "tags": [
+        "AWS",
+        "graph analytics",
+        "production AI systems",
+        "digital twin"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "Principal Consultant",
+      "role_subheading": "Apex Systems / NBCUniversal | Jan 2026 - Present",
+      "bullet": "Developed graph-ready service dependency datasets from API telemetry and operational metrics, enabling graph-based dependency modeling and operational intelligence.",
+      "quality_score": 9,
+      "priority_score": 9,
+      "final_score": 9,
+      "keep_recommendation": "keep",
+      "sole_evidence_for": [
+        "graph-based dependency modeling",
+        "operational intelligence",
+        "enterprise AI architecture"
+      ],
+      "redundant_with": [
+        "NBCUniversal Digital Twin and Graph Analytics project bullets"
+      ],
+      "reason": "Highly relevant and unique evidence of graph analytics applied to operational intelligence and enterprise AI architecture.",
+      "tags": [
+        "graph analytics",
+        "operational intelligence",
+        "enterprise AI"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "Principal Consultant",
+      "role_subheading": "Apex Systems / NBCUniversal | Jan 2026 - Present",
+      "bullet": "Evaluated graph analytics and graph machine learning approaches using Neptune, GraphStorm, Bedrock, and LangGraph for dependency analysis and enterprise AI architecture.",
+      "quality_score": 7,
+      "priority_score": 7,
+      "final_score": 7,
+      "keep_recommendation": "compress",
+      "sole_evidence_for": [
+        "graph ML evaluation"
+      ],
+      "redundant_with": [
+        "Developed graph-ready service dependency datasets bullet"
+      ],
+      "reason": "Technical evaluation is useful but less impactful than actual pipeline and dataset development; somewhat redundant with other graph analytics bullets.",
+      "tags": [
+        "graph ML",
+        "enterprise AI"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "Principal Consultant",
+      "role_subheading": "Apex Systems / NBCUniversal | Jan 2026 - Present",
+      "bullet": "Authored architecture and analytical readiness assessments identifying data and operational gaps impacting long-term digital twin and AI governance objectives.",
+      "quality_score": 6,
+      "priority_score": 6,
+      "final_score": 5,
+      "keep_recommendation": "compress",
+      "sole_evidence_for": [
+        "stakeholder communication",
+        "AI governance assessment"
+      ],
+      "redundant_with": [],
+      "reason": "Good evidence of communication and governance awareness but vague and less concrete than other bullets; can be compressed or combined.",
+      "tags": [
+        "AI governance",
+        "stakeholder communication"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "AI Instructor",
+      "role_subheading": "SimpliLearn | Oct 2025 - Present",
+      "bullet": "Delivered professional AI training focused on transformer architectures, LLMs, RAG, agentic AI, MCP, diffusion models, and enterprise AI governance to software engineers and technical professionals.",
+      "quality_score": 7,
+      "priority_score": 7,
+      "final_score": 7,
+      "keep_recommendation": "compress",
+      "sole_evidence_for": [
+        "AI instruction",
+        "enterprise AI governance education"
+      ],
+      "redundant_with": [
+        "Mentored students bullet"
+      ],
+      "reason": "Good evidence of mentorship and communication on target AI topics but less critical than production system bullets; can be compressed.",
+      "tags": [
+        "mentorship",
+        "AI governance",
+        "LLMs",
+        "RAG",
+        "agentic AI"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "AI Instructor",
+      "role_subheading": "SimpliLearn | Oct 2025 - Present",
+      "bullet": "Developed hands-on demonstrations, Jupyter notebooks, and end-to-end applications covering modern AI workflows, evaluation techniques, and production deployment considerations.",
+      "quality_score": 7,
+      "priority_score": 7,
+      "final_score": 7,
+      "keep_recommendation": "compress",
+      "sole_evidence_for": [
+        "AI education",
+        "production AI deployment teaching"
+      ],
+      "redundant_with": [
+        "Delivered professional AI training bullet"
+      ],
+      "reason": "Supports mentorship and technical leadership but overlaps with other instructor bullets; compress or combine.",
+      "tags": [
+        "mentorship",
+        "production AI systems"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "AI Instructor",
+      "role_subheading": "SimpliLearn | Oct 2025 - Present",
+      "bullet": "Mentored students on AI architecture, governance, implementation tradeoffs, and enterprise adoption strategies, emphasizing production AI systems and observability.",
+      "quality_score": 8,
+      "priority_score": 8,
+      "final_score": 8,
+      "keep_recommendation": "keep",
+      "sole_evidence_for": [
+        "mentorship",
+        "AI architecture communication",
+        "observability education"
+      ],
+      "redundant_with": [],
+      "reason": "Strong evidence of mentorship and communication on key target themes including observability and production AI systems.",
+      "tags": [
+        "mentorship",
+        "AI governance",
+        "observability"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "AI Instructor",
+      "role_subheading": "Interview Kickstart | Mar 2025 - Present",
+      "bullet": "Provided instruction on diffusion models, CLIP embeddings, variational autoencoders (VAEs), GANs, and modern image-generation systems for software engineering professionals",
+      "quality_score": 5,
+      "priority_score": 5,
+      "final_score": 5,
+      "keep_recommendation": "compress",
+      "sole_evidence_for": [
+        "AI instruction on generative models"
+      ],
+      "redundant_with": [
+        "SimpliLearn AI Instructor bullets"
+      ],
+      "reason": "Relevant to AI instruction but less aligned with core target themes; lower priority and somewhat redundant.",
+      "tags": [
+        "mentorship",
+        "generative AI"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "AI Instructor",
+      "role_subheading": "Interview Kickstart | Mar 2025 - Present",
+      "bullet": "Developed hands-on demonstrations and coursework illustrating image synthesis, latent representations, multimodal embeddings, and practical applications of generative AI.",
+      "quality_score": 5,
+      "priority_score": 5,
+      "final_score": 5,
+      "keep_recommendation": "compress",
+      "sole_evidence_for": [
+        "generative AI education"
+      ],
+      "redundant_with": [
+        "SimpliLearn AI Instructor bullets"
+      ],
+      "reason": "Similar to above; useful but lower priority and redundant with stronger mentorship bullets.",
+      "tags": [
+        "mentorship",
+        "generative AI"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "Data Scientist",
+      "role_subheading": "Meta | Oct 2021 - Jan 2025",
+      "bullet": "Developed reliability measurement and forecasting frameworks for Meta FinTech, defining leading indicators and decision-support models that translated engineering initiatives into projected reliability outcomes for planning, prioritization, and performance management.",
+      "quality_score": 9,
+      "priority_score": 10,
+      "final_score": 10,
+      "keep_recommendation": "keep",
+      "sole_evidence_for": [
+        "reliability measurement",
+        "forecasting",
+        "decision-support models",
+        "production AI systems"
+      ],
+      "redundant_with": [],
+      "reason": "Exceptional evidence of production AI systems, observability, and business impact in a large enterprise environment.",
+      "tags": [
+        "observability",
+        "production AI",
+        "decision support"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "Data Scientist",
+      "role_subheading": "Meta | Oct 2021 - Jan 2025",
+      "bullet": "Built attribution frameworks linking incidents, alerts, defects, and operational metrics to engineering organizations and service ownership, enabling accurate accountability and observability.",
+      "quality_score": 9,
+      "priority_score": 9,
+      "final_score": 9,
+      "keep_recommendation": "keep",
+      "sole_evidence_for": [
+        "attribution frameworks",
+        "observability",
+        "accountability"
+      ],
+      "redundant_with": [],
+      "reason": "Strong technical leadership and observability evidence supporting production reliability and governance.",
+      "tags": [
+        "observability",
+        "accountability",
+        "production AI"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "Data Scientist",
+      "role_subheading": "Meta | Oct 2021 - Jan 2025",
+      "bullet": "Designed and developed the ReMon framework, enabling engineering teams to build comprehensive monitoring and alerting systems without requiring expertise in complex internal tooling; adopted across Meta FinTech and contributed to automatic detection of over 15 SEVs in 2024.",
+      "quality_score": 10,
+      "priority_score": 10,
+      "final_score": 10,
+      "keep_recommendation": "keep",
+      "sole_evidence_for": [
+        "ReMon monitoring framework",
+        "observability platform",
+        "production AI systems"
+      ],
+      "redundant_with": [],
+      "reason": "Exceptional evidence of technical leadership, observability, and production system ownership with measurable impact.",
+      "tags": [
+        "observability",
+        "production AI",
+        "technical leadership"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "Data Scientist",
+      "role_subheading": "Meta | Oct 2021 - Jan 2025",
+      "bullet": "Delivered impact sizing, ROI, and risk exposure analyses supporting investment and prioritization decisions across platform reliability, privacy compliance, authentication, testing infrastructure, and data platform initiatives.",
+      "quality_score": 7,
+      "priority_score": 7,
+      "final_score": 7,
+      "keep_recommendation": "compress",
+      "sole_evidence_for": [
+        "business impact analysis",
+        "stakeholder communication"
+      ],
+      "redundant_with": [],
+      "reason": "Good evidence of business impact and communication but less technical and unique than other Meta bullets; can be compressed.",
+      "tags": [
+        "business impact",
+        "stakeholder communication"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "Head of Data Science",
+      "role_subheading": "Facteus | Oct 2017 - Nov 2020",
+      "bullet": "Led development of market-intelligence products on a 30B+ transaction dataset, transforming raw payment-card activity into merchant, industry, and consumer-behavior intelligence used for competitive analysis and strategic decision-making.",
+      "quality_score": 8,
+      "priority_score": 8,
+      "final_score": 8,
+      "keep_recommendation": "keep",
+      "sole_evidence_for": [
+        "large-scale market intelligence",
+        "business impact"
+      ],
+      "redundant_with": [],
+      "reason": "Strong business impact and technical leadership in large-scale data product development.",
+      "tags": [
+        "business impact",
+        "enterprise AI"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "Head of Data Science",
+      "role_subheading": "Facteus | Oct 2017 - Nov 2020",
+      "bullet": "Built large-scale entity-resolution systems that transformed billions of cryptic payment-card transactions into structured merchant, brand, industry, and storefront intelligence, enabling analytics across 2,500+ merchants representing more than 60% of observed card transactions and achieving over 99% transaction coverage.",
+      "quality_score": 9,
+      "priority_score": 9,
+      "final_score": 9,
+      "keep_recommendation": "keep",
+      "sole_evidence_for": [
+        "entity resolution",
+        "large-scale data engineering",
+        "business impact"
+      ],
+      "redundant_with": [],
+      "reason": "Highly relevant technical complexity and business impact in enterprise data integration and operational intelligence.",
+      "tags": [
+        "entity resolution",
+        "enterprise data integration",
+        "business impact"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "Head of Data Science",
+      "role_subheading": "Facteus | Oct 2017 - Nov 2020",
+      "bullet": "Generated transaction-based industry intelligence identifying shifts in consumer spending behavior, e-commerce adoption, and market share dynamics, supporting strategic partnerships, investor communications, and commercial growth initiatives.",
+      "quality_score": 7,
+      "priority_score": 7,
+      "final_score": 7,
+      "keep_recommendation": "compress",
+      "sole_evidence_for": [
+        "business intelligence",
+        "market analysis"
+      ],
+      "redundant_with": [
+        "Led development of market-intelligence products bullet"
+      ],
+      "reason": "Good business impact but somewhat redundant with other Facteus bullets; can be compressed.",
+      "tags": [
+        "business impact",
+        "market intelligence"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "Senior Manager, Operations Analysis",
+      "role_subheading": "Capital One | Jan 2012 - Dec 2016",
+      "bullet": "Developed predictive capacity-management models forecasting peak-demand scenarios for customer-facing banking platforms, supporting infrastructure planning, resiliency investments, and operational risk management.",
+      "quality_score": 7,
+      "priority_score": 7,
+      "final_score": 7,
+      "keep_recommendation": "compress",
+      "sole_evidence_for": [
+        "predictive modeling",
+        "capacity management"
+      ],
+      "redundant_with": [],
+      "reason": "Relevant to operational intelligence but less unique and impactful than other bullets; can be compressed.",
+      "tags": [
+        "predictive modeling",
+        "operational intelligence"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "Senior Manager, Operations Analysis",
+      "role_subheading": "Capital One | Jan 2012 - Dec 2016",
+      "bullet": "Identified a critical observability gap in which major incidents were frequently detected through customer call centers rather than monitoring systems. Conceived, designed, and led adoption of RITHM (Real-Time IT Health Monitoring), an operational intelligence platform that aggregated monitoring signals by business capability and ownership, reducing major incident detection times from hours to minutes.",
+      "quality_score": 10,
+      "priority_score": 10,
+      "final_score": 10,
+      "keep_recommendation": "keep",
+      "sole_evidence_for": [
+        "RITHM operational intelligence platform",
+        "observability",
+        "production AI systems",
+        "technical leadership"
+      ],
+      "redundant_with": [],
+      "reason": "Exceptional evidence of technical leadership, observability, and production system ownership with measurable business impact.",
+      "tags": [
+        "observability",
+        "operational intelligence",
+        "production AI",
+        "technical leadership"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "Senior Manager, Operations Analysis",
+      "role_subheading": "Capital One | Jan 2012 - Dec 2016",
+      "bullet": "Secured executive sponsorship and partnered with CTO-level leadership to modernize enterprise monitoring strategy, expanding Splunk prototypes into Kafka and Elastic Stack platforms adopted across the organization. Recognized with the Capital One Business Innovation Award for contributions to operational intelligence and enterprise monitoring transformation.",
+      "quality_score": 9,
+      "priority_score": 9,
+      "final_score": 9,
+      "keep_recommendation": "keep",
+      "sole_evidence_for": [
+        "stakeholder communication",
+        "enterprise monitoring modernization",
+        "technical leadership"
+      ],
+      "redundant_with": [],
+      "reason": "Strong evidence of leadership, stakeholder communication, and enterprise observability platform modernization with recognized business impact.",
+      "tags": [
+        "stakeholder communication",
+        "observability",
+        "technical leadership"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "Senior Principal Systems Engineer / Program Manager",
+      "role_subheading": "Raytheon | Mar 2005 - Dec 2011",
+      "bullet": "Led systems engineering teams of 40-50 engineers specializing in modeling, simulation, and advanced aerospace systems, providing technical leadership and risk management for programs valued up to $50M.",
+      "quality_score": 8,
+      "priority_score": 7,
+      "final_score": 7,
+      "keep_recommendation": "compress",
+      "sole_evidence_for": [
+        "technical leadership",
+        "large team management",
+        "complex systems"
+      ],
+      "redundant_with": [],
+      "reason": "Good leadership evidence but older and less aligned with AI focus; can be compressed.",
+      "tags": [
+        "technical leadership",
+        "systems engineering"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "Senior Principal Systems Engineer / Program Manager",
+      "role_subheading": "Raytheon | Mar 2005 - Dec 2011",
+      "bullet": "Turned around an over-budget classified fixed-price technology program by establishing execution plans, aligning teams, and managing risks; delivered under budget and nearly doubled profit targets.",
+      "quality_score": 7,
+      "priority_score": 6,
+      "final_score": 5,
+      "keep_recommendation": "compress",
+      "sole_evidence_for": [
+        "program turnaround",
+        "risk management",
+        "leadership"
+      ],
+      "redundant_with": [
+        "Led systems engineering teams bullet"
+      ],
+      "reason": "Good leadership and project management evidence but less relevant to AI and production systems; compress or remove.",
+      "tags": [
+        "leadership",
+        "program management"
+      ]
+    },
+    {
+      "section": "Professional Experience",
+      "role_heading": "Senior Principal Systems Engineer / Program Manager",
+      "role_subheading": "Raytheon | Mar 2005 - Dec 2011",
+      "bullet": "Served as Principal Investigator for advanced radar resource-management systems, leading research, simulation, flight testing, and operational deployment across multiple tactical and surveillance aircraft programs. Developed patented fuzzy-logic scheduling technology that optimized radar resource allocation and was deployed on major Department of Defense aircraft platforms.",
+      "quality_score": 10,
+      "priority_score": 9,
+      "final_score": 9,
+      "keep_recommendation": "keep",
+      "sole_evidence_for": [
+        "patented decision system",
+        "production deployment",
+        "technical leadership"
+      ],
+      "redundant_with": [],
+      "reason": "Unique and strong evidence of patented deployed decision systems and technical leadership, a key differentiator.",
+      "tags": [
+        "patent",
+        "decision systems",
+        "production AI",
+        "technical leadership"
+      ]
+    }
+  ],
+  "top_evidence": [
+    {
+      "bullet": "Architected and implemented a governed analytics assistant leveraging Gemini, BigQuery, and tool-calling architectures to enforce analyst rules and operational controls with predictable, auditable execution.",
+      "reason": "Unique and essential evidence of production AI system architecture, tool orchestration, governance, and enterprise integration with measurable operational controls."
+    },
+    {
+      "bullet": "Designed and developed the ReMon framework, enabling engineering teams to build comprehensive monitoring and alerting systems without requiring expertise in complex internal tooling; adopted across Meta FinTech and contributed to automatic detection of over 15 SEVs in 2024.",
+      "reason": "Exceptional evidence of technical leadership, observability, and production system ownership with measurable impact."
+    },
+    {
+      "bullet": "Identified a critical observability gap in which major incidents were frequently detected through customer call centers rather than monitoring systems. Conceived, designed, and led adoption of RITHM (Real-Time IT Health Monitoring), an operational intelligence platform that aggregated monitoring signals by business capability and ownership, reducing major incident detection times from hours to minutes.",
+      "reason": "Exceptional evidence of technical leadership, observability, and production system ownership with measurable business impact."
+    },
+    {
+      "bullet": "Served as Principal Investigator for advanced radar resource-management systems, leading research, simulation, flight testing, and operational deployment across multiple tactical and surveillance aircraft programs. Developed patented fuzzy-logic scheduling technology that optimized radar resource allocation and was deployed on major Department of Defense aircraft platforms.",
+      "reason": "Unique and strong evidence of patented deployed decision systems and technical leadership, a key differentiator."
+    },
+    {
+      "bullet": "Developed graph-ready service dependency datasets from API telemetry and operational metrics, enabling graph-based dependency modeling and operational intelligence.",
+      "reason": "Highly relevant and unique evidence of graph analytics applied to operational intelligence and enterprise AI architecture."
+    },
+    {
+      "bullet": "Led analytical readiness assessment for Oracle/EBS and Maximo data migrated to BigQuery, establishing cross-domain enterprise data integration for construction operations and financial analytics at Consolidated Edison.",
+      "reason": "Strong evidence of enterprise data integration and BigQuery use in a production context, relevant to target signals."
+    }
+  ],
+  "resume_allocation_recommendation": {
+    "Daly Engineers LLC": {
+      "recommended_bullets": 4,
+      "reason": "Strong recent work on enterprise data integration, AI governance, tool orchestration, and technical roadmap ownership highly aligned with target signals."
+    },
+    "Apex Systems / NBCUniversal": {
+      "recommended_bullets": 3,
+      "reason": "Good evidence of graph analytics, AI pipelines, and enterprise AI architecture; some bullets can be compressed."
+    },
+    "SimpliLearn AI Instructor": {
+      "recommended_bullets": 2,
+      "reason": "Mentorship and communication on key AI topics important but lower priority than production system bullets."
+    },
+    "Interview Kickstart AI Instructor": {
+      "recommended_bullets": 0,
+      "reason": "Less aligned with core target themes and somewhat redundant with other instructor bullets."
+    },
+    "Meta": {
+      "recommended_bullets": 4,
+      "reason": "Exceptional evidence of observability, production AI systems, and technical leadership; all high priority."
+    },
+    "Facteus": {
+      "recommended_bullets": 2,
+      "reason": "Strong business impact and technical complexity in entity resolution and market intelligence; one bullet can be compressed."
+    },
+    "Capital One": {
+      "recommended_bullets": 3,
+      "reason": "Excellent evidence of operational intelligence platform leadership, observability, and stakeholder communication."
+    },
+    "Raytheon": {
+      "recommended_bullets": 2,
+      "reason": "Unique patented deployed decision system and leadership evidence; older but important differentiator."
+    }
+  },
+  "remove_or_compress": [
+    "Evaluated graph analytics and graph machine learning approaches using Neptune, GraphStorm, Bedrock, and LangGraph for dependency analysis and enterprise AI architecture.",
+    "Authored architecture and analytical readiness assessments identifying data and operational gaps impacting long-term digital twin and AI governance objectives.",
+    "Provided instruction on diffusion models, CLIP embeddings, variational autoencoders (VAEs), GANs, and modern image-generation systems for software engineering professionals",
+    "Developed hands-on demonstrations and coursework illustrating image synthesis, latent representations, multimodal embeddings, and practical applications of generative AI.",
+    "Delivered impact sizing, ROI, and risk exposure analyses supporting investment and prioritization decisions across platform reliability, privacy compliance, authentication, testing infrastructure, and data platform initiatives.",
+    "Generated transaction-based industry intelligence identifying shifts in consumer spending behavior, e-commerce adoption, and market share dynamics, supporting strategic partnerships, investor communications, and commercial growth initiatives.",
+    "Developed predictive capacity-management models forecasting peak-demand scenarios for customer-facing banking platforms, supporting infrastructure planning, resiliency investments, and operational risk management.",
+    "Led systems engineering teams of 40-50 engineers specializing in modeling, simulation, and advanced aerospace systems, providing technical leadership and risk management for programs valued up to $50M.",
+    "Turned around an over-budget classified fixed-price technology program by establishing execution plans, aligning teams, and managing risks; delivered under budget and nearly doubled profit targets."
+  ],
+  "notes": [
+    "The Daly Engineers LLC role provides critical recent evidence of enterprise data integration, AI governance, and tool orchestration, which are essential for the target archetype.",
+    "Meta and Capital One roles provide the strongest evidence of observability, production AI systems, and technical leadership, which are key differentiators.",
+    "Raytheon role's patented deployed decision system is a unique differentiator and should be retained despite age.",
+    "Instructor roles provide valuable mentorship and communication evidence but should be limited to the strongest bullets to save space.",
+    "Project bullets largely duplicate professional experience bullets and should be integrated or compressed to avoid redundancy.",
+    "Avoid generic or vague language; prefer concrete systems, measurable outcomes, and leadership evidence."
+  ]
+}

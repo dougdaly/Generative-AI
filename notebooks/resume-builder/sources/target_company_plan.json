@@ -1,0 +1,75 @@
+{
+  "enterprise software": [
+    "Salesforce",
+    "ServiceNow",
+    "Adobe",
+    "Datadog",
+    "Snowflake",
+    "Palantir"
+  ],
+  "cloud platforms": [
+    "AWS",
+    "Microsoft",
+    "Google",
+    "Oracle"
+  ],
+  "financial services": [
+    "Capital One",
+    "JPMorgan Chase",
+    "American Express",
+    "Visa",
+    "Mastercard",
+    "Fidelity",
+    "Charles Schwab"
+  ],
+  "retail and consumer": [
+    "Walmart",
+    "Target",
+    "Costco",
+    "Home Depot",
+    "Nike",
+    "Starbucks",
+    "Best Buy"
+  ],
+  "media and entertainment": [
+    "NBCUniversal",
+    "Disney",
+    "Netflix",
+    "Warner Bros Discovery",
+    "Paramount"
+  ],
+  "travel and hospitality": [
+    "Airbnb",
+    "Expedia",
+    "Booking.com",
+    "Hilton",
+    "Marriott"
+  ],
+  "consulting": [
+    "Accenture",
+    "Deloitte",
+    "Slalom",
+    "West Monroe",
+    "Booz Allen",
+    "Capgemini",
+    "PwC",
+    "EY",
+    "KPMG"
+  ],
+  "utilities and infrastructure": [
+    "Consolidated Edison",
+    "PG&E",
+    "Duke Energy",
+    "Southern Company",
+    "Schneider Electric",
+    "Siemens",
+    "GE Vernova"
+  ],
+  "telecommunications": [
+    "Verizon",
+    "AT&T",
+    "T-Mobile",
+    "Comcast",
+    "Charter Communications"
+  ]
+}

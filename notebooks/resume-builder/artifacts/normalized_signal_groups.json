@@ -1,0 +1,2140 @@
+{
+  "business_industries": {
+    "signal_type": "business_industries",
+    "canonical_groups": [
+      {
+        "canonical_signal": "financial_services",
+        "source_phrases": [
+          "financial services",
+          "Financial Services",
+          "banking",
+          "Banking",
+          "capital markets",
+          "Capital Markets",
+          "insurance",
+          "Insurance",
+          "private equity",
+          "Private Equity",
+          "consumer finance",
+          "corporate finance"
+        ],
+        "rationale": "All phrases relate to the broader financial services industry, including banking, insurance, capital markets, and investment management."
+      },
+      {
+        "canonical_signal": "technology_and_software",
+        "source_phrases": [
+          "enterprise software",
+          "enterprise IT",
+          "software and platforms",
+          "Software and Platforms",
+          "technology",
+          "high tech",
+          "High Tech",
+          "enterprise",
+          "advertising technology"
+        ],
+        "rationale": "These phrases refer to the technology sector, including software, platforms, IT, and high tech."
+      },
+      {
+        "canonical_signal": "consumer_goods_and_retail",
+        "source_phrases": [
+          "retail",
+          "Retail",
+          "consumer products",
+          "consumer goods and services",
+          "Consumer Goods and Services",
+          "consumer",
+          "eCommerce"
+        ],
+        "rationale": "All phrases relate to the sale and production of goods for consumers, including retail and eCommerce."
+      },
+      {
+        "canonical_signal": "media_and_entertainment",
+        "source_phrases": [
+          "media and entertainment",
+          "communications and media",
+          "Communications and Media",
+          "digital content",
+          "broadcast and cable networks",
+          "streaming platforms",
+          "streaming services (Disney+, Hulu, ESPN)",
+          "theme parks",
+          "licensing"
+        ],
+        "rationale": "These phrases cover the media, entertainment, and communications industries, including digital and broadcast content."
+      },
+      {
+        "canonical_signal": "travel_and_hospitality",
+        "source_phrases": [
+          "travel",
+          "Travel",
+          "travel and hospitality",
+          "travel industry",
+          "hospitality",
+          "cruise line"
+        ],
+        "rationale": "All phrases relate to travel, tourism, and hospitality services."
+      },
+      {
+        "canonical_signal": "healthcare_and_life_sciences",
+        "source_phrases": [
+          "health",
+          "Health",
+          "healthcare",
+          "Healthcare",
+          "life sciences",
+          "Life Sciences"
+        ],
+        "rationale": "These phrases refer to the healthcare and life sciences sectors."
+      },
+      {
+        "canonical_signal": "industrial_and_manufacturing",
+        "source_phrases": [
+          "industrial",
+          "Industrial",
+          "manufacturing",
+          "automotive",
+          "Automotive",
+          "aerospace and defense",
+          "Aerospace and Defense",
+          "chemicals",
+          "Chemicals"
+        ],
+        "rationale": "All phrases relate to industrial production, manufacturing, and heavy industry sectors."
+      },
+      {
+        "canonical_signal": "energy_and_natural_resources",
+        "source_phrases": [
+          "energy",
+          "Energy",
+          "natural resources",
+          "Natural Resources",
+          "utilities",
+          "Utilities"
+        ],
+        "rationale": "These phrases refer to the energy sector, natural resources, and utilities."
+      },
+      {
+        "canonical_signal": "public_sector_and_government",
+        "source_phrases": [
+          "public service",
+          "Public Service",
+          "public sector",
+          "US federal government",
+          "US Federal Government"
+        ],
+        "rationale": "All phrases relate to government and public sector organizations."
+      },
+      {
+        "canonical_signal": "consulting_and_professional_services",
+        "source_phrases": [
+          "consulting"
+        ],
+        "rationale": "Consulting is a distinct professional services industry."
+      },
+      {
+        "canonical_signal": "high_value_manufacturing",
+        "source_phrases": [
+          "high tech"
+        ],
+        "rationale": "High tech manufacturing is sometimes considered distinct, but here it's grouped under technology unless specifically referenced."
+      }
+    ]
+  },
+  "problem_spaces": {
+    "signal_type": "problem_spaces",
+    "canonical_groups": [
+      {
+        "canonical_signal": "workflow_automation",
+        "source_phrases": [
+          "workflow automation",
+          "automation",
+          "AI-enabled business process automation"
+        ],
+        "rationale": "All relate to automating business or operational workflows, often with AI."
+      },
+      {
+        "canonical_signal": "observability_and_monitoring",
+        "source_phrases": [
+          "observability",
+          "AI observability",
+          "monitoring",
+          "platform health monitoring",
+          "logging"
+        ],
+        "rationale": "All focus on monitoring, logging, and understanding system or AI model behavior."
+      },
+      {
+        "canonical_signal": "decision_support_and_analytics",
+        "source_phrases": [
+          "decision support",
+          "AI-driven decision-making",
+          "data-driven decision-making",
+          "analytics based decisioning",
+          "predictive analytics",
+          "advanced analytics",
+          "forecasting",
+          "reporting"
+        ],
+        "rationale": "All relate to supporting or automating business decisions using analytics or AI."
+      },
+      {
+        "canonical_signal": "knowledge_and_information_retrieval",
+        "source_phrases": [
+          "knowledge retrieval",
+          "search and personalization",
+          "context engineering"
+        ],
+        "rationale": "All involve retrieving, searching, or contextualizing information."
+      },
+      {
+        "canonical_signal": "change_and_configuration_management",
+        "source_phrases": [
+          "change management",
+          "configuration management",
+          "technical debt remediation"
+        ],
+        "rationale": "All relate to managing changes and configurations in systems or processes."
+      },
+      {
+        "canonical_signal": "risk_and_compliance",
+        "source_phrases": [
+          "risk analysis",
+          "risk awareness",
+          "compliance monitoring",
+          "regulatory compliance",
+          "compliance (SOX)",
+          "privacy and compliance",
+          "governance and compliance"
+        ],
+        "rationale": "All address risk management and regulatory or policy compliance."
+      },
+      {
+        "canonical_signal": "personalization_and_customer_experience",
+        "source_phrases": [
+          "personalized customer experiences",
+          "personalization",
+          "customer experience optimization",
+          "real-time customer support",
+          "real-time customer interaction",
+          "customer care platform modernization",
+          "digital assistant interaction"
+        ],
+        "rationale": "All focus on tailoring experiences or interactions for customers."
+      },
+      {
+        "canonical_signal": "ai_governance_and_safety",
+        "source_phrases": [
+          "AI governance",
+          "AI safety",
+          "trust and safety",
+          "governance",
+          "trust and reliability"
+        ],
+        "rationale": "All relate to governing AI systems and ensuring their safety and trustworthiness."
+      },
+      {
+        "canonical_signal": "model_lifecycle_management",
+        "source_phrases": [
+          "model evaluation",
+          "model deployment",
+          "model monitoring",
+          "model explainability",
+          "production AI systems",
+          "scalable AI/ML deployment",
+          "scaling AI/ML/GenAI solutions"
+        ],
+        "rationale": "All relate to deploying, monitoring, evaluating, and scaling AI/ML models."
+      },
+      {
+        "canonical_signal": "data_integration_and_quality",
+        "source_phrases": [
+          "data integration",
+          "data interoperability",
+          "data integrity",
+          "data quality assurance",
+          "large scale data ETL pipelines",
+          "data platform development"
+        ],
+        "rationale": "All focus on integrating, assuring quality, and managing data pipelines."
+      },
+      {
+        "canonical_signal": "measurement_and_reporting",
+        "source_phrases": [
+          "cross-media measurement",
+          "content measurement",
+          "content marketing measurement",
+          "audience measurement",
+          "cross-platform measurement"
+        ],
+        "rationale": "All relate to measuring and reporting on content, audiences, or media."
+      },
+      {
+        "canonical_signal": "ai_infrastructure_and_performance",
+        "source_phrases": [
+          "AI infrastructure optimization",
+          "hardware performance optimization",
+          "power consumption optimization",
+          "cost and scalability of computational stack",
+          "scalable AI infrastructure",
+          "performance optimization",
+          "cost optimization",
+          "infrastructure operations",
+          "enterprise readiness",
+          "production-ready AI solutions"
+        ],
+        "rationale": "All relate to optimizing, scaling, and operating AI infrastructure and performance."
+      },
+      {
+        "canonical_signal": "security_and_trust",
+        "source_phrases": [
+          "security in AI solutions",
+          "security"
+        ],
+        "rationale": "Both relate to ensuring security in systems, especially AI."
+      },
+      {
+        "canonical_signal": "business_growth_and_modernization",
+        "source_phrases": [
+          "business growth",
+          "complex business problems",
+          "enterprise application modernization",
+          "service delivery processes",
+          "service delivery",
+          "merchant tools"
+        ],
+        "rationale": "All relate to business growth, modernization, and service delivery."
+      },
+      {
+        "canonical_signal": "ai_enablement_and_adoption",
+        "source_phrases": [
+          "AI adoption and enablement",
+          "AI and machine learning enablement",
+          "AI/ML opportunities",
+          "AI-empowered software development",
+          "generative AI integration",
+          "innovative AI applications (chatbots, image processing)",
+          "full stack integration",
+          "software delivery lifecycle (SDLC)",
+          "cloud migration",
+          "digital accessibility"
+        ],
+        "rationale": "All relate to enabling, adopting, or integrating AI and ML into business or software."
+      }
+    ]
+  },
+  "technology_areas": {
+    "signal_type": "technology_areas",
+    "canonical_groups": [
+      {
+        "canonical_signal": "mlops",
+        "source_phrases": [
+          "MLOps",
+          "machine learning operations (MLOps)",
+          "AI/ML engineering",
+          "AI DevOps"
+        ],
+        "rationale": "All refer to operationalizing and managing machine learning workflows and infrastructure."
+      },
+      {
+        "canonical_signal": "generative_ai",
+        "source_phrases": [
+          "generative AI",
+          "Generative AI",
+          "genAI",
+          "Generative AI (GenAI)",
+          "interactive LLM/genAI implementations",
+          "Generative Adversarial Networks"
+        ],
+        "rationale": "All refer to generative artificial intelligence, including adversarial networks and implementations."
+      },
+      {
+        "canonical_signal": "large_language_models",
+        "source_phrases": [
+          "LLMs",
+          "large language models (LLMs)",
+          "foundation models"
+        ],
+        "rationale": "All refer to large-scale language models and foundational AI models."
+      },
+      {
+        "canonical_signal": "agentic_ai",
+        "source_phrases": [
+          "agentic AI",
+          "Agentic AI",
+          "AI agents",
+          "agent-driven solutions",
+          "multi-agent architecture",
+          "AgentOps"
+        ],
+        "rationale": "All relate to agent-based or agentic artificial intelligence systems and architectures."
+      },
+      {
+        "canonical_signal": "cloud_native_and_cloud_computing",
+        "source_phrases": [
+          "cloud-native AI systems",
+          "cloud-native development",
+          "cloud-native data platforms",
+          "cloud-native systems",
+          "cloud-native platforms",
+          "cloud-native solutions",
+          "cloud computing",
+          "cloud computing platforms and services",
+          "cloud platform for data, analytics, AI, and machine learning",
+          "Cloud platforms",
+          "cloud-based AI infrastructure",
+          "public, private, and sovereign clouds",
+          "cross-cloud architectures (AWS, Azure, Alibaba Cloud)"
+        ],
+        "rationale": "All refer to cloud-native technologies and cloud computing platforms/services."
+      },
+      {
+        "canonical_signal": "containerization_and_orchestration",
+        "source_phrases": [
+          "container orchestration",
+          "Kubernetes (K8s)",
+          "Kubernetes",
+          "containerization",
+          "orchestration",
+          "orchestration frameworks",
+          "AI orchestration frameworks"
+        ],
+        "rationale": "All relate to containerization and orchestration technologies for scalable deployment."
+      },
+      {
+        "canonical_signal": "ci_cd_and_automation",
+        "source_phrases": [
+          "CI/CD pipelines",
+          "CI/CD",
+          "automated pipelines",
+          "automated testing & monitoring",
+          "automated testing",
+          "automation",
+          "monitoring"
+        ],
+        "rationale": "All refer to continuous integration, continuous deployment, and automation/testing processes."
+      },
+      {
+        "canonical_signal": "ai_infrastructure_and_platforms",
+        "source_phrases": [
+          "AI infrastructure",
+          "AI platform engineering",
+          "full stack AI architecture",
+          "AI runtime architecture",
+          "AI powered technology",
+          "SaaS platforms",
+          "enterprise observability platforms",
+          "scalable architecture",
+          "solution architecture",
+          "scalable data pipelines"
+        ],
+        "rationale": "All refer to infrastructure and platform engineering for AI systems."
+      },
+      {
+        "canonical_signal": "data_engineering_and_architecture",
+        "source_phrases": [
+          "Data architecture",
+          "data pipelines",
+          "real-time data pipelines",
+          "feature/label foundations",
+          "feature stores",
+          "data modeling",
+          "Data modeling",
+          "Data integration",
+          "data governance",
+          "knowledge and data engineering",
+          "semantic layers",
+          "knowledge graphs"
+        ],
+        "rationale": "All relate to data engineering, modeling, and architecture for AI/ML systems."
+      },
+      {
+        "canonical_signal": "vector_and_semantic_search",
+        "source_phrases": [
+          "vector databases",
+          "vector search",
+          "similarity search",
+          "semantic search",
+          "embeddings"
+        ],
+        "rationale": "All refer to vector-based and semantic search technologies, including embeddings."
+      },
+      {
+        "canonical_signal": "retrieval_augmented_generation",
+        "source_phrases": [
+          "retrieval-augmented systems",
+          "retrieval-augmented generation (RAG)",
+          "RAG (Retrieval-Augmented Generation)",
+          "RAG"
+        ],
+        "rationale": "All refer to retrieval-augmented generation systems and techniques."
+      },
+      {
+        "canonical_signal": "ai_governance_and_guardrails",
+        "source_phrases": [
+          "AI governance",
+          "model governance",
+          "guardrails"
+        ],
+        "rationale": "All refer to governance, compliance, and guardrails for AI systems."
+      },
+      {
+        "canonical_signal": "machine_learning_and_deep_learning",
+        "source_phrases": [
+          "machine learning",
+          "Machine Learning (ML)",
+          "machine learning systems",
+          "deep learning",
+          "neural networks",
+          "self-supervised learning",
+          "reinforcement learning from human feedback (RLHF)",
+          "ensemble modeling",
+          "statistical modeling"
+        ],
+        "rationale": "All refer to core machine learning and deep learning techniques and systems."
+      },
+      {
+        "canonical_signal": "microservices_and_event_driven",
+        "source_phrases": [
+          "microservices",
+          "event-driven architecture",
+          "streaming and messaging systems",
+          "distributed systems",
+          "distributed compute",
+          "asynchronous programming"
+        ],
+        "rationale": "All relate to microservices, event-driven, and distributed system architectures."
+      },
+      {
+        "canonical_signal": "ai_specialized_techniques_and_tools",
+        "source_phrases": [
+          "LLMOps",
+          "AI observability",
+          "AI optimization",
+          "optimization",
+          "simulation",
+          "prompt orchestration",
+          "tool/function calling",
+          "context engineering",
+          "memory architectures"
+        ],
+        "rationale": "All refer to specialized AI techniques, tools, and operational practices."
+      }
+    ]
+  },
+  "capabilities": {
+    "signal_type": "capabilities",
+    "canonical_groups": [
+      {
+        "canonical_signal": "technical_leadership",
+        "source_phrases": [
+          "technical leadership",
+          "technical leadership and oversight",
+          "leading complex projects",
+          "leading cross-functional teams",
+          "leading and mentoring AI/ML engineering teams",
+          "leading technical resources",
+          "managing multi-developer AI-aligned teams"
+        ],
+        "rationale": "All relate to leading teams, projects, or providing technical direction."
+      },
+      {
+        "canonical_signal": "mentoring_and_talent_development",
+        "source_phrases": [
+          "mentoring engineers",
+          "mentoring engineering teams",
+          "mentoring and talent development",
+          "mentoring team members",
+          "mentoring/training team members",
+          "coaching teams and stakeholders"
+        ],
+        "rationale": "All involve mentoring, coaching, or developing talent."
+      },
+      {
+        "canonical_signal": "ai_architecture_and_design",
+        "source_phrases": [
+          "designing AI architectures",
+          "designing software architectures",
+          "architecting ML platforms",
+          "architecting AI systems",
+          "architecting scalable, observable, resilient AI/ML systems",
+          "designing scalable and resilient architectures",
+          "designing scalable and efficient application architectures",
+          "designing technical architectures",
+          "solution architecture",
+          "designing blueprints for AI systems",
+          "defining transition and target-state architectures"
+        ],
+        "rationale": "All relate to designing or architecting AI/ML or software systems."
+      },
+      {
+        "canonical_signal": "cross_functional_collaboration",
+        "source_phrases": [
+          "collaborating with cross-functional teams",
+          "cross-functional collaboration",
+          "cross-functional partnership and communication",
+          "partnering with cross-functional teams",
+          "collaborating with client teams",
+          "collaborating with clients and stakeholders",
+          "collaborating across teams",
+          "collaborating with business and technical stakeholders",
+          "collaborating with architects and cross-functional teams"
+        ],
+        "rationale": "All involve collaboration across teams or functions."
+      },
+      {
+        "canonical_signal": "model_development_and_deployment",
+        "source_phrases": [
+          "developing and deploying custom AI solutions",
+          "developing and deploying ML models",
+          "designing and building AI/ML models",
+          "productionizing decision science models",
+          "operationalizing models in production",
+          "training foundation models",
+          "LLM inference",
+          "adapting and finetuning LLMs"
+        ],
+        "rationale": "All relate to developing, deploying, or operationalizing AI/ML models."
+      },
+      {
+        "canonical_signal": "system_integration_and_deployment",
+        "source_phrases": [
+          "integrating systems",
+          "full stack integration",
+          "model/service integration",
+          "data integration",
+          "deployment",
+          "full stack software development"
+        ],
+        "rationale": "All involve integrating systems, models, or deploying solutions."
+      },
+      {
+        "canonical_signal": "evaluation_and_experimentation",
+        "source_phrases": [
+          "evaluating models",
+          "model evaluation and experimentation",
+          "automated evaluation and drift detection",
+          "evaluating and integrating emerging technologies",
+          "evaluating and recommending new tools and technologies",
+          "evaluating and integrating third-party AI technologies",
+          "evaluating and selecting technologies",
+          "evaluating platform health and capacity planning"
+        ],
+        "rationale": "All relate to evaluating models, technologies, or platforms."
+      },
+      {
+        "canonical_signal": "communication_and_translation",
+        "source_phrases": [
+          "communicating tradeoffs",
+          "communicating with non-technical audiences",
+          "communicating complex AI concepts",
+          "communicating technical concepts",
+          "explaining technical concepts",
+          "translating technical work to business goals",
+          "translating AI concepts to business outcomes",
+          "communicating with technical and business audiences",
+          "communicating with stakeholders",
+          "status reporting to executives",
+          "presenting value propositions",
+          "technical translation between science and engineering"
+        ],
+        "rationale": "All involve communication or translation between technical and non-technical stakeholders."
+      },
+      {
+        "canonical_signal": "governance_and_compliance",
+        "source_phrases": [
+          "AI system governance",
+          "ensuring privacy-by-design",
+          "ensuring security, privacy, and responsible AI",
+          "responsible AI practices",
+          "ensuring architectural compliance",
+          "establishing governance frameworks",
+          "defining and implementing observability solutions",
+          "establishing CI/CD patterns",
+          "establishing best practices"
+        ],
+        "rationale": "All relate to governance, compliance, privacy, or responsible AI practices."
+      },
+      {
+        "canonical_signal": "performance_and_optimization",
+        "source_phrases": [
+          "optimizing for scale and performance",
+          "optimizing AI system performance (scalability, cost, latency, throughput)",
+          "optimizing performance and cost",
+          "troubleshooting and optimizing performance",
+          "optimizing AI infrastructure/hardware",
+          "troubleshooting production issues",
+          "building scalable pipelines for metrics/logs/traces"
+        ],
+        "rationale": "All relate to optimizing or troubleshooting performance and scalability."
+      },
+      {
+        "canonical_signal": "ai_platforms_and_infrastructure",
+        "source_phrases": [
+          "delivering AI platforms and solutions",
+          "delivering libraries, platforms, or solution-level code",
+          "architecting and building custom AI infrastructure/hardware solutions",
+          "governing and optimizing platforms",
+          "platform modernization"
+        ],
+        "rationale": "All relate to building, delivering, or modernizing AI platforms and infrastructure."
+      },
+      {
+        "canonical_signal": "requirements_and_analysis",
+        "source_phrases": [
+          "analyzing and defining system requirements",
+          "requirements gathering",
+          "research and analysis of emerging technologies",
+          "research, analysis, design, creation, and implementation of systems",
+          "conducting technology lifecycle assessments"
+        ],
+        "rationale": "All relate to requirements analysis, research, and system definition."
+      },
+      {
+        "canonical_signal": "change_and_project_management",
+        "source_phrases": [
+          "change management",
+          "project management",
+          "portfolio prioritization and demand management",
+          "risk assessment and escalation",
+          "balancing technical debt with business priorities"
+        ],
+        "rationale": "All relate to managing change, projects, portfolios, or risk."
+      },
+      {
+        "canonical_signal": "documentation_and_audit",
+        "source_phrases": [
+          "documentation and audit readiness",
+          "documentation",
+          "documenting architectural alternatives",
+          "creating architectural artifacts (diagrams, models, roadmaps)",
+          "authoring technical design documents"
+        ],
+        "rationale": "All relate to documentation, audit, or creating technical artifacts."
+      },
+      {
+        "canonical_signal": "ai_solution_development",
+        "source_phrases": [
+          "designing, developing, testing, deploying, and supporting AI software components",
+          "designing and implementing production-ready AI solutions",
+          "prototyping and hardening AI-driven solutions",
+          "building production-quality code",
+          "testing",
+          "code review"
+        ],
+        "rationale": "All relate to developing, testing, and deploying AI solutions."
+      },
+      {
+        "canonical_signal": "innovation_and_research",
+        "source_phrases": [
+          "applying novel AI research in production",
+          "incubating proof of concepts",
+          "research and analysis of emerging technologies"
+        ],
+        "rationale": "All relate to innovation, research, or applying new concepts."
+      },
+      {
+        "canonical_signal": "ai_security_and_trust",
+        "source_phrases": [
+          "implementing security best practices",
+          "incorporating AI security",
+          "implementing trust and safety mechanisms",
+          "implementing guardrails"
+        ],
+        "rationale": "All relate to security, trust, and safety in AI systems."
+      },
+      {
+        "canonical_signal": "frameworks_and_reusability",
+        "source_phrases": [
+          "designing reusable building blocks and libraries",
+          "building reusable AI components",
+          "designing and developing reusable frameworks",
+          "creating reusable assets"
+        ],
+        "rationale": "All relate to designing or building reusable frameworks, components, or assets."
+      },
+      {
+        "canonical_signal": "mlops_and_workflows",
+        "source_phrases": [
+          "defining and executing MLOps strategy",
+          "standardizing and automating workflows",
+          "implementing AgentOps/LLMOps"
+        ],
+        "rationale": "All relate to MLOps, workflow automation, and operationalizing AI."
+      },
+      {
+        "canonical_signal": "continuous_learning_and_adaptation",
+        "source_phrases": [
+          "staying current with emerging technologies",
+          "continuous learning",
+          "facilitating knowledge sharing"
+        ],
+        "rationale": "All relate to ongoing learning, adaptation, and knowledge sharing."
+      }
+    ]
+  },
+  "technologies": {
+    "signal_type": "technologies",
+    "canonical_groups": [
+      {
+        "canonical_signal": "python",
+        "source_phrases": [
+          "Python"
+        ],
+        "rationale": "Direct mention of the Python programming language."
+      },
+      {
+        "canonical_signal": "aws",
+        "source_phrases": [
+          "AWS",
+          "AWS Ultraclusters",
+          "AWS EKS",
+          "AWS S3",
+          "AWS Lambda",
+          "AWS EMR",
+          "AWS Aurora",
+          "AWS Bedrock",
+          "EC2",
+          "Bedrock"
+        ],
+        "rationale": "All refer to Amazon Web Services or its specific services."
+      },
+      {
+        "canonical_signal": "azure",
+        "source_phrases": [
+          "Azure",
+          "Azure Machine Learning",
+          "Azure OpenAI",
+          "Azure AI Foundry"
+        ],
+        "rationale": "All refer to Microsoft Azure or its AI/ML services."
+      },
+      {
+        "canonical_signal": "google_cloud",
+        "source_phrases": [
+          "GCP",
+          "Google Cloud",
+          "Vertex AI",
+          "Google Vertex AI",
+          "BigQuery",
+          "Pub/Sub"
+        ],
+        "rationale": "All refer to Google Cloud Platform and its services."
+      },
+      {
+        "canonical_signal": "java",
+        "source_phrases": [
+          "Java",
+          "Spring Boot"
+        ],
+        "rationale": "Java programming language and its major framework."
+      },
+      {
+        "canonical_signal": "kubernetes",
+        "source_phrases": [
+          "Kubernetes",
+          "Kubernetes (EKS/ACK)",
+          "Helm charts",
+          "CRDs",
+          "service mesh"
+        ],
+        "rationale": "Kubernetes and related orchestration/configuration technologies."
+      },
+      {
+        "canonical_signal": "sql_databases",
+        "source_phrases": [
+          "SQL",
+          "PostgreSQL"
+        ],
+        "rationale": "SQL and a major SQL database."
+      },
+      {
+        "canonical_signal": "snowflake",
+        "source_phrases": [
+          "Snowflake",
+          "Snowflake Cortex"
+        ],
+        "rationale": "Snowflake data platform and its AI service."
+      },
+      {
+        "canonical_signal": "pytorch",
+        "source_phrases": [
+          "PyTorch",
+          "Pytorch",
+          "Lightning"
+        ],
+        "rationale": "PyTorch deep learning framework and related ecosystem."
+      },
+      {
+        "canonical_signal": "r_language",
+        "source_phrases": [
+          "R",
+          "glmnet",
+          "caret",
+          "dplyr"
+        ],
+        "rationale": "R programming language and popular R packages."
+      },
+      {
+        "canonical_signal": "scala_spark",
+        "source_phrases": [
+          "Scala",
+          "Spark",
+          "Apache Spark"
+        ],
+        "rationale": "Scala language and Spark analytics engine."
+      },
+      {
+        "canonical_signal": "databricks",
+        "source_phrases": [
+          "Databricks",
+          "Databricks Mosaic AI"
+        ],
+        "rationale": "Databricks platform and its AI offering."
+      },
+      {
+        "canonical_signal": "docker",
+        "source_phrases": [
+          "Docker"
+        ],
+        "rationale": "Containerization technology."
+      },
+      {
+        "canonical_signal": "langchain",
+        "source_phrases": [
+          "LangChain",
+          "LangGraph",
+          "LlamaIndex"
+        ],
+        "rationale": "LangChain and related LLM orchestration frameworks."
+      },
+      {
+        "canonical_signal": "vector_databases",
+        "source_phrases": [
+          "VectorDBs",
+          "vector databases"
+        ],
+        "rationale": "Both refer to vector database technologies."
+      },
+      {
+        "canonical_signal": "ci_cd",
+        "source_phrases": [
+          "CI/CD",
+          "Jenkins",
+          "GitHub Actions",
+          "GitLab",
+          "Harness"
+        ],
+        "rationale": "Continuous integration and deployment tools."
+      },
+      {
+        "canonical_signal": "mlops",
+        "source_phrases": [
+          "MLflow",
+          "MLFlow",
+          "Kubeflow",
+          "MLOps",
+          "feature stores",
+          "automated pipelines"
+        ],
+        "rationale": "MLOps tools and related ML pipeline technologies."
+      },
+      {
+        "canonical_signal": "cloud_infrastructure",
+        "source_phrases": [
+          "cloud infrastructure",
+          "cloud computing platforms",
+          "cloud AI services",
+          "cloud-native AI services",
+          "public cloud platforms"
+        ],
+        "rationale": "General references to cloud infrastructure and services."
+      },
+      {
+        "canonical_signal": "code_assistants",
+        "source_phrases": [
+          "GitHub Copilot",
+          "Cursor",
+          "Claude Code",
+          "code assistants",
+          "OpenAI Codex"
+        ],
+        "rationale": "AI-powered code assistant tools."
+      },
+      {
+        "canonical_signal": "go",
+        "source_phrases": [
+          "Go",
+          "Golang"
+        ],
+        "rationale": "Go programming language (Golang)."
+      },
+      {
+        "canonical_signal": "c_family_languages",
+        "source_phrases": [
+          "C++",
+          "C#"
+        ],
+        "rationale": "C-family programming languages."
+      },
+      {
+        "canonical_signal": "tensorflow",
+        "source_phrases": [
+          "TensorFlow"
+        ],
+        "rationale": "TensorFlow deep learning framework."
+      },
+      {
+        "canonical_signal": "kafka_streaming",
+        "source_phrases": [
+          "Kafka",
+          "Kinesis",
+          "Pub/Sub"
+        ],
+        "rationale": "Streaming and messaging platforms."
+      },
+      {
+        "canonical_signal": "rest_apis",
+        "source_phrases": [
+          "REST APIs",
+          "APIs",
+          "API calls",
+          "Akana",
+          "ReadyAPI"
+        ],
+        "rationale": "API technologies and tools."
+      },
+      {
+        "canonical_signal": "data_science_python",
+        "source_phrases": [
+          "scikit-learn",
+          "SciKit-Learn",
+          "NumPy",
+          "Pandas",
+          "SciPy"
+        ],
+        "rationale": "Popular Python data science libraries."
+      }
+    ]
+  },
+  "responsibilities": {
+    "signal_type": "responsibilities",
+    "canonical_groups": [
+      {
+        "canonical_signal": "ai_ml_solution_architecture",
+        "source_phrases": [
+          "lead the design, development, and deployment of software solutions for licensing financial systems and AI-powered applications",
+          "architect and implement scalable services",
+          "architect scalable ML platforms and reusable components",
+          "design scalable and efficient application architectures",
+          "designing and delivering full stack AI architecture for platforms, products, or engagements",
+          "architecting enterprise grade AI platforms and solutions",
+          "designing and architecting scalable, resilient, high-performance technology solutions",
+          "leading architecture efforts across enterprise applications including revenue management systems",
+          "defining and delivering long-term technology architecture vision, standards, and roadmaps",
+          "contribute to architecture of client solutions",
+          "Contributing to AI solution architecture",
+          "own product architecture"
+        ],
+        "rationale": "All phrases relate to designing, architecting, and leading the development of scalable AI/ML or technology solutions and platforms."
+      },
+      {
+        "canonical_signal": "cross_functional_collaboration",
+        "source_phrases": [
+          "collaborate with product, finance, and data science teams",
+          "Lead multi-quarter initiatives with product, analytics, and platform engineering stakeholders",
+          "partnering with data scientists, software engineers, ML engineers, and product managers",
+          "partner with cross-functional teams to deliver AI-powered products",
+          "collaborate with cross-functional teams and global community",
+          "collaborating with client teams to finalize requirements",
+          "collaborating with clients, stakeholders, and development teams",
+          "leading and collaborating with cross-functional teams",
+          "partnering with product owners, engineering teams, and project managers",
+          "collaborating with vendors and service providers",
+          "collaborate with architects and engineering teams"
+        ],
+        "rationale": "These phrases all describe working closely with various internal and external teams to achieve shared goals."
+      },
+      {
+        "canonical_signal": "mentorship_and_team_leadership",
+        "source_phrases": [
+          "mentor junior engineers",
+          "Mentor engineers through code/design reviews",
+          "Lead and mentor a specialized team of AI/ML engineers",
+          "lead and mentor multiple engineering teams",
+          "Coach and mentor engineers, host architecture office hours",
+          "providing coaching and mentorship to engineering teams",
+          "mentor and train team members",
+          "Mentoring peers and clients on AI engineering practices",
+          "coach teams and client stakeholders on AI-accelerated practices"
+        ],
+        "rationale": "All phrases involve mentoring, coaching, or leading engineering teams or individuals."
+      },
+      {
+        "canonical_signal": "ai_ml_model_development",
+        "source_phrases": [
+          "apply machine learning and AI techniques to optimize workflows",
+          "Lead development, training, and deployment of advanced ML models for identity resolution, look-alike modeling, and cross-platform measurement",
+          "Optimize ML systems for scale and performance",
+          "building and shipping scalable AI/ML solutions",
+          "building ML and NLP models through all phases of development",
+          "operationalizing models in resilient production systems",
+          "train foundation models",
+          "implement LLM inference",
+          "adapting and finetuning LLMs for customer-facing applications",
+          "introduce and invent LLM optimization techniques",
+          "conduct model evaluation and experimentation",
+          "Designing, building, evaluating, and deploying production-grade AI systems for clients",
+          "Applying data science and machine learning methods"
+        ],
+        "rationale": "These phrases focus on developing, training, optimizing, and deploying AI/ML models and systems."
+      },
+      {
+        "canonical_signal": "ai_product_and_platform_delivery",
+        "source_phrases": [
+          "delivering AI-powered products",
+          "delivering libraries, platforms, or solution-level code to products",
+          "design, develop, test, deploy, and support AI software components",
+          "design and implement production-ready AI solutions",
+          "Designing and building AI-enabled applications and systems",
+          "Building and integrating AI systems with enterprise data sources and applications"
+        ],
+        "rationale": "All relate to delivering AI-powered products, platforms, or software components."
+      },
+      {
+        "canonical_signal": "ai_infrastructure_and_ops",
+        "source_phrases": [
+          "Architect and implement MLOps roadmap and practices",
+          "Implement automated testing, validation, and monitoring",
+          "Ensure operational reliability and rapid response to failures",
+          "ensure AI system governance and observability",
+          "designing and documenting AgentOps and LLMOps solutions",
+          "implementing AgentOps/LLMOps, AI governance, security, and observability solutions",
+          "develop, implement, and support logging, monitoring, reporting, and automation",
+          "infrastructure-as-code development and configuration management",
+          "architect and manage logging and monitoring tool deployments across clouds",
+          "define, implement, govern, optimize, and monitor observability solutions",
+          "design, implement, and maintain scalable observability solutions for Kubernetes and other data sources"
+        ],
+        "rationale": "These responsibilities focus on AI infrastructure, MLOps, observability, and operational excellence."
+      },
+      {
+        "canonical_signal": "ai_security_and_compliance",
+        "source_phrases": [
+          "Ensure privacy-by-design practices, PII safeguards, documentation, and audit readiness",
+          "Ensure compliance with security, privacy, and regulatory standards",
+          "implement security best practices in AI solutions",
+          "incorporating AI security and governance",
+          "ensuring architectural compliance with regulatory and security requirements",
+          "build and maintain SOX Compliance solution in Dynatrace and GitHub"
+        ],
+        "rationale": "All phrases relate to ensuring security, privacy, and regulatory compliance in AI systems."
+      },
+      {
+        "canonical_signal": "innovation_and_emerging_technology",
+        "source_phrases": [
+          "foster a culture of innovation, inclusion, and technical excellence",
+          "stay current with emerging technologies",
+          "experimenting and innovating with generative AI technologies",
+          "explore innovative AI applications (chatbots, image processing)",
+          "researching and evaluating emerging technologies",
+          "evaluate and recommend new tools and technologies",
+          "Staying current on emerging AI engineering patterns and technologies"
+        ],
+        "rationale": "These responsibilities focus on innovation, staying up-to-date, and exploring new technologies."
+      },
+      {
+        "canonical_signal": "ai_governance_and_best_practices",
+        "source_phrases": [
+          "Define data contracts, metadata/lineage expectations, and automated quality controls",
+          "Establish CI/CD patterns, model versioning/registry, automated evaluation, drift detection, monitoring dashboards/alerts, and operational playbooks",
+          "Build shared libraries and best practices",
+          "Define design patterns and roadmaps for reusable capabilities",
+          "set technical standards and develop reusable frameworks",
+          "developing and promoting architecture methodologies, patterns, and standards",
+          "ensuring alignment with enterprise standards and best practices",
+          "establishing governance frameworks for technology platforms"
+        ],
+        "rationale": "All relate to establishing standards, governance, and best practices for AI/ML and technology."
+      },
+      {
+        "canonical_signal": "ai_component_and_tool_development",
+        "source_phrases": [
+          "Design and build reusable building blocks for modelers",
+          "Develop GenAI SDK, CLI, and starter kits for rapid prototyping",
+          "build reusable AI components and agents",
+          "Creating reusable assets (reference architectures, accelerators, code templates, demos, enablement materials)",
+          "Provide documentation and training for reusable tools"
+        ],
+        "rationale": "These responsibilities involve building reusable AI components, tools, and assets."
+      },
+      {
+        "canonical_signal": "ai_system_performance_and_optimization",
+        "source_phrases": [
+          "Optimize orchestration for performance and cost (batching, caching, heuristic tuning)",
+          "optimize AI infrastructure/hardware performance, power consumption, cost, and scalability",
+          "troubleshooting and optimizing AI system performance",
+          "lead optimization efforts for observability platform"
+        ],
+        "rationale": "All focus on optimizing AI systems, infrastructure, or platforms for performance and efficiency."
+      },
+      {
+        "canonical_signal": "business_alignment_and_communication",
+        "source_phrases": [
+          "translating complex work into tangible business goals",
+          "understanding business objectives",
+          "translating business outcomes into technical solutions",
+          "Articulating technical decisions, delivery progress, risks, and business value to client stakeholders",
+          "Communicating technical concepts and value propositions to diverse audiences",
+          "Communicating technical concepts to stakeholders",
+          "present status, analysis, and reporting to stakeholders and executives",
+          "Communicate and influence at all organizational levels",
+          "influence cross-functional stakeholders up to VP level"
+        ],
+        "rationale": "These phrases describe aligning technical work with business goals and communicating with stakeholders."
+      },
+      {
+        "canonical_signal": "ai_solution_evaluation_and_selection",
+        "source_phrases": [
+          "evaluating and selecting technologies for AI platforms",
+          "evaluate and integrate third-party AI technologies",
+          "advise on AI infrastructure technology and vendor evaluation, selection, and integration",
+          "Developing evaluation approaches for AI systems",
+          "conducting feasibility studies and technology lifecycle assessments"
+        ],
+        "rationale": "All relate to evaluating, selecting, and integrating AI technologies and solutions."
+      },
+      {
+        "canonical_signal": "project_and_service_delivery_management",
+        "source_phrases": [
+          "make decisions on complex, non-routine requests",
+          "liaise with multiple teams to steer projects",
+          "facilitate achievement of deliverables and obligations of Service Providers",
+          "coordinate deployment and production support activities",
+          "follow project management standards",
+          "validate Service Provider project plans and metrics",
+          "make short term plans for team resource utilization",
+          "monitor Service Provider outcomes",
+          "review work effort estimates",
+          "facilitate timely resolution of service delivery problems",
+          "enhance service delivery, operations, and continual improvement"
+        ],
+        "rationale": "These responsibilities focus on managing projects, service delivery, and operational processes."
+      },
+      {
+        "canonical_signal": "ai_system_integration_and_interoperability",
+        "source_phrases": [
+          "integrate with internal and third-party financial platforms",
+          "defining integration and interoperability standards",
+          "Building and integrating AI systems with enterprise data sources and applications",
+          "onboard data sources into observability tools"
+        ],
+        "rationale": "All relate to integrating AI systems with other platforms, data sources, or defining interoperability standards."
+      },
+      {
+        "canonical_signal": "ai_risk_and_quality_management",
+        "source_phrases": [
+          "forecasting and compliance monitoring",
+          "maintain balance between business and operational risk",
+          "assess and escalate risks as needed",
+          "ensure solutions meet quality standards",
+          "ensure adherence to development protocols and business case procedures",
+          "validate completeness of requirements",
+          "analyze current environment for deficiencies and provide solutions"
+        ],
+        "rationale": "These phrases focus on risk management, compliance, and ensuring quality in AI/technology solutions."
+      }
+    ]
+  },
+  "seniority_signals": {
+    "signal_type": "seniority_signals",
+    "canonical_groups": [
+      {
+        "canonical_signal": "director_level_experience",
+        "source_phrases": [
+          "Director-level experience",
+          "Director-level role",
+          "Solution Architecture Associate Director"
+        ],
+        "rationale": "All refer to director-level or associate director roles, indicating high seniority and leadership."
+      },
+      {
+        "canonical_signal": "distinguished_engineer",
+        "source_phrases": [
+          "Distinguished Engineer title",
+          "Experience as Staff-plus or Distinguished IC engineer influencing 50+ engineers"
+        ],
+        "rationale": "Both refer to the distinguished engineer or staff-plus IC level, a top-tier technical role."
+      },
+      {
+        "canonical_signal": "senior_engineer",
+        "source_phrases": [
+          "Senior Software Engineer",
+          "Sr. Systems Engineer",
+          "senior individual contributor",
+          "Senior Level",
+          "Senior Principal",
+          "Senior Architect",
+          "Senior Consultant"
+        ],
+        "rationale": "All refer to senior-level engineering or consulting roles."
+      },
+      {
+        "canonical_signal": "lead_engineer",
+        "source_phrases": [
+          "Lead Software Engineer",
+          "Lead Machine Learning Engineer",
+          "lead and mentor multiple engineering teams",
+          "lead technical initiatives across teams",
+          "leadership of complex projects",
+          "lead the design and implementation",
+          "lead optimization efforts",
+          "lead AI architecture & technical design workshops"
+        ],
+        "rationale": "All refer to leading engineering teams, projects, or technical initiatives."
+      },
+      {
+        "canonical_signal": "architect_role",
+        "source_phrases": [
+          "Software Architect",
+          "Advanced AI Architect",
+          "responsible for designing and delivering full stack AI architecture",
+          "Architect of technical backbone",
+          "leading architecture efforts across enterprise applications",
+          "leadership skills in system or platform architecture",
+          "Experience contributing to technical architecture",
+          "minimum 12 years of experience in Solution Architecture"
+        ],
+        "rationale": "All refer to architect-level roles or responsibilities in technical architecture."
+      },
+      {
+        "canonical_signal": "technical_leadership",
+        "source_phrases": [
+          "provides technical leadership",
+          "technical leadership, oversight, governance and direction",
+          "technology leader and advocate",
+          "technical expert and lead engineer",
+          "technology leadership experience",
+          "providing coaching and mentorship to engineering teams",
+          "proven track record of leading technical initiatives"
+        ],
+        "rationale": "All refer to providing technical leadership, oversight, or advocacy."
+      },
+      {
+        "canonical_signal": "mentorship_and_team_guidance",
+        "source_phrases": [
+          "mentor junior engineers",
+          "mentor engineers",
+          "mentoring engineers",
+          "mentoring other team members",
+          "mentoring/training team members",
+          "mentoring team members",
+          "Mentoring engineers, data scientists, or client teams",
+          "guiding teams",
+          "providing coaching and mentorship to engineering teams",
+          "passionate about talent development for your own team and beyond"
+        ],
+        "rationale": "All refer to mentoring, coaching, or guiding engineers or teams."
+      },
+      {
+        "canonical_signal": "years_of_experience",
+        "source_phrases": [
+          "7+ years of software engineering experience",
+          "7+ years of professional experience delivering production ML systems",
+          "8+ years total experience (preferred)",
+          "12+ years of related experience",
+          "at least 8 years of experience developing AI and ML algorithms or technologies",
+          "8+ years experience developing AI/ML algorithms or technologies",
+          "minimum 5 years of experience in designing, engineering & operationalizing large scale AI/ML solutions",
+          "6+ years experience in production software",
+          "4+ years of experience designing and building data, AI, software, or machine learning solutions",
+          "10+ years of progressive experience in software development and architecture",
+          "3+ years defining transition and target-state architectures for large-scale digital transformations",
+          "7+ years\u2019 experience in IT",
+          "8+ years\u2019 hands on experience"
+        ],
+        "rationale": "All specify years of experience, a common seniority indicator."
+      },
+      {
+        "canonical_signal": "influencing_cross_functional_teams",
+        "source_phrases": [
+          "influential and able to bring along cross-functional teams",
+          "influence cross-functional stakeholders up to VP level",
+          "Influence cross-functional stakeholders up to VP and C-suite",
+          "leading and collaborating with cross-functional teams",
+          "collaborate with client teams",
+          "collaborate closely with architects and staff engineers",
+          "engage with multiple teams and contribute on key decisions"
+        ],
+        "rationale": "All refer to influencing or collaborating with cross-functional or external teams."
+      },
+      {
+        "canonical_signal": "strategic_and_visionary_leadership",
+        "source_phrases": [
+          "visionary",
+          "Visionary leader",
+          "Foundational leadership role",
+          "Strategic planning and consulting with executives",
+          "contribute to technical vision and long-term roadmap",
+          "high-impact role shaping the future of AI systems in the enterprise",
+          "driving force to experiment, innovate and create next generation experiences",
+          "challenging conventional thinking and improving the status quo",
+          "Thought partner for all levels"
+        ],
+        "rationale": "All refer to strategic, visionary, or foundational leadership and influence."
+      },
+      {
+        "canonical_signal": "subject_matter_expert",
+        "source_phrases": [
+          "subject-matter expert",
+          "expected to be a Subject Matter Expert with deep knowledge and experience",
+          "expert in NLP and LLMs",
+          "deep expertise in engineering, mathematics, hardware, software, and AI",
+          "expert level understanding of key AI technologies"
+        ],
+        "rationale": "All refer to being a subject matter expert or having deep technical expertise."
+      },
+      {
+        "canonical_signal": "ownership_and_delivery",
+        "source_phrases": [
+          "own the full software development lifecycle",
+          "Owning implementation workstreams",
+          "technical delivery ownership",
+          "responsible for team decisions",
+          "take ownership of complex development initiatives",
+          "makes decisions on complex, non-routine requests",
+          "provide solutions to problems that apply across multiple teams",
+          "provide consultation for routine and complex systems development",
+          "demonstrated experience delivering technology solutions in a fast-paced, deadline-driven enterprise environment"
+        ],
+        "rationale": "All refer to ownership, responsibility, and delivery of technical solutions or teams."
+      }
+    ]
+  },
+  "success_metrics": {
+    "signal_type": "success_metrics",
+    "canonical_groups": [
+      {
+        "canonical_signal": "business_outcomes_and_value",
+        "source_phrases": [
+          "improved business outcomes in enterprise environments",
+          "delivering unprecedented business value",
+          "drive business growth",
+          "clear business outcomes from AI integration",
+          "deliver value to clients",
+          "AI solutions that deliver value to millions of customers",
+          "unlocking big opportunities that help people save money, time, and agony",
+          "demonstrating capabilities of AI technologies to solve complex business problems",
+          "unlock new possibilities for data",
+          "High-quality client outcomes"
+        ],
+        "rationale": "All phrases relate to achieving measurable business value, outcomes, or impact for clients or organizations."
+      },
+      {
+        "canonical_signal": "scalability_and_performance",
+        "source_phrases": [
+          "scalable, high-performance AI infrastructure",
+          "Scalable, high-performance AI infrastructure",
+          "deployment of scalable and resilient production systems",
+          "delivery of scalable, resilient, high-performance solutions",
+          "scalability",
+          "performance",
+          "scalability, performance, and reliability of solutions",
+          "optimized AI infrastructure/hardware performance",
+          "improved hardware utilization, latency, throughput, and cost"
+        ],
+        "rationale": "These phrases focus on the ability to scale, perform efficiently, and maintain high throughput or low latency."
+      },
+      {
+        "canonical_signal": "reliability_and_operational_excellence",
+        "source_phrases": [
+          "reliability",
+          "Operational reliability (minimal disruption from failures)",
+          "sustained production health",
+          "production ML systems operating at scale",
+          "sustained production health",
+          "operational excellence",
+          "production-ready solutions meeting quality standards",
+          "minimized impact to clients",
+          "Zero Sev4 incidents (trust and safety)",
+          "meeting availability SLA for storage services",
+          "continuous development of monitoring and alerting for all production environments",
+          "successful deployment and support of logging and monitoring solutions",
+          "enhanced observability platform",
+          "platform health and capacity planning",
+          "timely resolution of service delivery problems",
+          "early warning to business stakeholders regarding degraded or missed service levels"
+        ],
+        "rationale": "All relate to system reliability, uptime, operational health, and excellence in ongoing operations."
+      },
+      {
+        "canonical_signal": "cost_optimization_and_efficiency",
+        "source_phrases": [
+          "cost optimization",
+          "cost-aware and sustainable AI/ML operations",
+          "cost-effective and scalable computational stack",
+          "Reductions in per token spend",
+          "reduced power consumption",
+          "improved efficiency and effectiveness of AI solutions",
+          "Shrink prototyping to production timelines by 30%",
+          "Reduced time-to-production",
+          "Increased speed-to-market for decision science models"
+        ],
+        "rationale": "These phrases focus on reducing costs, improving efficiency, and accelerating time-to-market."
+      },
+      {
+        "canonical_signal": "quality_and_compliance",
+        "source_phrases": [
+          "high quality deliverables",
+          "code quality",
+          "Improved delivery productivity while maintaining engineering discipline",
+          "adherence to technical standards and best practices",
+          "alignment with enterprise standards and best practices",
+          "compliance with regulatory and security requirements",
+          "audit readiness",
+          "production-ready solutions meeting quality standards",
+          "accuracy, groundedness, relevance, reliability, latency, cost, usability, and business impact of AI systems"
+        ],
+        "rationale": "All relate to maintaining high quality, compliance, and adherence to standards."
+      },
+      {
+        "canonical_signal": "security_and_governance",
+        "source_phrases": [
+          "security",
+          "governance",
+          "effective governance and documentation",
+          "Responsible and reliable AI systems",
+          "responsible and reliable AI systems",
+          "trust",
+          "Reliable, secure, maintainable solutions"
+        ],
+        "rationale": "These phrases focus on security, governance, trust, and responsible AI."
+      },
+      {
+        "canonical_signal": "innovation_and_modernization",
+        "source_phrases": [
+          "fostering a culture of innovation and technical excellence",
+          "driving innovation",
+          "breakthrough product experiences",
+          "Breakthrough product experiences",
+          "advancing AI-empowered software development",
+          "building with generative AI",
+          "successful modernization of core enterprise applications",
+          "seamless transition from legacy systems to modern architectures",
+          "delivery of next-generation platforms",
+          "Modern, patchable, and secure SaaS products",
+          "enhanced products with transformative AI capabilities"
+        ],
+        "rationale": "All relate to innovation, modernization, and technical advancement."
+      },
+      {
+        "canonical_signal": "adoption_and_reusability",
+        "source_phrases": [
+          "adoption of AI-powered productivity tools",
+          "adoption of sustainable practices and tools post-launch",
+          "adoption of best practice guidelines, standards, and procedures",
+          "Reusability of integrated algorithms",
+          "90% of new apps adopt standardized agentic workflows"
+        ],
+        "rationale": "These phrases focus on adoption of new tools, practices, and reusability."
+      },
+      {
+        "canonical_signal": "monitoring_and_observability",
+        "source_phrases": [
+          "Automated metric capture and KPI visibility",
+          "enhanced observability platform",
+          "successful deployment and support of logging and monitoring solutions",
+          "continuous development of monitoring and alerting for all production environments",
+          "timely, accurate, and detailed status reports"
+        ],
+        "rationale": "All relate to monitoring, observability, and visibility into system health and metrics."
+      },
+      {
+        "canonical_signal": "team_productivity_and_velocity",
+        "source_phrases": [
+          "improved team velocity and quality",
+          "Improved delivery productivity while maintaining engineering discipline",
+          "efficient creation of data capabilities and products",
+          "delivering ship-ready increments"
+        ],
+        "rationale": "These phrases focus on team productivity, velocity, and efficient delivery."
+      },
+      {
+        "canonical_signal": "enterprise_readiness_and_support",
+        "source_phrases": [
+          "enterprise readiness",
+          "successful integration with financial platforms",
+          "successful operationalization of models serving 80+ million customers",
+          "scale AI/ML/GenAI solutions across organizations",
+          "Production outcomes",
+          "achievement of expected deliverables and obligations",
+          "achievement of expected deliverables and obligations of service providers",
+          "improved service delivery, operations, and continual service improvement"
+        ],
+        "rationale": "All relate to readiness, support, and operationalization at enterprise scale."
+      },
+      {
+        "canonical_signal": "feature_and_product_delivery",
+        "source_phrases": [
+          "features that delight customers with dynamic and personalized experiences",
+          "delivery of AI-powered products that change customer interactions",
+          "successful delivery of technical initiatives"
+        ],
+        "rationale": "These phrases focus on delivering impactful features and products to end users."
+      }
+    ]
+  },
+  "role_purpose": {
+    "signal_type": "role_purpose",
+    "canonical_groups": [
+      {
+        "canonical_signal": "ai_ml_platform_architecture",
+        "source_phrases": [
+          "shape the architecture and delivery of next-generation platforms for financial licensing workflows and predictive analytics",
+          "designing and delivering full stack AI architecture for enterprise platforms, products, and engagements",
+          "design and architect technology solutions supporting transformation of Marriott\u2019s enterprise product platforms",
+          "shape future-state architecture during large-scale modernization",
+          "develop next-generation cloud platform for data, analytics, AI, and machine learning",
+          "Design and build an enterprise Generative AI Platform enabling product teams to compose safe, explainable AI capabilities"
+        ],
+        "rationale": "All phrases focus on designing, building, or shaping the architecture of AI/ML or data platforms at an enterprise or next-generation scale."
+      },
+      {
+        "canonical_signal": "ai_ml_technical_leadership",
+        "source_phrases": [
+          "Provide technical leadership for complex machine learning systems and the data foundations required to operate them",
+          "Lead architecture and standards for ML pipelines and data management",
+          "function as technical expert and lead engineer for Data Platform team",
+          "provide technical leadership and standards"
+        ],
+        "rationale": "These phrases emphasize providing technical leadership, expertise, or setting standards for AI/ML systems or data platforms."
+      },
+      {
+        "canonical_signal": "productionizing_ai_ml_solutions",
+        "source_phrases": [
+          "Productionize decision science for efficient SaaS deployment",
+          "Empower scientists to move from proof-of-concept to global production",
+          "Eliminate friction between model development and deployment",
+          "lead the development and deployment of foundational AI/ML solutions",
+          "enable production-ready, high-quality AI solutions for clients",
+          "Design, build, evaluate, and deploy production AI systems for enterprise clients",
+          "Help clients move from AI ambition to production outcomes",
+          "Translate foundation model power into production-grade applications"
+        ],
+        "rationale": "These phrases all relate to moving AI/ML models or decision science from development or concept into scalable, production-ready, or deployed solutions."
+      },
+      {
+        "canonical_signal": "ai_ml_innovation_and_advancement",
+        "source_phrases": [
+          "advance the state of the art in science and AI engineering",
+          "Advance state of the art in AI engineering at Capital One",
+          "advance AI-empowered software development",
+          "lead organization towards cutting-edge advancements in generative AI",
+          "drive innovation in customer-facing applications using generative AI",
+          "bring the transformative power of emerging AI capabilities to reimagine how Capital One serves customers and businesses",
+          "drive business growth through innovative AI/ML solutions"
+        ],
+        "rationale": "These phrases focus on advancing, innovating, or leading in AI/ML technologies, especially generative AI, and their application to business or customer solutions."
+      },
+      {
+        "canonical_signal": "ai_ml_infrastructure_and_scalability",
+        "source_phrases": [
+          "architect and build custom AI infrastructure/hardware solutions",
+          "optimize and advise on AI infrastructure for performance, cost, and scalability",
+          "enable enterprise growth through state-of-the-art platform capabilities",
+          "Lead design and implementation of scalable, cloud-native solutions"
+        ],
+        "rationale": "These phrases are about building, optimizing, or scaling AI/ML infrastructure and platforms to support enterprise growth and performance."
+      },
+      {
+        "canonical_signal": "ai_ml_solution_delivery_for_business_value",
+        "source_phrases": [
+          "shaping the future of AI systems in the enterprise to deliver business value",
+          "demonstrating the capabilities of AI technologies for complex business problems",
+          "design and implement advanced data-driven solutions leveraging AI and ML technologies",
+          "help organizations unlock new possibilities and creative applications for their data",
+          "contribute to the architecture of client solutions",
+          "Bridge business needs and technical solutions in AI",
+          "support current and future requirements across the enterprise"
+        ],
+        "rationale": "These phrases focus on delivering AI/ML solutions that address business needs, unlock value, or solve complex business problems."
+      },
+      {
+        "canonical_signal": "ai_ml_product_and_experience_enhancement",
+        "source_phrases": [
+          "enable dynamic and personalized experiences in Capital One's mobile app",
+          "advance Capital One's position as a leader in data-driven decision-making",
+          "Empower teams to enhance products with AI in responsible, scalable ways",
+          "Empower team members, stores, and merchants with technological innovation"
+        ],
+        "rationale": "These phrases relate to using AI/ML to enhance products, user experiences, or organizational capabilities."
+      },
+      {
+        "canonical_signal": "data_platform_and_observability_leadership",
+        "source_phrases": [
+          "ensure consistent and efficient creation of data capabilities and products",
+          "define, implement, govern, optimize, and monitor solutions to enhance Marriott's observability platform",
+          "serve as a subject-matter expert for observability systems/solutions"
+        ],
+        "rationale": "These phrases are about leading or optimizing data platforms and observability systems."
+      },
+      {
+        "canonical_signal": "ai_ml_system_development_and_measurement",
+        "source_phrases": [
+          "drive the development of scalable, intelligent systems that support licensing financial operations and AI-driven decision-making",
+          "Apply machine learning techniques to build predictive systems at scale for identity, audience, and cross-platform measurement",
+          "Build and lead the technical backbone for AI-powered products"
+        ],
+        "rationale": "These phrases focus on developing scalable AI/ML systems for specific business operations, measurement, or product backbones."
+      },
+      {
+        "canonical_signal": "platform_modernization_and_transformation",
+        "source_phrases": [
+          "Modernize and transform customer care platform"
+        ],
+        "rationale": "This phrase specifically addresses the modernization and transformation of a major enterprise platform."
+      }
+    ]
+  },
+  "business_problems": {
+    "signal_type": "business_problems",
+    "canonical_groups": [
+      {
+        "canonical_signal": "ai_ml_adoption_and_scaling",
+        "source_phrases": [
+          "scaling AI/ML solutions to serve millions of customers",
+          "scaling AI infrastructure for enterprise use",
+          "scaling AI/ML/GenAI solutions across organizations",
+          "Enable rapid, safe adoption of AI across multiple business lines",
+          "Reduce complexity for product teams integrating AI",
+          "integration of new AI technologies and vendors",
+          "adoption of innovative AI applications",
+          "meeting client business needs for scalable, secure, governed, and high-performance AI solutions",
+          "Deliver value to millions of customers through AI"
+        ],
+        "rationale": "All phrases relate to the adoption, scaling, and integration of AI/ML technologies across organizations and business lines."
+      },
+      {
+        "canonical_signal": "ai_infrastructure_and_performance_optimization",
+        "source_phrases": [
+          "Optimize cost and performance of AI systems",
+          "need for optimized, scalable, and cost-effective AI infrastructure",
+          "balancing architectural rigor with business priorities",
+          "balancing innovation velocity with system stability and cost"
+        ],
+        "rationale": "These phrases focus on optimizing AI infrastructure, balancing cost, performance, and architectural considerations."
+      },
+      {
+        "canonical_signal": "ai_governance_compliance_and_trust",
+        "source_phrases": [
+          "ensuring compliance monitoring",
+          "Ensuring data integrity and privacy compliance in ML workflows",
+          "Need for compliance with security, privacy, and responsible AI standards",
+          "Ensure trust, safety, and compliance in AI-powered applications",
+          "ensuring responsible and reliable AI in banking",
+          "ensuring security and quality in AI solutions",
+          "Ensuring responsible and safe use of AI",
+          "ensuring compliance with global data protection and privacy regulations",
+          "ensuring compliance (SOX)"
+        ],
+        "rationale": "All phrases address compliance, governance, trust, and responsible use of AI and data."
+      },
+      {
+        "canonical_signal": "ai_enabled_business_process_automation",
+        "source_phrases": [
+          "automating business processes using AI",
+          "optimizing licensing workflows",
+          "optimizing revenue management processes",
+          "enhance service delivery processes"
+        ],
+        "rationale": "These phrases focus on using AI to automate and optimize business processes and workflows."
+      },
+      {
+        "canonical_signal": "ai_driven_insights_and_analytics",
+        "source_phrases": [
+          "Delivering actionable insights related to content, monetization, and audience development",
+          "Supporting content production, marketing, and monetization with analytics",
+          "unlocking insights from large volumes of numeric and textual data",
+          "support analytics based decisioning by Marriott business teams",
+          "Supporting business/initiative strategies with reliable monitoring and reporting"
+        ],
+        "rationale": "All phrases relate to leveraging AI and analytics to generate business insights and support decision-making."
+      },
+      {
+        "canonical_signal": "ai_customer_experience_and_personalization",
+        "source_phrases": [
+          "improving customer experience in financial services",
+          "enabling personalized and dynamic app features",
+          "enhancing digital assistant capabilities",
+          "informing customers about unusual charges",
+          "answering customer questions in real time",
+          "delivering real-time, personalized customer experiences",
+          "Improving customer engagement and support"
+        ],
+        "rationale": "These phrases focus on using AI to enhance customer experience, personalization, and support."
+      },
+      {
+        "canonical_signal": "ai_model_deployment_and_operations",
+        "source_phrases": [
+          "Slow or inefficient transition from model development to production",
+          "Lack of scalable, reusable, and automated AI/ML deployment processes",
+          "Maintaining reliability and interoperability of large-scale data and ML systems",
+          "Insufficient model monitoring and explainability",
+          "need for enhanced observability across infrastructure and application services",
+          "meeting availability and operational SLAs",
+          "resolving complex infrastructure and application issues"
+        ],
+        "rationale": "All phrases relate to operationalizing AI/ML models, deployment, monitoring, and system reliability."
+      },
+      {
+        "canonical_signal": "legacy_system_modernization",
+        "source_phrases": [
+          "modernizing core enterprise applications",
+          "Modernizing legacy customer care systems"
+        ],
+        "rationale": "These phrases address the need to modernize outdated or legacy business systems."
+      },
+      {
+        "canonical_signal": "data_integration_and_management",
+        "source_phrases": [
+          "integrating disparate financial systems",
+          "integrating diverse data sources (bookings, competitor pricing, inventory)",
+          "anticipate future data platform opportunities"
+        ],
+        "rationale": "These phrases focus on integrating and managing diverse data sources and systems."
+      },
+      {
+        "canonical_signal": "ai_financial_and_business_viability",
+        "source_phrases": [
+          "assessing financial viability of AI platforms and solutions",
+          "improve operations, drive growth, and create value for clients"
+        ],
+        "rationale": "These phrases relate to evaluating the financial and business impact of AI solutions."
+      },
+      {
+        "canonical_signal": "ai_development_and_lifecycle_management",
+        "source_phrases": [
+          "integrate generative AI into software development lifecycle",
+          "ensure AI-guided development is accurate, reliable, and safe",
+          "Moving clients from AI ambition to production outcomes",
+          "Integrating AI into existing client technology ecosystems"
+        ],
+        "rationale": "These phrases focus on integrating AI into the software development lifecycle and managing its evolution."
+      },
+      {
+        "canonical_signal": "complex_problem_solving_with_ai",
+        "source_phrases": [
+          "solving complex business problems with AI technologies",
+          "identifying and addressing opportunities for AI/ML applications",
+          "solving complex business problems with AI and ML",
+          "Solving complex and interesting business problems with AI",
+          "seek solutions for complex technical issues"
+        ],
+        "rationale": "All phrases relate to using AI/ML to solve complex or novel business and technical challenges."
+      }
+    ]
+  },
+  "role_outcomes": {
+    "signal_type": "role_outcomes",
+    "canonical_groups": [
+      {
+        "canonical_signal": "ai_ml_platforms_and_solutions",
+        "source_phrases": [
+          "enterprise-grade AI platforms and solutions",
+          "AI-enabled platforms",
+          "Enterprise GenAI platform with standardized agentic workflows",
+          "integrated financial platforms",
+          "Seamless integration and deployment of AI/ML services",
+          "Operational AI solutions integrated with enterprise data and applications",
+          "production-ready, scalable AI systems",
+          "production-ready AI solutions implemented",
+          "production-ready AI-driven solutions",
+          "Production-grade AI applications used by millions",
+          "Production-grade AI systems deployed for clients",
+          "state-of-the-art scalable AI/ML architectures in production",
+          "optimized and scalable AI computational stack",
+          "optimized and reliable AI systems",
+          "Scalable and reliable ML platforms and reusable components",
+          "Modernized, reliable, and secure production systems",
+          "modernized, scalable, and resilient revenue management systems"
+        ],
+        "rationale": "All phrases relate to the delivery, deployment, or integration of robust, scalable, and production-ready AI/ML or software platforms and solutions."
+      },
+      {
+        "canonical_signal": "ai_ml_products_and_features",
+        "source_phrases": [
+          "AI-powered applications for business process automation",
+          "AI-powered products integrated into the mobile app",
+          "AI-powered conversational experiences for millions of customers",
+          "operationalized NLP and LLM models for customer-facing features",
+          "Advanced web applications",
+          "Robust, scalable full stack features",
+          "Accessible digital products and services",
+          "Modernized customer care platform"
+        ],
+        "rationale": "These phrases describe the creation or integration of AI/ML-powered products, features, or customer-facing applications."
+      },
+      {
+        "canonical_signal": "reusable_frameworks_and_components",
+        "source_phrases": [
+          "reusable AI components and solution patterns",
+          "Reusable assets (reference architectures, accelerators, code templates, demos, enablement materials)",
+          "reusable frameworks",
+          "Library of reusable building blocks for modelers",
+          "libraries, platforms, or solution-level code delivered to products",
+          "repeatable AI practices (evaluation harnesses, code-review agents, context packs, CI/CD hooks)"
+        ],
+        "rationale": "All refer to the creation or delivery of reusable frameworks, components, or assets to accelerate AI/ML or software development."
+      },
+      {
+        "canonical_signal": "architecture_and_documentation",
+        "source_phrases": [
+          "architectural blueprints and documentation",
+          "documented architecture artifacts",
+          "Documented and evangelized platform architecture",
+          "Documented and communicated technical decisions and outcomes",
+          "enterprise architecture vision, standards, and roadmaps",
+          "technical vision and roadmap for foundational AI systems"
+        ],
+        "rationale": "These phrases focus on architectural planning, documentation, and communication of technical decisions."
+      },
+      {
+        "canonical_signal": "monitoring_and_observability",
+        "source_phrases": [
+          "Operational playbooks and monitoring for production health",
+          "Standardized, automated pipelines and monitoring tools",
+          "established monitoring and alerting for production environments",
+          "optimized observability platform",
+          "high-performance and scalable observability solutions",
+          "onboarded data sources into observability tools",
+          "SOX Compliance solution in Dynatrace and GitHub"
+        ],
+        "rationale": "All relate to monitoring, observability, and compliance solutions for production systems."
+      },
+      {
+        "canonical_signal": "data_and_ml_pipeline_quality",
+        "source_phrases": [
+          "Production-quality ML models and pipelines for identity, audience, and cross-platform measurement",
+          "Established data contracts and automated quality controls",
+          "Privacy-compliant and auditable ML workflows",
+          "Robust, automated, and scalable deployment factory for science models"
+        ],
+        "rationale": "These phrases describe the creation of high-quality, compliant, and automated ML pipelines and workflows."
+      },
+      {
+        "canonical_signal": "team_enablement_and_mentorship",
+        "source_phrases": [
+          "mentored and developed junior engineers",
+          "Mentored and enabled engineering team",
+          "Mentored client and peer teams on AI engineering",
+          "mentored and upskilled engineering teams",
+          "Empowered and high-performing AI/ML engineering team",
+          "teams and stakeholders enabled in AI-accelerated ways of working",
+          "cross-team knowledge sharing and capability uplift",
+          "internal processes and training for team members"
+        ],
+        "rationale": "All refer to mentoring, enabling, or upskilling engineering teams and stakeholders."
+      },
+      {
+        "canonical_signal": "governance_and_standards",
+        "source_phrases": [
+          "governance frameworks for technology platforms",
+          "technical standards",
+          "Centralized guardrail and safety services"
+        ],
+        "rationale": "These phrases relate to establishing governance, standards, and safety for technology platforms."
+      },
+      {
+        "canonical_signal": "business_and_customer_impact",
+        "source_phrases": [
+          "measurable improvements in customer experience and engagement",
+          "enhanced customer and associate interactions with Capital One",
+          "business growth achieved through AI/ML adoption",
+          "organizations enabled to unlock new data possibilities",
+          "improved service delivery processes",
+          "Improved operational efficiency",
+          "Portfolio-wide adoption of metrics and KPIs",
+          "high quality, scalable deliverables"
+        ],
+        "rationale": "These outcomes focus on business value, customer experience, and operational improvements."
+      },
+      {
+        "canonical_signal": "ai_infrastructure_and_tooling",
+        "source_phrases": [
+          "custom AI infrastructure/hardware solutions delivered",
+          "Developer SDKs and starter kits for rapid AI workflow deployment",
+          "Optimized orchestration and cost efficiency",
+          "integration of new tools and technologies"
+        ],
+        "rationale": "All refer to the delivery or optimization of AI infrastructure, tooling, and deployment efficiency."
+      },
+      {
+        "canonical_signal": "innovation_and_poc",
+        "source_phrases": [
+          "innovative and inclusive engineering culture",
+          "innovative AI/ML solutions designed for clients",
+          "next-generation data capabilities and products",
+          "proof-of-concepts and pilots for AI technologies",
+          "advanced data-driven solutions implemented"
+        ],
+        "rationale": "These phrases highlight innovation, new capabilities, and proof-of-concept work."
+      },
+      {
+        "canonical_signal": "operational_and_administrative_processes",
+        "source_phrases": [
+          "enhanced administrative, operational, and technical policies and procedures",
+          "well-coordinated deployments and production support",
+          "internal processes and training for team members",
+          "accurate and timely reports and presentations"
+        ],
+        "rationale": "These outcomes relate to operational, administrative, and process improvements."
+      }
+    ]
+  },
+  "emerging_signals": {
+    "signal_type": "emerging_signals",
+    "canonical_groups": [
+      {
+        "canonical_signal": "responsible_ai_and_governance",
+        "source_phrases": [
+          "Emphasis on explainability and responsible AI by default",
+          "Cost-aware design and responsible scaling of AI/ML workloads",
+          "strong emphasis on responsible and reliable AI",
+          "focus on AI governance and observability as first-class concerns",
+          "AI security and governance as first-class architectural concerns",
+          "AI observability solutions",
+          "Emphasis on responsible AI practices, including human oversight and governance escalation"
+        ],
+        "rationale": "All phrases relate to responsible AI, governance, explainability, and oversight as core requirements."
+      },
+      {
+        "canonical_signal": "agentic_ai_and_llmops",
+        "source_phrases": [
+          "explicit mention of LLMs for business process automation",
+          "Hands-on experience with genAI and retrieval-augmented systems is required",
+          "Use of agent-driven and interactive LLM/genAI solutions",
+          "focus on agentic AI capabilities",
+          "AgentOps and LLMOps as explicit operational disciplines",
+          "multi-agent architecture blueprints",
+          "Multi-modal guardrails and RAG as emerging focus areas",
+          "Hierarchical agent memory as a novel architectural pattern",
+          "daily use of agentic IDEs and advanced tooling beyond basic chat interfaces",
+          "Responsible use of AI coding assistants and agentic development tools is explicitly required",
+          "Exposure to Agentic AI and Generative AI is preferred but not required"
+        ],
+        "rationale": "These phrases all reference agentic AI, LLMs, GenAI, and related operational or architectural patterns."
+      },
+      {
+        "canonical_signal": "technical_and_cultural_leadership",
+        "source_phrases": [
+          "emphasis on both technical and cultural leadership",
+          "cross-functional influence and leadership beyond immediate team",
+          "Technical translation as a core leadership function",
+          "requirement for both technical depth and business communication skills",
+          "emphasis on both technical and business stakeholder communication",
+          "role includes global community engagement and knowledge sharing",
+          "Expectation to influence both internal and external AI communities"
+        ],
+        "rationale": "All relate to leadership, influence, and communication across technical and cultural domains."
+      },
+      {
+        "canonical_signal": "continuous_learning_and_research",
+        "source_phrases": [
+          "expectation to stay current on state-of-the-art methods and technologies",
+          "expectation to apply novel research techniques in production",
+          "Continuous learning mindset is highlighted as a key capability",
+          "trailblazing and forging new paths when the route is unknown"
+        ],
+        "rationale": "These phrases emphasize ongoing learning, research, and innovation."
+      },
+      {
+        "canonical_signal": "certifications_and_professional_contributions",
+        "source_phrases": [
+          "Certifications such as Google Professional Machine Learning Engineer or AWS Certified Machine Learning \u2013 Specialty are valued",
+          "Relevant certifications (e.g., AWS or Azure Certified Machine Learning - Specialty, LLM courses) are a plus",
+          "Contributions to open-source ML or data-engineering projects, conference presentations, or peer-reviewed publications are preferred"
+        ],
+        "rationale": "All relate to professional certifications and contributions to the field."
+      },
+      {
+        "canonical_signal": "diversity_equity_inclusion_and_accessibility",
+        "source_phrases": [
+          "Emphasis on diversity, inclusion, and well-being in the workplace",
+          "focus on diversity, equity, and inclusion in the workplace",
+          "diversity, equity, and inclusion as part of company culture",
+          "Strong focus on inclusive culture and accessibility best practices",
+          "Emphasis on digital accessibility and WCAG 2.2 AA standards"
+        ],
+        "rationale": "All phrases focus on DEI and accessibility as core values."
+      },
+      {
+        "canonical_signal": "platform_and_system_integration",
+        "source_phrases": [
+          "focus on both internal and third-party platform integration",
+          "Experience with identity graphs and interoperability layers is valued"
+        ],
+        "rationale": "Both relate to integrating platforms and ensuring interoperability."
+      },
+      {
+        "canonical_signal": "developer_and_product_experience",
+        "source_phrases": [
+          "Emphasis on developer experience (SDK, CLI, starter kits)",
+          "Treating AI/MLOps as a product for internal scientists",
+          "collaborative product teams with diverse backgrounds",
+          "co-creation with customers from discovery to delivery",
+          "pressure-testing ideas with real users"
+        ],
+        "rationale": "These phrases emphasize developer experience, product thinking, and user collaboration."
+      },
+      {
+        "canonical_signal": "ai_in_industry_and_domain_expertise",
+        "source_phrases": [
+          "Experience in Financial Services and Healthcare is highlighted as valuable",
+          "Exposure to industry-specific AI use cases is valued but not required",
+          "experience with pricing and revenue management capabilities (revenue forecasting, optimization models, price determination, inventory optimization, room allocation strategies)",
+          "exposure to both cash and points-based room pricing and loyalty award bands"
+        ],
+        "rationale": "All relate to AI applications in specific industries or domains."
+      },
+      {
+        "canonical_signal": "observability_and_automation_technologies",
+        "source_phrases": [
+          "cross-cloud observability (AWS, Azure, Alibaba Cloud)",
+          "integration of observability tools with ITOps solutions (ServiceNow, BigPanda, ReadyAPI)",
+          "focus on automation technologies like Cribl"
+        ],
+        "rationale": "These phrases focus on observability and automation tools in cloud and IT operations."
+      },
+      {
+        "canonical_signal": "work_environment_and_flexibility",
+        "source_phrases": [
+          "hybrid or remote work environment",
+          "hybrid/remote work environment",
+          "Company-provided education benefits (Live Better U)",
+          "open to non-traditional career paths or equivalent skills",
+          "travel may be required from 0 to 100% depending on business need"
+        ],
+        "rationale": "All relate to flexible work arrangements, benefits, and openness to diverse backgrounds."
+      },
+      {
+        "canonical_signal": "technical_ownership_and_financial_management",
+        "source_phrases": [
+          "technical ownership of Service Provider deliverables",
+          "provides financial input on department or project budgets",
+          "experience with application 'shirt sizing', architecture visioning, and roadmap development",
+          "Portfolio prioritization mechanisms to maximize enterprise value",
+          "strong grasp of technical debt management"
+        ],
+        "rationale": "These phrases relate to technical ownership, financial management, and strategic planning."
+      },
+      {
+        "canonical_signal": "education_and_sponsorship_requirements",
+        "source_phrases": [
+          "role not open to sponsorship of any kind at this time",
+          "explicit requirement for 15 years full time education"
+        ],
+        "rationale": "Both specify formal requirements for education and sponsorship."
+      }
+    ]
+  }
+}

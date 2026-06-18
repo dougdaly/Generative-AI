@@ -1,0 +1,37 @@
+page:
+  margins:
+    top: 0.5
+    bottom: 0.5
+    left: 0.6
+    right: 0.6
+
+fonts:
+  base: Aptos
+  name_size: 16
+  section_size: 10
+  body_size: 9
+
+sections:
+  heading:
+    bold: true
+    uppercase: true
+    spacing_before: 6
+    spacing_after: 2
+
+renderers:
+  paragraph:
+    space_after: 4
+
+  bullets:
+    left_indent: 0.18
+    hanging_indent: 0.12
+    space_after: 1
+
+  structured_items:
+    item_heading_bold: true
+    item_subheading_italic: false
+    group_label_bold: true
+    spacing_between_items: 4
+
+  compact_items:
+    separator: " | "

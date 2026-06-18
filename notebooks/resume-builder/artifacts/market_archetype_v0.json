@@ -1,0 +1,87 @@
+{
+  "title": "Principal AI Engineer / AI Solutions Architect",
+  "business_industries": [
+    "enterprise software",
+    "financial services",
+    "marketing technology",
+    "digital advertising",
+    "regulated industries"
+  ],
+  "problem_spaces": [
+    "AI agent integration",
+    "enterprise integration",
+    "workflow automation",
+    "enterprise knowledge retrieval",
+    "AI system reliability",
+    "observability",
+    "analytics"
+  ],
+  "technology_areas": [
+    "LLMs",
+    "RAG",
+    "agentic AI",
+    "multi-agent systems",
+    "cloud-native AI systems",
+    "MLOps",
+    "distributed systems",
+    "AI model evaluation",
+    "context engineering"
+  ],
+  "capabilities": [
+    "design AI architectures",
+    "integrate AI systems with enterprise data",
+    "orchestrate AI agents and tools",
+    "evaluate LLM performance",
+    "manage monitoring and observability",
+    "lead technical roadmaps",
+    "communicate technical tradeoffs",
+    "mentor and recruit engineers",
+    "deliver production-grade systems"
+  ],
+  "technologies": [
+    "Python",
+    "AWS",
+    "GCP",
+    "RAG pipelines",
+    "AI/ML agent frameworks",
+    "MCP servers",
+    "vector databases",
+    "graph databases",
+    "CI/CD",
+    "Kubernetes"
+  ],
+  "responsibilities": [
+    "lead end-to-end AI solution development",
+    "design scalable AI and ML architectures",
+    "integrate AI agents with enterprise systems",
+    "define architecture standards and reusable platform components",
+    "implement monitoring and observability",
+    "govern tool orchestration and structured architectures",
+    "collaborate with business and technical stakeholders",
+    "mentor senior engineers and influence technical direction"
+  ],
+  "seniority_signals": [
+    "principal or senior technical leadership",
+    "architecture ownership",
+    "technical roadmap ownership",
+    "enterprise-scale delivery",
+    "cross-functional influence",
+    "ambiguous problem definition",
+    "production platform responsibility"
+  ],
+  "success_metrics": [
+    "production-grade AI delivery",
+    "solution adoption",
+    "integration effectiveness",
+    "system reliability and observability",
+    "business value delivered",
+    "operational efficiency",
+    "stakeholder satisfaction"
+  ],
+  "role_purpose": [
+    "Provide technical leadership for enterprise AI initiatives",
+    "Translate business requirements into scalable AI systems",
+    "Ensure AI systems operate reliably and safely in production",
+    "Establish reusable architecture patterns for AI agents, RAG, and LLM platforms"
+  ]
+}

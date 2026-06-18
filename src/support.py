@@ -5,6 +5,52 @@ import kagglehub
 from pathlib import Path
 from IPython.display import Markdown
 
+from typing import Literal, Optional
+
+from langchain_openai import ChatOpenAI
+from langchain_ollama import ChatOllama
+
+
+Provider = Literal["openai", "ollama"]
+
+
+def build_llm(
+    provider: Provider = "openai",
+    model: Optional[str] = None,
+    temperature: float = 0,
+    base_url: Optional[str] = None,
+):
+    """
+    Build a LangChain chat model.
+
+    provider:
+        "openai" or "ollama"
+
+    model:
+        Provider-specific model name.
+        Examples:
+            openai: "gpt-4.1", "gpt-4.1-mini"
+            ollama: "llama3.1", "mistral", "deepseek-r1"
+
+    temperature:
+        0 for deterministic-ish extraction / structured tasks.
+    """
+
+    if provider == "openai":
+        return ChatOpenAI(
+            model=model or "gpt-4.1",
+            temperature=temperature,
+        )
+
+    if provider == "ollama":
+        return ChatOllama(
+            model=model or "llama3.1",
+            temperature=temperature,
+            base_url=base_url or "http://localhost:11434",
+        )
+
+    raise ValueError(f"Unsupported provider: {provider}")
+
 def get_device(ngpu = 1):
     """ 
     Set device to GPU if available; otherwise CPU 

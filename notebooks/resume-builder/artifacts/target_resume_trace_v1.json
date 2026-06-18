@@ -1,0 +1,511 @@
+{
+  "target_archetype": "Principal AI Architect / AI Platform Engineering Lead",
+  "source_artifacts": [
+    "canonical_master_resume.json",
+    "selected_evidence.json",
+    "capability_review.json",
+    "resume_positioning.json"
+  ],
+  "summary_trace": {
+    "supporting_capabilities": [
+      "Enterprise AI and Operational Intelligence Platforms",
+      "Governed GenAI and Tool-Calling Systems",
+      "AI Governance, Controls, and Responsible Adoption",
+      "Observability, Monitoring, and Operational Controls",
+      "Cloud-Native AI Infrastructure and Data Platforms",
+      "Technical Leadership, Mentorship, and Talent Development",
+      "Business Translation and Decision Support",
+      "Cross-Functional Strategy and Executive Alignment",
+      "Technical Roadmaps, Strategy, and Innovation"
+    ],
+    "supporting_evidence_ids": [
+      "exp_01_01_01_04",
+      "exp_01_05_04_01",
+      "exp_01_01_02_01",
+      "exp_01_10_01_01",
+      "exp_01_02_04_01",
+      "exp_01_09_03_01",
+      "exp_01_09_05_01",
+      "exp_01_08_01_01",
+      "exp_01_04_04_01"
+    ],
+    "cautions": [
+      "Older Capital One and Raytheon evidence should be used as career-depth proof, not as the lead current AI story.",
+      "Teaching evidence supports mentorship and technical fluency, not direct production ownership.",
+      "Some NBCUniversal evidence may be short-cycle/prototype; frame accordingly."
+    ]
+  },
+  "core_expertise_trace": [
+    {
+      "label": "AI Platform Architecture",
+      "text": "enterprise AI platforms, governed analytics assistants, operational intelligence systems, reusable AI/analytics frameworks",
+      "source_core_expertise_labels": [
+        "Enterprise AI Platform Architecture",
+        "Cloud-Native AI Infrastructure",
+        "Operational Intelligence Platforms",
+        "Reusable Analytics Frameworks",
+        "AI/ML Model Lifecycle Management"
+      ],
+      "missing_source_core_expertise_labels": [],
+      "supporting_capabilities": [
+        "AI/ML Deployment and Lifecycle Support",
+        "Cloud-Native AI Infrastructure and Data Platforms",
+        "Enterprise AI and Operational Intelligence Platforms",
+        "Reusable Frameworks and Developer Enablement"
+      ],
+      "supporting_evidence_ids": [
+        "exp_01_01_01_02",
+        "exp_01_01_01_04",
+        "exp_01_01_02_01",
+        "exp_01_05_04_01",
+        "exp_01_08_01_01",
+        "exp_01_09_03_01",
+        "exp_01_09_04_01"
+      ],
+      "supporting_categories": [
+        "architecture",
+        "data",
+        "operations"
+      ],
+      "supporting_priorities": [
+        "primary",
+        "secondary"
+      ]
+    },
+    {
+      "label": "GenAI & Tool-Calling Systems",
+      "text": "LLM applications, structured outputs, tool orchestration, RAG/GraphRAG concepts, prompt engineering, evaluation, traceability",
+      "source_core_expertise_labels": [
+        "Governed GenAI & Tool-Calling",
+        "Production Analytics Assistants"
+      ],
+      "missing_source_core_expertise_labels": [],
+      "supporting_capabilities": [
+        "Governed GenAI and Tool-Calling Systems"
+      ],
+      "supporting_evidence_ids": [
+        "exp_01_01_01_04",
+        "exp_01_02_02_01"
+      ],
+      "supporting_categories": [
+        "genai"
+      ],
+      "supporting_priorities": [
+        "primary",
+        "secondary"
+      ]
+    },
+    {
+      "label": "Governance & Operational Controls",
+      "text": "responsible AI adoption, guardrails, auditable execution, analyst-in-the-loop workflows, policy-aware system design",
+      "source_core_expertise_labels": [
+        "AI Governance & Controls",
+        "Governed GenAI & Tool-Calling"
+      ],
+      "missing_source_core_expertise_labels": [],
+      "supporting_capabilities": [
+        "AI Governance, Controls, and Responsible Adoption",
+        "Governed GenAI and Tool-Calling Systems"
+      ],
+      "supporting_evidence_ids": [
+        "exp_01_01_01_04",
+        "exp_01_02_02_01",
+        "exp_01_02_04_01"
+      ],
+      "supporting_categories": [
+        "genai",
+        "governance"
+      ],
+      "supporting_priorities": [
+        "primary"
+      ]
+    },
+    {
+      "label": "Observability & Reliability",
+      "text": "monitoring frameworks, incident detection, alerting, operational health, SLIs/SLOs, SEV analysis, on-call-friendly design",
+      "source_core_expertise_labels": [
+        "Observability & Monitoring Frameworks",
+        "Operational Intelligence Platforms"
+      ],
+      "missing_source_core_expertise_labels": [],
+      "supporting_capabilities": [
+        "Enterprise AI and Operational Intelligence Platforms",
+        "Observability, Monitoring, and Operational Controls"
+      ],
+      "supporting_evidence_ids": [
+        "exp_01_01_01_04",
+        "exp_01_05_04_01",
+        "exp_01_09_03_01"
+      ],
+      "supporting_categories": [
+        "operations"
+      ],
+      "supporting_priorities": [
+        "primary",
+        "secondary"
+      ]
+    },
+    {
+      "label": "Cloud & Data Platforms",
+      "text": "Python, SQL, BigQuery, AWS SageMaker/S3/Terraform, GCP, Docker, data profiling, validation, cross-system integration",
+      "source_core_expertise_labels": [
+        "Cloud-Native AI Infrastructure",
+        "Reusable Analytics Frameworks",
+        "Advanced Analytics & Decision Support"
+      ],
+      "missing_source_core_expertise_labels": [],
+      "supporting_capabilities": [
+        "Advanced Analytics and Decision Support",
+        "Cloud-Native AI Infrastructure and Data Platforms",
+        "Reusable Frameworks and Developer Enablement"
+      ],
+      "supporting_evidence_ids": [
+        "exp_01_01_01_02",
+        "exp_01_01_02_01",
+        "exp_01_05_04_01",
+        "exp_01_07_01_01",
+        "exp_01_08_01_01",
+        "exp_01_09_04_01"
+      ],
+      "supporting_categories": [
+        "architecture",
+        "data"
+      ],
+      "supporting_priorities": [
+        "primary",
+        "secondary"
+      ]
+    },
+    {
+      "label": "Technical Leadership",
+      "text": "architecture direction, executive alignment, technical roadmaps, stakeholder translation, mentoring, developer enablement",
+      "source_core_expertise_labels": [
+        "Technical Leadership & Mentorship",
+        "Cross-Functional Executive Alignment",
+        "Strategy & Technical Roadmaps",
+        "Business-Driven AI Solutions"
+      ],
+      "missing_source_core_expertise_labels": [],
+      "supporting_capabilities": [
+        "Business Translation and Decision Support",
+        "Cross-Functional Strategy and Executive Alignment",
+        "Technical Leadership, Mentorship, and Talent Development",
+        "Technical Roadmaps, Strategy, and Innovation"
+      ],
+      "supporting_evidence_ids": [
+        "exp_01_02_04_01",
+        "exp_01_03_03_01",
+        "exp_01_04_04_01",
+        "exp_01_08_01_01",
+        "exp_01_09_03_01",
+        "exp_01_09_05_01",
+        "exp_01_10_01_01",
+        "exp_01_10_02_01"
+      ],
+      "supporting_categories": [
+        "business",
+        "leadership"
+      ],
+      "supporting_priorities": [
+        "primary",
+        "secondary"
+      ]
+    }
+  ],
+  "experience_bullet_trace": [
+    {
+      "source_label": "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)",
+      "role": "Principal Consultant",
+      "organization": "Daly Engineers LLC",
+      "dates": "Jan 2026 - Present",
+      "label": "Consolidated Edison (via ABC Consulting)",
+      "bullets": [
+        {
+          "text": "Built a governed analytics assistant leveraging Gemini, BigQuery, and tool-calling architectures, applying analyst rules and operational controls to ensure predictable, auditable, and compliant execution of generative AI workflows.",
+          "supporting_evidence_ids": [
+            "exp_01_01_01_04"
+          ],
+          "cautions": []
+        },
+        {
+          "text": "Developed automated frameworks for profiling, type inference, duplicate detection, candidate key analysis, and cross-system join validation across 100+ source tables and millions of operational and financial records, enhancing data quality and interoperability.",
+          "supporting_evidence_ids": [
+            "exp_01_01_01_02"
+          ],
+          "cautions": []
+        },
+        {
+          "text": "Defined a phased analytical maturity roadmap adopted as the foundation for anomaly detection, construction analytics, and AI-enabled decision support initiatives.",
+          "supporting_evidence_ids": [
+            "exp_01_01_01_03"
+          ],
+          "cautions": [
+            "Strategy and readiness evidence; do not overstate as implementation unless paired with delivery evidence."
+          ]
+        },
+        {
+          "text": "Led analytical readiness assessment for Oracle/EBS and Maximo data migration to BigQuery, establishing the basis for cross-domain analytics across construction operations and financial systems.",
+          "supporting_evidence_ids": [
+            "exp_01_01_01_01"
+          ],
+          "cautions": [
+            "Strategy and readiness evidence; do not overstate as implementation unless paired with delivery evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "source_label": "Daly Engineers LLC | Principal Consultant | NBCUniversal (via Apex Systems)",
+      "role": "Principal Consultant",
+      "organization": "Daly Engineers LLC",
+      "dates": "Jan 2026 - Present",
+      "label": "NBCUniversal (via Apex Systems)",
+      "bullets": [
+        {
+          "text": "Architected AWS-based AI and graph analytics pipelines leveraging SageMaker, Terraform, S3, and containerized workloads to enable scalable, cloud-native ML workflows.",
+          "supporting_evidence_ids": [
+            "exp_01_01_02_01"
+          ],
+          "cautions": [
+            "Frame carefully as short-cycle architecture/prototype evidence unless additional facts support production deployment."
+          ]
+        },
+        {
+          "text": "Evaluated and integrated emerging graph analytics and graph machine learning technologies\u2014including Neptune, GraphStorm, Bedrock, and LangGraph\u2014for advanced dependency analysis and operational intelligence use cases.",
+          "supporting_evidence_ids": [
+            "exp_01_01_02_03"
+          ],
+          "cautions": [
+            "Frame carefully as short-cycle architecture/prototype evidence unless additional facts support production deployment."
+          ]
+        }
+      ]
+    },
+    {
+      "source_label": "SimpliLearn | AI Instructor",
+      "role": "AI Instructor",
+      "organization": "SimpliLearn",
+      "dates": "October 2025 - Present",
+      "label": "",
+      "bullets": [
+        {
+          "text": "Mentored students on AI architecture, governance, implementation tradeoffs, and enterprise adoption strategies, fostering cross-functional technical leadership and responsible AI practices.",
+          "supporting_evidence_ids": [
+            "exp_01_02_04_01"
+          ],
+          "cautions": [
+            "Teaching evidence supports mentorship, technical fluency, and developer enablement; do not present it as production ownership unless the bullet explicitly supports that."
+          ]
+        },
+        {
+          "text": "Delivered instruction on transformer architectures, LLMs, RAG, agentic and multimodal AI, diffusion models, and enterprise AI governance, enabling talent development in advanced generative and agentic AI technologies.",
+          "supporting_evidence_ids": [
+            "exp_01_02_02_01"
+          ],
+          "cautions": [
+            "Teaching evidence supports mentorship, technical fluency, and developer enablement; do not present it as production ownership unless the bullet explicitly supports that."
+          ]
+        }
+      ]
+    },
+    {
+      "source_label": "Interview Kickstart | AI Instructor",
+      "role": "AI Instructor",
+      "organization": "Interview Kickstart",
+      "dates": "March 2025 - Present",
+      "label": "",
+      "bullets": [
+        {
+          "text": "Mentored students on AI architecture, implementation patterns, and technology selection tradeoffs, fostering technical fluency and cross-team knowledge sharing.",
+          "supporting_evidence_ids": [
+            "exp_01_03_03_01"
+          ],
+          "cautions": [
+            "Teaching evidence supports mentorship, technical fluency, and developer enablement; do not present it as production ownership unless the bullet explicitly supports that."
+          ]
+        },
+        {
+          "text": "Delivered instruction on practical applications of LLMs, RAG, agentic AI, and modern AI development workflows, enabling talent development in advanced AI technologies.",
+          "supporting_evidence_ids": [
+            "exp_01_03_02_01"
+          ],
+          "cautions": [
+            "Teaching evidence supports mentorship, technical fluency, and developer enablement; do not present it as production ownership unless the bullet explicitly supports that."
+          ]
+        }
+      ]
+    },
+    {
+      "source_label": "Intuit (via The Cydio Group) | Data Scientist",
+      "role": "Data Scientist",
+      "organization": "Intuit (via The Cydio Group)",
+      "dates": "Apr 2025 - Jul 2025",
+      "label": "",
+      "bullets": [
+        {
+          "text": "Partnered with finance, marketing, and product stakeholders to translate attribution and performance data into actionable business recommendations, driving alignment between business objectives and technical solutions.",
+          "supporting_evidence_ids": [
+            "exp_01_04_04_01"
+          ],
+          "cautions": []
+        },
+        {
+          "text": "Consolidated fragmented reporting into unified Tableau dashboards and automated executive reporting workflows using Python and SQL, reducing report preparation time from days to hours and enhancing data integration and process efficiency.",
+          "supporting_evidence_ids": [
+            "exp_01_04_03_01"
+          ],
+          "cautions": []
+        }
+      ]
+    },
+    {
+      "source_label": "Meta | Data Scientist",
+      "role": "Data Scientist",
+      "organization": "Meta",
+      "dates": "October 2021 - January 2025",
+      "label": "",
+      "bullets": [
+        {
+          "text": "Designed and developed the ReMon framework, empowering engineering teams to implement robust monitoring and alerting systems without deep internal tooling expertise; widely adopted across Meta FinTech and instrumental in the automatic detection of over 15 SEVs in 2024.",
+          "supporting_evidence_ids": [
+            "exp_01_05_04_01"
+          ],
+          "cautions": []
+        },
+        {
+          "text": "Developed forecasting and performance-management frameworks that translated engineering initiatives into projected reliability outcomes, supporting planning, goal setting, and leadership decision-making across multiple business pillars.",
+          "supporting_evidence_ids": [
+            "exp_01_05_02_01"
+          ],
+          "cautions": []
+        }
+      ]
+    },
+    {
+      "source_label": "Samsung Electronics (via Harvey Nash) | Data Scientist",
+      "role": "Data Scientist",
+      "organization": "Samsung Electronics (via Harvey Nash)",
+      "dates": "Dec 2020 - Oct 2021",
+      "label": "",
+      "bullets": [
+        {
+          "text": "Developed and deployed gradient-boosting propensity models and automated audience segmentation workflows, driving a 146% increase in campaign conversions and a 229% rise in campaign-attributed revenue while improving efficiency and scalability of digital marketing initiatives.",
+          "supporting_evidence_ids": [
+            "exp_01_06_01_01",
+            "exp_01_06_03_01"
+          ],
+          "cautions": []
+        }
+      ]
+    },
+    {
+      "source_label": "Facteus | Head of Data Science",
+      "role": "Head of Data Science",
+      "organization": "Facteus",
+      "dates": "Oct 2017 - Nov 2020",
+      "label": "",
+      "bullets": [
+        {
+          "text": "Led data science initiatives on a 30B+ transaction dataset, architecting analytical products and market-intelligence capabilities through large-scale feature engineering, merchant intelligence, and consumer-spending analytics.",
+          "supporting_evidence_ids": [
+            "exp_01_07_01_01"
+          ],
+          "cautions": []
+        }
+      ]
+    },
+    {
+      "source_label": "Nike (via Intersoft Inc.) | Expert SEO Solutions Architect",
+      "role": "Expert SEO Solutions Architect",
+      "organization": "Nike (via Intersoft Inc.)",
+      "dates": "Nov 2016 - Sep 2017",
+      "label": "",
+      "bullets": [
+        {
+          "text": "Architected a scalable SEO and information-architecture framework for Nike's product discovery platform, aligning customer navigation with search engine indexation to support a rapidly growing product catalog.",
+          "supporting_evidence_ids": [
+            "exp_01_08_01_01"
+          ],
+          "cautions": []
+        }
+      ]
+    },
+    {
+      "source_label": "Capital One | Senior Manager, Operations Analysis",
+      "role": "Senior Manager, Operations Analysis",
+      "organization": "Capital One",
+      "dates": "Jan 2012 - Dec 2016",
+      "label": "",
+      "bullets": [
+        {
+          "text": "Conceived, architected, and led adoption of RITHM, an operational intelligence platform aggregating real-time monitoring signals by business capability and system ownership, reducing major incident detection times from hours to minutes.",
+          "supporting_evidence_ids": [
+            "exp_01_09_03_01"
+          ],
+          "cautions": [
+            "Older evidence; use as career-depth proof rather than the lead current AI story."
+          ]
+        },
+        {
+          "text": "Secured executive sponsorship and expanded initial Splunk-based prototypes into a scalable Kafka and Elastic Stack solution, modernizing enterprise monitoring in alignment with open-source strategy.",
+          "supporting_evidence_ids": [
+            "exp_01_09_04_01"
+          ],
+          "cautions": [
+            "Older evidence; use as career-depth proof rather than the lead current AI story."
+          ]
+        },
+        {
+          "text": "Partnered with CTO-level leadership to define enterprise monitoring strategy, operational health metrics, and reliability-improvement initiatives, driving cross-functional alignment and operational excellence.",
+          "supporting_evidence_ids": [
+            "exp_01_09_05_01"
+          ],
+          "cautions": [
+            "Older evidence; use as career-depth proof rather than the lead current AI story."
+          ]
+        }
+      ]
+    },
+    {
+      "source_label": "Raytheon | Senior Principal Systems Engineer / Program Manager",
+      "role": "Senior Principal Systems Engineer / Program Manager",
+      "organization": "Raytheon",
+      "dates": "Mar 2005 - Dec 2011",
+      "label": "",
+      "bullets": [
+        {
+          "text": "Led systems engineering organizations of 40-50 engineers specializing in modeling, simulation, analysis, and advanced aerospace systems, providing technical leadership, career development, and proposal support for programs valued up to $50M.",
+          "supporting_evidence_ids": [
+            "exp_01_10_01_01"
+          ],
+          "cautions": [
+            "Older evidence; use as career-depth proof rather than the lead current AI story."
+          ]
+        },
+        {
+          "text": "Turned around an over-budget classified fixed-price technology program by establishing execution plans, aligning engineering teams, and proactively managing technical and program risks; delivered under budget and nearly doubled the original profit target on a historically challenging delivery effort.",
+          "supporting_evidence_ids": [
+            "exp_01_10_02_01"
+          ],
+          "cautions": [
+            "Older evidence; use as career-depth proof rather than the lead current AI story."
+          ]
+        }
+      ]
+    }
+  ],
+  "selection_summary": {
+    "target_archetype": "Principal AI Architect / AI Platform Engineering Lead",
+    "total_evidence_items": 46,
+    "selected_count": 39,
+    "excluded_count": 7,
+    "selection_method": "Deterministic first-pass selection using field_capped_score, direct_match_count, rank, and qualitative caution flags. This step selects evidence, not final resume bullets.",
+    "tier_counts": {
+      "must_include": 6,
+      "strong_include": 9,
+      "optional": 8,
+      "compress": 16,
+      "exclude": 7
+    }
+  }
+}

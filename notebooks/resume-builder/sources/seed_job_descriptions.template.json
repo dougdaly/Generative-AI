@@ -1,0 +1,32 @@
+{
+  "artifact_type": "seed_job_descriptions",
+  "schema_version": "1.0",
+  "purpose": "Store representative job descriptions used to build the target archetype.",
+  "job_description_schema": {
+    "title": "",
+    "company": "",
+    "salary_min": null,
+    "salary_max": null,
+    "location": "",
+    "source": "",
+    "url": "",
+    "raw_text": ""
+  },
+  "collection_notes": [
+    "Populate this file manually from recruiter-provided postings and selected market examples.",
+    "Keep raw_text complete enough to preserve responsibilities, qualifications, and outcomes.",
+    "Avoid collecting only jobs that perfectly match the hypothesis."
+  ],
+  "job_descriptions": [
+    {
+      "title": "",
+      "company": "",
+      "salary_min": null,
+      "salary_max": null,
+      "location": "",
+      "source": "user_or_recruiter_or_assistant",
+      "url": "",
+      "raw_text": "Paste full job description here."
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "target_title": "Principal AI Engineer / AI Solutions Architect",
+  "summary": [
+    "Principal AI Engineer and Technical Leader with over 20 years of experience architecting and delivering enterprise AI and operational intelligence systems that enable actionable decision support and reliability insights.",
+    "Proven expertise in production AI systems, including RAG, agentic AI, tool orchestration, and graph-based dependency modeling, with hands-on experience on BigQuery, GCP, AWS, and Python.",
+    "Deep background in observability, monitoring, AI governance, and operational intelligence, with a strong record of translating complex business challenges into governed, measurable AI architectures and roadmaps.",
+    "Cross-industry experience spanning utilities, financial services, media, retail, telecommunications, and aerospace/defense, with a patent for deployed real-time decision systems and recognized leadership in AI education."
+  ],
+  "core_technologies": [
+    "LLMs",
+    "RAG",
+    "Agentic AI",
+    "Tool Orchestration",
+    "MCP",
+    "Enterprise Integration",
+    "AI Architecture",
+    "Observability",
+    "MLOps",
+    "Production AI Systems",
+    "BigQuery",
+    "GCP",
+    "AWS",
+    "Python",
+    "Graph Analytics"
+  ],
+  "professional_experience": [
+    {
+      "heading": "Principal Consultant",
+      "subheading": "Daly Engineers LLC | Jan 2026 - Present",
+      "bullets": [
+        "Led analytical readiness assessment for Oracle/EBS and Maximo data migrated to BigQuery, establishing a foundation for cross-domain enterprise analytics integrating construction operations and financial systems.",
+        "Developed automated frameworks for profiling, type inference, duplicate detection, candidate key analysis, and cross-system join validation across 100+ source tables and millions of operational and financial records, enhancing data governance and integration.",
+        "Created a phased analytical maturity roadmap adopted as the basis for anomaly detection, construction analytics, and AI-enabled decision support initiatives, driving enterprise AI architecture and governance.",
+        "Built a governed analytics assistant leveraging Gemini, BigQuery, and tool-calling architectures to enforce analyst rules and operational controls, ensuring predictable, auditable execution aligned with AI governance principles."
+      ]
+    },
+    {
+      "heading": "Principal Consultant",
+      "subheading": "NBCUniversal (via Apex Systems) | Jan 2026 - Present",
+      "bullets": [
+        "Designed and implemented AWS-based AI and graph analytics pipelines using SageMaker, Terraform, and S3 to support digital twin initiatives and operational intelligence.",
+        "Developed graph-ready service dependency datasets from API telemetry and operational metrics, enabling advanced graph analytics and dependency modeling for enterprise observability.",
+        "Evaluated graph analytics and graph machine learning approaches using Neptune, GraphStorm, Bedrock, and LangGraph to enhance operational intelligence and AI architecture.",
+        "Authored architecture and analytical readiness assessments identifying data and operational gaps impacting long-term digital twin and AI governance objectives."
+      ]
+    },
+    {
+      "heading": "AI Instructor",
+      "subheading": "SimpliLearn | Oct 2025 - Present",
+      "bullets": [
+        "Delivered professional AI training focused on transformer architectures, LLMs, RAG, agentic AI, MCP, diffusion models, and enterprise AI governance to software engineers and technical professionals.",
+        "Developed hands-on demonstrations, Jupyter notebooks, and end-to-end applications illustrating modern AI workflows, evaluation techniques, and production deployment considerations.",
+        "Mentored students on AI architecture, governance, implementation tradeoffs, and strategies for enterprise AI adoption, strengthening technical leadership and communication skills."
+      ]
+    },
+    {
+      "heading": "AI Instructor",
+      "subheading": "Interview Kickstart | Mar 2025 - Present",
+      "bullets": [
+        "Provided instruction on practical applications of LLMs, RAG, agentic AI, and modern AI development workflows for software engineering professionals targeting advanced technical roles.",
+        "Mentored students on AI architecture, implementation patterns, and technology selection tradeoffs to support production AI system delivery and governance."
+      ]
+    },
+    {
+      "heading": "Data Scientist",
+      "subheading": "Meta | Oct 2021 - Jan 2025",
+      "bullets": [
+        "Defined reliability KPIs and measurement frameworks for Meta FinTech, establishing leading indicators to guide reliability planning, prioritization, and performance management in production AI systems.",
+        "Developed forecasting and performance-management frameworks translating engineering initiatives into projected reliability outcomes, supporting leadership decision-making and operational intelligence.",
+        "Built attribution frameworks linking incidents, alerts, defects, and operational metrics to engineering organizations and service ownership, enhancing accountability and observability.",
+        "Designed and developed the ReMon framework, enabling engineering teams to build comprehensive monitoring and alerting systems without requiring expertise in complex internal tooling; adopted across Meta FinTech and contributing to automatic detection of over 15 SEVs in 2024.",
+        "Delivered impact sizing, ROI, and risk exposure analyses supporting investment and prioritization decisions across platform reliability, privacy compliance, authentication, testing infrastructure, and data platform initiatives."
+      ]
+    },
+    {
+      "heading": "Head of Data Science",
+      "subheading": "Facteus | Oct 2017 - Nov 2020",
+      "bullets": [
+        "Led data science initiatives on a 30B+ transaction dataset, creating analytical products and market-intelligence capabilities through large-scale feature engineering and merchant intelligence.",
+        "Developed merchant, brand, industry, and storefront resolution methodologies transforming cryptic payment-card transactions into business-identifiable entities, enabling accurate market intelligence with over 99% transaction coverage.",
+        "Evaluated prospective data partnerships by assessing signal quality, coverage, and business value, supporting strategic investment and acquisition decisions.",
+        "Produced transaction-based industry analyses during the COVID-19 pandemic, identifying shifts in consumer behavior and e-commerce adoption trends ahead of traditional reporting sources."
+      ]
+    },
+    {
+      "heading": "Senior Manager, Operations Analysis",
+      "subheading": "Capital One | Jan 2012 - Dec 2016",
+      "bullets": [
+        "Developed predictive capacity-management models forecasting peak demand scenarios for customer-facing banking platforms, supporting infrastructure planning and risk management.",
+        "Identified critical gaps in enterprise monitoring operations, discovering major incidents were often detected by customer call channels rather than operational monitoring systems.",
+        "Conceived, designed, and led adoption of RITHM (Real-Time IT Health Monitoring), an operational intelligence platform aggregating monitoring signals by business capability and system ownership, reducing major incident detection times from hours to minutes.",
+        "Secured executive sponsorship for enterprise monitoring modernization, expanding initial Splunk-based prototypes into a scalable Kafka and Elastic Stack solution aligned with open-source strategy.",
+        "Partnered with CTO-level leadership to define enterprise monitoring strategy, operational health metrics, and reliability-improvement initiatives.",
+        "Awarded the Capital One Business Innovation Award for contributions to operational intelligence and enterprise monitoring transformation; presented work at internal and external industry conferences."
+      ]
+    },
+    {
+      "heading": "Senior Principal Systems Engineer / Program Manager",
+      "subheading": "Raytheon | Mar 2005 - Dec 2011",
+      "bullets": [
+        "Led systems engineering teams of 40-50 engineers specializing in modeling, simulation, and advanced aerospace systems, providing technical leadership and program management for projects valued up to $50M.",
+        "Turned around an over-budget classified fixed-price technology program by establishing execution plans, aligning teams, and managing risks; delivered under budget and nearly doubled profit targets.",
+        "Served as Principal Investigator for advanced signal-generation and radar resource-management algorithms, leading research, simulation, flight testing, and operational deployment across multiple tactical and surveillance aircraft programs.",
+        "Developed a patented fuzzy-logic resource-management system resulting from radar scheduling innovations deployed on major Department of Defense aircraft platforms."
+      ]
+    }
+  ],
+  "selected_projects": [
+    {
+      "heading": "GraphRAG Engine & LoRA Coverage Assistant",
+      "bullets": [
+        "Built a GraphRAG system enabling multi-hop benefits reasoning with fully traceable retrieval paths across entities, clauses, and supporting evidence, enhancing enterprise knowledge retrieval.",
+        "Fine-tuned a LoRA adapter on a 7B open-source LLM to enforce a strict JSON schema (decision/reason/disclaimer) for reliable downstream automation and AI governance."
+      ]
+    },
+    {
+      "heading": "Agent-to-Agent Protocol MVPs",
+      "bullets": [
+        "Developed Agent Olympics, a small evaluation runner benchmarking a generalist agent against discovered specialists across task categories with explicit scoring and summary reporting.",
+        "Built AI PEMDAS, an instrumented coordination workflow routing sub-steps to specialized agents with end-to-end traceability using FastAPI JSON-RPC, demonstrating agentic AI and tool orchestration."
+      ]
+    },
+    {
+      "heading": "Agentic Multimodal Orchestrator",
+      "bullets": [
+        "Orchestrated structured retrieval, layout planning, and diffusion prompting to generate data-driven posters and maps with repeatable, template-based workflows.",
+        "Implemented template constraints and parameterized prompts to ensure consistency and reliability across runs, supporting production-grade AI delivery."
+      ]
+    },
+    {
+      "heading": "ConEd Governed Analytics Assistant",
+      "bullets": [
+        "Built a governed analytics assistant using Gemini, BigQuery, and tool-calling architectures applying analyst rules and operational controls to maintain predictable and auditable execution aligned with AI governance."
+      ]
+    },
+    {
+      "heading": "NBCUniversal Digital Twin and Graph Analytics",
+      "bullets": [
+        "Developed graph-ready service dependency datasets from API telemetry and operational metrics to support digital twin initiatives and operational intelligence.",
+        "Evaluated graph analytics and graph machine learning approaches using Neptune, GraphStorm, Bedrock, and LangGraph to enhance dependency analysis and observability."
+      ]
+    }
+  ],
+  "education": [
+    "MBA, UCLA Anderson School of Management, Top Honors, GPA: 3.9",
+    "M.S., Applied Statistics, Rochester Institute of Technology, GPA: 3.9",
+    "M.S., Electrical Engineering, University of Washington, GPA: 3.7",
+    "B.S., Physics (Minor: Mathematics), Humboldt State University, GPA: 3.4"
+  ],
+  "honors_awards": [
+    "Lead Inventor, U.S. Patent #8635622: Method and System for Resource Management Using Fuzzy Logic Timeline Filling (2014)",
+    "Capital One Business Technology Innovation Award (2014)",
+    "Conference Chair & Speaker - Customer Analytics Innovation Summit (2016)"
+  ],
+  "notes": []
+}

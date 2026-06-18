@@ -2,7 +2,7 @@ from __future__ import annotations
 from typing import Dict, List, Tuple
 import numpy as np
 from sklearn.cluster import KMeans
-from sklearn.feature_extraction.text import CountVectorizer, ENGLISH_STOP_WORDS
+from sklearn.feature_extraction.text import CountVectorizer,  TfidfVectorizer, ENGLISH_STOP_WORDS
 
 def fit_topics(X, k, random_state=0):
     X64 = np.asarray(X, dtype=np.float64)  # more stable math path
@@ -34,6 +34,47 @@ def label_topics(texts: List[str], labels: np.ndarray, k: int, ngram_range=(1,2)
         top_idx = counts.argsort()[::-1][:top_terms]
         topic_terms[t] = [terms[i] for i in top_idx if counts[i] > 0]
     return topic_terms
+
+
+def ctfidf_terms(
+    texts_norm,
+    labels,
+    top_terms=15,
+    ngram_range=(1, 3),
+    min_df=2,
+    max_df=0.7,
+    stop_words=None,
+):
+    """
+    Returns dict: topic_id -> list[str] of distinctive n-grams using class-based TF-IDF.
+    """
+    labels = np.asarray(labels)
+    k = int(labels.max()) + 1
+
+    # Build one "document" per topic by concatenating its texts
+    topic_docs = []
+    for t in range(k):
+        idx = np.where(labels == t)[0]
+        joined = " ".join(texts_norm[i] for i in idx)
+        topic_docs.append(joined)
+
+    vec = TfidfVectorizer(
+        ngram_range=ngram_range,
+        min_df=min_df,
+        max_df=max_df,
+        stop_words=stop_words,
+        token_pattern=r"(?u)\b[a-zA-Z][a-zA-Z']+\b",
+    )
+    X = vec.fit_transform(topic_docs)  # shape: (k, vocab)
+    vocab = np.array(vec.get_feature_names_out())
+
+    out = {}
+    for t in range(k):
+        row = X[t].toarray().ravel()
+        top_idx = row.argsort()[::-1][:top_terms]
+        out[int(t)] = vocab[top_idx].tolist()
+    return out
+
 
 def topic_shares(labels: np.ndarray, k: int) -> Dict[int, float]:
     n = len(labels)

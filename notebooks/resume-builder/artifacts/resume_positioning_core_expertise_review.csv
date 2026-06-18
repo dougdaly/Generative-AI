@@ -1,0 +1,15 @@
+label,category,use_priority,capability_count,evidence_count,supporting_capabilities,supporting_evidence_ids
+Enterprise AI Platform Architecture,architecture,primary,1,3,Enterprise AI and Operational Intelligence Platforms,"exp_01_01_01_04, exp_01_01_02_01, exp_01_09_03_01"
+Governed GenAI & Tool-Calling,genai,primary,1,2,Governed GenAI and Tool-Calling Systems,"exp_01_01_01_04, exp_01_02_02_01"
+AI Governance & Controls,governance,primary,1,3,"AI Governance, Controls, and Responsible Adoption","exp_01_01_01_04, exp_01_02_04_01, exp_01_02_02_01"
+Observability & Monitoring Frameworks,operations,primary,1,3,"Observability, Monitoring, and Operational Controls","exp_01_05_04_01, exp_01_09_03_01, exp_01_01_01_04"
+Cloud-Native AI Infrastructure,architecture,primary,1,3,Cloud-Native AI Infrastructure and Data Platforms,"exp_01_01_02_01, exp_01_09_04_01, exp_01_08_01_01"
+Reusable Analytics Frameworks,data,secondary,1,2,Reusable Frameworks and Developer Enablement,"exp_01_05_04_01, exp_01_01_01_02"
+Technical Leadership & Mentorship,leadership,primary,1,3,"Technical Leadership, Mentorship, and Talent Development","exp_01_10_01_01, exp_01_02_04_01, exp_01_03_03_01"
+Cross-Functional Executive Alignment,leadership,secondary,1,3,Cross-Functional Strategy and Executive Alignment,"exp_01_10_02_01, exp_01_09_05_01, exp_01_04_04_01"
+Business-Driven AI Solutions,business,secondary,1,3,Business Translation and Decision Support,"exp_01_09_03_01, exp_01_08_01_01, exp_01_04_04_01"
+AI/ML Model Lifecycle Management,architecture,secondary,1,1,AI/ML Deployment and Lifecycle Support,exp_01_01_02_01
+Production Analytics Assistants,genai,secondary,1,1,Governed GenAI and Tool-Calling Systems,exp_01_01_01_04
+Operational Intelligence Platforms,operations,secondary,1,1,Enterprise AI and Operational Intelligence Platforms,exp_01_09_03_01
+Strategy & Technical Roadmaps,leadership,secondary,1,2,"Technical Roadmaps, Strategy, and Innovation","exp_01_09_03_01, exp_01_09_05_01"
+Advanced Analytics & Decision Support,data,secondary,1,1,Advanced Analytics and Decision Support,exp_01_07_01_01

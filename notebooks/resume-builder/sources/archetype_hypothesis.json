@@ -1,0 +1,97 @@
+{
+  "artifact_type": "archetype_hypothesis",
+  "schema_version": "1.0",
+  "purpose": "Seed the job-description search and provide a falsifiable initial hypothesis. This is not the final archetype.",
+  "bias_control_notes": [
+    "Use this to define the market sample, not to force the final archetype.",
+    "Extraction prompts should capture signals that contradict or extend this hypothesis.",
+    "Final archetype should report confirmed, modified, added, and rejected hypothesis elements."
+  ],
+  "hypothesis": {
+    "title": "Principal AI Engineer / AI Solutions Architect",
+    "business_industries": [
+      "enterprise software",
+      "utilities",
+      "financial services",
+      "media and entertainment",
+      "retail",
+      "telecommunications"
+    ],
+    "problem_spaces": [
+      "business intelligence",
+      "decision support",
+      "operational intelligence",
+      "forecasting",
+      "risk analysis",
+      "fraud detection",
+      "observability",
+      "analytics",
+      "workflow automation",
+      "enterprise knowledge retrieval"
+    ],
+    "technology_areas": [
+      "LLMs",
+      "RAG",
+      "agentic AI",
+      "graph analytics",
+      "anomaly detection",
+      "entity resolution",
+      "cloud-native AI systems",
+      "MLOps"
+    ],
+    "capabilities": [
+      "design AI architectures",
+      "integrate AI systems with enterprise data",
+      "evaluate LLM performance",
+      "lead technical roadmap",
+      "communicate technical tradeoffs",
+      "mentor engineers",
+      "deliver production systems"
+    ],
+    "technologies": [
+      "Python",
+      "AWS",
+      "GCP",
+      "BigQuery",
+      "LangGraph"
+    ],
+    "responsibilities": [
+      "designing AI solutions",
+      "leading technical teams",
+      "defining architecture standards",
+      "mentoring engineers",
+      "collaborating with stakeholders"
+    ],
+    "seniority_signals": [
+      "technical vision",
+      "technical strategy",
+      "roadmap ownership",
+      "cross-functional leadership",
+      "influence without authority",
+      "mentorship",
+      "principal-level architecture ownership",
+      "enterprise-scale delivery",
+      "stakeholder alignment",
+      "multi-system integration",
+      "governance and risk awareness",
+      "ambiguous problem definition"
+    ],
+    "success_metrics": [
+      "solution adoption",
+      "operational efficiency",
+      "revenue growth",
+      "cost reduction",
+      "system reliability",
+      "stakeholder satisfaction"
+    ],
+    "role_purpose": [
+      "Provide technical leadership for enterprise AI initiatives",
+      "Translate business requirements into AI solutions",
+      "Ensure AI systems operate reliably in production"
+    ],
+    "business_problems": [],
+    "role_outcomes": [],
+    "emerging_signals": [],
+    "archetype_narrative": ""
+  }
+}

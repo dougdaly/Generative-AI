@@ -1,0 +1,38 @@
+{
+  "objective": "Collect a diverse, relevant, text-rich set of job descriptions for building a target role archetype.",
+  "candidate_job_titles": [
+    "Principal AI Engineer",
+    "Staff AI Engineer",
+    "AI Solutions Architect",
+    "Principal AI Architect",
+    "Principal Machine Learning Engineer",
+    "Staff Machine Learning Engineer",
+    "Principal Data Scientist",
+    "AI Transformation Lead"
+  ],
+  "target_industries": [
+    "enterprise software",
+    "cloud platforms",
+    "financial services",
+    "retail and consumer",
+    "media and entertainment",
+    "travel and hospitality",
+    "consulting",
+    "utilities and infrastructure",
+    "telecommunications"
+  ],
+  "target_jd_count": 20,
+  "minimum_validated_jd_count": 12,
+  "collection_rules": [
+    "Prefer postings with full responsibilities and qualifications.",
+    "Prefer current postings from company career pages or reputable job boards.",
+    "Avoid duplicate companies unless the roles represent clearly different archetypes.",
+    "Do not treat URLs as sufficient. Raw job-description text is the useful artifact.",
+    "Include recruiter-provided descriptions when they are relevant and text-rich."
+  ],
+  "diversity_rules": {
+    "minimum_industries": 5,
+    "max_jds_per_company": 2,
+    "max_share_single_title_family": 0.4
+  }
+}

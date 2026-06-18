@@ -1,0 +1,444 @@
+{
+  "positioning_summary": {
+    "target_archetype": "Principal AI Architect / AI Platform Engineering Lead",
+    "source_artifacts": [
+      "capability_review.json",
+      "selected_evidence.json",
+      "target_archetype.json"
+    ],
+    "method": "Generate resume Summary and Core Expertise from evidence-backed capabilities."
+  },
+  "target_title": "Principal AI Architect / AI Platform Engineering Lead",
+  "summary": {
+    "text": "Senior technical leader with deep expertise architecting enterprise AI/ML platforms, governed GenAI and tool-calling systems, and operational intelligence solutions. Built governed analytics assistants, monitoring frameworks, and reusable data/AI platforms with strong emphasis on controls, observability, and auditable execution. Experienced across cloud-native AI infrastructure, large-scale data platforms, executive alignment, and technical mentorship. Known for translating ambiguous business needs into scalable, reliable analytical systems that improve decision-making and operational performance.",
+    "supporting_capabilities": [
+      "Enterprise AI and Operational Intelligence Platforms",
+      "Governed GenAI and Tool-Calling Systems",
+      "AI Governance, Controls, and Responsible Adoption",
+      "Observability, Monitoring, and Operational Controls",
+      "Cloud-Native AI Infrastructure and Data Platforms",
+      "Technical Leadership, Mentorship, and Talent Development",
+      "Business Translation and Decision Support",
+      "Cross-Functional Strategy and Executive Alignment",
+      "Technical Roadmaps, Strategy, and Innovation"
+    ],
+    "supporting_evidence_ids": [
+      "exp_01_01_01_04",
+      "exp_01_05_04_01",
+      "exp_01_01_02_01",
+      "exp_01_10_01_01",
+      "exp_01_02_04_01",
+      "exp_01_09_03_01",
+      "exp_01_09_05_01",
+      "exp_01_08_01_01",
+      "exp_01_04_04_01"
+    ],
+    "cautions": [
+      "Older Capital One and Raytheon evidence should be used as career-depth proof, not as the lead current AI story.",
+      "Teaching evidence supports mentorship and technical fluency, not direct production ownership.",
+      "Some NBCUniversal evidence may be short-cycle/prototype; frame accordingly."
+    ],
+    "original_text": "Senior technical leader with deep expertise architecting enterprise AI/ML platforms, governed GenAI and tool-calling systems, and operational intelligence solutions. Built governed analytics assistants, monitoring frameworks, and reusable data/AI platforms with strong emphasis on controls, observability, and auditable execution. Experienced across cloud-native AI infrastructure, large-scale data platforms, executive alignment, and technical mentorship. Known for translating ambiguous business needs into scalable, reliable analytical systems that improve decision-making and operational performance.",
+    "patch_method": "Manual wording pass to improve precision and avoid overstating production readiness."
+  },
+  "core_expertise": {
+    "items": [
+      {
+        "label": "Enterprise AI Platform Architecture",
+        "category": "architecture",
+        "use_priority": "primary",
+        "supporting_capabilities": [
+          "Enterprise AI and Operational Intelligence Platforms"
+        ],
+        "supporting_evidence_ids": [
+          "exp_01_01_01_04",
+          "exp_01_01_02_01",
+          "exp_01_09_03_01"
+        ]
+      },
+      {
+        "label": "Governed GenAI & Tool-Calling",
+        "category": "genai",
+        "use_priority": "primary",
+        "supporting_capabilities": [
+          "Governed GenAI and Tool-Calling Systems"
+        ],
+        "supporting_evidence_ids": [
+          "exp_01_01_01_04",
+          "exp_01_02_02_01"
+        ]
+      },
+      {
+        "label": "AI Governance & Controls",
+        "category": "governance",
+        "use_priority": "primary",
+        "supporting_capabilities": [
+          "AI Governance, Controls, and Responsible Adoption"
+        ],
+        "supporting_evidence_ids": [
+          "exp_01_01_01_04",
+          "exp_01_02_04_01",
+          "exp_01_02_02_01"
+        ]
+      },
+      {
+        "label": "Observability & Monitoring Frameworks",
+        "category": "operations",
+        "use_priority": "primary",
+        "supporting_capabilities": [
+          "Observability, Monitoring, and Operational Controls"
+        ],
+        "supporting_evidence_ids": [
+          "exp_01_05_04_01",
+          "exp_01_09_03_01",
+          "exp_01_01_01_04"
+        ]
+      },
+      {
+        "label": "Cloud-Native AI Infrastructure",
+        "category": "architecture",
+        "use_priority": "primary",
+        "supporting_capabilities": [
+          "Cloud-Native AI Infrastructure and Data Platforms"
+        ],
+        "supporting_evidence_ids": [
+          "exp_01_01_02_01",
+          "exp_01_09_04_01",
+          "exp_01_08_01_01"
+        ]
+      },
+      {
+        "label": "Reusable Analytics Frameworks",
+        "category": "data",
+        "use_priority": "secondary",
+        "supporting_capabilities": [
+          "Reusable Frameworks and Developer Enablement"
+        ],
+        "supporting_evidence_ids": [
+          "exp_01_05_04_01",
+          "exp_01_01_01_02"
+        ]
+      },
+      {
+        "label": "Technical Leadership & Mentorship",
+        "category": "leadership",
+        "use_priority": "primary",
+        "supporting_capabilities": [
+          "Technical Leadership, Mentorship, and Talent Development"
+        ],
+        "supporting_evidence_ids": [
+          "exp_01_10_01_01",
+          "exp_01_02_04_01",
+          "exp_01_03_03_01"
+        ]
+      },
+      {
+        "label": "Cross-Functional Executive Alignment",
+        "category": "leadership",
+        "use_priority": "secondary",
+        "supporting_capabilities": [
+          "Cross-Functional Strategy and Executive Alignment"
+        ],
+        "supporting_evidence_ids": [
+          "exp_01_10_02_01",
+          "exp_01_09_05_01",
+          "exp_01_04_04_01"
+        ]
+      },
+      {
+        "label": "Business-Driven AI Solutions",
+        "category": "business",
+        "use_priority": "secondary",
+        "supporting_capabilities": [
+          "Business Translation and Decision Support"
+        ],
+        "supporting_evidence_ids": [
+          "exp_01_09_03_01",
+          "exp_01_08_01_01",
+          "exp_01_04_04_01"
+        ]
+      },
+      {
+        "label": "AI/ML Model Lifecycle Management",
+        "category": "architecture",
+        "use_priority": "secondary",
+        "supporting_capabilities": [
+          "AI/ML Deployment and Lifecycle Support"
+        ],
+        "supporting_evidence_ids": [
+          "exp_01_01_02_01"
+        ]
+      },
+      {
+        "label": "Production Analytics Assistants",
+        "category": "genai",
+        "use_priority": "secondary",
+        "supporting_capabilities": [
+          "Governed GenAI and Tool-Calling Systems"
+        ],
+        "supporting_evidence_ids": [
+          "exp_01_01_01_04"
+        ]
+      },
+      {
+        "label": "Operational Intelligence Platforms",
+        "category": "operations",
+        "use_priority": "secondary",
+        "supporting_capabilities": [
+          "Enterprise AI and Operational Intelligence Platforms"
+        ],
+        "supporting_evidence_ids": [
+          "exp_01_09_03_01"
+        ]
+      },
+      {
+        "label": "Strategy & Technical Roadmaps",
+        "category": "leadership",
+        "use_priority": "secondary",
+        "supporting_capabilities": [
+          "Technical Roadmaps, Strategy, and Innovation"
+        ],
+        "supporting_evidence_ids": [
+          "exp_01_09_03_01",
+          "exp_01_09_05_01"
+        ]
+      },
+      {
+        "label": "Advanced Analytics & Decision Support",
+        "category": "data",
+        "use_priority": "secondary",
+        "supporting_capabilities": [
+          "Advanced Analytics and Decision Support"
+        ],
+        "supporting_evidence_ids": [
+          "exp_01_07_01_01"
+        ]
+      }
+    ]
+  },
+  "positioning_notes": {
+    "lead_story": "Current lead story is architecting and delivering governed analytics assistants and AI/ML platforms with operational controls, observability, and governance, supported by recent production and platform evidence.",
+    "avoid_overstating": [
+      "Do not present teaching evidence as direct production ownership.",
+      "Do not overstate prototype or short-cycle architecture as full production implementation.",
+      "Do not overstate roadmap or assessment evidence as delivery unless paired with implementation."
+    ],
+    "experience_section_guidance": [
+      "Frame NBCUniversal and similar prototype/short-cycle work as architectural or proof-of-concept contributions unless additional production evidence is available.",
+      "Use older Capital One and Raytheon evidence to demonstrate career depth, scale, and leadership, not as the primary current AI story.",
+      "Teaching and mentorship roles should be positioned as evidence of technical fluency, enablement, and cross-team influence."
+    ]
+  },
+  "core_expertise_resume_block": {
+    "heading": "CORE EXPERTISE",
+    "style": "grouped_skill_lines",
+    "items": [
+      {
+        "label": "AI Platform Architecture",
+        "text": "enterprise AI platforms, governed analytics assistants, operational intelligence systems, reusable AI/analytics frameworks",
+        "source_core_expertise_labels": [
+          "Enterprise AI Platform Architecture",
+          "Cloud-Native AI Infrastructure",
+          "Operational Intelligence Platforms",
+          "Reusable Analytics Frameworks",
+          "AI/ML Model Lifecycle Management"
+        ],
+        "missing_source_core_expertise_labels": [],
+        "supporting_capabilities": [
+          "AI/ML Deployment and Lifecycle Support",
+          "Cloud-Native AI Infrastructure and Data Platforms",
+          "Enterprise AI and Operational Intelligence Platforms",
+          "Reusable Frameworks and Developer Enablement"
+        ],
+        "supporting_evidence_ids": [
+          "exp_01_01_01_02",
+          "exp_01_01_01_04",
+          "exp_01_01_02_01",
+          "exp_01_05_04_01",
+          "exp_01_08_01_01",
+          "exp_01_09_03_01",
+          "exp_01_09_04_01"
+        ],
+        "supporting_categories": [
+          "architecture",
+          "data",
+          "operations"
+        ],
+        "supporting_priorities": [
+          "primary",
+          "secondary"
+        ]
+      },
+      {
+        "label": "GenAI & Tool-Calling Systems",
+        "text": "LLM applications, structured outputs, tool orchestration, RAG/GraphRAG concepts, prompt engineering, evaluation, traceability",
+        "source_core_expertise_labels": [
+          "Governed GenAI & Tool-Calling",
+          "Production Analytics Assistants"
+        ],
+        "missing_source_core_expertise_labels": [],
+        "supporting_capabilities": [
+          "Governed GenAI and Tool-Calling Systems"
+        ],
+        "supporting_evidence_ids": [
+          "exp_01_01_01_04",
+          "exp_01_02_02_01"
+        ],
+        "supporting_categories": [
+          "genai"
+        ],
+        "supporting_priorities": [
+          "primary",
+          "secondary"
+        ]
+      },
+      {
+        "label": "Governance & Operational Controls",
+        "text": "responsible AI adoption, guardrails, auditable execution, analyst-in-the-loop workflows, policy-aware system design",
+        "source_core_expertise_labels": [
+          "AI Governance & Controls",
+          "Governed GenAI & Tool-Calling"
+        ],
+        "missing_source_core_expertise_labels": [],
+        "supporting_capabilities": [
+          "AI Governance, Controls, and Responsible Adoption",
+          "Governed GenAI and Tool-Calling Systems"
+        ],
+        "supporting_evidence_ids": [
+          "exp_01_01_01_04",
+          "exp_01_02_02_01",
+          "exp_01_02_04_01"
+        ],
+        "supporting_categories": [
+          "genai",
+          "governance"
+        ],
+        "supporting_priorities": [
+          "primary"
+        ]
+      },
+      {
+        "label": "Observability & Reliability",
+        "text": "monitoring frameworks, incident detection, alerting, operational health, SLIs/SLOs, SEV analysis, on-call-friendly design",
+        "source_core_expertise_labels": [
+          "Observability & Monitoring Frameworks",
+          "Operational Intelligence Platforms"
+        ],
+        "missing_source_core_expertise_labels": [],
+        "supporting_capabilities": [
+          "Enterprise AI and Operational Intelligence Platforms",
+          "Observability, Monitoring, and Operational Controls"
+        ],
+        "supporting_evidence_ids": [
+          "exp_01_01_01_04",
+          "exp_01_05_04_01",
+          "exp_01_09_03_01"
+        ],
+        "supporting_categories": [
+          "operations"
+        ],
+        "supporting_priorities": [
+          "primary",
+          "secondary"
+        ]
+      },
+      {
+        "label": "Cloud & Data Platforms",
+        "text": "Python, SQL, BigQuery, AWS SageMaker/S3/Terraform, GCP, Docker, data profiling, validation, cross-system integration",
+        "source_core_expertise_labels": [
+          "Cloud-Native AI Infrastructure",
+          "Reusable Analytics Frameworks",
+          "Advanced Analytics & Decision Support"
+        ],
+        "missing_source_core_expertise_labels": [],
+        "supporting_capabilities": [
+          "Advanced Analytics and Decision Support",
+          "Cloud-Native AI Infrastructure and Data Platforms",
+          "Reusable Frameworks and Developer Enablement"
+        ],
+        "supporting_evidence_ids": [
+          "exp_01_01_01_02",
+          "exp_01_01_02_01",
+          "exp_01_05_04_01",
+          "exp_01_07_01_01",
+          "exp_01_08_01_01",
+          "exp_01_09_04_01"
+        ],
+        "supporting_categories": [
+          "architecture",
+          "data"
+        ],
+        "supporting_priorities": [
+          "primary",
+          "secondary"
+        ]
+      },
+      {
+        "label": "Technical Leadership",
+        "text": "architecture direction, executive alignment, technical roadmaps, stakeholder translation, mentoring, developer enablement",
+        "source_core_expertise_labels": [
+          "Technical Leadership & Mentorship",
+          "Cross-Functional Executive Alignment",
+          "Strategy & Technical Roadmaps",
+          "Business-Driven AI Solutions"
+        ],
+        "missing_source_core_expertise_labels": [],
+        "supporting_capabilities": [
+          "Business Translation and Decision Support",
+          "Cross-Functional Strategy and Executive Alignment",
+          "Technical Leadership, Mentorship, and Talent Development",
+          "Technical Roadmaps, Strategy, and Innovation"
+        ],
+        "supporting_evidence_ids": [
+          "exp_01_02_04_01",
+          "exp_01_03_03_01",
+          "exp_01_04_04_01",
+          "exp_01_08_01_01",
+          "exp_01_09_03_01",
+          "exp_01_09_05_01",
+          "exp_01_10_01_01",
+          "exp_01_10_02_01"
+        ],
+        "supporting_categories": [
+          "business",
+          "leadership"
+        ],
+        "supporting_priorities": [
+          "primary",
+          "secondary"
+        ]
+      }
+    ],
+    "patch_method": "Manual resume wording mapped back to generated Core Expertise items to preserve capability and evidence traceability."
+  },
+  "core_expertise_resume_block_original": {
+    "heading": "CORE EXPERTISE",
+    "style": "grouped_skill_lines",
+    "items": [
+      {
+        "label": "AI Platform Architecture",
+        "text": "enterprise AI platforms, governed analytics assistants, operational intelligence systems, reusable AI/analytics frameworks"
+      },
+      {
+        "label": "GenAI & Tool-Calling Systems",
+        "text": "LLM applications, structured outputs, tool orchestration, RAG/GraphRAG concepts, prompt engineering, evaluation, traceability"
+      },
+      {
+        "label": "Governance & Operational Controls",
+        "text": "responsible AI adoption, guardrails, auditable execution, analyst-in-the-loop workflows, policy-aware system design"
+      },
+      {
+        "label": "Observability & Reliability",
+        "text": "monitoring frameworks, incident detection, alerting, operational health, SLIs/SLOs, SEV analysis, on-call-friendly design"
+      },
+      {
+        "label": "Cloud & Data Platforms",
+        "text": "Python, SQL, BigQuery, AWS SageMaker/S3/Terraform, GCP, Docker, data profiling, validation, cross-system integration"
+      },
+      {
+        "label": "Technical Leadership",
+        "text": "architecture direction, executive alignment, technical roadmaps, stakeholder translation, mentoring, developer enablement"
+      }
+    ]
+  }
+}

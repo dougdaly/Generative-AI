@@ -1,0 +1,4619 @@
+{
+  "business_industries": [
+    {
+      "signal_type": "business_industries",
+      "canonical_signal": "technology_and_software",
+      "phrase_count": 16,
+      "jd_coverage": 11,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "High Tech",
+        "Software and Platforms",
+        "advertising technology",
+        "enterprise",
+        "enterprise IT",
+        "enterprise software",
+        "high tech",
+        "software and platforms",
+        "technology"
+      ],
+      "example_phrases": [
+        "High Tech",
+        "Software and Platforms",
+        "advertising technology",
+        "enterprise",
+        "enterprise IT"
+      ],
+      "rationale": "These phrases refer to the technology sector, including software, platforms, IT, and high tech."
+    },
+    {
+      "signal_type": "business_industries",
+      "canonical_signal": "financial_services",
+      "phrase_count": 22,
+      "jd_coverage": 8,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Banking",
+        "Capital Markets",
+        "Financial Services",
+        "Insurance",
+        "Private Equity",
+        "banking",
+        "capital markets",
+        "consumer finance",
+        "corporate finance",
+        "financial services",
+        "insurance",
+        "private equity"
+      ],
+      "example_phrases": [
+        "Banking",
+        "Capital Markets",
+        "Financial Services",
+        "Insurance",
+        "Private Equity"
+      ],
+      "rationale": "All phrases relate to the broader financial services industry, including banking, insurance, capital markets, and investment management."
+    },
+    {
+      "signal_type": "business_industries",
+      "canonical_signal": "travel_and_hospitality",
+      "phrase_count": 9,
+      "jd_coverage": 8,
+      "companies": [
+        "Accenture",
+        "Disney",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "Travel",
+        "cruise line",
+        "hospitality",
+        "travel",
+        "travel and hospitality",
+        "travel industry"
+      ],
+      "example_phrases": [
+        "Travel",
+        "cruise line",
+        "hospitality",
+        "travel",
+        "travel and hospitality"
+      ],
+      "rationale": "All phrases relate to travel, tourism, and hospitality services."
+    },
+    {
+      "signal_type": "business_industries",
+      "canonical_signal": "consumer_goods_and_retail",
+      "phrase_count": 12,
+      "jd_coverage": 7,
+      "companies": [
+        "Accenture",
+        "Disney",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "Consumer Goods and Services",
+        "Retail",
+        "consumer",
+        "consumer goods and services",
+        "consumer products",
+        "eCommerce",
+        "retail"
+      ],
+      "example_phrases": [
+        "Consumer Goods and Services",
+        "Retail",
+        "consumer",
+        "consumer goods and services",
+        "consumer products"
+      ],
+      "rationale": "All phrases relate to the sale and production of goods for consumers, including retail and eCommerce."
+    },
+    {
+      "signal_type": "business_industries",
+      "canonical_signal": "media_and_entertainment",
+      "phrase_count": 12,
+      "jd_coverage": 6,
+      "companies": [
+        "Accenture",
+        "Disney"
+      ],
+      "source_phrases": [
+        "Communications and Media",
+        "broadcast and cable networks",
+        "communications and media",
+        "digital content",
+        "licensing",
+        "media and entertainment",
+        "streaming platforms",
+        "streaming services (Disney+, Hulu, ESPN)",
+        "theme parks"
+      ],
+      "example_phrases": [
+        "Communications and Media",
+        "broadcast and cable networks",
+        "communications and media",
+        "digital content",
+        "licensing"
+      ],
+      "rationale": "These phrases cover the media, entertainment, and communications industries, including digital and broadcast content."
+    },
+    {
+      "signal_type": "business_industries",
+      "canonical_signal": "public_sector_and_government",
+      "phrase_count": 8,
+      "jd_coverage": 5,
+      "companies": [
+        "Accenture",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Public Service",
+        "US Federal Government",
+        "US federal government",
+        "public sector",
+        "public service"
+      ],
+      "example_phrases": [
+        "Public Service",
+        "US Federal Government",
+        "US federal government",
+        "public sector",
+        "public service"
+      ],
+      "rationale": "All phrases relate to government and public sector organizations."
+    },
+    {
+      "signal_type": "business_industries",
+      "canonical_signal": "industrial_and_manufacturing",
+      "phrase_count": 13,
+      "jd_coverage": 4,
+      "companies": [
+        "Accenture",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Aerospace and Defense",
+        "Automotive",
+        "Chemicals",
+        "Industrial",
+        "aerospace and defense",
+        "automotive",
+        "chemicals",
+        "industrial",
+        "manufacturing"
+      ],
+      "example_phrases": [
+        "Aerospace and Defense",
+        "Automotive",
+        "Chemicals",
+        "Industrial",
+        "aerospace and defense"
+      ],
+      "rationale": "All phrases relate to industrial production, manufacturing, and heavy industry sectors."
+    },
+    {
+      "signal_type": "business_industries",
+      "canonical_signal": "healthcare_and_life_sciences",
+      "phrase_count": 9,
+      "jd_coverage": 4,
+      "companies": [
+        "Accenture",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Health",
+        "Healthcare",
+        "Life Sciences",
+        "health",
+        "healthcare",
+        "life sciences"
+      ],
+      "example_phrases": [
+        "Health",
+        "Healthcare",
+        "Life Sciences",
+        "health",
+        "healthcare"
+      ],
+      "rationale": "These phrases refer to the healthcare and life sciences sectors."
+    },
+    {
+      "signal_type": "business_industries",
+      "canonical_signal": "consulting_and_professional_services",
+      "phrase_count": 4,
+      "jd_coverage": 4,
+      "companies": [
+        "Accenture",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "consulting"
+      ],
+      "example_phrases": [
+        "consulting"
+      ],
+      "rationale": "Consulting is a distinct professional services industry."
+    },
+    {
+      "signal_type": "business_industries",
+      "canonical_signal": "energy_and_natural_resources",
+      "phrase_count": 9,
+      "jd_coverage": 3,
+      "companies": [
+        "Accenture"
+      ],
+      "source_phrases": [
+        "Energy",
+        "Natural Resources",
+        "Utilities",
+        "energy",
+        "natural resources",
+        "utilities"
+      ],
+      "example_phrases": [
+        "Energy",
+        "Natural Resources",
+        "Utilities",
+        "energy",
+        "natural resources"
+      ],
+      "rationale": "These phrases refer to the energy sector, natural resources, and utilities."
+    },
+    {
+      "signal_type": "business_industries",
+      "canonical_signal": "high_value_manufacturing",
+      "phrase_count": 2,
+      "jd_coverage": 2,
+      "companies": [
+        "Accenture"
+      ],
+      "source_phrases": [
+        "high tech"
+      ],
+      "example_phrases": [
+        "high tech"
+      ],
+      "rationale": "High tech manufacturing is sometimes considered distinct, but here it's grouped under technology unless specifically referenced."
+    }
+  ],
+  "problem_spaces": [
+    {
+      "signal_type": "problem_spaces",
+      "canonical_signal": "decision_support_and_analytics",
+      "phrase_count": 11,
+      "jd_coverage": 9,
+      "companies": [
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "AI-driven decision-making",
+        "advanced analytics",
+        "analytics based decisioning",
+        "data-driven decision-making",
+        "decision support",
+        "forecasting",
+        "predictive analytics",
+        "reporting"
+      ],
+      "example_phrases": [
+        "AI-driven decision-making",
+        "advanced analytics",
+        "analytics based decisioning",
+        "data-driven decision-making",
+        "decision support"
+      ],
+      "rationale": "All relate to supporting or automating business decisions using analytics or AI."
+    },
+    {
+      "signal_type": "problem_spaces",
+      "canonical_signal": "workflow_automation",
+      "phrase_count": 10,
+      "jd_coverage": 9,
+      "companies": [
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "AI-enabled business process automation",
+        "automation",
+        "workflow automation"
+      ],
+      "example_phrases": [
+        "AI-enabled business process automation",
+        "automation",
+        "workflow automation"
+      ],
+      "rationale": "All relate to automating business or operational workflows, often with AI."
+    },
+    {
+      "signal_type": "problem_spaces",
+      "canonical_signal": "observability_and_monitoring",
+      "phrase_count": 10,
+      "jd_coverage": 7,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "AI observability",
+        "logging",
+        "monitoring",
+        "observability",
+        "platform health monitoring"
+      ],
+      "example_phrases": [
+        "AI observability",
+        "logging",
+        "monitoring",
+        "observability",
+        "platform health monitoring"
+      ],
+      "rationale": "All focus on monitoring, logging, and understanding system or AI model behavior."
+    },
+    {
+      "signal_type": "problem_spaces",
+      "canonical_signal": "risk_and_compliance",
+      "phrase_count": 8,
+      "jd_coverage": 7,
+      "companies": [
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "compliance (SOX)",
+        "compliance monitoring",
+        "governance and compliance",
+        "privacy and compliance",
+        "regulatory compliance",
+        "risk analysis",
+        "risk awareness"
+      ],
+      "example_phrases": [
+        "compliance (SOX)",
+        "compliance monitoring",
+        "governance and compliance",
+        "privacy and compliance",
+        "regulatory compliance"
+      ],
+      "rationale": "All address risk management and regulatory or policy compliance."
+    },
+    {
+      "signal_type": "problem_spaces",
+      "canonical_signal": "knowledge_and_information_retrieval",
+      "phrase_count": 6,
+      "jd_coverage": 6,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "context engineering",
+        "knowledge retrieval",
+        "search and personalization"
+      ],
+      "example_phrases": [
+        "context engineering",
+        "knowledge retrieval",
+        "search and personalization"
+      ],
+      "rationale": "All involve retrieving, searching, or contextualizing information."
+    },
+    {
+      "signal_type": "problem_spaces",
+      "canonical_signal": "ai_enablement_and_adoption",
+      "phrase_count": 10,
+      "jd_coverage": 5,
+      "companies": [
+        "Accenture",
+        "Marriott",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "AI adoption and enablement",
+        "AI and machine learning enablement",
+        "AI-empowered software development",
+        "AI/ML opportunities",
+        "cloud migration",
+        "digital accessibility",
+        "full stack integration",
+        "generative AI integration",
+        "innovative AI applications (chatbots, image processing)",
+        "software delivery lifecycle (SDLC)"
+      ],
+      "example_phrases": [
+        "AI adoption and enablement",
+        "AI and machine learning enablement",
+        "AI-empowered software development",
+        "AI/ML opportunities",
+        "cloud migration"
+      ],
+      "rationale": "All relate to enabling, adopting, or integrating AI and ML into business or software."
+    },
+    {
+      "signal_type": "problem_spaces",
+      "canonical_signal": "model_lifecycle_management",
+      "phrase_count": 8,
+      "jd_coverage": 5,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "model deployment",
+        "model evaluation",
+        "model explainability",
+        "model monitoring",
+        "production AI systems",
+        "scalable AI/ML deployment",
+        "scaling AI/ML/GenAI solutions"
+      ],
+      "example_phrases": [
+        "model deployment",
+        "model evaluation",
+        "model explainability",
+        "model monitoring",
+        "production AI systems"
+      ],
+      "rationale": "All relate to deploying, monitoring, evaluating, and scaling AI/ML models."
+    },
+    {
+      "signal_type": "problem_spaces",
+      "canonical_signal": "data_integration_and_quality",
+      "phrase_count": 7,
+      "jd_coverage": 5,
+      "companies": [
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "data integration",
+        "data integrity",
+        "data interoperability",
+        "data platform development",
+        "data quality assurance",
+        "large scale data ETL pipelines"
+      ],
+      "example_phrases": [
+        "data integration",
+        "data integrity",
+        "data interoperability",
+        "data platform development",
+        "data quality assurance"
+      ],
+      "rationale": "All focus on integrating, assuring quality, and managing data pipelines."
+    },
+    {
+      "signal_type": "problem_spaces",
+      "canonical_signal": "business_growth_and_modernization",
+      "phrase_count": 6,
+      "jd_coverage": 5,
+      "companies": [
+        "Accenture",
+        "Marriott",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "business growth",
+        "complex business problems",
+        "enterprise application modernization",
+        "merchant tools",
+        "service delivery",
+        "service delivery processes"
+      ],
+      "example_phrases": [
+        "business growth",
+        "complex business problems",
+        "enterprise application modernization",
+        "merchant tools",
+        "service delivery"
+      ],
+      "rationale": "All relate to business growth, modernization, and service delivery."
+    },
+    {
+      "signal_type": "problem_spaces",
+      "canonical_signal": "ai_infrastructure_and_performance",
+      "phrase_count": 10,
+      "jd_coverage": 4,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "AI infrastructure optimization",
+        "cost and scalability of computational stack",
+        "cost optimization",
+        "enterprise readiness",
+        "hardware performance optimization",
+        "infrastructure operations",
+        "performance optimization",
+        "power consumption optimization",
+        "production-ready AI solutions",
+        "scalable AI infrastructure"
+      ],
+      "example_phrases": [
+        "AI infrastructure optimization",
+        "cost and scalability of computational stack",
+        "cost optimization",
+        "enterprise readiness",
+        "hardware performance optimization"
+      ],
+      "rationale": "All relate to optimizing, scaling, and operating AI infrastructure and performance."
+    },
+    {
+      "signal_type": "problem_spaces",
+      "canonical_signal": "personalization_and_customer_experience",
+      "phrase_count": 8,
+      "jd_coverage": 4,
+      "companies": [
+        "Capital One",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "customer care platform modernization",
+        "customer experience optimization",
+        "digital assistant interaction",
+        "personalization",
+        "personalized customer experiences",
+        "real-time customer interaction",
+        "real-time customer support"
+      ],
+      "example_phrases": [
+        "customer care platform modernization",
+        "customer experience optimization",
+        "digital assistant interaction",
+        "personalization",
+        "personalized customer experiences"
+      ],
+      "rationale": "All focus on tailoring experiences or interactions for customers."
+    },
+    {
+      "signal_type": "problem_spaces",
+      "canonical_signal": "ai_governance_and_safety",
+      "phrase_count": 6,
+      "jd_coverage": 4,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "AI governance",
+        "AI safety",
+        "governance",
+        "trust and reliability",
+        "trust and safety"
+      ],
+      "example_phrases": [
+        "AI governance",
+        "AI safety",
+        "governance",
+        "trust and reliability",
+        "trust and safety"
+      ],
+      "rationale": "All relate to governing AI systems and ensuring their safety and trustworthiness."
+    },
+    {
+      "signal_type": "problem_spaces",
+      "canonical_signal": "change_and_configuration_management",
+      "phrase_count": 4,
+      "jd_coverage": 2,
+      "companies": [
+        "Disney",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "change management",
+        "configuration management",
+        "technical debt remediation"
+      ],
+      "example_phrases": [
+        "change management",
+        "configuration management",
+        "technical debt remediation"
+      ],
+      "rationale": "All relate to managing changes and configurations in systems or processes."
+    },
+    {
+      "signal_type": "problem_spaces",
+      "canonical_signal": "security_and_trust",
+      "phrase_count": 2,
+      "jd_coverage": 2,
+      "companies": [
+        "Accenture"
+      ],
+      "source_phrases": [
+        "security",
+        "security in AI solutions"
+      ],
+      "example_phrases": [
+        "security",
+        "security in AI solutions"
+      ],
+      "rationale": "Both relate to ensuring security in systems, especially AI."
+    },
+    {
+      "signal_type": "problem_spaces",
+      "canonical_signal": "measurement_and_reporting",
+      "phrase_count": 5,
+      "jd_coverage": 1,
+      "companies": [
+        "Disney"
+      ],
+      "source_phrases": [
+        "audience measurement",
+        "content marketing measurement",
+        "content measurement",
+        "cross-media measurement",
+        "cross-platform measurement"
+      ],
+      "example_phrases": [
+        "audience measurement",
+        "content marketing measurement",
+        "content measurement",
+        "cross-media measurement",
+        "cross-platform measurement"
+      ],
+      "rationale": "All relate to measuring and reporting on content, audiences, or media."
+    }
+  ],
+  "technology_areas": [
+    {
+      "signal_type": "technology_areas",
+      "canonical_signal": "cloud_native_and_cloud_computing",
+      "phrase_count": 18,
+      "jd_coverage": 15,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "Cloud platforms",
+        "cloud computing",
+        "cloud computing platforms and services",
+        "cloud platform for data, analytics, AI, and machine learning",
+        "cloud-based AI infrastructure",
+        "cloud-native AI systems",
+        "cloud-native data platforms",
+        "cloud-native development",
+        "cloud-native platforms",
+        "cloud-native solutions",
+        "cloud-native systems",
+        "cross-cloud architectures (AWS, Azure, Alibaba Cloud)",
+        "public, private, and sovereign clouds"
+      ],
+      "example_phrases": [
+        "Cloud platforms",
+        "cloud computing",
+        "cloud computing platforms and services",
+        "cloud platform for data, analytics, AI, and machine learning",
+        "cloud-based AI infrastructure"
+      ],
+      "rationale": "All refer to cloud-native technologies and cloud computing platforms/services."
+    },
+    {
+      "signal_type": "technology_areas",
+      "canonical_signal": "generative_ai",
+      "phrase_count": 11,
+      "jd_coverage": 9,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "Generative AI",
+        "Generative AI (GenAI)",
+        "Generative Adversarial Networks",
+        "genAI",
+        "generative AI",
+        "interactive LLM/genAI implementations"
+      ],
+      "example_phrases": [
+        "Generative AI",
+        "Generative AI (GenAI)",
+        "Generative Adversarial Networks",
+        "genAI",
+        "generative AI"
+      ],
+      "rationale": "All refer to generative artificial intelligence, including adversarial networks and implementations."
+    },
+    {
+      "signal_type": "technology_areas",
+      "canonical_signal": "mlops",
+      "phrase_count": 9,
+      "jd_coverage": 8,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "AI DevOps",
+        "AI/ML engineering",
+        "MLOps",
+        "machine learning operations (MLOps)"
+      ],
+      "example_phrases": [
+        "AI DevOps",
+        "AI/ML engineering",
+        "MLOps",
+        "machine learning operations (MLOps)"
+      ],
+      "rationale": "All refer to operationalizing and managing machine learning workflows and infrastructure."
+    },
+    {
+      "signal_type": "technology_areas",
+      "canonical_signal": "ai_infrastructure_and_platforms",
+      "phrase_count": 11,
+      "jd_coverage": 7,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "AI infrastructure",
+        "AI platform engineering",
+        "AI powered technology",
+        "AI runtime architecture",
+        "SaaS platforms",
+        "enterprise observability platforms",
+        "full stack AI architecture",
+        "scalable architecture",
+        "scalable data pipelines",
+        "solution architecture"
+      ],
+      "example_phrases": [
+        "AI infrastructure",
+        "AI platform engineering",
+        "AI powered technology",
+        "AI runtime architecture",
+        "SaaS platforms"
+      ],
+      "rationale": "All refer to infrastructure and platform engineering for AI systems."
+    },
+    {
+      "signal_type": "technology_areas",
+      "canonical_signal": "agentic_ai",
+      "phrase_count": 9,
+      "jd_coverage": 7,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "AI agents",
+        "AgentOps",
+        "Agentic AI",
+        "agent-driven solutions",
+        "agentic AI",
+        "multi-agent architecture"
+      ],
+      "example_phrases": [
+        "AI agents",
+        "AgentOps",
+        "Agentic AI",
+        "agent-driven solutions",
+        "agentic AI"
+      ],
+      "rationale": "All relate to agent-based or agentic artificial intelligence systems and architectures."
+    },
+    {
+      "signal_type": "technology_areas",
+      "canonical_signal": "large_language_models",
+      "phrase_count": 8,
+      "jd_coverage": 7,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "LLMs",
+        "foundation models",
+        "large language models (LLMs)"
+      ],
+      "example_phrases": [
+        "LLMs",
+        "foundation models",
+        "large language models (LLMs)"
+      ],
+      "rationale": "All refer to large-scale language models and foundational AI models."
+    },
+    {
+      "signal_type": "technology_areas",
+      "canonical_signal": "data_engineering_and_architecture",
+      "phrase_count": 12,
+      "jd_coverage": 6,
+      "companies": [
+        "Accenture",
+        "Disney",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "Data architecture",
+        "Data integration",
+        "Data modeling",
+        "data governance",
+        "data modeling",
+        "data pipelines",
+        "feature stores",
+        "feature/label foundations",
+        "knowledge and data engineering",
+        "knowledge graphs",
+        "real-time data pipelines",
+        "semantic layers"
+      ],
+      "example_phrases": [
+        "Data architecture",
+        "Data integration",
+        "Data modeling",
+        "data governance",
+        "data modeling"
+      ],
+      "rationale": "All relate to data engineering, modeling, and architecture for AI/ML systems."
+    },
+    {
+      "signal_type": "technology_areas",
+      "canonical_signal": "machine_learning_and_deep_learning",
+      "phrase_count": 11,
+      "jd_coverage": 6,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney"
+      ],
+      "source_phrases": [
+        "Machine Learning (ML)",
+        "deep learning",
+        "ensemble modeling",
+        "machine learning",
+        "machine learning systems",
+        "neural networks",
+        "reinforcement learning from human feedback (RLHF)",
+        "self-supervised learning",
+        "statistical modeling"
+      ],
+      "example_phrases": [
+        "Machine Learning (ML)",
+        "deep learning",
+        "ensemble modeling",
+        "machine learning",
+        "machine learning systems"
+      ],
+      "rationale": "All refer to core machine learning and deep learning techniques and systems."
+    },
+    {
+      "signal_type": "technology_areas",
+      "canonical_signal": "ai_specialized_techniques_and_tools",
+      "phrase_count": 10,
+      "jd_coverage": 6,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "AI observability",
+        "AI optimization",
+        "LLMOps",
+        "context engineering",
+        "memory architectures",
+        "optimization",
+        "prompt orchestration",
+        "simulation",
+        "tool/function calling"
+      ],
+      "example_phrases": [
+        "AI observability",
+        "AI optimization",
+        "LLMOps",
+        "context engineering",
+        "memory architectures"
+      ],
+      "rationale": "All refer to specialized AI techniques, tools, and operational practices."
+    },
+    {
+      "signal_type": "technology_areas",
+      "canonical_signal": "containerization_and_orchestration",
+      "phrase_count": 8,
+      "jd_coverage": 6,
+      "companies": [
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "AI orchestration frameworks",
+        "Kubernetes",
+        "Kubernetes (K8s)",
+        "container orchestration",
+        "containerization",
+        "orchestration",
+        "orchestration frameworks"
+      ],
+      "example_phrases": [
+        "AI orchestration frameworks",
+        "Kubernetes",
+        "Kubernetes (K8s)",
+        "container orchestration",
+        "containerization"
+      ],
+      "rationale": "All relate to containerization and orchestration technologies for scalable deployment."
+    },
+    {
+      "signal_type": "technology_areas",
+      "canonical_signal": "ci_cd_and_automation",
+      "phrase_count": 9,
+      "jd_coverage": 5,
+      "companies": [
+        "Disney",
+        "Marriott",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "CI/CD",
+        "CI/CD pipelines",
+        "automated pipelines",
+        "automated testing",
+        "automated testing & monitoring",
+        "automation",
+        "monitoring"
+      ],
+      "example_phrases": [
+        "CI/CD",
+        "CI/CD pipelines",
+        "automated pipelines",
+        "automated testing",
+        "automated testing & monitoring"
+      ],
+      "rationale": "All refer to continuous integration, continuous deployment, and automation/testing processes."
+    },
+    {
+      "signal_type": "technology_areas",
+      "canonical_signal": "microservices_and_event_driven",
+      "phrase_count": 8,
+      "jd_coverage": 4,
+      "companies": [
+        "Disney",
+        "Marriott",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "asynchronous programming",
+        "distributed compute",
+        "distributed systems",
+        "event-driven architecture",
+        "microservices",
+        "streaming and messaging systems"
+      ],
+      "example_phrases": [
+        "asynchronous programming",
+        "distributed compute",
+        "distributed systems",
+        "event-driven architecture",
+        "microservices"
+      ],
+      "rationale": "All relate to microservices, event-driven, and distributed system architectures."
+    },
+    {
+      "signal_type": "technology_areas",
+      "canonical_signal": "ai_governance_and_guardrails",
+      "phrase_count": 5,
+      "jd_coverage": 4,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney"
+      ],
+      "source_phrases": [
+        "AI governance",
+        "guardrails",
+        "model governance"
+      ],
+      "example_phrases": [
+        "AI governance",
+        "guardrails",
+        "model governance"
+      ],
+      "rationale": "All refer to governance, compliance, and guardrails for AI systems."
+    },
+    {
+      "signal_type": "technology_areas",
+      "canonical_signal": "retrieval_augmented_generation",
+      "phrase_count": 4,
+      "jd_coverage": 4,
+      "companies": [
+        "Capital One",
+        "Disney",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "RAG",
+        "RAG (Retrieval-Augmented Generation)",
+        "retrieval-augmented generation (RAG)",
+        "retrieval-augmented systems"
+      ],
+      "example_phrases": [
+        "RAG",
+        "RAG (Retrieval-Augmented Generation)",
+        "retrieval-augmented generation (RAG)",
+        "retrieval-augmented systems"
+      ],
+      "rationale": "All refer to retrieval-augmented generation systems and techniques."
+    },
+    {
+      "signal_type": "technology_areas",
+      "canonical_signal": "vector_and_semantic_search",
+      "phrase_count": 6,
+      "jd_coverage": 3,
+      "companies": [
+        "Capital One",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "embeddings",
+        "semantic search",
+        "similarity search",
+        "vector databases",
+        "vector search"
+      ],
+      "example_phrases": [
+        "embeddings",
+        "semantic search",
+        "similarity search",
+        "vector databases",
+        "vector search"
+      ],
+      "rationale": "All refer to vector-based and semantic search technologies, including embeddings."
+    }
+  ],
+  "capabilities": [
+    {
+      "signal_type": "capabilities",
+      "canonical_signal": "ai_architecture_and_design",
+      "phrase_count": 15,
+      "jd_coverage": 12,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "architecting AI systems",
+        "architecting ML platforms",
+        "architecting scalable, observable, resilient AI/ML systems",
+        "defining transition and target-state architectures",
+        "designing AI architectures",
+        "designing blueprints for AI systems",
+        "designing scalable and efficient application architectures",
+        "designing scalable and resilient architectures",
+        "designing software architectures",
+        "designing technical architectures",
+        "solution architecture"
+      ],
+      "example_phrases": [
+        "architecting AI systems",
+        "architecting ML platforms",
+        "architecting scalable, observable, resilient AI/ML systems",
+        "defining transition and target-state architectures",
+        "designing AI architectures"
+      ],
+      "rationale": "All relate to designing or architecting AI/ML or software systems."
+    },
+    {
+      "signal_type": "capabilities",
+      "canonical_signal": "mentoring_and_talent_development",
+      "phrase_count": 12,
+      "jd_coverage": 11,
+      "companies": [
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "coaching teams and stakeholders",
+        "mentoring and talent development",
+        "mentoring engineering teams",
+        "mentoring engineers",
+        "mentoring team members",
+        "mentoring/training team members"
+      ],
+      "example_phrases": [
+        "coaching teams and stakeholders",
+        "mentoring and talent development",
+        "mentoring engineering teams",
+        "mentoring engineers",
+        "mentoring team members"
+      ],
+      "rationale": "All involve mentoring, coaching, or developing talent."
+    },
+    {
+      "signal_type": "capabilities",
+      "canonical_signal": "cross_functional_collaboration",
+      "phrase_count": 10,
+      "jd_coverage": 10,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "collaborating across teams",
+        "collaborating with architects and cross-functional teams",
+        "collaborating with business and technical stakeholders",
+        "collaborating with client teams",
+        "collaborating with clients and stakeholders",
+        "collaborating with cross-functional teams",
+        "cross-functional collaboration",
+        "cross-functional partnership and communication",
+        "partnering with cross-functional teams"
+      ],
+      "example_phrases": [
+        "collaborating across teams",
+        "collaborating with architects and cross-functional teams",
+        "collaborating with business and technical stakeholders",
+        "collaborating with client teams",
+        "collaborating with clients and stakeholders"
+      ],
+      "rationale": "All involve collaboration across teams or functions."
+    },
+    {
+      "signal_type": "capabilities",
+      "canonical_signal": "communication_and_translation",
+      "phrase_count": 13,
+      "jd_coverage": 8,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "communicating complex AI concepts",
+        "communicating technical concepts",
+        "communicating tradeoffs",
+        "communicating with non-technical audiences",
+        "communicating with stakeholders",
+        "communicating with technical and business audiences",
+        "explaining technical concepts",
+        "presenting value propositions",
+        "status reporting to executives",
+        "technical translation between science and engineering",
+        "translating AI concepts to business outcomes",
+        "translating technical work to business goals"
+      ],
+      "example_phrases": [
+        "communicating complex AI concepts",
+        "communicating technical concepts",
+        "communicating tradeoffs",
+        "communicating with non-technical audiences",
+        "communicating with stakeholders"
+      ],
+      "rationale": "All involve communication or translation between technical and non-technical stakeholders."
+    },
+    {
+      "signal_type": "capabilities",
+      "canonical_signal": "technical_leadership",
+      "phrase_count": 9,
+      "jd_coverage": 8,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "leading and mentoring AI/ML engineering teams",
+        "leading complex projects",
+        "leading cross-functional teams",
+        "leading technical resources",
+        "managing multi-developer AI-aligned teams",
+        "technical leadership",
+        "technical leadership and oversight"
+      ],
+      "example_phrases": [
+        "leading and mentoring AI/ML engineering teams",
+        "leading complex projects",
+        "leading cross-functional teams",
+        "leading technical resources",
+        "managing multi-developer AI-aligned teams"
+      ],
+      "rationale": "All relate to leading teams, projects, or providing technical direction."
+    },
+    {
+      "signal_type": "capabilities",
+      "canonical_signal": "evaluation_and_experimentation",
+      "phrase_count": 9,
+      "jd_coverage": 8,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "automated evaluation and drift detection",
+        "evaluating and integrating emerging technologies",
+        "evaluating and integrating third-party AI technologies",
+        "evaluating and recommending new tools and technologies",
+        "evaluating and selecting technologies",
+        "evaluating models",
+        "evaluating platform health and capacity planning",
+        "model evaluation and experimentation"
+      ],
+      "example_phrases": [
+        "automated evaluation and drift detection",
+        "evaluating and integrating emerging technologies",
+        "evaluating and integrating third-party AI technologies",
+        "evaluating and recommending new tools and technologies",
+        "evaluating and selecting technologies"
+      ],
+      "rationale": "All relate to evaluating models, technologies, or platforms."
+    },
+    {
+      "signal_type": "capabilities",
+      "canonical_signal": "performance_and_optimization",
+      "phrase_count": 7,
+      "jd_coverage": 7,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "building scalable pipelines for metrics/logs/traces",
+        "optimizing AI infrastructure/hardware",
+        "optimizing AI system performance (scalability, cost, latency, throughput)",
+        "optimizing for scale and performance",
+        "optimizing performance and cost",
+        "troubleshooting and optimizing performance",
+        "troubleshooting production issues"
+      ],
+      "example_phrases": [
+        "building scalable pipelines for metrics/logs/traces",
+        "optimizing AI infrastructure/hardware",
+        "optimizing AI system performance (scalability, cost, latency, throughput)",
+        "optimizing for scale and performance",
+        "optimizing performance and cost"
+      ],
+      "rationale": "All relate to optimizing or troubleshooting performance and scalability."
+    },
+    {
+      "signal_type": "capabilities",
+      "canonical_signal": "governance_and_compliance",
+      "phrase_count": 9,
+      "jd_coverage": 6,
+      "companies": [
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "AI system governance",
+        "defining and implementing observability solutions",
+        "ensuring architectural compliance",
+        "ensuring privacy-by-design",
+        "ensuring security, privacy, and responsible AI",
+        "establishing CI/CD patterns",
+        "establishing best practices",
+        "establishing governance frameworks",
+        "responsible AI practices"
+      ],
+      "example_phrases": [
+        "AI system governance",
+        "defining and implementing observability solutions",
+        "ensuring architectural compliance",
+        "ensuring privacy-by-design",
+        "ensuring security, privacy, and responsible AI"
+      ],
+      "rationale": "All relate to governance, compliance, privacy, or responsible AI practices."
+    },
+    {
+      "signal_type": "capabilities",
+      "canonical_signal": "model_development_and_deployment",
+      "phrase_count": 8,
+      "jd_coverage": 5,
+      "companies": [
+        "Capital One",
+        "Disney"
+      ],
+      "source_phrases": [
+        "LLM inference",
+        "adapting and finetuning LLMs",
+        "designing and building AI/ML models",
+        "developing and deploying ML models",
+        "developing and deploying custom AI solutions",
+        "operationalizing models in production",
+        "productionizing decision science models",
+        "training foundation models"
+      ],
+      "example_phrases": [
+        "LLM inference",
+        "adapting and finetuning LLMs",
+        "designing and building AI/ML models",
+        "developing and deploying ML models",
+        "developing and deploying custom AI solutions"
+      ],
+      "rationale": "All relate to developing, deploying, or operationalizing AI/ML models."
+    },
+    {
+      "signal_type": "capabilities",
+      "canonical_signal": "system_integration_and_deployment",
+      "phrase_count": 8,
+      "jd_coverage": 5,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "data integration",
+        "deployment",
+        "full stack integration",
+        "full stack software development",
+        "integrating systems",
+        "model/service integration"
+      ],
+      "example_phrases": [
+        "data integration",
+        "deployment",
+        "full stack integration",
+        "full stack software development",
+        "integrating systems"
+      ],
+      "rationale": "All involve integrating systems, models, or deploying solutions."
+    },
+    {
+      "signal_type": "capabilities",
+      "canonical_signal": "change_and_project_management",
+      "phrase_count": 6,
+      "jd_coverage": 5,
+      "companies": [
+        "Accenture",
+        "Disney",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "balancing technical debt with business priorities",
+        "change management",
+        "portfolio prioritization and demand management",
+        "project management",
+        "risk assessment and escalation"
+      ],
+      "example_phrases": [
+        "balancing technical debt with business priorities",
+        "change management",
+        "portfolio prioritization and demand management",
+        "project management",
+        "risk assessment and escalation"
+      ],
+      "rationale": "All relate to managing change, projects, portfolios, or risk."
+    },
+    {
+      "signal_type": "capabilities",
+      "canonical_signal": "ai_solution_development",
+      "phrase_count": 6,
+      "jd_coverage": 5,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "building production-quality code",
+        "code review",
+        "designing and implementing production-ready AI solutions",
+        "designing, developing, testing, deploying, and supporting AI software components",
+        "prototyping and hardening AI-driven solutions",
+        "testing"
+      ],
+      "example_phrases": [
+        "building production-quality code",
+        "code review",
+        "designing and implementing production-ready AI solutions",
+        "designing, developing, testing, deploying, and supporting AI software components",
+        "prototyping and hardening AI-driven solutions"
+      ],
+      "rationale": "All relate to developing, testing, and deploying AI solutions."
+    },
+    {
+      "signal_type": "capabilities",
+      "canonical_signal": "ai_platforms_and_infrastructure",
+      "phrase_count": 5,
+      "jd_coverage": 5,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Marriott",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "architecting and building custom AI infrastructure/hardware solutions",
+        "delivering AI platforms and solutions",
+        "delivering libraries, platforms, or solution-level code",
+        "governing and optimizing platforms",
+        "platform modernization"
+      ],
+      "example_phrases": [
+        "architecting and building custom AI infrastructure/hardware solutions",
+        "delivering AI platforms and solutions",
+        "delivering libraries, platforms, or solution-level code",
+        "governing and optimizing platforms",
+        "platform modernization"
+      ],
+      "rationale": "All relate to building, delivering, or modernizing AI platforms and infrastructure."
+    },
+    {
+      "signal_type": "capabilities",
+      "canonical_signal": "documentation_and_audit",
+      "phrase_count": 5,
+      "jd_coverage": 5,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "authoring technical design documents",
+        "creating architectural artifacts (diagrams, models, roadmaps)",
+        "documentation",
+        "documentation and audit readiness",
+        "documenting architectural alternatives"
+      ],
+      "example_phrases": [
+        "authoring technical design documents",
+        "creating architectural artifacts (diagrams, models, roadmaps)",
+        "documentation",
+        "documentation and audit readiness",
+        "documenting architectural alternatives"
+      ],
+      "rationale": "All relate to documentation, audit, or creating technical artifacts."
+    },
+    {
+      "signal_type": "capabilities",
+      "canonical_signal": "requirements_and_analysis",
+      "phrase_count": 5,
+      "jd_coverage": 4,
+      "companies": [
+        "Disney",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "analyzing and defining system requirements",
+        "conducting technology lifecycle assessments",
+        "requirements gathering",
+        "research and analysis of emerging technologies",
+        "research, analysis, design, creation, and implementation of systems"
+      ],
+      "example_phrases": [
+        "analyzing and defining system requirements",
+        "conducting technology lifecycle assessments",
+        "requirements gathering",
+        "research and analysis of emerging technologies",
+        "research, analysis, design, creation, and implementation of systems"
+      ],
+      "rationale": "All relate to requirements analysis, research, and system definition."
+    },
+    {
+      "signal_type": "capabilities",
+      "canonical_signal": "ai_security_and_trust",
+      "phrase_count": 4,
+      "jd_coverage": 4,
+      "companies": [
+        "Accenture",
+        "Capital One"
+      ],
+      "source_phrases": [
+        "implementing guardrails",
+        "implementing security best practices",
+        "implementing trust and safety mechanisms",
+        "incorporating AI security"
+      ],
+      "example_phrases": [
+        "implementing guardrails",
+        "implementing security best practices",
+        "implementing trust and safety mechanisms",
+        "incorporating AI security"
+      ],
+      "rationale": "All relate to security, trust, and safety in AI systems."
+    },
+    {
+      "signal_type": "capabilities",
+      "canonical_signal": "frameworks_and_reusability",
+      "phrase_count": 4,
+      "jd_coverage": 4,
+      "companies": [
+        "Accenture",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "building reusable AI components",
+        "creating reusable assets",
+        "designing and developing reusable frameworks",
+        "designing reusable building blocks and libraries"
+      ],
+      "example_phrases": [
+        "building reusable AI components",
+        "creating reusable assets",
+        "designing and developing reusable frameworks",
+        "designing reusable building blocks and libraries"
+      ],
+      "rationale": "All relate to designing or building reusable frameworks, components, or assets."
+    },
+    {
+      "signal_type": "capabilities",
+      "canonical_signal": "innovation_and_research",
+      "phrase_count": 3,
+      "jd_coverage": 3,
+      "companies": [
+        "Capital One",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "applying novel AI research in production",
+        "incubating proof of concepts",
+        "research and analysis of emerging technologies"
+      ],
+      "example_phrases": [
+        "applying novel AI research in production",
+        "incubating proof of concepts",
+        "research and analysis of emerging technologies"
+      ],
+      "rationale": "All relate to innovation, research, or applying new concepts."
+    },
+    {
+      "signal_type": "capabilities",
+      "canonical_signal": "mlops_and_workflows",
+      "phrase_count": 3,
+      "jd_coverage": 3,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney"
+      ],
+      "source_phrases": [
+        "defining and executing MLOps strategy",
+        "implementing AgentOps/LLMOps",
+        "standardizing and automating workflows"
+      ],
+      "example_phrases": [
+        "defining and executing MLOps strategy",
+        "implementing AgentOps/LLMOps",
+        "standardizing and automating workflows"
+      ],
+      "rationale": "All relate to MLOps, workflow automation, and operationalizing AI."
+    },
+    {
+      "signal_type": "capabilities",
+      "canonical_signal": "continuous_learning_and_adaptation",
+      "phrase_count": 3,
+      "jd_coverage": 3,
+      "companies": [
+        "Accenture",
+        "Disney",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "continuous learning",
+        "facilitating knowledge sharing",
+        "staying current with emerging technologies"
+      ],
+      "example_phrases": [
+        "continuous learning",
+        "facilitating knowledge sharing",
+        "staying current with emerging technologies"
+      ],
+      "rationale": "All relate to ongoing learning, adaptation, and knowledge sharing."
+    }
+  ],
+  "technologies": [
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "python",
+      "phrase_count": 12,
+      "jd_coverage": 12,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Python"
+      ],
+      "example_phrases": [
+        "Python"
+      ],
+      "rationale": "Direct mention of the Python programming language."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "aws",
+      "phrase_count": 21,
+      "jd_coverage": 11,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "AWS",
+        "AWS Aurora",
+        "AWS Bedrock",
+        "AWS EKS",
+        "AWS EMR",
+        "AWS Lambda",
+        "AWS S3",
+        "AWS Ultraclusters",
+        "Bedrock",
+        "EC2"
+      ],
+      "example_phrases": [
+        "AWS",
+        "AWS Aurora",
+        "AWS Bedrock",
+        "AWS EKS",
+        "AWS EMR"
+      ],
+      "rationale": "All refer to Amazon Web Services or its specific services."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "google_cloud",
+      "phrase_count": 11,
+      "jd_coverage": 7,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "BigQuery",
+        "GCP",
+        "Google Cloud",
+        "Google Vertex AI",
+        "Pub/Sub",
+        "Vertex AI"
+      ],
+      "example_phrases": [
+        "BigQuery",
+        "GCP",
+        "Google Cloud",
+        "Google Vertex AI",
+        "Pub/Sub"
+      ],
+      "rationale": "All refer to Google Cloud Platform and its services."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "azure",
+      "phrase_count": 10,
+      "jd_coverage": 7,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Marriott",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "Azure",
+        "Azure AI Foundry",
+        "Azure Machine Learning",
+        "Azure OpenAI"
+      ],
+      "example_phrases": [
+        "Azure",
+        "Azure AI Foundry",
+        "Azure Machine Learning",
+        "Azure OpenAI"
+      ],
+      "rationale": "All refer to Microsoft Azure or its AI/ML services."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "scala_spark",
+      "phrase_count": 8,
+      "jd_coverage": 7,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "Apache Spark",
+        "Scala",
+        "Spark"
+      ],
+      "example_phrases": [
+        "Apache Spark",
+        "Scala",
+        "Spark"
+      ],
+      "rationale": "Scala language and Spark analytics engine."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "kubernetes",
+      "phrase_count": 9,
+      "jd_coverage": 6,
+      "companies": [
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "CRDs",
+        "Helm charts",
+        "Kubernetes",
+        "Kubernetes (EKS/ACK)",
+        "service mesh"
+      ],
+      "example_phrases": [
+        "CRDs",
+        "Helm charts",
+        "Kubernetes",
+        "Kubernetes (EKS/ACK)",
+        "service mesh"
+      ],
+      "rationale": "Kubernetes and related orchestration/configuration technologies."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "java",
+      "phrase_count": 7,
+      "jd_coverage": 6,
+      "companies": [
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "Java",
+        "Spring Boot"
+      ],
+      "example_phrases": [
+        "Java",
+        "Spring Boot"
+      ],
+      "rationale": "Java programming language and its major framework."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "sql_databases",
+      "phrase_count": 6,
+      "jd_coverage": 6,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "PostgreSQL",
+        "SQL"
+      ],
+      "example_phrases": [
+        "PostgreSQL",
+        "SQL"
+      ],
+      "rationale": "SQL and a major SQL database."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "r_language",
+      "phrase_count": 7,
+      "jd_coverage": 5,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "R",
+        "caret",
+        "dplyr",
+        "glmnet"
+      ],
+      "example_phrases": [
+        "R",
+        "caret",
+        "dplyr",
+        "glmnet"
+      ],
+      "rationale": "R programming language and popular R packages."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "snowflake",
+      "phrase_count": 6,
+      "jd_coverage": 5,
+      "companies": [
+        "Accenture",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Snowflake",
+        "Snowflake Cortex"
+      ],
+      "example_phrases": [
+        "Snowflake",
+        "Snowflake Cortex"
+      ],
+      "rationale": "Snowflake data platform and its AI service."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "pytorch",
+      "phrase_count": 6,
+      "jd_coverage": 5,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney"
+      ],
+      "source_phrases": [
+        "Lightning",
+        "PyTorch",
+        "Pytorch"
+      ],
+      "example_phrases": [
+        "Lightning",
+        "PyTorch",
+        "Pytorch"
+      ],
+      "rationale": "PyTorch deep learning framework and related ecosystem."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "ci_cd",
+      "phrase_count": 6,
+      "jd_coverage": 5,
+      "companies": [
+        "Disney",
+        "Marriott",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "CI/CD",
+        "GitHub Actions",
+        "GitLab",
+        "Harness",
+        "Jenkins"
+      ],
+      "example_phrases": [
+        "CI/CD",
+        "GitHub Actions",
+        "GitLab",
+        "Harness",
+        "Jenkins"
+      ],
+      "rationale": "Continuous integration and deployment tools."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "rest_apis",
+      "phrase_count": 6,
+      "jd_coverage": 5,
+      "companies": [
+        "Marriott",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "API calls",
+        "APIs",
+        "Akana",
+        "REST APIs",
+        "ReadyAPI"
+      ],
+      "example_phrases": [
+        "API calls",
+        "APIs",
+        "Akana",
+        "REST APIs",
+        "ReadyAPI"
+      ],
+      "rationale": "API technologies and tools."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "vector_databases",
+      "phrase_count": 5,
+      "jd_coverage": 5,
+      "companies": [
+        "Capital One",
+        "Disney",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "VectorDBs",
+        "vector databases"
+      ],
+      "example_phrases": [
+        "VectorDBs",
+        "vector databases"
+      ],
+      "rationale": "Both refer to vector database technologies."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "cloud_infrastructure",
+      "phrase_count": 5,
+      "jd_coverage": 4,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney"
+      ],
+      "source_phrases": [
+        "cloud AI services",
+        "cloud computing platforms",
+        "cloud infrastructure",
+        "cloud-native AI services",
+        "public cloud platforms"
+      ],
+      "example_phrases": [
+        "cloud AI services",
+        "cloud computing platforms",
+        "cloud infrastructure",
+        "cloud-native AI services",
+        "public cloud platforms"
+      ],
+      "rationale": "General references to cloud infrastructure and services."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "code_assistants",
+      "phrase_count": 8,
+      "jd_coverage": 3,
+      "companies": [
+        "Disney",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Claude Code",
+        "Cursor",
+        "GitHub Copilot",
+        "OpenAI Codex",
+        "code assistants"
+      ],
+      "example_phrases": [
+        "Claude Code",
+        "Cursor",
+        "GitHub Copilot",
+        "OpenAI Codex",
+        "code assistants"
+      ],
+      "rationale": "AI-powered code assistant tools."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "langchain",
+      "phrase_count": 6,
+      "jd_coverage": 3,
+      "companies": [
+        "Capital One",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "LangChain",
+        "LangGraph",
+        "LlamaIndex"
+      ],
+      "example_phrases": [
+        "LangChain",
+        "LangGraph",
+        "LlamaIndex"
+      ],
+      "rationale": "LangChain and related LLM orchestration frameworks."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "mlops",
+      "phrase_count": 6,
+      "jd_coverage": 3,
+      "companies": [
+        "Accenture",
+        "Disney"
+      ],
+      "source_phrases": [
+        "Kubeflow",
+        "MLFlow",
+        "MLOps",
+        "MLflow",
+        "automated pipelines",
+        "feature stores"
+      ],
+      "example_phrases": [
+        "Kubeflow",
+        "MLFlow",
+        "MLOps",
+        "MLflow",
+        "automated pipelines"
+      ],
+      "rationale": "MLOps tools and related ML pipeline technologies."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "databricks",
+      "phrase_count": 4,
+      "jd_coverage": 3,
+      "companies": [
+        "Accenture",
+        "Disney",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Databricks",
+        "Databricks Mosaic AI"
+      ],
+      "example_phrases": [
+        "Databricks",
+        "Databricks Mosaic AI"
+      ],
+      "rationale": "Databricks platform and its AI offering."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "docker",
+      "phrase_count": 3,
+      "jd_coverage": 3,
+      "companies": [
+        "Disney",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "Docker"
+      ],
+      "example_phrases": [
+        "Docker"
+      ],
+      "rationale": "Containerization technology."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "data_science_python",
+      "phrase_count": 5,
+      "jd_coverage": 2,
+      "companies": [
+        "Accenture",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "NumPy",
+        "Pandas",
+        "SciKit-Learn",
+        "SciPy",
+        "scikit-learn"
+      ],
+      "example_phrases": [
+        "NumPy",
+        "Pandas",
+        "SciKit-Learn",
+        "SciPy",
+        "scikit-learn"
+      ],
+      "rationale": "Popular Python data science libraries."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "c_family_languages",
+      "phrase_count": 4,
+      "jd_coverage": 2,
+      "companies": [
+        "Capital One"
+      ],
+      "source_phrases": [
+        "C#",
+        "C++"
+      ],
+      "example_phrases": [
+        "C#",
+        "C++"
+      ],
+      "rationale": "C-family programming languages."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "kafka_streaming",
+      "phrase_count": 4,
+      "jd_coverage": 2,
+      "companies": [
+        "Disney",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "Kafka",
+        "Kinesis",
+        "Pub/Sub"
+      ],
+      "example_phrases": [
+        "Kafka",
+        "Kinesis",
+        "Pub/Sub"
+      ],
+      "rationale": "Streaming and messaging platforms."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "go",
+      "phrase_count": 3,
+      "jd_coverage": 2,
+      "companies": [
+        "Capital One"
+      ],
+      "source_phrases": [
+        "Go",
+        "Golang"
+      ],
+      "example_phrases": [
+        "Go",
+        "Golang"
+      ],
+      "rationale": "Go programming language (Golang)."
+    },
+    {
+      "signal_type": "technologies",
+      "canonical_signal": "tensorflow",
+      "phrase_count": 2,
+      "jd_coverage": 2,
+      "companies": [
+        "Accenture"
+      ],
+      "source_phrases": [
+        "TensorFlow"
+      ],
+      "example_phrases": [
+        "TensorFlow"
+      ],
+      "rationale": "TensorFlow deep learning framework."
+    }
+  ],
+  "responsibilities": [
+    {
+      "signal_type": "responsibilities",
+      "canonical_signal": "cross_functional_collaboration",
+      "phrase_count": 11,
+      "jd_coverage": 9,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "Lead multi-quarter initiatives with product, analytics, and platform engineering stakeholders",
+        "collaborate with architects and engineering teams",
+        "collaborate with cross-functional teams and global community",
+        "collaborate with product, finance, and data science teams",
+        "collaborating with client teams to finalize requirements",
+        "collaborating with clients, stakeholders, and development teams",
+        "collaborating with vendors and service providers",
+        "leading and collaborating with cross-functional teams",
+        "partner with cross-functional teams to deliver AI-powered products",
+        "partnering with data scientists, software engineers, ML engineers, and product managers",
+        "partnering with product owners, engineering teams, and project managers"
+      ],
+      "example_phrases": [
+        "Lead multi-quarter initiatives with product, analytics, and platform engineering stakeholders",
+        "collaborate with architects and engineering teams",
+        "collaborate with cross-functional teams and global community",
+        "collaborate with product, finance, and data science teams",
+        "collaborating with client teams to finalize requirements"
+      ],
+      "rationale": "These phrases all describe working closely with various internal and external teams to achieve shared goals."
+    },
+    {
+      "signal_type": "responsibilities",
+      "canonical_signal": "mentorship_and_team_leadership",
+      "phrase_count": 9,
+      "jd_coverage": 9,
+      "companies": [
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Coach and mentor engineers, host architecture office hours",
+        "Lead and mentor a specialized team of AI/ML engineers",
+        "Mentor engineers through code/design reviews",
+        "Mentoring peers and clients on AI engineering practices",
+        "coach teams and client stakeholders on AI-accelerated practices",
+        "lead and mentor multiple engineering teams",
+        "mentor and train team members",
+        "mentor junior engineers",
+        "providing coaching and mentorship to engineering teams"
+      ],
+      "example_phrases": [
+        "Coach and mentor engineers, host architecture office hours",
+        "Lead and mentor a specialized team of AI/ML engineers",
+        "Mentor engineers through code/design reviews",
+        "Mentoring peers and clients on AI engineering practices",
+        "coach teams and client stakeholders on AI-accelerated practices"
+      ],
+      "rationale": "All phrases involve mentoring, coaching, or leading engineering teams or individuals."
+    },
+    {
+      "signal_type": "responsibilities",
+      "canonical_signal": "business_alignment_and_communication",
+      "phrase_count": 8,
+      "jd_coverage": 7,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Articulating technical decisions, delivery progress, risks, and business value to client stakeholders",
+        "Communicate and influence at all organizational levels",
+        "Communicating technical concepts and value propositions to diverse audiences",
+        "Communicating technical concepts to stakeholders",
+        "influence cross-functional stakeholders up to VP level",
+        "present status, analysis, and reporting to stakeholders and executives",
+        "translating business outcomes into technical solutions",
+        "translating complex work into tangible business goals",
+        "understanding business objectives"
+      ],
+      "example_phrases": [
+        "Articulating technical decisions, delivery progress, risks, and business value to client stakeholders",
+        "Communicate and influence at all organizational levels",
+        "Communicating technical concepts and value propositions to diverse audiences",
+        "Communicating technical concepts to stakeholders",
+        "influence cross-functional stakeholders up to VP level"
+      ],
+      "rationale": "These phrases describe aligning technical work with business goals and communicating with stakeholders."
+    },
+    {
+      "signal_type": "responsibilities",
+      "canonical_signal": "ai_ml_solution_architecture",
+      "phrase_count": 11,
+      "jd_coverage": 6,
+      "companies": [
+        "Accenture",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Contributing to AI solution architecture",
+        "architect and implement scalable services",
+        "architect scalable ML platforms and reusable components",
+        "architecting enterprise grade AI platforms and solutions",
+        "contribute to architecture of client solutions",
+        "defining and delivering long-term technology architecture vision, standards, and roadmaps",
+        "design scalable and efficient application architectures",
+        "designing and architecting scalable, resilient, high-performance technology solutions",
+        "designing and delivering full stack AI architecture for platforms, products, or engagements",
+        "lead the design, development, and deployment of software solutions for licensing financial systems and AI-powered applications",
+        "leading architecture efforts across enterprise applications including revenue management systems",
+        "own product architecture"
+      ],
+      "example_phrases": [
+        "Contributing to AI solution architecture",
+        "architect and implement scalable services",
+        "architect scalable ML platforms and reusable components",
+        "architecting enterprise grade AI platforms and solutions",
+        "contribute to architecture of client solutions"
+      ],
+      "rationale": "All phrases relate to designing, architecting, and leading the development of scalable AI/ML or technology solutions and platforms."
+    },
+    {
+      "signal_type": "responsibilities",
+      "canonical_signal": "ai_security_and_compliance",
+      "phrase_count": 6,
+      "jd_coverage": 6,
+      "companies": [
+        "Accenture",
+        "Disney",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "Ensure compliance with security, privacy, and regulatory standards",
+        "Ensure privacy-by-design practices, PII safeguards, documentation, and audit readiness",
+        "build and maintain SOX Compliance solution in Dynatrace and GitHub",
+        "ensuring architectural compliance with regulatory and security requirements",
+        "implement security best practices in AI solutions",
+        "incorporating AI security and governance"
+      ],
+      "example_phrases": [
+        "Ensure compliance with security, privacy, and regulatory standards",
+        "Ensure privacy-by-design practices, PII safeguards, documentation, and audit readiness",
+        "build and maintain SOX Compliance solution in Dynatrace and GitHub",
+        "ensuring architectural compliance with regulatory and security requirements",
+        "implement security best practices in AI solutions"
+      ],
+      "rationale": "All phrases relate to ensuring security, privacy, and regulatory compliance in AI systems."
+    },
+    {
+      "signal_type": "responsibilities",
+      "canonical_signal": "ai_ml_model_development",
+      "phrase_count": 13,
+      "jd_coverage": 5,
+      "companies": [
+        "Capital One",
+        "Disney",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Applying data science and machine learning methods",
+        "Designing, building, evaluating, and deploying production-grade AI systems for clients",
+        "Lead development, training, and deployment of advanced ML models for identity resolution, look-alike modeling, and cross-platform measurement",
+        "Optimize ML systems for scale and performance",
+        "adapting and finetuning LLMs for customer-facing applications",
+        "apply machine learning and AI techniques to optimize workflows",
+        "building ML and NLP models through all phases of development",
+        "building and shipping scalable AI/ML solutions",
+        "conduct model evaluation and experimentation",
+        "implement LLM inference",
+        "introduce and invent LLM optimization techniques",
+        "operationalizing models in resilient production systems",
+        "train foundation models"
+      ],
+      "example_phrases": [
+        "Applying data science and machine learning methods",
+        "Designing, building, evaluating, and deploying production-grade AI systems for clients",
+        "Lead development, training, and deployment of advanced ML models for identity resolution, look-alike modeling, and cross-platform measurement",
+        "Optimize ML systems for scale and performance",
+        "adapting and finetuning LLMs for customer-facing applications"
+      ],
+      "rationale": "These phrases focus on developing, training, optimizing, and deploying AI/ML models and systems."
+    },
+    {
+      "signal_type": "responsibilities",
+      "canonical_signal": "ai_infrastructure_and_ops",
+      "phrase_count": 11,
+      "jd_coverage": 4,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "Architect and implement MLOps roadmap and practices",
+        "Ensure operational reliability and rapid response to failures",
+        "Implement automated testing, validation, and monitoring",
+        "architect and manage logging and monitoring tool deployments across clouds",
+        "define, implement, govern, optimize, and monitor observability solutions",
+        "design, implement, and maintain scalable observability solutions for Kubernetes and other data sources",
+        "designing and documenting AgentOps and LLMOps solutions",
+        "develop, implement, and support logging, monitoring, reporting, and automation",
+        "ensure AI system governance and observability",
+        "implementing AgentOps/LLMOps, AI governance, security, and observability solutions",
+        "infrastructure-as-code development and configuration management"
+      ],
+      "example_phrases": [
+        "Architect and implement MLOps roadmap and practices",
+        "Ensure operational reliability and rapid response to failures",
+        "Implement automated testing, validation, and monitoring",
+        "architect and manage logging and monitoring tool deployments across clouds",
+        "define, implement, govern, optimize, and monitor observability solutions"
+      ],
+      "rationale": "These responsibilities focus on AI infrastructure, MLOps, observability, and operational excellence."
+    },
+    {
+      "signal_type": "responsibilities",
+      "canonical_signal": "ai_governance_and_best_practices",
+      "phrase_count": 8,
+      "jd_coverage": 4,
+      "companies": [
+        "Disney",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "Build shared libraries and best practices",
+        "Define data contracts, metadata/lineage expectations, and automated quality controls",
+        "Define design patterns and roadmaps for reusable capabilities",
+        "Establish CI/CD patterns, model versioning/registry, automated evaluation, drift detection, monitoring dashboards/alerts, and operational playbooks",
+        "developing and promoting architecture methodologies, patterns, and standards",
+        "ensuring alignment with enterprise standards and best practices",
+        "establishing governance frameworks for technology platforms",
+        "set technical standards and develop reusable frameworks"
+      ],
+      "example_phrases": [
+        "Build shared libraries and best practices",
+        "Define data contracts, metadata/lineage expectations, and automated quality controls",
+        "Define design patterns and roadmaps for reusable capabilities",
+        "Establish CI/CD patterns, model versioning/registry, automated evaluation, drift detection, monitoring dashboards/alerts, and operational playbooks",
+        "developing and promoting architecture methodologies, patterns, and standards"
+      ],
+      "rationale": "All relate to establishing standards, governance, and best practices for AI/ML and technology."
+    },
+    {
+      "signal_type": "responsibilities",
+      "canonical_signal": "innovation_and_emerging_technology",
+      "phrase_count": 7,
+      "jd_coverage": 4,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Staying current on emerging AI engineering patterns and technologies",
+        "evaluate and recommend new tools and technologies",
+        "experimenting and innovating with generative AI technologies",
+        "explore innovative AI applications (chatbots, image processing)",
+        "foster a culture of innovation, inclusion, and technical excellence",
+        "researching and evaluating emerging technologies",
+        "stay current with emerging technologies"
+      ],
+      "example_phrases": [
+        "Staying current on emerging AI engineering patterns and technologies",
+        "evaluate and recommend new tools and technologies",
+        "experimenting and innovating with generative AI technologies",
+        "explore innovative AI applications (chatbots, image processing)",
+        "foster a culture of innovation, inclusion, and technical excellence"
+      ],
+      "rationale": "These responsibilities focus on innovation, staying up-to-date, and exploring new technologies."
+    },
+    {
+      "signal_type": "responsibilities",
+      "canonical_signal": "ai_risk_and_quality_management",
+      "phrase_count": 7,
+      "jd_coverage": 4,
+      "companies": [
+        "Accenture",
+        "Disney",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "analyze current environment for deficiencies and provide solutions",
+        "assess and escalate risks as needed",
+        "ensure adherence to development protocols and business case procedures",
+        "ensure solutions meet quality standards",
+        "forecasting and compliance monitoring",
+        "maintain balance between business and operational risk",
+        "validate completeness of requirements"
+      ],
+      "example_phrases": [
+        "analyze current environment for deficiencies and provide solutions",
+        "assess and escalate risks as needed",
+        "ensure adherence to development protocols and business case procedures",
+        "ensure solutions meet quality standards",
+        "forecasting and compliance monitoring"
+      ],
+      "rationale": "These phrases focus on risk management, compliance, and ensuring quality in AI/technology solutions."
+    },
+    {
+      "signal_type": "responsibilities",
+      "canonical_signal": "ai_product_and_platform_delivery",
+      "phrase_count": 6,
+      "jd_coverage": 4,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Building and integrating AI systems with enterprise data sources and applications",
+        "Designing and building AI-enabled applications and systems",
+        "delivering AI-powered products",
+        "delivering libraries, platforms, or solution-level code to products",
+        "design and implement production-ready AI solutions",
+        "design, develop, test, deploy, and support AI software components"
+      ],
+      "example_phrases": [
+        "Building and integrating AI systems with enterprise data sources and applications",
+        "Designing and building AI-enabled applications and systems",
+        "delivering AI-powered products",
+        "delivering libraries, platforms, or solution-level code to products",
+        "design and implement production-ready AI solutions"
+      ],
+      "rationale": "All relate to delivering AI-powered products, platforms, or software components."
+    },
+    {
+      "signal_type": "responsibilities",
+      "canonical_signal": "ai_solution_evaluation_and_selection",
+      "phrase_count": 5,
+      "jd_coverage": 4,
+      "companies": [
+        "Accenture",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Developing evaluation approaches for AI systems",
+        "advise on AI infrastructure technology and vendor evaluation, selection, and integration",
+        "conducting feasibility studies and technology lifecycle assessments",
+        "evaluate and integrate third-party AI technologies",
+        "evaluating and selecting technologies for AI platforms"
+      ],
+      "example_phrases": [
+        "Developing evaluation approaches for AI systems",
+        "advise on AI infrastructure technology and vendor evaluation, selection, and integration",
+        "conducting feasibility studies and technology lifecycle assessments",
+        "evaluate and integrate third-party AI technologies",
+        "evaluating and selecting technologies for AI platforms"
+      ],
+      "rationale": "All relate to evaluating, selecting, and integrating AI technologies and solutions."
+    },
+    {
+      "signal_type": "responsibilities",
+      "canonical_signal": "ai_system_performance_and_optimization",
+      "phrase_count": 4,
+      "jd_coverage": 4,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "Optimize orchestration for performance and cost (batching, caching, heuristic tuning)",
+        "lead optimization efforts for observability platform",
+        "optimize AI infrastructure/hardware performance, power consumption, cost, and scalability",
+        "troubleshooting and optimizing AI system performance"
+      ],
+      "example_phrases": [
+        "Optimize orchestration for performance and cost (batching, caching, heuristic tuning)",
+        "lead optimization efforts for observability platform",
+        "optimize AI infrastructure/hardware performance, power consumption, cost, and scalability",
+        "troubleshooting and optimizing AI system performance"
+      ],
+      "rationale": "All focus on optimizing AI systems, infrastructure, or platforms for performance and efficiency."
+    },
+    {
+      "signal_type": "responsibilities",
+      "canonical_signal": "ai_system_integration_and_interoperability",
+      "phrase_count": 4,
+      "jd_coverage": 4,
+      "companies": [
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Building and integrating AI systems with enterprise data sources and applications",
+        "defining integration and interoperability standards",
+        "integrate with internal and third-party financial platforms",
+        "onboard data sources into observability tools"
+      ],
+      "example_phrases": [
+        "Building and integrating AI systems with enterprise data sources and applications",
+        "defining integration and interoperability standards",
+        "integrate with internal and third-party financial platforms",
+        "onboard data sources into observability tools"
+      ],
+      "rationale": "All relate to integrating AI systems with other platforms, data sources, or defining interoperability standards."
+    },
+    {
+      "signal_type": "responsibilities",
+      "canonical_signal": "ai_component_and_tool_development",
+      "phrase_count": 4,
+      "jd_coverage": 3,
+      "companies": [
+        "Capital One",
+        "Disney",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Creating reusable assets (reference architectures, accelerators, code templates, demos, enablement materials)",
+        "Design and build reusable building blocks for modelers",
+        "Develop GenAI SDK, CLI, and starter kits for rapid prototyping",
+        "Provide documentation and training for reusable tools",
+        "build reusable AI components and agents"
+      ],
+      "example_phrases": [
+        "Creating reusable assets (reference architectures, accelerators, code templates, demos, enablement materials)",
+        "Design and build reusable building blocks for modelers",
+        "Develop GenAI SDK, CLI, and starter kits for rapid prototyping",
+        "Provide documentation and training for reusable tools",
+        "build reusable AI components and agents"
+      ],
+      "rationale": "These responsibilities involve building reusable AI components, tools, and assets."
+    },
+    {
+      "signal_type": "responsibilities",
+      "canonical_signal": "project_and_service_delivery_management",
+      "phrase_count": 11,
+      "jd_coverage": 2,
+      "companies": [
+        "Marriott"
+      ],
+      "source_phrases": [
+        "coordinate deployment and production support activities",
+        "enhance service delivery, operations, and continual improvement",
+        "facilitate achievement of deliverables and obligations of Service Providers",
+        "facilitate timely resolution of service delivery problems",
+        "follow project management standards",
+        "liaise with multiple teams to steer projects",
+        "make decisions on complex, non-routine requests",
+        "make short term plans for team resource utilization",
+        "monitor Service Provider outcomes",
+        "review work effort estimates",
+        "validate Service Provider project plans and metrics"
+      ],
+      "example_phrases": [
+        "coordinate deployment and production support activities",
+        "enhance service delivery, operations, and continual improvement",
+        "facilitate achievement of deliverables and obligations of Service Providers",
+        "facilitate timely resolution of service delivery problems",
+        "follow project management standards"
+      ],
+      "rationale": "These responsibilities focus on managing projects, service delivery, and operational processes."
+    }
+  ],
+  "seniority_signals": [
+    {
+      "signal_type": "seniority_signals",
+      "canonical_signal": "years_of_experience",
+      "phrase_count": 13,
+      "jd_coverage": 11,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "10+ years of progressive experience in software development and architecture",
+        "12+ years of related experience",
+        "3+ years defining transition and target-state architectures for large-scale digital transformations",
+        "4+ years of experience designing and building data, AI, software, or machine learning solutions",
+        "6+ years experience in production software",
+        "7+ years of professional experience delivering production ML systems",
+        "7+ years of software engineering experience",
+        "7+ years\u2019 experience in IT",
+        "8+ years experience developing AI/ML algorithms or technologies",
+        "8+ years total experience (preferred)",
+        "8+ years\u2019 hands on experience",
+        "at least 8 years of experience developing AI and ML algorithms or technologies",
+        "minimum 5 years of experience in designing, engineering & operationalizing large scale AI/ML solutions"
+      ],
+      "example_phrases": [
+        "10+ years of progressive experience in software development and architecture",
+        "12+ years of related experience",
+        "3+ years defining transition and target-state architectures for large-scale digital transformations",
+        "4+ years of experience designing and building data, AI, software, or machine learning solutions",
+        "6+ years experience in production software"
+      ],
+      "rationale": "All specify years of experience, a common seniority indicator."
+    },
+    {
+      "signal_type": "seniority_signals",
+      "canonical_signal": "mentorship_and_team_guidance",
+      "phrase_count": 10,
+      "jd_coverage": 9,
+      "companies": [
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "Mentoring engineers, data scientists, or client teams",
+        "guiding teams",
+        "mentor engineers",
+        "mentor junior engineers",
+        "mentoring engineers",
+        "mentoring other team members",
+        "mentoring team members",
+        "mentoring/training team members",
+        "passionate about talent development for your own team and beyond",
+        "providing coaching and mentorship to engineering teams"
+      ],
+      "example_phrases": [
+        "Mentoring engineers, data scientists, or client teams",
+        "guiding teams",
+        "mentor engineers",
+        "mentor junior engineers",
+        "mentoring engineers"
+      ],
+      "rationale": "All refer to mentoring, coaching, or guiding engineers or teams."
+    },
+    {
+      "signal_type": "seniority_signals",
+      "canonical_signal": "senior_engineer",
+      "phrase_count": 8,
+      "jd_coverage": 7,
+      "companies": [
+        "Accenture",
+        "Disney",
+        "Marriott",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "Senior Architect",
+        "Senior Consultant",
+        "Senior Level",
+        "Senior Principal",
+        "Senior Software Engineer",
+        "Sr. Systems Engineer",
+        "senior individual contributor"
+      ],
+      "example_phrases": [
+        "Senior Architect",
+        "Senior Consultant",
+        "Senior Level",
+        "Senior Principal",
+        "Senior Software Engineer"
+      ],
+      "rationale": "All refer to senior-level engineering or consulting roles."
+    },
+    {
+      "signal_type": "seniority_signals",
+      "canonical_signal": "influencing_cross_functional_teams",
+      "phrase_count": 7,
+      "jd_coverage": 7,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "Influence cross-functional stakeholders up to VP and C-suite",
+        "collaborate closely with architects and staff engineers",
+        "collaborate with client teams",
+        "engage with multiple teams and contribute on key decisions",
+        "influence cross-functional stakeholders up to VP level",
+        "influential and able to bring along cross-functional teams",
+        "leading and collaborating with cross-functional teams"
+      ],
+      "example_phrases": [
+        "Influence cross-functional stakeholders up to VP and C-suite",
+        "collaborate closely with architects and staff engineers",
+        "collaborate with client teams",
+        "engage with multiple teams and contribute on key decisions",
+        "influence cross-functional stakeholders up to VP level"
+      ],
+      "rationale": "All refer to influencing or collaborating with cross-functional or external teams."
+    },
+    {
+      "signal_type": "seniority_signals",
+      "canonical_signal": "ownership_and_delivery",
+      "phrase_count": 9,
+      "jd_coverage": 6,
+      "companies": [
+        "Accenture",
+        "Disney",
+        "Marriott",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "Owning implementation workstreams",
+        "demonstrated experience delivering technology solutions in a fast-paced, deadline-driven enterprise environment",
+        "makes decisions on complex, non-routine requests",
+        "own the full software development lifecycle",
+        "provide consultation for routine and complex systems development",
+        "provide solutions to problems that apply across multiple teams",
+        "responsible for team decisions",
+        "take ownership of complex development initiatives",
+        "technical delivery ownership"
+      ],
+      "example_phrases": [
+        "Owning implementation workstreams",
+        "demonstrated experience delivering technology solutions in a fast-paced, deadline-driven enterprise environment",
+        "makes decisions on complex, non-routine requests",
+        "own the full software development lifecycle",
+        "provide consultation for routine and complex systems development"
+      ],
+      "rationale": "All refer to ownership, responsibility, and delivery of technical solutions or teams."
+    },
+    {
+      "signal_type": "seniority_signals",
+      "canonical_signal": "lead_engineer",
+      "phrase_count": 8,
+      "jd_coverage": 6,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "Lead Machine Learning Engineer",
+        "Lead Software Engineer",
+        "lead AI architecture & technical design workshops",
+        "lead and mentor multiple engineering teams",
+        "lead optimization efforts",
+        "lead technical initiatives across teams",
+        "lead the design and implementation",
+        "leadership of complex projects"
+      ],
+      "example_phrases": [
+        "Lead Machine Learning Engineer",
+        "Lead Software Engineer",
+        "lead AI architecture & technical design workshops",
+        "lead and mentor multiple engineering teams",
+        "lead optimization efforts"
+      ],
+      "rationale": "All refer to leading engineering teams, projects, or technical initiatives."
+    },
+    {
+      "signal_type": "seniority_signals",
+      "canonical_signal": "architect_role",
+      "phrase_count": 8,
+      "jd_coverage": 6,
+      "companies": [
+        "Accenture",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Advanced AI Architect",
+        "Architect of technical backbone",
+        "Experience contributing to technical architecture",
+        "Software Architect",
+        "leadership skills in system or platform architecture",
+        "leading architecture efforts across enterprise applications",
+        "minimum 12 years of experience in Solution Architecture",
+        "responsible for designing and delivering full stack AI architecture"
+      ],
+      "example_phrases": [
+        "Advanced AI Architect",
+        "Architect of technical backbone",
+        "Experience contributing to technical architecture",
+        "Software Architect",
+        "leadership skills in system or platform architecture"
+      ],
+      "rationale": "All refer to architect-level roles or responsibilities in technical architecture."
+    },
+    {
+      "signal_type": "seniority_signals",
+      "canonical_signal": "strategic_and_visionary_leadership",
+      "phrase_count": 9,
+      "jd_coverage": 5,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney"
+      ],
+      "source_phrases": [
+        "Foundational leadership role",
+        "Strategic planning and consulting with executives",
+        "Thought partner for all levels",
+        "Visionary leader",
+        "challenging conventional thinking and improving the status quo",
+        "contribute to technical vision and long-term roadmap",
+        "driving force to experiment, innovate and create next generation experiences",
+        "high-impact role shaping the future of AI systems in the enterprise",
+        "visionary"
+      ],
+      "example_phrases": [
+        "Foundational leadership role",
+        "Strategic planning and consulting with executives",
+        "Thought partner for all levels",
+        "Visionary leader",
+        "challenging conventional thinking and improving the status quo"
+      ],
+      "rationale": "All refer to strategic, visionary, or foundational leadership and influence."
+    },
+    {
+      "signal_type": "seniority_signals",
+      "canonical_signal": "technical_leadership",
+      "phrase_count": 7,
+      "jd_coverage": 5,
+      "companies": [
+        "Disney",
+        "Marriott",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "proven track record of leading technical initiatives",
+        "provides technical leadership",
+        "providing coaching and mentorship to engineering teams",
+        "technical expert and lead engineer",
+        "technical leadership, oversight, governance and direction",
+        "technology leader and advocate",
+        "technology leadership experience"
+      ],
+      "example_phrases": [
+        "proven track record of leading technical initiatives",
+        "provides technical leadership",
+        "providing coaching and mentorship to engineering teams",
+        "technical expert and lead engineer",
+        "technical leadership, oversight, governance and direction"
+      ],
+      "rationale": "All refer to providing technical leadership, oversight, or advocacy."
+    },
+    {
+      "signal_type": "seniority_signals",
+      "canonical_signal": "subject_matter_expert",
+      "phrase_count": 5,
+      "jd_coverage": 5,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "deep expertise in engineering, mathematics, hardware, software, and AI",
+        "expected to be a Subject Matter Expert with deep knowledge and experience",
+        "expert in NLP and LLMs",
+        "expert level understanding of key AI technologies",
+        "subject-matter expert"
+      ],
+      "example_phrases": [
+        "deep expertise in engineering, mathematics, hardware, software, and AI",
+        "expected to be a Subject Matter Expert with deep knowledge and experience",
+        "expert in NLP and LLMs",
+        "expert level understanding of key AI technologies",
+        "subject-matter expert"
+      ],
+      "rationale": "All refer to being a subject matter expert or having deep technical expertise."
+    },
+    {
+      "signal_type": "seniority_signals",
+      "canonical_signal": "director_level_experience",
+      "phrase_count": 4,
+      "jd_coverage": 4,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney"
+      ],
+      "source_phrases": [
+        "Director-level experience",
+        "Director-level role",
+        "Solution Architecture Associate Director"
+      ],
+      "example_phrases": [
+        "Director-level experience",
+        "Director-level role",
+        "Solution Architecture Associate Director"
+      ],
+      "rationale": "All refer to director-level or associate director roles, indicating high seniority and leadership."
+    },
+    {
+      "signal_type": "seniority_signals",
+      "canonical_signal": "distinguished_engineer",
+      "phrase_count": 3,
+      "jd_coverage": 2,
+      "companies": [
+        "Capital One"
+      ],
+      "source_phrases": [
+        "Distinguished Engineer title",
+        "Experience as Staff-plus or Distinguished IC engineer influencing 50+ engineers"
+      ],
+      "example_phrases": [
+        "Distinguished Engineer title",
+        "Experience as Staff-plus or Distinguished IC engineer influencing 50+ engineers"
+      ],
+      "rationale": "Both refer to the distinguished engineer or staff-plus IC level, a top-tier technical role."
+    }
+  ],
+  "success_metrics": [
+    {
+      "signal_type": "success_metrics",
+      "canonical_signal": "reliability_and_operational_excellence",
+      "phrase_count": 15,
+      "jd_coverage": 9,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "Operational reliability (minimal disruption from failures)",
+        "Zero Sev4 incidents (trust and safety)",
+        "continuous development of monitoring and alerting for all production environments",
+        "early warning to business stakeholders regarding degraded or missed service levels",
+        "enhanced observability platform",
+        "meeting availability SLA for storage services",
+        "minimized impact to clients",
+        "operational excellence",
+        "platform health and capacity planning",
+        "production ML systems operating at scale",
+        "production-ready solutions meeting quality standards",
+        "reliability",
+        "successful deployment and support of logging and monitoring solutions",
+        "sustained production health",
+        "timely resolution of service delivery problems"
+      ],
+      "example_phrases": [
+        "Operational reliability (minimal disruption from failures)",
+        "Zero Sev4 incidents (trust and safety)",
+        "continuous development of monitoring and alerting for all production environments",
+        "early warning to business stakeholders regarding degraded or missed service levels",
+        "enhanced observability platform"
+      ],
+      "rationale": "All relate to system reliability, uptime, operational health, and excellence in ongoing operations."
+    },
+    {
+      "signal_type": "success_metrics",
+      "canonical_signal": "innovation_and_modernization",
+      "phrase_count": 11,
+      "jd_coverage": 7,
+      "companies": [
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "Breakthrough product experiences",
+        "Modern, patchable, and secure SaaS products",
+        "advancing AI-empowered software development",
+        "breakthrough product experiences",
+        "building with generative AI",
+        "delivery of next-generation platforms",
+        "driving innovation",
+        "enhanced products with transformative AI capabilities",
+        "fostering a culture of innovation and technical excellence",
+        "seamless transition from legacy systems to modern architectures",
+        "successful modernization of core enterprise applications"
+      ],
+      "example_phrases": [
+        "Breakthrough product experiences",
+        "Modern, patchable, and secure SaaS products",
+        "advancing AI-empowered software development",
+        "breakthrough product experiences",
+        "building with generative AI"
+      ],
+      "rationale": "All relate to innovation, modernization, and technical advancement."
+    },
+    {
+      "signal_type": "success_metrics",
+      "canonical_signal": "business_outcomes_and_value",
+      "phrase_count": 10,
+      "jd_coverage": 7,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "AI solutions that deliver value to millions of customers",
+        "High-quality client outcomes",
+        "clear business outcomes from AI integration",
+        "deliver value to clients",
+        "delivering unprecedented business value",
+        "demonstrating capabilities of AI technologies to solve complex business problems",
+        "drive business growth",
+        "improved business outcomes in enterprise environments",
+        "unlock new possibilities for data",
+        "unlocking big opportunities that help people save money, time, and agony"
+      ],
+      "example_phrases": [
+        "AI solutions that deliver value to millions of customers",
+        "High-quality client outcomes",
+        "clear business outcomes from AI integration",
+        "deliver value to clients",
+        "delivering unprecedented business value"
+      ],
+      "rationale": "All phrases relate to achieving measurable business value, outcomes, or impact for clients or organizations."
+    },
+    {
+      "signal_type": "success_metrics",
+      "canonical_signal": "scalability_and_performance",
+      "phrase_count": 9,
+      "jd_coverage": 7,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Marriott",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "Scalable, high-performance AI infrastructure",
+        "delivery of scalable, resilient, high-performance solutions",
+        "deployment of scalable and resilient production systems",
+        "improved hardware utilization, latency, throughput, and cost",
+        "optimized AI infrastructure/hardware performance",
+        "performance",
+        "scalability",
+        "scalability, performance, and reliability of solutions",
+        "scalable, high-performance AI infrastructure"
+      ],
+      "example_phrases": [
+        "Scalable, high-performance AI infrastructure",
+        "delivery of scalable, resilient, high-performance solutions",
+        "deployment of scalable and resilient production systems",
+        "improved hardware utilization, latency, throughput, and cost",
+        "optimized AI infrastructure/hardware performance"
+      ],
+      "rationale": "These phrases focus on the ability to scale, perform efficiently, and maintain high throughput or low latency."
+    },
+    {
+      "signal_type": "success_metrics",
+      "canonical_signal": "enterprise_readiness_and_support",
+      "phrase_count": 8,
+      "jd_coverage": 7,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Production outcomes",
+        "achievement of expected deliverables and obligations",
+        "achievement of expected deliverables and obligations of service providers",
+        "enterprise readiness",
+        "improved service delivery, operations, and continual service improvement",
+        "scale AI/ML/GenAI solutions across organizations",
+        "successful integration with financial platforms",
+        "successful operationalization of models serving 80+ million customers"
+      ],
+      "example_phrases": [
+        "Production outcomes",
+        "achievement of expected deliverables and obligations",
+        "achievement of expected deliverables and obligations of service providers",
+        "enterprise readiness",
+        "improved service delivery, operations, and continual service improvement"
+      ],
+      "rationale": "All relate to readiness, support, and operationalization at enterprise scale."
+    },
+    {
+      "signal_type": "success_metrics",
+      "canonical_signal": "quality_and_compliance",
+      "phrase_count": 8,
+      "jd_coverage": 6,
+      "companies": [
+        "Accenture",
+        "Disney",
+        "Marriott",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "Improved delivery productivity while maintaining engineering discipline",
+        "accuracy, groundedness, relevance, reliability, latency, cost, usability, and business impact of AI systems",
+        "adherence to technical standards and best practices",
+        "alignment with enterprise standards and best practices",
+        "audit readiness",
+        "code quality",
+        "compliance with regulatory and security requirements",
+        "high quality deliverables",
+        "production-ready solutions meeting quality standards"
+      ],
+      "example_phrases": [
+        "Improved delivery productivity while maintaining engineering discipline",
+        "accuracy, groundedness, relevance, reliability, latency, cost, usability, and business impact of AI systems",
+        "adherence to technical standards and best practices",
+        "alignment with enterprise standards and best practices",
+        "audit readiness"
+      ],
+      "rationale": "All relate to maintaining high quality, compliance, and adherence to standards."
+    },
+    {
+      "signal_type": "success_metrics",
+      "canonical_signal": "security_and_governance",
+      "phrase_count": 7,
+      "jd_coverage": 5,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Reliable, secure, maintainable solutions",
+        "Responsible and reliable AI systems",
+        "effective governance and documentation",
+        "governance",
+        "responsible and reliable AI systems",
+        "security",
+        "trust"
+      ],
+      "example_phrases": [
+        "Reliable, secure, maintainable solutions",
+        "Responsible and reliable AI systems",
+        "effective governance and documentation",
+        "governance",
+        "responsible and reliable AI systems"
+      ],
+      "rationale": "These phrases focus on security, governance, trust, and responsible AI."
+    },
+    {
+      "signal_type": "success_metrics",
+      "canonical_signal": "cost_optimization_and_efficiency",
+      "phrase_count": 8,
+      "jd_coverage": 4,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney"
+      ],
+      "source_phrases": [
+        "Increased speed-to-market for decision science models",
+        "Reduced time-to-production",
+        "Reductions in per token spend",
+        "Shrink prototyping to production timelines by 30%",
+        "cost optimization",
+        "cost-aware and sustainable AI/ML operations",
+        "cost-effective and scalable computational stack",
+        "improved efficiency and effectiveness of AI solutions",
+        "reduced power consumption"
+      ],
+      "example_phrases": [
+        "Increased speed-to-market for decision science models",
+        "Reduced time-to-production",
+        "Reductions in per token spend",
+        "Shrink prototyping to production timelines by 30%",
+        "cost optimization"
+      ],
+      "rationale": "These phrases focus on reducing costs, improving efficiency, and accelerating time-to-market."
+    },
+    {
+      "signal_type": "success_metrics",
+      "canonical_signal": "adoption_and_reusability",
+      "phrase_count": 4,
+      "jd_coverage": 4,
+      "companies": [
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "90% of new apps adopt standardized agentic workflows",
+        "Reusability of integrated algorithms",
+        "adoption of AI-powered productivity tools",
+        "adoption of best practice guidelines, standards, and procedures",
+        "adoption of sustainable practices and tools post-launch"
+      ],
+      "example_phrases": [
+        "90% of new apps adopt standardized agentic workflows",
+        "Reusability of integrated algorithms",
+        "adoption of AI-powered productivity tools",
+        "adoption of best practice guidelines, standards, and procedures",
+        "adoption of sustainable practices and tools post-launch"
+      ],
+      "rationale": "These phrases focus on adoption of new tools, practices, and reusability."
+    },
+    {
+      "signal_type": "success_metrics",
+      "canonical_signal": "team_productivity_and_velocity",
+      "phrase_count": 4,
+      "jd_coverage": 4,
+      "companies": [
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Improved delivery productivity while maintaining engineering discipline",
+        "delivering ship-ready increments",
+        "efficient creation of data capabilities and products",
+        "improved team velocity and quality"
+      ],
+      "example_phrases": [
+        "Improved delivery productivity while maintaining engineering discipline",
+        "delivering ship-ready increments",
+        "efficient creation of data capabilities and products",
+        "improved team velocity and quality"
+      ],
+      "rationale": "These phrases focus on team productivity, velocity, and efficient delivery."
+    },
+    {
+      "signal_type": "success_metrics",
+      "canonical_signal": "monitoring_and_observability",
+      "phrase_count": 5,
+      "jd_coverage": 2,
+      "companies": [
+        "Disney",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "Automated metric capture and KPI visibility",
+        "continuous development of monitoring and alerting for all production environments",
+        "enhanced observability platform",
+        "successful deployment and support of logging and monitoring solutions",
+        "timely, accurate, and detailed status reports"
+      ],
+      "example_phrases": [
+        "Automated metric capture and KPI visibility",
+        "continuous development of monitoring and alerting for all production environments",
+        "enhanced observability platform",
+        "successful deployment and support of logging and monitoring solutions",
+        "timely, accurate, and detailed status reports"
+      ],
+      "rationale": "All relate to monitoring, observability, and visibility into system health and metrics."
+    },
+    {
+      "signal_type": "success_metrics",
+      "canonical_signal": "feature_and_product_delivery",
+      "phrase_count": 3,
+      "jd_coverage": 2,
+      "companies": [
+        "Capital One",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "delivery of AI-powered products that change customer interactions",
+        "features that delight customers with dynamic and personalized experiences",
+        "successful delivery of technical initiatives"
+      ],
+      "example_phrases": [
+        "delivery of AI-powered products that change customer interactions",
+        "features that delight customers with dynamic and personalized experiences",
+        "successful delivery of technical initiatives"
+      ],
+      "rationale": "These phrases focus on delivering impactful features and products to end users."
+    }
+  ],
+  "role_purpose": [
+    {
+      "signal_type": "role_purpose",
+      "canonical_signal": "productionizing_ai_ml_solutions",
+      "phrase_count": 8,
+      "jd_coverage": 5,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Design, build, evaluate, and deploy production AI systems for enterprise clients",
+        "Eliminate friction between model development and deployment",
+        "Empower scientists to move from proof-of-concept to global production",
+        "Help clients move from AI ambition to production outcomes",
+        "Productionize decision science for efficient SaaS deployment",
+        "Translate foundation model power into production-grade applications",
+        "enable production-ready, high-quality AI solutions for clients",
+        "lead the development and deployment of foundational AI/ML solutions"
+      ],
+      "example_phrases": [
+        "Design, build, evaluate, and deploy production AI systems for enterprise clients",
+        "Eliminate friction between model development and deployment",
+        "Empower scientists to move from proof-of-concept to global production",
+        "Help clients move from AI ambition to production outcomes",
+        "Productionize decision science for efficient SaaS deployment"
+      ],
+      "rationale": "These phrases all relate to moving AI/ML models or decision science from development or concept into scalable, production-ready, or deployed solutions."
+    },
+    {
+      "signal_type": "role_purpose",
+      "canonical_signal": "ai_ml_innovation_and_advancement",
+      "phrase_count": 7,
+      "jd_coverage": 5,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Advance state of the art in AI engineering at Capital One",
+        "advance AI-empowered software development",
+        "advance the state of the art in science and AI engineering",
+        "bring the transformative power of emerging AI capabilities to reimagine how Capital One serves customers and businesses",
+        "drive business growth through innovative AI/ML solutions",
+        "drive innovation in customer-facing applications using generative AI",
+        "lead organization towards cutting-edge advancements in generative AI"
+      ],
+      "example_phrases": [
+        "Advance state of the art in AI engineering at Capital One",
+        "advance AI-empowered software development",
+        "advance the state of the art in science and AI engineering",
+        "bring the transformative power of emerging AI capabilities to reimagine how Capital One serves customers and businesses",
+        "drive business growth through innovative AI/ML solutions"
+      ],
+      "rationale": "These phrases focus on advancing, innovating, or leading in AI/ML technologies, especially generative AI, and their application to business or customer solutions."
+    },
+    {
+      "signal_type": "role_purpose",
+      "canonical_signal": "ai_ml_solution_delivery_for_business_value",
+      "phrase_count": 7,
+      "jd_coverage": 5,
+      "companies": [
+        "Accenture",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Bridge business needs and technical solutions in AI",
+        "contribute to the architecture of client solutions",
+        "demonstrating the capabilities of AI technologies for complex business problems",
+        "design and implement advanced data-driven solutions leveraging AI and ML technologies",
+        "help organizations unlock new possibilities and creative applications for their data",
+        "shaping the future of AI systems in the enterprise to deliver business value",
+        "support current and future requirements across the enterprise"
+      ],
+      "example_phrases": [
+        "Bridge business needs and technical solutions in AI",
+        "contribute to the architecture of client solutions",
+        "demonstrating the capabilities of AI technologies for complex business problems",
+        "design and implement advanced data-driven solutions leveraging AI and ML technologies",
+        "help organizations unlock new possibilities and creative applications for their data"
+      ],
+      "rationale": "These phrases focus on delivering AI/ML solutions that address business needs, unlock value, or solve complex business problems."
+    },
+    {
+      "signal_type": "role_purpose",
+      "canonical_signal": "ai_ml_platform_architecture",
+      "phrase_count": 6,
+      "jd_coverage": 5,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "Design and build an enterprise Generative AI Platform enabling product teams to compose safe, explainable AI capabilities",
+        "design and architect technology solutions supporting transformation of Marriott\u2019s enterprise product platforms",
+        "designing and delivering full stack AI architecture for enterprise platforms, products, and engagements",
+        "develop next-generation cloud platform for data, analytics, AI, and machine learning",
+        "shape future-state architecture during large-scale modernization",
+        "shape the architecture and delivery of next-generation platforms for financial licensing workflows and predictive analytics"
+      ],
+      "example_phrases": [
+        "Design and build an enterprise Generative AI Platform enabling product teams to compose safe, explainable AI capabilities",
+        "design and architect technology solutions supporting transformation of Marriott\u2019s enterprise product platforms",
+        "designing and delivering full stack AI architecture for enterprise platforms, products, and engagements",
+        "develop next-generation cloud platform for data, analytics, AI, and machine learning",
+        "shape future-state architecture during large-scale modernization"
+      ],
+      "rationale": "All phrases focus on designing, building, or shaping the architecture of AI/ML or data platforms at an enterprise or next-generation scale."
+    },
+    {
+      "signal_type": "role_purpose",
+      "canonical_signal": "ai_ml_infrastructure_and_scalability",
+      "phrase_count": 4,
+      "jd_coverage": 3,
+      "companies": [
+        "Accenture",
+        "Marriott",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "Lead design and implementation of scalable, cloud-native solutions",
+        "architect and build custom AI infrastructure/hardware solutions",
+        "enable enterprise growth through state-of-the-art platform capabilities",
+        "optimize and advise on AI infrastructure for performance, cost, and scalability"
+      ],
+      "example_phrases": [
+        "Lead design and implementation of scalable, cloud-native solutions",
+        "architect and build custom AI infrastructure/hardware solutions",
+        "enable enterprise growth through state-of-the-art platform capabilities",
+        "optimize and advise on AI infrastructure for performance, cost, and scalability"
+      ],
+      "rationale": "These phrases are about building, optimizing, or scaling AI/ML infrastructure and platforms to support enterprise growth and performance."
+    },
+    {
+      "signal_type": "role_purpose",
+      "canonical_signal": "ai_ml_product_and_experience_enhancement",
+      "phrase_count": 4,
+      "jd_coverage": 3,
+      "companies": [
+        "Capital One",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "Empower team members, stores, and merchants with technological innovation",
+        "Empower teams to enhance products with AI in responsible, scalable ways",
+        "advance Capital One's position as a leader in data-driven decision-making",
+        "enable dynamic and personalized experiences in Capital One's mobile app"
+      ],
+      "example_phrases": [
+        "Empower team members, stores, and merchants with technological innovation",
+        "Empower teams to enhance products with AI in responsible, scalable ways",
+        "advance Capital One's position as a leader in data-driven decision-making",
+        "enable dynamic and personalized experiences in Capital One's mobile app"
+      ],
+      "rationale": "These phrases relate to using AI/ML to enhance products, user experiences, or organizational capabilities."
+    },
+    {
+      "signal_type": "role_purpose",
+      "canonical_signal": "ai_ml_system_development_and_measurement",
+      "phrase_count": 3,
+      "jd_coverage": 3,
+      "companies": [
+        "Disney"
+      ],
+      "source_phrases": [
+        "Apply machine learning techniques to build predictive systems at scale for identity, audience, and cross-platform measurement",
+        "Build and lead the technical backbone for AI-powered products",
+        "drive the development of scalable, intelligent systems that support licensing financial operations and AI-driven decision-making"
+      ],
+      "example_phrases": [
+        "Apply machine learning techniques to build predictive systems at scale for identity, audience, and cross-platform measurement",
+        "Build and lead the technical backbone for AI-powered products",
+        "drive the development of scalable, intelligent systems that support licensing financial operations and AI-driven decision-making"
+      ],
+      "rationale": "These phrases focus on developing scalable AI/ML systems for specific business operations, measurement, or product backbones."
+    },
+    {
+      "signal_type": "role_purpose",
+      "canonical_signal": "ai_ml_technical_leadership",
+      "phrase_count": 4,
+      "jd_coverage": 2,
+      "companies": [
+        "Disney",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "Lead architecture and standards for ML pipelines and data management",
+        "Provide technical leadership for complex machine learning systems and the data foundations required to operate them",
+        "function as technical expert and lead engineer for Data Platform team",
+        "provide technical leadership and standards"
+      ],
+      "example_phrases": [
+        "Lead architecture and standards for ML pipelines and data management",
+        "Provide technical leadership for complex machine learning systems and the data foundations required to operate them",
+        "function as technical expert and lead engineer for Data Platform team",
+        "provide technical leadership and standards"
+      ],
+      "rationale": "These phrases emphasize providing technical leadership, expertise, or setting standards for AI/ML systems or data platforms."
+    },
+    {
+      "signal_type": "role_purpose",
+      "canonical_signal": "data_platform_and_observability_leadership",
+      "phrase_count": 3,
+      "jd_coverage": 2,
+      "companies": [
+        "Marriott"
+      ],
+      "source_phrases": [
+        "define, implement, govern, optimize, and monitor solutions to enhance Marriott's observability platform",
+        "ensure consistent and efficient creation of data capabilities and products",
+        "serve as a subject-matter expert for observability systems/solutions"
+      ],
+      "example_phrases": [
+        "define, implement, govern, optimize, and monitor solutions to enhance Marriott's observability platform",
+        "ensure consistent and efficient creation of data capabilities and products",
+        "serve as a subject-matter expert for observability systems/solutions"
+      ],
+      "rationale": "These phrases are about leading or optimizing data platforms and observability systems."
+    },
+    {
+      "signal_type": "role_purpose",
+      "canonical_signal": "platform_modernization_and_transformation",
+      "phrase_count": 1,
+      "jd_coverage": 1,
+      "companies": [
+        "Walmart"
+      ],
+      "source_phrases": [
+        "Modernize and transform customer care platform"
+      ],
+      "example_phrases": [
+        "Modernize and transform customer care platform"
+      ],
+      "rationale": "This phrase specifically addresses the modernization and transformation of a major enterprise platform."
+    }
+  ],
+  "business_problems": [
+    {
+      "signal_type": "business_problems",
+      "canonical_signal": "ai_governance_compliance_and_trust",
+      "phrase_count": 9,
+      "jd_coverage": 9,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Ensure trust, safety, and compliance in AI-powered applications",
+        "Ensuring data integrity and privacy compliance in ML workflows",
+        "Ensuring responsible and safe use of AI",
+        "Need for compliance with security, privacy, and responsible AI standards",
+        "ensuring compliance (SOX)",
+        "ensuring compliance monitoring",
+        "ensuring compliance with global data protection and privacy regulations",
+        "ensuring responsible and reliable AI in banking",
+        "ensuring security and quality in AI solutions"
+      ],
+      "example_phrases": [
+        "Ensure trust, safety, and compliance in AI-powered applications",
+        "Ensuring data integrity and privacy compliance in ML workflows",
+        "Ensuring responsible and safe use of AI",
+        "Need for compliance with security, privacy, and responsible AI standards",
+        "ensuring compliance (SOX)"
+      ],
+      "rationale": "All phrases address compliance, governance, trust, and responsible use of AI and data."
+    },
+    {
+      "signal_type": "business_problems",
+      "canonical_signal": "ai_ml_adoption_and_scaling",
+      "phrase_count": 9,
+      "jd_coverage": 6,
+      "companies": [
+        "Accenture",
+        "Capital One"
+      ],
+      "source_phrases": [
+        "Deliver value to millions of customers through AI",
+        "Enable rapid, safe adoption of AI across multiple business lines",
+        "Reduce complexity for product teams integrating AI",
+        "adoption of innovative AI applications",
+        "integration of new AI technologies and vendors",
+        "meeting client business needs for scalable, secure, governed, and high-performance AI solutions",
+        "scaling AI infrastructure for enterprise use",
+        "scaling AI/ML solutions to serve millions of customers",
+        "scaling AI/ML/GenAI solutions across organizations"
+      ],
+      "example_phrases": [
+        "Deliver value to millions of customers through AI",
+        "Enable rapid, safe adoption of AI across multiple business lines",
+        "Reduce complexity for product teams integrating AI",
+        "adoption of innovative AI applications",
+        "integration of new AI technologies and vendors"
+      ],
+      "rationale": "All phrases relate to the adoption, scaling, and integration of AI/ML technologies across organizations and business lines."
+    },
+    {
+      "signal_type": "business_problems",
+      "canonical_signal": "complex_problem_solving_with_ai",
+      "phrase_count": 5,
+      "jd_coverage": 4,
+      "companies": [
+        "Accenture",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Solving complex and interesting business problems with AI",
+        "identifying and addressing opportunities for AI/ML applications",
+        "seek solutions for complex technical issues",
+        "solving complex business problems with AI and ML",
+        "solving complex business problems with AI technologies"
+      ],
+      "example_phrases": [
+        "Solving complex and interesting business problems with AI",
+        "identifying and addressing opportunities for AI/ML applications",
+        "seek solutions for complex technical issues",
+        "solving complex business problems with AI and ML",
+        "solving complex business problems with AI technologies"
+      ],
+      "rationale": "All phrases relate to using AI/ML to solve complex or novel business and technical challenges."
+    },
+    {
+      "signal_type": "business_problems",
+      "canonical_signal": "ai_customer_experience_and_personalization",
+      "phrase_count": 7,
+      "jd_coverage": 3,
+      "companies": [
+        "Capital One",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "Improving customer engagement and support",
+        "answering customer questions in real time",
+        "delivering real-time, personalized customer experiences",
+        "enabling personalized and dynamic app features",
+        "enhancing digital assistant capabilities",
+        "improving customer experience in financial services",
+        "informing customers about unusual charges"
+      ],
+      "example_phrases": [
+        "Improving customer engagement and support",
+        "answering customer questions in real time",
+        "delivering real-time, personalized customer experiences",
+        "enabling personalized and dynamic app features",
+        "enhancing digital assistant capabilities"
+      ],
+      "rationale": "These phrases focus on using AI to enhance customer experience, personalization, and support."
+    },
+    {
+      "signal_type": "business_problems",
+      "canonical_signal": "ai_model_deployment_and_operations",
+      "phrase_count": 7,
+      "jd_coverage": 3,
+      "companies": [
+        "Disney",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "Insufficient model monitoring and explainability",
+        "Lack of scalable, reusable, and automated AI/ML deployment processes",
+        "Maintaining reliability and interoperability of large-scale data and ML systems",
+        "Slow or inefficient transition from model development to production",
+        "meeting availability and operational SLAs",
+        "need for enhanced observability across infrastructure and application services",
+        "resolving complex infrastructure and application issues"
+      ],
+      "example_phrases": [
+        "Insufficient model monitoring and explainability",
+        "Lack of scalable, reusable, and automated AI/ML deployment processes",
+        "Maintaining reliability and interoperability of large-scale data and ML systems",
+        "Slow or inefficient transition from model development to production",
+        "meeting availability and operational SLAs"
+      ],
+      "rationale": "All phrases relate to operationalizing AI/ML models, deployment, monitoring, and system reliability."
+    },
+    {
+      "signal_type": "business_problems",
+      "canonical_signal": "ai_enabled_business_process_automation",
+      "phrase_count": 4,
+      "jd_coverage": 3,
+      "companies": [
+        "Disney",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "automating business processes using AI",
+        "enhance service delivery processes",
+        "optimizing licensing workflows",
+        "optimizing revenue management processes"
+      ],
+      "example_phrases": [
+        "automating business processes using AI",
+        "enhance service delivery processes",
+        "optimizing licensing workflows",
+        "optimizing revenue management processes"
+      ],
+      "rationale": "These phrases focus on using AI to automate and optimize business processes and workflows."
+    },
+    {
+      "signal_type": "business_problems",
+      "canonical_signal": "ai_driven_insights_and_analytics",
+      "phrase_count": 4,
+      "jd_coverage": 3,
+      "companies": [
+        "Capital One",
+        "Disney",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "Delivering actionable insights related to content, monetization, and audience development",
+        "Supporting business/initiative strategies with reliable monitoring and reporting",
+        "Supporting content production, marketing, and monetization with analytics",
+        "support analytics based decisioning by Marriott business teams",
+        "unlocking insights from large volumes of numeric and textual data"
+      ],
+      "example_phrases": [
+        "Delivering actionable insights related to content, monetization, and audience development",
+        "Supporting business/initiative strategies with reliable monitoring and reporting",
+        "Supporting content production, marketing, and monetization with analytics",
+        "support analytics based decisioning by Marriott business teams",
+        "unlocking insights from large volumes of numeric and textual data"
+      ],
+      "rationale": "All phrases relate to leveraging AI and analytics to generate business insights and support decision-making."
+    },
+    {
+      "signal_type": "business_problems",
+      "canonical_signal": "ai_infrastructure_and_performance_optimization",
+      "phrase_count": 3,
+      "jd_coverage": 3,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "Optimize cost and performance of AI systems",
+        "balancing architectural rigor with business priorities",
+        "balancing innovation velocity with system stability and cost",
+        "need for optimized, scalable, and cost-effective AI infrastructure"
+      ],
+      "example_phrases": [
+        "Optimize cost and performance of AI systems",
+        "balancing architectural rigor with business priorities",
+        "balancing innovation velocity with system stability and cost",
+        "need for optimized, scalable, and cost-effective AI infrastructure"
+      ],
+      "rationale": "These phrases focus on optimizing AI infrastructure, balancing cost, performance, and architectural considerations."
+    },
+    {
+      "signal_type": "business_problems",
+      "canonical_signal": "data_integration_and_management",
+      "phrase_count": 3,
+      "jd_coverage": 3,
+      "companies": [
+        "Disney",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "anticipate future data platform opportunities",
+        "integrating disparate financial systems",
+        "integrating diverse data sources (bookings, competitor pricing, inventory)"
+      ],
+      "example_phrases": [
+        "anticipate future data platform opportunities",
+        "integrating disparate financial systems",
+        "integrating diverse data sources (bookings, competitor pricing, inventory)"
+      ],
+      "rationale": "These phrases focus on integrating and managing diverse data sources and systems."
+    },
+    {
+      "signal_type": "business_problems",
+      "canonical_signal": "ai_development_and_lifecycle_management",
+      "phrase_count": 4,
+      "jd_coverage": 2,
+      "companies": [
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Integrating AI into existing client technology ecosystems",
+        "Moving clients from AI ambition to production outcomes",
+        "ensure AI-guided development is accurate, reliable, and safe",
+        "integrate generative AI into software development lifecycle"
+      ],
+      "example_phrases": [
+        "Integrating AI into existing client technology ecosystems",
+        "Moving clients from AI ambition to production outcomes",
+        "ensure AI-guided development is accurate, reliable, and safe",
+        "integrate generative AI into software development lifecycle"
+      ],
+      "rationale": "These phrases focus on integrating AI into the software development lifecycle and managing its evolution."
+    },
+    {
+      "signal_type": "business_problems",
+      "canonical_signal": "legacy_system_modernization",
+      "phrase_count": 2,
+      "jd_coverage": 2,
+      "companies": [
+        "Marriott",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "Modernizing legacy customer care systems",
+        "modernizing core enterprise applications"
+      ],
+      "example_phrases": [
+        "Modernizing legacy customer care systems",
+        "modernizing core enterprise applications"
+      ],
+      "rationale": "These phrases address the need to modernize outdated or legacy business systems."
+    },
+    {
+      "signal_type": "business_problems",
+      "canonical_signal": "ai_financial_and_business_viability",
+      "phrase_count": 2,
+      "jd_coverage": 2,
+      "companies": [
+        "Accenture",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "assessing financial viability of AI platforms and solutions",
+        "improve operations, drive growth, and create value for clients"
+      ],
+      "example_phrases": [
+        "assessing financial viability of AI platforms and solutions",
+        "improve operations, drive growth, and create value for clients"
+      ],
+      "rationale": "These phrases relate to evaluating the financial and business impact of AI solutions."
+    }
+  ],
+  "role_outcomes": [
+    {
+      "signal_type": "role_outcomes",
+      "canonical_signal": "ai_ml_platforms_and_solutions",
+      "phrase_count": 17,
+      "jd_coverage": 11,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "AI-enabled platforms",
+        "Enterprise GenAI platform with standardized agentic workflows",
+        "Modernized, reliable, and secure production systems",
+        "Operational AI solutions integrated with enterprise data and applications",
+        "Production-grade AI applications used by millions",
+        "Production-grade AI systems deployed for clients",
+        "Scalable and reliable ML platforms and reusable components",
+        "Seamless integration and deployment of AI/ML services",
+        "enterprise-grade AI platforms and solutions",
+        "integrated financial platforms",
+        "modernized, scalable, and resilient revenue management systems",
+        "optimized and reliable AI systems",
+        "optimized and scalable AI computational stack",
+        "production-ready AI solutions implemented",
+        "production-ready AI-driven solutions",
+        "production-ready, scalable AI systems",
+        "state-of-the-art scalable AI/ML architectures in production"
+      ],
+      "example_phrases": [
+        "AI-enabled platforms",
+        "Enterprise GenAI platform with standardized agentic workflows",
+        "Modernized, reliable, and secure production systems",
+        "Operational AI solutions integrated with enterprise data and applications",
+        "Production-grade AI applications used by millions"
+      ],
+      "rationale": "All phrases relate to the delivery, deployment, or integration of robust, scalable, and production-ready AI/ML or software platforms and solutions."
+    },
+    {
+      "signal_type": "role_outcomes",
+      "canonical_signal": "team_enablement_and_mentorship",
+      "phrase_count": 8,
+      "jd_coverage": 8,
+      "companies": [
+        "Accenture",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Empowered and high-performing AI/ML engineering team",
+        "Mentored and enabled engineering team",
+        "Mentored client and peer teams on AI engineering",
+        "cross-team knowledge sharing and capability uplift",
+        "internal processes and training for team members",
+        "mentored and developed junior engineers",
+        "mentored and upskilled engineering teams",
+        "teams and stakeholders enabled in AI-accelerated ways of working"
+      ],
+      "example_phrases": [
+        "Empowered and high-performing AI/ML engineering team",
+        "Mentored and enabled engineering team",
+        "Mentored client and peer teams on AI engineering",
+        "cross-team knowledge sharing and capability uplift",
+        "internal processes and training for team members"
+      ],
+      "rationale": "All refer to mentoring, enabling, or upskilling engineering teams and stakeholders."
+    },
+    {
+      "signal_type": "role_outcomes",
+      "canonical_signal": "business_and_customer_impact",
+      "phrase_count": 8,
+      "jd_coverage": 6,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "Improved operational efficiency",
+        "Portfolio-wide adoption of metrics and KPIs",
+        "business growth achieved through AI/ML adoption",
+        "enhanced customer and associate interactions with Capital One",
+        "high quality, scalable deliverables",
+        "improved service delivery processes",
+        "measurable improvements in customer experience and engagement",
+        "organizations enabled to unlock new data possibilities"
+      ],
+      "example_phrases": [
+        "Improved operational efficiency",
+        "Portfolio-wide adoption of metrics and KPIs",
+        "business growth achieved through AI/ML adoption",
+        "enhanced customer and associate interactions with Capital One",
+        "high quality, scalable deliverables"
+      ],
+      "rationale": "These outcomes focus on business value, customer experience, and operational improvements."
+    },
+    {
+      "signal_type": "role_outcomes",
+      "canonical_signal": "reusable_frameworks_and_components",
+      "phrase_count": 6,
+      "jd_coverage": 6,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Library of reusable building blocks for modelers",
+        "Reusable assets (reference architectures, accelerators, code templates, demos, enablement materials)",
+        "libraries, platforms, or solution-level code delivered to products",
+        "repeatable AI practices (evaluation harnesses, code-review agents, context packs, CI/CD hooks)",
+        "reusable AI components and solution patterns",
+        "reusable frameworks"
+      ],
+      "example_phrases": [
+        "Library of reusable building blocks for modelers",
+        "Reusable assets (reference architectures, accelerators, code templates, demos, enablement materials)",
+        "libraries, platforms, or solution-level code delivered to products",
+        "repeatable AI practices (evaluation harnesses, code-review agents, context packs, CI/CD hooks)",
+        "reusable AI components and solution patterns"
+      ],
+      "rationale": "All refer to the creation or delivery of reusable frameworks, components, or assets to accelerate AI/ML or software development."
+    },
+    {
+      "signal_type": "role_outcomes",
+      "canonical_signal": "architecture_and_documentation",
+      "phrase_count": 6,
+      "jd_coverage": 5,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Documented and communicated technical decisions and outcomes",
+        "Documented and evangelized platform architecture",
+        "architectural blueprints and documentation",
+        "documented architecture artifacts",
+        "enterprise architecture vision, standards, and roadmaps",
+        "technical vision and roadmap for foundational AI systems"
+      ],
+      "example_phrases": [
+        "Documented and communicated technical decisions and outcomes",
+        "Documented and evangelized platform architecture",
+        "architectural blueprints and documentation",
+        "documented architecture artifacts",
+        "enterprise architecture vision, standards, and roadmaps"
+      ],
+      "rationale": "These phrases focus on architectural planning, documentation, and communication of technical decisions."
+    },
+    {
+      "signal_type": "role_outcomes",
+      "canonical_signal": "ai_ml_products_and_features",
+      "phrase_count": 8,
+      "jd_coverage": 4,
+      "companies": [
+        "Capital One",
+        "Disney",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "AI-powered applications for business process automation",
+        "AI-powered conversational experiences for millions of customers",
+        "AI-powered products integrated into the mobile app",
+        "Accessible digital products and services",
+        "Advanced web applications",
+        "Modernized customer care platform",
+        "Robust, scalable full stack features",
+        "operationalized NLP and LLM models for customer-facing features"
+      ],
+      "example_phrases": [
+        "AI-powered applications for business process automation",
+        "AI-powered conversational experiences for millions of customers",
+        "AI-powered products integrated into the mobile app",
+        "Accessible digital products and services",
+        "Advanced web applications"
+      ],
+      "rationale": "These phrases describe the creation or integration of AI/ML-powered products, features, or customer-facing applications."
+    },
+    {
+      "signal_type": "role_outcomes",
+      "canonical_signal": "innovation_and_poc",
+      "phrase_count": 5,
+      "jd_coverage": 4,
+      "companies": [
+        "Accenture",
+        "Disney",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "advanced data-driven solutions implemented",
+        "innovative AI/ML solutions designed for clients",
+        "innovative and inclusive engineering culture",
+        "next-generation data capabilities and products",
+        "proof-of-concepts and pilots for AI technologies"
+      ],
+      "example_phrases": [
+        "advanced data-driven solutions implemented",
+        "innovative AI/ML solutions designed for clients",
+        "innovative and inclusive engineering culture",
+        "next-generation data capabilities and products",
+        "proof-of-concepts and pilots for AI technologies"
+      ],
+      "rationale": "These phrases highlight innovation, new capabilities, and proof-of-concept work."
+    },
+    {
+      "signal_type": "role_outcomes",
+      "canonical_signal": "monitoring_and_observability",
+      "phrase_count": 7,
+      "jd_coverage": 3,
+      "companies": [
+        "Disney",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "Operational playbooks and monitoring for production health",
+        "SOX Compliance solution in Dynatrace and GitHub",
+        "Standardized, automated pipelines and monitoring tools",
+        "established monitoring and alerting for production environments",
+        "high-performance and scalable observability solutions",
+        "onboarded data sources into observability tools",
+        "optimized observability platform"
+      ],
+      "example_phrases": [
+        "Operational playbooks and monitoring for production health",
+        "SOX Compliance solution in Dynatrace and GitHub",
+        "Standardized, automated pipelines and monitoring tools",
+        "established monitoring and alerting for production environments",
+        "high-performance and scalable observability solutions"
+      ],
+      "rationale": "All relate to monitoring, observability, and compliance solutions for production systems."
+    },
+    {
+      "signal_type": "role_outcomes",
+      "canonical_signal": "governance_and_standards",
+      "phrase_count": 3,
+      "jd_coverage": 3,
+      "companies": [
+        "Capital One",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "Centralized guardrail and safety services",
+        "governance frameworks for technology platforms",
+        "technical standards"
+      ],
+      "example_phrases": [
+        "Centralized guardrail and safety services",
+        "governance frameworks for technology platforms",
+        "technical standards"
+      ],
+      "rationale": "These phrases relate to establishing governance, standards, and safety for technology platforms."
+    },
+    {
+      "signal_type": "role_outcomes",
+      "canonical_signal": "data_and_ml_pipeline_quality",
+      "phrase_count": 4,
+      "jd_coverage": 2,
+      "companies": [
+        "Disney"
+      ],
+      "source_phrases": [
+        "Established data contracts and automated quality controls",
+        "Privacy-compliant and auditable ML workflows",
+        "Production-quality ML models and pipelines for identity, audience, and cross-platform measurement",
+        "Robust, automated, and scalable deployment factory for science models"
+      ],
+      "example_phrases": [
+        "Established data contracts and automated quality controls",
+        "Privacy-compliant and auditable ML workflows",
+        "Production-quality ML models and pipelines for identity, audience, and cross-platform measurement",
+        "Robust, automated, and scalable deployment factory for science models"
+      ],
+      "rationale": "These phrases describe the creation of high-quality, compliant, and automated ML pipelines and workflows."
+    },
+    {
+      "signal_type": "role_outcomes",
+      "canonical_signal": "ai_infrastructure_and_tooling",
+      "phrase_count": 4,
+      "jd_coverage": 2,
+      "companies": [
+        "Accenture",
+        "Capital One"
+      ],
+      "source_phrases": [
+        "Developer SDKs and starter kits for rapid AI workflow deployment",
+        "Optimized orchestration and cost efficiency",
+        "custom AI infrastructure/hardware solutions delivered",
+        "integration of new tools and technologies"
+      ],
+      "example_phrases": [
+        "Developer SDKs and starter kits for rapid AI workflow deployment",
+        "Optimized orchestration and cost efficiency",
+        "custom AI infrastructure/hardware solutions delivered",
+        "integration of new tools and technologies"
+      ],
+      "rationale": "All refer to the delivery or optimization of AI infrastructure, tooling, and deployment efficiency."
+    },
+    {
+      "signal_type": "role_outcomes",
+      "canonical_signal": "operational_and_administrative_processes",
+      "phrase_count": 4,
+      "jd_coverage": 2,
+      "companies": [
+        "Marriott"
+      ],
+      "source_phrases": [
+        "accurate and timely reports and presentations",
+        "enhanced administrative, operational, and technical policies and procedures",
+        "internal processes and training for team members",
+        "well-coordinated deployments and production support"
+      ],
+      "example_phrases": [
+        "accurate and timely reports and presentations",
+        "enhanced administrative, operational, and technical policies and procedures",
+        "internal processes and training for team members",
+        "well-coordinated deployments and production support"
+      ],
+      "rationale": "These outcomes relate to operational, administrative, and process improvements."
+    }
+  ],
+  "emerging_signals": [
+    {
+      "signal_type": "emerging_signals",
+      "canonical_signal": "agentic_ai_and_llmops",
+      "phrase_count": 11,
+      "jd_coverage": 9,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "AgentOps and LLMOps as explicit operational disciplines",
+        "Exposure to Agentic AI and Generative AI is preferred but not required",
+        "Hands-on experience with genAI and retrieval-augmented systems is required",
+        "Hierarchical agent memory as a novel architectural pattern",
+        "Multi-modal guardrails and RAG as emerging focus areas",
+        "Responsible use of AI coding assistants and agentic development tools is explicitly required",
+        "Use of agent-driven and interactive LLM/genAI solutions",
+        "daily use of agentic IDEs and advanced tooling beyond basic chat interfaces",
+        "explicit mention of LLMs for business process automation",
+        "focus on agentic AI capabilities",
+        "multi-agent architecture blueprints"
+      ],
+      "example_phrases": [
+        "AgentOps and LLMOps as explicit operational disciplines",
+        "Exposure to Agentic AI and Generative AI is preferred but not required",
+        "Hands-on experience with genAI and retrieval-augmented systems is required",
+        "Hierarchical agent memory as a novel architectural pattern",
+        "Multi-modal guardrails and RAG as emerging focus areas"
+      ],
+      "rationale": "These phrases all reference agentic AI, LLMs, GenAI, and related operational or architectural patterns."
+    },
+    {
+      "signal_type": "emerging_signals",
+      "canonical_signal": "technical_and_cultural_leadership",
+      "phrase_count": 7,
+      "jd_coverage": 6,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "Expectation to influence both internal and external AI communities",
+        "Technical translation as a core leadership function",
+        "cross-functional influence and leadership beyond immediate team",
+        "emphasis on both technical and business stakeholder communication",
+        "emphasis on both technical and cultural leadership",
+        "requirement for both technical depth and business communication skills",
+        "role includes global community engagement and knowledge sharing"
+      ],
+      "example_phrases": [
+        "Expectation to influence both internal and external AI communities",
+        "Technical translation as a core leadership function",
+        "cross-functional influence and leadership beyond immediate team",
+        "emphasis on both technical and business stakeholder communication",
+        "emphasis on both technical and cultural leadership"
+      ],
+      "rationale": "All relate to leadership, influence, and communication across technical and cultural domains."
+    },
+    {
+      "signal_type": "emerging_signals",
+      "canonical_signal": "work_environment_and_flexibility",
+      "phrase_count": 5,
+      "jd_coverage": 5,
+      "companies": [
+        "Accenture",
+        "Marriott",
+        "Slalom",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "Company-provided education benefits (Live Better U)",
+        "hybrid or remote work environment",
+        "hybrid/remote work environment",
+        "open to non-traditional career paths or equivalent skills",
+        "travel may be required from 0 to 100% depending on business need"
+      ],
+      "example_phrases": [
+        "Company-provided education benefits (Live Better U)",
+        "hybrid or remote work environment",
+        "hybrid/remote work environment",
+        "open to non-traditional career paths or equivalent skills",
+        "travel may be required from 0 to 100% depending on business need"
+      ],
+      "rationale": "All relate to flexible work arrangements, benefits, and openness to diverse backgrounds."
+    },
+    {
+      "signal_type": "emerging_signals",
+      "canonical_signal": "responsible_ai_and_governance",
+      "phrase_count": 7,
+      "jd_coverage": 4,
+      "companies": [
+        "Accenture",
+        "Capital One",
+        "Disney",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "AI observability solutions",
+        "AI security and governance as first-class architectural concerns",
+        "Cost-aware design and responsible scaling of AI/ML workloads",
+        "Emphasis on explainability and responsible AI by default",
+        "Emphasis on responsible AI practices, including human oversight and governance escalation",
+        "focus on AI governance and observability as first-class concerns",
+        "strong emphasis on responsible and reliable AI"
+      ],
+      "example_phrases": [
+        "AI observability solutions",
+        "AI security and governance as first-class architectural concerns",
+        "Cost-aware design and responsible scaling of AI/ML workloads",
+        "Emphasis on explainability and responsible AI by default",
+        "Emphasis on responsible AI practices, including human oversight and governance escalation"
+      ],
+      "rationale": "All phrases relate to responsible AI, governance, explainability, and oversight as core requirements."
+    },
+    {
+      "signal_type": "emerging_signals",
+      "canonical_signal": "diversity_equity_inclusion_and_accessibility",
+      "phrase_count": 5,
+      "jd_coverage": 4,
+      "companies": [
+        "Accenture",
+        "Marriott",
+        "Walmart"
+      ],
+      "source_phrases": [
+        "Emphasis on digital accessibility and WCAG 2.2 AA standards",
+        "Emphasis on diversity, inclusion, and well-being in the workplace",
+        "Strong focus on inclusive culture and accessibility best practices",
+        "diversity, equity, and inclusion as part of company culture",
+        "focus on diversity, equity, and inclusion in the workplace"
+      ],
+      "example_phrases": [
+        "Emphasis on digital accessibility and WCAG 2.2 AA standards",
+        "Emphasis on diversity, inclusion, and well-being in the workplace",
+        "Strong focus on inclusive culture and accessibility best practices",
+        "diversity, equity, and inclusion as part of company culture",
+        "focus on diversity, equity, and inclusion in the workplace"
+      ],
+      "rationale": "All phrases focus on DEI and accessibility as core values."
+    },
+    {
+      "signal_type": "emerging_signals",
+      "canonical_signal": "developer_and_product_experience",
+      "phrase_count": 5,
+      "jd_coverage": 3,
+      "companies": [
+        "Capital One",
+        "Disney",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Emphasis on developer experience (SDK, CLI, starter kits)",
+        "Treating AI/MLOps as a product for internal scientists",
+        "co-creation with customers from discovery to delivery",
+        "collaborative product teams with diverse backgrounds",
+        "pressure-testing ideas with real users"
+      ],
+      "example_phrases": [
+        "Emphasis on developer experience (SDK, CLI, starter kits)",
+        "Treating AI/MLOps as a product for internal scientists",
+        "co-creation with customers from discovery to delivery",
+        "collaborative product teams with diverse backgrounds",
+        "pressure-testing ideas with real users"
+      ],
+      "rationale": "These phrases emphasize developer experience, product thinking, and user collaboration."
+    },
+    {
+      "signal_type": "emerging_signals",
+      "canonical_signal": "technical_ownership_and_financial_management",
+      "phrase_count": 5,
+      "jd_coverage": 3,
+      "companies": [
+        "Disney",
+        "Marriott"
+      ],
+      "source_phrases": [
+        "Portfolio prioritization mechanisms to maximize enterprise value",
+        "experience with application 'shirt sizing', architecture visioning, and roadmap development",
+        "provides financial input on department or project budgets",
+        "strong grasp of technical debt management",
+        "technical ownership of Service Provider deliverables"
+      ],
+      "example_phrases": [
+        "Portfolio prioritization mechanisms to maximize enterprise value",
+        "experience with application 'shirt sizing', architecture visioning, and roadmap development",
+        "provides financial input on department or project budgets",
+        "strong grasp of technical debt management",
+        "technical ownership of Service Provider deliverables"
+      ],
+      "rationale": "These phrases relate to technical ownership, financial management, and strategic planning."
+    },
+    {
+      "signal_type": "emerging_signals",
+      "canonical_signal": "continuous_learning_and_research",
+      "phrase_count": 4,
+      "jd_coverage": 3,
+      "companies": [
+        "Capital One",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Continuous learning mindset is highlighted as a key capability",
+        "expectation to apply novel research techniques in production",
+        "expectation to stay current on state-of-the-art methods and technologies",
+        "trailblazing and forging new paths when the route is unknown"
+      ],
+      "example_phrases": [
+        "Continuous learning mindset is highlighted as a key capability",
+        "expectation to apply novel research techniques in production",
+        "expectation to stay current on state-of-the-art methods and technologies",
+        "trailblazing and forging new paths when the route is unknown"
+      ],
+      "rationale": "These phrases emphasize ongoing learning, research, and innovation."
+    },
+    {
+      "signal_type": "emerging_signals",
+      "canonical_signal": "ai_in_industry_and_domain_expertise",
+      "phrase_count": 4,
+      "jd_coverage": 3,
+      "companies": [
+        "Accenture",
+        "Marriott",
+        "Slalom"
+      ],
+      "source_phrases": [
+        "Experience in Financial Services and Healthcare is highlighted as valuable",
+        "Exposure to industry-specific AI use cases is valued but not required",
+        "experience with pricing and revenue management capabilities (revenue forecasting, optimization models, price determination, inventory optimization, room allocation strategies)",
+        "exposure to both cash and points-based room pricing and loyalty award bands"
+      ],
+      "example_phrases": [
+        "Experience in Financial Services and Healthcare is highlighted as valuable",
+        "Exposure to industry-specific AI use cases is valued but not required",
+        "experience with pricing and revenue management capabilities (revenue forecasting, optimization models, price determination, inventory optimization, room allocation strategies)",
+        "exposure to both cash and points-based room pricing and loyalty award bands"
+      ],
+      "rationale": "All relate to AI applications in specific industries or domains."
+    },
+    {
+      "signal_type": "emerging_signals",
+      "canonical_signal": "certifications_and_professional_contributions",
+      "phrase_count": 3,
+      "jd_coverage": 2,
+      "companies": [
+        "Accenture",
+        "Disney"
+      ],
+      "source_phrases": [
+        "Certifications such as Google Professional Machine Learning Engineer or AWS Certified Machine Learning \u2013 Specialty are valued",
+        "Contributions to open-source ML or data-engineering projects, conference presentations, or peer-reviewed publications are preferred",
+        "Relevant certifications (e.g., AWS or Azure Certified Machine Learning - Specialty, LLM courses) are a plus"
+      ],
+      "example_phrases": [
+        "Certifications such as Google Professional Machine Learning Engineer or AWS Certified Machine Learning \u2013 Specialty are valued",
+        "Contributions to open-source ML or data-engineering projects, conference presentations, or peer-reviewed publications are preferred",
+        "Relevant certifications (e.g., AWS or Azure Certified Machine Learning - Specialty, LLM courses) are a plus"
+      ],
+      "rationale": "All relate to professional certifications and contributions to the field."
+    },
+    {
+      "signal_type": "emerging_signals",
+      "canonical_signal": "platform_and_system_integration",
+      "phrase_count": 2,
+      "jd_coverage": 2,
+      "companies": [
+        "Disney"
+      ],
+      "source_phrases": [
+        "Experience with identity graphs and interoperability layers is valued",
+        "focus on both internal and third-party platform integration"
+      ],
+      "example_phrases": [
+        "Experience with identity graphs and interoperability layers is valued",
+        "focus on both internal and third-party platform integration"
+      ],
+      "rationale": "Both relate to integrating platforms and ensuring interoperability."
+    },
+    {
+      "signal_type": "emerging_signals",
+      "canonical_signal": "education_and_sponsorship_requirements",
+      "phrase_count": 2,
+      "jd_coverage": 2,
+      "companies": [
+        "Accenture",
+        "Disney"
+      ],
+      "source_phrases": [
+        "explicit requirement for 15 years full time education",
+        "role not open to sponsorship of any kind at this time"
+      ],
+      "example_phrases": [
+        "explicit requirement for 15 years full time education",
+        "role not open to sponsorship of any kind at this time"
+      ],
+      "rationale": "Both specify formal requirements for education and sponsorship."
+    },
+    {
+      "signal_type": "emerging_signals",
+      "canonical_signal": "observability_and_automation_technologies",
+      "phrase_count": 3,
+      "jd_coverage": 1,
+      "companies": [
+        "Marriott"
+      ],
+      "source_phrases": [
+        "cross-cloud observability (AWS, Azure, Alibaba Cloud)",
+        "focus on automation technologies like Cribl",
+        "integration of observability tools with ITOps solutions (ServiceNow, BigPanda, ReadyAPI)"
+      ],
+      "example_phrases": [
+        "cross-cloud observability (AWS, Azure, Alibaba Cloud)",
+        "focus on automation technologies like Cribl",
+        "integration of observability tools with ITOps solutions (ServiceNow, BigPanda, ReadyAPI)"
+      ],
+      "rationale": "These phrases focus on observability and automation tools in cloud and IT operations."
+    }
+  ]
+}

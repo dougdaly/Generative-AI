@@ -61,48 +61,57 @@ def build_disambiguate_prompt(
 def build_rhetoric_prompt(year: int, chunk_text: str) -> str:
     return f"""Classify the rhetoric in this State of the Union speech chunk ({year}).
 
-Choose exactly one tone:
-neutral, unifying, adversarial, upbeat, grave, urgent, defiant, conciliatory
+Step 1: Choose exactly one DEVICE based on the speaker's main intent:
+policy_ask, credit_claim, attack, exemplar, values, threat
 
-Choose exactly one device:
-policy_proposal, scoreboard, attack_contrast, ridicule, tribute, anecdote, values_frame, warning_threat, call_to_action
-
-Choose exactly one target:
+Step 2: Choose exactly one TARGET:
 the_public, institution, special_guests, domestic_opponents, foreign_adversaries, allies, unspecified
 
-Device guidance (use these tie-break rules):
-- anecdote: centers on a named individual/special guest ("is here tonight", "in the gallery", personal story as hook). If present, choose anecdote unless the chunk is overwhelmingly policy text.
-- tribute: honors/thanks a person or group for sacrifice/service (heroes, victims, military families). Often overlaps with anecdote; if the intent is honoring, choose tribute.
-- scoreboard: claims credit or touts results ("we achieved", "jobs are booming", "I signed", statistics as achievements).
-- policy_proposal: asks for or proposes action ("pass", "fund", "I propose", "my plan", "get a bill to my desk").
-- values_frame: moral/civic framing (freedom, democracy, rights, dignity, fairness) without a specific ask.
-- warning_threat: emphasizes danger/crisis/adversary/risk (security threats, crises, enemies).
-- attack_contrast: criticizes/blames opponents or contrasts with them, without explicit derision.
-- ridicule: explicit derision/shaming/name-calling or humiliation setups aimed at a target (stronger than attack_contrast).
-- call_to_action: direct imperative to act/stand/support now.
+Step 3: Choose exactly one TONE (how it feels overall):
+neutral, unifying, adversarial, upbeat, grave, urgent
 
-If unsure between two devices, choose the one that best matches the main purpose of the chunk.
+DEVICE definitions and tie-break rules:
+- policy_ask: proposes or asks for action/legislation/funding ("pass", "fund", "I propose", "my plan", "send me a bill", "get a bill to my desk").
+  Tie-break: if there is a concrete ask, choose policy_ask even if values are mentioned.
+- credit_claim: touts accomplishments/results or claims credit ("we achieved", "jobs are booming", "we cut", "I signed", statistics presented as achievements).
+- attack: criticizes/blames opponents or contrasts with them ("they voted against", "the other side", "Democrats/Republicans"), WITHOUT needing to be insulting.
+- exemplar: uses a named person/group story or honors someone as a persuasive example (special guests, victims, heroes, service members, "is here tonight", "in the gallery", "please stand").
+  Tie-break: if the chunk centers on a person/story/tribute, choose exemplar unless it is overwhelmingly a legislative ask.
+- values: moral/civic framing without a concrete ask (freedom, democracy, rights, dignity, fairness, who we are).
+- threat: emphasizes danger/crisis/adversary/risk (war, terrorism, invasion, enemies, catastrophe, urgent security risks).
+  Tie-break: if the chunk is primarily about danger/risk, choose threat even if it includes a call for unity.
 
-Target guidance:
+TARGET guidance:
 - institution: addressing Congress/the chamber ("members of Congress", "I ask Congress", "send me a bill").
-- special_guests: addressing named guests or their families.
-- domestic_opponents: criticizing "Democrats/Republicans/the other side" or political opponents.
-- foreign_adversaries: targeting foreign enemies (Putin, terrorists, hostile regimes).
+- special_guests: addressing named guests or their families directly ("Megan, please stand", "thank you for being here").
+- domestic_opponents: criticizing political opponents ("Democrats/Republicans", "the other side").
+- foreign_adversaries: targeting foreign enemies (named leaders/regimes/terrorists).
+- allies: praising/aligning with partners (NATO, allies, friendly nations).
 - the_public: addressing Americans broadly ("the American people", "families", "workers").
 
-Also set uses_guest_example to true/false (true if a named person is used as an example, even if target is different).
+Set uses_guest_example to true/false:
+- true if a named individual is used as an example (guest story, victim/hero anecdote), even if the target is the_public or institution.
 
-Return JSON only:
+Evidence rules:
+- evidence.device should quote the phrase that signals the device (ask/credit/blame/story/danger/values).
+- evidence.target should quote the words that identify who is addressed (name/group/country).
+- evidence.tone should quote a short phrase that conveys the tone.
+
+Evidence must be valid JSON strings:
+- Do NOT include double quote characters (") inside evidence fields.
+- If the source text contains quotes, paraphrase the phrase without quotes.
+
+Return JSON only (no prose):
 {{
-  "tone": "...",
   "device": "...",
   "target": "...",
+  "tone": "...",
   "uses_guest_example": true/false,
   "confidence": "low|med|high",
   "evidence": {{
-    "tone": "verbatim phrase (5-12 words)",
     "device": "verbatim phrase (5-12 words)",
-    "target": "verbatim phrase indicating who (e.g., name, group, country)"
+    "target": "verbatim phrase (5-12 words)",
+    "tone": "verbatim phrase (5-12 words)"
   }}
 }}
 

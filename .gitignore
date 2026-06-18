@@ -9,3 +9,6 @@ clip-roberta-finetuned/
 temp*.ipynb
 temp*.sh
 Untitled*.ipynb
+
+# Local cloned repos / external assets
+assets/diffusers/

@@ -13,7 +13,7 @@ from sklearn.cluster import KMeans
 from sklearn.preprocessing import normalize
 
 from sotu_analytics.models.embeddings import embed_texts
-from sotu_analytics.models.topics import label_topics, topic_shares
+from sotu_analytics.models.topics import ctfidf_terms, topic_shares
 from sotu_analytics.models.topic_label_llm import label_topics_with_llm  # expects year, texts, X, labels, km, ngram_terms_by_topic, model
 from sotu_analytics.io.save_json import save_json, save_jsonl
 from sotu_analytics.viz.timelines import plot_topic_timeline
@@ -109,12 +109,14 @@ def main():
 
     # N-gram terms for audit/debug (global)
     t_cfg = cfg["topics"]
-    terms = label_topics(
+    terms = ctfidf_terms(
         all_norm_texts,
         labels,
-        k=k,
-        ngram_range=tuple(t_cfg["ngram_range"]),
         top_terms=int(t_cfg["top_terms"]),
+        ngram_range=tuple(t_cfg["ngram_range"]),  # consider (2,3) here for interpretability
+        min_df=int(t_cfg.get("min_df", 2)),
+        max_df=float(t_cfg.get("max_df", 0.7)),
+        stop_words=t_cfg.get("stop_words", None),
     )
 
     # LLM labels (global)

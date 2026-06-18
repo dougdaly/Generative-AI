@@ -1,0 +1,386 @@
+{
+  "0": {
+    "topic_id": 0,
+    "micro_label": "Military Appreciation",
+    "macro_topic": "National Security and Military",
+    "subtopic": "Military Appreciation",
+    "confidence": "high",
+    "evidence": {
+      "macro": "military appreciation, honors, service members",
+      "subtopic": "thank you to military"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "1": {
+    "topic_id": 1,
+    "micro_label": "national pride",
+    "macro_topic": "National Identity and Values",
+    "subtopic": "Patriotism and Unity",
+    "confidence": "high",
+    "evidence": {
+      "macro": "national pride, unity, resilience",
+      "subtopic": "patriotic sentiments"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "2": {
+    "topic_id": 2,
+    "micro_label": "Income Inequality",
+    "macro_topic": "Economy and Jobs",
+    "subtopic": "Income Inequality",
+    "confidence": "high",
+    "evidence": {
+      "macro": "economic growth, jobs, wages",
+      "subtopic": "income disparity, middle-class"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "3": {
+    "topic_id": 3,
+    "micro_label": "Tax Reform",
+    "macro_topic": "Taxes, Budget, and Debt",
+    "subtopic": "Tax Reform",
+    "confidence": "high",
+    "evidence": {
+      "macro": "tax reform proposals",
+      "subtopic": "fair tax system"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "4": {
+    "topic_id": 4,
+    "micro_label": "political oppression",
+    "macro_topic": "Rights and Social Issues",
+    "subtopic": "Political Oppression",
+    "confidence": "high",
+    "evidence": {
+      "macro": "rights violations",
+      "subtopic": "political repression"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "5": {
+    "topic_id": 5,
+    "micro_label": "fundamental rights",
+    "macro_topic": "Rights and Social Issues",
+    "subtopic": "LGBTQ+ Rights",
+    "confidence": "high",
+    "evidence": {
+      "macro": "fundamental rights, Equality Act",
+      "subtopic": "transgender rights, LGBTQ+ equality"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "6": {
+    "topic_id": 6,
+    "micro_label": "Iran nuclear program",
+    "macro_topic": "Foreign Policy and Alliances",
+    "subtopic": "Iran nuclear program",
+    "confidence": "high",
+    "evidence": {
+      "macro": "American diplomacy in international agreements",
+      "subtopic": "Preventing Iran's nuclear weapon development"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "7": {
+    "topic_id": 7,
+    "micro_label": "NATO funding and expansion",
+    "macro_topic": "Foreign Policy and Alliances",
+    "subtopic": "NATO funding and expansion",
+    "confidence": "high",
+    "evidence": {
+      "macro": "NATO countries, military alliance",
+      "subtopic": "funding, expansion"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "8": {
+    "topic_id": 8,
+    "micro_label": "Health Care Reform",
+    "macro_topic": "Healthcare",
+    "subtopic": "Health Care Reform",
+    "confidence": "high",
+    "evidence": {
+      "macro": "Affordable Care Act, Medicare drug prices",
+      "subtopic": "Preexisting conditions coverage"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "9": {
+    "topic_id": 9,
+    "micro_label": "American Rescue Plan",
+    "macro_topic": "Economy and Jobs",
+    "subtopic": "American Rescue Plan",
+    "confidence": "high",
+    "evidence": {
+      "macro": "economic turnaround, rescue program",
+      "subtopic": "american rescue plan"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "10": {
+    "topic_id": 10,
+    "micro_label": "American Jobs",
+    "macro_topic": "Economy and Jobs",
+    "subtopic": "American Jobs",
+    "confidence": "high",
+    "evidence": {
+      "macro": "create jobs, american manufacturing, infrastructure investment",
+      "subtopic": "american jobs, tax incentives for businesses"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "11": {
+    "topic_id": 11,
+    "micro_label": "Higher Education Affordability",
+    "macro_topic": "Education and Workforce",
+    "subtopic": "Higher Education Affordability",
+    "confidence": "high",
+    "evidence": {
+      "macro": "Affordability of higher education is a critical issue in the workforce.",
+      "subtopic": "Reducing costs and increasing accessibility for college education."
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "12": {
+    "topic_id": 12,
+    "micro_label": "Reproductive Rights",
+    "macro_topic": "Rights and Social Issues",
+    "subtopic": "Reproductive Rights",
+    "confidence": "high",
+    "evidence": {
+      "macro": "rights and social issues",
+      "subtopic": "reproductive rights"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "13": {
+    "topic_id": 13,
+    "micro_label": "Law Enforcement Reform",
+    "macro_topic": "Crime and Public Safety",
+    "subtopic": "Law Enforcement Reform",
+    "confidence": "high",
+    "evidence": {
+      "macro": "public safety concerns",
+      "subtopic": "police accountability and reform"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "14": {
+    "topic_id": 14,
+    "micro_label": "National Security",
+    "macro_topic": "National Security and Military",
+    "subtopic": "Military Honors and Sacrifice",
+    "confidence": "high",
+    "evidence": {
+      "macro": "national security references, military honors",
+      "subtopic": "honoring service members, sacrifice"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "15": {
+    "topic_id": 15,
+    "micro_label": "Public Health Initiatives",
+    "macro_topic": "Healthcare",
+    "subtopic": "Public Health Initiatives",
+    "confidence": "high",
+    "evidence": {
+      "macro": "healthcare initiatives mentioned directly",
+      "subtopic": "specific public health actions and funding"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "16": {
+    "topic_id": 16,
+    "micro_label": "Democratic Process",
+    "macro_topic": "Governance and Institutions",
+    "subtopic": "Democratic Process",
+    "confidence": "high",
+    "evidence": {
+      "macro": "democracy, government operations",
+      "subtopic": "voting, political compromise"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "17": {
+    "topic_id": 17,
+    "micro_label": "Ukraine support",
+    "macro_topic": "Foreign Policy and Alliances",
+    "subtopic": "Ukraine Support",
+    "confidence": "high",
+    "evidence": {
+      "macro": "NATO/allies/diplomacy/foreign aid/international coordination",
+      "subtopic": "standing with Ukraine"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "18": {
+    "topic_id": 18,
+    "micro_label": "Military Sacrifice",
+    "macro_topic": "National Security and Military",
+    "subtopic": "Military Sacrifice",
+    "confidence": "high",
+    "evidence": {
+      "macro": "military sacrifice, combat injuries",
+      "subtopic": "service members牺牲"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "19": {
+    "topic_id": 19,
+    "micro_label": "Global Leadership",
+    "macro_topic": "Foreign Policy and Alliances",
+    "subtopic": "Global Leadership",
+    "confidence": "high",
+    "evidence": {
+      "macro": "America's role in the world",
+      "subtopic": "Leading coalitions and moral example"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "20": {
+    "topic_id": 20,
+    "micro_label": "Middle East Conflict",
+    "macro_topic": "Foreign Policy and Alliances",
+    "subtopic": "Middle East Conflict",
+    "confidence": "high",
+    "evidence": {
+      "macro": "crises abroad, including in the Middle East",
+      "subtopic": "Israeli-Palestinian conflict"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "21": {
+    "topic_id": 21,
+    "micro_label": "immigration reform",
+    "macro_topic": "Immigration and Border",
+    "subtopic": "Reform and Policy",
+    "confidence": "high",
+    "evidence": {
+      "macro": "immigration reform, border security",
+      "subtopic": "legislation, ICE support"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "22": {
+    "topic_id": 22,
+    "micro_label": "national optimism",
+    "macro_topic": "National Identity and Values",
+    "subtopic": "national optimism",
+    "confidence": "high",
+    "evidence": {
+      "macro": "optimism, future, union",
+      "subtopic": "national spirit, unity"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "23": {
+    "topic_id": 23,
+    "micro_label": "Earmark Reform",
+    "macro_topic": "Governance and Institutions",
+    "subtopic": "Earmark Reform",
+    "confidence": "high",
+    "evidence": {
+      "macro": "Congress functioning",
+      "subtopic": "Earmark Reform"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "24": {
+    "topic_id": 24,
+    "micro_label": "veteran support",
+    "macro_topic": "National Security and Military",
+    "subtopic": "Veteran Support",
+    "confidence": "high",
+    "evidence": {
+      "macro": "veterans, military families, support when they come home",
+      "subtopic": "care for veterans"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "25": {
+    "topic_id": 25,
+    "micro_label": "policy implementation",
+    "macro_topic": "Governance and Institutions",
+    "subtopic": "Policy Implementation",
+    "confidence": "high",
+    "evidence": {
+      "macro": "Congress functioning",
+      "subtopic": "policy implementation"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "26": {
+    "topic_id": 26,
+    "micro_label": "Clean Energy",
+    "macro_topic": "Infrastructure and Energy",
+    "subtopic": "Clean Energy",
+    "confidence": "high",
+    "evidence": {
+      "macro": "focus on energy policy, jobs, and environmental impact",
+      "subtopic": "specific emphasis on clean energy initiatives"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "27": {
+    "topic_id": 27,
+    "micro_label": "Drug Pricing",
+    "macro_topic": "Healthcare",
+    "subtopic": "Drug Pricing",
+    "confidence": "high",
+    "evidence": {
+      "macro": "Healthcare costs and access",
+      "subtopic": "Prescription drug prices"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "28": {
+    "topic_id": 28,
+    "micro_label": "Counterterrorism Efforts",
+    "macro_topic": "National Security and Military",
+    "subtopic": "Counterterrorism Efforts",
+    "confidence": "high",
+    "evidence": {
+      "macro": "national security and military operations",
+      "subtopic": "counterterrorism strategies"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "29": {
+    "topic_id": 29,
+    "micro_label": "budget cuts",
+    "macro_topic": "Taxes, Budget, and Debt",
+    "subtopic": "Budget Cuts",
+    "confidence": "high",
+    "evidence": {
+      "macro": "deficit reduction through cuts",
+      "subtopic": "specific budget cut measures"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "30": {
+    "topic_id": 30,
+    "micro_label": "military valor",
+    "macro_topic": "National Security and Military",
+    "subtopic": "Military Valor",
+    "confidence": "high",
+    "evidence": {
+      "macro": "military valor, combat scenarios",
+      "subtopic": "heroism in battle"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  },
+  "31": {
+    "topic_id": 31,
+    "micro_label": "job creation",
+    "macro_topic": "Economy and Jobs",
+    "subtopic": "Job Creation",
+    "confidence": "high",
+    "evidence": {
+      "macro": "job creation, new jobs, manufacturing in america",
+      "subtopic": "manufacturing jobs"
+    },
+    "model": "qwen2.5:14b-instruct-q4_K_M"
+  }
+}

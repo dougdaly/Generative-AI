@@ -1,0 +1,39 @@
+{
+  "artifact_type": "jd_signal_contract",
+  "schema_version": "1.0",
+  "purpose": "Define fields extracted from each job description before aggregation into a target archetype.",
+  "fields": [
+    "business_industries",
+    "problem_spaces",
+    "technology_areas",
+    "capabilities",
+    "technologies",
+    "responsibilities",
+    "seniority_signals",
+    "success_metrics",
+    "role_purpose",
+    "business_problems",
+    "role_outcomes",
+    "emerging_signals"
+  ],
+  "field_definitions": {
+    "business_industries": "Industries or business contexts where the role applies its work, such as banking, marketing, utilities, healthcare, advertising, or enterprise software.",
+    "problem_spaces": "Classes of business or operational problems the role is meant to solve, such as decision support, workflow automation, risk analysis, observability, or knowledge retrieval.",
+    "technology_areas": "Major technical approaches or architectural patterns involved in the role, such as LLMs, RAG, agentic AI, MLOps, graph analytics, or cloud-native AI systems.",
+    "capabilities": "Reusable abilities the person is expected to apply, such as designing AI architectures, integrating systems, evaluating models, mentoring engineers, or communicating tradeoffs.",
+    "technologies": "Specific tools, platforms, frameworks, languages, or infrastructure mentioned.",
+    "responsibilities": "Concrete work the person is expected to perform.",
+    "seniority_signals": "Signals that distinguish this as senior, staff, principal, or architect-level work.",
+    "success_metrics": "Business, technical, or operational outcomes that would indicate success.",
+    "role_purpose": "The function this role serves within the organization. Why does this job exist?",
+    "business_problems": "Specific organizational problems the company wants this role to solve.",
+    "role_outcomes": "Expected outputs or end states this role should produce.",
+    "emerging_signals": "Important signals that do not fit cleanly into the other categories or were not anticipated."
+  },
+  "extraction_rules": [
+    "Extract evidence from the job description only.",
+    "Do not limit extraction to the initial hypothesis.",
+    "Capture surprising or contradictory signals in emerging_signals.",
+    "Preserve short evidence snippets or source phrases when useful for provenance."
+  ]
+}

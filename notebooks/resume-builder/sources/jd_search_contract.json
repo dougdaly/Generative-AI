@@ -1,0 +1,36 @@
+{
+  "artifact_type": "jd_search_contract",
+  "schema_version": "1.0",
+  "purpose": "Define how job descriptions should be selected for target-market discovery.",
+  "selection_guidance": {
+    "preferred_count_for_working_resume_build": "10-20 high-quality job descriptions",
+    "max_count_for_broad_market_scan": 50,
+    "quality_rule": "Prefer relevant, current, detailed postings over high volume.",
+    "source_mix": "Include both assistant-sourced JDs and recruiter/user-provided JDs when available."
+  },
+  "contract": {
+    "titles": [
+      "Principal AI Engineer",
+      "Staff AI Engineer",
+      "AI Solutions Architect",
+      "AI Architect",
+      "Principal Machine Learning Engineer",
+      "Staff Machine Learning Engineer"
+    ],
+    "salary_min": 200000,
+    "years_experience_min": 5,
+    "exclude_titles": [
+      "Research Scientist",
+      "Intern",
+      "Junior"
+    ],
+    "must_have_keywords": [
+      "AI",
+      "machine learning",
+      "LLM",
+      "GenAI",
+      "artificial intelligence"
+    ],
+    "max_jds": 50
+  }
+}

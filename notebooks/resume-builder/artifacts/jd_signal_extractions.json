@@ -1,0 +1,2003 @@
+[
+  {
+    "title": "Lead Software Engineer - Licensing/AI Systems",
+    "company": "Disney",
+    "source": "Company careers page",
+    "url": "https://jobs.disneycareers.com/job/orlando/lead-software-engineer-licensing-ai-systems/391/86564722480",
+    "signals": {
+      "business_industries": [
+        "media and entertainment",
+        "digital content",
+        "travel industry",
+        "consumer products",
+        "licensing"
+      ],
+      "problem_spaces": [
+        "licensing financial operations",
+        "AI-driven decision-making",
+        "financial licensing workflows",
+        "predictive analytics",
+        "compliance monitoring",
+        "workflow automation",
+        "forecasting"
+      ],
+      "technology_areas": [
+        "AI-powered applications",
+        "machine learning",
+        "LLMs",
+        "cloud-native development",
+        "container orchestration",
+        "integration with internal and third-party financial platforms",
+        "CI/CD pipelines"
+      ],
+      "capabilities": [
+        "designing software architectures",
+        "developing and deploying custom AI solutions",
+        "integrating systems",
+        "mentoring engineers",
+        "collaborating with cross-functional teams",
+        "stakeholder engagement",
+        "analyzing and defining system requirements",
+        "leading complex projects",
+        "staying current with emerging technologies"
+      ],
+      "technologies": [
+        "Java",
+        "Python",
+        "AWS",
+        "GCP",
+        "Kubernetes",
+        "CI/CD"
+      ],
+      "responsibilities": [
+        "lead the design, development, and deployment of software solutions for licensing financial systems and AI-powered applications",
+        "architect and implement scalable services",
+        "integrate with internal and third-party financial platforms",
+        "collaborate with product, finance, and data science teams",
+        "define system requirements",
+        "deliver intelligent automation",
+        "apply machine learning and AI techniques to optimize workflows",
+        "forecasting and compliance monitoring",
+        "own the full software development lifecycle",
+        "mentor junior engineers",
+        "foster a culture of innovation, inclusion, and technical excellence",
+        "stay current with emerging technologies"
+      ],
+      "seniority_signals": [
+        "Lead Software Engineer",
+        "visionary",
+        "drive the development of scalable, intelligent systems",
+        "instrumental in shaping the architecture and delivery",
+        "report to Sr Manager, Technology",
+        "leadership of complex projects",
+        "mentor junior engineers",
+        "own the full software development lifecycle",
+        "7+ years of software engineering experience"
+      ],
+      "success_metrics": [
+        "delivery of next-generation platforms",
+        "optimized licensing workflows",
+        "improved business outcomes in enterprise environments",
+        "effective forecasting and compliance monitoring",
+        "successful integration with financial platforms",
+        "fostering a culture of innovation and technical excellence"
+      ],
+      "role_purpose": [
+        "drive the development of scalable, intelligent systems that support licensing financial operations and AI-driven decision-making",
+        "shape the architecture and delivery of next-generation platforms for financial licensing workflows and predictive analytics"
+      ],
+      "business_problems": [
+        "optimizing licensing workflows",
+        "improving forecasting accuracy",
+        "ensuring compliance monitoring",
+        "integrating disparate financial systems",
+        "automating business processes using AI"
+      ],
+      "role_outcomes": [
+        "scalable software solutions for licensing financial systems",
+        "AI-powered applications for business process automation",
+        "integrated financial platforms",
+        "mentored and developed junior engineers",
+        "innovative and inclusive engineering culture"
+      ],
+      "emerging_signals": [
+        "role not open to sponsorship of any kind at this time",
+        "emphasis on both technical and cultural leadership",
+        "focus on both internal and third-party platform integration",
+        "explicit mention of LLMs for business process automation"
+      ]
+    }
+  },
+  {
+    "title": "Lead Machine Learning Engineer",
+    "company": "Disney",
+    "source": "Company careers page",
+    "url": "https://jobs.disneycareers.com/job/new-york/lead-machine-learning-engineer/391/92134437872",
+    "signals": {
+      "business_industries": [
+        "media and entertainment",
+        "broadcast and cable networks",
+        "streaming platforms",
+        "advertising technology"
+      ],
+      "problem_spaces": [
+        "cross-media measurement",
+        "advanced analytics",
+        "content measurement",
+        "content marketing measurement",
+        "inventory forecasting",
+        "identity resolution",
+        "audience measurement",
+        "look-alike modeling",
+        "cross-platform measurement",
+        "data integrity",
+        "privacy and compliance",
+        "data interoperability"
+      ],
+      "technology_areas": [
+        "machine learning systems",
+        "deep learning",
+        "genAI",
+        "retrieval-augmented systems",
+        "MLOps",
+        "cloud-native data platforms",
+        "distributed compute",
+        "real-time data pipelines",
+        "model governance",
+        "feature/label foundations",
+        "container orchestration"
+      ],
+      "capabilities": [
+        "technical leadership",
+        "architecting ML platforms",
+        "developing and deploying ML models",
+        "optimizing for scale and performance",
+        "defining data contracts and metadata/lineage",
+        "establishing CI/CD patterns",
+        "model versioning and registry",
+        "automated evaluation and drift detection",
+        "mentoring engineers",
+        "driving design reviews",
+        "cross-functional collaboration",
+        "ensuring privacy-by-design",
+        "documentation and audit readiness"
+      ],
+      "technologies": [
+        "Python",
+        "SQL",
+        "PyTorch",
+        "vector databases",
+        "Kafka",
+        "Pub/Sub",
+        "Kinesis",
+        "Snowflake",
+        "Databricks",
+        "Spark",
+        "BigQuery",
+        "Docker",
+        "Kubernetes",
+        "MLflow",
+        "Kubeflow",
+        "Vertex AI",
+        "SageMaker"
+      ],
+      "responsibilities": [
+        "Lead development, training, and deployment of advanced ML models for identity resolution, look-alike modeling, and cross-platform measurement",
+        "Translate algorithms into production-quality code",
+        "Optimize ML systems for scale and performance",
+        "Architect scalable ML platforms and reusable components",
+        "Define data contracts, metadata/lineage expectations, and automated quality controls",
+        "Establish CI/CD patterns, model versioning/registry, automated evaluation, drift detection, monitoring dashboards/alerts, and operational playbooks",
+        "Drive design reviews and clarify technical requirements",
+        "Lead multi-quarter initiatives with product, analytics, and platform engineering stakeholders",
+        "Mentor engineers through code/design reviews",
+        "Build shared libraries and best practices",
+        "Ensure privacy-by-design practices, PII safeguards, documentation, and audit readiness"
+      ],
+      "seniority_signals": [
+        "Lead Machine Learning Engineer",
+        "senior individual contributor",
+        "provides technical leadership",
+        "leads architecture and standards",
+        "lead technical initiatives across teams",
+        "mentor engineers",
+        "7+ years of professional experience delivering production ML systems",
+        "8+ years total experience (preferred)",
+        "influence architecture and standards",
+        "multi-quarter initiatives"
+      ],
+      "success_metrics": [
+        "robust suite of analytics solutions delivered",
+        "production ML systems operating at scale",
+        "data integrity, interoperability, and reliability across production environments",
+        "improved team velocity and quality",
+        "sustained production health",
+        "audit readiness"
+      ],
+      "role_purpose": [
+        "Provide technical leadership for complex machine learning systems and the data foundations required to operate them",
+        "Apply machine learning techniques to build predictive systems at scale for identity, audience, and cross-platform measurement",
+        "Lead architecture and standards for ML pipelines and data management"
+      ],
+      "business_problems": [
+        "Delivering actionable insights related to content, monetization, and audience development",
+        "Supporting content production, marketing, and monetization with analytics",
+        "Ensuring data integrity and privacy compliance in ML workflows",
+        "Maintaining reliability and interoperability of large-scale data and ML systems"
+      ],
+      "role_outcomes": [
+        "Production-quality ML models and pipelines for identity, audience, and cross-platform measurement",
+        "Scalable and reliable ML platforms and reusable components",
+        "Established data contracts and automated quality controls",
+        "Operational playbooks and monitoring for production health",
+        "Mentored and enabled engineering team",
+        "Privacy-compliant and auditable ML workflows"
+      ],
+      "emerging_signals": [
+        "Hands-on experience with genAI and retrieval-augmented systems is required",
+        "Experience with identity graphs and interoperability layers is valued",
+        "Contributions to open-source ML or data-engineering projects, conference presentations, or peer-reviewed publications are preferred",
+        "Certifications such as Google Professional Machine Learning Engineer or AWS Certified Machine Learning \u2013 Specialty are valued"
+      ]
+    }
+  },
+  {
+    "title": "Director, Decision Science AI/ML Engineering & Ops",
+    "company": "Disney",
+    "source": "Company careers page",
+    "url": "https://jobs.disneycareers.com/job/burbank/director-decision-science-ai-ml-engineering-and-ops/391/95735380864",
+    "signals": {
+      "business_industries": [
+        "media and entertainment",
+        "theme parks",
+        "cruise line",
+        "consumer products",
+        "corporate finance",
+        "streaming services (Disney+, Hulu, ESPN)",
+        "enterprise software"
+      ],
+      "problem_spaces": [
+        "decision support",
+        "workflow automation",
+        "model deployment",
+        "model monitoring",
+        "model explainability",
+        "technical debt remediation",
+        "data quality assurance",
+        "operational reliability",
+        "governance and compliance",
+        "AI-powered productivity",
+        "change management",
+        "risk analysis"
+      ],
+      "technology_areas": [
+        "MLOps",
+        "AI/ML engineering",
+        "ensemble modeling",
+        "simulation",
+        "optimization",
+        "statistical modeling",
+        "genAI",
+        "SaaS platforms",
+        "cloud computing",
+        "feature stores",
+        "automated pipelines",
+        "agent-driven solutions",
+        "interactive LLM/genAI implementations",
+        "CI/CD",
+        "automated testing & monitoring"
+      ],
+      "capabilities": [
+        "architecting scalable, observable, resilient AI/ML systems",
+        "leading and mentoring AI/ML engineering teams",
+        "productionizing decision science models",
+        "designing reusable building blocks and libraries",
+        "defining and executing MLOps strategy",
+        "cross-functional partnership and communication",
+        "portfolio prioritization and demand management",
+        "technical translation between science and engineering",
+        "remediating technical debt",
+        "ensuring security, privacy, and responsible AI",
+        "driving operational excellence",
+        "change management",
+        "developing and maintaining vision in evolving environments"
+      ],
+      "technologies": [
+        "Python",
+        "R",
+        "SQL",
+        "GitLab",
+        "GitHub",
+        "Docker",
+        "AWS",
+        "cloud infrastructure",
+        "feature stores",
+        "automated pipelines",
+        "KPI dashboards",
+        "code assistants",
+        "validation suites"
+      ],
+      "responsibilities": [
+        "Develop and maintain team vision in a fast-paced, evolving arena",
+        "Lead and mentor a specialized team of AI/ML engineers",
+        "Architect and implement MLOps roadmap and practices",
+        "Design and build reusable building blocks for modelers",
+        "Define design patterns and roadmaps for reusable capabilities",
+        "Co-design and engineer scalable science services",
+        "Champion adoption of portfolio-wide metrics and KPIs",
+        "Implement automated testing, validation, and monitoring",
+        "Identify and remediate technical debt in ML pipelines",
+        "Ensure operational reliability and rapid response to failures",
+        "Embed explainability and responsible AI by design",
+        "Foster adoption of AI tools for productivity",
+        "Provide documentation and training for reusable tools",
+        "Serve as primary partner for model productization",
+        "Establish intake and prioritization mechanisms",
+        "Connect teams with process improvements and best practices",
+        "Ensure compliance with security, privacy, and regulatory standards",
+        "Balance experimentation velocity with sustainable cloud economics",
+        "Communicate and influence at all organizational levels"
+      ],
+      "seniority_signals": [
+        "Director-level role",
+        "12+ years of related experience",
+        "Foundational leadership role",
+        "Architect of technical backbone",
+        "Visionary leader",
+        "Matrixed team management",
+        "Strategic planning and consulting with executives",
+        "Defining skill mix, career paths, and hiring strategy",
+        "Thought partner for all levels"
+      ],
+      "success_metrics": [
+        "Increased speed-to-market for decision science models",
+        "Reusability of integrated algorithms",
+        "Reduced time-to-production",
+        "Improved model reliability and decision integrity",
+        "Automated metric capture and KPI visibility",
+        "Operational reliability (minimal disruption from failures)",
+        "Modern, patchable, and secure SaaS products",
+        "Cost-aware and sustainable AI/ML operations",
+        "Adoption of AI-powered productivity tools"
+      ],
+      "role_purpose": [
+        "Bridge the gap between decision science and industrial-scale engineering",
+        "Productionize decision science for efficient SaaS deployment",
+        "Build and lead the technical backbone for AI-powered products",
+        "Empower scientists to move from proof-of-concept to global production",
+        "Eliminate friction between model development and deployment"
+      ],
+      "business_problems": [
+        "Slow or inefficient transition from model development to production",
+        "Lack of scalable, reusable, and automated AI/ML deployment processes",
+        "Technical debt and outdated production systems",
+        "Insufficient model monitoring and explainability",
+        "Operational disruptions due to system failures",
+        "Need for compliance with security, privacy, and responsible AI standards",
+        "Balancing innovation velocity with system stability and cost"
+      ],
+      "role_outcomes": [
+        "Robust, automated, and scalable deployment factory for science models",
+        "Library of reusable building blocks for modelers",
+        "Standardized, automated pipelines and monitoring tools",
+        "Portfolio-wide adoption of metrics and KPIs",
+        "Modernized, reliable, and secure production systems",
+        "Empowered and high-performing AI/ML engineering team",
+        "Seamless integration and deployment of AI/ML services"
+      ],
+      "emerging_signals": [
+        "Treating AI/MLOps as a product for internal scientists",
+        "Emphasis on explainability and responsible AI by default",
+        "Cost-aware design and responsible scaling of AI/ML workloads",
+        "Use of agent-driven and interactive LLM/genAI solutions",
+        "Focus on both greenfield AI initiatives and stewardship of legacy systems",
+        "Technical translation as a core leadership function",
+        "Portfolio prioritization mechanisms to maximize enterprise value"
+      ]
+    }
+  },
+  {
+    "title": "Principal Data Scientist, AI Foundations",
+    "company": "Capital One",
+    "source": "Company careers page",
+    "url": "https://www.capitalonecareers.com/job/new-york/principal-data-scientist-ai-foundations/1732/86070871904",
+    "signals": {
+      "business_industries": [
+        "financial services",
+        "banking",
+        "consumer finance",
+        "enterprise software"
+      ],
+      "problem_spaces": [
+        "data-driven decision-making",
+        "personalization",
+        "customer experience optimization",
+        "workflow automation",
+        "knowledge retrieval",
+        "scalable AI/ML deployment",
+        "digital assistant interaction"
+      ],
+      "technology_areas": [
+        "large language models (LLMs)",
+        "natural language processing (NLP)",
+        "generative AI",
+        "machine learning operations (MLOps)",
+        "cloud-native AI systems",
+        "scalable architecture",
+        "deep learning",
+        "self-supervised learning",
+        "reinforcement learning from human feedback (RLHF)"
+      ],
+      "capabilities": [
+        "designing and building AI/ML models",
+        "adapting and finetuning LLMs",
+        "operationalizing models in production",
+        "partnering with cross-functional teams",
+        "translating technical work to business goals",
+        "mentoring and talent development",
+        "evaluating and integrating emerging technologies",
+        "delivering libraries, platforms, or solution-level code",
+        "communicating with non-technical audiences"
+      ],
+      "technologies": [
+        "Pytorch",
+        "AWS Ultraclusters",
+        "Hugging Face",
+        "LangChain",
+        "Lightning",
+        "VectorDBs",
+        "Python",
+        "Scala",
+        "R",
+        "SQL",
+        "cloud computing platforms"
+      ],
+      "responsibilities": [
+        "partnering with data scientists, software engineers, ML engineers, and product managers",
+        "delivering AI-powered products",
+        "building and shipping scalable AI/ML solutions",
+        "experimenting and innovating with generative AI technologies",
+        "adapting and finetuning LLMs for customer-facing applications",
+        "building ML and NLP models through all phases of development",
+        "operationalizing models in resilient production systems",
+        "translating complex work into tangible business goals",
+        "researching and evaluating emerging technologies",
+        "delivering libraries, platforms, or solution-level code to products"
+      ],
+      "seniority_signals": [
+        "principal associate",
+        "driving force to experiment, innovate and create next generation experiences",
+        "expert in NLP and LLMs",
+        "track record of delivering models at scale",
+        "passionate about talent development for your own team and beyond",
+        "influential and able to bring along cross-functional teams",
+        "challenging conventional thinking and improving the status quo"
+      ],
+      "success_metrics": [
+        "delivery of AI-powered products that change customer interactions",
+        "deployment of scalable and resilient production systems",
+        "features that delight customers with dynamic and personalized experiences",
+        "unlocking big opportunities that help people save money, time, and agony",
+        "successful operationalization of models serving 80+ million customers"
+      ],
+      "role_purpose": [
+        "lead the development and deployment of foundational AI/ML solutions",
+        "drive innovation in customer-facing applications using generative AI",
+        "enable dynamic and personalized experiences in Capital One's mobile app",
+        "advance Capital One's position as a leader in data-driven decision-making"
+      ],
+      "business_problems": [
+        "improving customer experience in financial services",
+        "enabling personalized and dynamic app features",
+        "scaling AI/ML solutions to serve millions of customers",
+        "unlocking insights from large volumes of numeric and textual data",
+        "enhancing digital assistant capabilities"
+      ],
+      "role_outcomes": [
+        "state-of-the-art scalable AI/ML architectures in production",
+        "operationalized NLP and LLM models for customer-facing features",
+        "AI-powered products integrated into the mobile app",
+        "libraries, platforms, or solution-level code delivered to products",
+        "measurable improvements in customer experience and engagement"
+      ],
+      "emerging_signals": [
+        "focus on explainability and training optimization in LLMs",
+        "expectation to stay current on state-of-the-art methods and technologies",
+        "requirement for both technical depth and business communication skills",
+        "cross-functional influence and leadership beyond immediate team"
+      ]
+    }
+  },
+  {
+    "title": "Distinguished AI Engineer",
+    "company": "Capital One",
+    "source": "Company careers page",
+    "url": "https://www.capitalonecareers.com/job/cambridge/distinguished-ai-engineer/1732/93736801200",
+    "signals": {
+      "business_industries": [
+        "financial services",
+        "banking"
+      ],
+      "problem_spaces": [
+        "personalized customer experiences",
+        "real-time customer support",
+        "decision support",
+        "workflow automation",
+        "AI governance",
+        "observability",
+        "model evaluation",
+        "scalable AI infrastructure"
+      ],
+      "technology_areas": [
+        "Generative AI",
+        "foundation models",
+        "large language models (LLMs)",
+        "similarity search",
+        "vector databases",
+        "guardrails",
+        "AI observability",
+        "AI governance",
+        "cloud-native AI systems",
+        "AI optimization"
+      ],
+      "capabilities": [
+        "architecting AI systems",
+        "launching conversational AI experiences",
+        "designing, developing, testing, deploying, and supporting AI software components",
+        "training foundation models",
+        "LLM inference",
+        "implementing similarity search",
+        "implementing guardrails",
+        "model evaluation and experimentation",
+        "AI system governance",
+        "AI observability",
+        "optimizing AI system performance (scalability, cost, latency, throughput)",
+        "mentoring engineering teams",
+        "influencing cross-functional stakeholders",
+        "communicating complex AI concepts",
+        "applying novel AI research in production"
+      ],
+      "technologies": [
+        "AWS Ultraclusters",
+        "Huggingface",
+        "VectorDBs",
+        "Nemo Guardrails",
+        "PyTorch",
+        "Python",
+        "Go",
+        "Scala",
+        "Java",
+        "C++",
+        "C#",
+        "Golang",
+        "Google Cloud",
+        "Azure"
+      ],
+      "responsibilities": [
+        "architect and launch conversational experiences powered by Generative AI",
+        "partner with cross-functional teams to deliver AI-powered products",
+        "design, develop, test, deploy, and support AI software components",
+        "train foundation models",
+        "implement LLM inference",
+        "implement similarity search and vector databases",
+        "implement guardrails",
+        "conduct model evaluation and experimentation",
+        "ensure AI system governance and observability",
+        "introduce and invent LLM optimization techniques",
+        "contribute to technical vision and long-term roadmap of foundational AI systems",
+        "lead and mentor multiple engineering teams",
+        "influence cross-functional stakeholders up to VP level"
+      ],
+      "seniority_signals": [
+        "Distinguished Engineer title",
+        "Director-level experience",
+        "at least 8 years of experience developing AI and ML algorithms or technologies",
+        "lead and mentor multiple engineering teams",
+        "influence cross-functional stakeholders up to VP level",
+        "contribute to technical vision and long-term roadmap",
+        "deep expertise in engineering, mathematics, hardware, software, and AI"
+      ],
+      "success_metrics": [
+        "scalable, high-performance AI infrastructure",
+        "breakthrough product experiences",
+        "responsible and reliable AI systems",
+        "improved hardware utilization, latency, throughput, and cost",
+        "AI solutions that deliver value to millions of customers",
+        "enhanced products with transformative AI capabilities"
+      ],
+      "role_purpose": [
+        "bring the transformative power of emerging AI capabilities to reimagine how Capital One serves customers and businesses",
+        "advance the state of the art in science and AI engineering",
+        "build and deploy proprietary AI solutions central to the business"
+      ],
+      "business_problems": [
+        "informing customers about unusual charges",
+        "answering customer questions in real time",
+        "delivering real-time, personalized customer experiences",
+        "scaling AI infrastructure for enterprise use",
+        "ensuring responsible and reliable AI in banking"
+      ],
+      "role_outcomes": [
+        "AI-powered conversational experiences for millions of customers",
+        "production-ready, scalable AI systems",
+        "optimized AI system performance",
+        "enhanced customer and associate interactions with Capital One",
+        "technical vision and roadmap for foundational AI systems"
+      ],
+      "emerging_signals": [
+        "strong emphasis on responsible and reliable AI",
+        "focus on AI governance and observability as first-class concerns",
+        "expectation to apply novel research techniques in production",
+        "trailblazing and forging new paths when the route is unknown",
+        "deep technical breadth across hardware, software, and AI"
+      ]
+    }
+  },
+  {
+    "title": "Distinguished AI Engineer - Agentic AI Platform",
+    "company": "Capital One",
+    "source": "Company careers page",
+    "url": "https://www.capitalonecareers.com/job/san-jose/distinguished-ai-engineer-agentic-ai-platform/1732/89599740832",
+    "signals": {
+      "business_industries": [
+        "financial services",
+        "banking",
+        "enterprise software"
+      ],
+      "problem_spaces": [
+        "decision support",
+        "workflow automation",
+        "risk analysis",
+        "observability",
+        "knowledge retrieval",
+        "personalized customer experiences",
+        "real-time customer interaction",
+        "trust and safety",
+        "multi-tenant policy enforcement"
+      ],
+      "technology_areas": [
+        "Generative AI",
+        "LLMs",
+        "RAG (Retrieval-Augmented Generation)",
+        "agentic AI",
+        "MLOps",
+        "cloud-native AI systems",
+        "multi-tenant architectures",
+        "AI platform engineering",
+        "vector search",
+        "memory architectures",
+        "guardrails",
+        "orchestration frameworks",
+        "Kubernetes (K8s)",
+        "multi-modal AI"
+      ],
+      "capabilities": [
+        "designing AI architectures",
+        "integrating systems",
+        "evaluating models",
+        "mentoring engineers",
+        "communicating tradeoffs",
+        "standardizing and automating workflows",
+        "optimizing performance and cost",
+        "incubating proof of concepts",
+        "authoring technical design documents",
+        "evangelizing platform vision",
+        "leading cross-functional teams",
+        "developing SDKs and CLIs",
+        "implementing trust and safety mechanisms",
+        "driving RFCs",
+        "multi-region orchestration"
+      ],
+      "technologies": [
+        "Python",
+        "Go",
+        "Scala",
+        "Java",
+        "C++",
+        "C#",
+        "LangGraph",
+        "AutoGen",
+        "Semantic Kernel",
+        "CrewAI",
+        "LlamaIndex",
+        "LangChain",
+        "AWS",
+        "Google Cloud",
+        "Azure",
+        "Vertex AI",
+        "Amazon SageMaker",
+        "Azure Machine Learning",
+        "Kubernetes",
+        "Helm charts",
+        "CRDs",
+        "service mesh",
+        "VectorDBs"
+      ],
+      "responsibilities": [
+        "Design agentic workflow framework and shared services (memory, guardrails, vector search, SDKs, blueprints)",
+        "Partner with cross-functional teams to deliver AI-powered products",
+        "Contribute to platform architecture, publish/refine diagrams and APIs",
+        "Standardize and automate agentic workflows",
+        "Evaluate and blend agentic frameworks for enterprise SLAs",
+        "Develop GenAI SDK, CLI, and starter kits for rapid prototyping",
+        "Implement central guardrail services (prompt firewalls, content-filter hooks, red team harnesses, audit APIs)",
+        "Optimize orchestration for performance and cost (batching, caching, heuristic tuning)",
+        "Incubate proof of concepts and drive RFCs (e.g., hierarchical agent memory, multimodal guardrails, multimodal RAG)",
+        "Own Helm charts, operators, and CRDs for agent auto-scaling",
+        "Coach and mentor engineers, host architecture office hours",
+        "Author technical design documents and blogs",
+        "Represent Capital One at AI conferences"
+      ],
+      "seniority_signals": [
+        "Distinguished Engineer title",
+        "Director-level experience",
+        "8+ years experience developing AI/ML algorithms or technologies",
+        "Experience leading and mentoring multiple engineering teams",
+        "Influence cross-functional stakeholders up to VP and C-suite",
+        "Experience as Staff-plus or Distinguished IC engineer influencing 50+ engineers",
+        "Authoring technical design documents and blogs",
+        "Representing company at Tier1 AI conferences"
+      ],
+      "success_metrics": [
+        "90% of new apps adopt standardized agentic workflows",
+        "Shrink prototyping to production timelines by 30%",
+        "Zero Sev4 incidents (trust and safety)",
+        "Reductions in per token spend",
+        "Scalable, high-performance AI infrastructure",
+        "Breakthrough product experiences",
+        "Responsible and reliable AI systems"
+      ],
+      "role_purpose": [
+        "Design and build an enterprise Generative AI Platform enabling product teams to compose safe, explainable AI capabilities",
+        "Translate foundation model power into production-grade applications",
+        "Advance state of the art in AI engineering at Capital One",
+        "Empower teams to enhance products with AI in responsible, scalable ways"
+      ],
+      "business_problems": [
+        "Enable rapid, safe adoption of AI across multiple business lines",
+        "Reduce complexity for product teams integrating AI",
+        "Ensure trust, safety, and compliance in AI-powered applications",
+        "Optimize cost and performance of AI systems",
+        "Deliver value to millions of customers through AI"
+      ],
+      "role_outcomes": [
+        "Enterprise GenAI platform with standardized agentic workflows",
+        "Production-grade AI applications used by millions",
+        "Centralized guardrail and safety services",
+        "Developer SDKs and starter kits for rapid AI workflow deployment",
+        "Optimized orchestration and cost efficiency",
+        "Documented and evangelized platform architecture"
+      ],
+      "emerging_signals": [
+        "Emphasis on developer experience (SDK, CLI, starter kits)",
+        "Multi-modal guardrails and RAG as emerging focus areas",
+        "Hierarchical agent memory as a novel architectural pattern",
+        "Centralized, reusable guardrail services for all applications",
+        "Expectation to influence both internal and external AI communities"
+      ]
+    }
+  },
+  {
+    "title": "AI Infrastructure Architect",
+    "company": "Accenture",
+    "source": "Company careers page",
+    "url": "https://www.accenture.com/us-en/careers/jobdetails?id=ATCI-5197918-S1906698_en",
+    "signals": {
+      "business_industries": [
+        "consulting",
+        "aerospace and defense",
+        "automotive",
+        "banking",
+        "capital markets",
+        "chemicals",
+        "communications and media",
+        "consumer goods and services",
+        "energy",
+        "health",
+        "high tech",
+        "industrial",
+        "insurance",
+        "life sciences",
+        "natural resources",
+        "public service",
+        "private equity",
+        "retail",
+        "software and platforms",
+        "travel",
+        "US federal government",
+        "utilities"
+      ],
+      "problem_spaces": [
+        "AI infrastructure optimization",
+        "hardware performance optimization",
+        "power consumption optimization",
+        "cost and scalability of computational stack",
+        "AI technology and vendor evaluation",
+        "full stack integration",
+        "production-ready AI solutions",
+        "quality standards for AI systems",
+        "innovative AI applications (chatbots, image processing)",
+        "security in AI solutions"
+      ],
+      "technology_areas": [
+        "AI infrastructure",
+        "solution architecture",
+        "cloud-based AI infrastructure",
+        "LLMs",
+        "agentic AI",
+        "deep learning",
+        "neural networks",
+        "cloud computing platforms and services"
+      ],
+      "capabilities": [
+        "architecting and building custom AI infrastructure/hardware solutions",
+        "optimizing AI infrastructure/hardware",
+        "advising on technology and vendor selection",
+        "full stack integration",
+        "designing and implementing production-ready AI solutions",
+        "collaborating with cross-functional teams",
+        "facilitating knowledge sharing",
+        "evaluating and recommending new tools and technologies",
+        "evaluating and integrating third-party AI technologies",
+        "designing scalable and efficient application architectures",
+        "implementing security best practices",
+        "influencing and advisory skills",
+        "subject matter expertise"
+      ],
+      "technologies": [
+        "TensorFlow",
+        "PyTorch",
+        "Python",
+        "R",
+        "cloud AI services",
+        "data processing and analysis tools"
+      ],
+      "responsibilities": [
+        "architect and build custom AI infrastructure/hardware solutions",
+        "optimize AI infrastructure/hardware performance, power consumption, cost, and scalability",
+        "advise on AI infrastructure technology and vendor evaluation, selection, and integration",
+        "design and implement production-ready AI solutions",
+        "ensure solutions meet quality standards",
+        "work with various AI models (generative AI, deep learning, neural networks)",
+        "explore innovative AI applications (chatbots, image processing)",
+        "collaborate with cross-functional teams and global community",
+        "facilitate knowledge sharing sessions",
+        "evaluate and recommend new tools and technologies",
+        "evaluate and integrate third-party AI technologies",
+        "design scalable and efficient application architectures",
+        "implement security best practices in AI solutions"
+      ],
+      "seniority_signals": [
+        "expected to be a Subject Matter Expert with deep knowledge and experience",
+        "responsible for team decisions",
+        "influencing and advisory skills",
+        "engage with multiple teams and contribute on key decisions",
+        "provide solutions to problems that apply across multiple teams",
+        "minimum 12 years of experience in Solution Architecture"
+      ],
+      "success_metrics": [
+        "optimized AI infrastructure/hardware performance",
+        "reduced power consumption",
+        "cost-effective and scalable computational stack",
+        "production-ready solutions meeting quality standards",
+        "improved efficiency and effectiveness of AI solutions"
+      ],
+      "role_purpose": [
+        "architect and build custom AI infrastructure/hardware solutions",
+        "optimize and advise on AI infrastructure for performance, cost, and scalability",
+        "enable production-ready, high-quality AI solutions for clients"
+      ],
+      "business_problems": [
+        "need for optimized, scalable, and cost-effective AI infrastructure",
+        "integration of new AI technologies and vendors",
+        "ensuring security and quality in AI solutions",
+        "adoption of innovative AI applications"
+      ],
+      "role_outcomes": [
+        "custom AI infrastructure/hardware solutions delivered",
+        "optimized and scalable AI computational stack",
+        "production-ready AI solutions implemented",
+        "cross-team knowledge sharing and capability uplift",
+        "integration of new tools and technologies"
+      ],
+      "emerging_signals": [
+        "focus on agentic AI capabilities",
+        "emphasis on both hardware and software optimization",
+        "role includes global community engagement and knowledge sharing",
+        "explicit requirement for 15 years full time education"
+      ]
+    }
+  },
+  {
+    "title": "Advanced AI Architect",
+    "company": "Accenture",
+    "source": "Company careers page",
+    "url": "https://www.accenture.com/us-en/careers/jobdetails?id=R00330053_en&title=Advanced+AI+Architect",
+    "signals": {
+      "business_industries": [
+        "consulting",
+        "aerospace and defense",
+        "automotive",
+        "banking",
+        "capital markets",
+        "chemicals",
+        "communications and media",
+        "consumer goods and services",
+        "energy",
+        "health",
+        "high tech",
+        "industrial",
+        "insurance",
+        "life sciences",
+        "natural resources",
+        "public service",
+        "private equity",
+        "retail",
+        "software and platforms",
+        "travel",
+        "US federal government",
+        "utilities"
+      ],
+      "problem_spaces": [
+        "scalability",
+        "security",
+        "governance",
+        "performance optimization",
+        "AI observability",
+        "knowledge retrieval",
+        "enterprise readiness",
+        "cost optimization",
+        "trust and reliability"
+      ],
+      "technology_areas": [
+        "full stack AI architecture",
+        "AI agents",
+        "generative AI",
+        "foundation models",
+        "knowledge and data engineering",
+        "multi-agent architecture",
+        "AI security architecture",
+        "AI runtime architecture",
+        "AI governance",
+        "AI DevOps",
+        "AI infrastructure",
+        "knowledge graphs",
+        "semantic layers",
+        "AgentOps",
+        "LLMOps",
+        "cloud-native AI systems",
+        "public, private, and sovereign clouds"
+      ],
+      "capabilities": [
+        "designing AI architectures",
+        "delivering AI platforms and solutions",
+        "leading technical design workshops",
+        "collaborating with client teams",
+        "evaluating and selecting technologies",
+        "estimating design alternatives and roadmaps",
+        "developing TCO models",
+        "documenting architectural alternatives",
+        "facilitating alignment of architectural decisions",
+        "designing blueprints for AI systems",
+        "incorporating AI security",
+        "designing for observability and governance",
+        "recommending design optimizations",
+        "implementing AgentOps/LLMOps",
+        "building reusable AI components",
+        "troubleshooting and optimizing performance"
+      ],
+      "technologies": [
+        "AI agents",
+        "generative AI",
+        "foundation models",
+        "knowledge graphs",
+        "semantic layers",
+        "AgentOps",
+        "LLMOps",
+        "cloud-native AI services",
+        "open-source technologies",
+        "public cloud platforms",
+        "third-party tools"
+      ],
+      "responsibilities": [
+        "designing and delivering full stack AI architecture for platforms, products, or engagements",
+        "architecting enterprise grade AI platforms and solutions",
+        "leading AI architecture and technical design workshops",
+        "collaborating with client teams to finalize requirements",
+        "evaluating and selecting technologies for AI platforms",
+        "estimating design alternatives, effort, and roadmaps",
+        "developing TCO models and assessing financial viability",
+        "designing and documenting architectural alternatives and recommendations",
+        "facilitating alignment of key architectural decisions",
+        "designing and documenting multi-agent, security, runtime, governance, DevOps, infrastructure, knowledge, and data blueprints",
+        "incorporating AI security and governance",
+        "designing and documenting solutions for observability",
+        "designing and documenting AgentOps and LLMOps solutions",
+        "recommending design optimizations",
+        "implementing AgentOps/LLMOps, AI governance, security, and observability solutions",
+        "building reusable AI components and agents",
+        "troubleshooting and optimizing AI system performance"
+      ],
+      "seniority_signals": [
+        "Advanced AI Architect",
+        "lead AI architecture & technical design workshops",
+        "collaborate with client teams",
+        "responsible for designing and delivering full stack AI architecture",
+        "recommend design optimizations and improvements",
+        "minimum 5 years of experience in designing, engineering & operationalizing large scale AI/ML solutions",
+        "expert level understanding of key AI technologies",
+        "high-impact role shaping the future of AI systems in the enterprise"
+      ],
+      "success_metrics": [
+        "enterprise readiness",
+        "scalability",
+        "security",
+        "governance",
+        "performance",
+        "cost optimization",
+        "reliability",
+        "trust",
+        "demonstrating capabilities of AI technologies to solve complex business problems",
+        "delivering unprecedented business value"
+      ],
+      "role_purpose": [
+        "designing and delivering full stack AI architecture for enterprise platforms, products, and engagements",
+        "shaping the future of AI systems in the enterprise to deliver business value",
+        "demonstrating the capabilities of AI technologies for complex business problems"
+      ],
+      "business_problems": [
+        "solving complex business problems with AI technologies",
+        "meeting client business needs for scalable, secure, governed, and high-performance AI solutions",
+        "assessing financial viability of AI platforms and solutions"
+      ],
+      "role_outcomes": [
+        "enterprise-grade AI platforms and solutions",
+        "architectural blueprints and documentation",
+        "proof-of-concepts and pilots for AI technologies",
+        "reusable AI components and solution patterns",
+        "optimized and reliable AI systems"
+      ],
+      "emerging_signals": [
+        "AgentOps and LLMOps as explicit operational disciplines",
+        "multi-agent architecture blueprints",
+        "AI security and governance as first-class architectural concerns",
+        "AI observability solutions",
+        "travel may be required from 0 to 100% depending on business need"
+      ]
+    }
+  },
+  {
+    "title": "Data & AI Solution Architect",
+    "company": "Accenture",
+    "source": "Company careers page",
+    "url": "https://www.accenture.com/us-en/careers/jobdetails?id=13915760_en",
+    "signals": {
+      "business_industries": [
+        "Financial Services",
+        "Healthcare",
+        "Aerospace and Defense",
+        "Automotive",
+        "Banking",
+        "Capital Markets",
+        "Chemicals",
+        "Communications and Media",
+        "Consumer Goods and Services",
+        "Energy",
+        "Health",
+        "High Tech",
+        "Industrial",
+        "Insurance",
+        "Life Sciences",
+        "Natural Resources",
+        "Public Service",
+        "Private Equity",
+        "Retail",
+        "Software and Platforms",
+        "Travel",
+        "US Federal Government",
+        "Utilities"
+      ],
+      "problem_spaces": [
+        "business growth",
+        "complex business problems",
+        "data-driven solutions",
+        "AI/ML opportunities",
+        "scaling AI/ML/GenAI solutions"
+      ],
+      "technology_areas": [
+        "Artificial Intelligence (AI)",
+        "Machine Learning (ML)",
+        "Generative AI (GenAI)",
+        "Cloud platforms",
+        "Data architecture",
+        "Data modeling",
+        "Data integration",
+        "MLOps",
+        "Generative Adversarial Networks"
+      ],
+      "capabilities": [
+        "designing AI architectures",
+        "implementing advanced data-driven solutions",
+        "collaborating with clients and stakeholders",
+        "identifying opportunities for AI/ML applications",
+        "designing innovative solutions",
+        "problem-solving",
+        "analytical skills",
+        "communicating technical concepts",
+        "leading cross-functional teams",
+        "project management",
+        "software engineering principles",
+        "presenting value propositions"
+      ],
+      "technologies": [
+        "Python",
+        "R",
+        "Scala",
+        "SQL",
+        "TensorFlow",
+        "PyTorch",
+        "scikit-learn",
+        "Apache Spark",
+        "AWS",
+        "Azure",
+        "GCP",
+        "Databricks",
+        "Snowflake",
+        "Control Towers",
+        "MLOps",
+        "Generative Adversarial Networks",
+        "SageMaker",
+        "MLFlow",
+        "OpenAI GPT",
+        "Bedrock",
+        "DALL-E"
+      ],
+      "responsibilities": [
+        "designing and implementing advanced data-driven solutions",
+        "collaborating with clients, stakeholders, and development teams",
+        "understanding business objectives",
+        "identifying opportunities for AI/ML applications",
+        "designing innovative solutions for clients",
+        "helping organizations unlock new possibilities and creative applications for their data",
+        "leading and collaborating with cross-functional teams",
+        "communicating technical concepts and value propositions to diverse audiences"
+      ],
+      "seniority_signals": [
+        "Solution Architecture Associate Director",
+        "Senior Level",
+        "Proven experience as an AI architect, data architect, or similar role",
+        "leading and collaborating with cross-functional teams",
+        "project management skills"
+      ],
+      "success_metrics": [
+        "drive business growth",
+        "unlock new possibilities for data",
+        "scale AI/ML/GenAI solutions across organizations",
+        "deliver value to clients"
+      ],
+      "role_purpose": [
+        "design and implement advanced data-driven solutions leveraging AI and ML technologies",
+        "help organizations unlock new possibilities and creative applications for their data",
+        "drive business growth through innovative AI/ML solutions"
+      ],
+      "business_problems": [
+        "identifying and addressing opportunities for AI/ML applications",
+        "solving complex business problems with AI and ML",
+        "scaling AI/ML/GenAI solutions across organizations"
+      ],
+      "role_outcomes": [
+        "advanced data-driven solutions implemented",
+        "innovative AI/ML solutions designed for clients",
+        "business growth achieved through AI/ML adoption",
+        "organizations enabled to unlock new data possibilities"
+      ],
+      "emerging_signals": [
+        "Relevant certifications (e.g., AWS or Azure Certified Machine Learning - Specialty, LLM courses) are a plus",
+        "Experience in Financial Services and Healthcare is highlighted as valuable",
+        "Emphasis on diversity, inclusion, and well-being in the workplace"
+      ]
+    }
+  },
+  {
+    "title": "Software Architect - AI Accelerated Engineering Lead",
+    "company": "Slalom",
+    "source": "Company careers page",
+    "url": "https://jobs.slalom.com/en_US/careersmarketplace/JobDetail/Software-Architect-AI-Accelerated-Engineering-Lead-Central/617",
+    "signals": {
+      "business_industries": [
+        "consulting",
+        "enterprise software",
+        "public sector",
+        "technology"
+      ],
+      "problem_spaces": [
+        "AI-empowered software development",
+        "generative AI integration",
+        "workflow automation",
+        "context engineering",
+        "software delivery lifecycle (SDLC)",
+        "AI adoption and enablement",
+        "observability",
+        "AI governance",
+        "AI safety"
+      ],
+      "technology_areas": [
+        "generative AI",
+        "agentic AI",
+        "retrieval-augmented generation (RAG)",
+        "context engineering",
+        "cloud-native systems",
+        "DevOps",
+        "microservices",
+        "event-driven architecture",
+        "MLOps",
+        "AI orchestration frameworks"
+      ],
+      "capabilities": [
+        "designing AI architectures",
+        "integrating generative AI into SDLC",
+        "guiding prompt templating and embeddings",
+        "managing multi-developer AI-aligned teams",
+        "building evaluation harnesses and code-review agents",
+        "prototyping and hardening AI-driven solutions",
+        "mentoring engineers",
+        "coaching teams and stakeholders",
+        "translating AI concepts to business outcomes",
+        "communicating with technical and business audiences"
+      ],
+      "technologies": [
+        "GitHub Copilot",
+        "Cursor",
+        "Claude Code",
+        "TypeScript/Node",
+        "Python",
+        "Java",
+        "React",
+        "Next.js",
+        "AWS",
+        "Azure",
+        "GCP",
+        "Kubernetes",
+        "CI/CD",
+        "Infrastructure as Code (IaC)",
+        "LangChain",
+        "LlamaIndex",
+        "vector databases"
+      ],
+      "responsibilities": [
+        "contribute to architecture of client solutions",
+        "design flows, patterns, and guardrails for AI-first SDLC",
+        "apply and guide context engineering strategies",
+        "orchestrate multi-developer environments with AI agents",
+        "build and codify repeatable AI-enabled practices",
+        "own product architecture",
+        "prototype and harden AI-driven solutions",
+        "coach teams and client stakeholders on AI-accelerated practices",
+        "translate complex AI concepts into business outcomes"
+      ],
+      "seniority_signals": [
+        "Software Architect",
+        "Senior Architect",
+        "Senior Principal",
+        "leadership skills in system or platform architecture",
+        "mentoring engineers",
+        "guiding teams",
+        "articulating value to technical and business audiences",
+        "6+ years experience in production software"
+      ],
+      "success_metrics": [
+        "advancing AI-empowered software development",
+        "building with generative AI",
+        "driving innovation",
+        "ensuring productivity, quality, and responsible adoption",
+        "delivering ship-ready increments",
+        "adoption of sustainable practices and tools post-launch",
+        "clear business outcomes from AI integration"
+      ],
+      "role_purpose": [
+        "contribute to the architecture of client solutions",
+        "advance AI-empowered software development",
+        "lead organization towards cutting-edge advancements in generative AI"
+      ],
+      "business_problems": [
+        "help clients adopt sustainable AI practices and tools",
+        "integrate generative AI into software development lifecycle",
+        "ensure AI-guided development is accurate, reliable, and safe",
+        "improve operations, drive growth, and create value for clients"
+      ],
+      "role_outcomes": [
+        "AI-enabled platforms",
+        "repeatable AI practices (evaluation harnesses, code-review agents, context packs, CI/CD hooks)",
+        "production-ready AI-driven solutions",
+        "teams and stakeholders enabled in AI-accelerated ways of working"
+      ],
+      "emerging_signals": [
+        "daily use of agentic IDEs and advanced tooling beyond basic chat interfaces",
+        "collaborative product teams with diverse backgrounds",
+        "co-creation with customers from discovery to delivery",
+        "pressure-testing ideas with real users",
+        "open to non-traditional career paths or equivalent skills"
+      ]
+    }
+  },
+  {
+    "title": "Senior Consultant - AI Systems & Platforms",
+    "company": "Slalom",
+    "source": "Company careers page",
+    "url": "https://jobs.slalom.com/en_US/careersmarketplace/JobDetail?jobId=2548",
+    "signals": {
+      "business_industries": [
+        "consulting",
+        "enterprise",
+        "financial services",
+        "healthcare",
+        "life sciences",
+        "manufacturing",
+        "retail",
+        "public sector",
+        "technology"
+      ],
+      "problem_spaces": [
+        "production AI systems",
+        "AI-enabled business process automation",
+        "decision support",
+        "workflow automation",
+        "knowledge retrieval",
+        "risk awareness",
+        "data integration",
+        "model evaluation",
+        "AI observability"
+      ],
+      "technology_areas": [
+        "LLMs",
+        "RAG",
+        "agentic AI",
+        "cloud-native AI systems",
+        "MLOps",
+        "LLMOps",
+        "CI/CD",
+        "infrastructure-as-code",
+        "automated testing",
+        "monitoring",
+        "vector databases",
+        "embeddings",
+        "semantic search",
+        "prompt orchestration",
+        "tool/function calling"
+      ],
+      "capabilities": [
+        "designing AI architectures",
+        "integrating systems",
+        "evaluating models",
+        "mentoring engineers",
+        "communicating tradeoffs",
+        "building production-quality code",
+        "solution architecture",
+        "client partnership",
+        "data integration",
+        "model/service integration",
+        "deployment",
+        "documentation",
+        "testing",
+        "operational support",
+        "responsible AI practices",
+        "using AI coding assistants",
+        "creating reusable assets",
+        "explaining technical concepts",
+        "collaborating across teams",
+        "continuous learning"
+      ],
+      "technologies": [
+        "Python",
+        "SciPy",
+        "NumPy",
+        "Pandas",
+        "SciKit-Learn",
+        "glmnet",
+        "caret",
+        "dplyr",
+        "AWS",
+        "Azure",
+        "GCP",
+        "Databricks",
+        "Snowflake",
+        "Azure OpenAI",
+        "Azure AI Foundry",
+        "AWS Bedrock",
+        "Google Vertex AI",
+        "Databricks Mosaic AI",
+        "Snowflake Cortex",
+        "Claude Code",
+        "OpenAI Codex",
+        "Antigravity",
+        "Cursor",
+        "GitHub Copilot",
+        "SQL",
+        "APIs"
+      ],
+      "responsibilities": [
+        "Designing, building, evaluating, and deploying production-grade AI systems for clients",
+        "Contributing to AI solution architecture",
+        "Owning implementation workstreams from design through delivery",
+        "Writing production-quality code",
+        "Articulating technical decisions, delivery progress, risks, and business value to client stakeholders",
+        "Designing and building AI-enabled applications and systems",
+        "Using modern AI platforms and hyperscaler services",
+        "Partnering with clients to understand business processes and technical environments",
+        "Building and integrating AI systems with enterprise data sources and applications",
+        "Applying data science and machine learning methods",
+        "Developing evaluation approaches for AI systems",
+        "Collaborating with Responsible AI specialists",
+        "Using AI coding assistants and agentic development tools responsibly",
+        "Creating reusable assets (reference architectures, accelerators, code templates, demos, enablement materials)",
+        "Communicating technical concepts to stakeholders",
+        "Mentoring peers and clients on AI engineering practices",
+        "Staying current on emerging AI engineering patterns and technologies"
+      ],
+      "seniority_signals": [
+        "Senior Consultant",
+        "4+ years of experience designing and building data, AI, software, or machine learning solutions",
+        "Experience contributing to technical architecture",
+        "Owning implementation workstreams",
+        "Mentoring engineers, data scientists, or client teams",
+        "Ability to work independently and deliver high-quality client outcomes in ambiguous environments",
+        "Strong consultative and communication skills"
+      ],
+      "success_metrics": [
+        "Reliable, secure, maintainable solutions",
+        "Production outcomes",
+        "Accuracy, groundedness, relevance, reliability, latency, cost, usability, and business impact of AI systems",
+        "High-quality client outcomes",
+        "Improved delivery productivity while maintaining engineering discipline"
+      ],
+      "role_purpose": [
+        "Design, build, evaluate, and deploy production AI systems for enterprise clients",
+        "Help clients move from AI ambition to production outcomes",
+        "Bridge business needs and technical solutions in AI"
+      ],
+      "business_problems": [
+        "Solving complex and interesting business problems with AI",
+        "Moving clients from AI ambition to production outcomes",
+        "Integrating AI into existing client technology ecosystems",
+        "Ensuring responsible and safe use of AI"
+      ],
+      "role_outcomes": [
+        "Production-grade AI systems deployed for clients",
+        "Reusable assets (reference architectures, accelerators, code templates, demos, enablement materials)",
+        "Mentored client and peer teams on AI engineering",
+        "Documented and communicated technical decisions and outcomes",
+        "Operational AI solutions integrated with enterprise data and applications"
+      ],
+      "emerging_signals": [
+        "Responsible use of AI coding assistants and agentic development tools is explicitly required",
+        "Emphasis on responsible AI practices, including human oversight and governance escalation",
+        "Exposure to industry-specific AI use cases is valued but not required",
+        "Continuous learning mindset is highlighted as a key capability"
+      ]
+    }
+  },
+  {
+    "title": "Solution Architect - Revenue Management",
+    "company": "Marriott",
+    "source": "Company careers page",
+    "url": "https://careers.marriott.com/solution-architect-revenue-management/job/118B2CD821519877BB640E00DE122BC1",
+    "signals": {
+      "business_industries": [
+        "travel",
+        "hospitality"
+      ],
+      "problem_spaces": [
+        "revenue management",
+        "pricing optimization",
+        "inventory optimization",
+        "enterprise application modernization",
+        "data integration",
+        "regulatory compliance",
+        "observability",
+        "platform health monitoring"
+      ],
+      "technology_areas": [
+        "cloud-native platforms",
+        "microservices",
+        "domain-driven design",
+        "event-driven architecture",
+        "data modeling",
+        "API design",
+        "asynchronous programming",
+        "streaming and messaging systems"
+      ],
+      "capabilities": [
+        "designing scalable and resilient architectures",
+        "defining transition and target-state architectures",
+        "creating architectural artifacts (diagrams, models, roadmaps)",
+        "defining and implementing non-functional requirements",
+        "mentoring engineers",
+        "collaborating with business and technical stakeholders",
+        "evaluating platform health and capacity planning",
+        "ensuring architectural compliance",
+        "establishing governance frameworks",
+        "conducting technology lifecycle assessments",
+        "balancing technical debt with business priorities"
+      ],
+      "technologies": [
+        "PostgreSQL",
+        "NoSQL databases",
+        "Kafka",
+        "Spark",
+        "GraphQL",
+        "REST APIs",
+        "XML",
+        "AWS EKS",
+        "AWS S3",
+        "AWS Lambda",
+        "AWS EMR",
+        "AWS Aurora",
+        "DocumentDB",
+        "Couchbase Capella",
+        "Snowflake",
+        "Dynatrace",
+        "Splunk",
+        "AppDynamics",
+        "Akana"
+      ],
+      "responsibilities": [
+        "designing and architecting scalable, resilient, high-performance technology solutions",
+        "leading architecture efforts across enterprise applications including revenue management systems",
+        "translating business outcomes into technical solutions",
+        "ensuring alignment with enterprise standards and best practices",
+        "defining and delivering long-term technology architecture vision, standards, and roadmaps",
+        "establishing governance frameworks for technology platforms",
+        "conducting feasibility studies and technology lifecycle assessments",
+        "identifying opportunities for technology reuse, migration, modernization, or retirement",
+        "ensuring architectural compliance with regulatory and security requirements",
+        "developing and promoting architecture methodologies, patterns, and standards",
+        "defining integration and interoperability standards",
+        "ensuring accurate documentation of architecture artifacts",
+        "partnering with product owners, engineering teams, and project managers",
+        "providing coaching and mentorship to engineering teams",
+        "collaborating with vendors and service providers"
+      ],
+      "seniority_signals": [
+        "10+ years of progressive experience in software development and architecture",
+        "3+ years defining transition and target-state architectures for large-scale digital transformations",
+        "leading architecture efforts across enterprise applications",
+        "presenting to senior technology and business leaders",
+        "providing coaching and mentorship to engineering teams",
+        "technology leader and advocate"
+      ],
+      "success_metrics": [
+        "delivery of scalable, resilient, high-performance solutions",
+        "alignment with enterprise standards and best practices",
+        "successful modernization of core enterprise applications",
+        "platform health and capacity planning",
+        "compliance with regulatory and security requirements",
+        "effective governance and documentation"
+      ],
+      "role_purpose": [
+        "design and architect technology solutions supporting transformation of Marriott\u2019s enterprise product platforms",
+        "shape future-state architecture during large-scale modernization",
+        "enable enterprise growth through state-of-the-art platform capabilities"
+      ],
+      "business_problems": [
+        "modernizing core enterprise applications",
+        "optimizing revenue management processes",
+        "integrating diverse data sources (bookings, competitor pricing, inventory)",
+        "ensuring compliance with global data protection and privacy regulations",
+        "balancing architectural rigor with business priorities"
+      ],
+      "role_outcomes": [
+        "robust technical solutions aligned with business outcomes",
+        "enterprise architecture vision, standards, and roadmaps",
+        "governance frameworks for technology platforms",
+        "documented architecture artifacts",
+        "mentored and upskilled engineering teams",
+        "modernized, scalable, and resilient revenue management systems"
+      ],
+      "emerging_signals": [
+        "experience with pricing and revenue management capabilities (revenue forecasting, optimization models, price determination, inventory optimization, room allocation strategies)",
+        "experience with application 'shirt sizing', architecture visioning, and roadmap development",
+        "strong grasp of technical debt management",
+        "exposure to both cash and points-based room pricing and loyalty award bands"
+      ]
+    }
+  },
+  {
+    "title": "Senior Software Engineer - Data and Analytics Technology",
+    "company": "Marriott",
+    "source": "Company careers page",
+    "url": "https://careers.marriott.com/senior-software-engineer-data-and-analytics-technology/job/AECF66C592765E7BBFBA711E750C1051",
+    "signals": {
+      "business_industries": [
+        "travel and hospitality",
+        "enterprise software"
+      ],
+      "problem_spaces": [
+        "data platform development",
+        "analytics based decisioning",
+        "service delivery processes",
+        "data governance",
+        "large scale data ETL pipelines",
+        "cloud migration",
+        "AI and machine learning enablement"
+      ],
+      "technology_areas": [
+        "cloud platform for data, analytics, AI, and machine learning",
+        "data pipelines",
+        "data governance",
+        "agile software methodologies"
+      ],
+      "capabilities": [
+        "technical leadership",
+        "mentoring team members",
+        "designing and developing reusable frameworks",
+        "setting technical standards",
+        "leading technical resources",
+        "research and analysis of emerging technologies",
+        "coordinating with IT and vendor teams",
+        "financial input on budgets and resource estimates",
+        "risk assessment and escalation",
+        "consultation for systems development"
+      ],
+      "technologies": [
+        "AWS",
+        "Snowflake",
+        "AWS S3",
+        "AWS Lambda",
+        "AWS EKS",
+        "Spark",
+        "Airflow",
+        "Python",
+        "API calls",
+        "Informatica Enterprise Data Catalog",
+        "Hashicorp Tokenization Products"
+      ],
+      "responsibilities": [
+        "develop next-generation cloud platform for data, analytics, AI, and machine learning",
+        "perform research, analysis, design and development on data capabilities and products",
+        "set technical standards and develop reusable frameworks",
+        "assume technical ownership of Service Provider deliverables",
+        "lead Service Provider technical resources",
+        "make decisions on complex, non-routine requests",
+        "mentor and train team members",
+        "liaise with multiple teams to steer projects",
+        "provide financial input on budgets and estimates",
+        "identify opportunities to enhance service delivery",
+        "perform quantitative and qualitative analyses for service delivery",
+        "facilitate achievement of deliverables and obligations of Service Providers",
+        "validate completeness of requirements",
+        "ensure adherence to development protocols and business case procedures",
+        "coordinate with IT and vendor relations teams",
+        "provide consultation for systems development",
+        "ensure early warning to business stakeholders regarding service levels",
+        "coordinate deployment and production support activities",
+        "follow IT standards and processes",
+        "maintain balance between business and operational risk",
+        "assess and escalate risks as needed",
+        "follow project management standards",
+        "validate Service Provider project plans and metrics",
+        "make short term plans for team resource utilization",
+        "monitor Service Provider outcomes",
+        "review work effort estimates",
+        "facilitate timely resolution of service delivery problems"
+      ],
+      "seniority_signals": [
+        "Senior Software Engineer",
+        "technical expert and lead engineer",
+        "technical delivery ownership",
+        "setting technical standards",
+        "mentoring other team members",
+        "provides financial input on budgets",
+        "makes decisions on complex, non-routine requests",
+        "technology leadership experience",
+        "8+ years\u2019 hands on experience",
+        "graduate degree preferred",
+        "AWS Solutions Architect or Developer certification preferred"
+      ],
+      "success_metrics": [
+        "high quality deliverables",
+        "adherence to technical standards and best practices",
+        "efficient creation of data capabilities and products",
+        "achievement of expected deliverables and obligations",
+        "timely resolution of service delivery problems",
+        "minimized impact to clients",
+        "early warning to business stakeholders regarding degraded or missed service levels"
+      ],
+      "role_purpose": [
+        "develop next-generation cloud platform for data, analytics, AI, and machine learning",
+        "function as technical expert and lead engineer for Data Platform team",
+        "ensure consistent and efficient creation of data capabilities and products",
+        "provide technical leadership and standards"
+      ],
+      "business_problems": [
+        "support analytics based decisioning by Marriott business teams",
+        "seek solutions for complex technical issues",
+        "enhance service delivery processes",
+        "anticipate future data platform opportunities"
+      ],
+      "role_outcomes": [
+        "next-generation data capabilities and products",
+        "reusable frameworks",
+        "technical standards",
+        "high quality, scalable deliverables",
+        "improved service delivery processes",
+        "well-coordinated deployments and production support"
+      ],
+      "emerging_signals": [
+        "technical ownership of Service Provider deliverables",
+        "provides financial input on department or project budgets",
+        "hybrid or remote work environment",
+        "focus on diversity, equity, and inclusion in the workplace"
+      ]
+    }
+  },
+  {
+    "title": "FLEX Sr. Systems Engineer - Observability",
+    "company": "Marriott",
+    "source": "Company careers page",
+    "url": "https://careers.marriott.com/flex-sr-systems-engineer-observability/job/C414CFEF9DAA164DAF82B2817B4B165E",
+    "signals": {
+      "business_industries": [
+        "travel and hospitality",
+        "enterprise IT"
+      ],
+      "problem_spaces": [
+        "observability",
+        "logging",
+        "monitoring",
+        "reporting",
+        "automation",
+        "compliance (SOX)",
+        "infrastructure operations",
+        "service delivery",
+        "change management",
+        "configuration management"
+      ],
+      "technology_areas": [
+        "cloud computing",
+        "infrastructure-as-code",
+        "Kubernetes",
+        "automation",
+        "scalable data pipelines",
+        "cross-cloud architectures (AWS, Azure, Alibaba Cloud)",
+        "enterprise observability platforms"
+      ],
+      "capabilities": [
+        "defining and implementing observability solutions",
+        "governing and optimizing platforms",
+        "collaborating with architects and cross-functional teams",
+        "research, analysis, design, creation, and implementation of systems",
+        "scripting and automation",
+        "building scalable pipelines for metrics/logs/traces",
+        "establishing best practices",
+        "technical leadership and oversight",
+        "requirements gathering",
+        "status reporting to executives",
+        "problem-solving",
+        "change management",
+        "mentoring/training team members",
+        "communicating with stakeholders"
+      ],
+      "technologies": [
+        "Dynatrace",
+        "Splunk Cloud",
+        "Cribl",
+        "Git",
+        "Harness",
+        "Terraform",
+        "NPM (Node Package Manager)",
+        "JavaScript",
+        "Typescript",
+        "Java",
+        "AWS",
+        "Azure",
+        "Alibaba Cloud",
+        "Kubernetes (EKS/ACK)",
+        "DocumentDB",
+        "EC2",
+        "PowerShell",
+        "Python",
+        "ServiceNow",
+        "BigPanda",
+        "ReadyAPI",
+        "Dynatrace Query Language (DQL)",
+        "Splunk Processing Language (SPL)",
+        "Grail",
+        "GitHub"
+      ],
+      "responsibilities": [
+        "define, implement, govern, optimize, and monitor observability solutions",
+        "collaborate with architects and engineering teams",
+        "develop, implement, and support logging, monitoring, reporting, and automation",
+        "perform research, analysis, design, creation, and implementation of observability systems",
+        "build and maintain SOX Compliance solution in Dynatrace and GitHub",
+        "design, implement, and maintain scalable observability solutions for Kubernetes and other data sources",
+        "architect and manage logging and monitoring tool deployments across clouds",
+        "enable operational processes and efficient management using scripting and automation",
+        "infrastructure-as-code development and configuration management",
+        "lead optimization efforts for observability platform",
+        "onboard data sources into observability tools",
+        "provide technical leadership, oversight, governance, and direction",
+        "determine customer requirements and develop solutions",
+        "present status, analysis, and reporting to stakeholders and executives",
+        "analyze current environment for deficiencies and provide solutions",
+        "enhance service delivery, operations, and continual improvement",
+        "create and enhance policies and procedures",
+        "manage daily infrastructure operations to meet availability SLAs",
+        "interface with stakeholders to establish requirements and priorities",
+        "lead/assist in configuration management",
+        "resolve complex issues with development and engineering teams",
+        "provide oversight and maintenance of technology products and services",
+        "establish and develop monitoring and alerting for production environments",
+        "develop internal processes and training for team members",
+        "facilitate achievement of deliverables and obligations of service providers",
+        "coordinate with product and architecture teams for deployment and support",
+        "manage and implement assigned work and projects",
+        "generate and provide reports and presentations",
+        "analyze information and evaluate results to solve problems",
+        "manage time and activities in an organized manner"
+      ],
+      "seniority_signals": [
+        "Sr. Systems Engineer",
+        "subject-matter expert",
+        "technical leadership, oversight, governance and direction",
+        "lead optimization efforts",
+        "provide consultation for routine and complex systems development",
+        "present status and analysis to Senior Leadership and Executive Management",
+        "demonstrated experience delivering technology solutions in a fast-paced, deadline-driven enterprise environment",
+        "7+ years\u2019 experience in IT",
+        "mentoring/training team members"
+      ],
+      "success_metrics": [
+        "enhanced observability platform",
+        "meeting availability SLA for storage services",
+        "timely, accurate, and detailed status reports",
+        "successful deployment and support of logging and monitoring solutions",
+        "continuous development of monitoring and alerting for all production environments",
+        "achievement of expected deliverables and obligations of service providers",
+        "improved service delivery, operations, and continual service improvement",
+        "adoption of best practice guidelines, standards, and procedures"
+      ],
+      "role_purpose": [
+        "define, implement, govern, optimize, and monitor solutions to enhance Marriott's observability platform",
+        "serve as a subject-matter expert for observability systems/solutions",
+        "support current and future requirements across the enterprise"
+      ],
+      "business_problems": [
+        "need for enhanced observability across infrastructure and application services",
+        "ensuring compliance (SOX)",
+        "standardizing and controlling usage/performance of solutions",
+        "meeting availability and operational SLAs",
+        "resolving complex infrastructure and application issues",
+        "supporting business/initiative strategies with reliable monitoring and reporting"
+      ],
+      "role_outcomes": [
+        "high-performance and scalable observability solutions",
+        "SOX Compliance solution in Dynatrace and GitHub",
+        "optimized observability platform",
+        "onboarded data sources into observability tools",
+        "established monitoring and alerting for production environments",
+        "internal processes and training for team members",
+        "accurate and timely reports and presentations",
+        "enhanced administrative, operational, and technical policies and procedures"
+      ],
+      "emerging_signals": [
+        "cross-cloud observability (AWS, Azure, Alibaba Cloud)",
+        "integration of observability tools with ITOps solutions (ServiceNow, BigPanda, ReadyAPI)",
+        "focus on automation technologies like Cribl",
+        "emphasis on both technical and business stakeholder communication",
+        "hybrid/remote work environment",
+        "diversity, equity, and inclusion as part of company culture"
+      ]
+    }
+  },
+  {
+    "title": "Senior, Software Engineer - Full Stack",
+    "company": "Walmart",
+    "source": "Company careers page",
+    "url": "https://careers.walmart.com/us/en/jobs/R-2438435",
+    "signals": {
+      "business_industries": [
+        "retail",
+        "consumer",
+        "eCommerce"
+      ],
+      "problem_spaces": [
+        "customer care platform modernization",
+        "workflow automation",
+        "search and personalization",
+        "merchant tools",
+        "digital accessibility"
+      ],
+      "technology_areas": [
+        "cloud-native solutions",
+        "distributed systems",
+        "AI powered technology",
+        "Agentic AI",
+        "Generative AI",
+        "containerization",
+        "orchestration",
+        "CI/CD pipelines"
+      ],
+      "capabilities": [
+        "full stack software development",
+        "designing technical architectures",
+        "mentoring engineers",
+        "driving best practices",
+        "code review",
+        "troubleshooting production issues",
+        "platform modernization",
+        "migrating legacy systems",
+        "implementing accessibility standards"
+      ],
+      "technologies": [
+        "ReactJS",
+        "Redux",
+        "TypeScript",
+        "ES6",
+        "NodeJS",
+        "Java",
+        "Spring Boot",
+        "REST APIs",
+        "Azure",
+        "Jenkins",
+        "GitHub Actions",
+        "Docker",
+        "Kubernetes",
+        "WCAG 2.2 AA",
+        "assistive technologies"
+      ],
+      "responsibilities": [
+        "Lead development of full stack features",
+        "Translate product requirements into technical designs",
+        "Build advanced and reusable ReactJS components",
+        "Implement backend services using Java, Spring Boot, REST APIs",
+        "Collaborate with architects, staff engineers, product managers, QA engineers",
+        "Drive code quality through reviews and best practices",
+        "Mentor team members",
+        "Troubleshoot and resolve complex production issues",
+        "Guide root cause analysis",
+        "Steer platform modernization and migration efforts"
+      ],
+      "seniority_signals": [
+        "Senior Software Engineer",
+        "take ownership of complex development initiatives",
+        "lead the design and implementation",
+        "mentoring team members",
+        "driving best practices",
+        "collaborate closely with architects and staff engineers",
+        "proven track record of leading technical initiatives"
+      ],
+      "success_metrics": [
+        "scalability, performance, and reliability of solutions",
+        "successful delivery of technical initiatives",
+        "seamless transition from legacy systems to modern architectures",
+        "code quality",
+        "operational excellence"
+      ],
+      "role_purpose": [
+        "Modernize and transform customer care platform",
+        "Lead design and implementation of scalable, cloud-native solutions",
+        "Empower team members, stores, and merchants with technological innovation"
+      ],
+      "business_problems": [
+        "Modernizing legacy customer care systems",
+        "Improving customer engagement and support",
+        "Enabling digital accessibility",
+        "Supporting millions of customers, associates, and stakeholders"
+      ],
+      "role_outcomes": [
+        "Robust, scalable full stack features",
+        "Advanced web applications",
+        "Modernized customer care platform",
+        "Accessible digital products and services",
+        "Improved operational efficiency"
+      ],
+      "emerging_signals": [
+        "Exposure to Agentic AI and Generative AI is preferred but not required",
+        "Emphasis on digital accessibility and WCAG 2.2 AA standards",
+        "Company-provided education benefits (Live Better U)",
+        "Strong focus on inclusive culture and accessibility best practices"
+      ]
+    }
+  }
+]

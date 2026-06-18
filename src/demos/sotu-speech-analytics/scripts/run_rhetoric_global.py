@@ -4,12 +4,72 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 import argparse
 import json
 from pathlib import Path
-from collections import defaultdict
+from collections import defaultdict, Counter
 import time
 
 import yaml
 
 from sotu_analytics.io.save_json import save_json, save_jsonl
+from sotu_analytics.utils.clause_split import split_clauses
+
+import collections
+
+LONG_WORDS = 80
+LONG_CHARS = 450
+
+TONE_ORDER = ["neutral","unifying","adversarial","upbeat","grave","urgent"]
+DEVICE_ORDER = ["policy_ask","credit_claim","attack","exemplar","values","threat"]
+TARGET_PRIORITY = [
+    "foreign_adversaries",
+    "domestic_opponents",
+    "institution",
+    "special_guests",
+    "allies",
+    "the_public",
+    "unspecified",
+]
+
+def validate_pred(p):
+    if not p: 
+        return None
+    d = p.get("device")
+    t = p.get("tone")
+    g = p.get("target")
+    if d not in DEVICE_ORDER: 
+        return None
+    if t not in TONE_ORDER:
+        return None
+    if g not in TARGET_PRIORITY:
+        return None
+    return p
+
+
+def safe_ollama_json(model, prompt, timeout=180, num_predict=160, retries=1):
+    last_err = None
+    for _ in range(retries + 1):
+        try:
+            return ollama_generate_json(model, prompt, temperature=0.0, timeout=timeout, num_predict=num_predict)
+        except (json.JSONDecodeError, ValueError) as e:
+            last_err = e
+            prompt = prompt + "\n\nREMINDER: Return ONE JSON object only. No double quotes inside evidence strings.\n"
+    return None  # <-- key change
+
+
+def _weighted_choice(items, weights):
+    c = collections.Counter()
+    for it, w in zip(items, weights):
+        if it:
+            c[it] += float(w)
+    return c.most_common(1)[0][0] if c else None
+
+def _pick_target(targets):
+    # choose the most "specific" target present
+    s = set([t for t in targets if t])
+    for t in TARGET_PRIORITY:
+        if t in s:
+            return t
+    return None
+
 
 # You should have these:
 # - build_rhetoric_prompt in sotu_analytics/prompts.py
@@ -68,7 +128,7 @@ def main():
 
     # Load per-year chunk text and index by chunk_id
     chunk_text_by_id = {}
-
+    clause_counts = Counter()
     for year in years:
         chunks_path = REPO_ROOT / "assets" / "sotu-speech-analytics" / "data" / "chunks" / f"{year}.jsonl"
         if not chunks_path.exists():
@@ -108,7 +168,8 @@ def main():
 
     print(f"Rows total: {len(global_rows)} | to label now: {len(rows_to_process)} | already labeled: {len(already)}")
     print("Years:", years)
-
+    total_chunks = len(rows_to_process)
+    total_clauses = 0
     for i, meta in enumerate(rows_to_process, start=1):
         year = int(meta["year"])
         topic_id = int(meta["topic_id"])
@@ -122,23 +183,86 @@ def main():
             continue
 
         text = chunk.get("text", "")
-        prompt = build_rhetoric_prompt(year, text)
+        do_clause = (len(text) >= LONG_CHARS) or (len(text.split()) >= LONG_WORDS)
+        clauses = split_clauses(text) if do_clause else [text]
+        clauses = [c for c in clauses if c.strip()]
+        n_clauses = len(clauses)
+        clause_counts[n_clauses] += 1
+        total_clauses += n_clauses
+        if n_clauses > 6:
+            clauses = clauses[:5] + [" ".join(clauses[5:])]
+            print(f"[{year}] chunk {chunk_id}: n_clauses={n_clauses}")
+        # periodic summary
+        if i % 50 == 0 or i == total_chunks:
+            avg_clauses = total_clauses / i
+            print(f"Labeled {i}/{total_chunks}... avg_clauses={avg_clauses:.2f}")
+            if i % 200 == 0:
+                common = clause_counts.most_common(6)
+                print(f"Progress {i}/{total_chunks} | n_clauses top={common}")
+        clause_preds = []
+        weights = []
 
-        try:
-            resp = ollama_generate_json(args.model, prompt, temperature=0.0, timeout=180)
-            rec = {
-                **meta,
-                "tone": resp.get("tone"),
-                "device": resp.get("device"),
-                "target": resp.get("target"),
-                "uses_guest_example_llm": resp.get("uses_guest_example"),
-                "confidence": resp.get("confidence"),
-                "evidence": resp.get("evidence", {}),
-                "model": args.model,
-            }
-        except Exception as e:
-            rec = {**meta, "error": str(e), "model": args.model}
+        for ctext in clauses:
+            safe_text = ctext.replace('"', "'")
+            prompt = build_rhetoric_prompt(year, safe_text)
+            resp = validate_pred(safe_ollama_json(args.model, prompt, timeout=180, num_predict=160, retries=1))
+            if resp is None:
+                clause_preds.append({"error": "json_parse_failed"})
+                weights.append(max(1, len(ctext.split())))
+                continue
+            clause_preds.append(resp)
+            weights.append(max(1, len(ctext.split())))
+        good = [p for p in clause_preds if "error" not in p]
+        if not good:
+            rec = {**meta, "error": "all_clauses_failed", "model": args.model, "n_clauses": len(clauses)}
+            results.append(rec)
+            continue
 
+        # aggregate
+        devices = [p.get("device") for p in clause_preds]
+        tones = [p.get("tone") for p in clause_preds]
+        targets = [p.get("target") for p in clause_preds]
+
+        device = _weighted_choice(devices, weights)
+        tone = _weighted_choice(tones, weights)
+        target = _pick_target(targets)
+
+        # uses_guest_example: OR across clauses
+        uses_guest = any(bool(p.get("uses_guest_example")) for p in clause_preds)
+
+        # confidence: low if disagreement
+        device_var = len(set([d for d in devices if d])) > 1
+        tone_var = len(set([t for t in tones if t])) > 1
+        confidence = "high"
+        if device_var or tone_var:
+            confidence = "med"
+        if device_var and tone_var:
+            confidence = "low"
+
+        # Evidence: take from the clause that "won" device (highest weight among clauses with that device)
+        best_idx = None
+        best_w = -1
+        for idx, (p, w) in enumerate(zip(clause_preds, weights)):
+            if p.get("device") == device and w > best_w:
+                best_idx = idx
+                best_w = w
+
+        evidence = clause_preds[best_idx].get("evidence", {}) if best_idx is not None else {}
+
+        rec = {
+            **meta,
+            "tone": tone,
+            "device": device,
+            "target": target,
+            "uses_guest_example": uses_guest,
+            "confidence": confidence,
+            "evidence": evidence,
+            "model": args.model,
+            # diagnostics
+            "n_clauses": len(clauses),
+            "device_mix": dict(collections.Counter(devices)),
+            "tone_mix": dict(collections.Counter(tones)),
+        }
         results.append(rec)
 
         # Update quick aggregates only for successful records
@@ -148,9 +272,6 @@ def main():
 
         if args.sleep:
             time.sleep(args.sleep)
-
-        if i % 20 == 0:
-            print(f"Labeled {i}/{len(rows_to_process)}...")
 
     # Append to jsonl (do not overwrite existing unless you want to)
     mode = "a" if out_path.exists() else "w"

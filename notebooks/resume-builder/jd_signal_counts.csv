@@ -1,0 +1,504 @@
+dim,type,count
+technology_areas,MLOps,6
+technology_areas,cloud-native AI systems,5
+technology_areas,LLMs,4
+technology_areas,agentic AI,4
+technology_areas,deep learning,3
+technology_areas,generative AI,3
+technology_areas,Generative AI,3
+technology_areas,container orchestration,2
+technology_areas,CI/CD pipelines,2
+technology_areas,genAI,2
+technology_areas,cloud computing,2
+technology_areas,CI/CD,2
+technology_areas,large language models (LLMs),2
+technology_areas,foundation models,2
+technology_areas,vector databases,2
+technology_areas,guardrails,2
+technology_areas,AI governance,2
+technology_areas,AI infrastructure,2
+technology_areas,LLMOps,2
+technology_areas,microservices,2
+technology_areas,event-driven architecture,2
+technology_areas,infrastructure-as-code,2
+technology_areas,AI-powered applications,1
+technology_areas,machine learning,1
+technology_areas,cloud-native development,1
+technology_areas,integration with internal and third-party financial platforms,1
+technology_areas,machine learning systems,1
+technology_areas,retrieval-augmented systems,1
+technology_areas,cloud-native data platforms,1
+technology_areas,distributed compute,1
+technology_areas,real-time data pipelines,1
+technology_areas,model governance,1
+technology_areas,feature/label foundations,1
+technology_areas,AI/ML engineering,1
+technology_areas,ensemble modeling,1
+technology_areas,simulation,1
+technology_areas,optimization,1
+technology_areas,statistical modeling,1
+technology_areas,SaaS platforms,1
+technology_areas,feature stores,1
+technology_areas,automated pipelines,1
+technology_areas,agent-driven solutions,1
+technology_areas,interactive LLM/genAI implementations,1
+technology_areas,automated testing & monitoring,1
+technology_areas,natural language processing (NLP),1
+technology_areas,machine learning operations (MLOps),1
+technology_areas,scalable architecture,1
+technology_areas,self-supervised learning,1
+technology_areas,reinforcement learning from human feedback (RLHF),1
+technology_areas,similarity search,1
+technology_areas,AI observability,1
+technology_areas,AI optimization,1
+technology_areas,RAG (Retrieval-Augmented Generation),1
+technology_areas,multi-tenant architectures,1
+technology_areas,AI platform engineering,1
+technology_areas,vector search,1
+technology_areas,memory architectures,1
+technology_areas,orchestration frameworks,1
+technology_areas,Kubernetes (K8s),1
+technology_areas,multi-modal AI,1
+technology_areas,solution architecture,1
+technology_areas,cloud-based AI infrastructure,1
+technology_areas,neural networks,1
+technology_areas,cloud computing platforms and services,1
+technology_areas,full stack AI architecture,1
+technology_areas,AI agents,1
+technology_areas,knowledge and data engineering,1
+technology_areas,multi-agent architecture,1
+technology_areas,AI security architecture,1
+technology_areas,AI runtime architecture,1
+technology_areas,AI DevOps,1
+technology_areas,knowledge graphs,1
+technology_areas,semantic layers,1
+technology_areas,AgentOps,1
+technology_areas,"public, private, and sovereign clouds",1
+technology_areas,Artificial Intelligence (AI),1
+technology_areas,Machine Learning (ML),1
+technology_areas,Generative AI (GenAI),1
+technology_areas,Cloud platforms,1
+technology_areas,Data architecture,1
+technology_areas,Data modeling,1
+technology_areas,Data integration,1
+technology_areas,Generative Adversarial Networks,1
+technology_areas,retrieval-augmented generation (RAG),1
+technology_areas,context engineering,1
+technology_areas,cloud-native systems,1
+technology_areas,DevOps,1
+technology_areas,AI orchestration frameworks,1
+technology_areas,RAG,1
+technology_areas,automated testing,1
+technology_areas,monitoring,1
+technology_areas,embeddings,1
+technology_areas,semantic search,1
+technology_areas,prompt orchestration,1
+technology_areas,tool/function calling,1
+technology_areas,cloud-native platforms,1
+technology_areas,domain-driven design,1
+technology_areas,data modeling,1
+technology_areas,API design,1
+technology_areas,asynchronous programming,1
+technology_areas,streaming and messaging systems,1
+technology_areas,"cloud platform for data, analytics, AI, and machine learning",1
+technology_areas,data pipelines,1
+technology_areas,data governance,1
+technology_areas,agile software methodologies,1
+technology_areas,Kubernetes,1
+technology_areas,automation,1
+technology_areas,scalable data pipelines,1
+technology_areas,"cross-cloud architectures (AWS, Azure, Alibaba Cloud)",1
+technology_areas,enterprise observability platforms,1
+technology_areas,cloud-native solutions,1
+technology_areas,distributed systems,1
+technology_areas,AI powered technology,1
+technology_areas,Agentic AI,1
+technology_areas,containerization,1
+technology_areas,orchestration,1
+capabilities,mentoring engineers,7
+capabilities,designing AI architectures,5
+capabilities,integrating systems,3
+capabilities,collaborating with cross-functional teams,2
+capabilities,technical leadership,2
+capabilities,change management,2
+capabilities,evaluating models,2
+capabilities,communicating tradeoffs,2
+capabilities,leading cross-functional teams,2
+capabilities,problem-solving,2
+capabilities,designing software architectures,1
+capabilities,developing and deploying custom AI solutions,1
+capabilities,stakeholder engagement,1
+capabilities,analyzing and defining system requirements,1
+capabilities,leading complex projects,1
+capabilities,staying current with emerging technologies,1
+capabilities,architecting ML platforms,1
+capabilities,developing and deploying ML models,1
+capabilities,optimizing for scale and performance,1
+capabilities,defining data contracts and metadata/lineage,1
+capabilities,establishing CI/CD patterns,1
+capabilities,model versioning and registry,1
+capabilities,automated evaluation and drift detection,1
+capabilities,driving design reviews,1
+capabilities,cross-functional collaboration,1
+capabilities,ensuring privacy-by-design,1
+capabilities,documentation and audit readiness,1
+capabilities,"architecting scalable, observable, resilient AI/ML systems",1
+capabilities,leading and mentoring AI/ML engineering teams,1
+capabilities,productionizing decision science models,1
+capabilities,designing reusable building blocks and libraries,1
+capabilities,defining and executing MLOps strategy,1
+capabilities,cross-functional partnership and communication,1
+capabilities,portfolio prioritization and demand management,1
+capabilities,technical translation between science and engineering,1
+capabilities,remediating technical debt,1
+capabilities,"ensuring security, privacy, and responsible AI",1
+capabilities,driving operational excellence,1
+capabilities,developing and maintaining vision in evolving environments,1
+capabilities,designing and building AI/ML models,1
+capabilities,adapting and finetuning LLMs,1
+capabilities,operationalizing models in production,1
+capabilities,partnering with cross-functional teams,1
+capabilities,translating technical work to business goals,1
+capabilities,mentoring and talent development,1
+capabilities,evaluating and integrating emerging technologies,1
+capabilities,"delivering libraries, platforms, or solution-level code",1
+capabilities,communicating with non-technical audiences,1
+capabilities,architecting AI systems,1
+capabilities,launching conversational AI experiences,1
+capabilities,"designing, developing, testing, deploying, and supporting AI software components",1
+capabilities,training foundation models,1
+capabilities,LLM inference,1
+capabilities,implementing similarity search,1
+capabilities,implementing guardrails,1
+capabilities,model evaluation and experimentation,1
+capabilities,AI system governance,1
+capabilities,AI observability,1
+capabilities,"optimizing AI system performance (scalability, cost, latency, throughput)",1
+capabilities,mentoring engineering teams,1
+capabilities,influencing cross-functional stakeholders,1
+capabilities,communicating complex AI concepts,1
+capabilities,applying novel AI research in production,1
+capabilities,standardizing and automating workflows,1
+capabilities,optimizing performance and cost,1
+capabilities,incubating proof of concepts,1
+capabilities,authoring technical design documents,1
+capabilities,evangelizing platform vision,1
+capabilities,developing SDKs and CLIs,1
+capabilities,implementing trust and safety mechanisms,1
+capabilities,driving RFCs,1
+capabilities,multi-region orchestration,1
+capabilities,architecting and building custom AI infrastructure/hardware solutions,1
+capabilities,optimizing AI infrastructure/hardware,1
+capabilities,advising on technology and vendor selection,1
+capabilities,full stack integration,1
+capabilities,designing and implementing production-ready AI solutions,1
+capabilities,facilitating knowledge sharing,1
+capabilities,evaluating and recommending new tools and technologies,1
+capabilities,evaluating and integrating third-party AI technologies,1
+capabilities,designing scalable and efficient application architectures,1
+capabilities,implementing security best practices,1
+capabilities,influencing and advisory skills,1
+capabilities,subject matter expertise,1
+capabilities,delivering AI platforms and solutions,1
+capabilities,leading technical design workshops,1
+capabilities,collaborating with client teams,1
+capabilities,evaluating and selecting technologies,1
+capabilities,estimating design alternatives and roadmaps,1
+capabilities,developing TCO models,1
+capabilities,documenting architectural alternatives,1
+capabilities,facilitating alignment of architectural decisions,1
+capabilities,designing blueprints for AI systems,1
+capabilities,incorporating AI security,1
+capabilities,designing for observability and governance,1
+capabilities,recommending design optimizations,1
+capabilities,implementing AgentOps/LLMOps,1
+capabilities,building reusable AI components,1
+capabilities,troubleshooting and optimizing performance,1
+capabilities,implementing advanced data-driven solutions,1
+capabilities,collaborating with clients and stakeholders,1
+capabilities,identifying opportunities for AI/ML applications,1
+capabilities,designing innovative solutions,1
+capabilities,analytical skills,1
+capabilities,communicating technical concepts,1
+capabilities,project management,1
+capabilities,software engineering principles,1
+capabilities,presenting value propositions,1
+capabilities,integrating generative AI into SDLC,1
+capabilities,guiding prompt templating and embeddings,1
+capabilities,managing multi-developer AI-aligned teams,1
+capabilities,building evaluation harnesses and code-review agents,1
+capabilities,prototyping and hardening AI-driven solutions,1
+capabilities,coaching teams and stakeholders,1
+capabilities,translating AI concepts to business outcomes,1
+capabilities,communicating with technical and business audiences,1
+capabilities,building production-quality code,1
+capabilities,solution architecture,1
+capabilities,client partnership,1
+capabilities,data integration,1
+capabilities,model/service integration,1
+capabilities,deployment,1
+capabilities,documentation,1
+capabilities,testing,1
+capabilities,operational support,1
+capabilities,responsible AI practices,1
+capabilities,using AI coding assistants,1
+capabilities,creating reusable assets,1
+capabilities,explaining technical concepts,1
+capabilities,collaborating across teams,1
+capabilities,continuous learning,1
+capabilities,designing scalable and resilient architectures,1
+capabilities,defining transition and target-state architectures,1
+capabilities,"creating architectural artifacts (diagrams, models, roadmaps)",1
+capabilities,defining and implementing non-functional requirements,1
+capabilities,collaborating with business and technical stakeholders,1
+capabilities,evaluating platform health and capacity planning,1
+capabilities,ensuring architectural compliance,1
+capabilities,establishing governance frameworks,1
+capabilities,conducting technology lifecycle assessments,1
+capabilities,balancing technical debt with business priorities,1
+capabilities,mentoring team members,1
+capabilities,designing and developing reusable frameworks,1
+capabilities,setting technical standards,1
+capabilities,leading technical resources,1
+capabilities,research and analysis of emerging technologies,1
+capabilities,coordinating with IT and vendor teams,1
+capabilities,financial input on budgets and resource estimates,1
+capabilities,risk assessment and escalation,1
+capabilities,consultation for systems development,1
+capabilities,defining and implementing observability solutions,1
+capabilities,governing and optimizing platforms,1
+capabilities,collaborating with architects and cross-functional teams,1
+capabilities,"research, analysis, design, creation, and implementation of systems",1
+capabilities,scripting and automation,1
+capabilities,building scalable pipelines for metrics/logs/traces,1
+capabilities,establishing best practices,1
+capabilities,technical leadership and oversight,1
+capabilities,requirements gathering,1
+capabilities,status reporting to executives,1
+capabilities,mentoring/training team members,1
+capabilities,communicating with stakeholders,1
+capabilities,full stack software development,1
+capabilities,designing technical architectures,1
+capabilities,driving best practices,1
+capabilities,code review,1
+capabilities,troubleshooting production issues,1
+capabilities,platform modernization,1
+capabilities,migrating legacy systems,1
+capabilities,implementing accessibility standards,1
+problem_spaces,workflow automation,8
+problem_spaces,observability,5
+problem_spaces,decision support,4
+problem_spaces,knowledge retrieval,4
+problem_spaces,change management,2
+problem_spaces,risk analysis,2
+problem_spaces,personalized customer experiences,2
+problem_spaces,AI governance,2
+problem_spaces,model evaluation,2
+problem_spaces,AI observability,2
+problem_spaces,data integration,2
+problem_spaces,licensing financial operations,1
+problem_spaces,AI-driven decision-making,1
+problem_spaces,financial licensing workflows,1
+problem_spaces,predictive analytics,1
+problem_spaces,compliance monitoring,1
+problem_spaces,forecasting,1
+problem_spaces,cross-media measurement,1
+problem_spaces,advanced analytics,1
+problem_spaces,content measurement,1
+problem_spaces,content marketing measurement,1
+problem_spaces,inventory forecasting,1
+problem_spaces,identity resolution,1
+problem_spaces,audience measurement,1
+problem_spaces,look-alike modeling,1
+problem_spaces,cross-platform measurement,1
+problem_spaces,data integrity,1
+problem_spaces,privacy and compliance,1
+problem_spaces,data interoperability,1
+problem_spaces,model deployment,1
+problem_spaces,model monitoring,1
+problem_spaces,model explainability,1
+problem_spaces,technical debt remediation,1
+problem_spaces,data quality assurance,1
+problem_spaces,operational reliability,1
+problem_spaces,governance and compliance,1
+problem_spaces,AI-powered productivity,1
+problem_spaces,data-driven decision-making,1
+problem_spaces,personalization,1
+problem_spaces,customer experience optimization,1
+problem_spaces,scalable AI/ML deployment,1
+problem_spaces,digital assistant interaction,1
+problem_spaces,real-time customer support,1
+problem_spaces,scalable AI infrastructure,1
+problem_spaces,real-time customer interaction,1
+problem_spaces,trust and safety,1
+problem_spaces,multi-tenant policy enforcement,1
+problem_spaces,AI infrastructure optimization,1
+problem_spaces,hardware performance optimization,1
+problem_spaces,power consumption optimization,1
+problem_spaces,cost and scalability of computational stack,1
+problem_spaces,AI technology and vendor evaluation,1
+problem_spaces,full stack integration,1
+problem_spaces,production-ready AI solutions,1
+problem_spaces,quality standards for AI systems,1
+problem_spaces,"innovative AI applications (chatbots, image processing)",1
+problem_spaces,security in AI solutions,1
+problem_spaces,scalability,1
+problem_spaces,security,1
+problem_spaces,governance,1
+problem_spaces,performance optimization,1
+problem_spaces,enterprise readiness,1
+problem_spaces,cost optimization,1
+problem_spaces,trust and reliability,1
+problem_spaces,business growth,1
+problem_spaces,complex business problems,1
+problem_spaces,data-driven solutions,1
+problem_spaces,AI/ML opportunities,1
+problem_spaces,scaling AI/ML/GenAI solutions,1
+problem_spaces,AI-empowered software development,1
+problem_spaces,generative AI integration,1
+problem_spaces,context engineering,1
+problem_spaces,software delivery lifecycle (SDLC),1
+problem_spaces,AI adoption and enablement,1
+problem_spaces,AI safety,1
+problem_spaces,production AI systems,1
+problem_spaces,AI-enabled business process automation,1
+problem_spaces,risk awareness,1
+problem_spaces,revenue management,1
+problem_spaces,pricing optimization,1
+problem_spaces,inventory optimization,1
+problem_spaces,enterprise application modernization,1
+problem_spaces,regulatory compliance,1
+problem_spaces,platform health monitoring,1
+problem_spaces,data platform development,1
+problem_spaces,analytics based decisioning,1
+problem_spaces,service delivery processes,1
+problem_spaces,data governance,1
+problem_spaces,large scale data ETL pipelines,1
+problem_spaces,cloud migration,1
+problem_spaces,AI and machine learning enablement,1
+problem_spaces,logging,1
+problem_spaces,monitoring,1
+problem_spaces,reporting,1
+problem_spaces,automation,1
+problem_spaces,compliance (SOX),1
+problem_spaces,infrastructure operations,1
+problem_spaces,service delivery,1
+problem_spaces,configuration management,1
+problem_spaces,customer care platform modernization,1
+problem_spaces,search and personalization,1
+problem_spaces,merchant tools,1
+problem_spaces,digital accessibility,1
+seniority_signals,Distinguished Engineer title,2
+seniority_signals,Director-level experience,2
+seniority_signals,Senior Software Engineer,2
+seniority_signals,Lead Software Engineer,1
+seniority_signals,visionary,1
+seniority_signals,"drive the development of scalable, intelligent systems",1
+seniority_signals,instrumental in shaping the architecture and delivery,1
+seniority_signals,"report to Sr Manager, Technology",1
+seniority_signals,leadership of complex projects,1
+seniority_signals,mentor junior engineers,1
+seniority_signals,own the full software development lifecycle,1
+seniority_signals,7+ years of software engineering experience,1
+seniority_signals,Lead Machine Learning Engineer,1
+seniority_signals,senior individual contributor,1
+seniority_signals,provides technical leadership,1
+seniority_signals,leads architecture and standards,1
+seniority_signals,lead technical initiatives across teams,1
+seniority_signals,mentor engineers,1
+seniority_signals,7+ years of professional experience delivering production ML systems,1
+seniority_signals,8+ years total experience (preferred),1
+seniority_signals,influence architecture and standards,1
+seniority_signals,multi-quarter initiatives,1
+seniority_signals,Director-level role,1
+seniority_signals,12+ years of related experience,1
+seniority_signals,Foundational leadership role,1
+seniority_signals,Architect of technical backbone,1
+seniority_signals,Visionary leader,1
+seniority_signals,Matrixed team management,1
+seniority_signals,Strategic planning and consulting with executives,1
+seniority_signals,"Defining skill mix, career paths, and hiring strategy",1
+seniority_signals,Thought partner for all levels,1
+seniority_signals,principal associate,1
+seniority_signals,"driving force to experiment, innovate and create next generation experiences",1
+seniority_signals,expert in NLP and LLMs,1
+seniority_signals,track record of delivering models at scale,1
+seniority_signals,passionate about talent development for your own team and beyond,1
+seniority_signals,influential and able to bring along cross-functional teams,1
+seniority_signals,challenging conventional thinking and improving the status quo,1
+seniority_signals,at least 8 years of experience developing AI and ML algorithms or technologies,1
+seniority_signals,lead and mentor multiple engineering teams,1
+seniority_signals,influence cross-functional stakeholders up to VP level,1
+seniority_signals,contribute to technical vision and long-term roadmap,1
+seniority_signals,"deep expertise in engineering, mathematics, hardware, software, and AI",1
+seniority_signals,8+ years experience developing AI/ML algorithms or technologies,1
+seniority_signals,Experience leading and mentoring multiple engineering teams,1
+seniority_signals,Influence cross-functional stakeholders up to VP and C-suite,1
+seniority_signals,Experience as Staff-plus or Distinguished IC engineer influencing 50+ engineers,1
+seniority_signals,Authoring technical design documents and blogs,1
+seniority_signals,Representing company at Tier1 AI conferences,1
+seniority_signals,expected to be a Subject Matter Expert with deep knowledge and experience,1
+seniority_signals,responsible for team decisions,1
+seniority_signals,influencing and advisory skills,1
+seniority_signals,engage with multiple teams and contribute on key decisions,1
+seniority_signals,provide solutions to problems that apply across multiple teams,1
+seniority_signals,minimum 12 years of experience in Solution Architecture,1
+seniority_signals,Advanced AI Architect,1
+seniority_signals,lead AI architecture & technical design workshops,1
+seniority_signals,collaborate with client teams,1
+seniority_signals,responsible for designing and delivering full stack AI architecture,1
+seniority_signals,recommend design optimizations and improvements,1
+seniority_signals,"minimum 5 years of experience in designing, engineering & operationalizing large scale AI/ML solutions",1
+seniority_signals,expert level understanding of key AI technologies,1
+seniority_signals,high-impact role shaping the future of AI systems in the enterprise,1
+seniority_signals,Solution Architecture Associate Director,1
+seniority_signals,Senior Level,1
+seniority_signals,"Proven experience as an AI architect, data architect, or similar role",1
+seniority_signals,leading and collaborating with cross-functional teams,1
+seniority_signals,project management skills,1
+seniority_signals,Software Architect,1
+seniority_signals,Senior Architect,1
+seniority_signals,Senior Principal,1
+seniority_signals,leadership skills in system or platform architecture,1
+seniority_signals,mentoring engineers,1
+seniority_signals,guiding teams,1
+seniority_signals,articulating value to technical and business audiences,1
+seniority_signals,6+ years experience in production software,1
+seniority_signals,Senior Consultant,1
+seniority_signals,"4+ years of experience designing and building data, AI, software, or machine learning solutions",1
+seniority_signals,Experience contributing to technical architecture,1
+seniority_signals,Owning implementation workstreams,1
+seniority_signals,"Mentoring engineers, data scientists, or client teams",1
+seniority_signals,Ability to work independently and deliver high-quality client outcomes in ambiguous environments,1
+seniority_signals,Strong consultative and communication skills,1
+seniority_signals,10+ years of progressive experience in software development and architecture,1
+seniority_signals,3+ years defining transition and target-state architectures for large-scale digital transformations,1
+seniority_signals,leading architecture efforts across enterprise applications,1
+seniority_signals,presenting to senior technology and business leaders,1
+seniority_signals,providing coaching and mentorship to engineering teams,1
+seniority_signals,technology leader and advocate,1
+seniority_signals,technical expert and lead engineer,1
+seniority_signals,technical delivery ownership,1
+seniority_signals,setting technical standards,1
+seniority_signals,mentoring other team members,1
+seniority_signals,provides financial input on budgets,1
+seniority_signals,"makes decisions on complex, non-routine requests",1
+seniority_signals,technology leadership experience,1
+seniority_signals,8+ years’ hands on experience,1
+seniority_signals,graduate degree preferred,1
+seniority_signals,AWS Solutions Architect or Developer certification preferred,1
+seniority_signals,Sr. Systems Engineer,1
+seniority_signals,subject-matter expert,1
+seniority_signals,"technical leadership, oversight, governance and direction",1
+seniority_signals,lead optimization efforts,1
+seniority_signals,provide consultation for routine and complex systems development,1
+seniority_signals,present status and analysis to Senior Leadership and Executive Management,1
+seniority_signals,"demonstrated experience delivering technology solutions in a fast-paced, deadline-driven enterprise environment",1
+seniority_signals,7+ years’ experience in IT,1
+seniority_signals,mentoring/training team members,1
+seniority_signals,take ownership of complex development initiatives,1
+seniority_signals,lead the design and implementation,1
+seniority_signals,mentoring team members,1
+seniority_signals,driving best practices,1
+seniority_signals,collaborate closely with architects and staff engineers,1
+seniority_signals,proven track record of leading technical initiatives,1

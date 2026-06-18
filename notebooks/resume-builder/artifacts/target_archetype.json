@@ -1,0 +1,145 @@
+{
+  "title": "Principal AI Architect / AI Platform Engineering Lead",
+  "archetype_summary": "A senior technical leader responsible for architecting, delivering, and scaling enterprise-grade AI/ML platforms and solutions. This role bridges business needs and technical execution, with a strong focus on productionizing generative and agentic AI, ensuring operational reliability, governance, and cross-functional enablement. The archetype is defined by deep expertise in AI architecture, cloud-native systems, MLOps, and technical leadership, with a mandate to drive innovation, adoption, and measurable business value at scale.",
+  "market_basis": {
+    "jd_count": 15,
+    "primary_signal_types_used": [
+      "capabilities",
+      "technology_areas",
+      "problem_spaces",
+      "seniority_signals",
+      "role_purpose",
+      "success_metrics",
+      "responsibilities",
+      "role_outcomes"
+    ],
+    "notes": "Analysis is grounded in recurring, high-weight signals across multiple industries and companies, with particular emphasis on capabilities, technology areas, problem spaces, and seniority signals. Business industries and specific technologies are considered but weighted less heavily."
+  },
+  "hypothesis_assessment": {
+    "confirmed": [
+      "AI architecture and design as a core capability",
+      "Productionizing AI/ML solutions for enterprise clients",
+      "Mentorship, technical leadership, and cross-functional influence",
+      "Cloud-native AI systems and MLOps as foundational technology areas",
+      "Generative AI, LLMs, and agentic AI as key focus areas",
+      "Operational reliability, governance, and compliance as critical success metrics",
+      "Role purpose centered on translating business needs into scalable, reliable AI solutions"
+    ],
+    "revised": [
+      {
+        "hypothesis_element": "business intelligence, decision support, analytics",
+        "revision": "Broadened to include workflow automation, observability, risk/compliance, and knowledge retrieval as equally central problem spaces."
+      },
+      {
+        "hypothesis_element": "technologies: Python, AWS, GCP, BigQuery, LangGraph",
+        "revision": "Expanded to include Azure, Kubernetes, Spark/Scala, Java, SQL, Snowflake, and MLOps/CI-CD tools as commonly required; specific orchestration and vector database tools are also relevant."
+      },
+      {
+        "hypothesis_element": "role_purpose: Ensure AI systems operate reliably in production",
+        "revision": "Expanded to emphasize platform enablement, innovation, and business value delivery, not just reliability."
+      }
+    ],
+    "downweighted": [
+      "Industry specificity (e.g., utilities, telecommunications) \u2013 role is broadly cross-industry, with technology/software, financial services, and consumer/retail most common but not exclusive.",
+      "Narrow focus on graph analytics and entity resolution \u2013 these are present but not central compared to generative/agentic AI, MLOps, and cloud-native architecture."
+    ],
+    "added": [
+      "Explicit focus on agentic AI and LLMOps as emerging operational disciplines",
+      "Governance, responsible AI, and explainability as first-class architectural concerns",
+      "Reusable frameworks, developer experience, and internal enablement as key outcomes",
+      "Continuous learning, innovation, and research application in production",
+      "Technical and cultural leadership, including DEI and accessibility values",
+      "Business alignment, communication, and stakeholder management as core responsibilities"
+    ]
+  },
+  "core_market_themes": [
+    "Enterprise-scale AI/ML platform architecture and delivery",
+    "Productionization and operationalization of generative and agentic AI",
+    "Cloud-native, scalable, and resilient system design",
+    "MLOps, LLMOps, and observability as operational foundations",
+    "Governance, compliance, and responsible AI as non-negotiable requirements",
+    "Mentorship, cross-functional leadership, and technical influence",
+    "Continuous innovation, research application, and developer enablement"
+  ],
+  "target_capabilities": [
+    "Architecting and designing scalable AI/ML platforms and solutions",
+    "Leading technical teams and mentoring engineers",
+    "Cross-functional collaboration and stakeholder alignment",
+    "Translating business requirements into technical solutions",
+    "Evaluating, integrating, and operationalizing emerging AI technologies (GenAI, agentic AI, RAG)",
+    "Establishing and enforcing governance, compliance, and responsible AI practices",
+    "Optimizing system performance, cost, and reliability",
+    "Developing reusable frameworks, components, and developer tools",
+    "Driving innovation and continuous learning within teams",
+    "Documenting and communicating technical decisions and architectural vision"
+  ],
+  "target_problem_spaces": [
+    "Decision support and advanced analytics",
+    "Workflow and business process automation",
+    "Observability, monitoring, and operational health",
+    "Risk management, compliance, and governance",
+    "Knowledge and information retrieval (including RAG)",
+    "AI/ML model lifecycle management and deployment",
+    "Data integration, quality, and interoperability",
+    "AI infrastructure optimization and scalability",
+    "Personalization and customer experience enhancement"
+  ],
+  "target_technology_areas": [
+    "Cloud-native platforms (AWS, Azure, GCP)",
+    "Generative AI and large language models (LLMs)",
+    "Agentic AI and multi-agent architectures",
+    "MLOps, LLMOps, and AgentOps frameworks",
+    "Containerization and orchestration (Kubernetes, Docker)",
+    "Data engineering and architecture (Spark, Snowflake, BigQuery, SQL)",
+    "Vector and semantic search, vector databases",
+    "CI/CD and automation pipelines",
+    "AI observability and monitoring tools",
+    "Reusable SDKs, APIs, and developer enablement tools"
+  ],
+  "seniority_expectations": [
+    "10+ years of progressive experience in software/AI/ML engineering",
+    "Principal, lead, or architect-level technical ownership",
+    "Mentorship and talent development across teams",
+    "Strategic and visionary leadership (roadmap, technical vision, innovation)",
+    "Cross-functional influence (including business and executive stakeholders)",
+    "Ownership of delivery, architecture, and operational outcomes",
+    "Subject matter expertise in AI/ML systems and platforms",
+    "Experience with governance, compliance, and responsible AI practices"
+  ],
+  "success_patterns": [
+    "Reliable, scalable, and production-ready AI/ML platforms and solutions",
+    "Operational excellence (uptime, observability, rapid incident response)",
+    "Business value delivery (growth, efficiency, customer impact)",
+    "Innovation and modernization of legacy systems and workflows",
+    "Adoption and reusability of frameworks, tools, and best practices",
+    "High-quality, compliant, and secure deliverables",
+    "Team enablement, mentorship, and cross-team knowledge sharing",
+    "Continuous improvement and rapid integration of emerging technologies"
+  ],
+  "resume_implications": {
+    "must_emphasize": [
+      "AI/ML platform and solution architecture at enterprise scale",
+      "Productionizing generative/agentic AI and LLMs",
+      "Cloud-native system design and MLOps/LLMOps expertise",
+      "Technical leadership, mentorship, and cross-functional influence",
+      "Operational reliability, governance, and responsible AI"
+    ],
+    "should_include": [
+      "Reusable frameworks, developer tools, and enablement assets",
+      "Business alignment and stakeholder communication",
+      "Continuous learning, research application, and innovation",
+      "Experience with observability, monitoring, and compliance",
+      "Delivery of measurable business outcomes and customer impact"
+    ],
+    "use_lightly": [
+      "Industry-specific experience (unless highly relevant to target employer)",
+      "Niche technologies or problem spaces (e.g., graph analytics, entity resolution) unless central to recent roles"
+    ],
+    "avoid_overemphasizing": [
+      "Single-company or single-industry specialization",
+      "Legacy-only technology stacks without evidence of modernization or cloud/AI transformation",
+      "Pure research or academic credentials without production delivery context"
+    ]
+  },
+  "archetype_narrative": "The Principal AI Architect / AI Platform Engineering Lead is a senior technical leader who architects, delivers, and scales enterprise-grade AI/ML platforms, with a strong focus on productionizing generative and agentic AI. This role is defined by deep expertise in cloud-native systems, MLOps/LLMOps, and operational reliability, as well as a mandate to drive innovation, adoption, and measurable business value. The archetype is characterized by technical and cultural leadership, cross-functional influence, and a commitment to governance, responsible AI, and continuous learning. Success is measured by the delivery of robust, scalable, and compliant AI solutions, the enablement and mentorship of engineering teams, and the realization of business outcomes through AI-driven transformation."
+}
