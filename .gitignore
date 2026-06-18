@@ -1,5 +1,6 @@
 .env
 .DS_Store
+archive/
 datasets/
 clip-roberta/
 clip-roberta-finetuned/
