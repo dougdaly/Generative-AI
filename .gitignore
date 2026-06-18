@@ -16,6 +16,9 @@ assets/recsys-transparent/data/
 # Local cloned repos / external assets
 assets/diffusers/
 
+# Large results folders
+results/archival-restore
+
 # Generated model outputs
 outputs/lora/
 
