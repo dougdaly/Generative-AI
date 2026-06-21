@@ -1,18 +1,25 @@
 # SOTU Speech Analytics Quickstart
 
-This quickstart provides a lightweight way to inspect the SOTU speech analytics demo without running large models, downloading heavy assets, or requiring a GPU.
+This quickstart is for public reviewers who want to understand the SOTU speech analytics demo without first running larger model workflows.
 
-The full demo lives in:
+## Demo map
 
-- `notebooks/sotu-speech-analytics/00_sotu_speech_analytics_overview.ipynb`
-- `src/demos/sotu-speech-analytics`
-- `assets/sotu-speech-analytics`
+- Overview notebook: `notebooks/sotu-speech-analytics/00_sotu_speech_analytics_overview.ipynb`
+- Reusable source code: `src/demos/sotu-speech-analytics`
+- Supporting assets and generated outputs: `assets/sotu-speech-analytics`
 
-## What this demo is meant to show
+The overview notebook is the intended notebook entry point. The previous zero-byte notebook placeholders in `notebooks/sotu-speech-analytics` are not part of the runnable public path.
 
-The SOTU speech analytics demo explores how NLP and GenAI-style workflows can be used to analyze political speech text. The broader project may include richer notebook steps, visualizations, model-based analysis, or larger data dependencies.
+## What this demo shows
 
-This quickstart is intentionally minimal. It is meant for a recruiter, reviewer, or collaborator who wants to confirm the demo structure and run a small CPU-only text analysis.
+The demo analyzes State of the Union speech text with a reproducible layout:
+
+- raw speech transcripts and processed data under `assets/sotu-speech-analytics/data`
+- reusable Python modules and runner scripts under `src/demos/sotu-speech-analytics`
+- generated figures, tables, and narrative output under `assets/sotu-speech-analytics/reports`
+- an overview notebook that explains the workflow and links the artifacts together
+
+The lightweight review path is CPU-only. Some full workflow steps may use embedding models, topic modeling, LLM labeling, API keys, or larger dependency downloads depending on which scripts or notebook cells are run.
 
 ## CPU-only smoke test
 
@@ -34,7 +41,7 @@ text_files = list(asset_dir.rglob("*.txt")) + list(asset_dir.rglob("*.md"))
 print(f"Found {len(text_files)} text-like files under {asset_dir}")
 
 if not text_files:
-    print("No .txt or .md files found. Open the notebook for the full demo workflow.")
+    print("No .txt or .md files found. Open the overview notebook for the demo workflow.")
     raise SystemExit(0)
 
 sample_path = text_files[0]
@@ -49,25 +56,17 @@ print("Top terms:")
 for word, count in counts.most_common(20):
     print(f"{word:>20}  {count}")
 PY
+```
 
-This confirms that the asset path exists and that basic text analysis can run with only the Python standard library.
+This confirms that the asset path exists and that basic text inspection can run with only the Python standard library.
 
-Notebook path
+## Review path
 
-To explore the intended workflow, open:
+1. Open `notebooks/sotu-speech-analytics/00_sotu_speech_analytics_overview.ipynb` for the narrative overview.
+2. Inspect `src/demos/sotu-speech-analytics` for the reusable package, configuration, and runner scripts.
+3. Inspect `assets/sotu-speech-analytics` for transcripts, cleaned data, derived outputs, figures, tables, and reports.
+4. Run the CPU-only smoke test above before attempting any heavier notebook or model-backed steps.
 
-notebooks/sotu-speech-analytics/00_quickstart.ipynb
+## Notes on heavier steps
 
-Depending on the notebook cells you run, the full workflow may require additional packages, larger datasets, API keys, or model downloads. Treat this document as a lightweight smoke test, not a guarantee that every notebook cell is CPU-only.
-
-Notes for reviewers
-
-This demo is intended to show:
-
-practical NLP workflow design
-exploratory text analysis
-reproducible notebook structure
-separation between assets, notebooks, and reusable source code
-
-For a quick portfolio review, start with the notebook and this smoke test before running heavier model-based steps.
-
+The source tree includes scripts for preprocessing, topic modeling, rhetoric analysis, and report generation. Those steps are separate from this quickstart. Review their configuration before running them, because model-backed stages may require non-standard dependencies, API access, or more compute than a basic CPU-only environment.

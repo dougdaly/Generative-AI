@@ -27,6 +27,9 @@ The notebooks are built with the latest Python libraries, support multiple GPU p
 ### 🔹 Retrieval-Augmented Generation (RAG)
 - **Building_a_multimodal_RAG.ipynb** → queries both stored text and images with multimodal input.  
 
+### 🔹 Speech Analytics
+- **SOTU Speech Analytics** → public portfolio demo for analyzing State of the Union speech text. Start with `notebooks/sotu-speech-analytics/00_sotu_speech_analytics_overview.ipynb`; reusable code is under `src/demos/sotu-speech-analytics`, and supporting data, figures, tables, and writeups are under `assets/sotu-speech-analytics`. See `docs/sotu_quickstart.md` for a CPU-only smoke test and notes on heavier model steps.
+
 ### 🔹 Multimodal orchestration
 - **Agentic-Multimodal.ipynb** → solves a common problem with creating images with text by combining an orchestrator agent, image generation through a CLIP model, and a research tool for factual data. Builds posters of leaders with names & time in office, maps of the world with country & capital with a picture of a nation's celebrity, and maps a great circle route between two places on the globe.
 ### 🔹 Diffusion Models
