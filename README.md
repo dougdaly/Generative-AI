@@ -1,96 +1,61 @@
-# 🧠 GenAI Demos Portfolio
+# GenAI Demos Portfolio
 
-This repository contains a collection of demos showcasing **Generative AI techniques**.  
-The notebooks are built with the latest Python libraries, support multiple GPU providers, and include references and explanations where relevant.  
+This repository is a public portfolio of Generative AI demos, experiments, and instructional notebooks by Douglas Daly. It is intended for reviewers and collaborators who want to inspect practical examples of diffusion, CLIP, RAG, multi-agent orchestration, speech analytics, VAEs, GANs, and related workflows.
 
-👉 The goal: demonstrate practical implementations of GenAI concepts — such as **image generation**, **RAG methodologies**, **agent orchestration with LangGraph, A2A and MCP**, and **multi-modal AI** — in a way that is both educational and extensible.  
+## Start here
 
----
+- Demo index: `docs/demo_index.md`
+- Featured demo quickstart: `docs/sotu_quickstart.md`
+- Featured demo notebook: `notebooks/sotu-speech-analytics/00_sotu_speech_analytics_overview.ipynb`
 
-## 📂 Contents & Topics
-### 🔹 Tool & Agent sharing across team**s (A2A, MCP, FastAPI)
-- **a2a_olympics.ipynb** → leverages A2A protocol to select optimal agents for selected tasks. Compares results against contract with a general-purpose agent.
-- **archival_restore.ipynb** → applies model context protocol (MCP) to develop an image enhancement approach optimal for OCR exploitation on a 130 year-old diary.
-### 🔹 Multi-Agent Workflows (LangGraph / LangChain)
-- **mtg-card-generator.ipynb** → shows the benefits of using multiple agents for a complex task: building new creature cards for a popular trading card game (Magic: The Gathering)
-- **langGraph-multi-agent-workflow.ipynb** → combines a search agent + image generation agent (OpenAI) to generate a grid of famous athletes by country.  
-- **langGraph-alphabet.ipynb** → creates an AI-powered children’s alphabet poster with words + images.  
+Some notebooks require API keys, large model downloads, GPU acceleration, or external datasets. Check the relevant notebook or quickstart before running a full workflow.
 
-### 🔹 GANs (Generative Adversarial Networks)
-- **dcgan_faces_tutorial.ipynb** → trains a GAN on a celebrity dataset, demonstrating generator vs discriminator competition and pitfalls of the approach.
-- **GAN_for_images_MLP_vs_CNN** → Proves "NN architecture matters". Compares the results of building a GAN with a dense NN vs a CNN. The dense NN fails as it does not have a sense of space.
+## Featured demo: SOTU Speech Analytics
 
-### 🔹 CLIP (Contrastive Language–Image Pretraining)
-- **CLIP-from-ground-up.ipynb** → builds a CLIP model from scratch on Flickr dataset (images + captions).  
-- **CLIP_tuning.ipynb** → fine-tunes a CLIP model for domain-specific tasks (example: aerial imagery).  
+The SOTU Speech Analytics demo analyzes State of the Union speech text and separates the public review path from heavier model-backed steps.
 
-### 🔹 Retrieval-Augmented Generation (RAG)
-- **Building_a_multimodal_RAG.ipynb** → queries both stored text and images with multimodal input.  
+- Overview notebook: `notebooks/sotu-speech-analytics/00_sotu_speech_analytics_overview.ipynb`
+- Reusable source code: `src/demos/sotu-speech-analytics`
+- Supporting assets and generated outputs: `assets/sotu-speech-analytics`
+- Reviewer quickstart: `docs/sotu_quickstart.md`
 
-### 🔹 Speech Analytics
-- **SOTU Speech Analytics** → public portfolio demo for analyzing State of the Union speech text. Start with `notebooks/sotu-speech-analytics/00_sotu_speech_analytics_overview.ipynb`; reusable code is under `src/demos/sotu-speech-analytics`, and supporting data, figures, tables, and writeups are under `assets/sotu-speech-analytics`. See `docs/sotu_quickstart.md` for a CPU-only smoke test and notes on heavier model steps.
+For a quick review, start with the overview notebook and quickstart. The reusable source tree contains preprocessing, topic modeling, rhetoric analysis, and reporting scripts; some of those stages may require additional dependencies, API access, or more compute than a CPU-only environment.
 
-### 🔹 Multimodal orchestration
-- **Agentic-Multimodal.ipynb** → solves a common problem with creating images with text by combining an orchestrator agent, image generation through a CLIP model, and a research tool for factual data. Builds posters of leaders with names & time in office, maps of the world with country & capital with a picture of a nation's celebrity, and maps a great circle route between two places on the globe.
-### 🔹 Diffusion Models
-- **annotated_diffusion.ipynb** → step-by-step theory & math of progressive noise addition with MNIST fashion dataset.  
-- **score_based_diffusion.ipynb** → implements score-based diffusion with ODE solver.  
-- **Stable_Diffusion.ipynb** → uses HuggingFace diffusion models with CLIP text encoder for text-to-image generation.  
+## Demo areas
 
-### 🔹 Stability.ai API
-- **Stability_API_Demo.ipynb** → demonstrates masking, overlaying, background replacement, and other image-editing tasks via Stability.ai API.  
+- Tool and agent sharing: A2A, MCP, FastAPI
+- Multi-agent workflows: LangGraph and LangChain examples
+- Retrieval-augmented generation: text and multimodal RAG examples
+- Multimodal orchestration: text, image, and research workflows
+- Image generation and editing: diffusion, Stability AI API, GANs
+- Representation learning: CLIP, VAEs, score-based models
+- Speech analytics: SOTU text analysis with reusable source and generated artifacts
 
-### 🔹 Variational Autoencoders (VAE)
-- **VAE_Example.ipynb** → compares a standard autoencoder vs a variational autoencoder to explain the power of VAEs.  
+## Local setup
 
----
+```bash
+git clone https://github.com/dougdaly/Generative-AI.git
+cd Generative-AI
+conda env create -f environment_min.yml
+conda activate genai
+```
 
-## 🚀 Tech Stack
-- **Python** (latest libraries)  
-- **PyTorch / HuggingFace / LangChain / LangGraph**  
-- **Diffusion, GANs, CLIP, RAG, VAEs**  
-- **APIs**: Stability.ai, OpenAI  
+Alternatively, use a Python virtual environment and `requirements.txt`:
 
----
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
 
-## 📊 Results
-Sample outputs are stored in the `results/` folder.  
-> 🔎 These are not required to run the demos — they simply illustrate recent experiments.
+Open the notebooks in Jupyter or VS Code. Use `docs/demo_index.md` to choose a starting point.
 
----
+## Repository notes
 
-## 🧩 How to Use
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/genai-demos.git
-# GenAI Demos — Public Portfolio
+- Sample outputs and generated artifacts are included where useful for review.
+- Do not commit large model checkpoints, private data, secrets, or licensed datasets.
+- This repository is curated as a public portfolio; open an issue or pull request for proposed additions.
 
-This repository is a public portfolio of Generative AI demos, experiments, and instructional notebooks by Douglas Daly. It is intended to showcase practical implementations of GenAI approaches (diffusion, CLIP, RAG, multi-agent orchestration, VAEs, GANs, and more) and to provide runnable demos for reviewers and collaborators.
+## License
 
-Highlights
-- Curated notebooks showing end-to-end demos and exploratory research
-- Lightweight quickstarts to run selected demos locally
-- Demo index and short status notes in docs/demo_index.md
-- License: MIT (LICENSE file)
-
-Quick start (local, minimal)
-1. Clone:
-   git clone https://github.com/dougdaly/Generative-AI.git
-2. Create env:
-   conda env create -f environment_min.yml
-   conda activate genai
-   or
-   python -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
-3. Open Jupyter / VS Code and run notebooks/* (see docs/demo_index.md for recommended demos)
-4. NOTE: Some demos require large models / API keys / datasets. Check notebook headers and docs before running.
-
-Contributing
-- This repo is curated as a public portfolio. For contributions, open an issue or PR describing additions.
-- Do not commit large model checkpoints or sensitive data.
-
-Docs
-- docs/demo_index.md — top demos and status
-- docs/sotu_quickstart.md — minimal quickstart for sotu-speech-analytics
-
-License
-- MIT (see LICENSE)
+MIT. See the `LICENSE` file.
