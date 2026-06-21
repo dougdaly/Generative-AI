@@ -4,7 +4,7 @@ This quickstart provides a lightweight way to inspect the SOTU speech analytics 
 
 The full demo lives in:
 
-- `notebooks/sotu-speech-analytics/00_quickstart.ipynb`
+- `notebooks/sotu-speech-analytics/00_sotu_speech_analytics_overview.ipynb`
 - `src/demos/sotu-speech-analytics`
 - `assets/sotu-speech-analytics`
 
