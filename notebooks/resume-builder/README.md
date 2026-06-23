@@ -20,13 +20,39 @@ Stage 01 is represented by files in `sources/`; notebooks implement stages 02 th
 ## Files and Notebooks
 
 * `sources/` — raw source inputs for Stage 01
-* `02_Canonical_Resume.ipynb` — Stage 02 canonical resume creation
-* `03_Job_Archetype.ipynb` — Stage 03 archetype discovery
-* `04_Evidence_Review.ipynb` — Stage 04 evidence review
-* `05_Capability_Review.ipynb` — Stage 05 capability review
-* `06_Resume_Positioning.ipynb` — Stage 06 resume positioning
-* `07_Target_Resume_Assembly.ipynb` — Stage 07 target resume assembly
-* `08_Render_Target_Resume.ipynb` — Stage 08 final resume rendering
+* `notebooks/` — Stage 02 through Stage 08 workflow notebooks
+* `src/` — shared Python code and workflow utilities
+* `contracts/` — schema and contract definitions for job descriptions and search inputs
+* `layouts/` — resume layout configuration files
+* `artifacts/` — generated output files from notebook or script execution
+* `archive/` — historical snapshots and retired notebooks or artifacts
+
+## Project layout
+
+This project is organized to keep raw inputs, workflow notebooks, reusable code, and generated output separate.
+
+* `sources/` contains only source intake assets; avoid committing sensitive raw data.
+* `notebooks/` contains the canonical stage notebooks.
+* `src/` contains reusable code imported by notebooks and scripts.
+* `artifacts/` contains generated outputs; do not edit these files manually.
+* `archive/` contains retired or historical files.
+
+## What to commit
+
+Commit the following types of files:
+
+* `README.md`, workflow notebooks, and source schema files
+* `src/` Python modules that implement reusable logic
+* `contracts/` and `layouts/` configuration files
+* sample or sanitized source inputs only
+
+## What to ignore
+
+Generated outputs and archive files should not normally be committed:
+
+* `artifacts/`
+* `archive/`
+* direct run outputs such as `*.csv`, `*.pdf`, and `*.docx`
 
 ## Purpose
 

@@ -18,6 +18,12 @@ __pycache__/
 # Resume builder generated outputs
 resume-builder/artifacts/
 resume-builder/archive/
+resume-builder/*.csv
+resume-builder/*.pdf
+resume-builder/*.docx
+resume-builder/*.json
+resume-builder/*.xlsx
+resume-builder/*.pptx
 resume-builder/diagnostics.csv
 resume-builder/jd_signal_counts.csv
 
