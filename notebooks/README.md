@@ -17,9 +17,15 @@ The repo contains standalone notebooks, demo folders, and one structured subproj
 - `sotu-speech-analytics/` — speech analytics notebook(s).
 - `wgan_gp_afhq/` — WGAN-GP notebook for AFHQ.
 
-## Top-level notebooks
+## Notebook organization
 
-This workspace also contains many standalone notebooks at the root. These are mostly experimental or demo notebooks spanning vision, generative modeling, recommender systems, prompt tuning, and more.
+The workspace notebooks are now grouped into category folders for easier navigation:
+
+- `vision/` — image, diffusion, GAN, and visual modeling notebooks
+- `agents/` — agentic AI, RAG, and multi-agent workflow notebooks
+- `recommendation/` — recommender system and ranking notebooks
+- `nlp/` — NLP and prompt tuning notebooks
+- `misc/` — miscellaneous notebooks and other experiments
 
 ## Resume Builder
 
