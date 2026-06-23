@@ -1,96 +1,27 @@
-# Resume Generation Framework
+# Sources
 
-## Objective
+This folder contains raw input files for Stage 01: Source Intake.
 
-Generate market-aligned resumes from a structured career knowledge base while maintaining traceability between career evidence, inferred capabilities, and final resume claims.
+## Expected Inputs
 
----
+* existing resumes and resume drafts
+* LinkedIn exports or profile notes
+* career notes and personal summaries
+* project descriptions and accomplishments
+* awards, patents, certifications
+* job descriptions and market research content
 
-## Phase 1: Master Resume
+These files are the raw materials that feed the resume-builder workflow. They are not the result of notebook processing.
 
-### Inputs
+## Privacy & Security
 
-* Existing resumes
-* LinkedIn profile
-* Career notes
-* Project summaries
-* Awards, patents, certifications
+Source files can include private career, employer, contact, compensation, and job-search information.
 
-### Outputs
+* Review all files before sharing or committing.
+* Prefer sanitized examples or schema-compatible sample inputs.
+* Do not store sensitive personal or employer data in public repositories.
 
-* Master Resume.docx
+## Relationship to the workflow
 
-### Status
+Stage 01 is source intake and is represented by this folder. Downstream stages are implemented in the notebooks at the project root.
 
-Complete
-
-### Key Decisions
-
-* Separate resume content from archive content.
-* Preserve accomplishments without concern for length.
-* Capture career stories and supporting evidence for future use.
-
----
-
-## Phase 2: Canonical Resume
-
-### Inputs
-
-* Master Resume.docx
-* Canonical Resume Schema.md
-
-### Outputs
-
-* canonical_master_resume.json
-* renderer.py
-* standard.yaml
-* canonical_master_resume.docx
-* canonical_master_resume.pdf
-
-### Status
-
-Complete
-
-### Key Decisions
-
-* Content and presentation are separated.
-* Schema uses a small number of reusable content types.
-* Subsections became the primary reusable child-record structure.
-* Renderers consume semantic content only.
-
-### Validation
-
-Master Resume
-→ Canonical JSON
-→ DOCX/PDF
-
-Successful.
-
----
-
-## Phase 3: Job Archetype Discovery
-
-### Inputs
-
-* archetype_hypothesis.json
-* jd_search_contract.json
-* seed_job_descriptions.json
-
-### Outputs
-
-* normalized_jds.json
-* jd_signal_extractions.json
-* canonical_market_signals.json
-* target_archetype.json
-
-### Status
-
-In Progress
-
-### Objective
-
-Identify the capabilities, problem spaces, technologies, seniority signals, and business outcomes most valued by the target market.
-
-### Key Principle
-
-The archetype hypothesis guides job discovery but does not determine the final archetype.
