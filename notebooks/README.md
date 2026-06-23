@@ -27,6 +27,16 @@ The workspace notebooks are now grouped into category folders for easier navigat
 - `nlp/` — NLP and prompt tuning notebooks
 - `misc/` — miscellaneous notebooks and other experiments
 
+Each category folder contains its own `README.md` with a summary of the notebooks and workflow focus.
+
+### Category folder READMEs
+
+- `vision/README.md`
+- `agents/README.md`
+- `recommendation/README.md`
+- `nlp/README.md`
+- `misc/README.md`
+
 ## Resume Builder
 
 The `resume-builder/` subfolder is a project with its own notebooks and source structure. Its workflow stages include:
