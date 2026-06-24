@@ -2,6 +2,7 @@
   "schema_version": "1.0",
   "header": {
     "name": "Douglas Gordon Daly",
+    "title": "Principal AI Engineer / Technical Leader",
     "location": "Portland, OR",
     "email": "douglasgdaly@gmail.com",
     "phone": "(650) 586-9720",
@@ -10,6 +11,7 @@
   },
   "sections": [
     {
+      "section_id": "SUMMARY",
       "heading": "Summary",
       "type": "paragraph",
       "content": [
@@ -18,6 +20,7 @@
       ]
     },
     {
+      "section_id": "TECHNOLOGIES",
       "heading": "Core Technologies",
       "type": "subsections",
       "content": [
@@ -86,6 +89,7 @@
       ]
     },
     {
+      "section_id": "EXPERIENCE",
       "heading": "Professional Experience",
       "type": "experience",
       "content": [
@@ -93,7 +97,6 @@
           "role": "Principal Consultant",
           "organization": "Daly Engineers LLC",
           "dates": "Jan 2026 - Present",
-          "type": "subsections",
           "content": [
             {
               "label": "Consolidated Edison (via ABC Consulting)",
@@ -121,7 +124,6 @@
           "role": "AI Instructor",
           "organization": "SimpliLearn",
           "dates": "October 2025 - Present",
-          "type": "bullet",
           "content": [
             "Delivered professional AI training across multi-month cohorts for software engineers, data scientists, and technical professionals through university- and enterprise-sponsored continuing education programs.",
             "Taught transformer architectures, LLMs, RAG, agentic AI, multimodal AI, MCP, diffusion models, and enterprise AI governance.",
@@ -133,7 +135,6 @@
           "role": "AI Instructor",
           "organization": "Interview Kickstart",
           "dates": "March 2025 - Present",
-          "type": "bullet",
           "content": [
             "Delivered AI and machine learning instruction for software engineering professionals pursuing advanced technical roles.",
             "Taught practical applications of LLMs, RAG, agentic AI, and modern AI development workflows.",
@@ -144,7 +145,6 @@
           "role": "Data Scientist",
           "organization": "Intuit (via The Cydio Group)",
           "dates": "Apr 2025 - Jul 2025",
-          "type": "bullet",
           "content": [
             "Delivered analytics supporting business and operational decision-making for QuickBooks Capital.",
             "Investigated attribution anomalies across customer acquisition funnels, marketing campaigns, and conversion pathways to improve measurement accuracy and identify emerging business trends.",
@@ -156,7 +156,6 @@
           "role": "Data Scientist",
           "organization": "Meta",
           "dates": "October 2021 - January 2025",
-          "type": "bullet",
           "content": [
             "Defined reliability KPIs and measurement frameworks for Meta FinTech, establishing leading indicators used to guide reliability planning, prioritization, and performance management.",
             "Developed forecasting and performance-management frameworks across business pillars and sub-pillars, translating engineering initiatives into projected reliability outcomes used for planning, goal setting, and leadership decision-making.",
@@ -169,7 +168,6 @@
           "role": "Data Scientist",
           "organization": "Samsung Electronics (via Harvey Nash)",
           "dates": "Dec 2020 - Oct 2021",
-          "type": "bullet",
           "content": [
             "Developed and deployed gradient-boosting propensity models used to target digital marketing campaigns, increasing campaign conversions by 146% and campaign-attributed revenue by 229%.",
             "Built customer sentiment analysis pipelines using NLTK and survey data to identify product and customer experience insights.",
@@ -181,7 +179,6 @@
           "role": "Head of Data Science",
           "organization": "Facteus",
           "dates": "Oct 2017 - Nov 2020",
-          "type": "bullet",
           "content": [
             "Led data science initiatives on a 30B+ transaction dataset, creating analytical products and market-intelligence capabilities through large-scale feature engineering, merchant intelligence, and consumer-spending analytics.",
             "Developed merchant, brand, industry, and storefront resolution methodologies that transformed cryptic payment-card transactions into business-identifiable entities, enabling accurate market intelligence across more than 1,700 businesses with greater than 99% transaction coverage.",
@@ -194,7 +191,6 @@
           "role": "Expert SEO Solutions Architect",
           "organization": "Nike (via Intersoft Inc.)",
           "dates": "Nov 2016 - Sep 2017",
-          "type": "bullet",
           "content": [
             "Designed a scalable SEO and information-architecture framework for Nike's product discovery experience, balancing customer navigation paths with search-engine indexation requirements across a rapidly expanding product catalog.",
             "Developed canonical URL, redirect, and XML sitemap strategies that improved search visibility while preventing duplicate content, redirect conflicts, and circular routing issues.",
@@ -205,7 +201,6 @@
           "role": "Senior Manager, Operations Analysis",
           "organization": "Capital One",
           "dates": "Jan 2012 - Dec 2016",
-          "type": "bullet",
           "content": [
             "Developed predictive capacity-management models for customer-facing banking platforms, forecasting peak demand scenarios using customer-demand, temporal, and business-process drivers to support infrastructure planning and risk management.",
             "Identified critical gaps in enterprise monitoring operations after discovering that major incidents were frequently detected by customer call channels rather than operational monitoring systems.",
@@ -219,7 +214,6 @@
           "role": "Senior Principal Systems Engineer / Program Manager",
           "organization": "Raytheon",
           "dates": "Mar 2005 - Dec 2011",
-          "type": "bullet",
           "content": [
             "Led systems engineering organizations of 40-50 engineers specializing in modeling, simulation, analysis, and advanced aerospace systems, providing technical leadership, career development, and proposal support for programs valued up to $50M.",
             "Turned around an over-budget classified fixed-price technology program at approximately one-third completion by establishing execution plans, aligning engineering teams, and proactively managing technical and program risks; delivered the program under budget and nearly doubled the original profit target on a historically challenging delivery effort.",
@@ -230,6 +224,7 @@
       ]
     },
     {
+      "section_id": "PROJECTS",
       "heading": "Selected Projects",
       "type": "subsections",
       "content": [
@@ -260,55 +255,63 @@
       ]
     },
     {
+      "section_id": "EDUCATION",
       "heading": "Education",
       "type": "subsections",
       "content": [
         {
           "label": "MBA",
-          "context": "",
+          "context": "UCLA Anderson School of Management",
           "type": "inline_list",
           "content": [
-            "UCLA Anderson School of Management",
             "Top Honors",
             "GPA: 3.9"
           ]
         },
         {
           "label": "M.S., Applied Statistics",
-          "context": "",
+          "context": "Rochester Institute of Technology",
           "type": "inline_list",
           "content": [
-            "Rochester Institute of Technology",
             "GPA: 3.9"
           ]
         },
         {
           "label": "M.S., Electrical Engineering",
-          "context": "",
+          "context": "University of Washington",
           "type": "inline_list",
           "content": [
-            "University of Washington",
             "GPA: 3.7"
           ]
         },
         {
           "label": "B.S., Physics (Minor: Mathematics)",
-          "context": "",
+          "context": "Humboldt State University",
           "type": "inline_list",
           "content": [
-            "Humboldt State University",
             "GPA: 3.4"
           ]
         }
       ]
     },
     {
+      "section_id": "RECOGNITION",
       "heading": "Patents & Recognition",
       "type": "bullet",
       "content": [
         "Lead Inventor, U.S. Patent #8635622: Method and System for Resource Management Using Fuzzy Logic Timeline Filling (2014)",
         "Capital One Business Technology Innovation Award (2014)",
         "Conference Chair & Speaker - Customer Analytics Innovation Summit (2016)"
+      ]
+    },
+    {
+      "section_id": "CERTIFICATIONS",
+      "heading": "Certifications",
+      "type": "bullet",
+      "content": [
+        "Google Associate Data Practitioner",
+        "Google Ads Search Certification (Expired)",
+        "Google Analytics GA4 Certification (Expired)"
       ]
     }
   ]

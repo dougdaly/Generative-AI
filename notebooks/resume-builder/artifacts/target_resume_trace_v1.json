@@ -221,7 +221,7 @@
       "label": "Consolidated Edison (via ABC Consulting)",
       "bullets": [
         {
-          "text": "Built a governed analytics assistant leveraging Gemini, BigQuery, and tool-calling architectures, applying analyst rules and operational controls to ensure predictable, auditable, and compliant execution of generative AI workflows.",
+          "text": "Architected and delivered a governed analytics assistant leveraging Gemini, BigQuery, and tool-calling architectures, embedding analyst rules and operational controls to ensure predictable, auditable, and compliant execution of generative AI workflows.",
           "supporting_evidence_ids": [
             "exp_01_01_01_04"
           ],
@@ -244,7 +244,7 @@
           ]
         },
         {
-          "text": "Led analytical readiness assessment for Oracle/EBS and Maximo data migration to BigQuery, establishing the basis for cross-domain analytics across construction operations and financial systems.",
+          "text": "Led analytical readiness assessment for Oracle/EBS and Maximo data migration to BigQuery, establishing the groundwork for cross-domain analytics spanning construction operations and financial systems.",
           "supporting_evidence_ids": [
             "exp_01_01_01_01"
           ],
@@ -262,17 +262,9 @@
       "label": "NBCUniversal (via Apex Systems)",
       "bullets": [
         {
-          "text": "Architected AWS-based AI and graph analytics pipelines leveraging SageMaker, Terraform, S3, and containerized workloads to enable scalable, cloud-native ML workflows.",
+          "text": "Architected AWS-based AI and graph analytics pipelines leveraging SageMaker, Terraform, S3, and containerized workloads; evaluated graph analytics and graph machine learning solutions including Neptune, GraphStorm, Bedrock, and LangGraph to support dependency analysis and operational intelligence initiatives.",
           "supporting_evidence_ids": [
-            "exp_01_01_02_01"
-          ],
-          "cautions": [
-            "Frame carefully as short-cycle architecture/prototype evidence unless additional facts support production deployment."
-          ]
-        },
-        {
-          "text": "Evaluated and integrated emerging graph analytics and graph machine learning technologies\u2014including Neptune, GraphStorm, Bedrock, and LangGraph\u2014for advanced dependency analysis and operational intelligence use cases.",
-          "supporting_evidence_ids": [
+            "exp_01_01_02_01",
             "exp_01_01_02_03"
           ],
           "cautions": [
@@ -289,7 +281,7 @@
       "label": "",
       "bullets": [
         {
-          "text": "Mentored students on AI architecture, governance, implementation tradeoffs, and enterprise adoption strategies, fostering cross-functional technical leadership and responsible AI practices.",
+          "text": "Mentored students on AI architecture, governance, implementation tradeoffs, and enterprise adoption strategies, enabling cross-functional technical fluency and responsible AI practices.",
           "supporting_evidence_ids": [
             "exp_01_02_04_01"
           ],
@@ -298,7 +290,7 @@
           ]
         },
         {
-          "text": "Delivered instruction on transformer architectures, LLMs, RAG, agentic and multimodal AI, diffusion models, and enterprise AI governance, enabling talent development in advanced generative and agentic AI technologies.",
+          "text": "Delivered instruction on transformer architectures, LLMs, RAG, agentic and multimodal AI, diffusion models, and enterprise AI governance, fostering advanced understanding of generative and agentic AI technologies.",
           "supporting_evidence_ids": [
             "exp_01_02_02_01"
           ],
@@ -325,7 +317,7 @@
           ]
         },
         {
-          "text": "Delivered instruction on practical applications of LLMs, RAG, agentic AI, and modern AI development workflows, enabling talent development in advanced AI technologies.",
+          "text": "Delivered instruction on practical applications of LLMs, retrieval-augmented generation (RAG), agentic AI, and modern AI development workflows to enable next-generation AI solution development.",
           "supporting_evidence_ids": [
             "exp_01_03_02_01"
           ],
@@ -343,7 +335,7 @@
       "label": "",
       "bullets": [
         {
-          "text": "Partnered with finance, marketing, and product stakeholders to translate attribution and performance data into actionable business recommendations, driving alignment between business objectives and technical solutions.",
+          "text": "Partnered with finance, marketing, and product stakeholders to translate attribution and performance data into actionable business recommendations, driving cross-functional alignment between business needs and technical solutions.",
           "supporting_evidence_ids": [
             "exp_01_04_04_01"
           ],
@@ -366,7 +358,7 @@
       "label": "",
       "bullets": [
         {
-          "text": "Designed and developed the ReMon framework, empowering engineering teams to implement robust monitoring and alerting systems without deep internal tooling expertise; widely adopted across Meta FinTech and instrumental in the automatic detection of over 15 SEVs in 2024.",
+          "text": "Designed and developed the ReMon framework, empowering engineering teams to implement robust monitoring and alerting systems without deep internal tooling expertise; adopted across Meta FinTech and instrumental in the automatic detection of over 15 SEVs in 2024.",
           "supporting_evidence_ids": [
             "exp_01_05_04_01"
           ],
@@ -422,7 +414,7 @@
       "label": "",
       "bullets": [
         {
-          "text": "Architected a scalable SEO and information-architecture framework for Nike's product discovery platform, aligning customer navigation with search engine indexation to support a rapidly growing product catalog.",
+          "text": "Architected a scalable SEO and information-architecture framework for Nike's product discovery, aligning customer navigation with search engine indexation to support a rapidly growing product catalog.",
           "supporting_evidence_ids": [
             "exp_01_08_01_01"
           ],
@@ -447,17 +439,9 @@
           ]
         },
         {
-          "text": "Secured executive sponsorship and expanded initial Splunk-based prototypes into a scalable Kafka and Elastic Stack solution, modernizing enterprise monitoring in alignment with open-source strategy.",
+          "text": "Secured executive sponsorship and partnered with CTO-level leadership to define enterprise monitoring strategy, operational health metrics, and reliability initiatives, expanding Splunk-based prototypes into a scalable Kafka and Elastic Stack solution aligned with open-source strategy.",
           "supporting_evidence_ids": [
-            "exp_01_09_04_01"
-          ],
-          "cautions": [
-            "Older evidence; use as career-depth proof rather than the lead current AI story."
-          ]
-        },
-        {
-          "text": "Partnered with CTO-level leadership to define enterprise monitoring strategy, operational health metrics, and reliability-improvement initiatives, driving cross-functional alignment and operational excellence.",
-          "supporting_evidence_ids": [
+            "exp_01_09_04_01",
             "exp_01_09_05_01"
           ],
           "cautions": [
@@ -474,7 +458,7 @@
       "label": "",
       "bullets": [
         {
-          "text": "Led systems engineering organizations of 40-50 engineers specializing in modeling, simulation, analysis, and advanced aerospace systems, providing technical leadership, career development, and proposal support for programs valued up to $50M.",
+          "text": "Led systems engineering organizations of 40-50 engineers specializing in modeling, simulation, analysis, and advanced aerospace systems, providing technical leadership, mentorship, and proposal support for programs valued up to $50M.",
           "supporting_evidence_ids": [
             "exp_01_10_01_01"
           ],

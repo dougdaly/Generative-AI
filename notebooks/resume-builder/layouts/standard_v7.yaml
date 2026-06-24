@@ -15,15 +15,18 @@ styles:
     size: 16
     align: center
     space_after: 0
+
   header_title:
     bold: true
     size: 10
     align: center
     space_after: 1
+
   header_contact:
     size: 8.5
     align: center
     space_after: 3
+
   section_heading:
     bold: true
     uppercase: true
@@ -31,74 +34,27 @@ styles:
     space_before: 5
     space_after: 1
     border_bottom: true
+    keep_with_next: true
+
   paragraph:
     size: 9
     space_after: 3
+
   list_item:
     size: 8.75
     space_after: 0
-styles:
+    keep_together: true
+
   experience_heading:
     bold: true
     size: 9
     space_before: 3
     space_after: 0
     keep_with_next: true
+
   subsection_heading:
     bold: true
     size: 8.75
     space_before: 1.5
     space_after: 0
     keep_with_next: true
-header:
-  rows:
-  - fields:
-    - name
-    style: header_name
-  - fields:
-    - title
-    style: header_title
-  - fields:
-    - location
-    - email
-    - phone
-    - linkedin
-    - github
-    - website
-    - clearance
-    separator: ' | '
-    style: header_contact
-formatters:
-  experience_heading:
-    fields:
-    - role
-    - organization
-    - dates
-    separator: ' | '
-    style: experience_heading
-  subsection_heading:
-    fields:
-    - label
-    - context
-    - dates
-    separator: ' | '
-    style: subsection_heading
-    field_formats:
-      context: ({value})
-bullets:
-  left_indent: 0.18
-  hanging_indent: 0.12
-types:
-  paragraph:
-    content_style: paragraph
-  bullet:
-    content_style: list_item
-  inline_list:
-    content_style: list_item
-    separator: " | "
-  subsections:
-    item_formatter: subsection_heading
-    default_child_type: inline_list
-  experience:
-    item_formatter: experience_heading
-    default_child_type: bullet
