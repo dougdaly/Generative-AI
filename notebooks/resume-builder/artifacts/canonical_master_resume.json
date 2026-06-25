@@ -10,6 +10,7 @@
   },
   "sections": [
     {
+      "section_id": "SUMMARY",
       "heading": "Summary",
       "type": "paragraph",
       "content": [
@@ -18,6 +19,7 @@
       ]
     },
     {
+      "section_id": "TECHNOLOGIES",
       "heading": "Core Technologies",
       "type": "subsections",
       "content": [
@@ -86,6 +88,7 @@
       ]
     },
     {
+      "section_id": "EXPERIENCE",
       "heading": "Professional Experience",
       "type": "experience",
       "content": [
@@ -93,16 +96,18 @@
           "role": "Principal Consultant",
           "organization": "Daly Engineers LLC",
           "dates": "Jan 2026 - Present",
-          "type": "subsections",
-          "content": [
+          "type": "bullet",
+          "content": [],
+          "subsections": [
             {
               "label": "Consolidated Edison (via ABC Consulting)",
               "type": "bullet",
               "content": [
-                "Led analytical readiness assessment for Oracle/EBS and Maximo data migrated to BigQuery, establishing the foundation for cross-domain analytics across construction operations and financial systems.",
+                "Built a governed analytics assistant using Gemini, BigQuery, and tool-calling architectures that applied analyst rules, operational controls, and auditable execution patterns for AI-enabled construction and financial analytics.",
+                "Led analytical readiness assessment for Oracle/EBS and Maximo data migrated to BigQuery, establishing cross-domain analytics across construction operations and financial systems.",
                 "Developed automated profiling, type inference, duplicate detection, candidate key analysis, and cross-system join validation frameworks across 100+ source tables and millions of operational and financial records.",
-                "Developed a phased analytical maturity roadmap adopted as the foundation for anomaly detection, construction analytics, and AI-enabled decision support initiatives.",
-                "Built a governed analytics assistant using Gemini, BigQuery, and tool-calling architectures that applied analyst rules and operational controls while maintaining predictable and auditable execution."
+                "Designed peer-group and time-series anomaly detection readiness frameworks for construction actuals, including data suitability checks, gap analysis, nonzero filtering, and category-level cost behavior analysis.",
+                "Developed a phased analytical maturity roadmap for anomaly detection, construction analytics, and AI-enabled decision support initiatives."
               ]
             },
             {
@@ -119,25 +124,14 @@
         },
         {
           "role": "AI Instructor",
-          "organization": "SimpliLearn",
-          "dates": "October 2025 - Present",
-          "type": "bullet",
-          "content": [
-            "Delivered professional AI training across multi-month cohorts for software engineers, data scientists, and technical professionals through university- and enterprise-sponsored continuing education programs.",
-            "Taught transformer architectures, LLMs, RAG, agentic AI, multimodal AI, MCP, diffusion models, and enterprise AI governance.",
-            "Developed hands-on demonstrations, Jupyter notebooks, and end-to-end applications covering modern AI workflows, evaluation techniques, and deployment considerations.",
-            "Mentored students on AI architecture, governance, implementation tradeoffs, and enterprise adoption strategies."
-          ]
-        },
-        {
-          "role": "AI Instructor",
-          "organization": "Interview Kickstart",
+          "organization": "SimpliLearn & Interview Kickstart",
           "dates": "March 2025 - Present",
           "type": "bullet",
           "content": [
-            "Delivered AI and machine learning instruction for software engineering professionals pursuing advanced technical roles.",
-            "Taught practical applications of LLMs, RAG, agentic AI, and modern AI development workflows.",
-            "Mentored students on AI architecture, implementation patterns, and technology selection tradeoffs."
+            "Delivered AI and machine learning training across multi-month cohorts for software engineers, data scientists, and technical professionals through university- and enterprise-sponsored continuing education programs.",
+            "Taught transformer architectures, LLMs, RAG, agentic AI, multimodal AI, MCP, diffusion models, enterprise AI governance, and practical AI development workflows.",
+            "Developed hands-on demonstrations, Jupyter notebooks, and end-to-end applications covering modern AI workflows, evaluation techniques, and deployment considerations.",
+            "Mentored students on AI architecture, governance, implementation tradeoffs, and enterprise adoption strategies."
           ]
         },
         {
@@ -181,6 +175,7 @@
           "role": "Head of Data Science",
           "organization": "Facteus",
           "dates": "Oct 2017 - Nov 2020",
+          "role_context": "Led data science and data-product initiatives on Facteus' 30B+ transaction dataset, the company’s core source for market-intelligence products and revenue-generating analytics.",
           "type": "bullet",
           "content": [
             "Led data science initiatives on a 30B+ transaction dataset, creating analytical products and market-intelligence capabilities through large-scale feature engineering, merchant intelligence, and consumer-spending analytics.",
@@ -230,11 +225,14 @@
       ]
     },
     {
+      "section_id": "PROJECTS",
       "heading": "Selected Projects",
-      "type": "subsections",
+      "type": "experience",
       "content": [
         {
-          "label": "GraphRAG Engine & LoRA Coverage Assistant | GitHub | 2025",
+          "role": "GraphRAG Engine & LoRA Coverage Assistant",
+          "organization": "GitHub",
+          "dates": "2025",
           "type": "bullet",
           "content": [
             "Built a GraphRAG system for multi-hop benefits reasoning with fully traceable retrieval paths across entities, clauses, and supporting evidence.",
@@ -242,7 +240,9 @@
           ]
         },
         {
-          "label": "Agent-to-Agent Protocol MVPs | GitHub | 2026",
+          "role": "Agent-to-Agent Protocol MVPs",
+          "organization": "GitHub",
+          "dates": "2026",
           "type": "bullet",
           "content": [
             "Agent Olympics: built a small evaluation runner that benchmarks a generalist agent vs discovered specialists across three task categories with explicit scoring criteria and summary reporting.",
@@ -250,59 +250,59 @@
           ]
         },
         {
-          "label": "Agentic Multimodal Orchestrator | GitHub | 2025",
+          "role": "AI-Assisted Resume Generation System",
+          "organization": "GitHub",
+          "dates": "2026",
           "type": "bullet",
           "content": [
-            "Orchestrated structured retrieval, layout planning, and diffusion prompting to generate data-driven posters/maps with repeatable, template-based workflows.",
-            "Implemented template constraints and parameterized prompts to ensure consistency across runs."
+            "Built an evidence-driven resume generation pipeline that converts a master resume into canonical JSON, extracts candidate evidence, maps evidence to market-derived role signals, and assembles targeted resume variants through structured LLM workflows.",
+            "Implemented versioned artifacts, human review checkpoints, traceable evidence IDs, and DOCX/PDF rendering controls to separate source evidence, content selection, positioning, and presentation layout."
           ]
         }
       ]
     },
     {
+      "section_id": "EDUCATION",
       "heading": "Education",
       "type": "subsections",
       "content": [
         {
           "label": "MBA",
-          "context": "",
+          "context": "UCLA Anderson School of Management",
           "type": "inline_list",
           "content": [
-            "UCLA Anderson School of Management",
             "Top Honors",
             "GPA: 3.9"
           ]
         },
         {
           "label": "M.S., Applied Statistics",
-          "context": "",
+          "context": "Rochester Institute of Technology",
           "type": "inline_list",
           "content": [
-            "Rochester Institute of Technology",
             "GPA: 3.9"
           ]
         },
         {
           "label": "M.S., Electrical Engineering",
-          "context": "",
+          "context": "University of Washington",
           "type": "inline_list",
           "content": [
-            "University of Washington",
             "GPA: 3.7"
           ]
         },
         {
           "label": "B.S., Physics (Minor: Mathematics)",
-          "context": "",
+          "context": "Humboldt State University",
           "type": "inline_list",
           "content": [
-            "Humboldt State University",
             "GPA: 3.4"
           ]
         }
       ]
     },
     {
+      "section_id": "RECOGNITION",
       "heading": "Patents & Recognition",
       "type": "bullet",
       "content": [

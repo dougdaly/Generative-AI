@@ -1,37 +1,113 @@
+schema_version: standard_v6
 page:
   margins:
-    top: 0.5
-    bottom: 0.5
-    left: 0.6
-    right: 0.6
-
+    top: 0.55
+    bottom: 0.55
+    left: 0.65
+    right: 0.65
 fonts:
   base: Aptos
-  name_size: 16
-  section_size: 10
-  body_size: 9
-
-sections:
-  heading:
+  body_size: 9.25
+styles:
+  header_name:
+    bold: true
+    size: 16.5
+    align: center
+    space_after: 0
+  header_title:
+    bold: true
+    size: 10.5
+    align: center
+    space_after: 1
+  header_contact:
+    size: 8.75
+    align: center
+    space_after: 4
+  section_heading:
     bold: true
     uppercase: true
-    spacing_before: 6
-    spacing_after: 2
-
-renderers:
-  paragraph:
+    size: 10.25
+    space_before: 6
+    space_after: 2
+    border_bottom: true
+  body:
+    size: 9.25
     space_after: 4
-
-  bullets:
-    left_indent: 0.18
-    hanging_indent: 0.12
+  experience_heading:
+    bold: true
+    size: 9.25
+    space_before: 3
     space_after: 1
+  subsection_heading:
+    bold: true
+    size: 9
+    space_before: 2
+    space_after: 0.5
+  bullet:
+    size: 9
+    space_after: 1
+  inline_list:
+    size: 9
+    space_after: 1
+header:
+  rows:
+  - fields:
+    - name
+    style: header_name
+  - fields:
+    - title
+    style: header_title
+  - fields:
+    - location
+    - email
+    - phone
+    - linkedin
+    - github
+    - website
+    - clearance
+    separator: ' | '
+    style: header_contact
+formatters:
+  experience_heading:
+    fields:
+    - role
+    - organization
+    - dates
+    separator: ' | '
+    style: experience_heading
+  subsection_heading:
+    fields:
+    - label
+    - context
+    - dates
+    separator: ' | '
+    style: subsection_heading
+    field_formats:
+      context: ({value})
+bullets:
+  left_indent: 0.2
+  hanging_indent: 0.13
+types:
+  paragraph:
+    content_style: body
+  bullet:
+    content_style: bullet
+  inline_list:
+    content_style: inline_list
+    separator: ' | '
+  subsections:
+    item_formatter: subsection_heading
+    default_child_type: inline_list
+  experience:
+    item_formatter: experience_heading
+    default_child_type: bullet
 
-  structured_items:
-    item_heading_bold: true
-    item_subheading_italic: false
-    group_label_bold: true
-    spacing_between_items: 4
-
-  compact_items:
-    separator: " | "
+section_overrides:
+  EDUCATION:
+    formatters:
+      subsection_heading:
+        field_formats:
+          context: "{value}"
+    types:
+      inline_list:
+        label_content_separator: " | "

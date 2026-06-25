@@ -7,247 +7,238 @@
   },
   "capabilities": [
     {
+      "capability": "Governed GenAI and Tool-Calling Systems",
+      "strength": 5,
+      "evidence_ids": [
+        "exp_01_01_01_01",
+        "exp_01_02_01_02"
+      ],
+      "evidence_sources": [
+        "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)",
+        "SimpliLearn & Interview Kickstart | AI Instructor"
+      ],
+      "supporting_evidence_summary": "Demonstrated by building a governed analytics assistant using Gemini, BigQuery, and tool-calling architectures with operational controls and auditable execution patterns, and by teaching practical AI development workflows including generative and agentic AI.",
+      "target_relevance": "high",
+      "resume_use": "core_expertise",
+      "cautions": [
+        "Teaching evidence supports mentorship, technical fluency, and developer enablement; do not present it as production ownership unless the bullet explicitly supports that."
+      ],
+      "original_capability": "Productionization and operationalization of generative and agentic AI"
+    },
+    {
       "capability": "Enterprise AI and Operational Intelligence Platforms",
       "strength": 5,
       "evidence_ids": [
-        "exp_01_01_01_04",
-        "exp_01_01_02_01",
-        "exp_01_07_01_01",
-        "exp_01_09_03_01"
+        "exp_01_01_01_01",
+        "exp_01_01_02_01"
       ],
       "evidence_sources": [
         "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)",
-        "Daly Engineers LLC | Principal Consultant | NBCUniversal (via Apex Systems)",
-        "Facteus | Head of Data Science",
-        "Capital One | Senior Manager, Operations Analysis"
+        "Daly Engineers LLC | Principal Consultant | NBCUniversal (via Apex Systems)"
       ],
-      "supporting_evidence_summary": "Demonstrated by architecting and delivering governed analytics assistants, AWS-based AI pipelines, and large-scale analytical products, as well as leading the design and adoption of operational intelligence platforms.",
+      "supporting_evidence_summary": "Built governed analytics assistants and AWS-based AI and graph analytics pipelines using cloud-native tools, demonstrating architecture and delivery of scalable AI/ML platforms.",
       "target_relevance": "high",
       "resume_use": "core_expertise",
       "cautions": [
-        "Some evidence (e.g., NBCUniversal) may be short-cycle/prototype; frame accordingly."
+        "Frame carefully as short-cycle architecture/prototype evidence unless additional facts support production deployment."
       ],
-      "original_capability": "Enterprise AI and Operational Intelligence Platforms"
+      "original_capability": "Enterprise-scale AI/ML platform architecture and delivery"
     },
     {
-      "capability": "AI Governance, Controls, and Responsible Adoption",
-      "strength": 4,
-      "evidence_ids": [
-        "exp_01_01_01_04",
-        "exp_01_02_04_01",
-        "exp_01_02_02_01"
-      ],
-      "evidence_sources": [
-        "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)",
-        "SimpliLearn | AI Instructor"
-      ],
-      "supporting_evidence_summary": "Built governed analytics assistants with operational controls and mentored others on governance and responsible AI, highlighting both hands-on and advisory expertise.",
-      "target_relevance": "high",
-      "resume_use": "core_expertise",
-      "cautions": [
-        "Teaching evidence supports mentorship and technical fluency, not direct production ownership."
-      ],
-      "original_capability": "AI Governance, Controls, and Responsible Adoption"
-    },
-    {
-      "capability": "Observability, Monitoring, and Operational Controls",
+      "capability": "MLOps, LLMOps, and observability as operational foundations",
       "strength": 5,
       "evidence_ids": [
-        "exp_01_09_03_01",
-        "exp_01_05_04_01",
-        "exp_01_01_01_04",
-        "exp_01_01_01_02"
+        "exp_01_08_01_03",
+        "exp_01_04_01_04",
+        "exp_01_08_01_04"
       ],
       "evidence_sources": [
         "Capital One | Senior Manager, Operations Analysis",
-        "Meta | Data Scientist",
-        "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)"
+        "Meta | Data Scientist"
       ],
-      "supporting_evidence_summary": "Led the design and adoption of real-time monitoring platforms, developed reusable monitoring frameworks, and built analytics assistants with operational controls.",
+      "supporting_evidence_summary": "Conceived and led adoption of operational intelligence platforms, developed reusable monitoring frameworks, and modernized enterprise monitoring with scalable, cloud-native solutions.",
       "target_relevance": "high",
       "resume_use": "core_expertise",
       "cautions": [
-        "Older evidence (Capital One) should be used as career-depth proof."
+        "Older evidence; use as career-depth proof rather than the lead current AI story."
       ],
-      "original_capability": "Observability, Monitoring, and Operational Controls"
+      "original_capability": "MLOps, LLMOps, and observability as operational foundations"
     },
     {
-      "capability": "Technical Leadership, Mentorship, and Talent Development",
-      "strength": 5,
-      "evidence_ids": [
-        "exp_01_10_01_01",
-        "exp_01_02_04_01",
-        "exp_01_03_03_01",
-        "exp_01_09_05_01"
-      ],
-      "evidence_sources": [
-        "Raytheon | Senior Principal Systems Engineer / Program Manager",
-        "SimpliLearn | AI Instructor",
-        "Interview Kickstart | AI Instructor",
-        "Capital One | Senior Manager, Operations Analysis"
-      ],
-      "supporting_evidence_summary": "Led large engineering teams, mentored students and professionals on AI architecture, and partnered with executive leadership to define strategy.",
-      "target_relevance": "high",
-      "resume_use": "core_expertise",
-      "cautions": [
-        "Teaching evidence supports mentorship and enablement, not direct production ownership.",
-        "Older Raytheon evidence is for career depth."
-      ],
-      "original_capability": "Technical Leadership, Mentorship, and Talent Development"
-    },
-    {
-      "capability": "Governed GenAI and Tool-Calling Systems",
+      "capability": "Governance, compliance, and responsible AI",
       "strength": 4,
       "evidence_ids": [
-        "exp_01_01_01_04",
-        "exp_01_02_02_01"
+        "exp_01_01_01_01",
+        "exp_01_02_01_02"
       ],
       "evidence_sources": [
         "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)",
-        "SimpliLearn | AI Instructor"
+        "SimpliLearn & Interview Kickstart | AI Instructor"
       ],
-      "supporting_evidence_summary": "Built governed analytics assistants using Gemini and tool-calling architectures, and taught enterprise strategies for deploying generative and agentic AI.",
+      "supporting_evidence_summary": "Built AI solutions with operational controls and auditable execution, and taught enterprise AI governance and implementation tradeoffs.",
+      "target_relevance": "high",
+      "resume_use": "summary",
+      "cautions": [
+        "Teaching evidence supports mentorship, technical fluency, and developer enablement; do not present it as production ownership unless the bullet explicitly supports that."
+      ],
+      "original_capability": "Governance, compliance, and responsible AI"
+    },
+    {
+      "capability": "Reusable Frameworks and Developer Enablement",
+      "strength": 5,
+      "evidence_ids": [
+        "exp_01_04_01_04",
+        "exp_01_01_01_03",
+        "exp_01_07_01_01"
+      ],
+      "evidence_sources": [
+        "Meta | Data Scientist",
+        "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)",
+        "Nike (via Intersoft Inc.) | Expert SEO Solutions Architect"
+      ],
+      "supporting_evidence_summary": "Designed and developed frameworks for monitoring, data profiling, and scalable information architecture, enabling engineering teams and improving operational efficiency.",
+      "target_relevance": "high",
+      "resume_use": "core_expertise",
+      "cautions": [],
+      "original_capability": "Developing reusable frameworks, components, and developer tools"
+    },
+    {
+      "capability": "Mentorship, cross-functional leadership, and technical influence",
+      "strength": 5,
+      "evidence_ids": [
+        "exp_01_02_01_04",
+        "exp_01_09_01_01",
+        "exp_01_02_01_01"
+      ],
+      "evidence_sources": [
+        "SimpliLearn & Interview Kickstart | AI Instructor",
+        "Raytheon | Senior Principal Systems Engineer / Program Manager"
+      ],
+      "supporting_evidence_summary": "Mentored students and engineers on AI architecture and adoption, led large engineering organizations, and delivered technical training across multi-month cohorts.",
       "target_relevance": "high",
       "resume_use": "core_expertise",
       "cautions": [
-        "Teaching evidence supports technical fluency and enablement, not direct production ownership."
+        "Teaching evidence supports mentorship, technical fluency, and developer enablement; do not present it as production ownership unless the bullet explicitly supports that.",
+        "Older evidence; use as career-depth proof rather than the lead current AI story."
       ],
-      "original_capability": "Governed GenAI and Tool-Calling Systems"
+      "original_capability": "Mentorship, cross-functional leadership, and technical influence"
+    },
+    {
+      "capability": "Business Translation and Decision Support",
+      "strength": 4,
+      "evidence_ids": [
+        "exp_01_08_01_03",
+        "exp_01_07_01_01",
+        "exp_01_04_01_02"
+      ],
+      "evidence_sources": [
+        "Capital One | Senior Manager, Operations Analysis",
+        "Nike (via Intersoft Inc.) | Expert SEO Solutions Architect",
+        "Meta | Data Scientist"
+      ],
+      "supporting_evidence_summary": "Conceived and delivered platforms and frameworks that directly addressed business needs, such as operational intelligence, product discovery, and performance management.",
+      "target_relevance": "high",
+      "resume_use": "summary",
+      "cautions": [],
+      "original_capability": "Translating business requirements into technical solutions"
     },
     {
       "capability": "Cloud-Native AI Infrastructure and Data Platforms",
       "strength": 4,
       "evidence_ids": [
         "exp_01_01_02_01",
-        "exp_01_09_04_01",
-        "exp_01_08_01_01"
+        "exp_01_08_01_04"
       ],
       "evidence_sources": [
         "Daly Engineers LLC | Principal Consultant | NBCUniversal (via Apex Systems)",
-        "Capital One | Senior Manager, Operations Analysis",
-        "Nike (via Intersoft Inc.) | Expert SEO Solutions Architect"
+        "Capital One | Senior Manager, Operations Analysis"
       ],
-      "supporting_evidence_summary": "Architected AWS-based AI pipelines, expanded enterprise monitoring to scalable open-source stacks, and designed scalable frameworks for product discovery.",
-      "target_relevance": "high",
-      "resume_use": "core_expertise",
-      "cautions": [
-        "Some evidence (NBCUniversal) may be short-cycle/prototype; frame accordingly.",
-        "Older Capital One evidence is for career depth."
-      ],
-      "original_capability": "Cloud-Native AI Infrastructure and Data Platforms"
-    },
-    {
-      "capability": "Business Translation and Decision Support",
-      "strength": 4,
-      "evidence_ids": [
-        "exp_01_09_03_01",
-        "exp_01_08_01_01",
-        "exp_01_04_04_01"
-      ],
-      "evidence_sources": [
-        "Capital One | Senior Manager, Operations Analysis",
-        "Nike (via Intersoft Inc.) | Expert SEO Solutions Architect",
-        "Intuit (via The Cydio Group) | Data Scientist"
-      ],
-      "supporting_evidence_summary": "Conceived and delivered platforms based on business capability needs, designed frameworks balancing customer and business requirements, and translated analytics into actionable recommendations.",
+      "supporting_evidence_summary": "Built AI and analytics pipelines on AWS using containerized workloads and Terraform, and expanded prototypes into scalable, open-source-aligned enterprise solutions.",
       "target_relevance": "high",
       "resume_use": "summary",
       "cautions": [
-        "Older Capital One evidence is for career depth."
+        "Frame carefully as short-cycle architecture/prototype evidence unless additional facts support production deployment.",
+        "Older evidence; use as career-depth proof rather than the lead current AI story."
       ],
-      "original_capability": "Business Translation and Decision Support"
-    },
-    {
-      "capability": "Reusable Frameworks and Developer Enablement",
-      "strength": 4,
-      "evidence_ids": [
-        "exp_01_05_04_01",
-        "exp_01_01_01_02"
-      ],
-      "evidence_sources": [
-        "Meta | Data Scientist",
-        "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)"
-      ],
-      "supporting_evidence_summary": "Developed monitoring frameworks adopted across organizations and automated data profiling and validation frameworks for large-scale analytics.",
-      "target_relevance": "medium",
-      "resume_use": "experience",
-      "cautions": [],
-      "original_capability": "Reusable Frameworks and Developer Enablement"
-    },
-    {
-      "capability": "Cross-Functional Strategy and Executive Alignment",
-      "strength": 4,
-      "evidence_ids": [
-        "exp_01_10_02_01",
-        "exp_01_09_05_01",
-        "exp_01_04_04_01"
-      ],
-      "evidence_sources": [
-        "Raytheon | Senior Principal Systems Engineer / Program Manager",
-        "Capital One | Senior Manager, Operations Analysis",
-        "Intuit (via The Cydio Group) | Data Scientist"
-      ],
-      "supporting_evidence_summary": "Aligned engineering teams and stakeholders to deliver complex programs, defined enterprise strategies with CTO-level leaders, and partnered with business units for actionable analytics.",
-      "target_relevance": "high",
-      "resume_use": "summary",
-      "cautions": [
-        "Older Raytheon and Capital One evidence is for career depth."
-      ],
-      "original_capability": "Cross-Functional Strategy and Executive Alignment"
+      "original_capability": "Cloud-native, scalable, and resilient system design"
     },
     {
       "capability": "Technical Roadmaps, Strategy, and Innovation",
       "strength": 4,
       "evidence_ids": [
-        "exp_01_09_03_01",
-        "exp_01_09_05_01"
+        "exp_01_08_01_03",
+        "exp_01_08_01_05",
+        "exp_01_01_01_05"
       ],
       "evidence_sources": [
-        "Capital One | Senior Manager, Operations Analysis"
+        "Capital One | Senior Manager, Operations Analysis",
+        "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)"
       ],
-      "supporting_evidence_summary": "Conceived and led adoption of major operational platforms and partnered with executive leadership to define monitoring strategy and technical vision.",
+      "supporting_evidence_summary": "Defined enterprise monitoring strategy, secured executive sponsorship, and developed phased analytical maturity roadmaps for AI initiatives.",
       "target_relevance": "high",
       "resume_use": "summary",
       "cautions": [
-        "Older Capital One evidence is for career depth."
+        "Older evidence; use as career-depth proof rather than the lead current AI story.",
+        "Strategy and readiness evidence; do not overstate as implementation unless paired with delivery evidence."
       ],
       "original_capability": "Strategic and visionary leadership (roadmap, technical vision, innovation)"
     },
     {
-      "capability": "AI/ML Deployment and Lifecycle Support",
-      "strength": 3,
+      "capability": "Optimizing system performance, cost, and reliability",
+      "strength": 4,
       "evidence_ids": [
-        "exp_01_01_02_01",
-        "exp_01_06_01_01"
+        "exp_01_09_01_02",
+        "exp_01_04_01_02"
       ],
       "evidence_sources": [
-        "Daly Engineers LLC | Principal Consultant | NBCUniversal (via Apex Systems)",
-        "Samsung Electronics (via Harvey Nash) | Data Scientist"
+        "Raytheon | Senior Principal Systems Engineer / Program Manager",
+        "Meta | Data Scientist"
       ],
-      "supporting_evidence_summary": "Built and deployed AI pipelines and models for analytics and marketing, demonstrating experience in model lifecycle and operationalization.",
+      "supporting_evidence_summary": "Turned around challenging technology programs and developed frameworks for forecasting and managing platform reliability and performance.",
       "target_relevance": "medium",
       "resume_use": "experience",
       "cautions": [
-        "NBCUniversal evidence may be short-cycle/prototype; frame accordingly."
+        "Older evidence; use as career-depth proof rather than the lead current AI story."
       ],
-      "original_capability": "AI/ML model lifecycle management and deployment"
+      "original_capability": "Optimizing system performance, cost, and reliability"
     },
     {
-      "capability": "Advanced Analytics and Decision Support",
-      "strength": 3,
+      "capability": "Business value delivery (growth, efficiency, customer impact)",
+      "strength": 4,
       "evidence_ids": [
-        "exp_01_07_01_01",
-        "exp_01_05_02_01"
+        "exp_01_05_01_01",
+        "exp_01_09_01_02"
       ],
       "evidence_sources": [
-        "Facteus | Head of Data Science",
-        "Meta | Data Scientist"
+        "Samsung Electronics (via Harvey Nash) | Data Scientist",
+        "Raytheon | Senior Principal Systems Engineer / Program Manager"
       ],
-      "supporting_evidence_summary": "Led creation of analytical products and frameworks for business decision support and performance management.",
-      "target_relevance": "medium",
-      "resume_use": "supporting_context",
-      "cautions": [],
-      "original_capability": "Advanced Analytics and Decision Support"
+      "supporting_evidence_summary": "Delivered measurable business impact through AI/ML models that increased revenue and efficiency, and by delivering under-budget, high-value technology programs.",
+      "target_relevance": "high",
+      "resume_use": "summary",
+      "cautions": [
+        "Older evidence; use as career-depth proof rather than the lead current AI story."
+      ],
+      "original_capability": "Business value delivery (growth, efficiency, customer impact)"
+    },
+    {
+      "capability": "Continuous innovation, research application, and developer enablement",
+      "strength": 4,
+      "evidence_ids": [
+        "exp_01_04_01_04",
+        "exp_01_02_01_02"
+      ],
+      "evidence_sources": [
+        "Meta | Data Scientist",
+        "SimpliLearn & Interview Kickstart | AI Instructor"
+      ],
+      "supporting_evidence_summary": "Developed frameworks enabling engineering teams to build advanced monitoring systems and taught cutting-edge AI architectures and workflows.",
+      "target_relevance": "high",
+      "resume_use": "summary",
+      "cautions": [
+        "Teaching evidence supports mentorship, technical fluency, and developer enablement; do not present it as production ownership unless the bullet explicitly supports that."
+      ],
+      "original_capability": "Continuous innovation, research application, and developer enablement"
     }
   ]
 }

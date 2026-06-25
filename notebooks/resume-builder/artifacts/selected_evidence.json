@@ -1,41 +1,115 @@
 {
   "selection_summary": {
     "target_archetype": "Principal AI Architect / AI Platform Engineering Lead",
-    "total_evidence_items": 46,
-    "selected_count": 39,
-    "excluded_count": 7,
+    "total_evidence_items": 44,
+    "selected_count": 35,
+    "excluded_count": 9,
     "selection_method": "Deterministic first-pass selection using field_capped_score, direct_match_count, rank, and qualitative caution flags. This step selects evidence, not final resume bullets.",
     "tier_counts": {
       "must_include": 6,
       "strong_include": 9,
-      "optional": 8,
-      "compress": 16,
-      "exclude": 7
+      "optional": 9,
+      "compress": 11,
+      "exclude": 9
     }
   },
   "selected_evidence": [
     {
-      "evidence_id": "exp_01_09_03_01",
+      "evidence_id": "exp_01_01_01_01",
       "rank": 1,
+      "selection_tier": "must_include",
+      "source_label": "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)",
+      "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
+      "organization": "Daly Engineers LLC",
+      "role": "Principal Consultant",
+      "dates": "Jan 2026 - Present",
+      "label": "Consolidated Edison (via ABC Consulting)",
+      "evidence_text": "Built a governed analytics assistant using Gemini, BigQuery, and tool-calling architectures that applied analyst rules, operational controls, and auditable execution patterns for AI-enabled construction and financial analytics.",
+      "field_capped_score": 133.0,
+      "weighted_score": 191.6,
+      "direct_match_count": 17,
+      "matched_signal_count": 20,
+      "max_relevance": 5,
+      "primary_supporting_signals": [
+        "Productionization and operationalization of generative and agentic AI",
+        "Governance, compliance, and responsible AI as non-negotiable requirements",
+        "Evaluating, integrating, and operationalizing emerging AI technologies (GenAI, agentic AI, RAG)",
+        "Enterprise-scale AI/ML platform architecture and delivery",
+        "Architecting and designing scalable AI/ML platforms and solutions"
+      ],
+      "top_signal_matches": [
+        {
+          "signal_id": "core_market_themes_002",
+          "signal": "Productionization and operationalization of generative and agentic AI",
+          "source_field": "core_market_themes",
+          "relevance": 5,
+          "support_type": "direct",
+          "contribution": 15.0
+        },
+        {
+          "signal_id": "core_market_themes_005",
+          "signal": "Governance, compliance, and responsible AI as non-negotiable requirements",
+          "source_field": "core_market_themes",
+          "relevance": 5,
+          "support_type": "direct",
+          "contribution": 15.0
+        },
+        {
+          "signal_id": "target_capabilities_005",
+          "signal": "Evaluating, integrating, and operationalizing emerging AI technologies (GenAI, agentic AI, RAG)",
+          "source_field": "target_capabilities",
+          "relevance": 5,
+          "support_type": "direct",
+          "contribution": 15.0
+        },
+        {
+          "signal_id": "core_market_themes_001",
+          "signal": "Enterprise-scale AI/ML platform architecture and delivery",
+          "source_field": "core_market_themes",
+          "relevance": 4,
+          "support_type": "direct",
+          "contribution": 12.0
+        },
+        {
+          "signal_id": "target_capabilities_001",
+          "signal": "Architecting and designing scalable AI/ML platforms and solutions",
+          "source_field": "target_capabilities",
+          "relevance": 4,
+          "support_type": "direct",
+          "contribution": 12.0
+        }
+      ],
+      "cautions": [],
+      "selection_reason": "Selected as must_include based on field-capped alignment score 133.0, 17 direct signal matches, and support for primary signals including: Productionization and operationalization of generative and agentic AI; Governance, compliance, and responsible AI as non-negotiable requirements; Evaluating, integrating, and operationalizing emerging AI technologies (GenAI, agentic AI, RAG)."
+    },
+    {
+      "evidence_id": "exp_01_08_01_03",
+      "rank": 2,
       "selection_tier": "must_include",
       "source_label": "Capital One | Senior Manager, Operations Analysis",
       "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
       "organization": "Capital One",
       "role": "Senior Manager, Operations Analysis",
       "dates": "Jan 2012 - Dec 2016",
       "label": "",
       "evidence_text": "Conceived, designed, and led adoption of RITHM (Real-Time IT Health Monitoring), an operational intelligence platform that aggregated monitoring signals by business capability and system ownership, reducing major incident detection times from hours to minutes.",
-      "field_capped_score": 124.3,
-      "weighted_score": 202.3,
-      "direct_match_count": 18,
-      "matched_signal_count": 19,
+      "field_capped_score": 125.0,
+      "weighted_score": 196.0,
+      "direct_match_count": 17,
+      "matched_signal_count": 17,
       "max_relevance": 5,
       "primary_supporting_signals": [
         "MLOps, LLMOps, and observability as operational foundations",
         "Translating business requirements into technical solutions",
-        "Strategic and visionary leadership (roadmap, technical vision, innovation)",
-        "Ownership of delivery, architecture, and operational outcomes",
-        "Architecting and designing scalable AI/ML platforms and solutions"
+        "Developing reusable frameworks, components, and developer tools",
+        "Principal, lead, or architect-level technical ownership",
+        "Strategic and visionary leadership (roadmap, technical vision, innovation)"
       ],
       "top_signal_matches": [
         {
@@ -55,102 +129,34 @@
           "contribution": 15.0
         },
         {
+          "signal_id": "target_capabilities_008",
+          "signal": "Developing reusable frameworks, components, and developer tools",
+          "source_field": "target_capabilities",
+          "relevance": 5,
+          "support_type": "direct",
+          "contribution": 15.0
+        },
+        {
+          "signal_id": "seniority_expectations_002",
+          "signal": "Principal, lead, or architect-level technical ownership",
+          "source_field": "seniority_expectations",
+          "relevance": 5,
+          "support_type": "direct",
+          "contribution": 15.0
+        },
+        {
           "signal_id": "seniority_expectations_004",
           "signal": "Strategic and visionary leadership (roadmap, technical vision, innovation)",
           "source_field": "seniority_expectations",
           "relevance": 5,
           "support_type": "direct",
           "contribution": 15.0
-        },
-        {
-          "signal_id": "seniority_expectations_006",
-          "signal": "Ownership of delivery, architecture, and operational outcomes",
-          "source_field": "seniority_expectations",
-          "relevance": 5,
-          "support_type": "direct",
-          "contribution": 15.0
-        },
-        {
-          "signal_id": "target_capabilities_001",
-          "signal": "Architecting and designing scalable AI/ML platforms and solutions",
-          "source_field": "target_capabilities",
-          "relevance": 4,
-          "support_type": "direct",
-          "contribution": 12.0
         }
       ],
       "cautions": [
         "Older evidence; use as career-depth proof rather than the lead current AI story."
       ],
-      "selection_reason": "Selected as must_include based on field-capped alignment score 124.3, 18 direct signal matches, and support for primary signals including: MLOps, LLMOps, and observability as operational foundations; Translating business requirements into technical solutions; Strategic and visionary leadership (roadmap, technical vision, innovation)."
-    },
-    {
-      "evidence_id": "exp_01_01_01_04",
-      "rank": 2,
-      "selection_tier": "must_include",
-      "source_label": "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)",
-      "source_type": "experience_bullet",
-      "organization": "Daly Engineers LLC",
-      "role": "Principal Consultant",
-      "dates": "Jan 2026 - Present",
-      "label": "Consolidated Edison (via ABC Consulting)",
-      "evidence_text": "Built a governed analytics assistant using Gemini, BigQuery, and tool-calling architectures that applied analyst rules and operational controls while maintaining predictable and auditable execution.",
-      "field_capped_score": 121.0,
-      "weighted_score": 175.2,
-      "direct_match_count": 16,
-      "matched_signal_count": 17,
-      "max_relevance": 5,
-      "primary_supporting_signals": [
-        "Governance, compliance, and responsible AI as non-negotiable requirements",
-        "Establishing and enforcing governance, compliance, and responsible AI practices",
-        "Experience with governance, compliance, and responsible AI practices",
-        "Enterprise-scale AI/ML platform architecture and delivery",
-        "Productionization and operationalization of generative and agentic AI"
-      ],
-      "top_signal_matches": [
-        {
-          "signal_id": "core_market_themes_005",
-          "signal": "Governance, compliance, and responsible AI as non-negotiable requirements",
-          "source_field": "core_market_themes",
-          "relevance": 5,
-          "support_type": "direct",
-          "contribution": 15.0
-        },
-        {
-          "signal_id": "target_capabilities_006",
-          "signal": "Establishing and enforcing governance, compliance, and responsible AI practices",
-          "source_field": "target_capabilities",
-          "relevance": 5,
-          "support_type": "direct",
-          "contribution": 15.0
-        },
-        {
-          "signal_id": "seniority_expectations_008",
-          "signal": "Experience with governance, compliance, and responsible AI practices",
-          "source_field": "seniority_expectations",
-          "relevance": 5,
-          "support_type": "direct",
-          "contribution": 15.0
-        },
-        {
-          "signal_id": "core_market_themes_001",
-          "signal": "Enterprise-scale AI/ML platform architecture and delivery",
-          "source_field": "core_market_themes",
-          "relevance": 4,
-          "support_type": "direct",
-          "contribution": 12.0
-        },
-        {
-          "signal_id": "core_market_themes_002",
-          "signal": "Productionization and operationalization of generative and agentic AI",
-          "source_field": "core_market_themes",
-          "relevance": 4,
-          "support_type": "direct",
-          "contribution": 12.0
-        }
-      ],
-      "cautions": [],
-      "selection_reason": "Selected as must_include based on field-capped alignment score 121.0, 16 direct signal matches, and support for primary signals including: Governance, compliance, and responsible AI as non-negotiable requirements; Establishing and enforcing governance, compliance, and responsible AI practices; Experience with governance, compliance, and responsible AI practices."
+      "selection_reason": "Selected as must_include based on field-capped alignment score 125.0, 17 direct signal matches, and support for primary signals including: MLOps, LLMOps, and observability as operational foundations; Translating business requirements into technical solutions; Developing reusable frameworks, components, and developer tools."
     },
     {
       "evidence_id": "exp_01_01_02_01",
@@ -158,36 +164,31 @@
       "selection_tier": "must_include",
       "source_label": "Daly Engineers LLC | Principal Consultant | NBCUniversal (via Apex Systems)",
       "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
       "organization": "Daly Engineers LLC",
       "role": "Principal Consultant",
       "dates": "Jan 2026 - Present",
       "label": "NBCUniversal (via Apex Systems)",
       "evidence_text": "Built AWS-based AI and graph analytics pipelines using SageMaker, Terraform, S3, and containerized workloads.",
-      "field_capped_score": 106.0,
-      "weighted_score": 118.2,
-      "direct_match_count": 11,
+      "field_capped_score": 103.0,
+      "weighted_score": 119.0,
+      "direct_match_count": 12,
       "matched_signal_count": 12,
       "max_relevance": 5,
       "primary_supporting_signals": [
+        "Cloud-native, scalable, and resilient system design",
+        "Enterprise-scale AI/ML platform architecture and delivery",
         "Architecting and designing scalable AI/ML platforms and solutions",
         "Subject matter expertise in AI/ML systems and platforms",
-        "Enterprise-scale AI/ML platform architecture and delivery",
-        "Cloud-native, scalable, and resilient system design",
-        "AI/ML model lifecycle management and deployment"
+        "AI infrastructure optimization and scalability"
       ],
       "top_signal_matches": [
         {
-          "signal_id": "target_capabilities_001",
-          "signal": "Architecting and designing scalable AI/ML platforms and solutions",
-          "source_field": "target_capabilities",
-          "relevance": 5,
-          "support_type": "direct",
-          "contribution": 15.0
-        },
-        {
-          "signal_id": "seniority_expectations_007",
-          "signal": "Subject matter expertise in AI/ML systems and platforms",
-          "source_field": "seniority_expectations",
+          "signal_id": "core_market_themes_003",
+          "signal": "Cloud-native, scalable, and resilient system design",
+          "source_field": "core_market_themes",
           "relevance": 5,
           "support_type": "direct",
           "contribution": 15.0
@@ -201,16 +202,24 @@
           "contribution": 12.0
         },
         {
-          "signal_id": "core_market_themes_003",
-          "signal": "Cloud-native, scalable, and resilient system design",
-          "source_field": "core_market_themes",
+          "signal_id": "target_capabilities_001",
+          "signal": "Architecting and designing scalable AI/ML platforms and solutions",
+          "source_field": "target_capabilities",
           "relevance": 4,
           "support_type": "direct",
           "contribution": 12.0
         },
         {
-          "signal_id": "target_problem_spaces_006",
-          "signal": "AI/ML model lifecycle management and deployment",
+          "signal_id": "seniority_expectations_007",
+          "signal": "Subject matter expertise in AI/ML systems and platforms",
+          "source_field": "seniority_expectations",
+          "relevance": 4,
+          "support_type": "direct",
+          "contribution": 12.0
+        },
+        {
+          "signal_id": "target_problem_spaces_008",
+          "signal": "AI infrastructure optimization and scalability",
           "source_field": "target_problem_spaces",
           "relevance": 5,
           "support_type": "direct",
@@ -220,23 +229,26 @@
       "cautions": [
         "Frame carefully as short-cycle architecture/prototype evidence unless additional facts support production deployment."
       ],
-      "selection_reason": "Selected as must_include based on field-capped alignment score 106.0, 11 direct signal matches, and support for primary signals including: Architecting and designing scalable AI/ML platforms and solutions; Subject matter expertise in AI/ML systems and platforms; Enterprise-scale AI/ML platform architecture and delivery."
+      "selection_reason": "Selected as must_include based on field-capped alignment score 103.0, 12 direct signal matches, and support for primary signals including: Cloud-native, scalable, and resilient system design; Enterprise-scale AI/ML platform architecture and delivery; Architecting and designing scalable AI/ML platforms and solutions."
     },
     {
-      "evidence_id": "exp_01_05_04_01",
+      "evidence_id": "exp_01_04_01_04",
       "rank": 4,
       "selection_tier": "must_include",
       "source_label": "Meta | Data Scientist",
       "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
       "organization": "Meta",
       "role": "Data Scientist",
       "dates": "October 2021 - January 2025",
       "label": "",
       "evidence_text": "Designed and developed the ReMon framework, enabling engineering teams to build comprehensive monitoring and alerting systems without requiring expertise in complex internal tooling; adopted across Meta FinTech, contributing to the automatic detection of more than 15 SEVs in 2024.",
-      "field_capped_score": 104.0,
-      "weighted_score": 112.0,
-      "direct_match_count": 10,
-      "matched_signal_count": 10,
+      "field_capped_score": 100.0,
+      "weighted_score": 116.0,
+      "direct_match_count": 11,
+      "matched_signal_count": 11,
       "max_relevance": 5,
       "primary_supporting_signals": [
         "MLOps, LLMOps, and observability as operational foundations",
@@ -288,30 +300,33 @@
         }
       ],
       "cautions": [],
-      "selection_reason": "Selected as must_include based on field-capped alignment score 104.0, 10 direct signal matches, and support for primary signals including: MLOps, LLMOps, and observability as operational foundations; Developing reusable frameworks, components, and developer tools; Continuous innovation, research application, and developer enablement."
+      "selection_reason": "Selected as must_include based on field-capped alignment score 100.0, 11 direct signal matches, and support for primary signals including: MLOps, LLMOps, and observability as operational foundations; Developing reusable frameworks, components, and developer tools; Continuous innovation, research application, and developer enablement."
     },
     {
-      "evidence_id": "exp_01_10_01_01",
+      "evidence_id": "exp_01_02_01_04",
       "rank": 5,
       "selection_tier": "must_include",
-      "source_label": "Raytheon | Senior Principal Systems Engineer / Program Manager",
+      "source_label": "SimpliLearn & Interview Kickstart | AI Instructor",
       "source_type": "experience_bullet",
-      "organization": "Raytheon",
-      "role": "Senior Principal Systems Engineer / Program Manager",
-      "dates": "Mar 2005 - Dec 2011",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
+      "organization": "SimpliLearn & Interview Kickstart",
+      "role": "AI Instructor",
+      "dates": "March 2025 - Present",
       "label": "",
-      "evidence_text": "Led systems engineering organizations of 40-50 engineers specializing in modeling, simulation, analysis, and advanced aerospace systems, providing technical leadership, career development, and proposal support for programs valued up to $50M.",
-      "field_capped_score": 72.0,
-      "weighted_score": 96.0,
-      "direct_match_count": 7,
-      "matched_signal_count": 7,
+      "evidence_text": "Mentored students on AI architecture, governance, implementation tradeoffs, and enterprise adoption strategies.",
+      "field_capped_score": 73.6,
+      "weighted_score": 79.89999999999999,
+      "direct_match_count": 5,
+      "matched_signal_count": 8,
       "max_relevance": 5,
       "primary_supporting_signals": [
         "Mentorship, cross-functional leadership, and technical influence",
         "Leading technical teams and mentoring engineers",
-        "10+ years of progressive experience in software/AI/ML engineering",
-        "Principal, lead, or architect-level technical ownership",
-        "Driving innovation and continuous learning within teams"
+        "Driving innovation and continuous learning within teams",
+        "Mentorship and talent development across teams",
+        "Team enablement, mentorship, and cross-team knowledge sharing"
       ],
       "top_signal_matches": [
         {
@@ -326,25 +341,9 @@
           "signal_id": "target_capabilities_002",
           "signal": "Leading technical teams and mentoring engineers",
           "source_field": "target_capabilities",
-          "relevance": 5,
+          "relevance": 4,
           "support_type": "direct",
-          "contribution": 15.0
-        },
-        {
-          "signal_id": "seniority_expectations_001",
-          "signal": "10+ years of progressive experience in software/AI/ML engineering",
-          "source_field": "seniority_expectations",
-          "relevance": 5,
-          "support_type": "direct",
-          "contribution": 15.0
-        },
-        {
-          "signal_id": "seniority_expectations_002",
-          "signal": "Principal, lead, or architect-level technical ownership",
-          "source_field": "seniority_expectations",
-          "relevance": 5,
-          "support_type": "direct",
-          "contribution": 15.0
+          "contribution": 12.0
         },
         {
           "signal_id": "target_capabilities_009",
@@ -353,57 +352,11 @@
           "relevance": 4,
           "support_type": "direct",
           "contribution": 12.0
-        }
-      ],
-      "cautions": [
-        "Older evidence; use as career-depth proof rather than the lead current AI story."
-      ],
-      "selection_reason": "Selected as must_include based on field-capped alignment score 72.0, 7 direct signal matches, and support for primary signals including: Mentorship, cross-functional leadership, and technical influence; Leading technical teams and mentoring engineers; 10+ years of progressive experience in software/AI/ML engineering."
-    },
-    {
-      "evidence_id": "exp_01_02_04_01",
-      "rank": 6,
-      "selection_tier": "must_include",
-      "source_label": "SimpliLearn | AI Instructor",
-      "source_type": "experience_bullet",
-      "organization": "SimpliLearn",
-      "role": "AI Instructor",
-      "dates": "October 2025 - Present",
-      "label": "",
-      "evidence_text": "Mentored students on AI architecture, governance, implementation tradeoffs, and enterprise adoption strategies.",
-      "field_capped_score": 70.9,
-      "weighted_score": 77.19999999999999,
-      "direct_match_count": 4,
-      "matched_signal_count": 8,
-      "max_relevance": 5,
-      "primary_supporting_signals": [
-        "Mentorship, cross-functional leadership, and technical influence",
-        "Mentorship and talent development across teams",
-        "Leading technical teams and mentoring engineers",
-        "Team enablement, mentorship, and cross-team knowledge sharing",
-        "Governance, compliance, and responsible AI as non-negotiable requirements"
-      ],
-      "top_signal_matches": [
-        {
-          "signal_id": "core_market_themes_006",
-          "signal": "Mentorship, cross-functional leadership, and technical influence",
-          "source_field": "core_market_themes",
-          "relevance": 5,
-          "support_type": "direct",
-          "contribution": 15.0
         },
         {
           "signal_id": "seniority_expectations_003",
           "signal": "Mentorship and talent development across teams",
           "source_field": "seniority_expectations",
-          "relevance": 5,
-          "support_type": "direct",
-          "contribution": 15.0
-        },
-        {
-          "signal_id": "target_capabilities_002",
-          "signal": "Leading technical teams and mentoring engineers",
-          "source_field": "target_capabilities",
           "relevance": 4,
           "support_type": "direct",
           "contribution": 12.0
@@ -415,133 +368,60 @@
           "relevance": 5,
           "support_type": "direct",
           "contribution": 10.0
-        },
-        {
-          "signal_id": "core_market_themes_005",
-          "signal": "Governance, compliance, and responsible AI as non-negotiable requirements",
-          "source_field": "core_market_themes",
-          "relevance": 3,
-          "support_type": "partial",
-          "contribution": 6.3
         }
       ],
       "cautions": [
         "Teaching evidence supports mentorship, technical fluency, and developer enablement; do not present it as production ownership unless the bullet explicitly supports that."
       ],
-      "selection_reason": "Selected as must_include based on field-capped alignment score 70.9, 4 direct signal matches, and support for primary signals including: Mentorship, cross-functional leadership, and technical influence; Mentorship and talent development across teams; Leading technical teams and mentoring engineers."
+      "selection_reason": "Selected as must_include based on field-capped alignment score 73.6, 5 direct signal matches, and support for primary signals including: Mentorship, cross-functional leadership, and technical influence; Leading technical teams and mentoring engineers; Driving innovation and continuous learning within teams."
     },
     {
-      "evidence_id": "exp_01_01_01_02",
-      "rank": 7,
-      "selection_tier": "strong_include",
-      "source_label": "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)",
+      "evidence_id": "exp_01_02_01_02",
+      "rank": 6,
+      "selection_tier": "must_include",
+      "source_label": "SimpliLearn & Interview Kickstart | AI Instructor",
       "source_type": "experience_bullet",
-      "organization": "Daly Engineers LLC",
-      "role": "Principal Consultant",
-      "dates": "Jan 2026 - Present",
-      "label": "Consolidated Edison (via ABC Consulting)",
-      "evidence_text": "Developed automated profiling, type inference, duplicate detection, candidate key analysis, and cross-system join validation frameworks across 100+ source tables and millions of operational and financial records.",
-      "field_capped_score": 65.2,
-      "weighted_score": 65.2,
-      "direct_match_count": 6,
-      "matched_signal_count": 7,
-      "max_relevance": 5,
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
+      "organization": "SimpliLearn & Interview Kickstart",
+      "role": "AI Instructor",
+      "dates": "March 2025 - Present",
+      "label": "",
+      "evidence_text": "Taught transformer architectures, LLMs, RAG, agentic AI, multimodal AI, MCP, diffusion models, enterprise AI governance, and practical AI development workflows.",
+      "field_capped_score": 71.69999999999999,
+      "weighted_score": 82.2,
+      "direct_match_count": 4,
+      "matched_signal_count": 12,
+      "max_relevance": 4,
       "primary_supporting_signals": [
-        "Developing reusable frameworks, components, and developer tools",
-        "MLOps, LLMOps, and observability as operational foundations",
-        "Data integration, quality, and interoperability",
-        "Workflow and business process automation",
-        "CI/CD and automation pipelines"
+        "Continuous innovation, research application, and developer enablement",
+        "Knowledge and information retrieval (including RAG)",
+        "Generative AI and large language models (LLMs)",
+        "Agentic AI and multi-agent architectures",
+        "Productionization and operationalization of generative and agentic AI"
       ],
       "top_signal_matches": [
         {
-          "signal_id": "target_capabilities_008",
-          "signal": "Developing reusable frameworks, components, and developer tools",
-          "source_field": "target_capabilities",
-          "relevance": 5,
-          "support_type": "direct",
-          "contribution": 15.0
-        },
-        {
-          "signal_id": "core_market_themes_004",
-          "signal": "MLOps, LLMOps, and observability as operational foundations",
+          "signal_id": "core_market_themes_007",
+          "signal": "Continuous innovation, research application, and developer enablement",
           "source_field": "core_market_themes",
           "relevance": 4,
           "support_type": "direct",
           "contribution": 12.0
         },
         {
-          "signal_id": "target_problem_spaces_007",
-          "signal": "Data integration, quality, and interoperability",
-          "source_field": "target_problem_spaces",
-          "relevance": 5,
-          "support_type": "direct",
-          "contribution": 10.0
-        },
-        {
-          "signal_id": "target_problem_spaces_002",
-          "signal": "Workflow and business process automation",
+          "signal_id": "target_problem_spaces_005",
+          "signal": "Knowledge and information retrieval (including RAG)",
           "source_field": "target_problem_spaces",
           "relevance": 4,
           "support_type": "direct",
           "contribution": 8.0
         },
-        {
-          "signal_id": "target_technology_areas_008",
-          "signal": "CI/CD and automation pipelines",
-          "source_field": "target_technology_areas",
-          "relevance": 4,
-          "support_type": "direct",
-          "contribution": 8.0
-        }
-      ],
-      "cautions": [],
-      "selection_reason": "Selected as strong_include based on field-capped alignment score 65.2, 6 direct signal matches, and support for primary signals including: Developing reusable frameworks, components, and developer tools; MLOps, LLMOps, and observability as operational foundations; Data integration, quality, and interoperability."
-    },
-    {
-      "evidence_id": "exp_01_02_02_01",
-      "rank": 8,
-      "selection_tier": "strong_include",
-      "source_label": "SimpliLearn | AI Instructor",
-      "source_type": "experience_bullet",
-      "organization": "SimpliLearn",
-      "role": "AI Instructor",
-      "dates": "October 2025 - Present",
-      "label": "",
-      "evidence_text": "Taught transformer architectures, LLMs, RAG, agentic AI, multimodal AI, MCP, diffusion models, and enterprise AI governance.",
-      "field_capped_score": 59.6,
-      "weighted_score": 59.6,
-      "direct_match_count": 3,
-      "matched_signal_count": 8,
-      "max_relevance": 5,
-      "primary_supporting_signals": [
-        "Generative AI and large language models (LLMs)",
-        "Experience with governance, compliance, and responsible AI practices",
-        "Knowledge and information retrieval (including RAG)",
-        "Agentic AI and multi-agent architectures",
-        "Productionization and operationalization of generative and agentic AI"
-      ],
-      "top_signal_matches": [
         {
           "signal_id": "target_technology_areas_002",
           "signal": "Generative AI and large language models (LLMs)",
           "source_field": "target_technology_areas",
-          "relevance": 5,
-          "support_type": "direct",
-          "contribution": 10.0
-        },
-        {
-          "signal_id": "seniority_expectations_008",
-          "signal": "Experience with governance, compliance, and responsible AI practices",
-          "source_field": "seniority_expectations",
-          "relevance": 4,
-          "support_type": "partial",
-          "contribution": 8.399999999999999
-        },
-        {
-          "signal_id": "target_problem_spaces_005",
-          "signal": "Knowledge and information retrieval (including RAG)",
-          "source_field": "target_problem_spaces",
           "relevance": 4,
           "support_type": "direct",
           "contribution": 8.0
@@ -566,84 +446,90 @@
       "cautions": [
         "Teaching evidence supports mentorship, technical fluency, and developer enablement; do not present it as production ownership unless the bullet explicitly supports that."
       ],
-      "selection_reason": "Selected as strong_include based on field-capped alignment score 59.6, 3 direct signal matches, and support for primary signals including: Generative AI and large language models (LLMs); Experience with governance, compliance, and responsible AI practices; Knowledge and information retrieval (including RAG)."
+      "selection_reason": "Selected as must_include based on field-capped alignment score 71.7, 4 direct signal matches, and support for primary signals including: Continuous innovation, research application, and developer enablement; Knowledge and information retrieval (including RAG); Generative AI and large language models (LLMs)."
     },
     {
-      "evidence_id": "exp_01_10_02_01",
-      "rank": 9,
+      "evidence_id": "exp_01_09_01_01",
+      "rank": 7,
       "selection_tier": "strong_include",
       "source_label": "Raytheon | Senior Principal Systems Engineer / Program Manager",
       "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
       "organization": "Raytheon",
       "role": "Senior Principal Systems Engineer / Program Manager",
       "dates": "Mar 2005 - Dec 2011",
       "label": "",
-      "evidence_text": "Turned around an over-budget classified fixed-price technology program at approximately one-third completion by establishing execution plans, aligning engineering teams, and proactively managing technical and program risks; delivered the program under budget and nearly doubled the original profit target on a historically challenging delivery effort.",
-      "field_capped_score": 57.0,
-      "weighted_score": 57.0,
-      "direct_match_count": 5,
-      "matched_signal_count": 5,
+      "evidence_text": "Led systems engineering organizations of 40-50 engineers specializing in modeling, simulation, analysis, and advanced aerospace systems, providing technical leadership, career development, and proposal support for programs valued up to $50M.",
+      "field_capped_score": 71.3,
+      "weighted_score": 83.3,
+      "direct_match_count": 6,
+      "matched_signal_count": 7,
       "max_relevance": 5,
       "primary_supporting_signals": [
-        "Ownership of delivery, architecture, and operational outcomes",
-        "Cross-functional collaboration and stakeholder alignment",
-        "Optimizing system performance, cost, and reliability",
-        "Business value delivery (growth, efficiency, customer impact)",
-        "Risk management, compliance, and governance"
+        "Mentorship, cross-functional leadership, and technical influence",
+        "Leading technical teams and mentoring engineers",
+        "Principal, lead, or architect-level technical ownership",
+        "10+ years of progressive experience in software/AI/ML engineering",
+        "Mentorship and talent development across teams"
       ],
       "top_signal_matches": [
         {
-          "signal_id": "seniority_expectations_006",
-          "signal": "Ownership of delivery, architecture, and operational outcomes",
+          "signal_id": "core_market_themes_006",
+          "signal": "Mentorship, cross-functional leadership, and technical influence",
+          "source_field": "core_market_themes",
+          "relevance": 5,
+          "support_type": "direct",
+          "contribution": 15.0
+        },
+        {
+          "signal_id": "target_capabilities_002",
+          "signal": "Leading technical teams and mentoring engineers",
+          "source_field": "target_capabilities",
+          "relevance": 5,
+          "support_type": "direct",
+          "contribution": 15.0
+        },
+        {
+          "signal_id": "seniority_expectations_002",
+          "signal": "Principal, lead, or architect-level technical ownership",
           "source_field": "seniority_expectations",
           "relevance": 5,
           "support_type": "direct",
           "contribution": 15.0
         },
         {
-          "signal_id": "target_capabilities_003",
-          "signal": "Cross-functional collaboration and stakeholder alignment",
-          "source_field": "target_capabilities",
+          "signal_id": "seniority_expectations_001",
+          "signal": "10+ years of progressive experience in software/AI/ML engineering",
+          "source_field": "seniority_expectations",
           "relevance": 4,
           "support_type": "direct",
           "contribution": 12.0
         },
         {
-          "signal_id": "target_capabilities_007",
-          "signal": "Optimizing system performance, cost, and reliability",
-          "source_field": "target_capabilities",
+          "signal_id": "seniority_expectations_003",
+          "signal": "Mentorship and talent development across teams",
+          "source_field": "seniority_expectations",
           "relevance": 4,
           "support_type": "direct",
           "contribution": 12.0
-        },
-        {
-          "signal_id": "success_patterns_003",
-          "signal": "Business value delivery (growth, efficiency, customer impact)",
-          "source_field": "success_patterns",
-          "relevance": 5,
-          "support_type": "direct",
-          "contribution": 10.0
-        },
-        {
-          "signal_id": "target_problem_spaces_004",
-          "signal": "Risk management, compliance, and governance",
-          "source_field": "target_problem_spaces",
-          "relevance": 4,
-          "support_type": "direct",
-          "contribution": 8.0
         }
       ],
       "cautions": [
         "Older evidence; use as career-depth proof rather than the lead current AI story."
       ],
-      "selection_reason": "Selected as strong_include based on field-capped alignment score 57.0, 5 direct signal matches, and support for primary signals including: Ownership of delivery, architecture, and operational outcomes; Cross-functional collaboration and stakeholder alignment; Optimizing system performance, cost, and reliability."
+      "selection_reason": "Selected as strong_include based on field-capped alignment score 71.3, 6 direct signal matches, and support for primary signals including: Mentorship, cross-functional leadership, and technical influence; Leading technical teams and mentoring engineers; Principal, lead, or architect-level technical ownership."
     },
     {
-      "evidence_id": "exp_01_09_04_01",
-      "rank": 10,
+      "evidence_id": "exp_01_08_01_04",
+      "rank": 8,
       "selection_tier": "strong_include",
       "source_label": "Capital One | Senior Manager, Operations Analysis",
       "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
       "organization": "Capital One",
       "role": "Senior Manager, Operations Analysis",
       "dates": "Jan 2012 - Dec 2016",
@@ -651,15 +537,15 @@
       "evidence_text": "Secured executive sponsorship for enterprise monitoring modernization, expanding initial Splunk-based prototypes into a scalable Kafka and Elastic Stack solution aligned with Capital One's open-source strategy.",
       "field_capped_score": 55.0,
       "weighted_score": 55.0,
-      "direct_match_count": 6,
-      "matched_signal_count": 6,
+      "direct_match_count": 5,
+      "matched_signal_count": 5,
       "max_relevance": 5,
       "primary_supporting_signals": [
         "Cross-functional influence (including business and executive stakeholders)",
         "Cloud-native, scalable, and resilient system design",
+        "MLOps, LLMOps, and observability as operational foundations",
         "AI infrastructure optimization and scalability",
-        "Innovation and modernization of legacy systems and workflows",
-        "AI observability and monitoring tools"
+        "Innovation and modernization of legacy systems and workflows"
       ],
       "top_signal_matches": [
         {
@@ -673,6 +559,14 @@
         {
           "signal_id": "core_market_themes_003",
           "signal": "Cloud-native, scalable, and resilient system design",
+          "source_field": "core_market_themes",
+          "relevance": 4,
+          "support_type": "direct",
+          "contribution": 12.0
+        },
+        {
+          "signal_id": "core_market_themes_004",
+          "signal": "MLOps, LLMOps, and observability as operational foundations",
           "source_field": "core_market_themes",
           "relevance": 4,
           "support_type": "direct",
@@ -693,27 +587,22 @@
           "relevance": 4,
           "support_type": "direct",
           "contribution": 8.0
-        },
-        {
-          "signal_id": "target_technology_areas_009",
-          "signal": "AI observability and monitoring tools",
-          "source_field": "target_technology_areas",
-          "relevance": 3,
-          "support_type": "direct",
-          "contribution": 6.0
         }
       ],
       "cautions": [
         "Older evidence; use as career-depth proof rather than the lead current AI story."
       ],
-      "selection_reason": "Selected as strong_include based on field-capped alignment score 55.0, 6 direct signal matches, and support for primary signals including: Cross-functional influence (including business and executive stakeholders); Cloud-native, scalable, and resilient system design; AI infrastructure optimization and scalability."
+      "selection_reason": "Selected as strong_include based on field-capped alignment score 55.0, 5 direct signal matches, and support for primary signals including: Cross-functional influence (including business and executive stakeholders); Cloud-native, scalable, and resilient system design; MLOps, LLMOps, and observability as operational foundations."
     },
     {
-      "evidence_id": "exp_01_08_01_01",
-      "rank": 11,
+      "evidence_id": "exp_01_07_01_01",
+      "rank": 9,
       "selection_tier": "strong_include",
       "source_label": "Nike (via Intersoft Inc.) | Expert SEO Solutions Architect",
       "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
       "organization": "Nike (via Intersoft Inc.)",
       "role": "Expert SEO Solutions Architect",
       "dates": "Nov 2016 - Sep 2017",
@@ -721,13 +610,13 @@
       "evidence_text": "Designed a scalable SEO and information-architecture framework for Nike's product discovery experience, balancing customer navigation paths with search-engine indexation requirements across a rapidly expanding product catalog.",
       "field_capped_score": 53.0,
       "weighted_score": 53.0,
-      "direct_match_count": 6,
-      "matched_signal_count": 6,
-      "max_relevance": 4,
+      "direct_match_count": 5,
+      "matched_signal_count": 5,
+      "max_relevance": 5,
       "primary_supporting_signals": [
         "Translating business requirements into technical solutions",
+        "Developing reusable frameworks, components, and developer tools",
         "Principal, lead, or architect-level technical ownership",
-        "Cloud-native, scalable, and resilient system design",
         "Adoption and reusability of frameworks, tools, and best practices",
         "Knowledge and information retrieval (including RAG)"
       ],
@@ -735,6 +624,14 @@
         {
           "signal_id": "target_capabilities_004",
           "signal": "Translating business requirements into technical solutions",
+          "source_field": "target_capabilities",
+          "relevance": 5,
+          "support_type": "direct",
+          "contribution": 15.0
+        },
+        {
+          "signal_id": "target_capabilities_008",
+          "signal": "Developing reusable frameworks, components, and developer tools",
           "source_field": "target_capabilities",
           "relevance": 4,
           "support_type": "direct",
@@ -747,14 +644,6 @@
           "relevance": 4,
           "support_type": "direct",
           "contribution": 12.0
-        },
-        {
-          "signal_id": "core_market_themes_003",
-          "signal": "Cloud-native, scalable, and resilient system design",
-          "source_field": "core_market_themes",
-          "relevance": 3,
-          "support_type": "direct",
-          "contribution": 9.0
         },
         {
           "signal_id": "success_patterns_005",
@@ -774,75 +663,17 @@
         }
       ],
       "cautions": [],
-      "selection_reason": "Selected as strong_include based on field-capped alignment score 53.0, 6 direct signal matches, and support for primary signals including: Translating business requirements into technical solutions; Principal, lead, or architect-level technical ownership; Cloud-native, scalable, and resilient system design."
+      "selection_reason": "Selected as strong_include based on field-capped alignment score 53.0, 5 direct signal matches, and support for primary signals including: Translating business requirements into technical solutions; Developing reusable frameworks, components, and developer tools; Principal, lead, or architect-level technical ownership."
     },
     {
-      "evidence_id": "exp_01_03_03_01",
-      "rank": 12,
-      "selection_tier": "strong_include",
-      "source_label": "Interview Kickstart | AI Instructor",
-      "source_type": "experience_bullet",
-      "organization": "Interview Kickstart",
-      "role": "AI Instructor",
-      "dates": "March 2025 - Present",
-      "label": "",
-      "evidence_text": "Mentored students on AI architecture, implementation patterns, and technology selection tradeoffs.",
-      "field_capped_score": 52.0,
-      "weighted_score": 52.0,
-      "direct_match_count": 4,
-      "matched_signal_count": 4,
-      "max_relevance": 5,
-      "primary_supporting_signals": [
-        "Mentorship, cross-functional leadership, and technical influence",
-        "Mentorship and talent development across teams",
-        "Leading technical teams and mentoring engineers",
-        "Team enablement, mentorship, and cross-team knowledge sharing"
-      ],
-      "top_signal_matches": [
-        {
-          "signal_id": "core_market_themes_006",
-          "signal": "Mentorship, cross-functional leadership, and technical influence",
-          "source_field": "core_market_themes",
-          "relevance": 5,
-          "support_type": "direct",
-          "contribution": 15.0
-        },
-        {
-          "signal_id": "seniority_expectations_003",
-          "signal": "Mentorship and talent development across teams",
-          "source_field": "seniority_expectations",
-          "relevance": 5,
-          "support_type": "direct",
-          "contribution": 15.0
-        },
-        {
-          "signal_id": "target_capabilities_002",
-          "signal": "Leading technical teams and mentoring engineers",
-          "source_field": "target_capabilities",
-          "relevance": 4,
-          "support_type": "direct",
-          "contribution": 12.0
-        },
-        {
-          "signal_id": "success_patterns_007",
-          "signal": "Team enablement, mentorship, and cross-team knowledge sharing",
-          "source_field": "success_patterns",
-          "relevance": 5,
-          "support_type": "direct",
-          "contribution": 10.0
-        }
-      ],
-      "cautions": [
-        "Teaching evidence supports mentorship, technical fluency, and developer enablement; do not present it as production ownership unless the bullet explicitly supports that."
-      ],
-      "selection_reason": "Selected as strong_include based on field-capped alignment score 52.0, 4 direct signal matches, and support for primary signals including: Mentorship, cross-functional leadership, and technical influence; Mentorship and talent development across teams; Leading technical teams and mentoring engineers."
-    },
-    {
-      "evidence_id": "exp_01_09_05_01",
-      "rank": 13,
+      "evidence_id": "exp_01_08_01_05",
+      "rank": 10,
       "selection_tier": "strong_include",
       "source_label": "Capital One | Senior Manager, Operations Analysis",
       "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
       "organization": "Capital One",
       "role": "Senior Manager, Operations Analysis",
       "dates": "Jan 2012 - Dec 2016",
@@ -899,84 +730,29 @@
       "selection_reason": "Selected as strong_include based on field-capped alignment score 47.0, 4 direct signal matches, and support for primary signals including: Cross-functional influence (including business and executive stakeholders); Cross-functional collaboration and stakeholder alignment; Strategic and visionary leadership (roadmap, technical vision, innovation)."
     },
     {
-      "evidence_id": "exp_01_07_01_01",
-      "rank": 14,
+      "evidence_id": "exp_01_09_01_02",
+      "rank": 11,
       "selection_tier": "strong_include",
-      "source_label": "Facteus | Head of Data Science",
+      "source_label": "Raytheon | Senior Principal Systems Engineer / Program Manager",
       "source_type": "experience_bullet",
-      "organization": "Facteus",
-      "role": "Head of Data Science",
-      "dates": "Oct 2017 - Nov 2020",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
+      "organization": "Raytheon",
+      "role": "Senior Principal Systems Engineer / Program Manager",
+      "dates": "Mar 2005 - Dec 2011",
       "label": "",
-      "evidence_text": "Led data science initiatives on a 30B+ transaction dataset, creating analytical products and market-intelligence capabilities through large-scale feature engineering, merchant intelligence, and consumer-spending analytics.",
-      "field_capped_score": 38.0,
-      "weighted_score": 38.0,
+      "evidence_text": "Turned around an over-budget classified fixed-price technology program at approximately one-third completion by establishing execution plans, aligning engineering teams, and proactively managing technical and program risks; delivered the program under budget and nearly doubled the original profit target on a historically challenging delivery effort.",
+      "field_capped_score": 44.0,
+      "weighted_score": 44.0,
       "direct_match_count": 4,
       "matched_signal_count": 4,
       "max_relevance": 4,
       "primary_supporting_signals": [
-        "10+ years of progressive experience in software/AI/ML engineering",
-        "Principal, lead, or architect-level technical ownership",
-        "Decision support and advanced analytics",
-        "Reliable, scalable, and production-ready AI/ML platforms and solutions"
-      ],
-      "top_signal_matches": [
-        {
-          "signal_id": "seniority_expectations_001",
-          "signal": "10+ years of progressive experience in software/AI/ML engineering",
-          "source_field": "seniority_expectations",
-          "relevance": 4,
-          "support_type": "direct",
-          "contribution": 12.0
-        },
-        {
-          "signal_id": "seniority_expectations_002",
-          "signal": "Principal, lead, or architect-level technical ownership",
-          "source_field": "seniority_expectations",
-          "relevance": 4,
-          "support_type": "direct",
-          "contribution": 12.0
-        },
-        {
-          "signal_id": "target_problem_spaces_001",
-          "signal": "Decision support and advanced analytics",
-          "source_field": "target_problem_spaces",
-          "relevance": 4,
-          "support_type": "direct",
-          "contribution": 8.0
-        },
-        {
-          "signal_id": "success_patterns_001",
-          "signal": "Reliable, scalable, and production-ready AI/ML platforms and solutions",
-          "source_field": "success_patterns",
-          "relevance": 3,
-          "support_type": "direct",
-          "contribution": 6.0
-        }
-      ],
-      "cautions": [],
-      "selection_reason": "Selected as strong_include based on field-capped alignment score 38.0, 4 direct signal matches, and support for primary signals including: 10+ years of progressive experience in software/AI/ML engineering; Principal, lead, or architect-level technical ownership; Decision support and advanced analytics."
-    },
-    {
-      "evidence_id": "exp_01_04_04_01",
-      "rank": 15,
-      "selection_tier": "strong_include",
-      "source_label": "Intuit (via The Cydio Group) | Data Scientist",
-      "source_type": "experience_bullet",
-      "organization": "Intuit (via The Cydio Group)",
-      "role": "Data Scientist",
-      "dates": "Apr 2025 - Jul 2025",
-      "label": "",
-      "evidence_text": "Partnered with finance, marketing, and product stakeholders to translate attribution and performance data into actionable business recommendations.",
-      "field_capped_score": 36.0,
-      "weighted_score": 36.0,
-      "direct_match_count": 3,
-      "matched_signal_count": 3,
-      "max_relevance": 4,
-      "primary_supporting_signals": [
         "Cross-functional collaboration and stakeholder alignment",
-        "Translating business requirements into technical solutions",
-        "Cross-functional influence (including business and executive stakeholders)"
+        "Optimizing system performance, cost, and reliability",
+        "Ownership of delivery, architecture, and operational outcomes",
+        "Business value delivery (growth, efficiency, customer impact)"
       ],
       "top_signal_matches": [
         {
@@ -988,56 +764,20 @@
           "contribution": 12.0
         },
         {
-          "signal_id": "target_capabilities_004",
-          "signal": "Translating business requirements into technical solutions",
+          "signal_id": "target_capabilities_007",
+          "signal": "Optimizing system performance, cost, and reliability",
           "source_field": "target_capabilities",
           "relevance": 4,
           "support_type": "direct",
           "contribution": 12.0
         },
         {
-          "signal_id": "seniority_expectations_005",
-          "signal": "Cross-functional influence (including business and executive stakeholders)",
+          "signal_id": "seniority_expectations_006",
+          "signal": "Ownership of delivery, architecture, and operational outcomes",
           "source_field": "seniority_expectations",
           "relevance": 4,
           "support_type": "direct",
           "contribution": 12.0
-        }
-      ],
-      "cautions": [],
-      "selection_reason": "Selected as strong_include based on field-capped alignment score 36.0, 3 direct signal matches, and support for primary signals including: Cross-functional collaboration and stakeholder alignment; Translating business requirements into technical solutions; Cross-functional influence (including business and executive stakeholders)."
-    },
-    {
-      "evidence_id": "exp_01_04_03_01",
-      "rank": 16,
-      "selection_tier": "optional",
-      "source_label": "Intuit (via The Cydio Group) | Data Scientist",
-      "source_type": "experience_bullet",
-      "organization": "Intuit (via The Cydio Group)",
-      "role": "Data Scientist",
-      "dates": "Apr 2025 - Jul 2025",
-      "label": "",
-      "evidence_text": "Consolidated fragmented reporting into unified Tableau dashboards and automated executive reporting workflows using Python and SQL, reducing report preparation from days to hours.",
-      "field_capped_score": 34.0,
-      "weighted_score": 34.0,
-      "direct_match_count": 5,
-      "matched_signal_count": 5,
-      "max_relevance": 4,
-      "primary_supporting_signals": [
-        "Workflow and business process automation",
-        "Business value delivery (growth, efficiency, customer impact)",
-        "Data integration, quality, and interoperability",
-        "Data engineering and architecture (Spark, Snowflake, BigQuery, SQL)",
-        "CI/CD and automation pipelines"
-      ],
-      "top_signal_matches": [
-        {
-          "signal_id": "target_problem_spaces_002",
-          "signal": "Workflow and business process automation",
-          "source_field": "target_problem_spaces",
-          "relevance": 4,
-          "support_type": "direct",
-          "contribution": 8.0
         },
         {
           "signal_id": "success_patterns_003",
@@ -1046,102 +786,245 @@
           "relevance": 4,
           "support_type": "direct",
           "contribution": 8.0
-        },
-        {
-          "signal_id": "target_problem_spaces_007",
-          "signal": "Data integration, quality, and interoperability",
-          "source_field": "target_problem_spaces",
-          "relevance": 3,
-          "support_type": "direct",
-          "contribution": 6.0
-        },
-        {
-          "signal_id": "target_technology_areas_006",
-          "signal": "Data engineering and architecture (Spark, Snowflake, BigQuery, SQL)",
-          "source_field": "target_technology_areas",
-          "relevance": 3,
-          "support_type": "direct",
-          "contribution": 6.0
-        },
-        {
-          "signal_id": "target_technology_areas_008",
-          "signal": "CI/CD and automation pipelines",
-          "source_field": "target_technology_areas",
-          "relevance": 3,
-          "support_type": "direct",
-          "contribution": 6.0
         }
       ],
-      "cautions": [],
-      "selection_reason": "Selected as optional based on field-capped alignment score 34.0, 5 direct signal matches, and support for primary signals including: Workflow and business process automation; Business value delivery (growth, efficiency, customer impact); Data integration, quality, and interoperability."
+      "cautions": [
+        "Older evidence; use as career-depth proof rather than the lead current AI story."
+      ],
+      "selection_reason": "Selected as strong_include based on field-capped alignment score 44.0, 4 direct signal matches, and support for primary signals including: Cross-functional collaboration and stakeholder alignment; Optimizing system performance, cost, and reliability; Ownership of delivery, architecture, and operational outcomes."
     },
     {
-      "evidence_id": "exp_01_03_02_01",
-      "rank": 17,
-      "selection_tier": "optional",
-      "source_label": "Interview Kickstart | AI Instructor",
+      "evidence_id": "exp_01_05_01_01",
+      "rank": 12,
+      "selection_tier": "strong_include",
+      "source_label": "Samsung Electronics (via Harvey Nash) | Data Scientist",
       "source_type": "experience_bullet",
-      "organization": "Interview Kickstart",
-      "role": "AI Instructor",
-      "dates": "March 2025 - Present",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
+      "organization": "Samsung Electronics (via Harvey Nash)",
+      "role": "Data Scientist",
+      "dates": "Dec 2020 - Oct 2021",
       "label": "",
-      "evidence_text": "Taught practical applications of LLMs, RAG, agentic AI, and modern AI development workflows.",
-      "field_capped_score": 32.3,
-      "weighted_score": 32.3,
-      "direct_match_count": 3,
+      "evidence_text": "Developed and deployed gradient-boosting propensity models used to target digital marketing campaigns, increasing campaign conversions by 146% and campaign-attributed revenue by 229%.",
+      "field_capped_score": 37.0,
+      "weighted_score": 37.0,
+      "direct_match_count": 4,
       "matched_signal_count": 4,
       "max_relevance": 5,
       "primary_supporting_signals": [
-        "Generative AI and large language models (LLMs)",
-        "Knowledge and information retrieval (including RAG)",
-        "Agentic AI and multi-agent architectures",
-        "Productionization and operationalization of generative and agentic AI"
+        "Personalization and customer experience enhancement",
+        "Business value delivery (growth, efficiency, customer impact)",
+        "Subject matter expertise in AI/ML systems and platforms",
+        "AI/ML model lifecycle management and deployment"
       ],
       "top_signal_matches": [
         {
-          "signal_id": "target_technology_areas_002",
-          "signal": "Generative AI and large language models (LLMs)",
-          "source_field": "target_technology_areas",
+          "signal_id": "target_problem_spaces_009",
+          "signal": "Personalization and customer experience enhancement",
+          "source_field": "target_problem_spaces",
           "relevance": 5,
           "support_type": "direct",
           "contribution": 10.0
         },
         {
-          "signal_id": "target_problem_spaces_005",
-          "signal": "Knowledge and information retrieval (including RAG)",
+          "signal_id": "success_patterns_003",
+          "signal": "Business value delivery (growth, efficiency, customer impact)",
+          "source_field": "success_patterns",
+          "relevance": 5,
+          "support_type": "direct",
+          "contribution": 10.0
+        },
+        {
+          "signal_id": "seniority_expectations_007",
+          "signal": "Subject matter expertise in AI/ML systems and platforms",
+          "source_field": "seniority_expectations",
+          "relevance": 3,
+          "support_type": "direct",
+          "contribution": 9.0
+        },
+        {
+          "signal_id": "target_problem_spaces_006",
+          "signal": "AI/ML model lifecycle management and deployment",
           "source_field": "target_problem_spaces",
           "relevance": 4,
           "support_type": "direct",
           "contribution": 8.0
+        }
+      ],
+      "cautions": [],
+      "selection_reason": "Selected as strong_include based on field-capped alignment score 37.0, 4 direct signal matches, and support for primary signals including: Personalization and customer experience enhancement; Business value delivery (growth, efficiency, customer impact); Subject matter expertise in AI/ML systems and platforms."
+    },
+    {
+      "evidence_id": "exp_01_04_01_02",
+      "rank": 13,
+      "selection_tier": "strong_include",
+      "source_label": "Meta | Data Scientist",
+      "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
+      "organization": "Meta",
+      "role": "Data Scientist",
+      "dates": "October 2021 - January 2025",
+      "label": "",
+      "evidence_text": "Developed forecasting and performance-management frameworks across business pillars and sub-pillars, translating engineering initiatives into projected reliability outcomes used for planning, goal setting, and leadership decision-making.",
+      "field_capped_score": 35.0,
+      "weighted_score": 35.0,
+      "direct_match_count": 3,
+      "matched_signal_count": 3,
+      "max_relevance": 5,
+      "primary_supporting_signals": [
+        "Optimizing system performance, cost, and reliability",
+        "Translating business requirements into technical solutions",
+        "Decision support and advanced analytics"
+      ],
+      "top_signal_matches": [
+        {
+          "signal_id": "target_capabilities_007",
+          "signal": "Optimizing system performance, cost, and reliability",
+          "source_field": "target_capabilities",
+          "relevance": 5,
+          "support_type": "direct",
+          "contribution": 15.0
         },
         {
-          "signal_id": "target_technology_areas_003",
-          "signal": "Agentic AI and multi-agent architectures",
-          "source_field": "target_technology_areas",
+          "signal_id": "target_capabilities_004",
+          "signal": "Translating business requirements into technical solutions",
+          "source_field": "target_capabilities",
+          "relevance": 4,
+          "support_type": "direct",
+          "contribution": 12.0
+        },
+        {
+          "signal_id": "target_problem_spaces_001",
+          "signal": "Decision support and advanced analytics",
+          "source_field": "target_problem_spaces",
           "relevance": 4,
           "support_type": "direct",
           "contribution": 8.0
+        }
+      ],
+      "cautions": [],
+      "selection_reason": "Selected as strong_include based on field-capped alignment score 35.0, 3 direct signal matches, and support for primary signals including: Optimizing system performance, cost, and reliability; Translating business requirements into technical solutions; Decision support and advanced analytics."
+    },
+    {
+      "evidence_id": "exp_01_02_01_01",
+      "rank": 14,
+      "selection_tier": "strong_include",
+      "source_label": "SimpliLearn & Interview Kickstart | AI Instructor",
+      "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
+      "organization": "SimpliLearn & Interview Kickstart",
+      "role": "AI Instructor",
+      "dates": "March 2025 - Present",
+      "label": "",
+      "evidence_text": "Delivered AI and machine learning training across multi-month cohorts for software engineers, data scientists, and technical professionals through university- and enterprise-sponsored continuing education programs.",
+      "field_capped_score": 34.0,
+      "weighted_score": 34.0,
+      "direct_match_count": 3,
+      "matched_signal_count": 3,
+      "max_relevance": 5,
+      "primary_supporting_signals": [
+        "Driving innovation and continuous learning within teams",
+        "Mentorship and talent development across teams",
+        "Team enablement, mentorship, and cross-team knowledge sharing"
+      ],
+      "top_signal_matches": [
+        {
+          "signal_id": "target_capabilities_009",
+          "signal": "Driving innovation and continuous learning within teams",
+          "source_field": "target_capabilities",
+          "relevance": 4,
+          "support_type": "direct",
+          "contribution": 12.0
         },
         {
-          "signal_id": "core_market_themes_002",
-          "signal": "Productionization and operationalization of generative and agentic AI",
-          "source_field": "core_market_themes",
-          "relevance": 3,
-          "support_type": "partial",
-          "contribution": 6.3
+          "signal_id": "seniority_expectations_003",
+          "signal": "Mentorship and talent development across teams",
+          "source_field": "seniority_expectations",
+          "relevance": 4,
+          "support_type": "direct",
+          "contribution": 12.0
+        },
+        {
+          "signal_id": "success_patterns_007",
+          "signal": "Team enablement, mentorship, and cross-team knowledge sharing",
+          "source_field": "success_patterns",
+          "relevance": 5,
+          "support_type": "direct",
+          "contribution": 10.0
         }
       ],
       "cautions": [
         "Teaching evidence supports mentorship, technical fluency, and developer enablement; do not present it as production ownership unless the bullet explicitly supports that."
       ],
-      "selection_reason": "Selected as optional based on field-capped alignment score 32.3, 3 direct signal matches, and support for primary signals including: Generative AI and large language models (LLMs); Knowledge and information retrieval (including RAG); Agentic AI and multi-agent architectures."
+      "selection_reason": "Selected as strong_include based on field-capped alignment score 34.0, 3 direct signal matches, and support for primary signals including: Driving innovation and continuous learning within teams; Mentorship and talent development across teams; Team enablement, mentorship, and cross-team knowledge sharing."
+    },
+    {
+      "evidence_id": "exp_01_01_01_03",
+      "rank": 15,
+      "selection_tier": "strong_include",
+      "source_label": "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)",
+      "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
+      "organization": "Daly Engineers LLC",
+      "role": "Principal Consultant",
+      "dates": "Jan 2026 - Present",
+      "label": "Consolidated Edison (via ABC Consulting)",
+      "evidence_text": "Developed automated profiling, type inference, duplicate detection, candidate key analysis, and cross-system join validation frameworks across 100+ source tables and millions of operational and financial records.",
+      "field_capped_score": 33.0,
+      "weighted_score": 33.0,
+      "direct_match_count": 3,
+      "matched_signal_count": 3,
+      "max_relevance": 5,
+      "primary_supporting_signals": [
+        "Developing reusable frameworks, components, and developer tools",
+        "Data integration, quality, and interoperability",
+        "CI/CD and automation pipelines"
+      ],
+      "top_signal_matches": [
+        {
+          "signal_id": "target_capabilities_008",
+          "signal": "Developing reusable frameworks, components, and developer tools",
+          "source_field": "target_capabilities",
+          "relevance": 5,
+          "support_type": "direct",
+          "contribution": 15.0
+        },
+        {
+          "signal_id": "target_problem_spaces_007",
+          "signal": "Data integration, quality, and interoperability",
+          "source_field": "target_problem_spaces",
+          "relevance": 5,
+          "support_type": "direct",
+          "contribution": 10.0
+        },
+        {
+          "signal_id": "target_technology_areas_008",
+          "signal": "CI/CD and automation pipelines",
+          "source_field": "target_technology_areas",
+          "relevance": 4,
+          "support_type": "direct",
+          "contribution": 8.0
+        }
+      ],
+      "cautions": [],
+      "selection_reason": "Selected as strong_include based on field-capped alignment score 33.0, 3 direct signal matches, and support for primary signals including: Developing reusable frameworks, components, and developer tools; Data integration, quality, and interoperability; CI/CD and automation pipelines."
     },
     {
       "evidence_id": "exp_01_01_02_03",
-      "rank": 18,
+      "rank": 16,
       "selection_tier": "optional",
       "source_label": "Daly Engineers LLC | Principal Consultant | NBCUniversal (via Apex Systems)",
       "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
       "organization": "Daly Engineers LLC",
       "role": "Principal Consultant",
       "dates": "Jan 2026 - Present",
@@ -1189,16 +1072,180 @@
       "selection_reason": "Selected as optional based on field-capped alignment score 32.0, 3 direct signal matches, and support for primary signals including: Evaluating, integrating, and operationalizing emerging AI technologies (GenAI, agentic AI, RAG); Subject matter expertise in AI/ML systems and platforms; Continuous improvement and rapid integration of emerging technologies."
     },
     {
-      "evidence_id": "exp_01_01_01_03",
+      "evidence_id": "exp_01_06_01_01",
+      "rank": 17,
+      "selection_tier": "optional",
+      "source_label": "Facteus | Head of Data Science",
+      "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
+      "organization": "Facteus",
+      "role": "Head of Data Science",
+      "dates": "Oct 2017 - Nov 2020",
+      "label": "",
+      "evidence_text": "Led data science initiatives on a 30B+ transaction dataset, creating analytical products and market-intelligence capabilities through large-scale feature engineering, merchant intelligence, and consumer-spending analytics.",
+      "field_capped_score": 32.0,
+      "weighted_score": 32.0,
+      "direct_match_count": 3,
+      "matched_signal_count": 3,
+      "max_relevance": 4,
+      "primary_supporting_signals": [
+        "10+ years of progressive experience in software/AI/ML engineering",
+        "Principal, lead, or architect-level technical ownership",
+        "Decision support and advanced analytics"
+      ],
+      "top_signal_matches": [
+        {
+          "signal_id": "seniority_expectations_001",
+          "signal": "10+ years of progressive experience in software/AI/ML engineering",
+          "source_field": "seniority_expectations",
+          "relevance": 4,
+          "support_type": "direct",
+          "contribution": 12.0
+        },
+        {
+          "signal_id": "seniority_expectations_002",
+          "signal": "Principal, lead, or architect-level technical ownership",
+          "source_field": "seniority_expectations",
+          "relevance": 4,
+          "support_type": "direct",
+          "contribution": 12.0
+        },
+        {
+          "signal_id": "target_problem_spaces_001",
+          "signal": "Decision support and advanced analytics",
+          "source_field": "target_problem_spaces",
+          "relevance": 4,
+          "support_type": "direct",
+          "contribution": 8.0
+        }
+      ],
+      "cautions": [],
+      "selection_reason": "Selected as optional based on field-capped alignment score 32.0, 3 direct signal matches, and support for primary signals including: 10+ years of progressive experience in software/AI/ML engineering; Principal, lead, or architect-level technical ownership; Decision support and advanced analytics."
+    },
+    {
+      "evidence_id": "exp_01_08_01_01",
+      "rank": 18,
+      "selection_tier": "optional",
+      "source_label": "Capital One | Senior Manager, Operations Analysis",
+      "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
+      "organization": "Capital One",
+      "role": "Senior Manager, Operations Analysis",
+      "dates": "Jan 2012 - Dec 2016",
+      "label": "",
+      "evidence_text": "Developed predictive capacity-management models for customer-facing banking platforms, forecasting peak demand scenarios using customer-demand, temporal, and business-process drivers to support infrastructure planning and risk management.",
+      "field_capped_score": 30.0,
+      "weighted_score": 30.0,
+      "direct_match_count": 3,
+      "matched_signal_count": 3,
+      "max_relevance": 4,
+      "primary_supporting_signals": [
+        "Optimizing system performance, cost, and reliability",
+        "10+ years of progressive experience in software/AI/ML engineering",
+        "Risk management, compliance, and governance"
+      ],
+      "top_signal_matches": [
+        {
+          "signal_id": "target_capabilities_007",
+          "signal": "Optimizing system performance, cost, and reliability",
+          "source_field": "target_capabilities",
+          "relevance": 4,
+          "support_type": "direct",
+          "contribution": 12.0
+        },
+        {
+          "signal_id": "seniority_expectations_001",
+          "signal": "10+ years of progressive experience in software/AI/ML engineering",
+          "source_field": "seniority_expectations",
+          "relevance": 4,
+          "support_type": "direct",
+          "contribution": 12.0
+        },
+        {
+          "signal_id": "target_problem_spaces_004",
+          "signal": "Risk management, compliance, and governance",
+          "source_field": "target_problem_spaces",
+          "relevance": 3,
+          "support_type": "direct",
+          "contribution": 6.0
+        }
+      ],
+      "cautions": [
+        "Older evidence; use as career-depth proof rather than the lead current AI story."
+      ],
+      "selection_reason": "Selected as optional based on field-capped alignment score 30.0, 3 direct signal matches, and support for primary signals including: Optimizing system performance, cost, and reliability; 10+ years of progressive experience in software/AI/ML engineering; Risk management, compliance, and governance."
+    },
+    {
+      "evidence_id": "exp_01_04_01_05",
       "rank": 19,
+      "selection_tier": "optional",
+      "source_label": "Meta | Data Scientist",
+      "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
+      "organization": "Meta",
+      "role": "Data Scientist",
+      "dates": "October 2021 - January 2025",
+      "label": "",
+      "evidence_text": "Delivered impact sizing, ROI, and risk exposure analyses supporting investment and prioritization decisions across platform reliability, privacy compliance, authentication, testing infrastructure, and data platform initiatives.",
+      "field_capped_score": 28.0,
+      "weighted_score": 28.0,
+      "direct_match_count": 3,
+      "matched_signal_count": 3,
+      "max_relevance": 4,
+      "primary_supporting_signals": [
+        "Optimizing system performance, cost, and reliability",
+        "Risk management, compliance, and governance",
+        "High-quality, compliant, and secure deliverables"
+      ],
+      "top_signal_matches": [
+        {
+          "signal_id": "target_capabilities_007",
+          "signal": "Optimizing system performance, cost, and reliability",
+          "source_field": "target_capabilities",
+          "relevance": 4,
+          "support_type": "direct",
+          "contribution": 12.0
+        },
+        {
+          "signal_id": "target_problem_spaces_004",
+          "signal": "Risk management, compliance, and governance",
+          "source_field": "target_problem_spaces",
+          "relevance": 4,
+          "support_type": "direct",
+          "contribution": 8.0
+        },
+        {
+          "signal_id": "success_patterns_006",
+          "signal": "High-quality, compliant, and secure deliverables",
+          "source_field": "success_patterns",
+          "relevance": 4,
+          "support_type": "direct",
+          "contribution": 8.0
+        }
+      ],
+      "cautions": [],
+      "selection_reason": "Selected as optional based on field-capped alignment score 28.0, 3 direct signal matches, and support for primary signals including: Optimizing system performance, cost, and reliability; Risk management, compliance, and governance; High-quality, compliant, and secure deliverables."
+    },
+    {
+      "evidence_id": "exp_01_01_01_05",
+      "rank": 20,
       "selection_tier": "optional",
       "source_label": "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)",
       "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
       "organization": "Daly Engineers LLC",
       "role": "Principal Consultant",
       "dates": "Jan 2026 - Present",
       "label": "Consolidated Edison (via ABC Consulting)",
-      "evidence_text": "Developed a phased analytical maturity roadmap adopted as the foundation for anomaly detection, construction analytics, and AI-enabled decision support initiatives.",
+      "evidence_text": "Developed a phased analytical maturity roadmap for anomaly detection, construction analytics, and AI-enabled decision support initiatives.",
       "field_capped_score": 27.0,
       "weighted_score": 27.0,
       "direct_match_count": 2,
@@ -1232,89 +1279,43 @@
       "selection_reason": "Selected as optional based on field-capped alignment score 27.0, 2 direct signal matches, and support for primary signals including: Strategic and visionary leadership (roadmap, technical vision, innovation); Documenting and communicating technical decisions and architectural vision."
     },
     {
-      "evidence_id": "exp_01_06_01_01",
-      "rank": 20,
+      "evidence_id": "exp_01_03_01_03",
+      "rank": 21,
       "selection_tier": "optional",
-      "source_label": "Samsung Electronics (via Harvey Nash) | Data Scientist",
+      "source_label": "Intuit (via The Cydio Group) | Data Scientist",
       "source_type": "experience_bullet",
-      "organization": "Samsung Electronics (via Harvey Nash)",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
+      "organization": "Intuit (via The Cydio Group)",
       "role": "Data Scientist",
-      "dates": "Dec 2020 - Oct 2021",
+      "dates": "Apr 2025 - Jul 2025",
       "label": "",
-      "evidence_text": "Developed and deployed gradient-boosting propensity models used to target digital marketing campaigns, increasing campaign conversions by 146% and campaign-attributed revenue by 229%.",
-      "field_capped_score": 26.0,
-      "weighted_score": 26.0,
+      "evidence_text": "Consolidated fragmented reporting into unified Tableau dashboards and automated executive reporting workflows using Python and SQL, reducing report preparation from days to hours.",
+      "field_capped_score": 26.2,
+      "weighted_score": 26.2,
       "direct_match_count": 3,
-      "matched_signal_count": 3,
-      "max_relevance": 5,
+      "matched_signal_count": 4,
+      "max_relevance": 4,
       "primary_supporting_signals": [
+        "Workflow and business process automation",
         "Business value delivery (growth, efficiency, customer impact)",
-        "AI/ML model lifecycle management and deployment",
-        "Personalization and customer experience enhancement"
+        "Data engineering and architecture (Spark, Snowflake, BigQuery, SQL)",
+        "CI/CD and automation pipelines"
       ],
       "top_signal_matches": [
+        {
+          "signal_id": "target_problem_spaces_002",
+          "signal": "Workflow and business process automation",
+          "source_field": "target_problem_spaces",
+          "relevance": 4,
+          "support_type": "direct",
+          "contribution": 8.0
+        },
         {
           "signal_id": "success_patterns_003",
           "signal": "Business value delivery (growth, efficiency, customer impact)",
           "source_field": "success_patterns",
-          "relevance": 5,
-          "support_type": "direct",
-          "contribution": 10.0
-        },
-        {
-          "signal_id": "target_problem_spaces_006",
-          "signal": "AI/ML model lifecycle management and deployment",
-          "source_field": "target_problem_spaces",
-          "relevance": 4,
-          "support_type": "direct",
-          "contribution": 8.0
-        },
-        {
-          "signal_id": "target_problem_spaces_009",
-          "signal": "Personalization and customer experience enhancement",
-          "source_field": "target_problem_spaces",
-          "relevance": 4,
-          "support_type": "direct",
-          "contribution": 8.0
-        }
-      ],
-      "cautions": [],
-      "selection_reason": "Selected as optional based on field-capped alignment score 26.0, 3 direct signal matches, and support for primary signals including: Business value delivery (growth, efficiency, customer impact); AI/ML model lifecycle management and deployment; Personalization and customer experience enhancement."
-    },
-    {
-      "evidence_id": "exp_01_01_01_01",
-      "rank": 21,
-      "selection_tier": "optional",
-      "source_label": "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)",
-      "source_type": "experience_bullet",
-      "organization": "Daly Engineers LLC",
-      "role": "Principal Consultant",
-      "dates": "Jan 2026 - Present",
-      "label": "Consolidated Edison (via ABC Consulting)",
-      "evidence_text": "Led analytical readiness assessment for Oracle/EBS and Maximo data migrated to BigQuery, establishing the foundation for cross-domain analytics across construction operations and financial systems.",
-      "field_capped_score": 24.0,
-      "weighted_score": 24.0,
-      "direct_match_count": 3,
-      "matched_signal_count": 3,
-      "max_relevance": 4,
-      "primary_supporting_signals": [
-        "Data integration, quality, and interoperability",
-        "Cloud-native platforms (AWS, Azure, GCP)",
-        "Data engineering and architecture (Spark, Snowflake, BigQuery, SQL)"
-      ],
-      "top_signal_matches": [
-        {
-          "signal_id": "target_problem_spaces_007",
-          "signal": "Data integration, quality, and interoperability",
-          "source_field": "target_problem_spaces",
-          "relevance": 4,
-          "support_type": "direct",
-          "contribution": 8.0
-        },
-        {
-          "signal_id": "target_technology_areas_001",
-          "signal": "Cloud-native platforms (AWS, Azure, GCP)",
-          "source_field": "target_technology_areas",
           "relevance": 4,
           "support_type": "direct",
           "contribution": 8.0
@@ -1323,75 +1324,88 @@
           "signal_id": "target_technology_areas_006",
           "signal": "Data engineering and architecture (Spark, Snowflake, BigQuery, SQL)",
           "source_field": "target_technology_areas",
-          "relevance": 4,
+          "relevance": 3,
           "support_type": "direct",
-          "contribution": 8.0
+          "contribution": 6.0
+        },
+        {
+          "signal_id": "target_technology_areas_008",
+          "signal": "CI/CD and automation pipelines",
+          "source_field": "target_technology_areas",
+          "relevance": 3,
+          "support_type": "partial",
+          "contribution": 4.199999999999999
         }
       ],
-      "cautions": [
-        "Strategy and readiness evidence; do not overstate as implementation unless paired with delivery evidence."
-      ],
-      "selection_reason": "Selected as optional based on field-capped alignment score 24.0, 3 direct signal matches, and support for primary signals including: Data integration, quality, and interoperability; Cloud-native platforms (AWS, Azure, GCP); Data engineering and architecture (Spark, Snowflake, BigQuery, SQL)."
+      "cautions": [],
+      "selection_reason": "Selected as optional based on field-capped alignment score 26.2, 3 direct signal matches, and support for primary signals including: Workflow and business process automation; Business value delivery (growth, efficiency, customer impact); Data engineering and architecture (Spark, Snowflake, BigQuery, SQL)."
     },
     {
-      "evidence_id": "exp_01_05_02_01",
+      "evidence_id": "exp_01_03_01_04",
       "rank": 22,
       "selection_tier": "optional",
-      "source_label": "Meta | Data Scientist",
+      "source_label": "Intuit (via The Cydio Group) | Data Scientist",
       "source_type": "experience_bullet",
-      "organization": "Meta",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
+      "organization": "Intuit (via The Cydio Group)",
       "role": "Data Scientist",
-      "dates": "October 2021 - January 2025",
+      "dates": "Apr 2025 - Jul 2025",
       "label": "",
-      "evidence_text": "Developed forecasting and performance-management frameworks across business pillars and sub-pillars, translating engineering initiatives into projected reliability outcomes used for planning, goal setting, and leadership decision-making.",
-      "field_capped_score": 22.0,
-      "weighted_score": 22.0,
+      "evidence_text": "Partnered with finance, marketing, and product stakeholders to translate attribution and performance data into actionable business recommendations.",
+      "field_capped_score": 24.0,
+      "weighted_score": 24.0,
       "direct_match_count": 2,
       "matched_signal_count": 2,
-      "max_relevance": 5,
+      "max_relevance": 4,
       "primary_supporting_signals": [
-        "Optimizing system performance, cost, and reliability",
-        "Decision support and advanced analytics"
+        "Cross-functional collaboration and stakeholder alignment",
+        "Cross-functional influence (including business and executive stakeholders)"
       ],
       "top_signal_matches": [
         {
-          "signal_id": "target_capabilities_007",
-          "signal": "Optimizing system performance, cost, and reliability",
+          "signal_id": "target_capabilities_003",
+          "signal": "Cross-functional collaboration and stakeholder alignment",
           "source_field": "target_capabilities",
           "relevance": 4,
           "support_type": "direct",
           "contribution": 12.0
         },
         {
-          "signal_id": "target_problem_spaces_001",
-          "signal": "Decision support and advanced analytics",
-          "source_field": "target_problem_spaces",
-          "relevance": 5,
+          "signal_id": "seniority_expectations_005",
+          "signal": "Cross-functional influence (including business and executive stakeholders)",
+          "source_field": "seniority_expectations",
+          "relevance": 4,
           "support_type": "direct",
-          "contribution": 10.0
+          "contribution": 12.0
         }
       ],
       "cautions": [],
-      "selection_reason": "Selected as optional based on field-capped alignment score 22.0, 2 direct signal matches, and support for primary signals including: Optimizing system performance, cost, and reliability; Decision support and advanced analytics."
+      "selection_reason": "Selected as optional based on field-capped alignment score 24.0, 2 direct signal matches, and support for primary signals including: Cross-functional collaboration and stakeholder alignment; Cross-functional influence (including business and executive stakeholders)."
     },
     {
-      "evidence_id": "exp_01_02_03_01",
+      "evidence_id": "exp_01_02_01_03",
       "rank": 23,
       "selection_tier": "compress",
-      "source_label": "SimpliLearn | AI Instructor",
+      "source_label": "SimpliLearn & Interview Kickstart | AI Instructor",
       "source_type": "experience_bullet",
-      "organization": "SimpliLearn",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
+      "organization": "SimpliLearn & Interview Kickstart",
       "role": "AI Instructor",
-      "dates": "October 2025 - Present",
+      "dates": "March 2025 - Present",
       "label": "",
       "evidence_text": "Developed hands-on demonstrations, Jupyter notebooks, and end-to-end applications covering modern AI workflows, evaluation techniques, and deployment considerations.",
-      "field_capped_score": 16.2,
-      "weighted_score": 16.2,
+      "field_capped_score": 22.5,
+      "weighted_score": 22.5,
       "direct_match_count": 1,
-      "matched_signal_count": 2,
+      "matched_signal_count": 3,
       "max_relevance": 4,
       "primary_supporting_signals": [
         "Continuous innovation, research application, and developer enablement",
+        "Productionization and operationalization of generative and agentic AI",
         "AI/ML model lifecycle management and deployment"
       ],
       "top_signal_matches": [
@@ -1402,6 +1416,14 @@
           "relevance": 4,
           "support_type": "direct",
           "contribution": 12.0
+        },
+        {
+          "signal_id": "core_market_themes_002",
+          "signal": "Productionization and operationalization of generative and agentic AI",
+          "source_field": "core_market_themes",
+          "relevance": 3,
+          "support_type": "partial",
+          "contribution": 6.3
         },
         {
           "signal_id": "target_problem_spaces_006",
@@ -1415,14 +1437,72 @@
       "cautions": [
         "Teaching evidence supports mentorship, technical fluency, and developer enablement; do not present it as production ownership unless the bullet explicitly supports that."
       ],
-      "selection_reason": "Selected as compress based on field-capped alignment score 16.2, 1 direct signal matches, and support for primary signals including: Continuous innovation, research application, and developer enablement; AI/ML model lifecycle management and deployment."
+      "selection_reason": "Selected as compress based on field-capped alignment score 22.5, 1 direct signal matches, and support for primary signals including: Continuous innovation, research application, and developer enablement; Productionization and operationalization of generative and agentic AI; AI/ML model lifecycle management and deployment."
     },
     {
-      "evidence_id": "exp_01_06_03_01",
+      "evidence_id": "exp_01_01_01_02",
       "rank": 24,
+      "selection_tier": "optional",
+      "source_label": "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)",
+      "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
+      "organization": "Daly Engineers LLC",
+      "role": "Principal Consultant",
+      "dates": "Jan 2026 - Present",
+      "label": "Consolidated Edison (via ABC Consulting)",
+      "evidence_text": "Led analytical readiness assessment for Oracle/EBS and Maximo data migrated to BigQuery, establishing cross-domain analytics across construction operations and financial systems.",
+      "field_capped_score": 22.0,
+      "weighted_score": 22.0,
+      "direct_match_count": 3,
+      "matched_signal_count": 3,
+      "max_relevance": 4,
+      "primary_supporting_signals": [
+        "Data integration, quality, and interoperability",
+        "Data engineering and architecture (Spark, Snowflake, BigQuery, SQL)",
+        "Cloud-native platforms (AWS, Azure, GCP)"
+      ],
+      "top_signal_matches": [
+        {
+          "signal_id": "target_problem_spaces_007",
+          "signal": "Data integration, quality, and interoperability",
+          "source_field": "target_problem_spaces",
+          "relevance": 4,
+          "support_type": "direct",
+          "contribution": 8.0
+        },
+        {
+          "signal_id": "target_technology_areas_006",
+          "signal": "Data engineering and architecture (Spark, Snowflake, BigQuery, SQL)",
+          "source_field": "target_technology_areas",
+          "relevance": 4,
+          "support_type": "direct",
+          "contribution": 8.0
+        },
+        {
+          "signal_id": "target_technology_areas_001",
+          "signal": "Cloud-native platforms (AWS, Azure, GCP)",
+          "source_field": "target_technology_areas",
+          "relevance": 3,
+          "support_type": "direct",
+          "contribution": 6.0
+        }
+      ],
+      "cautions": [
+        "Strategy and readiness evidence; do not overstate as implementation unless paired with delivery evidence."
+      ],
+      "selection_reason": "Selected as optional based on field-capped alignment score 22.0, 3 direct signal matches, and support for primary signals including: Data integration, quality, and interoperability; Data engineering and architecture (Spark, Snowflake, BigQuery, SQL); Cloud-native platforms (AWS, Azure, GCP)."
+    },
+    {
+      "evidence_id": "exp_01_05_01_03",
+      "rank": 25,
       "selection_tier": "optional",
       "source_label": "Samsung Electronics (via Harvey Nash) | Data Scientist",
       "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
       "organization": "Samsung Electronics (via Harvey Nash)",
       "role": "Data Scientist",
       "dates": "Dec 2020 - Oct 2021",
@@ -1459,11 +1539,14 @@
       "selection_reason": "Selected as optional based on field-capped alignment score 16.0, 2 direct signal matches, and support for primary signals including: Workflow and business process automation; Personalization and customer experience enhancement."
     },
     {
-      "evidence_id": "exp_01_05_01_01",
-      "rank": 25,
+      "evidence_id": "exp_01_04_01_01",
+      "rank": 26,
       "selection_tier": "compress",
       "source_label": "Meta | Data Scientist",
       "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
       "organization": "Meta",
       "role": "Data Scientist",
       "dates": "October 2021 - January 2025",
@@ -1491,11 +1574,49 @@
       "selection_reason": "Selected as compress based on field-capped alignment score 15.0, 1 direct signal matches, and support for primary signals including: Optimizing system performance, cost, and reliability."
     },
     {
+      "evidence_id": "exp_01_01_01_04",
+      "rank": 27,
+      "selection_tier": "compress",
+      "source_label": "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)",
+      "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
+      "organization": "Daly Engineers LLC",
+      "role": "Principal Consultant",
+      "dates": "Jan 2026 - Present",
+      "label": "Consolidated Edison (via ABC Consulting)",
+      "evidence_text": "Designed peer-group and time-series anomaly detection readiness frameworks for construction actuals, including data suitability checks, gap analysis, nonzero filtering, and category-level cost behavior analysis.",
+      "field_capped_score": 12.0,
+      "weighted_score": 12.0,
+      "direct_match_count": 1,
+      "matched_signal_count": 1,
+      "max_relevance": 4,
+      "primary_supporting_signals": [
+        "Developing reusable frameworks, components, and developer tools"
+      ],
+      "top_signal_matches": [
+        {
+          "signal_id": "target_capabilities_008",
+          "signal": "Developing reusable frameworks, components, and developer tools",
+          "source_field": "target_capabilities",
+          "relevance": 4,
+          "support_type": "direct",
+          "contribution": 12.0
+        }
+      ],
+      "cautions": [],
+      "selection_reason": "Selected as compress based on field-capped alignment score 12.0, 1 direct signal matches, and support for primary signals including: Developing reusable frameworks, components, and developer tools."
+    },
+    {
       "evidence_id": "exp_01_01_02_04",
-      "rank": 26,
+      "rank": 28,
       "selection_tier": "compress",
       "source_label": "Daly Engineers LLC | Principal Consultant | NBCUniversal (via Apex Systems)",
       "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
       "organization": "Daly Engineers LLC",
       "role": "Principal Consultant",
       "dates": "Jan 2026 - Present",
@@ -1526,243 +1647,49 @@
       "selection_reason": "Selected as compress based on field-capped alignment score 12.0, 1 direct signal matches, and support for primary signals including: Documenting and communicating technical decisions and architectural vision."
     },
     {
-      "evidence_id": "exp_01_09_01_01",
-      "rank": 27,
+      "evidence_id": "exp_01_06_01_03",
+      "rank": 29,
       "selection_tier": "compress",
-      "source_label": "Capital One | Senior Manager, Operations Analysis",
+      "source_label": "Facteus | Head of Data Science",
       "source_type": "experience_bullet",
-      "organization": "Capital One",
-      "role": "Senior Manager, Operations Analysis",
-      "dates": "Jan 2012 - Dec 2016",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
+      "organization": "Facteus",
+      "role": "Head of Data Science",
+      "dates": "Oct 2017 - Nov 2020",
       "label": "",
-      "evidence_text": "Developed predictive capacity-management models for customer-facing banking platforms, forecasting peak demand scenarios using customer-demand, temporal, and business-process drivers to support infrastructure planning and risk management.",
+      "evidence_text": "Evaluated prospective data partnerships by assessing signal quality, coverage, and business value, supporting strategic investment and acquisition decisions.",
       "field_capped_score": 12.0,
       "weighted_score": 12.0,
       "direct_match_count": 1,
       "matched_signal_count": 1,
       "max_relevance": 4,
       "primary_supporting_signals": [
-        "10+ years of progressive experience in software/AI/ML engineering"
+        "Cross-functional influence (including business and executive stakeholders)"
       ],
       "top_signal_matches": [
         {
-          "signal_id": "seniority_expectations_001",
-          "signal": "10+ years of progressive experience in software/AI/ML engineering",
+          "signal_id": "seniority_expectations_005",
+          "signal": "Cross-functional influence (including business and executive stakeholders)",
           "source_field": "seniority_expectations",
           "relevance": 4,
           "support_type": "direct",
           "contribution": 12.0
         }
       ],
-      "cautions": [
-        "Older evidence; use as career-depth proof rather than the lead current AI story."
-      ],
-      "selection_reason": "Selected as compress based on field-capped alignment score 12.0, 1 direct signal matches, and support for primary signals including: 10+ years of progressive experience in software/AI/ML engineering."
+      "cautions": [],
+      "selection_reason": "Selected as compress based on field-capped alignment score 12.0, 1 direct signal matches, and support for primary signals including: Cross-functional influence (including business and executive stakeholders)."
     },
     {
-      "evidence_id": "exp_01_09_06_01",
-      "rank": 28,
-      "selection_tier": "compress",
-      "source_label": "Capital One | Senior Manager, Operations Analysis",
-      "source_type": "experience_bullet",
-      "organization": "Capital One",
-      "role": "Senior Manager, Operations Analysis",
-      "dates": "Jan 2012 - Dec 2016",
-      "label": "",
-      "evidence_text": "Awarded the Capital One Business Innovation Award for contributions to operational intelligence and enterprise monitoring transformation; presented work at internal and external industry conferences.",
-      "field_capped_score": 12.0,
-      "weighted_score": 12.0,
-      "direct_match_count": 1,
-      "matched_signal_count": 1,
-      "max_relevance": 4,
-      "primary_supporting_signals": [
-        "Driving innovation and continuous learning within teams"
-      ],
-      "top_signal_matches": [
-        {
-          "signal_id": "target_capabilities_009",
-          "signal": "Driving innovation and continuous learning within teams",
-          "source_field": "target_capabilities",
-          "relevance": 4,
-          "support_type": "direct",
-          "contribution": 12.0
-        }
-      ],
-      "cautions": [
-        "Older evidence; use as career-depth proof rather than the lead current AI story."
-      ],
-      "selection_reason": "Selected as compress based on field-capped alignment score 12.0, 1 direct signal matches, and support for primary signals including: Driving innovation and continuous learning within teams."
-    },
-    {
-      "evidence_id": "exp_01_10_03_01",
-      "rank": 29,
-      "selection_tier": "compress",
-      "source_label": "Raytheon | Senior Principal Systems Engineer / Program Manager",
-      "source_type": "experience_bullet",
-      "organization": "Raytheon",
-      "role": "Senior Principal Systems Engineer / Program Manager",
-      "dates": "Mar 2005 - Dec 2011",
-      "label": "",
-      "evidence_text": "Served as Principal Investigator for advanced signal-generation and radar resource-management algorithms, leading research, simulation, flight testing, and operational deployment across multiple tactical and surveillance aircraft programs.",
-      "field_capped_score": 12.0,
-      "weighted_score": 12.0,
-      "direct_match_count": 1,
-      "matched_signal_count": 1,
-      "max_relevance": 4,
-      "primary_supporting_signals": [
-        "Continuous innovation, research application, and developer enablement"
-      ],
-      "top_signal_matches": [
-        {
-          "signal_id": "core_market_themes_007",
-          "signal": "Continuous innovation, research application, and developer enablement",
-          "source_field": "core_market_themes",
-          "relevance": 4,
-          "support_type": "direct",
-          "contribution": 12.0
-        }
-      ],
-      "cautions": [
-        "Older evidence; use as career-depth proof rather than the lead current AI story."
-      ],
-      "selection_reason": "Selected as compress based on field-capped alignment score 12.0, 1 direct signal matches, and support for primary signals including: Continuous innovation, research application, and developer enablement."
-    },
-    {
-      "evidence_id": "exp_01_07_05_01",
+      "evidence_id": "exp_01_05_01_02",
       "rank": 30,
-      "selection_tier": "compress",
-      "source_label": "Facteus | Head of Data Science",
-      "source_type": "experience_bullet",
-      "organization": "Facteus",
-      "role": "Head of Data Science",
-      "dates": "Oct 2017 - Nov 2020",
-      "label": "",
-      "evidence_text": "Created data-driven reports and visualizations used by hedge funds, partners, and internal stakeholders to understand emerging market trends and business performance.",
-      "field_capped_score": 9.0,
-      "weighted_score": 9.0,
-      "direct_match_count": 1,
-      "matched_signal_count": 1,
-      "max_relevance": 3,
-      "primary_supporting_signals": [
-        "Documenting and communicating technical decisions and architectural vision"
-      ],
-      "top_signal_matches": [
-        {
-          "signal_id": "target_capabilities_010",
-          "signal": "Documenting and communicating technical decisions and architectural vision",
-          "source_field": "target_capabilities",
-          "relevance": 3,
-          "support_type": "direct",
-          "contribution": 9.0
-        }
-      ],
-      "cautions": [],
-      "selection_reason": "Selected as compress based on field-capped alignment score 9.0, 1 direct signal matches, and support for primary signals including: Documenting and communicating technical decisions and architectural vision."
-    },
-    {
-      "evidence_id": "exp_01_02_01_01",
-      "rank": 31,
-      "selection_tier": "compress",
-      "source_label": "SimpliLearn | AI Instructor",
-      "source_type": "experience_bullet",
-      "organization": "SimpliLearn",
-      "role": "AI Instructor",
-      "dates": "October 2025 - Present",
-      "label": "",
-      "evidence_text": "Delivered professional AI training across multi-month cohorts for software engineers, data scientists, and technical professionals through university- and enterprise-sponsored continuing education programs.",
-      "field_capped_score": 8.0,
-      "weighted_score": 8.0,
-      "direct_match_count": 1,
-      "matched_signal_count": 1,
-      "max_relevance": 4,
-      "primary_supporting_signals": [
-        "Team enablement, mentorship, and cross-team knowledge sharing"
-      ],
-      "top_signal_matches": [
-        {
-          "signal_id": "success_patterns_007",
-          "signal": "Team enablement, mentorship, and cross-team knowledge sharing",
-          "source_field": "success_patterns",
-          "relevance": 4,
-          "support_type": "direct",
-          "contribution": 8.0
-        }
-      ],
-      "cautions": [
-        "Teaching evidence supports mentorship, technical fluency, and developer enablement; do not present it as production ownership unless the bullet explicitly supports that."
-      ],
-      "selection_reason": "Selected as compress based on field-capped alignment score 8.0, 1 direct signal matches, and support for primary signals including: Team enablement, mentorship, and cross-team knowledge sharing."
-    },
-    {
-      "evidence_id": "exp_01_04_01_01",
-      "rank": 32,
-      "selection_tier": "compress",
-      "source_label": "Intuit (via The Cydio Group) | Data Scientist",
-      "source_type": "experience_bullet",
-      "organization": "Intuit (via The Cydio Group)",
-      "role": "Data Scientist",
-      "dates": "Apr 2025 - Jul 2025",
-      "label": "",
-      "evidence_text": "Delivered analytics supporting business and operational decision-making for QuickBooks Capital.",
-      "field_capped_score": 8.0,
-      "weighted_score": 8.0,
-      "direct_match_count": 1,
-      "matched_signal_count": 1,
-      "max_relevance": 4,
-      "primary_supporting_signals": [
-        "Decision support and advanced analytics"
-      ],
-      "top_signal_matches": [
-        {
-          "signal_id": "target_problem_spaces_001",
-          "signal": "Decision support and advanced analytics",
-          "source_field": "target_problem_spaces",
-          "relevance": 4,
-          "support_type": "direct",
-          "contribution": 8.0
-        }
-      ],
-      "cautions": [],
-      "selection_reason": "Selected as compress based on field-capped alignment score 8.0, 1 direct signal matches, and support for primary signals including: Decision support and advanced analytics."
-    },
-    {
-      "evidence_id": "exp_01_05_05_01",
-      "rank": 33,
-      "selection_tier": "compress",
-      "source_label": "Meta | Data Scientist",
-      "source_type": "experience_bullet",
-      "organization": "Meta",
-      "role": "Data Scientist",
-      "dates": "October 2021 - January 2025",
-      "label": "",
-      "evidence_text": "Delivered impact sizing, ROI, and risk exposure analyses supporting investment and prioritization decisions across platform reliability, privacy compliance, authentication, testing infrastructure, and data platform initiatives.",
-      "field_capped_score": 8.0,
-      "weighted_score": 8.0,
-      "direct_match_count": 1,
-      "matched_signal_count": 1,
-      "max_relevance": 4,
-      "primary_supporting_signals": [
-        "Risk management, compliance, and governance"
-      ],
-      "top_signal_matches": [
-        {
-          "signal_id": "target_problem_spaces_004",
-          "signal": "Risk management, compliance, and governance",
-          "source_field": "target_problem_spaces",
-          "relevance": 4,
-          "support_type": "direct",
-          "contribution": 8.0
-        }
-      ],
-      "cautions": [],
-      "selection_reason": "Selected as compress based on field-capped alignment score 8.0, 1 direct signal matches, and support for primary signals including: Risk management, compliance, and governance."
-    },
-    {
-      "evidence_id": "exp_01_06_02_01",
-      "rank": 34,
       "selection_tier": "compress",
       "source_label": "Samsung Electronics (via Harvey Nash) | Data Scientist",
       "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
       "organization": "Samsung Electronics (via Harvey Nash)",
       "role": "Data Scientist",
       "dates": "Dec 2020 - Oct 2021",
@@ -1790,11 +1717,14 @@
       "selection_reason": "Selected as compress based on field-capped alignment score 8.0, 1 direct signal matches, and support for primary signals including: Personalization and customer experience enhancement."
     },
     {
-      "evidence_id": "exp_01_07_02_01",
-      "rank": 35,
+      "evidence_id": "exp_01_06_01_02",
+      "rank": 31,
       "selection_tier": "compress",
       "source_label": "Facteus | Head of Data Science",
       "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
       "organization": "Facteus",
       "role": "Head of Data Science",
       "dates": "Oct 2017 - Nov 2020",
@@ -1806,59 +1736,30 @@
       "matched_signal_count": 1,
       "max_relevance": 4,
       "primary_supporting_signals": [
-        "Business value delivery (growth, efficiency, customer impact)"
+        "Data integration, quality, and interoperability"
       ],
       "top_signal_matches": [
         {
-          "signal_id": "success_patterns_003",
-          "signal": "Business value delivery (growth, efficiency, customer impact)",
-          "source_field": "success_patterns",
+          "signal_id": "target_problem_spaces_007",
+          "signal": "Data integration, quality, and interoperability",
+          "source_field": "target_problem_spaces",
           "relevance": 4,
           "support_type": "direct",
           "contribution": 8.0
         }
       ],
       "cautions": [],
-      "selection_reason": "Selected as compress based on field-capped alignment score 8.0, 1 direct signal matches, and support for primary signals including: Business value delivery (growth, efficiency, customer impact)."
+      "selection_reason": "Selected as compress based on field-capped alignment score 8.0, 1 direct signal matches, and support for primary signals including: Data integration, quality, and interoperability."
     },
     {
-      "evidence_id": "exp_01_08_02_01",
-      "rank": 36,
-      "selection_tier": "compress",
-      "source_label": "Nike (via Intersoft Inc.) | Expert SEO Solutions Architect",
-      "source_type": "experience_bullet",
-      "organization": "Nike (via Intersoft Inc.)",
-      "role": "Expert SEO Solutions Architect",
-      "dates": "Nov 2016 - Sep 2017",
-      "label": "",
-      "evidence_text": "Developed canonical URL, redirect, and XML sitemap strategies that improved search visibility while preventing duplicate content, redirect conflicts, and circular routing issues.",
-      "field_capped_score": 8.0,
-      "weighted_score": 8.0,
-      "direct_match_count": 1,
-      "matched_signal_count": 1,
-      "max_relevance": 4,
-      "primary_supporting_signals": [
-        "High-quality, compliant, and secure deliverables"
-      ],
-      "top_signal_matches": [
-        {
-          "signal_id": "success_patterns_006",
-          "signal": "High-quality, compliant, and secure deliverables",
-          "source_field": "success_patterns",
-          "relevance": 4,
-          "support_type": "direct",
-          "contribution": 8.0
-        }
-      ],
-      "cautions": [],
-      "selection_reason": "Selected as compress based on field-capped alignment score 8.0, 1 direct signal matches, and support for primary signals including: High-quality, compliant, and secure deliverables."
-    },
-    {
-      "evidence_id": "exp_01_09_02_01",
-      "rank": 37,
+      "evidence_id": "exp_01_08_01_02",
+      "rank": 32,
       "selection_tier": "compress",
       "source_label": "Capital One | Senior Manager, Operations Analysis",
       "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
       "organization": "Capital One",
       "role": "Senior Manager, Operations Analysis",
       "dates": "Jan 2012 - Dec 2016",
@@ -1888,43 +1789,86 @@
       "selection_reason": "Selected as compress based on field-capped alignment score 8.0, 1 direct signal matches, and support for primary signals including: Operational excellence (uptime, observability, rapid incident response)."
     },
     {
-      "evidence_id": "exp_01_07_03_01",
-      "rank": 38,
+      "evidence_id": "exp_01_06_01_05",
+      "rank": 33,
       "selection_tier": "compress",
       "source_label": "Facteus | Head of Data Science",
       "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
       "organization": "Facteus",
       "role": "Head of Data Science",
       "dates": "Oct 2017 - Nov 2020",
       "label": "",
-      "evidence_text": "Evaluated prospective data partnerships by assessing signal quality, coverage, and business value, supporting strategic investment and acquisition decisions.",
+      "evidence_text": "Created data-driven reports and visualizations used by hedge funds, partners, and internal stakeholders to understand emerging market trends and business performance.",
       "field_capped_score": 6.3,
       "weighted_score": 6.3,
       "direct_match_count": 0,
       "matched_signal_count": 1,
       "max_relevance": 3,
       "primary_supporting_signals": [
-        "Strategic and visionary leadership (roadmap, technical vision, innovation)"
+        "Documenting and communicating technical decisions and architectural vision"
       ],
       "top_signal_matches": [
         {
-          "signal_id": "seniority_expectations_004",
-          "signal": "Strategic and visionary leadership (roadmap, technical vision, innovation)",
-          "source_field": "seniority_expectations",
+          "signal_id": "target_capabilities_010",
+          "signal": "Documenting and communicating technical decisions and architectural vision",
+          "source_field": "target_capabilities",
           "relevance": 3,
           "support_type": "partial",
           "contribution": 6.3
         }
       ],
       "cautions": [],
-      "selection_reason": "Selected as compress based on field-capped alignment score 6.3, 0 direct signal matches, and support for primary signals including: Strategic and visionary leadership (roadmap, technical vision, innovation)."
+      "selection_reason": "Selected as compress based on field-capped alignment score 6.3, 0 direct signal matches, and support for primary signals including: Documenting and communicating technical decisions and architectural vision."
     },
     {
-      "evidence_id": "exp_01_08_03_01",
-      "rank": 39,
+      "evidence_id": "exp_01_08_01_06",
+      "rank": 34,
+      "selection_tier": "compress",
+      "source_label": "Capital One | Senior Manager, Operations Analysis",
+      "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
+      "organization": "Capital One",
+      "role": "Senior Manager, Operations Analysis",
+      "dates": "Jan 2012 - Dec 2016",
+      "label": "",
+      "evidence_text": "Awarded the Capital One Business Innovation Award for contributions to operational intelligence and enterprise monitoring transformation; presented work at internal and external industry conferences.",
+      "field_capped_score": 6.3,
+      "weighted_score": 6.3,
+      "direct_match_count": 0,
+      "matched_signal_count": 1,
+      "max_relevance": 3,
+      "primary_supporting_signals": [
+        "Cross-functional influence (including business and executive stakeholders)"
+      ],
+      "top_signal_matches": [
+        {
+          "signal_id": "seniority_expectations_005",
+          "signal": "Cross-functional influence (including business and executive stakeholders)",
+          "source_field": "seniority_expectations",
+          "relevance": 3,
+          "support_type": "partial",
+          "contribution": 6.3
+        }
+      ],
+      "cautions": [
+        "Older evidence; use as career-depth proof rather than the lead current AI story."
+      ],
+      "selection_reason": "Selected as compress based on field-capped alignment score 6.3, 0 direct signal matches, and support for primary signals including: Cross-functional influence (including business and executive stakeholders)."
+    },
+    {
+      "evidence_id": "exp_01_07_01_03",
+      "rank": 35,
       "selection_tier": "compress",
       "source_label": "Nike (via Intersoft Inc.) | Expert SEO Solutions Architect",
       "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
       "organization": "Nike (via Intersoft Inc.)",
       "role": "Expert SEO Solutions Architect",
       "dates": "Nov 2016 - Sep 2017",
@@ -1955,10 +1899,13 @@
   "excluded_evidence": [
     {
       "evidence_id": "exp_01_01_02_02",
-      "rank": 40,
+      "rank": 36,
       "selection_tier": "exclude",
       "source_label": "Daly Engineers LLC | Principal Consultant | NBCUniversal (via Apex Systems)",
       "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
       "organization": "Daly Engineers LLC",
       "role": "Principal Consultant",
       "dates": "Jan 2026 - Present",
@@ -1978,15 +1925,18 @@
     },
     {
       "evidence_id": "exp_01_03_01_01",
-      "rank": 41,
+      "rank": 37,
       "selection_tier": "exclude",
-      "source_label": "Interview Kickstart | AI Instructor",
+      "source_label": "Intuit (via The Cydio Group) | Data Scientist",
       "source_type": "experience_bullet",
-      "organization": "Interview Kickstart",
-      "role": "AI Instructor",
-      "dates": "March 2025 - Present",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
+      "organization": "Intuit (via The Cydio Group)",
+      "role": "Data Scientist",
+      "dates": "Apr 2025 - Jul 2025",
       "label": "",
-      "evidence_text": "Delivered AI and machine learning instruction for software engineering professionals pursuing advanced technical roles.",
+      "evidence_text": "Delivered analytics supporting business and operational decision-making for QuickBooks Capital.",
       "field_capped_score": 0.0,
       "weighted_score": 0.0,
       "direct_match_count": 0,
@@ -1994,17 +1944,18 @@
       "max_relevance": 0,
       "primary_supporting_signals": [],
       "top_signal_matches": [],
-      "cautions": [
-        "Teaching evidence supports mentorship, technical fluency, and developer enablement; do not present it as production ownership unless the bullet explicitly supports that."
-      ],
+      "cautions": [],
       "selection_reason": "Excluded for this target because it has weak or no meaningful alignment with the market-derived target signals."
     },
     {
-      "evidence_id": "exp_01_04_02_01",
-      "rank": 42,
+      "evidence_id": "exp_01_03_01_02",
+      "rank": 38,
       "selection_tier": "exclude",
       "source_label": "Intuit (via The Cydio Group) | Data Scientist",
       "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
       "organization": "Intuit (via The Cydio Group)",
       "role": "Data Scientist",
       "dates": "Apr 2025 - Jul 2025",
@@ -2021,11 +1972,14 @@
       "selection_reason": "Excluded for this target because it has weak or no meaningful alignment with the market-derived target signals."
     },
     {
-      "evidence_id": "exp_01_05_03_01",
-      "rank": 43,
+      "evidence_id": "exp_01_04_01_03",
+      "rank": 39,
       "selection_tier": "exclude",
       "source_label": "Meta | Data Scientist",
       "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
       "organization": "Meta",
       "role": "Data Scientist",
       "dates": "October 2021 - January 2025",
@@ -2042,11 +1996,14 @@
       "selection_reason": "Excluded for this target because it has weak or no meaningful alignment with the market-derived target signals."
     },
     {
-      "evidence_id": "exp_01_06_04_01",
-      "rank": 44,
+      "evidence_id": "exp_01_05_01_04",
+      "rank": 40,
       "selection_tier": "exclude",
       "source_label": "Samsung Electronics (via Harvey Nash) | Data Scientist",
       "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
       "organization": "Samsung Electronics (via Harvey Nash)",
       "role": "Data Scientist",
       "dates": "Dec 2020 - Oct 2021",
@@ -2063,11 +2020,14 @@
       "selection_reason": "Excluded for this target because it has weak or no meaningful alignment with the market-derived target signals."
     },
     {
-      "evidence_id": "exp_01_07_04_01",
-      "rank": 45,
+      "evidence_id": "exp_01_06_01_04",
+      "rank": 41,
       "selection_tier": "exclude",
       "source_label": "Facteus | Head of Data Science",
       "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
       "organization": "Facteus",
       "role": "Head of Data Science",
       "dates": "Oct 2017 - Nov 2020",
@@ -2084,11 +2044,64 @@
       "selection_reason": "Excluded for this target because it has weak or no meaningful alignment with the market-derived target signals."
     },
     {
-      "evidence_id": "exp_01_10_04_01",
-      "rank": 46,
+      "evidence_id": "exp_01_07_01_02",
+      "rank": 42,
+      "selection_tier": "exclude",
+      "source_label": "Nike (via Intersoft Inc.) | Expert SEO Solutions Architect",
+      "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
+      "organization": "Nike (via Intersoft Inc.)",
+      "role": "Expert SEO Solutions Architect",
+      "dates": "Nov 2016 - Sep 2017",
+      "label": "",
+      "evidence_text": "Developed canonical URL, redirect, and XML sitemap strategies that improved search visibility while preventing duplicate content, redirect conflicts, and circular routing issues.",
+      "field_capped_score": 0.0,
+      "weighted_score": 0.0,
+      "direct_match_count": 0,
+      "matched_signal_count": 0,
+      "max_relevance": 0,
+      "primary_supporting_signals": [],
+      "top_signal_matches": [],
+      "cautions": [],
+      "selection_reason": "Excluded for this target because it has weak or no meaningful alignment with the market-derived target signals."
+    },
+    {
+      "evidence_id": "exp_01_09_01_03",
+      "rank": 43,
       "selection_tier": "exclude",
       "source_label": "Raytheon | Senior Principal Systems Engineer / Program Manager",
       "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
+      "organization": "Raytheon",
+      "role": "Senior Principal Systems Engineer / Program Manager",
+      "dates": "Mar 2005 - Dec 2011",
+      "label": "",
+      "evidence_text": "Served as Principal Investigator for advanced signal-generation and radar resource-management algorithms, leading research, simulation, flight testing, and operational deployment across multiple tactical and surveillance aircraft programs.",
+      "field_capped_score": 0.0,
+      "weighted_score": 0.0,
+      "direct_match_count": 0,
+      "matched_signal_count": 0,
+      "max_relevance": 0,
+      "primary_supporting_signals": [],
+      "top_signal_matches": [],
+      "cautions": [
+        "Older evidence; use as career-depth proof rather than the lead current AI story."
+      ],
+      "selection_reason": "Excluded for this target because it has weak or no meaningful alignment with the market-derived target signals."
+    },
+    {
+      "evidence_id": "exp_01_09_01_04",
+      "rank": 44,
+      "selection_tier": "exclude",
+      "source_label": "Raytheon | Senior Principal Systems Engineer / Program Manager",
+      "source_type": "experience_bullet",
+      "source_context": "",
+      "role_context": "",
+      "summary_context": "",
       "organization": "Raytheon",
       "role": "Senior Principal Systems Engineer / Program Manager",
       "dates": "Mar 2005 - Dec 2011",
