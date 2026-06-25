@@ -12,6 +12,7 @@ Schema direction:
 
 """
 from __future__ import annotations
+from copy import deepcopy
 
 import json
 import shutil
@@ -35,6 +36,45 @@ ALIGN_MAP = {
 }
 
 # Helpers
+def deep_merge_dict(base: dict[str, Any], override: dict[str, Any]) -> dict[str, Any]:
+    """
+    Recursively merge override into base without modifying either input.
+    """
+    result = deepcopy(base)
+
+    for key, value in (override or {}).items():
+        if isinstance(value, dict) and isinstance(result.get(key), dict):
+            result[key] = deep_merge_dict(result[key], value)
+        else:
+            result[key] = deepcopy(value)
+
+    return result
+
+
+def layout_for_section(layout: dict[str, Any], section: dict[str, Any]) -> dict[str, Any]:
+    """
+    Apply optional layout overrides for a specific section.
+
+    Overrides may be keyed by section_id first, then heading as fallback.
+    """
+    overrides = layout.get("section_overrides", {}) or {}
+
+    section_id = section.get("section_id")
+    heading = section.get("heading")
+
+    section_override = None
+
+    if section_id and section_id in overrides:
+        section_override = overrides[section_id]
+    elif heading and heading in overrides:
+        section_override = overrides[heading]
+
+    if not section_override:
+        return layout
+
+    return deep_merge_dict(layout, section_override)
+
+
 def add_keep_together_cell(doc: Document):
     """Add a one-cell table row that LibreOffice should keep together."""
     table = doc.add_table(rows=1, cols=1)
@@ -252,7 +292,8 @@ def add_labeled_inline_paragraph(
     apply_paragraph_style(p, item_cfg or label_cfg)
 
     if label_text:
-        r = p.add_run(label_text + ": ")
+        label_content_separator = str(inline_cfg.get("label_content_separator", ": "))
+        r = p.add_run(label_text + label_content_separator)
         apply_run_style(r, label_cfg)
 
     if values:
@@ -349,24 +390,27 @@ def render_items(doc: Document, items: list[dict[str, Any]], layout: dict[str, A
         if formatter_name:
             text, style_name = format_object(item, formatter_name, layout)
 
-        if text and child_type == "bullet" and isinstance(child_content, list) and child_content:
-            bullet_cfg = type_cfg(layout, "bullet")
-            bullet_style_name = bullet_cfg.get("content_style")
+        if text and child_type == "bullet" and isinstance(child_content, list):
+            non_empty_bullets = [item for item in child_content if item]
 
-            add_heading_with_first_bullet(
-                doc=doc,
-                heading_text=text,
-                first_bullet=str(child_content[0]),
-                layout=layout,
-                heading_style_name=style_name,
-                bullet_style_name=bullet_style_name,
-            )
+            if non_empty_bullets:
+                bullet_cfg = type_cfg(layout, "bullet")
+                bullet_style_name = bullet_cfg.get("content_style")
 
-            remaining_bullets = child_content[1:]
-            if remaining_bullets:
-                render_bullet(doc, remaining_bullets, layout, bullet_style_name)
+                add_heading_with_first_bullet(
+                    doc=doc,
+                    heading_text=text,
+                    first_bullet=str(non_empty_bullets[0]),
+                    layout=layout,
+                    heading_style_name=style_name,
+                    bullet_style_name=bullet_style_name,
+                )
 
-            continue
+                remaining_bullets = non_empty_bullets[1:]
+                if remaining_bullets:
+                    render_bullet(doc, remaining_bullets, layout, bullet_style_name)
+
+                continue
 
         # Common compact pattern: subsection label plus an inline list on the same line.
         # This is self-contained, so continue is correct here.
@@ -425,8 +469,9 @@ def build_document(resume: dict[str, Any], layout: dict[str, Any]) -> Document:
     render_header(doc, resume, layout)
 
     for section in resume.get("sections", []):
-        render_section_heading(doc, section, layout)
-        render_block(doc, section.get("type"), section.get("content", []), layout)
+        section_layout = layout_for_section(layout, section)
+        render_section_heading(doc, section, section_layout)
+        render_block(doc, section.get("type"), section.get("content", []), section_layout)
 
     return doc
 

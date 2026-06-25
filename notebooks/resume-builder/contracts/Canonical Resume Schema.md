@@ -197,11 +197,14 @@ Content contains structured experience entries.
 
 ```json
 {
-  "role": "Principal Consultant",
-  "organization": "Daly Engineers LLC",
-  "dates": "Jan 2026 - Present",
-  "type": "subsections",
-  "content": [...]
+  "role": "Head of Data Science",
+  "organization": "Facteus",
+  "dates": "Oct 2017 - Nov 2020",
+  "role_context": "Led data science and data-product initiatives on Facteus' 30B+ transaction dataset, the company’s core source for market-intelligence products and revenue-generating analytics.",
+  "type": "bullet",
+  "content": [
+    "Developed merchant, brand, industry, and storefront resolution methodologies..."
+  ]
 }
 ```
 
@@ -212,6 +215,7 @@ Fields:
 | role         | Yes      | Position title     |
 | organization | Yes      | Employer           |
 | dates        | No       | Date range         |
+| role_context | No       | Optional explanation of role scope, business context, scale, operating environment, or why the work mattered. Extracted from CONTEXT: lines when present.|
 | type         | No       | Content type       |
 | content      | No       | Supporting content |
 

@@ -2,7 +2,6 @@
   "schema_version": "1.0",
   "header": {
     "name": "Douglas Gordon Daly",
-    "title": "Principal AI Engineer / Technical Leader",
     "location": "Portland, OR",
     "email": "douglasgdaly@gmail.com",
     "phone": "(650) 586-9720",
@@ -97,15 +96,18 @@
           "role": "Principal Consultant",
           "organization": "Daly Engineers LLC",
           "dates": "Jan 2026 - Present",
-          "content": [
+          "type": "bullet",
+          "content": [],
+          "subsections": [
             {
               "label": "Consolidated Edison (via ABC Consulting)",
               "type": "bullet",
               "content": [
-                "Led analytical readiness assessment for Oracle/EBS and Maximo data migrated to BigQuery, establishing the foundation for cross-domain analytics across construction operations and financial systems.",
+                "Built a governed analytics assistant using Gemini, BigQuery, and tool-calling architectures that applied analyst rules, operational controls, and auditable execution patterns for AI-enabled construction and financial analytics.",
+                "Led analytical readiness assessment for Oracle/EBS and Maximo data migrated to BigQuery, establishing cross-domain analytics across construction operations and financial systems.",
                 "Developed automated profiling, type inference, duplicate detection, candidate key analysis, and cross-system join validation frameworks across 100+ source tables and millions of operational and financial records.",
-                "Developed a phased analytical maturity roadmap adopted as the foundation for anomaly detection, construction analytics, and AI-enabled decision support initiatives.",
-                "Built a governed analytics assistant using Gemini, BigQuery, and tool-calling architectures that applied analyst rules and operational controls while maintaining predictable and auditable execution."
+                "Designed peer-group and time-series anomaly detection readiness frameworks for construction actuals, including data suitability checks, gap analysis, nonzero filtering, and category-level cost behavior analysis.",
+                "Developed a phased analytical maturity roadmap for anomaly detection, construction analytics, and AI-enabled decision support initiatives."
               ]
             },
             {
@@ -122,29 +124,21 @@
         },
         {
           "role": "AI Instructor",
-          "organization": "SimpliLearn",
-          "dates": "October 2025 - Present",
+          "organization": "SimpliLearn & Interview Kickstart",
+          "dates": "March 2025 - Present",
+          "type": "bullet",
           "content": [
-            "Delivered professional AI training across multi-month cohorts for software engineers, data scientists, and technical professionals through university- and enterprise-sponsored continuing education programs.",
-            "Taught transformer architectures, LLMs, RAG, agentic AI, multimodal AI, MCP, diffusion models, and enterprise AI governance.",
+            "Delivered AI and machine learning training across multi-month cohorts for software engineers, data scientists, and technical professionals through university- and enterprise-sponsored continuing education programs.",
+            "Taught transformer architectures, LLMs, RAG, agentic AI, multimodal AI, MCP, diffusion models, enterprise AI governance, and practical AI development workflows.",
             "Developed hands-on demonstrations, Jupyter notebooks, and end-to-end applications covering modern AI workflows, evaluation techniques, and deployment considerations.",
             "Mentored students on AI architecture, governance, implementation tradeoffs, and enterprise adoption strategies."
-          ]
-        },
-        {
-          "role": "AI Instructor",
-          "organization": "Interview Kickstart",
-          "dates": "March 2025 - Present",
-          "content": [
-            "Delivered AI and machine learning instruction for software engineering professionals pursuing advanced technical roles.",
-            "Taught practical applications of LLMs, RAG, agentic AI, and modern AI development workflows.",
-            "Mentored students on AI architecture, implementation patterns, and technology selection tradeoffs."
           ]
         },
         {
           "role": "Data Scientist",
           "organization": "Intuit (via The Cydio Group)",
           "dates": "Apr 2025 - Jul 2025",
+          "type": "bullet",
           "content": [
             "Delivered analytics supporting business and operational decision-making for QuickBooks Capital.",
             "Investigated attribution anomalies across customer acquisition funnels, marketing campaigns, and conversion pathways to improve measurement accuracy and identify emerging business trends.",
@@ -156,6 +150,7 @@
           "role": "Data Scientist",
           "organization": "Meta",
           "dates": "October 2021 - January 2025",
+          "type": "bullet",
           "content": [
             "Defined reliability KPIs and measurement frameworks for Meta FinTech, establishing leading indicators used to guide reliability planning, prioritization, and performance management.",
             "Developed forecasting and performance-management frameworks across business pillars and sub-pillars, translating engineering initiatives into projected reliability outcomes used for planning, goal setting, and leadership decision-making.",
@@ -168,6 +163,7 @@
           "role": "Data Scientist",
           "organization": "Samsung Electronics (via Harvey Nash)",
           "dates": "Dec 2020 - Oct 2021",
+          "type": "bullet",
           "content": [
             "Developed and deployed gradient-boosting propensity models used to target digital marketing campaigns, increasing campaign conversions by 146% and campaign-attributed revenue by 229%.",
             "Built customer sentiment analysis pipelines using NLTK and survey data to identify product and customer experience insights.",
@@ -179,6 +175,8 @@
           "role": "Head of Data Science",
           "organization": "Facteus",
           "dates": "Oct 2017 - Nov 2020",
+          "role_context": "Led data science and data-product initiatives on Facteus' 30B+ transaction dataset, the company’s core source for market-intelligence products and revenue-generating analytics.",
+          "type": "bullet",
           "content": [
             "Led data science initiatives on a 30B+ transaction dataset, creating analytical products and market-intelligence capabilities through large-scale feature engineering, merchant intelligence, and consumer-spending analytics.",
             "Developed merchant, brand, industry, and storefront resolution methodologies that transformed cryptic payment-card transactions into business-identifiable entities, enabling accurate market intelligence across more than 1,700 businesses with greater than 99% transaction coverage.",
@@ -191,6 +189,7 @@
           "role": "Expert SEO Solutions Architect",
           "organization": "Nike (via Intersoft Inc.)",
           "dates": "Nov 2016 - Sep 2017",
+          "type": "bullet",
           "content": [
             "Designed a scalable SEO and information-architecture framework for Nike's product discovery experience, balancing customer navigation paths with search-engine indexation requirements across a rapidly expanding product catalog.",
             "Developed canonical URL, redirect, and XML sitemap strategies that improved search visibility while preventing duplicate content, redirect conflicts, and circular routing issues.",
@@ -201,6 +200,7 @@
           "role": "Senior Manager, Operations Analysis",
           "organization": "Capital One",
           "dates": "Jan 2012 - Dec 2016",
+          "type": "bullet",
           "content": [
             "Developed predictive capacity-management models for customer-facing banking platforms, forecasting peak demand scenarios using customer-demand, temporal, and business-process drivers to support infrastructure planning and risk management.",
             "Identified critical gaps in enterprise monitoring operations after discovering that major incidents were frequently detected by customer call channels rather than operational monitoring systems.",
@@ -214,6 +214,7 @@
           "role": "Senior Principal Systems Engineer / Program Manager",
           "organization": "Raytheon",
           "dates": "Mar 2005 - Dec 2011",
+          "type": "bullet",
           "content": [
             "Led systems engineering organizations of 40-50 engineers specializing in modeling, simulation, analysis, and advanced aerospace systems, providing technical leadership, career development, and proposal support for programs valued up to $50M.",
             "Turned around an over-budget classified fixed-price technology program at approximately one-third completion by establishing execution plans, aligning engineering teams, and proactively managing technical and program risks; delivered the program under budget and nearly doubled the original profit target on a historically challenging delivery effort.",
@@ -226,10 +227,12 @@
     {
       "section_id": "PROJECTS",
       "heading": "Selected Projects",
-      "type": "subsections",
+      "type": "experience",
       "content": [
         {
-          "label": "GraphRAG Engine & LoRA Coverage Assistant | GitHub | 2025",
+          "role": "GraphRAG Engine & LoRA Coverage Assistant",
+          "organization": "GitHub",
+          "dates": "2025",
           "type": "bullet",
           "content": [
             "Built a GraphRAG system for multi-hop benefits reasoning with fully traceable retrieval paths across entities, clauses, and supporting evidence.",
@@ -237,7 +240,9 @@
           ]
         },
         {
-          "label": "Agent-to-Agent Protocol MVPs | GitHub | 2026",
+          "role": "Agent-to-Agent Protocol MVPs",
+          "organization": "GitHub",
+          "dates": "2026",
           "type": "bullet",
           "content": [
             "Agent Olympics: built a small evaluation runner that benchmarks a generalist agent vs discovered specialists across three task categories with explicit scoring criteria and summary reporting.",
@@ -245,11 +250,13 @@
           ]
         },
         {
-          "label": "Agentic Multimodal Orchestrator | GitHub | 2025",
+          "role": "AI-Assisted Resume Generation System",
+          "organization": "GitHub",
+          "dates": "2026",
           "type": "bullet",
           "content": [
-            "Orchestrated structured retrieval, layout planning, and diffusion prompting to generate data-driven posters/maps with repeatable, template-based workflows.",
-            "Implemented template constraints and parameterized prompts to ensure consistency across runs."
+            "Built an evidence-driven resume generation pipeline that converts a master resume into canonical JSON, extracts candidate evidence, maps evidence to market-derived role signals, and assembles targeted resume variants through structured LLM workflows.",
+            "Implemented versioned artifacts, human review checkpoints, traceable evidence IDs, and DOCX/PDF rendering controls to separate source evidence, content selection, positioning, and presentation layout."
           ]
         }
       ]
@@ -302,16 +309,6 @@
         "Lead Inventor, U.S. Patent #8635622: Method and System for Resource Management Using Fuzzy Logic Timeline Filling (2014)",
         "Capital One Business Technology Innovation Award (2014)",
         "Conference Chair & Speaker - Customer Analytics Innovation Summit (2016)"
-      ]
-    },
-    {
-      "section_id": "CERTIFICATIONS",
-      "heading": "Certifications",
-      "type": "bullet",
-      "content": [
-        "Google Associate Data Practitioner",
-        "Google Ads Search Certification (Expired)",
-        "Google Analytics GA4 Certification (Expired)"
       ]
     }
   ]
