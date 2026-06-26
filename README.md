@@ -1,35 +1,89 @@
-# GenAI Demos Portfolio
+# Generative AI Projects and Lessons
 
-This repository is a public portfolio of Generative AI demos, experiments, and instructional notebooks by Douglas Daly. It is intended for reviewers and collaborators who want to inspect practical examples of diffusion, CLIP, RAG, multi-agent orchestration, speech analytics, VAEs, GANs, and related workflows.
+This repository is a public portfolio of Generative AI projects, teaching examples, and exploratory notebooks by Douglas Daly.
+
+The work here reflects two related goals:
+
+1. **Build practical AI systems** that connect LLMs, retrieval, agents, structured outputs, evaluation, observability, and human review into useful workflows.
+2. **Teach modern AI concepts clearly** through small, reproducible lessons that explain how the patterns work, where they help, and where they break.
+
+My focus is practical AI architecture: systems that are understandable, traceable, testable, and useful beyond the first demo.
 
 ## Start here
 
-- Demo index: `docs/demo_index.md`
-- Featured demo quickstart: `docs/sotu_quickstart.md`
-- Featured demo notebook: `notebooks/sotu-speech-analytics/00_sotu_speech_analytics_overview.ipynb`
+* Project index: `docs/project_index.md`
+* Lesson index: `docs/lesson_index.md`
+* Featured project: `projects/resume_builder/`
+* Featured lesson: `lessons/a2a/`
 
-Some notebooks require API keys, large model downloads, GPU acceleration, or external datasets. Check the relevant notebook or quickstart before running a full workflow.
+Some examples require API keys, external datasets, larger model downloads, GPU acceleration, or additional setup. Check the relevant project or lesson README before running a full workflow.
 
-## Featured demo: SOTU Speech Analytics
+## Repository structure
 
-The SOTU Speech Analytics demo analyzes State of the Union speech text and separates the public review path from heavier model-backed steps.
+```text
+projects/   End-to-end AI projects and portfolio systems
+lessons/    Concept-focused teaching examples and walkthroughs
+notebooks/  Jupyter notebooks for exploration, instruction, and prototypes
+src/        Reusable Python package code shared across projects and lessons
+docs/       Project indexes, lesson indexes, notes, and quickstarts
+assets/     Small supporting assets used by examples
+```
 
-- Overview notebook: `notebooks/sotu-speech-analytics/00_sotu_speech_analytics_overview.ipynb`
-- Reusable source code: `src/demos/sotu-speech-analytics`
-- Supporting assets and generated outputs: `assets/sotu-speech-analytics`
-- Reviewer quickstart: `docs/sotu_quickstart.md`
+## Projects
 
-For a quick review, start with the overview notebook and quickstart. The reusable source tree contains preprocessing, topic modeling, rhetoric analysis, and reporting scripts; some of those stages may require additional dependencies, API access, or more compute than a CPU-only environment.
+The `projects/` folder contains larger AI systems organized around practical workflows or product-style artifacts. These are meant to show architecture judgment, implementation tradeoffs, and end-to-end design.
 
-## Demo areas
+Examples include:
 
-- Tool and agent sharing: A2A, MCP, FastAPI
-- Multi-agent workflows: LangGraph and LangChain examples
-- Retrieval-augmented generation: text and multimodal RAG examples
-- Multimodal orchestration: text, image, and research workflows
-- Image generation and editing: diffusion, Stability AI API, GANs
-- Representation learning: CLIP, VAEs, score-based models
-- Speech analytics: SOTU text analysis with reusable source and generated artifacts
+* **AI-Assisted Resume Generation System**
+  Evidence-driven targeted resume generation using canonical JSON, market-derived role signals, structured LLM workflows, human review checkpoints, versioned artifacts, and DOCX/PDF rendering controls.
+
+* **GraphRAG and Coverage Assistant**
+  Traceable retrieval and structured decision support over connected evidence, entities, clauses, and reasoning paths.
+
+* **Archival Restore**
+  AI-assisted restoration and organization workflows for messy real-world media and metadata tasks.
+
+A folder belongs in `projects/` when the primary goal is to build or simulate a useful AI-enabled workflow.
+
+## Lessons
+
+The `lessons/` folder contains smaller, concept-first examples designed for teaching and experimentation. These examples are intentionally narrower than the projects and are meant to be easy to run, inspect, and adapt.
+
+Lesson topics include:
+
+* Agent-to-agent coordination
+* Model Context Protocol concepts
+* Tool calling and structured outputs
+* Retrieval-augmented generation
+* Multi-agent orchestration
+* Multimodal AI workflows
+* Evaluation and regression detection
+* Diffusion, CLIP, VAEs, GANs, and representation learning
+
+A folder belongs in `lessons/` when the primary goal is to explain a concept, framework, protocol, or implementation pattern.
+
+## Featured project: AI-Assisted Resume Generation System
+
+The resume builder is an evidence-driven pipeline for creating targeted resume variants from a structured source resume.
+
+It separates:
+
+* Source evidence
+* Canonical resume data
+* Market-derived role signals
+* Evidence-to-signal mapping
+* Content selection
+* Human review
+* DOCX/PDF rendering
+
+The goal is not to automate away judgment. The goal is to make the resume generation process more traceable, reviewable, and repeatable.
+
+## Featured lesson: Agent-to-Agent Coordination
+
+The A2A lessons introduce agent-to-agent coordination patterns through small, inspectable examples.
+
+The goal is to show how specialized agents can expose capabilities, how a coordinating agent can route work, and how the system can log decisions and outputs for review.
 
 ## Local setup
 
@@ -48,14 +102,17 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Open the notebooks in Jupyter or VS Code. Use `docs/demo_index.md` to choose a starting point.
+Open the notebooks in Jupyter or VS Code. Use the project and lesson indexes to choose a starting point.
 
 ## Repository notes
 
-- Sample outputs and generated artifacts are included where useful for review.
-- Do not commit large model checkpoints, private data, secrets, or licensed datasets.
-- This repository is curated as a public portfolio; open an issue or pull request for proposed additions.
+* Keep examples reproducible where practical.
+* Include sample outputs when they help reviewers understand the workflow.
+* Do not commit large model checkpoints, private data, secrets, or licensed datasets.
+* Use `projects/` for end-to-end systems and `lessons/` for concept-focused teaching examples.
+* This repository is curated as a public portfolio and teaching resource.
 
 ## License
 
 MIT. See the `LICENSE` file.
+
