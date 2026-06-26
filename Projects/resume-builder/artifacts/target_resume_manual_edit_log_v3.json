@@ -1,0 +1,26 @@
+{
+  "revision_type": "manual_wording_review",
+  "review_text_path": "/Users/douglasdaly/GitHub/Generative-AI/notebooks/resume-builder/artifacts/target_resume_content_v2_manual_review.txt",
+  "editable_block_count": 45,
+  "changed_count": 1,
+  "unchanged_count": 44,
+  "changes": [
+    {
+      "block_id": "T0012",
+      "path_json": [
+        "sections",
+        2,
+        "content",
+        0,
+        "content",
+        1,
+        "content",
+        1
+      ],
+      "type": "experience_bullet",
+      "source": "Principal Consultant | Daly Engineers LLC | Jan 2026 - Present | NBCUniversal (via Apex Systems)",
+      "before": "Evaluated and integrated emerging graph analytics and graph machine learning technologies—including Neptune, GraphStorm, Bedrock, and LangGraph—for advanced dependency analysis and operational intelligence use cases.",
+      "after": "Evaluated and demonstrated emerging graph analytics and graph machine learning technologies—including Neptune, GraphStorm, Bedrock, and LangGraph—for advanced dependency analysis and operational intelligence use cases."
+    }
+  ]
+}

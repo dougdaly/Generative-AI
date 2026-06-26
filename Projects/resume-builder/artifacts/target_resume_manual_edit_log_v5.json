@@ -1,0 +1,55 @@
+{
+  "revision_type": "manual_wording_review",
+  "review_text_path": "/Users/douglasdaly/GitHub/Generative-AI/notebooks/resume-builder/artifacts/target_resume_content_v4_manual_review.txt",
+  "editable_block_count": 43,
+  "changed_count": 3,
+  "unchanged_count": 40,
+  "changes": [
+    {
+      "block_id": "T0013",
+      "path_json": [
+        "sections",
+        2,
+        "content",
+        1,
+        "content",
+        0
+      ],
+      "type": "experience_bullet",
+      "source": "AI Instructor | SimpliLearn & Interview Kickstart | March 2025 - Present",
+      "before": "Mentored engineers and technical professionals on AI architecture, governance, implementation tradeoffs, and enterprise adoption strategies, fostering cross-functional enablement and technical leadership.",
+      "after": "Developed and delivered practical GenAI course materials, demos, and exercises on chatbots, RAG, agentic workflows, multimodal AI, diffusion models, evaluation, and enterprise AI governance when existing curriculum required deeper technical examples and clearer hands-on instruction."
+    },
+    {
+      "block_id": "T0014",
+      "path_json": [
+        "sections",
+        2,
+        "content",
+        1,
+        "content",
+        1
+      ],
+      "type": "experience_bullet",
+      "source": "AI Instructor | SimpliLearn & Interview Kickstart | March 2025 - Present",
+      "before": "Delivered advanced instruction on transformer architectures, LLMs, RAG, agentic and multimodal AI, diffusion models, and enterprise AI governance, enabling practical understanding of generative and agentic AI development workflows.",
+      "after": "Led multi-month AI and machine learning training programs for engineers and data scientists, mentoring learners on AI architecture, implementation tradeoffs, governance, and production-oriented GenAI development workflows."
+    },
+    {
+      "block_id": "T0015",
+      "path_json": [
+        "sections",
+        2,
+        "content",
+        1,
+        "content",
+        2
+      ],
+      "type": "experience_bullet",
+      "source": "AI Instructor | SimpliLearn & Interview Kickstart | March 2025 - Present",
+      "change_type": "blanked",
+      "before": "Led multi-month AI and machine learning training programs for software engineers and data scientists through university- and enterprise-sponsored continuing education initiatives, driving continuous learning and talent development.",
+      "after": ""
+    }
+  ]
+}

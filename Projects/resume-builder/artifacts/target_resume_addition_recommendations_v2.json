@@ -1,0 +1,283 @@
+{
+  "revision_request_summary": "The resume has room for additional content. Recommend the highest-value content additions for the Principal AI Architect / AI Platform Engineering Lead target, choosing between professional experience bullets and selected projects to maximize signal for the target role and underrepresented signals.",
+  "overall_recommendation": "Several strong, non-redundant professional experience bullets are available from the canonical resume and candidate evidence, especially for recent, highly relevant roles. These additions will further strengthen primary target signals such as AI/ML platform architecture, MLOps & observability, reusable frameworks, and business-driven AI solutions. Selected projects are already well represented and do not provide unique signals not already visible in professional experience. Therefore, the highest-value additions are additional professional experience bullets, especially for Daly Engineers LLC (ConEd, NBCU), Meta, and Facteus, as well as one for Nike. The following 8 additions are recommended, ranked by marginal value for the target role and signals.",
+  "ranked_additions": [
+    {
+      "priority": 1,
+      "action_type": "add_role_bullet",
+      "section_id": "EXPERIENCE",
+      "target": "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)",
+      "target_locator": {
+        "section_id": "EXPERIENCE",
+        "organization": "Daly Engineers LLC",
+        "role": "Principal Consultant",
+        "label": "Consolidated Edison (via ABC Consulting)"
+      },
+      "project_entry": null,
+      "source_evidence": [
+        {
+          "evidence_id": "exp_01_01_01_04",
+          "source_artifact": "candidate_evidence",
+          "source_location": "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)",
+          "evidence_statement": "Designed peer-group and time-series anomaly detection readiness frameworks for construction actuals, including data suitability checks, gap analysis, nonzero filtering, and category-level cost behavior analysis.",
+          "supported_scope": "Designed anomaly detection readiness frameworks for construction analytics, including data suitability and category-level analysis."
+        }
+      ],
+      "proposed_content": "Designed peer-group and time-series anomaly detection readiness frameworks for construction actuals, including data suitability checks, gap analysis, nonzero filtering, and category-level cost behavior analysis.",
+      "evidence_support": "direct",
+      "target_relevance": "primary",
+      "target_signals_strengthened": [
+        "AI/ML Platform Architecture",
+        "Business-Driven AI Solutions",
+        "Performance & Reliability Optimization"
+      ],
+      "why_this_adds_signal": "This bullet demonstrates advanced analytical architecture and readiness for operational AI/ML, directly supporting the target's emphasis on scalable, reliable analytical systems and business-driven AI solutions.",
+      "why_not_another_option": "This is a highly relevant, non-redundant addition for a recent, high-impact client and strengthens primary signals.",
+      "redundancy_risk": "low",
+      "estimated_space_cost": "low",
+      "confidence": "high"
+    },
+    {
+      "priority": 2,
+      "action_type": "add_role_bullet",
+      "section_id": "EXPERIENCE",
+      "target": "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)",
+      "target_locator": {
+        "section_id": "EXPERIENCE",
+        "organization": "Daly Engineers LLC",
+        "role": "Principal Consultant",
+        "label": "Consolidated Edison (via ABC Consulting)"
+      },
+      "project_entry": null,
+      "source_evidence": [
+        {
+          "evidence_id": "exp_01_01_01_02",
+          "source_artifact": "candidate_evidence",
+          "source_location": "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)",
+          "evidence_statement": "Led analytical readiness assessment for Oracle/EBS and Maximo data migrated to BigQuery, establishing cross-domain analytics across construction operations and financial systems.",
+          "supported_scope": "Led analytical readiness assessment for cross-domain analytics on migrated enterprise data."
+        }
+      ],
+      "proposed_content": "Led analytical readiness assessment for Oracle/EBS and Maximo data migrated to BigQuery, establishing cross-domain analytics across construction operations and financial systems.",
+      "evidence_support": "direct",
+      "target_relevance": "primary",
+      "target_signals_strengthened": [
+        "AI/ML Platform Architecture",
+        "Cloud-Native AI Pipelines",
+        "Data Profiling & Integration"
+      ],
+      "why_this_adds_signal": "Highlights cloud-native data integration and platform readiness, both critical for enterprise AI/ML platform architecture and operational intelligence.",
+      "why_not_another_option": "This is a distinct, non-redundant bullet for a highly relevant, recent engagement.",
+      "redundancy_risk": "low",
+      "estimated_space_cost": "low",
+      "confidence": "high"
+    },
+    {
+      "priority": 3,
+      "action_type": "add_role_bullet",
+      "section_id": "EXPERIENCE",
+      "target": "Daly Engineers LLC | Principal Consultant | NBCUniversal (via Apex Systems)",
+      "target_locator": {
+        "section_id": "EXPERIENCE",
+        "organization": "Daly Engineers LLC",
+        "role": "Principal Consultant",
+        "label": "NBCUniversal (via Apex Systems)"
+      },
+      "project_entry": null,
+      "source_evidence": [
+        {
+          "evidence_id": "exp_01_01_02_02",
+          "source_artifact": "candidate_evidence",
+          "source_location": "Daly Engineers LLC | Principal Consultant | NBCUniversal (via Apex Systems)",
+          "evidence_statement": "Developed graph-ready service dependency datasets from API telemetry and operational metrics to support digital twin initiatives.",
+          "supported_scope": "Developed graph-ready datasets from API telemetry and metrics for digital twin initiatives."
+        }
+      ],
+      "proposed_content": "Developed graph-ready service dependency datasets from API telemetry and operational metrics to support digital twin initiatives.",
+      "evidence_support": "direct",
+      "target_relevance": "primary",
+      "target_signals_strengthened": [
+        "Cloud-Native AI Pipelines",
+        "AI/ML Platform Architecture",
+        "Reusable Frameworks"
+      ],
+      "why_this_adds_signal": "Demonstrates advanced data engineering and platform enablement for operational intelligence and AI/ML use cases in a cloud-native context.",
+      "why_not_another_option": "This is a unique, non-redundant bullet for a recent, relevant client.",
+      "redundancy_risk": "low",
+      "estimated_space_cost": "low",
+      "confidence": "high"
+    },
+    {
+      "priority": 4,
+      "action_type": "add_role_bullet",
+      "section_id": "EXPERIENCE",
+      "target": "Daly Engineers LLC | Principal Consultant | NBCUniversal (via Apex Systems)",
+      "target_locator": {
+        "section_id": "EXPERIENCE",
+        "organization": "Daly Engineers LLC",
+        "role": "Principal Consultant",
+        "label": "NBCUniversal (via Apex Systems)"
+      },
+      "project_entry": null,
+      "source_evidence": [
+        {
+          "evidence_id": "exp_01_01_02_04",
+          "source_artifact": "candidate_evidence",
+          "source_location": "Daly Engineers LLC | Principal Consultant | NBCUniversal (via Apex Systems)",
+          "evidence_statement": "Authored architecture and analytical readiness assessments identifying data and operational gaps affecting long-term digital twin objectives.",
+          "supported_scope": "Authored architecture and readiness assessments for digital twin objectives."
+        }
+      ],
+      "proposed_content": "Authored architecture and analytical readiness assessments identifying data and operational gaps affecting long-term digital twin objectives.",
+      "evidence_support": "direct",
+      "target_relevance": "primary",
+      "target_signals_strengthened": [
+        "Strategic Roadmaps & Metrics",
+        "AI/ML Platform Architecture",
+        "Business-Driven AI Solutions"
+      ],
+      "why_this_adds_signal": "Shows strategic leadership and technical assessment for large-scale AI/ML and operational intelligence initiatives.",
+      "why_not_another_option": "Distinct from other NBCU bullets and strengthens strategic/roadmap signals.",
+      "redundancy_risk": "low",
+      "estimated_space_cost": "low",
+      "confidence": "high"
+    },
+    {
+      "priority": 5,
+      "action_type": "add_role_bullet",
+      "section_id": "EXPERIENCE",
+      "target": "Meta | Data Scientist",
+      "target_locator": {
+        "section_id": "EXPERIENCE",
+        "organization": "Meta",
+        "role": "Data Scientist",
+        "label": null
+      },
+      "project_entry": null,
+      "source_evidence": [
+        {
+          "evidence_id": "exp_01_04_01_03",
+          "source_artifact": "candidate_evidence",
+          "source_location": "Meta | Data Scientist",
+          "evidence_statement": "Built attribution frameworks linking incidents, alerts, defects, and operational metrics to engineering organizations and service ownership structures, enabling more accurate accountability and performance measurement.",
+          "supported_scope": "Built attribution frameworks for linking operational events to engineering orgs and ownership."
+        }
+      ],
+      "proposed_content": "Built attribution frameworks linking incidents, alerts, defects, and operational metrics to engineering organizations and service ownership structures, enabling more accurate accountability and performance measurement.",
+      "evidence_support": "direct",
+      "target_relevance": "primary",
+      "target_signals_strengthened": [
+        "MLOps & Observability",
+        "Business-Driven AI Solutions",
+        "AI Governance & Compliance"
+      ],
+      "why_this_adds_signal": "Strengthens observability, accountability, and business alignment signals for large-scale AI/ML platforms.",
+      "why_not_another_option": "Meta is a highly relevant, recent role; this bullet is not redundant with existing content.",
+      "redundancy_risk": "low",
+      "estimated_space_cost": "low",
+      "confidence": "high"
+    },
+    {
+      "priority": 6,
+      "action_type": "add_role_bullet",
+      "section_id": "EXPERIENCE",
+      "target": "Facteus | Head of Data Science",
+      "target_locator": {
+        "section_id": "EXPERIENCE",
+        "organization": "Facteus",
+        "role": "Head of Data Science",
+        "label": null
+      },
+      "project_entry": null,
+      "source_evidence": [
+        {
+          "evidence_id": "exp_01_06_01_02",
+          "source_artifact": "candidate_evidence",
+          "source_location": "Facteus | Head of Data Science",
+          "evidence_statement": "Developed merchant, brand, industry, and storefront resolution methodologies that transformed cryptic payment-card transactions into business-identifiable entities, enabling accurate market intelligence across more than 1,700 businesses with greater than 99% transaction coverage.",
+          "supported_scope": "Developed entity resolution methodologies for payment-card transactions, enabling accurate market intelligence."
+        }
+      ],
+      "proposed_content": "Developed merchant, brand, industry, and storefront resolution methodologies that transformed cryptic payment-card transactions into business-identifiable entities, enabling accurate market intelligence across more than 1,700 businesses with greater than 99% transaction coverage.",
+      "evidence_support": "direct",
+      "target_relevance": "secondary",
+      "target_signals_strengthened": [
+        "Data Profiling & Integration",
+        "Reusable Frameworks"
+      ],
+      "why_this_adds_signal": "Demonstrates advanced data integration and entity resolution at scale, supporting reusable frameworks and data profiling signals.",
+      "why_not_another_option": "Facteus is a mid-recent, high-impact role; this bullet is not redundant and adds a secondary but valuable signal.",
+      "redundancy_risk": "low",
+      "estimated_space_cost": "low",
+      "confidence": "high"
+    },
+    {
+      "priority": 7,
+      "action_type": "add_role_bullet",
+      "section_id": "EXPERIENCE",
+      "target": "Nike (via Intersoft Inc.) | Expert SEO Solutions Architect",
+      "target_locator": {
+        "section_id": "EXPERIENCE",
+        "organization": "Nike (via Intersoft Inc.)",
+        "role": "Expert SEO Solutions Architect",
+        "label": null
+      },
+      "project_entry": null,
+      "source_evidence": [
+        {
+          "evidence_id": "exp_01_07_01_02",
+          "source_artifact": "candidate_evidence",
+          "source_location": "Nike (via Intersoft Inc.) | Expert SEO Solutions Architect",
+          "evidence_statement": "Developed canonical URL, redirect, and XML sitemap strategies that improved search visibility while preventing duplicate content, redirect conflicts, and circular routing issues.",
+          "supported_scope": "Developed technical strategies for search visibility and content integrity."
+        }
+      ],
+      "proposed_content": "Developed canonical URL, redirect, and XML sitemap strategies that improved search visibility while preventing duplicate content, redirect conflicts, and circular routing issues.",
+      "evidence_support": "direct",
+      "target_relevance": "secondary",
+      "target_signals_strengthened": [
+        "Reusable Frameworks",
+        "Performance & Reliability Optimization"
+      ],
+      "why_this_adds_signal": "Demonstrates technical enablement and reliability optimization through reusable frameworks, albeit in a non-AI context.",
+      "why_not_another_option": "Nike is a less recent but still relevant role; this bullet is not redundant and adds a secondary signal.",
+      "redundancy_risk": "low",
+      "estimated_space_cost": "low",
+      "confidence": "high"
+    },
+    {
+      "priority": 8,
+      "action_type": "add_role_bullet",
+      "section_id": "EXPERIENCE",
+      "target": "Samsung Electronics (via Harvey Nash) | Data Scientist",
+      "target_locator": {
+        "section_id": "EXPERIENCE",
+        "organization": "Samsung Electronics (via Harvey Nash)",
+        "role": "Data Scientist",
+        "label": null
+      },
+      "project_entry": null,
+      "source_evidence": [
+        {
+          "evidence_id": "exp_01_05_01_02",
+          "source_artifact": "candidate_evidence",
+          "source_location": "Samsung Electronics (via Harvey Nash) | Data Scientist",
+          "evidence_statement": "Built customer sentiment analysis pipelines using NLTK and survey data to identify product and customer experience insights.",
+          "supported_scope": "Built sentiment analysis pipelines using NLTK and survey data."
+        }
+      ],
+      "proposed_content": "Built customer sentiment analysis pipelines using NLTK and survey data to identify product and customer experience insights.",
+      "evidence_support": "direct",
+      "target_relevance": "secondary",
+      "target_signals_strengthened": [
+        "Business-Driven AI Solutions",
+        "Continuous Innovation"
+      ],
+      "why_this_adds_signal": "Demonstrates practical application of NLP and analytics for business insight, supporting business-driven AI and innovation signals.",
+      "why_not_another_option": "Samsung is a recent, relevant role; this bullet is not redundant and adds a secondary but useful signal.",
+      "redundancy_risk": "low",
+      "estimated_space_cost": "low",
+      "confidence": "high"
+    }
+  ]
+}

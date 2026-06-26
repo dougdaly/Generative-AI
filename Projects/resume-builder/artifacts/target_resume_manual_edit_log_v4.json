@@ -1,0 +1,22 @@
+{
+  "revision_type": "manual_wording_review",
+  "review_text_path": "/Users/douglasdaly/GitHub/Generative-AI/notebooks/resume-builder/artifacts/target_resume_content_v3_manual_review.txt",
+  "editable_block_count": 43,
+  "changed_count": 1,
+  "unchanged_count": 42,
+  "changes": [
+    {
+      "block_id": "T0003",
+      "path_json": [
+        "sections",
+        1,
+        "content",
+        1
+      ],
+      "type": "bullet",
+      "source": "EXPERTISE",
+      "before": "GenAI & Tool-Calling Systems - LLM applications, structured outputs, tool orchestration, RAG/GraphRAG concepts, prompt engineering, evaluation, traceability",
+      "after": "GenAI & Tool-Calling Systems - LLM applications, structured outputs, tool orchestration, RAG/GraphRAG systems, prompt engineering, evaluation, traceability"
+    }
+  ]
+}

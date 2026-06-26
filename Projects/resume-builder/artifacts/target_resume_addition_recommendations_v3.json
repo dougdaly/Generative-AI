@@ -1,0 +1,290 @@
+{
+  "revision_request_summary": "The rendered resume has room for additional content. Recommend the highest-value content additions for the target Principal AI Architect / AI Platform Engineering Lead role, choosing between additional professional experience bullets and selected projects to maximize target signal coverage and resume strength.",
+  "overall_recommendation": "Several high-value, non-redundant professional experience bullets can be added to further strengthen primary target signals, especially around AI/ML platform architecture, governance, cloud-native AI, and business-driven AI solutions. A few optional additions from selected projects could also add unique signal, but professional experience evidence is generally stronger and more relevant for this target. The following ranked additions are recommended.",
+  "ranked_additions": [
+    {
+      "priority": 1,
+      "action_type": "add_role_bullet",
+      "section_id": "EXPERIENCE",
+      "target": "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)",
+      "target_locator": {
+        "section_id": "EXPERIENCE",
+        "organization": "Daly Engineers LLC",
+        "role": "Principal Consultant",
+        "label": "Consolidated Edison (via ABC Consulting)"
+      },
+      "project_entry": null,
+      "source_evidence": [
+        {
+          "evidence_id": "exp_01_01_01_05",
+          "source_artifact": "candidate_evidence",
+          "source_location": "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)",
+          "evidence_statement": "Developed a phased analytical maturity roadmap for anomaly detection, construction analytics, and AI-enabled decision support initiatives.",
+          "supported_scope": "Defined and communicated a technical roadmap for analytics and AI maturity at Consolidated Edison."
+        }
+      ],
+      "proposed_content": "Developed a phased analytical maturity roadmap for anomaly detection, construction analytics, and AI-enabled decision support, aligning technical vision with business objectives.",
+      "evidence_support": "direct",
+      "target_relevance": "primary",
+      "target_signals_strengthened": [
+        "Strategic Roadmaps & Metrics",
+        "Business-Driven AI Solutions",
+        "Cross-Functional Leadership"
+      ],
+      "why_this_adds_signal": "This bullet directly demonstrates strategic technical leadership, roadmap development, and business alignment—core expectations for a Principal AI Architect. It also strengthens the business-driven AI solutions signal, which is a primary target.",
+      "why_not_another_option": "This is a high-value, non-redundant addition for a highly relevant, recent client engagement. It adds a new dimension (strategy/roadmap) not already present in the Consolidated Edison bullets.",
+      "redundancy_risk": "low",
+      "estimated_space_cost": "low",
+      "confidence": "high"
+    },
+    {
+      "priority": 2,
+      "action_type": "add_role_bullet",
+      "section_id": "EXPERIENCE",
+      "target": "Meta | Data Scientist",
+      "target_locator": {
+        "section_id": "EXPERIENCE",
+        "organization": "Meta",
+        "role": "Data Scientist",
+        "label": null
+      },
+      "project_entry": null,
+      "source_evidence": [
+        {
+          "evidence_id": "exp_01_04_01_05",
+          "source_artifact": "candidate_evidence",
+          "source_location": "Meta | Data Scientist",
+          "evidence_statement": "Delivered impact sizing, ROI, and risk exposure analyses supporting investment and prioritization decisions across platform reliability, privacy compliance, authentication, testing infrastructure, and data platform initiatives.",
+          "supported_scope": "Business impact and risk analysis for major platform and compliance initiatives at Meta."
+        }
+      ],
+      "proposed_content": "Delivered impact sizing, ROI, and risk exposure analyses to guide investment and prioritization decisions for platform reliability, privacy compliance, authentication, testing infrastructure, and data platform initiatives.",
+      "evidence_support": "direct",
+      "target_relevance": "primary",
+      "target_signals_strengthened": [
+        "Business Value Delivery",
+        "AI Governance & Compliance",
+        "Performance & Reliability Optimization"
+      ],
+      "why_this_adds_signal": "This bullet adds direct evidence of business value delivery, risk management, and compliance—key for a Principal AI Architect. It also demonstrates the ability to translate technical work into business impact.",
+      "why_not_another_option": "This is a unique, non-redundant addition for a high-profile, recent role. It covers business and compliance signals not fully represented in the current Meta bullets.",
+      "redundancy_risk": "low",
+      "estimated_space_cost": "low",
+      "confidence": "high"
+    },
+    {
+      "priority": 3,
+      "action_type": "add_role_bullet",
+      "section_id": "EXPERIENCE",
+      "target": "Daly Engineers LLC | Principal Consultant | NBCUniversal (via Apex Systems)",
+      "target_locator": {
+        "section_id": "EXPERIENCE",
+        "organization": "Daly Engineers LLC",
+        "role": "Principal Consultant",
+        "label": "NBCUniversal (via Apex Systems)"
+      },
+      "project_entry": null,
+      "source_evidence": [
+        {
+          "evidence_id": "exp_01_01_02_03",
+          "source_artifact": "candidate_evidence",
+          "source_location": "Daly Engineers LLC | Principal Consultant | NBCUniversal (via Apex Systems)",
+          "evidence_statement": "Evaluated graph analytics and graph machine learning approaches using Neptune, GraphStorm, Bedrock, and LangGraph for dependency analysis and operational intelligence.",
+          "supported_scope": "Evaluation and demonstration of emerging graph analytics and graph ML technologies for NBCUniversal."
+        }
+      ],
+      "proposed_content": "Evaluated and demonstrated emerging graph analytics and graph machine learning technologies—including Neptune, GraphStorm, Bedrock, and LangGraph—to support dependency analysis and operational intelligence initiatives.",
+      "evidence_support": "direct",
+      "target_relevance": "primary",
+      "target_signals_strengthened": [
+        "Continuous Innovation",
+        "AI/ML Platform Architecture",
+        "Cloud-Native AI Pipelines"
+      ],
+      "why_this_adds_signal": "This bullet highlights continuous innovation and the ability to rapidly evaluate and integrate emerging AI/ML technologies—critical for a platform architect/engineering lead.",
+      "why_not_another_option": "This is a non-redundant addition for a recent, highly relevant client engagement, and it strengthens the innovation and architecture signals.",
+      "redundancy_risk": "low",
+      "estimated_space_cost": "low",
+      "confidence": "high"
+    },
+    {
+      "priority": 4,
+      "action_type": "add_role_bullet",
+      "section_id": "EXPERIENCE",
+      "target": "Facteus | Head of Data Science",
+      "target_locator": {
+        "section_id": "EXPERIENCE",
+        "organization": "Facteus",
+        "role": "Head of Data Science",
+        "label": null
+      },
+      "project_entry": null,
+      "source_evidence": [
+        {
+          "evidence_id": "exp_01_06_01_03",
+          "source_artifact": "candidate_evidence",
+          "source_location": "Facteus | Head of Data Science",
+          "evidence_statement": "Evaluated prospective data partnerships by assessing signal quality, coverage, and business value, supporting strategic investment and acquisition decisions.",
+          "supported_scope": "Evaluation of data partnerships and support for strategic investment/acquisition at Facteus."
+        }
+      ],
+      "proposed_content": "Evaluated prospective data partnerships by assessing signal quality, coverage, and business value, supporting strategic investment and acquisition decisions.",
+      "evidence_support": "direct",
+      "target_relevance": "secondary",
+      "target_signals_strengthened": [
+        "Business Value Delivery",
+        "Cross-Functional Leadership"
+      ],
+      "why_this_adds_signal": "This bullet demonstrates business-driven decision-making and cross-functional influence, supporting the business value and leadership signals for the target role.",
+      "why_not_another_option": "This addition improves balance by strengthening business/strategy signals in a multi-year, leadership role.",
+      "redundancy_risk": "low",
+      "estimated_space_cost": "low",
+      "confidence": "high"
+    },
+    {
+      "priority": 5,
+      "action_type": "add_role_bullet",
+      "section_id": "EXPERIENCE",
+      "target": "Capital One | Senior Manager, Operations Analysis",
+      "target_locator": {
+        "section_id": "EXPERIENCE",
+        "organization": "Capital One",
+        "role": "Senior Manager, Operations Analysis",
+        "label": null
+      },
+      "project_entry": null,
+      "source_evidence": [
+        {
+          "evidence_id": "exp_01_08_01_01",
+          "source_artifact": "candidate_evidence",
+          "source_location": "Capital One | Senior Manager, Operations Analysis",
+          "evidence_statement": "Developed predictive capacity-management models for customer-facing banking platforms, forecasting peak demand scenarios using customer-demand, temporal, and business-process drivers to support infrastructure planning and risk management.",
+          "supported_scope": "Predictive modeling for capacity management and risk mitigation at Capital One."
+        }
+      ],
+      "proposed_content": "Developed predictive capacity-management models for customer-facing banking platforms, enabling infrastructure planning and risk management by forecasting peak demand scenarios using customer, temporal, and business-process drivers.",
+      "evidence_support": "direct",
+      "target_relevance": "secondary",
+      "target_signals_strengthened": [
+        "Performance & Reliability Optimization",
+        "Business Value Delivery"
+      ],
+      "why_this_adds_signal": "This bullet adds concrete evidence of performance and reliability optimization, as well as business value delivery, in a senior technical leadership context.",
+      "why_not_another_option": "This is a non-redundant addition for a multi-year, high-impact role, and it strengthens secondary but important target signals.",
+      "redundancy_risk": "low",
+      "estimated_space_cost": "low",
+      "confidence": "high"
+    },
+    {
+      "priority": 6,
+      "action_type": "add_role_bullet",
+      "section_id": "EXPERIENCE",
+      "target": "Samsung Electronics (via Harvey Nash) | Data Scientist",
+      "target_locator": {
+        "section_id": "EXPERIENCE",
+        "organization": "Samsung Electronics (via Harvey Nash)",
+        "role": "Data Scientist",
+        "label": null
+      },
+      "project_entry": null,
+      "source_evidence": [
+        {
+          "evidence_id": "exp_01_05_01_03",
+          "source_artifact": "candidate_evidence",
+          "source_location": "Samsung Electronics (via Harvey Nash) | Data Scientist",
+          "evidence_statement": "Automated audience segmentation and campaign targeting workflows, improving efficiency and scalability across digital marketing initiatives.",
+          "supported_scope": "Automation of segmentation and targeting workflows for digital marketing at Samsung."
+        }
+      ],
+      "proposed_content": "Automated audience segmentation and campaign targeting workflows, enhancing efficiency and scalability across digital marketing initiatives.",
+      "evidence_support": "direct",
+      "target_relevance": "secondary",
+      "target_signals_strengthened": [
+        "Reusable Frameworks",
+        "Business Value Delivery"
+      ],
+      "why_this_adds_signal": "This bullet demonstrates automation and reusable workflow development, supporting the reusable frameworks and business value signals.",
+      "why_not_another_option": "This is a non-redundant addition for a recent, relevant data science role, and it adds a new dimension (automation) not already present.",
+      "redundancy_risk": "low",
+      "estimated_space_cost": "low",
+      "confidence": "high"
+    },
+    {
+      "priority": 7,
+      "action_type": "add_role_bullet",
+      "section_id": "EXPERIENCE",
+      "target": "Meta | Data Scientist",
+      "target_locator": {
+        "section_id": "EXPERIENCE",
+        "organization": "Meta",
+        "role": "Data Scientist",
+        "label": null
+      },
+      "project_entry": null,
+      "source_evidence": [
+        {
+          "evidence_id": "exp_01_04_01_01",
+          "source_artifact": "candidate_evidence",
+          "source_location": "Meta | Data Scientist",
+          "evidence_statement": "Defined reliability KPIs and measurement frameworks for Meta FinTech, establishing leading indicators used to guide reliability planning, prioritization, and performance management.",
+          "supported_scope": "Definition of reliability KPIs and measurement frameworks for Meta FinTech."
+        }
+      ],
+      "proposed_content": "Defined reliability KPIs and measurement frameworks for Meta FinTech, establishing leading indicators used to guide reliability planning, prioritization, and performance management.",
+      "evidence_support": "direct",
+      "target_relevance": "secondary",
+      "target_signals_strengthened": [
+        "Performance & Reliability Optimization",
+        "Strategic Roadmaps & Metrics"
+      ],
+      "why_this_adds_signal": "This bullet adds evidence of metrics-driven leadership and reliability optimization, supporting secondary but relevant signals for the target role.",
+      "why_not_another_option": "This is a non-redundant addition for a recent, high-impact role, and it strengthens the metrics/measurement aspect of platform leadership.",
+      "redundancy_risk": "low",
+      "estimated_space_cost": "low",
+      "confidence": "high"
+    },
+    {
+      "priority": 8,
+      "action_type": "add_role_bullet",
+      "section_id": "EXPERIENCE",
+      "target": "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)",
+      "target_locator": {
+        "section_id": "EXPERIENCE",
+        "organization": "Daly Engineers LLC",
+        "role": "Principal Consultant",
+        "label": "Consolidated Edison (via ABC Consulting)"
+      },
+      "project_entry": null,
+      "source_evidence": [
+        {
+          "evidence_id": "exp_01_01_01_02",
+          "source_artifact": "candidate_evidence",
+          "source_location": "Daly Engineers LLC | Principal Consultant | Consolidated Edison (via ABC Consulting)",
+          "evidence_statement": "Led analytical readiness assessment for Oracle/EBS and Maximo data migrated to BigQuery, establishing cross-domain analytics across construction operations and financial systems.",
+          "supported_scope": "Analytical readiness assessment and cross-domain analytics enablement for Consolidated Edison."
+        }
+      ],
+      "proposed_content": "Led analytical readiness assessment for Oracle/EBS and Maximo data migrated to BigQuery, establishing cross-domain analytics across construction operations and financial systems.",
+      "evidence_support": "direct",
+      "target_relevance": "secondary",
+      "target_signals_strengthened": [
+        "Data Profiling & Integration",
+        "Cloud-Native AI Pipelines"
+      ],
+      "why_this_adds_signal": "This bullet adds evidence of data integration and readiness assessment for cloud-native analytics, supporting secondary signals for the target role.",
+      "why_not_another_option": "This is a non-redundant addition for a highly relevant, recent client engagement, and it strengthens the data integration and cloud-native signals.",
+      "redundancy_risk": "low",
+      "estimated_space_cost": "low",
+      "confidence": "high"
+    }
+  ],
+  "_metadata": {
+    "recommendation_type": "addition_recommendations",
+    "base_content_version": "v3",
+    "supported_actions": [
+      "add_role_bullet",
+      "add_selected_project"
+    ],
+    "notes": "Generated for the specified base content version. Do not apply to a different base version without regenerating."
+  }
+}

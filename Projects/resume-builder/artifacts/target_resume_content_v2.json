@@ -1,0 +1,230 @@
+{
+  "schema_version": "1.0",
+  "header": {
+    "name": "Douglas Gordon Daly",
+    "location": "Portland, OR",
+    "email": "douglasgdaly@gmail.com",
+    "phone": "(650) 586-9720",
+    "linkedin": "linkedin.com/in/douglasdaly",
+    "github": "github.com/dougdaly"
+  },
+  "sections": [
+    {
+      "section_id": "SUMMARY",
+      "type": "paragraph",
+      "content": [
+        "Senior technical leader with deep expertise architecting enterprise AI/ML platforms, governed GenAI and tool-calling systems, and operational intelligence solutions. Built governed analytics assistants, monitoring frameworks, and reusable data/AI platforms with strong emphasis on controls, observability, and auditable execution. Experienced across cloud-native AI infrastructure, large-scale data platforms, executive alignment, and technical mentorship. Known for translating ambiguous business needs into scalable, reliable analytical systems that improve decision-making and operational performance."
+      ]
+    },
+    {
+      "section_id": "EXPERTISE",
+      "type": "bullet",
+      "content": [
+        "AI Platform Architecture - enterprise AI platforms, governed analytics assistants, operational intelligence systems, reusable AI/analytics frameworks",
+        "GenAI & Tool-Calling Systems - LLM applications, structured outputs, tool orchestration, RAG/GraphRAG concepts, prompt engineering, evaluation, traceability",
+        "Governance & Operational Controls - responsible AI adoption, guardrails, auditable execution, analyst-in-the-loop workflows, policy-aware system design",
+        "Observability & Reliability - monitoring frameworks, incident detection, alerting, operational health, SLIs/SLOs, SEV analysis, on-call-friendly design",
+        "Cloud & Data Platforms - Python, SQL, BigQuery, AWS SageMaker/S3/Terraform, GCP, Docker, data profiling, validation, cross-system integration",
+        "Technical Leadership - architecture direction, executive alignment, technical roadmaps, stakeholder translation, mentoring, developer enablement"
+      ]
+    },
+    {
+      "section_id": "EXPERIENCE",
+      "type": "experience",
+      "content": [
+        {
+          "role": "Principal Consultant",
+          "organization": "Daly Engineers LLC",
+          "dates": "Jan 2026 - Present",
+          "type": "subsections",
+          "content": [
+            {
+              "label": "Consolidated Edison (via ABC Consulting)",
+              "type": "bullet",
+              "content": [
+                "Architected and delivered a governed analytics assistant leveraging Gemini, BigQuery, and tool-calling architectures, embedding analyst rules, operational controls, and auditable execution for AI-enabled construction and financial analytics.",
+                "Developed automated frameworks for profiling, type inference, duplicate detection, candidate key analysis, and cross-system join validation across 100+ source tables and millions of operational and financial records, enhancing data quality and interoperability.",
+                "Defined a phased analytical maturity roadmap for anomaly detection, construction analytics, and AI-enabled decision support, guiding strategic adoption of advanced analytics capabilities."
+              ]
+            },
+            {
+              "label": "NBCUniversal (via Apex Systems)",
+              "type": "bullet",
+              "content": [
+                "Architected AWS-based AI and graph analytics pipelines leveraging SageMaker, Terraform, S3, and containerized workloads to enable scalable, cloud-native analytics solutions.",
+                "Evaluated and demonstrated emerging graph analytics and graph machine learning technologies—including Neptune, GraphStorm, Bedrock, and LangGraph—to support dependency analysis and operational intelligence initiatives."
+              ]
+            }
+          ]
+        },
+        {
+          "role": "AI Instructor",
+          "organization": "SimpliLearn & Interview Kickstart",
+          "dates": "March 2025 - Present",
+          "type": "bullet",
+          "content": [
+            "Mentored engineers and technical professionals on AI architecture, governance, implementation tradeoffs, and enterprise adoption strategies, fostering cross-functional enablement and technical leadership.",
+            "Delivered advanced instruction on transformer architectures, LLMs, RAG, agentic and multimodal AI, diffusion models, and enterprise AI governance, enabling practical understanding of generative and agentic AI development workflows.",
+            "Led multi-month AI and machine learning training programs for software engineers and data scientists through university- and enterprise-sponsored continuing education initiatives, driving continuous learning and talent development."
+          ]
+        },
+        {
+          "role": "Data Scientist",
+          "organization": "Intuit (via The Cydio Group)",
+          "dates": "Apr 2025 - Jul 2025",
+          "type": "bullet",
+          "content": [
+            "Consolidated fragmented reporting into unified Tableau dashboards and automated executive reporting workflows using Python and SQL, significantly reducing report preparation time and driving operational efficiency.",
+            "Collaborated with finance, marketing, and product stakeholders to translate attribution and performance data into actionable business recommendations, strengthening cross-functional alignment."
+          ]
+        },
+        {
+          "role": "Data Scientist",
+          "organization": "Meta",
+          "dates": "October 2021 - January 2025",
+          "type": "bullet",
+          "content": [
+            "Designed and developed the ReMon framework, empowering engineering teams to implement comprehensive monitoring and alerting systems without deep internal tooling expertise; adopted across Meta FinTech and enabled automatic detection of over 15 SEVs in 2024.",
+            "Built forecasting and performance-management frameworks that translated engineering initiatives into projected reliability outcomes, directly informing planning, goal setting, and leadership decision-making across business pillars.",
+            "Delivered impact sizing, ROI, and risk exposure analyses to guide investment and prioritization decisions for platform reliability, privacy compliance, authentication, testing infrastructure, and data platform initiatives."
+          ]
+        },
+        {
+          "role": "Data Scientist",
+          "organization": "Samsung Electronics (via Harvey Nash)",
+          "dates": "Dec 2020 - Oct 2021",
+          "type": "bullet",
+          "content": [
+            "Developed and deployed gradient-boosting propensity models to optimize digital marketing campaigns, driving a 146% increase in conversions and a 229% rise in campaign-attributed revenue while automating audience segmentation and targeting workflows for improved efficiency and scalability."
+          ]
+        },
+        {
+          "role": "Head of Data Science",
+          "organization": "Facteus",
+          "dates": "Oct 2017 - Nov 2020",
+          "type": "bullet",
+          "content": [
+            "Directed data science initiatives leveraging a 30B+ transaction dataset to develop analytical products and market intelligence capabilities through large-scale feature engineering, merchant intelligence, and consumer-spending analytics."
+          ]
+        },
+        {
+          "role": "Expert SEO Solutions Architect",
+          "organization": "Nike (via Intersoft Inc.)",
+          "dates": "Nov 2016 - Sep 2017",
+          "type": "bullet",
+          "content": [
+            "Architected a scalable SEO and information-architecture framework for Nike's product discovery, aligning customer navigation with search engine indexation to support a rapidly growing product catalog."
+          ]
+        },
+        {
+          "role": "Senior Manager, Operations Analysis",
+          "organization": "Capital One",
+          "dates": "Jan 2012 - Dec 2016",
+          "type": "bullet",
+          "content": [
+            "Conceived, architected, and led adoption of RITHM, a real-time operational intelligence platform aggregating monitoring signals by business capability and system ownership, reducing major incident detection times from hours to minutes.",
+            "Secured executive sponsorship and partnered with CTO-level leadership to define enterprise monitoring strategy, expanding Splunk-based prototypes into a scalable Kafka and Elastic Stack solution aligned with open-source modernization initiatives.",
+            "Developed predictive capacity-management models for customer-facing banking platforms, enabling infrastructure planning and risk management through demand forecasting based on business-process and temporal drivers."
+          ]
+        },
+        {
+          "role": "Senior Principal Systems Engineer / Program Manager",
+          "organization": "Raytheon",
+          "dates": "Mar 2005 - Dec 2011",
+          "type": "bullet",
+          "content": [
+            "Led systems engineering organizations of 40-50 engineers specializing in modeling, simulation, analysis, and advanced aerospace systems, providing technical leadership, career development, and proposal support for programs valued up to $50M.",
+            "Turned around an over-budget classified fixed-price technology program by establishing execution plans, aligning engineering teams, and proactively managing technical and program risks; delivered under budget and nearly doubled the original profit target on a historically challenging delivery effort."
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "PROJECTS",
+      "heading": "Selected Projects",
+      "type": "experience",
+      "content": [
+        {
+          "role": "GraphRAG Engine & LoRA Coverage Assistant",
+          "organization": "GitHub",
+          "dates": "2025",
+          "type": "bullet",
+          "content": [
+            "Built a GraphRAG system for multi-hop benefits reasoning with fully traceable retrieval paths across entities, clauses, and supporting evidence.",
+            "Fine-tuned a LoRA adapter on a 7B open-source LLM to enforce a strict JSON schema (decision/reason/disclaimer) for reliable downstream automation."
+          ]
+        },
+        {
+          "role": "Agent-to-Agent Protocol MVPs",
+          "organization": "GitHub",
+          "dates": "2026",
+          "type": "bullet",
+          "content": [
+            "Agent Olympics: built a small evaluation runner that benchmarks a generalist agent vs discovered specialists across three task categories with explicit scoring criteria and summary reporting.",
+            "AI PEMDAS: built an instrumented coordination workflow where an evaluator routes sub-steps to ADD vs MULT agents and logs calls for end-to-end traceability (FastAPI JSON-RPC)."
+          ]
+        },
+        {
+          "role": "AI-Assisted Resume Generation System",
+          "organization": "GitHub",
+          "dates": "2026",
+          "type": "bullet",
+          "content": [
+            "Built an evidence-driven resume generation pipeline that converts a master resume into canonical JSON, extracts candidate evidence, maps evidence to market-derived role signals, and assembles targeted resume variants through structured LLM workflows.",
+            "Implemented versioned artifacts, human review checkpoints, traceable evidence IDs, and DOCX/PDF rendering controls to separate source evidence, content selection, positioning, and presentation layout."
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "EDUCATION",
+      "heading": "Education",
+      "type": "subsections",
+      "content": [
+        {
+          "label": "MBA",
+          "context": "UCLA Anderson School of Management",
+          "type": "inline_list",
+          "content": [
+            "Top Honors",
+            "GPA: 3.9"
+          ]
+        },
+        {
+          "label": "M.S., Applied Statistics",
+          "context": "Rochester Institute of Technology",
+          "type": "inline_list",
+          "content": [
+            "GPA: 3.9"
+          ]
+        },
+        {
+          "label": "M.S., Electrical Engineering",
+          "context": "University of Washington",
+          "type": "inline_list",
+          "content": [
+            "GPA: 3.7"
+          ]
+        },
+        {
+          "label": "B.S., Physics (Minor: Mathematics)",
+          "context": "Humboldt State University",
+          "type": "inline_list",
+          "content": [
+            "GPA: 3.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "RECOGNITION",
+      "heading": "Patents & Recognition",
+      "type": "bullet",
+      "content": [
+        "Lead Inventor, U.S. Patent #8635622: Method and System for Resource Management Using Fuzzy Logic Timeline Filling (2014)",
+        "Capital One Business Technology Innovation Award (2014)",
+        "Conference Chair & Speaker - Customer Analytics Innovation Summit (2016)"
+      ]
+    }
+  ]
+}

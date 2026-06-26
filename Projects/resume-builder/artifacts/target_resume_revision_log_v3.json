@@ -1,0 +1,35 @@
+{
+  "revision_type": "add_additional_content",
+  "base_content_version": "v2",
+  "next_content_version": "v3",
+  "approved_priorities": [
+    5
+  ],
+  "applied_change_count": 1,
+  "skipped_duplicate_count": 0,
+  "applied_changes": [
+    {
+      "priority": 5,
+      "action_type": "add_role_bullet",
+      "target_locator": {
+        "section_id": "EXPERIENCE",
+        "organization": "Meta",
+        "role": "Data Scientist",
+        "label": null
+      },
+      "proposed_content": "Built attribution frameworks linking incidents, alerts, defects, and operational metrics to engineering organizations and service ownership structures, enabling more accurate accountability and performance measurement.",
+      "evidence_support": "direct",
+      "target_relevance": "primary",
+      "source_evidence": [
+        {
+          "evidence_id": "exp_01_04_01_03",
+          "source_artifact": "candidate_evidence",
+          "source_location": "Meta | Data Scientist",
+          "evidence_statement": "Built attribution frameworks linking incidents, alerts, defects, and operational metrics to engineering organizations and service ownership structures, enabling more accurate accountability and performance measurement.",
+          "supported_scope": "Built attribution frameworks for linking operational events to engineering orgs and ownership."
+        }
+      ],
+      "status": "added"
+    }
+  ]
+}

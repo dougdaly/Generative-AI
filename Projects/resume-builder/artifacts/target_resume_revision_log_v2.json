@@ -1,0 +1,35 @@
+{
+  "revision_type": "add_additional_content",
+  "base_content_version": "v1",
+  "next_content_version": "v2",
+  "approved_priorities": [
+    5
+  ],
+  "applied_change_count": 1,
+  "skipped_duplicate_count": 0,
+  "applied_changes": [
+    {
+      "priority": 5,
+      "action_type": "add_role_bullet",
+      "target_locator": {
+        "section_id": "EXPERIENCE",
+        "organization": "Facteus",
+        "role": "Head of Data Science",
+        "label": null
+      },
+      "proposed_content": "Evaluated prospective data partnerships by assessing signal quality, coverage, and business value, supporting strategic investment and acquisition decisions.",
+      "evidence_support": "direct",
+      "target_relevance": "secondary",
+      "source_evidence": [
+        {
+          "evidence_id": "exp_01_06_01_03",
+          "source_artifact": "candidate_evidence",
+          "source_location": "Facteus | Head of Data Science",
+          "evidence_statement": "Evaluated prospective data partnerships by assessing signal quality, coverage, and business value, supporting strategic investment and acquisition decisions.",
+          "supported_scope": "Evaluation of data partnerships for business value and strategic investment at Facteus"
+        }
+      ],
+      "status": "added"
+    }
+  ]
+}
