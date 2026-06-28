@@ -6,7 +6,8 @@
     "email": "douglasgdaly@gmail.com",
     "phone": "(650) 586-9720",
     "linkedin": "linkedin.com/in/douglasdaly",
-    "github": "github.com/dougdaly"
+    "github": "github.com/dougdaly",
+    "title": "Principal AI Architect / AI Platform Engineering Lead"
   },
   "sections": [
     {
@@ -14,19 +15,21 @@
       "type": "paragraph",
       "content": [
         "Senior technical leader with deep expertise architecting enterprise AI/ML platforms, governed GenAI and tool-calling systems, and operational intelligence solutions. Built governed analytics assistants, monitoring frameworks, and reusable data/AI platforms with strong emphasis on controls, observability, and auditable execution. Experienced across cloud-native AI infrastructure, large-scale data platforms, executive alignment, and technical mentorship. Known for translating ambiguous business needs into scalable, reliable analytical systems that improve decision-making and operational performance."
-      ]
+      ],
+      "heading": "Professional Summary"
     },
     {
       "section_id": "EXPERTISE",
       "type": "bullet",
       "content": [
         "AI Platform Architecture - enterprise AI platforms, governed analytics assistants, operational intelligence systems, reusable AI/analytics frameworks",
-        "GenAI & Tool-Calling Systems - LLM applications, structured outputs, tool orchestration, RAG/GraphRAG concepts, prompt engineering, evaluation, traceability",
+        "GenAI & Tool-Calling Systems - LLM applications, structured outputs, tool orchestration, RAG/GraphRAG systems, prompt engineering, evaluation, traceability",
         "Governance & Operational Controls - responsible AI adoption, guardrails, auditable execution, analyst-in-the-loop workflows, policy-aware system design",
         "Observability & Reliability - monitoring frameworks, incident detection, alerting, operational health, SLIs/SLOs, SEV analysis, on-call-friendly design",
         "Cloud & Data Platforms - Python, SQL, BigQuery, AWS SageMaker/S3/Terraform, GCP, Docker, data profiling, validation, cross-system integration",
         "Technical Leadership - architecture direction, executive alignment, technical roadmaps, stakeholder translation, mentoring, developer enablement"
-      ]
+      ],
+      "heading": "Core Expertise"
     },
     {
       "section_id": "EXPERIENCE",
@@ -63,9 +66,9 @@
           "dates": "March 2025 - Present",
           "type": "bullet",
           "content": [
-            "Mentored engineers and technical professionals on AI architecture, governance, implementation tradeoffs, and enterprise adoption strategies, fostering cross-functional enablement and technical leadership.",
-            "Delivered advanced instruction on transformer architectures, LLMs, RAG, agentic and multimodal AI, diffusion models, and enterprise AI governance, enabling practical understanding of generative and agentic AI development workflows.",
-            "Led multi-month AI and machine learning training programs for software engineers and data scientists through university- and enterprise-sponsored continuing education initiatives, driving continuous learning and talent development."
+            "Developed and delivered practical GenAI course materials, demos, and exercises on chatbots, RAG, agentic workflows, multimodal AI, diffusion models, evaluation, and enterprise AI governance when existing curriculum required deeper technical examples and clearer hands-on instruction.",
+            "Led multi-month AI and machine learning training programs for engineers and data scientists, mentoring learners on AI architecture, implementation tradeoffs, governance, and production-oriented GenAI development workflows.",
+            ""
           ]
         },
         {
@@ -86,7 +89,8 @@
           "content": [
             "Designed and developed the ReMon framework, empowering engineering teams to implement comprehensive monitoring and alerting systems without deep internal tooling expertise; adopted across Meta FinTech and enabled automatic detection of over 15 SEVs in 2024.",
             "Built forecasting and performance-management frameworks that translated engineering initiatives into projected reliability outcomes, directly informing planning, goal setting, and leadership decision-making across business pillars.",
-            "Delivered impact sizing, ROI, and risk exposure analyses to guide investment and prioritization decisions for platform reliability, privacy compliance, authentication, testing infrastructure, and data platform initiatives."
+            "Delivered impact sizing, ROI, and risk exposure analyses to guide investment and prioritization decisions for platform reliability, privacy compliance, authentication, testing infrastructure, and data platform initiatives.",
+            "Built attribution frameworks linking incidents, alerts, defects, and operational metrics to engineering organizations and service ownership structures, enabling more accurate accountability and performance measurement."
           ]
         },
         {
@@ -137,11 +141,12 @@
             "Turned around an over-budget classified fixed-price technology program by establishing execution plans, aligning engineering teams, and proactively managing technical and program risks; delivered under budget and nearly doubled the original profit target on a historically challenging delivery effort."
           ]
         }
-      ]
+      ],
+      "heading": "Professional Experience"
     },
     {
       "section_id": "PROJECTS",
-      "heading": "Selected Projects",
+      "heading": "Selected AI Projects",
       "type": "experience",
       "content": [
         {

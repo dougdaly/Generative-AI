@@ -14,20 +14,20 @@ def find_repo_root(start: Path | None = None) -> Path:
 
     for directory in (current, *current.parents):
         has_package = (directory / "src" / "genai_demos" / "resume_builder").is_dir()
-        has_notebooks = (directory / "notebooks" / "resume-builder").is_dir()
+        has_notebooks = (directory / "Projects" / "resume-builder").is_dir()
 
         if has_package and has_notebooks:
             return directory
 
     raise RuntimeError(
         "Could not find repository root containing "
-        "src/genai_demos/resume_builder and notebooks/resume-builder"
+        "src/genai_demos/resume_builder and Projects/resume-builder"
     )
 
 
 REPO_ROOT = find_repo_root()
 SRC_DIR = REPO_ROOT / "src"
-NOTEBOOK_DIR = REPO_ROOT / "notebooks" / "resume-builder"
+NOTEBOOK_DIR = REPO_ROOT / "Projects" / "resume-builder"
 ARTIFACT_DIR = NOTEBOOK_DIR / "artifacts"
 CONTRACTS_DIR = NOTEBOOK_DIR / "contracts"
 LAYOUT_DIR = NOTEBOOK_DIR / "layouts"
@@ -38,7 +38,7 @@ if src_str not in sys.path:
 
 print("Repo root:", REPO_ROOT)
 print("Added src to sys.path:", SRC_DIR)
-print("Resume builder notebooks:", NOTEBOOK_DIR)
+print("Resume builder Projects:", NOTEBOOK_DIR)
 print("Artifacts:", ARTIFACT_DIR)
 
 from genai_demos.resume_builder.helpers import (  # noqa: E402,F401

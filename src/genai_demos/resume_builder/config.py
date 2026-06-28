@@ -3,12 +3,12 @@ from pathlib import Path
 SRC_DIR = Path(__file__).resolve().parent
 
 # Locate the repository root by checking ancestors for the expected resume
-# builder package and notebooks layout. This is more reliable than a hard-coded
-# parent index, especially when notebook paths or package layouts change.
+# builder package and projects layout. This is more reliable than a hard-coded
+# parent index, especially when project paths or package layouts change.
 REPO_ROOT = None
 for candidate in (SRC_DIR,) + tuple(SRC_DIR.parents):
     if (candidate / "src" / "genai_demos" / "resume_builder").is_dir() and (
-        candidate / "notebooks" / "resume-builder"
+        candidate / "Projects" / "resume-builder"
     ).is_dir():
         REPO_ROOT = candidate
         break
@@ -19,7 +19,7 @@ if REPO_ROOT is None:
         "and notebooks/resume-builder"
     )
 
-RESUME_BUILDER_ROOT = REPO_ROOT / "notebooks" / "resume-builder"
+RESUME_BUILDER_ROOT = REPO_ROOT / "Projects" / "resume-builder"
 ARTIFACT_DIR = RESUME_BUILDER_ROOT / "artifacts"
 CONTRACT_DIR = RESUME_BUILDER_ROOT / "contracts"
 LAYOUT_DIR = RESUME_BUILDER_ROOT / "layouts"
