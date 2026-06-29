@@ -14,7 +14,7 @@ from functools import lru_cache
 from diffusers import StableDiffusionXLPipeline
 from diffusers.schedulers import DPMSolverMultistepScheduler
 
-from src.support import get_device
+from support import get_device
 
 
 def ensure_sdxl_img2img(device):
