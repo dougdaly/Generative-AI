@@ -9,6 +9,16 @@ class NamedItem:
     qid: str
     name: str
 
+@dataclass(frozen=True)
+class CatalogItem:
+    qid: str
+    name: str
+    item_type: str
+    group: str | None = None
+    description: str | None = None
+    image_url: str | None = None
+    wikipedia_url: str | None = None
+
 def _category_query(category_title: str, limit: int) -> str:
     # category_title must look like "Category:Mammals"
     return f"""

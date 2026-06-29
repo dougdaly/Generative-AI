@@ -7,7 +7,7 @@ from langgraph.graph import StateGraph, START, END
 from agentic_multimodal.schemas.artifacts import PosterSpec
 
 from agentic_multimodal.skills.series.group_items import get_group_items
-from agentic_multimodal.skills.adapters.items_to_poster import items_to_posterspec
+from agentic_multimodal.skills.adapters.items_to_poster import group_items_to_posterspec
 
 
 _RE_GROUP = re.compile(
@@ -94,7 +94,7 @@ def build_graph(registry, *, checkpointer=None):
         image_paths = registry.image_gen.batch_generate(picks)
 
         title = state.get("title") or f"{len(items)} {item_type.title()}"
-        spec = items_to_posterspec(items, title=title, image_paths=image_paths, cols=cols)
+        spec = group_items_to_posterspec(items, title=title, image_paths=image_paths, cols=cols)
 
         return {**state, "picks": picks, "image_paths": image_paths, "spec": spec}
 

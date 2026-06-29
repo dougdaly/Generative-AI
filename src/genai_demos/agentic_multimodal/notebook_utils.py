@@ -42,6 +42,7 @@ from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Tuple
 from pathlib import Path
 from pydantic import ValidationError
+from IPython.display import Image, display
 from agentic_multimodal.services.registry import make_registry as _make_reg
 from agentic_multimodal.services.settings import Settings  # for debug helper
 
@@ -52,6 +53,17 @@ except Exception:  # pragma: no cover
     Image = None  # type: ignore
     def display(*_, **__):  # type: ignore
         pass
+
+
+
+
+def display_image(path: str | Path) -> None:
+    path = Path(path)
+
+    if not path.exists():
+        raise FileNotFoundError(f"Image file not found: {path.resolve()}")
+
+    display(Image(filename=str(path)))
 
 # --- Repo & paths -----------------------------------------------------------
 

@@ -17,6 +17,11 @@ from diffusers.schedulers import DPMSolverMultistepScheduler
 from support import get_device
 
 
+def safe_slug(text: str) -> str:
+    text = text.strip().lower()
+    text = re.sub(r"[^a-z0-9]+", "_", text)
+    return text.strip("_") or "item"
+
 def ensure_sdxl_img2img(device):
     device = torch.device(device)
     pipe = StableDiffusionXLImg2ImgPipeline.from_pretrained(
@@ -232,7 +237,7 @@ def generate_person_images(
         assert p["name"], f"missing name at index {i}"
 
         # filename
-        base = f"{i:03d}_{p['name']}".replace("/", "_")
+        base = f"{i:03d}_{safe_slug(p['name'])}"
         out_path = os.path.join(outdir, f"{base}.png")
         if skip_existing and os.path.exists(out_path):
             paths.append(out_path); continue
@@ -267,6 +272,50 @@ def generate_person_images(
 
     return paths
 
+def batch_generate_subject_images(
+    picks,
+    *,
+    outdir="cache/group_subjects",
+    batch_size: int = 10,
+    **kw,
+) -> list[str]:
+    """
+    Generate subject images in small batches.
+
+    This reduces memory pressure in notebooks and makes long poster runs
+    easier to resume because skip_existing=True can reuse completed images.
+    """
+    all_paths: list[str] = []
+
+    for start in range(0, len(picks), batch_size):
+        batch = picks[start : start + batch_size]
+
+        paths = generate_prompt_images(
+            batch,
+            outdir=outdir,
+            **kw,
+        )
+
+        all_paths.extend(paths)
+
+        # Best-effort cleanup between batches.
+        try:
+            import gc
+            gc.collect()
+        except Exception:
+            pass
+
+        try:
+            import torch
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
+            if getattr(torch.backends, "mps", None) and torch.backends.mps.is_available():
+                torch.mps.empty_cache()
+        except Exception:
+            pass
+
+    return all_paths
+
 def generate_prompt_images(
     picks,                      # [{"name":..., "prompt":..., "ref_url":..., "seed":...}, ...]
     outdir,
@@ -294,7 +343,12 @@ def generate_prompt_images(
     # ensure_sdxl signature is (model_id=None, device_str=None)
     device_str = str(device) if device is not None else None
     pipe_txt, dev = ensure_sdxl(device_str=device_str)
-    pipe_ref = ensure_sdxl_img2img(dev)
+    pipe_ref = None
+
+    has_refs = any(pick.get("ref_url") for pick in picks)
+
+    if has_refs:
+        pipe_ref = ensure_sdxl_img2img(dev)
 
     paths: List[str] = []
     for i, raw in enumerate(picks, 1):
@@ -307,7 +361,7 @@ def generate_prompt_images(
         assert name, f"missing name at index {i}"
         assert prompt or ref_url, f"missing prompt/ref_url for {name!r} at index {i}"
 
-        base = f"{i:03d}_{name}".replace("/", "_")
+        base = f"{i:03d}_{safe_slug(name)}"
         out_path = os.path.join(outdir, f"{base}.png")
 
         if skip_existing and os.path.exists(out_path):
@@ -317,6 +371,9 @@ def generate_prompt_images(
         g = torch.Generator(device=dev).manual_seed(item_seed or (seed + i))
 
         if ref_url:
+            if pipe_ref is None:
+                pipe_ref = ensure_sdxl_img2img(dev)
+
             im = _download_and_portrait_crop(ref_url, size)
             if im is None:
                 # fallback: text2img using prompt
@@ -330,8 +387,10 @@ def generate_prompt_images(
                     height=size[1],
                 ).images[0]
             else:
+                ref_prompt = f"{style_prompt}, {name}, single animal, full body, centered, no text"
+
                 img = pipe_ref(
-                    prompt=style_prompt,
+                    prompt=ref_prompt,
                     negative_prompt=negative_prompt,
                     image=im,
                     strength=ref_strength,
@@ -355,8 +414,46 @@ def generate_prompt_images(
 
     return paths
 
-def batch_generate_subject_images(picks, *, outdir="cache/group_subjects", **kw) -> list[str]:
+def batch_generate_subject_images(
+    picks,
+    *,
+    outdir="cache/group_subjects",
+    batch_size: int = 10,
+    **kw,
+) -> list[str]:
     """
-    Convenience wrapper used by group_poster_flow.
+    Generate subject images in small batches.
+
+    This reduces memory pressure and makes long runs easier to resume
+    because skip_existing=True can reuse completed images.
     """
-    return generate_prompt_images(picks, outdir=outdir, **kw)
+    all_paths: list[str] = []
+
+    for start in range(0, len(picks), batch_size):
+        batch = picks[start : start + batch_size]
+
+        paths = generate_prompt_images(
+            batch,
+            outdir=outdir,
+            **kw,
+        )
+
+        all_paths.extend(paths)
+
+        # Best-effort cleanup between batches.
+        try:
+            import gc
+            gc.collect()
+        except Exception:
+            pass
+
+        try:
+            import torch
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
+            if getattr(torch.backends, "mps", None) and torch.backends.mps.is_available():
+                torch.mps.empty_cache()
+        except Exception:
+            pass
+
+    return all_paths
