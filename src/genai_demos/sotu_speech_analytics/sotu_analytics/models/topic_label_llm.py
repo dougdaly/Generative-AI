@@ -1,6 +1,6 @@
 from __future__ import annotations
 import json
-from sotu_analytics.prompts import build_topic_label_prompt, build_disambiguate_prompt
+from genai_demos.sotu_speech_analytics.sotu_analytics.prompts import build_topic_label_prompt, build_disambiguate_prompt
 from collections import defaultdict
 from typing import Dict, Any, List
 import numpy as np
