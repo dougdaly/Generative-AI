@@ -1,6 +1,8 @@
 from typing import Callable, Dict, Iterable, Optional, List, Tuple
 from agentic_multimodal.schemas.entities import Country, Person
 from agentic_multimodal.schemas.artifacts import MapMarker, MapSpec, ImageAsset
+from agentic_multimodal.skills.data.wikimedia_cache import cache_flags_for_markers
+
 import hashlib
 from types import SimpleNamespace
 

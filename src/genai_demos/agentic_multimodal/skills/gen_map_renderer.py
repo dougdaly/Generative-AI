@@ -94,6 +94,69 @@ def _pad_bbox_to_aspect(
 
     return west, south, east, north
 
+from urllib.parse import unquote
+import os
+
+
+def _commons_file_title_from_special_filepath(url: str) -> str | None:
+    """
+    Extract 'File:Flag of Albania.svg' from a Commons Special:FilePath URL.
+    """
+    if not url or "Special:FilePath/" not in url:
+        return None
+
+    filename = url.split("Special:FilePath/", 1)[1].split("?", 1)[0]
+    filename = unquote(filename).replace("_", " ")
+
+    if not filename.lower().startswith("file:"):
+        filename = "File:" + filename
+
+    return filename
+
+
+def _commons_thumb_url(url: str, *, width: int = 128, timeout: float = 8.0) -> str | None:
+    """
+    Ask Wikimedia Commons for a raster thumbnail URL.
+
+    This avoids local SVG rendering dependencies like cairo/cairosvg.
+    """
+    import requests
+
+    title = _commons_file_title_from_special_filepath(url)
+    if not title:
+        return url
+
+    api_url = "https://commons.wikimedia.org/w/api.php"
+
+    params = {
+        "action": "query",
+        "format": "json",
+        "titles": title,
+        "prop": "imageinfo",
+        "iiprop": "url",
+        "iiurlwidth": str(width),
+    }
+
+    headers = {
+        "User-Agent": "agentic-multimodal-demo/0.1",
+    }
+
+    r = requests.get(api_url, params=params, headers=headers, timeout=timeout)
+    r.raise_for_status()
+
+    data = r.json()
+    pages = data.get("query", {}).get("pages", {})
+
+    for page in pages.values():
+        imageinfo = page.get("imageinfo") or []
+        if not imageinfo:
+            continue
+
+        info = imageinfo[0]
+        return info.get("thumburl") or info.get("url")
+
+    return None
+
 # ---- 2) viewport projector (pixels) ----
 
 @dataclass(frozen=True)
@@ -148,30 +211,220 @@ class ViewportProjector:
         y_px = self.margin + int(round(y_norm * self._Hm))
         return x_px, y_px
 
-def _fetch_image_cached(url: str, cache_dir: str, timeout: int = 8, retries: int = 1) -> Image.Image | None:
-    os.makedirs(cache_dir, exist_ok=True)
-    key = hashlib.sha1(url.encode("utf-8")).hexdigest()[:16] + ".bin"
-    path = os.path.join(cache_dir, key)
+from urllib.parse import unquote
+import json
+import time
 
-    # cache hit
-    if os.path.isfile(path):
-        try:
-            return Image.open(path).convert("RGB")
-        except Exception:
-            pass  # fall through to re-download
 
-    # download
-    for _ in range(retries + 1):
+def _commons_file_title_from_special_filepath(url: str) -> str | None:
+    if not url or "Special:FilePath/" not in url:
+        return None
+
+    filename = url.split("Special:FilePath/", 1)[1].split("?", 1)[0]
+    filename = unquote(filename).replace("_", " ")
+
+    if not filename.lower().startswith("file:"):
+        filename = "File:" + filename
+
+    return filename
+
+
+def _load_json_cache(path: str) -> dict:
+    if not os.path.exists(path):
+        return {}
+
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def _save_json_cache(path: str, data: dict) -> None:
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+
+    tmp_path = path + ".tmp"
+    with open(tmp_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+    os.replace(tmp_path, path)
+
+
+def _resolve_commons_thumb_urls(
+    flag_urls: list[str],
+    *,
+    cache_dir: str,
+    width: int = 128,
+    timeout: float = 8.0,
+) -> dict[str, str]:
+    """
+    Resolve Commons Special:FilePath flag URLs to raster thumbnail URLs.
+
+    Uses one batched Commons API request instead of one request per country.
+    Caches original flag_url -> thumb_url on disk.
+    """
+    import requests
+
+    cache_path = os.path.join(cache_dir, "commons_thumb_urls.json")
+    cached = _load_json_cache(cache_path)
+
+    out: dict[str, str] = {}
+
+    # Keep cached values.
+    for url in flag_urls:
+        if url in cached:
+            out[url] = cached[url]
+
+    missing = [url for url in flag_urls if url and url not in out]
+    if not missing:
+        return out
+
+    url_to_title = {}
+    for url in missing:
+        title = _commons_file_title_from_special_filepath(url)
+        if title:
+            url_to_title[url] = title
+
+    if not url_to_title:
+        return out
+
+    # MediaWiki allows multiple titles separated by "|".
+    titles = list(url_to_title.values())
+
+    api_url = "https://commons.wikimedia.org/w/api.php"
+    headers = {
+        "User-Agent": "agentic-multimodal-demo/0.1",
+    }
+
+    # Keep batches small to avoid URL/query limits.
+    batch_size = 25
+
+    for start in range(0, len(titles), batch_size):
+        batch_titles = titles[start : start + batch_size]
+
+        params = {
+            "action": "query",
+            "format": "json",
+            "titles": "|".join(batch_titles),
+            "prop": "imageinfo",
+            "iiprop": "url",
+            "iiurlwidth": str(width),
+        }
+
         try:
-            r = requests.get(url, timeout=timeout)
-            if r.status_code == 200:
-                im = Image.open(io.BytesIO(r.content)).convert("RGB")
-                im.save(path)  # simple cache
-                return im
+            r = requests.get(
+                api_url,
+                params=params,
+                headers=headers,
+                timeout=timeout,
+            )
+
+            if r.status_code == 429:
+                # Back off once, then try again.
+                time.sleep(2.0)
+                r = requests.get(
+                    api_url,
+                    params=params,
+                    headers=headers,
+                    timeout=timeout,
+                )
+
+            r.raise_for_status()
+            data = r.json()
+
         except Exception:
+            # Do not break map rendering just because thumbnail resolution failed.
             continue
-    return None
 
+        pages = data.get("query", {}).get("pages", {})
+
+        title_to_thumb = {}
+        for page in pages.values():
+            title = page.get("title")
+            imageinfo = page.get("imageinfo") or []
+
+            if not title or not imageinfo:
+                continue
+
+            info = imageinfo[0]
+            thumb_url = info.get("thumburl") or info.get("url")
+
+            if thumb_url:
+                title_to_thumb[title] = thumb_url
+
+        for original_url, title in url_to_title.items():
+            thumb_url = title_to_thumb.get(title)
+            if thumb_url:
+                out[original_url] = thumb_url
+                cached[original_url] = thumb_url
+
+        # Be polite to Commons.
+        time.sleep(0.2)
+
+    _save_json_cache(cache_path, cached)
+    return out
+
+def _fetch_image_cached(url, cache_dir, timeout=8.0, retries=1, debug=False):
+    if not url:
+        return None
+
+    import os
+    import hashlib
+    import requests
+    from io import BytesIO
+    from PIL import Image
+
+    os.makedirs(cache_dir, exist_ok=True)
+
+    key = hashlib.sha1(url.encode("utf-8")).hexdigest()[:24]
+    path = os.path.join(cache_dir, key + ".png")
+
+    if os.path.exists(path):
+        try:
+            return Image.open(path).convert("RGBA")
+        except Exception:
+            try:
+                os.remove(path)
+            except Exception:
+                pass
+
+    headers = {
+        "User-Agent": "agentic-multimodal-demo/0.1",
+    }
+
+    last_err = None
+
+    for _ in range(max(1, retries)):
+        try:
+            r = requests.get(
+                url,
+                timeout=timeout,
+                allow_redirects=True,
+                headers=headers,
+            )
+            r.raise_for_status()
+
+            if debug:
+                print("fetch:", url)
+                print("status:", r.status_code)
+                print("content-type:", r.headers.get("content-type"))
+                print("final url:", r.url)
+                print("bytes:", len(r.content))
+                print("head:", r.content[:40])
+
+            im = Image.open(BytesIO(r.content)).convert("RGBA")
+            im.save(path, "PNG", optimize=True)
+            return im
+
+        except Exception as e:
+            last_err = e
+
+    if debug:
+        print("image fetch failed:", url)
+        print("last error:", repr(last_err))
+
+    return None
+    
 def _circle_thumb(im: Image.Image, diameter: int) -> tuple[Image.Image, Image.Image]:
     d = max(8, int(diameter))  # guard tiny
     im = im.resize((d, d), Image.Resampling.LANCZOS)
@@ -426,28 +679,35 @@ def _load_marker_image(marker, cache_dir: str, marker_px: int) -> Optional[Image
 
 
 # ---- PUBLIC API -------------------------------------------------------------
-def render_map(spec, *, size=(2000,1200), margin=40,
-            marker_px=84, label_font_px=32, 
-            outdir="artifacts/maps",
-            show_labels=True,
-            show_country_names=True,
-            show_capital_names=False,
-            min_flag_separation_px=36,
-            min_label_separation_px=48,
-            max_labels: int|None =None,
-            show_pick_images: bool=True,
-            pick_image_size_px=44,
-            show_flag_markers=False,
-            flag_marker_size_px=40,
-            flag_corner_radius_px=6,
-            label_offset_px=8,
-            fetch_timeout=8.0,          
-            fetch_retries=1,            
-            cache_dir=None,
-            fill_countries: bool = True,
-            title_scale: float = 1.5,
-        ) -> str:
-
+def render_map(
+    spec,
+    *,
+    size=(2000, 1200),
+    margin=40,
+    marker_px=84,
+    label_font_px=32,
+    outdir="artifacts/maps",
+    show_labels=True,
+    show_country_names=True,
+    show_capital_names=False,
+    min_flag_separation_px=36,
+    min_label_separation_px=48,
+    max_labels: int | None = None,
+    show_pick_images: bool = True,
+    pick_image_size_px=44,
+    show_flag_markers=False,
+    show_fallback_dots: bool = True,
+    allow_live_image_fetch: bool = False,
+    flag_marker_size_px=40,
+    flag_corner_radius_px=6,
+    label_offset_px=8,
+    fetch_timeout=8.0,
+    fetch_retries=1,
+    cache_dir=None,
+    fill_countries: bool = True,
+    title_scale: float = 1.5,
+) -> str:
+    
     if cache_dir is None:
         cache_dir = os.path.join(outdir, "_http_cache")
     os.makedirs(cache_dir, exist_ok=True)
@@ -458,6 +718,12 @@ def render_map(spec, *, size=(2000,1200), margin=40,
     margin *= upscale
     marker_px *= upscale
     label_font_px *= upscale
+    pick_image_size_px *= upscale
+    flag_marker_size_px *= upscale
+    flag_corner_radius_px *= upscale
+    label_offset_px *= upscale
+    min_flag_separation_px *= upscale
+    min_label_separation_px *= upscale
 
     canvas = Image.new("RGB", (W, H), (238,245,251))  # will be overpainted by _paint_basemap
     draw = ImageDraw.Draw(canvas)
@@ -498,104 +764,139 @@ def render_map(spec, *, size=(2000,1200), margin=40,
 
     draw.text(((W - tw) // 2, 8), title, font=title_font, fill="#1f2d3a")
 
-    # Marker cache dir
-    cache_dir = os.path.join(outdir, "_cache")
-    os.makedirs(cache_dir, exist_ok=True)
-
-    # Draw markers
+   # Draw markers
     used_for_flags = []
     used_for_labels = []
     labels_drawn = 0
-    def _fetch_thumb(url: str) -> Image.Image | None:
-        if not url:
-            return None
-        os.makedirs(cache_dir, exist_ok=True)
-        key = hashlib.sha1(url.encode("utf-8")).hexdigest()[:24]
-        path = os.path.join(cache_dir, key + ".png")
-        if os.path.exists(path):
-            try:
-                return Image.open(path).convert("RGBA")
-            except Exception:
-                pass
-        # Seems None is returned based on the logic
-        if not fetch_images: # fetch_images is not defined ???
-            return None
-        try:
-            import requests
-            from io import BytesIO
-            r = requests.get(url, timeout=fetch_timeout)
-            r.raise_for_status()
-            im = Image.open(BytesIO(r.content)).convert("RGBA")
-            im.thumbnail((pick_thumb_px, pick_thumb_px), Image.Resampling.LANCZOS) # pick_thumb_px is not defined
-            im.save(path, "PNG", optimize=True)
-            return im
-        except Exception:
-            return None
 
-    # --- draw markers ---
+    # Resolve flag URLs once, outside the marker loop.
+    
+    flag_stats = {
+        "markers": 0,
+        "has_flag_url": 0,
+        "thumb_resolved": 0,
+        "flag_loaded": 0,
+        "flag_drawn": 0,
+        "flag_skipped_too_close": 0,
+        "fallback_dot": 0,
+    }
     for m in spec.markers:
         x, y = proj.project(m.lon, m.lat)
+        flag_stats["markers"] += 1 # testing
 
         used_portrait = False
         used_flag = False
         meta = m.meta or {}
 
-        # ---- 1) Portrait (prefer local path; then URL) ----
+        # ---- 1) Portrait / selected image ----
         im = None
-        if show_pick_images:
-            img_path = meta.get("pick_image_path")  # must be a string now
+
+        if show_pick_images and not _too_close(used_for_flags, x, y, min_flag_separation_px):
+            img_path = meta.get("pick_image_path")
             if img_path and os.path.exists(img_path):
-                im = Image.open(img_path).convert("RGBA")
+                try:
+                    im = Image.open(img_path).convert("RGBA")
+                except Exception:
+                    im = None
             else:
                 img_url = meta.get("pick_image_url")
                 if img_url:
-                    im = _fetch_image_cached(img_url, cache_dir, timeout=fetch_timeout, retries=fetch_retries)
+                    im = _fetch_image_cached(
+                        img_url,
+                        cache_dir,
+                        timeout=fetch_timeout,
+                        retries=fetch_retries,
+                    )
 
         if im:
-            # circular thumb; diameter = pick_image_size_px
-            thumb, mask = _circle_thumb(im, int(pick_image_size_px)*upscale)
-            tx = int(x - thumb.width  / 2)
+            thumb, mask = _circle_thumb(im, int(pick_image_size_px))
+            tx = int(x - thumb.width / 2)
             ty = int(y - thumb.height / 2)
             canvas.paste(thumb, (tx, ty), mask)
             used_portrait = True
+            used_for_flags.append((x, y))
 
-        # ---- 2) Flag box (only if no portrait) ----
-        if not used_portrait and show_flag_markers:
+        # ---- 2) Flag marker, only if no portrait ----
+        if (
+            not used_portrait
+            and show_flag_markers
+            and not _too_close(used_for_flags, x, y, min_flag_separation_px)
+        ):
             flag_url = meta.get("flag_url")
+            flag_path = meta.get("flag_image_path")
+
             if flag_url:
-                fl = _fetch_image_cached(flag_url, cache_dir, timeout=fetch_timeout, retries=fetch_retries)
+                flag_stats["has_flag_url"] += 1
+
+            fl = None
+
+            # Prefer local cached PNG.
+            if flag_path and os.path.exists(flag_path):
+                try:
+                    fl = Image.open(flag_path).convert("RGBA")
+                    flag_stats["flag_loaded"] += 1
+                except Exception:
+                    fl = None
+
+            # Optional last-resort live fetch.
+            if fl is None and allow_live_image_fetch and flag_url:
+                fl = _fetch_image_cached(
+                    flag_url,
+                    cache_dir,
+                    timeout=fetch_timeout,
+                    retries=fetch_retries,
+                )
                 if fl:
-                    flag_box = _round_rect(fl, size_px=int(flag_marker_size_px), radius_px=int(flag_corner_radius_px))
-                    fx = int(x - flag_box.width  / 2)
-                    fy = int(y - flag_box.height / 2)
-                    # use alpha channel if present
-                    canvas.paste(flag_box, (fx, fy), flag_box.split()[-1] if flag_box.mode == "RGBA" else None)
-                    used_flag = True
+                    flag_stats["flag_loaded"] += 1
 
-        # ---- 3) Tiny dot (only if neither portrait nor flag) ----
-        if not used_portrait and not used_flag:
+            # Draw if either local cache or live fetch succeeded.
+            if fl:
+                flag_box = _round_rect(
+                    fl,
+                    size_px=int(flag_marker_size_px),
+                    radius_px=int(flag_corner_radius_px),
+                )
+                fx = int(x - flag_box.width / 2)
+                fy = int(y - flag_box.height / 2)
+
+                canvas.paste(
+                    flag_box,
+                    (fx, fy),
+                    flag_box.split()[-1] if flag_box.mode == "RGBA" else None,
+                )
+
+                used_flag = True
+                used_for_flags.append((x, y))
+                flag_stats["flag_drawn"] += 1
+
+        # ---- 3) Tiny dot fallback ----
+        if show_fallback_dots and not used_portrait and not used_flag:
+            flag_stats['fallback_dot'] += 1
             r_dot = max(2, int(marker_px / 3))
-            draw.ellipse((x - r_dot, y - r_dot, x + r_dot, y + r_dot), fill=(38,132,255))
+            draw.ellipse(
+                (x - r_dot, y - r_dot, x + r_dot, y + r_dot),
+                fill=(38, 132, 255),
+            )
 
-        # ---- Label placement: nudge based on what we drew ----
-        if show_labels:
+        # ---- 4) Label placement ----
+        if show_labels and (max_labels is None or labels_drawn < max_labels):
             label = (m.label or "").strip()
+
             if label and not _too_close(used_for_labels, x, y, min_label_separation_px):
-                # baseline offset: dot
-                dy = 6 + (marker_px // 2)
-                # bump if portrait or flag is present
+                dy = label_offset_px + (marker_px // 2)
+
                 if used_portrait:
-                    dy = 6 + int(pick_image_size_px / 2)
+                    dy = label_offset_px + int(pick_image_size_px / 2)
                 elif used_flag:
-                    dy = 6 + int(flag_marker_size_px / 2)
+                    dy = label_offset_px + int(flag_marker_size_px / 2)
 
                 bx, by, bw, bh = _measure_text(draw, label, font)
-                lx, ly = int(x - bw/2), int(y + dy)
+                lx, ly = int(x - bw / 2), int(y + dy)
+
                 _draw_text(draw, label, (lx, ly), font)
+
                 used_for_labels.append((x, y))
                 labels_drawn += 1
-
-
     # Output
     safe_title = "".join(ch if ch.isalnum() or ch in " -_." else "_" for ch in title)
     if not safe_title.strip():
@@ -604,6 +905,7 @@ def render_map(spec, *, size=(2000,1200), margin=40,
     _ensure_dir(out_path)
     # Downscale with antialias
     out = canvas.resize((W0, H0), Image.Resampling.LANCZOS)
+    print("flag_stats:", flag_stats)
     out.save(out_path, format="PNG", optimize=True)
     # attach to spec
     try:

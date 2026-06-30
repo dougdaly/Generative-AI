@@ -1,0 +1,3944 @@
+[
+  {
+    "qid": "Q81063",
+    "wiki": "Snowshoe hare",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q263706",
+    "wiki": "Swift fox",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q431981",
+    "wiki": "Steller sea lion",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q494968",
+    "wiki": "Spotted seal",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q547663",
+    "wiki": "Star-nosed mole",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q754992",
+    "wiki": "White-nosed coati",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q932186",
+    "wiki": "White-tailed jackrabbit",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1467672",
+    "wiki": "White-sided jackrabbit",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2165837",
+    "wiki": "Sonoran pronghorn",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2336049",
+    "wiki": "Wood bison",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q7988509",
+    "wiki": "Western moose",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q147267",
+    "wiki": "Virginia opossum",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q7563449",
+    "wiki": "Sorex ornatus sinuosus",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q971191",
+    "wiki": "Western spotted skunk",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q14334",
+    "wiki": "Wolverine",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q40994",
+    "wiki": "Walrus",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q40261",
+    "wiki": "West Indian manatee",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q109371478",
+    "wiki": "Southern broad-footed mole",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q81056",
+    "wiki": "North American beaver",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q122783",
+    "wiki": "American black bear",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q129773",
+    "wiki": "Mountain cottontail",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q132072",
+    "wiki": "Beluga whale",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q187943",
+    "wiki": "Pronghorn",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q189466",
+    "wiki": "Bighorn sheep",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q193683",
+    "wiki": "North Atlantic right whale",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q194815",
+    "wiki": "Robust cottontail",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q200442",
+    "wiki": "Red wolf",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q215250",
+    "wiki": "Gray fox",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q327028",
+    "wiki": "North American river otter",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q402885",
+    "wiki": "Black-footed ferret",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q469038",
+    "wiki": "Cinereus shrew",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q469606",
+    "wiki": "American pygmy shrew",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q506604",
+    "wiki": "North Pacific right whale",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q531300",
+    "wiki": "Mexican wolf",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q576039",
+    "wiki": "Alaskan tundra wolf",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q577630",
+    "wiki": "Antelope jackrabbit",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q584064",
+    "wiki": "Fisher",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q608572",
+    "wiki": "Desert cottontail",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q626023",
+    "wiki": "Northern elephant seal",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q632701",
+    "wiki": "Ringtail",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q640645",
+    "wiki": "Black-tailed jackrabbit",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q211848",
+    "wiki": "Mustang",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q718688",
+    "wiki": "Great Plains wolf",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q738564",
+    "wiki": "Dall's porpoise",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q743254",
+    "wiki": "Manitoban elk",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q745751",
+    "wiki": "Kit fox",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q774716",
+    "wiki": "Eastern cottontail",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q856653",
+    "wiki": "Alaskan hare",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q858849",
+    "wiki": "Cascade mountain wolf",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q934487",
+    "wiki": "American hog-nosed skunk",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1068616",
+    "wiki": "Hooded skunk",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1107889",
+    "wiki": "Desert bighorn sheep",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1353759",
+    "wiki": "Eastern mole",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1470645",
+    "wiki": "Hairy-tailed mole",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1471138",
+    "wiki": "Northern Rocky Mountain wolf",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1508885",
+    "wiki": "Brush rabbit",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1762293",
+    "wiki": "Crawford's gray shrew",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1763143",
+    "wiki": "Marsh shrew",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1763695",
+    "wiki": "Arctic shrew",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1764011",
+    "wiki": "North American least shrew",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1764039",
+    "wiki": "Preble's shrew",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1764683",
+    "wiki": "Fog shrew",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1766543",
+    "wiki": "Northern short-tailed shrew",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1769717",
+    "wiki": "Ornate shrew",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1770017",
+    "wiki": "Elliot's short-tailed shrew",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1770309",
+    "wiki": "Dwarf shrew",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q131907",
+    "wiki": "Bobcat",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2001840",
+    "wiki": "Sierra Nevada bighorn sheep",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2043191",
+    "wiki": "American water shrew",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2044439",
+    "wiki": "North American cougar",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2089432",
+    "wiki": "Cinnamon bear",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2565286",
+    "wiki": "California grizzly bear",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2750918",
+    "wiki": "Feral horse",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2877469",
+    "wiki": "Banker horse",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2946631",
+    "wiki": "Columbian white-tailed deer",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3116028",
+    "wiki": "Northwestern wolf",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3137681",
+    "wiki": "Florida black bear",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q4708653",
+    "wiki": "Alaska moose",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q121439",
+    "wiki": "Raccoon",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5032441",
+    "wiki": "Eastern coyote",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5330599",
+    "wiki": "Eastern moose",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5479132",
+    "wiki": "Coati",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q756901",
+    "wiki": "Gopher",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q7545193",
+    "wiki": "Smith Island cottontail",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q9092013",
+    "wiki": "Glacier bear",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q11704938",
+    "wiki": "Alaska Peninsula brown bear",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q12010961",
+    "wiki": "Shiras moose",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q242602",
+    "wiki": "Mountain goat",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q180404",
+    "wiki": "Elk",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q184004",
+    "wiki": "Muskox",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q135225872",
+    "wiki": "Mustela eversmanii beringiae",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q18128816",
+    "wiki": "Northeastern coyote",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q146457",
+    "wiki": "Canada lynx",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q25427460",
+    "wiki": "Pacific marten",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1768803",
+    "wiki": "Notiosorex cockrumi",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q232129",
+    "wiki": "American badger",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q82738",
+    "wiki": "Arctic fox",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q322145",
+    "wiki": "American marten",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q379732",
+    "wiki": "California sea lion",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q15958617",
+    "wiki": "Semirostrum ceruttii",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q17126060",
+    "wiki": "Semirostrum",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q171004",
+    "wiki": "Grizzly bear",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q576112",
+    "wiki": "Dall sheep",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q20902444",
+    "wiki": "Didelphis virginiana californica",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q20908577",
+    "wiki": "Ovis dalli dalli",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q82728",
+    "wiki": "American bison",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q30359",
+    "wiki": "Prairie dog",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q41407",
+    "wiki": "Sea otter",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q44299",
+    "wiki": "Coyote",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q76000598",
+    "wiki": "Grizzly–black bear hybrid",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q33261",
+    "wiki": "Ocelot",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q39624",
+    "wiki": "Reindeer",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q26913",
+    "wiki": "Harbor seal",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q107657638",
+    "wiki": "Haida ermine",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q109983537",
+    "wiki": "Migratory woodland caribou",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q125498219",
+    "wiki": "Collared peccary",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q125749307",
+    "wiki": "Long-tailed weasel",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q127225022",
+    "wiki": "Mexican long-nosed armadillo",
+    "group": "mammal",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q244199",
+    "wiki": "Pygmy nuthatch",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q245181",
+    "wiki": "Turkey vulture",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q379240",
+    "wiki": "White-breasted nuthatch",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q389664",
+    "wiki": "Roseate spoonbill",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q389691",
+    "wiki": "Spotted sandpiper",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q457477",
+    "wiki": "Whooping crane",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q512812",
+    "wiki": "White-eyed vireo",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q541664",
+    "wiki": "Pelagic cormorant",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q569535",
+    "wiki": "Red-bellied woodpecker",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q578174",
+    "wiki": "Red-headed woodpecker",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q579718",
+    "wiki": "Pied-billed grebe",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q596266",
+    "wiki": "Warbling vireo",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q647461",
+    "wiki": "Ruddy duck",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q679154",
+    "wiki": "Western grebe",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q692192",
+    "wiki": "Redhead",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q726389",
+    "wiki": "Northern cardinal",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q738534",
+    "wiki": "Tufted titmouse",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q754043",
+    "wiki": "Red-winged blackbird",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q754880",
+    "wiki": "White-throated sparrow",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q754885",
+    "wiki": "Ring-billed gull",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q787047",
+    "wiki": "Yellow-breasted chat",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q829683",
+    "wiki": "Northern mockingbird",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q834843",
+    "wiki": "Ruby-throated hummingbird",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q842599",
+    "wiki": "Song sparrow",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q852265",
+    "wiki": "Yellow-billed cuckoo",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q903847",
+    "wiki": "Willow flycatcher",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q930712",
+    "wiki": "Pileated woodpecker",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q932970",
+    "wiki": "Painted bunting",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q934735",
+    "wiki": "Yellow-bellied sapsucker",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1052043",
+    "wiki": "Red-shouldered hawk",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1062485",
+    "wiki": "Purple martin",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1078246",
+    "wiki": "Summer tanager",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1193366",
+    "wiki": "Scarlet tanager",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1263624",
+    "wiki": "Snowy plover",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1274310",
+    "wiki": "Red-legged kittiwake",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1588145",
+    "wiki": "Seaside sparrow",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2735005",
+    "wiki": "Northern rough-winged swallow",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1048896",
+    "wiki": "Wrentit",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q10828228",
+    "wiki": "Winter wren",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q18390024",
+    "wiki": "Yellow-rumped warbler",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q26847063",
+    "wiki": "Pine siskin",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q27075910",
+    "wiki": "Northern parula",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q27075932",
+    "wiki": "Pine warbler",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q27075937",
+    "wiki": "Prairie warbler",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q27608332",
+    "wiki": "Western snowy plover",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q831611",
+    "wiki": "Willet",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q322159",
+    "wiki": "Wood duck",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q838749",
+    "wiki": "Steller's jay",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q16819",
+    "wiki": "Northern flicker",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q19058",
+    "wiki": "Ruffed grouse",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q26844",
+    "wiki": "Wild turkey",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q26892",
+    "wiki": "Ruddy turnstone",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q59785",
+    "wiki": "Snowy egret",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q25332",
+    "wiki": "Osprey",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q58958",
+    "wiki": "Sanderling",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q117266977",
+    "wiki": "Ruby-crowned kinglet",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q127216",
+    "wiki": "Bald eagle",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q130730",
+    "wiki": "Great egret",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q142651",
+    "wiki": "Northern bobwhite",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q184314",
+    "wiki": "Cedar waxwing",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q190342",
+    "wiki": "Common loon",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q208714",
+    "wiki": "Brown pelican",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q213366",
+    "wiki": "Black vulture",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q241349",
+    "wiki": "Hooded merganser",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q251939",
+    "wiki": "Eastern screech owl",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q281555",
+    "wiki": "Common yellowthroat",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q282687",
+    "wiki": "Black-capped chickadee",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q333796",
+    "wiki": "Great blue heron",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q371028",
+    "wiki": "Little blue heron",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q430529",
+    "wiki": "Forster's tern",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q469586",
+    "wiki": "Least bittern",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q470016",
+    "wiki": "American coot",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q498228",
+    "wiki": "Green heron",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q510766",
+    "wiki": "Common ground dove",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q525818",
+    "wiki": "Dark-eyed junco",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q528764",
+    "wiki": "Laughing gull",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q589171",
+    "wiki": "American white ibis",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q600880",
+    "wiki": "Eastern bluebird",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q606809",
+    "wiki": "Eastern wood pewee",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q634804",
+    "wiki": "Greater roadrunner",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q645203",
+    "wiki": "Chipping sparrow",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q692323",
+    "wiki": "Lincoln's sparrow",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q736052",
+    "wiki": "Belted kingfisher",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q747372",
+    "wiki": "Greater sage-grouse",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q748192",
+    "wiki": "Eastern phoebe",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q750027",
+    "wiki": "Mourning dove",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q756063",
+    "wiki": "Ivory-billed woodpecker",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q790651",
+    "wiki": "Brown-headed nuthatch",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q794337",
+    "wiki": "Blue grosbeak",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q831597",
+    "wiki": "Gray catbird",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q833243",
+    "wiki": "Lesser scaup",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q862896",
+    "wiki": "Cooper's hawk",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q883006",
+    "wiki": "Blue-gray gnatcatcher",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q901568",
+    "wiki": "Brown-headed cowbird",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q912863",
+    "wiki": "Chimney swift",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q913052",
+    "wiki": "Least sandpiper",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q928134",
+    "wiki": "Brown thrasher",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q945200",
+    "wiki": "Gray kingbird",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q997457",
+    "wiki": "Bewick's wren",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1002123",
+    "wiki": "Mottled duck",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1049642",
+    "wiki": "Indigo bunting",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1052057",
+    "wiki": "Great crested flycatcher",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1071571",
+    "wiki": "Eastern kingbird",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1072109",
+    "wiki": "Ferruginous hawk",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1079441",
+    "wiki": "Carolina chickadee",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1262147",
+    "wiki": "Chuck-will's-widow",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1262840",
+    "wiki": "Mississippi kite",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1420315",
+    "wiki": "Fish crow",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1424486",
+    "wiki": "Common grackle",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1528805",
+    "wiki": "Lark sparrow",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1541137",
+    "wiki": "Eastern towhee",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1585636",
+    "wiki": "Carolina wren",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1588210",
+    "wiki": "Grasshopper sparrow",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1589368",
+    "wiki": "Boat-tailed grackle",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q516662",
+    "wiki": "Black skimmer",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2926383",
+    "wiki": "Black-chinned sparrow",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5249598",
+    "wiki": "Decorah Bald Eagles",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q6607746",
+    "wiki": "List of birds of New York",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q6970994",
+    "wiki": "National Bird-Feeding Society",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q7889890",
+    "wiki": "United States Fish and Wildlife Service list of endangered mammals and birds",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q16153952",
+    "wiki": "List of threatened birds of the United States",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q16746358",
+    "wiki": "My Life as a Turkey",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1210224",
+    "wiki": "Dickcissel",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q469940",
+    "wiki": "Anhinga",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q242851",
+    "wiki": "Muscovy duck",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q199758",
+    "wiki": "Blue jay",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q25170208",
+    "wiki": "House finch",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q194314",
+    "wiki": "California condor",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q27074911",
+    "wiki": "Downy woodpecker",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q27074928",
+    "wiki": "Hairy woodpecker",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q208004",
+    "wiki": "American flamingo",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q28106685",
+    "wiki": "American wigeon",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q28106778",
+    "wiki": "Blue-winged teal",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q267735",
+    "wiki": "American crow",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q377817",
+    "wiki": "The Birds of America",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q460967",
+    "wiki": "American robin",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q469992",
+    "wiki": "American avocet",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q692644",
+    "wiki": "American oystercatcher",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q694319",
+    "wiki": "American woodcock",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q755737",
+    "wiki": "Killdeer",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q805774",
+    "wiki": "Baltimore oriole",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q27075861",
+    "wiki": "American goldfinch",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q14683",
+    "wiki": "House sparrow",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q18834",
+    "wiki": "Gull-billed tern",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q25429",
+    "wiki": "Barn swallow",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q25469",
+    "wiki": "Common starling",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q27129",
+    "wiki": "Caspian tern",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q28168",
+    "wiki": "Least tern",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q41181",
+    "wiki": "Golden eagle",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q54696",
+    "wiki": "Eurasian collared dove",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q25348",
+    "wiki": "Mallard",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q96394991",
+    "wiki": "National Geographic Field Guide to Birds of North America",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q26733",
+    "wiki": "Canada goose",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q117254648",
+    "wiki": "Double-crested cormorant",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q117262746",
+    "wiki": "Franklin's grouse",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q124937042",
+    "wiki": "Jackie and Shadow",
+    "group": "bird",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q137664",
+    "wiki": "Western skink",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q169498",
+    "wiki": "Zebra-tailed lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q222287",
+    "wiki": "Western diamondback rattlesnake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q304331",
+    "wiki": "Sonora mud turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q386512",
+    "wiki": "Yellow-bellied slider",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q570290",
+    "wiki": "Texas tortoise",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q617863",
+    "wiki": "Tiger rattlesnake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q650232",
+    "wiki": "Spiny softshell turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q667848",
+    "wiki": "Western pond turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q747076",
+    "wiki": "Texas river cooter",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q748410",
+    "wiki": "Texas horned lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q819220",
+    "wiki": "Western terrestrial garter snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q844687",
+    "wiki": "Wood turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q845189",
+    "wiki": "Spotted turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q945692",
+    "wiki": "Smooth green snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1077041",
+    "wiki": "Yellow mud turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1343965",
+    "wiki": "Western shovelnose snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1417249",
+    "wiki": "Timber rattlesnake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1441196",
+    "wiki": "Western hognose snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1519587",
+    "wiki": "Striped whipsnake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1615145",
+    "wiki": "Texas coral snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1815083",
+    "wiki": "Western banded gecko",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2023348",
+    "wiki": "Western black-headed snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2096735",
+    "wiki": "Southern alligator lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2113453",
+    "wiki": "Sonoran Desert tortoise",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2382486",
+    "wiki": "Switak's banded gecko",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2384346",
+    "wiki": "Two-striped garter snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2415095",
+    "wiki": "Smooth softshell turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2697414",
+    "wiki": "Trans-Pecos rat snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2707061",
+    "wiki": "Southern hognose snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2709327",
+    "wiki": "Western whiptail",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2709333",
+    "wiki": "Texas banded gecko",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2716254",
+    "wiki": "Six-lined racerunner",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2866843",
+    "wiki": "Texas spotted whiptail",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2866858",
+    "wiki": "Sonoran spotted whiptail",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2957764",
+    "wiki": "Southern rubber boa",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3010685",
+    "wiki": "Texas lyre snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3014576",
+    "wiki": "Smooth earth snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3100791",
+    "wiki": "Western fence lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3362474",
+    "wiki": "Yellow ratsnake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q4692723",
+    "wiki": "Western cottonmouth",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q4748184",
+    "wiki": "Amphibians and reptiles of Yellowstone National Park",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q4894031",
+    "wiki": "Texas spiny lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5058751",
+    "wiki": "Texas scarlet snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5137341",
+    "wiki": "Trans-Pecos striped whiptail",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5149504",
+    "wiki": "Southern black racer",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5247043",
+    "wiki": "Slevin's bunchgrass lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5353477",
+    "wiki": "Texas rat snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q7531459",
+    "wiki": "Sistrurus tergeminus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q7708236",
+    "wiki": "Texas brown snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q7708292",
+    "wiki": "Texas spiny softshell turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q11838761",
+    "wiki": "Southwestern fence lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q16992876",
+    "wiki": "Suwannee alligator snapping turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1766856",
+    "wiki": "Xantusia",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q25028481",
+    "wiki": "Western yellow-bellied racer",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2248178",
+    "wiki": "Storeria occipitomaculata",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5082984",
+    "wiki": "Tropidoclonion",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q28320567",
+    "wiki": "Striped crayfish snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2565456",
+    "wiki": "Thamnophis proximus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2656632",
+    "wiki": "Tantilla hobartsmithi",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q306906",
+    "wiki": "Thamnophis saurita",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3004433",
+    "wiki": "Urosaurus graciosus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3005190",
+    "wiki": "Tantilla cucullata",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3008468",
+    "wiki": "Sphaerodactylus notatus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3011976",
+    "wiki": "Tantilla yaquia",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3021496",
+    "wiki": "Tantilla gracilis",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3021527",
+    "wiki": "Tantilla atriceps",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3060998",
+    "wiki": "Tantilla wilcoxi",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3062093",
+    "wiki": "Urosaurus ornatus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q15303003",
+    "wiki": "Xantusia sierrae",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3539247",
+    "wiki": "Trimorphodon lyrophanes",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3539249",
+    "wiki": "Trimorphodon lambda",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3570573",
+    "wiki": "Xantusia wigginsi",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q16989030",
+    "wiki": "Thamnophis proximus rubrilineatus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q682358",
+    "wiki": "Technosaurus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q674891",
+    "wiki": "Sternotherus odoratus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5314264",
+    "wiki": "Urosaurus nigricauda",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5330419",
+    "wiki": "Thamnophis saurita saurita",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5418881",
+    "wiki": "Thamnophis saurita septentrionalis",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q56233078",
+    "wiki": "Soumyasaurus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q112569966",
+    "wiki": "Sonora cincta",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q118539045",
+    "wiki": "Sonora episcopa",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q118539048",
+    "wiki": "Sonora taylori",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q72105",
+    "wiki": "Bog turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q185526",
+    "wiki": "Blanding's turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q289435",
+    "wiki": "Common snapping turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q304573",
+    "wiki": "Bolson tortoise",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q305947",
+    "wiki": "Barbour's map turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q305951",
+    "wiki": "Cagle's map turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q310702",
+    "wiki": "Aquatic garter snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q381402",
+    "wiki": "Butler's garter snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q558742",
+    "wiki": "Black-knobbed map turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q569170",
+    "wiki": "Diamondback terrapin",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q754747",
+    "wiki": "Corn snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q790586",
+    "wiki": "Brown anole",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q900792",
+    "wiki": "Brown water snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q911786",
+    "wiki": "Common garter snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q912320",
+    "wiki": "Common collared lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q912330",
+    "wiki": "Desert iguana",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q914356",
+    "wiki": "Desert tortoise",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1044378",
+    "wiki": "Common box turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1414026",
+    "wiki": "Common side-blotched lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1466350",
+    "wiki": "Blackneck garter snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1722240",
+    "wiki": "California red-sided garter snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2016288",
+    "wiki": "Chuckwalla",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2135031",
+    "wiki": "California whipsnake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2163958",
+    "wiki": "Common watersnake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2243127",
+    "wiki": "Big Bend slider",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2257095",
+    "wiki": "Desert night lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2381194",
+    "wiki": "Brazos water snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2382425",
+    "wiki": "Desert grassland whiptail lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2420947",
+    "wiki": "Chihuahuan spotted whiptail",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2704260",
+    "wiki": "Black swamp snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2705820",
+    "wiki": "Brown basilisk",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2716258",
+    "wiki": "California mountain kingsnake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2866829",
+    "wiki": "Canyon spotted whiptail",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2866848",
+    "wiki": "Colorado checkered whiptail",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2866860",
+    "wiki": "Common checkered whiptail",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2880329",
+    "wiki": "DeKay's brown snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2998811",
+    "wiki": "Central ratsnake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3003852",
+    "wiki": "Baja California collared lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3200959",
+    "wiki": "Baja blue rock lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3216841",
+    "wiki": "California kingsnake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3216844",
+    "wiki": "Desert kingsnake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3381754",
+    "wiki": "Desert horned lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1810840",
+    "wiki": "Crotalus oreganus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3538715",
+    "wiki": "Coachella Valley fringe-toed lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3548177",
+    "wiki": "Colorado Desert fringe-toed lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3570567",
+    "wiki": "Bezy's night lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3768639",
+    "wiki": "Eastern box turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3817366",
+    "wiki": "Desert box turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q4113884",
+    "wiki": "Bullsnake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q4999455",
+    "wiki": "Burmese pythons in Florida",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5095616",
+    "wiki": "Chicago garter snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q7863485",
+    "wiki": "List of U.S. state reptiles",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1106657",
+    "wiki": "Crotaphytus reticulatus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1106723",
+    "wiki": "Crotaphytus nebrius",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q16829155",
+    "wiki": "Apalachicola snapping turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q16970077",
+    "wiki": "List of threatened reptiles and amphibians of the United States",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q131974",
+    "wiki": "Crotaphytidae",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q134688",
+    "wiki": "Diapsid",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1366532",
+    "wiki": "Crotalus cerastes",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1498023",
+    "wiki": "Crotalus mitchellii",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1515347",
+    "wiki": "Crotalus viridis",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q25377129",
+    "wiki": "Desert short-horned lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q11684612",
+    "wiki": "Agkistrodon contortrix pictigaster",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q193327",
+    "wiki": "American alligator",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1810831",
+    "wiki": "Crotalus pricei",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2033803",
+    "wiki": "Crotalus ruber",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2363493",
+    "wiki": "Drymarchon",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2661640",
+    "wiki": "Anniella pulchra",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2866857",
+    "wiki": "Aspidoscelis scalaris",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2940138",
+    "wiki": "Carphophis vermis",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2993267",
+    "wiki": "Coniophanes imperialis",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3003838",
+    "wiki": "Crotalus stephensi",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q15293350",
+    "wiki": "Anniella stebbinsi",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3698708",
+    "wiki": "Crotalus cerastes cercobombus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q930252",
+    "wiki": "Anolis carolinensis",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q4692718",
+    "wiki": "Agkistrodon contortrix mokasen",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q4791482",
+    "wiki": "Arizona elegans arenicola",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q4791485",
+    "wiki": "Arizona elegans philipi",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5058750",
+    "wiki": "Cemophora coccinea copei",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5058749",
+    "wiki": "Cemophora coccinea coccinea",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5137342",
+    "wiki": "Cnemidophorus sexlineatus viridis",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5149499",
+    "wiki": "Coluber constrictor anthicus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5149502",
+    "wiki": "Coluber constrictor oaxaca",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5149500",
+    "wiki": "Coluber constrictor flaviventris",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5149501",
+    "wiki": "Coluber constrictor etheridgei",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5149505",
+    "wiki": "Coluber constrictor foxii",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5188947",
+    "wiki": "Crotalus cerastes laterorepens",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5188955",
+    "wiki": "Crotalus pyrrhus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5270302",
+    "wiki": "Diadophis punctatus stictogenys",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5270300",
+    "wiki": "Diadophis punctatus edwardsii",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5270301",
+    "wiki": "Diadophis punctatus regalis",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5309727",
+    "wiki": "Drymarchon melanurus erebennus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q774491",
+    "wiki": "Bogertophis",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q777474",
+    "wiki": "Anolis cristatellus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5188958",
+    "wiki": "Crotalus concolor",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q9142120",
+    "wiki": "Agkistrodon piscivorus piscivorus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q19075",
+    "wiki": "Desert rosy boa",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q84953574",
+    "wiki": "Arizona mud turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q102111516",
+    "wiki": "Crotalus helleri",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q106575657",
+    "wiki": "Agkistrodon laticinctus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q120043",
+    "wiki": "Leatherback sea turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q175696",
+    "wiki": "Florida red-bellied cooter",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q301089",
+    "wiki": "Kemp's ridley sea turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q301647",
+    "wiki": "Escambia map turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q307020",
+    "wiki": "Eastern garter snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q339057",
+    "wiki": "Flat-tail horned lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q371333",
+    "wiki": "Loggerhead musk turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q517458",
+    "wiki": "Mud snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q594543",
+    "wiki": "Florida box turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q640011",
+    "wiki": "Great Basin collared lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q670937",
+    "wiki": "Glossy snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q734870",
+    "wiki": "North American box turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q749037",
+    "wiki": "Green water snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q914338",
+    "wiki": "Gopher tortoise",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q934175",
+    "wiki": "New Mexico whiptail",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1078899",
+    "wiki": "False map turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1149509",
+    "wiki": "Garter snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1248772",
+    "wiki": "Eastern copperhead",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1257513",
+    "wiki": "Milk snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1371648",
+    "wiki": "Eastern massasauga",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1459098",
+    "wiki": "Eastern racer",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1535303",
+    "wiki": "Mexican garter snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1682032",
+    "wiki": "Great Plains skink",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1973768",
+    "wiki": "Granite night lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2021215",
+    "wiki": "Long-nosed snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2093722",
+    "wiki": "Northern map turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2288496",
+    "wiki": "Eastern fence lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2355833",
+    "wiki": "Greater earless lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2381244",
+    "wiki": "Kirtland's snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2381583",
+    "wiki": "Florida crowned snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2382534",
+    "wiki": "Middle American indigo snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2383381",
+    "wiki": "Gray-banded kingsnake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2427811",
+    "wiki": "Fringe-toed lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2699564",
+    "wiki": "Eastern hognose snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2703595",
+    "wiki": "Long-nosed leopard lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2709319",
+    "wiki": "Little striped whiptail",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2710665",
+    "wiki": "Eastern indigo snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2714713",
+    "wiki": "Narrow-headed garter snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2866845",
+    "wiki": "Laredo striped whiptail",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2866853",
+    "wiki": "Marbled whiptail",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2998807",
+    "wiki": "Eastern milk snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3016470",
+    "wiki": "Mojave fringe-toed lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q207058",
+    "wiki": "Gila monster",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3144385",
+    "wiki": "Hypsiglena ochrorhynchus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3176533",
+    "wiki": "Northern alligator lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3499511",
+    "wiki": "Mississippi map turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3729395",
+    "wiki": "Eastern river cooter",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3816884",
+    "wiki": "Gulf Coast box turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q4042578",
+    "wiki": "Mexican milk snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3144384",
+    "wiki": "Hypsiglena chlorophaea",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q4692725",
+    "wiki": "Florida cottonmouth",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q4748178",
+    "wiki": "Amphibians and reptiles of Mount Rainier National Park",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5045810",
+    "wiki": "Midwestern worm snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5421980",
+    "wiki": "Granite spiny lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5571964",
+    "wiki": "Glossy crayfish snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5613263",
+    "wiki": "Guadalupe spiny softshell turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5617471",
+    "wiki": "Gulf Coast spiny softshell turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5617559",
+    "wiki": "Gulf crayfish snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2707849",
+    "wiki": "Holbrookia",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3022965",
+    "wiki": "Hypsiglena",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q6996593",
+    "wiki": "Florida banded water snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q7059193",
+    "wiki": "Northern desert horned lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q11848689",
+    "wiki": "Giant spotted whiptail",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q21362200",
+    "wiki": "Northern black racer",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1513945",
+    "wiki": "Micrurus fulvius",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1628808",
+    "wiki": "Farancia erytrogramma",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q25388879",
+    "wiki": "Great Plains short-horned lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q11765817",
+    "wiki": "Macrochelys",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q28525975",
+    "wiki": "Gray checkered whiptail",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2704941",
+    "wiki": "Eucoelophysis",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2711826",
+    "wiki": "Nerodia paucimaculata",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q14541741",
+    "wiki": "Heterodon kennerlyi",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3018602",
+    "wiki": "Gerrhonotus infernalis",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3021709",
+    "wiki": "Ficimia streckeri",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3022372",
+    "wiki": "Holbrookia maculata",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3022893",
+    "wiki": "Gyalopion canum",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3022975",
+    "wiki": "Farancia",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3024773",
+    "wiki": "Nerodia rhombifer",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3104298",
+    "wiki": "Gerrhonotus liocephalus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3122602",
+    "wiki": "Gyalopion quadrangulare",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3144383",
+    "wiki": "Hypsiglena jani",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3200981",
+    "wiki": "Holbrookia lacerata",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3216842",
+    "wiki": "Lampropeltis nigra",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3274933",
+    "wiki": "Holbrookia propinqua",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q469543",
+    "wiki": "Glyptemys",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2984535",
+    "wiki": "Masticophis schotti",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q589568",
+    "wiki": "Nerodia clarkii",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q747093",
+    "wiki": "Lampropeltis getula",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q4893795",
+    "wiki": "Holbrookia subcaudalis",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5091422",
+    "wiki": "Masticophis bilineatus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5403537",
+    "wiki": "Masticophis flagellum flagellum",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5405794",
+    "wiki": "Nerodia clarkii clarkii",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5405801",
+    "wiki": "Nerodia erythrogaster neglecta",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q22285621",
+    "wiki": "Lampropeltis getula brooksi",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q59423197",
+    "wiki": "Lake Erie watersnake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q43373908",
+    "wiki": "Masticophis flagellum",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q95575802",
+    "wiki": "Mohawk Dunes fringe-toed lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q63358245",
+    "wiki": "Masticophis fuliginosus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q67103336",
+    "wiki": "Kwanasaurus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q122942029",
+    "wiki": "Exotic Amphibians and Reptiles of the United States",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q142985",
+    "wiki": "Pond slider",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q167047",
+    "wiki": "Prairie skink",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q199203",
+    "wiki": "Painted turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q207839",
+    "wiki": "Red-eared slider",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q225397",
+    "wiki": "Razor-backed musk turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q302823",
+    "wiki": "Rubber boa",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q305938",
+    "wiki": "Pascagoula map turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q338908",
+    "wiki": "Regal horned lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q339612",
+    "wiki": "Roundtail horned lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q385759",
+    "wiki": "Plains garter snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q597285",
+    "wiki": "Rio Grande cooter",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q613830",
+    "wiki": "Side-blotched lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q898028",
+    "wiki": "Pygmy short-horned lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q943049",
+    "wiki": "Sagebrush lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1193060",
+    "wiki": "River cooter",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1351051",
+    "wiki": "Northwestern garter snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1950584",
+    "wiki": "Scarlet kingsnake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2007956",
+    "wiki": "Sinaloan milk snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2060563",
+    "wiki": "Sharp-tailed snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2219145",
+    "wiki": "San Francisco garter snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2381444",
+    "wiki": "Pine woods snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2491477",
+    "wiki": "Rough-footed mud turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2703693",
+    "wiki": "Panamint alligator lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2704229",
+    "wiki": "Ring-necked snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2705218",
+    "wiki": "Queen snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2711813",
+    "wiki": "Orange-throated whiptail",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2866852",
+    "wiki": "Pai striped whiptail",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2866859",
+    "wiki": "Plateau striped whiptail",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2982448",
+    "wiki": "Reticulate banded gecko",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3021081",
+    "wiki": "Peninsula leaf-toed gecko",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3024768",
+    "wiki": "Plains black-headed snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3519517",
+    "wiki": "Shorthead garter snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3519524",
+    "wiki": "Sierra garter snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3817002",
+    "wiki": "Ornate box turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5162989",
+    "wiki": "Conservation of painted turtles",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5314623",
+    "wiki": "San Diego horned lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q6482609",
+    "wiki": "Red milk snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q7059291",
+    "wiki": "Northern spiny softshell turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q7122781",
+    "wiki": "Pacific gopher snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q7127870",
+    "wiki": "Pallid spiny softshell turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q7205885",
+    "wiki": "Plymouth red-bellied turtle",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q7413694",
+    "wiki": "San Diego mountain kingsnake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q11838797",
+    "wiki": "Plateau fence lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q15063847",
+    "wiki": "Red-backed whiptail",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q15843100",
+    "wiki": "Red-sided garter snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q16986614",
+    "wiki": "Northern redbelly snake",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q20056351",
+    "wiki": "Plateau spotted whiptail",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q137668",
+    "wiki": "Plestiodon gilberti",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q153572",
+    "wiki": "Plestiodon callicephalus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q167366",
+    "wiki": "Plestiodon fasciatus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q25388883",
+    "wiki": "San Luis Valley short-horned lizard",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q186615",
+    "wiki": "Podarcis muralis",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q998324",
+    "wiki": "Pantherophis obsoletus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q11838762",
+    "wiki": "Sceloporus ornatus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q11838770",
+    "wiki": "Sceloporus bimaculosus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q11838794",
+    "wiki": "Sceloporus scalaris",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q1897560",
+    "wiki": "Pantherophis emoryi",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q244192",
+    "wiki": "Sistrurus miliarius",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q244198",
+    "wiki": "Sistrurus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q13416851",
+    "wiki": "Rhineuridae",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q288489",
+    "wiki": "Sceloporus magister",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2665590",
+    "wiki": "Scincella lateralis",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2700474",
+    "wiki": "Rena humilis",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2701091",
+    "wiki": "Oxybelis aeneus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2701965",
+    "wiki": "Pantherophis bairdi",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2705737",
+    "wiki": "Pituophis catenifer",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2706505",
+    "wiki": "Rena dulcis",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2709899",
+    "wiki": "Sceloporus poinsettii",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2710632",
+    "wiki": "Pantherophis gloydi",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2713757",
+    "wiki": "Salvadora hexalepis",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2780936",
+    "wiki": "Plestiodon tetragrammus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2892468",
+    "wiki": "Polychrus marmoratus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q2928191",
+    "wiki": "Plestiodon multivirgatus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3016966",
+    "wiki": "Phyllorhynchus browni",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3200965",
+    "wiki": "Petrosaurus mearnsi",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3362475",
+    "wiki": "Pantherophis ramspotti",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3381952",
+    "wiki": "Phyllorhynchus decurtatus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3424704",
+    "wiki": "Rena boettgeri",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3470347",
+    "wiki": "Salvadora grahamiae",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3470348",
+    "wiki": "Salvadora deserticola",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q426062",
+    "wiki": "Opheodrys aestivus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q3727167",
+    "wiki": "Sceloporus grammicus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q490840",
+    "wiki": "Sceloporus cyanogenys",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q656553",
+    "wiki": "Sauromalus ater",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q4892876",
+    "wiki": "Sceloporus merriami",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5080520",
+    "wiki": "Pantherophis vulpinus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5241374",
+    "wiki": "Sceloporus clarkii",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5313918",
+    "wiki": "Sceloporus vandenburgianus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5314032",
+    "wiki": "Sceloporus consobrinus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q5314187",
+    "wiki": "Sceloporus jarrovii",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q20719092",
+    "wiki": "Postosuchus kirkpatricki",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q21358844",
+    "wiki": "Postosuchus alisonae",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q7199543",
+    "wiki": "Pituophis catenifer affinis",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q7199544",
+    "wiki": "Pituophis catenifer deserticola",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q7320621",
+    "wiki": "Rhinocheilus lecontei tessellatus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q7430711",
+    "wiki": "Sceloporus occidentalis bocourtii",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q7430709",
+    "wiki": "Sceloporus merriami longipunctatus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q109971141",
+    "wiki": "Oxybelis microphthalmus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q110097026",
+    "wiki": "Salvadora lineata",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  },
+  {
+    "qid": "Q111745704",
+    "wiki": "Sceloporus marmoratus",
+    "group": "reptile",
+    "source": "wikipedia_category"
+  }
+]
