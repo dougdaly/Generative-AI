@@ -18,6 +18,6 @@ class PreconfiguredProvider:
         # Merge fixed + overrides
         merged: Dict[str, Any] = {**self._fixed, **params}
         # Normalize language (prefer explicit param, else series default, else chain)
-        language = merged.pop("language", "[AUTO_LANGUAGE],en")
+        language = merged.pop("language", "en")
         # Pass language exactly once
         return self.base.fetch(client, language=language, **merged)

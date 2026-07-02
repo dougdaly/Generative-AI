@@ -1,17 +1,24 @@
+from __future__ import annotations
+
 from typing import Dict, List, Optional
+
 from agentic_multimodal.schemas.entities import Person, OfficeTerm
 from agentic_multimodal.skills.data.wikidata_sparql import WikidataSPARQL
 from agentic_multimodal.skills.data.wikidata_series import SeriesProvider, _to_iso_or_none
+from agentic_multimodal.skills.series.labels import (
+    deterministic_language,
+    ensure_qid,
+    fetch_entity_labels_and_images,
+)
 
-def _v(b: Dict, k: str) -> Optional[str]:
-    v = b.get(k);  return v.get("value") if isinstance(v, dict) else None
 
-def _ensure_qid(x: str) -> str:
-    # tolerant of full URIs or bare QIDs
-    return x.rsplit("/", 1)[-1]
+def _v(binding: Dict, key: str) -> Optional[str]:
+    value = binding.get(key)
+    return value.get("value") if isinstance(value, dict) else None
+
 
 class AwardProvider(SeriesProvider):
-    key   = "award"
+    key = "award"
     title = "Award recipients"
 
     def fetch(
@@ -20,51 +27,56 @@ class AwardProvider(SeriesProvider):
         *,
         language: str = "en",
         award_qid: str,
-        restrict_to_subaward_qids: Optional[List[str]] = None
+        restrict_to_subaward_qids: Optional[List[str]] = None,
     ) -> List[Person]:
-        base = _ensure_qid(award_qid)
+        base = ensure_qid(award_qid)
         if restrict_to_subaward_qids:
-            sub_vals = " ".join(f"wd:{_ensure_qid(x)}" for x in restrict_to_subaward_qids)
+            sub_vals = " ".join(f"wd:{ensure_qid(x)}" for x in restrict_to_subaward_qids)
             filter_clause = f"VALUES ?award {{ {sub_vals} }}"
         else:
             filter_clause = f"VALUES ?award {{ wd:{base} }}"
 
+        label_language = deterministic_language(language)
+
         q = f"""
-        SELECT ?person ?personLabel ?image ?when WHERE {{
+        # agentic_multimodal_award_terms_v3
+        SELECT ?person ?when WHERE {{
           {filter_clause}
           ?person wdt:P31 wd:Q5 .
           ?person p:P166 ?stmt .
           ?stmt ps:P166 ?award .
           OPTIONAL {{ ?stmt pq:P585 ?when . }}
-          OPTIONAL {{ ?person wdt:P18 ?image . }}
-          SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{language}". }}
         }}
-        ORDER BY ?when ?personLabel
+        ORDER BY ?when ?person
         """
         rows = client.run(q)
 
-        # group by person
-        people_by_qid: Dict[str, Person] = {}
-        for b in rows:
-            uri = _v(b, "person");  qid = _ensure_qid(uri) if uri else None
-            if not qid: continue
-            name = _v(b, "personLabel") or qid
-            img  = _v(b, "image")
-            when = _to_iso_or_none(_v(b, "when"))
+        terms_by_qid: dict[str, list[OfficeTerm]] = {}
+        for row in rows:
+            uri = _v(row, "person")
+            if not uri:
+                continue
+            qid = ensure_qid(uri)
+            when = _to_iso_or_none(_v(row, "when"))
+            terms_by_qid.setdefault(qid, []).append(OfficeTerm(start=when, end=None))
 
-            if qid not in people_by_qid:
-                people_by_qid[qid] = Person(qid=qid, name=name, image_url=img, terms=[])
-            # award is a point; put in start; leave end None
-            people_by_qid[qid].terms.append(OfficeTerm(start=when, end=None))
+        qids = list(terms_by_qid)
+        entity_meta = fetch_entity_labels_and_images(client, qids, language=label_language)
 
-        people = list(people_by_qid.values())
+        people = [
+            Person(
+                qid=qid,
+                name=entity_meta.get(qid, {}).get("label") or qid,
+                image_url=entity_meta.get(qid, {}).get("image_url"),
+                terms=terms,
+            )
+            for qid, terms in terms_by_qid.items()
+        ]
 
-        # sort by earliest award date, then name
-        def _key(p: Person):
-            starts = [t.start for t in p.terms if t.start]
+        def _key(person: Person):
+            starts = [term.start for term in person.terms if term.start]
             earliest = min(starts) if starts else None
-            return (earliest is None, earliest or "9999-12-31", p.name)
+            return (earliest is None, earliest or "9999-12-31", person.name)
 
         people.sort(key=_key)
         return people
-

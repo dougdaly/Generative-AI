@@ -22,6 +22,17 @@ def safe_slug(text: str) -> str:
     text = re.sub(r"[^a-z0-9]+", "_", text)
     return text.strip("_") or "item"
 
+
+def safe_asset_key(text: str) -> str:
+    """Filename-safe key that preserves ID case.
+
+    Series image resolution keys files by IDs such as Q23. Lowercasing here
+    would create q23.webp, which can be missed on case-sensitive filesystems.
+    """
+    text = str(text).strip()
+    text = re.sub(r"[^A-Za-z0-9_.-]+", "_", text)
+    return text.strip("_") or "item"
+
 def ensure_sdxl_img2img(device):
     device = torch.device(device)
     pipe = StableDiffusionXLImg2ImgPipeline.from_pretrained(
@@ -457,3 +468,94 @@ def batch_generate_subject_images(
             pass
 
     return all_paths
+
+def generate_series_record_images(
+    records,
+    outdir,
+    *,
+    steps=28,
+    cfg=6.0,
+    size=(512, 768),
+    seed=1337,
+    style_prompt="clean vector-cartoon, flat shading, studio backdrop",
+    ref_strength=0.35,
+    ref_cfg=4.5,
+    skip_existing=True,
+    device=None,
+) -> dict[str, str]:
+    """Generate keyed portrait images for SeriesRecord objects.
+
+    Returns a mapping of image_key -> image path. Unlike generate_person_images,
+    filenames are keyed by record.image_key rather than list position, so stale
+    files in the directory cannot shift labels onto the wrong people.
+    """
+    os.makedirs(outdir, exist_ok=True)
+
+    unique = []
+    seen = set()
+    for record in records:
+        image_key = getattr(record, "image_key", None) or getattr(record, "record_id", None)
+        if not image_key or image_key in seen:
+            continue
+        seen.add(image_key)
+        unique.append(record)
+
+    device_str = str(device) if device is not None else None
+    pipe_txt, dev = ensure_sdxl(device_str=device_str)
+
+    has_refs = any(getattr(record, "image_url", None) for record in unique)
+    pipe_ref = ensure_sdxl_img2img(dev) if has_refs else None
+
+    paths: dict[str, str] = {}
+    for i, record in enumerate(unique, 1):
+        image_key = getattr(record, "image_key", None) or getattr(record, "record_id", None)
+        name = getattr(record, "display_name", None) or getattr(record, "entity_id", None) or f"person_{i}"
+        year = getattr(record, "year_hint", None)
+        ref_url = getattr(record, "image_url", None)
+
+        base = safe_asset_key(str(image_key))
+        out_path = os.path.join(outdir, f"{base}.webp")
+        if skip_existing and os.path.exists(out_path):
+            paths[str(image_key)] = out_path
+            continue
+
+        g = torch.Generator(device=dev).manual_seed(seed + i)
+
+        if ref_url:
+            if pipe_ref is None:
+                pipe_ref = ensure_sdxl_img2img(dev)
+            im = _download_and_portrait_crop(ref_url, size)
+            if im is not None:
+                img = pipe_ref(
+                    prompt=f"{style_prompt}, {name}, single subject, centered, no text",
+                    image=im,
+                    strength=ref_strength,
+                    guidance_scale=ref_cfg,
+                    num_inference_steps=min(36, steps + 2),
+                    generator=g,
+                ).images[0]
+            else:
+                prompt = _person_prompt(name, year)
+                img = pipe_txt(
+                    prompt=prompt,
+                    num_inference_steps=steps,
+                    guidance_scale=cfg,
+                    generator=g,
+                    width=size[0],
+                    height=size[1],
+                ).images[0]
+        else:
+            prompt = _person_prompt(name, year)
+            img = pipe_txt(
+                prompt=prompt,
+                num_inference_steps=steps,
+                guidance_scale=cfg,
+                generator=g,
+                width=size[0],
+                height=size[1],
+            ).images[0]
+
+        img.save(out_path)
+        paths[str(image_key)] = out_path
+
+    return paths

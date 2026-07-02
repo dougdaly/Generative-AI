@@ -9,6 +9,48 @@ from types import SimpleNamespace
 LabelFn = Callable[[Country, Optional[Person]], str]
 ImageFn = Callable[[Country, Optional[Person]], Optional[ImageAsset]]
 
+_COUNTRY_SHORT_NAME_BY_QID = {
+    # Reusable display aliases for map labels.
+    # Use stable QIDs so this does not depend on source-language wording.
+    "Q55": "Netherlands",
+    "Q145": "United Kingdom",
+    "Q142": "France",
+    "Q183": "Germany",
+    "Q38": "Italy",
+    "Q29": "Spain",
+    "Q45": "Portugal",
+    "Q40": "Austria",
+    "Q39": "Switzerland",
+    "Q213": "Czechia",
+}
+
+
+def country_display_name(country: Country) -> str:
+    """Return a compact display name for map labels.
+
+    This does not change the source data. It only controls rendered labels.
+    """
+    qid = getattr(country, "qid", None)
+    if qid in _COUNTRY_SHORT_NAME_BY_QID:
+        return _COUNTRY_SHORT_NAME_BY_QID[qid]
+
+    name = getattr(country, "name", "") or ""
+
+    prefixes = [
+        "Kingdom of the ",
+        "Kingdom of ",
+        "Republic of the ",
+        "Republic of ",
+        "Principality of ",
+        "Grand Duchy of ",
+    ]
+
+    for prefix in prefixes:
+        if name.startswith(prefix):
+            return name[len(prefix):].strip()
+
+    return name
+
 # --- add these small helpers near the top ---
 def _as_name(p) -> str | None:
     if p is None:
@@ -38,7 +80,7 @@ def label_country_plus_pick(c, p):
     # works for dict or object
     pick_name = getattr(p, "name", None) or p.get("label") if isinstance(p, dict) else None
     pick_name = pick_name or (p.get("name") if isinstance(p, dict) else None) or ""
-    return f"{c.name}\n{pick_name}".strip()
+    return f"{country_display_name(c)}\n{pick_name}".strip()
 
 def image_from_pick_url(c, p):
     if not p:
@@ -59,7 +101,7 @@ def normalize_pick(p):
 
 
 def _label_country_only(c: Country, p: Optional[Person]) -> str:
-    return c.name
+    return country_display_name(c)
 
 def _image_none(c: Country, p: Optional[Person]) -> None:
     return None
@@ -72,6 +114,69 @@ def image_from_flag_url(c: Country, p: Optional[Person]) -> Optional[ImageAsset]
         meta={"source_url": c.flag_svg_url, "entity_qid": c.qid, "entity_name": c.name, "type": "flag"},
     )
 
+def _rounded_coords(country: Country, digits: int = 3) -> tuple[float | None, float | None]:
+    coords = getattr(country, "capital_coords", None)
+    if not coords:
+        return (None, None)
+
+    lon, lat = coords
+    return (round(float(lon), digits), round(float(lat), digits))
+
+
+def _country_dedupe_key(country: Country) -> tuple:
+    """Group duplicate country-like entities for map rendering."""
+    return (
+        country_display_name(country).casefold(),
+        _rounded_coords(country),
+    )
+
+
+def _country_preference_key(country: Country) -> tuple:
+    """Prefer compact/common country entities over long official wrapper entities."""
+    source_name = getattr(country, "name", "") or ""
+    display_name = country_display_name(country)
+
+    official_prefixes = (
+        "Kingdom of ",
+        "Kingdom of the ",
+        "Republic of ",
+        "Republic of the ",
+        "Principality of ",
+        "Grand Duchy of ",
+    )
+
+    has_official_prefix = source_name.startswith(official_prefixes)
+
+    # Lower is better.
+    return (
+        has_official_prefix,
+        source_name != display_name,
+        len(source_name),
+        getattr(country, "qid", ""),
+    )
+
+
+def dedupe_countries_for_map(countries: Iterable[Country]) -> list[Country]:
+    """Remove duplicate map entities after display-name normalization.
+
+    Example: Q29999 "Kingdom of the Netherlands" and Q55 "Netherlands"
+    both render as Netherlands at Amsterdam. Keep the compact entity.
+    """
+    best: dict[tuple, Country] = {}
+
+    for country in countries:
+        key = _country_dedupe_key(country)
+        current = best.get(key)
+
+        if current is None or _country_preference_key(country) < _country_preference_key(current):
+            best[key] = country
+
+    return sorted(
+        best.values(),
+        key=lambda c: (country_display_name(c).casefold(), getattr(c, "qid", "")),
+    )
+
+
 def countries_to_mapspec(
     countries,
     *,
@@ -82,16 +187,20 @@ def countries_to_mapspec(
     image_fn = image_from_pick_url,
     require_coords: bool = True,
 ):
+    countries = dedupe_countries_for_map(countries)
     region = region or "custom"
     markers = []
     for c in countries:
         if require_coords and not c.capital_coords:
             continue
 
-        # inside the loop that builds markers
+        display_country_name = country_display_name(c)
+
         p = (picks or {}).get(c.qid)
         lon, lat = c.capital_coords if c.capital_coords else (None, None)
-        label = label_fn(c, p) if label_fn else (c.name or "")
+
+        country_label = country_display_name(c)
+        label = label_fn(c, p) if label_fn else country_label
 
         img_meta_raw = image_fn(c, p) if image_fn else None
 
@@ -117,13 +226,15 @@ def countries_to_mapspec(
             lon=lon, lat=lat, label=label,
             meta={
                 "country_qid": c.qid,
-                "country_name": c.name,
                 "capital_name": c.capital_name,
                 "flag_url": c.flag_svg_url,
                 "pick_qid": (p or {}).get("qid") if isinstance(p, dict) else getattr(p, "qid", None),
                 "pick_label": (p or {}).get("label") if isinstance(p, dict) else getattr(p, "name", None),
                 "pick_image_path": pick_path,   # string or None
                 "pick_image_url":  pick_url,    # string or None
+                "country_name": display_country_name,
+                "country_source_name": c.name,
+                "country_display_name": display_country_name,
             }
         ))
 

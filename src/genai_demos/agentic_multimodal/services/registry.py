@@ -2,6 +2,17 @@ from __future__ import annotations
 
 from types import SimpleNamespace, MethodType
 
+from agentic_multimodal.skills.adapters import (
+    people_to_posterspec_per_person,
+    people_to_posterspec_per_term,
+    countries_to_mapspec,
+    image_from_pick_url,
+    image_from_flag_url,
+    label_country,
+    label_country_plus_pick,
+    render_portraits_for_picks,
+)
+
 from agentic_multimodal.services.settings import Settings
 from agentic_multimodal.services.llm_factory import build_llm, LLM
 
@@ -21,10 +32,6 @@ from agentic_multimodal.skills.geo.subdivisions import SubdivisionsByCountryProv
 
 from agentic_multimodal.skills.gen_poster_renderer import render_poster
 from agentic_multimodal.skills.gen_map_renderer import render_map
-from agentic_multimodal.skills.adapters.people_to_poster import (
-    people_to_posterspec_per_person,
-    people_to_posterspec_per_term,
-)
 from agentic_multimodal.skills.series.candidates import AthletesByCitizenship, CurrentNationalLeaders
 from agentic_multimodal.skills.series.rankers import PageviewsRanker, OverridesRanker
 from agentic_multimodal.skills.series.per_country import PerCountrySelector
@@ -103,9 +110,18 @@ def make_registry(
     )
 
     adapters = SimpleNamespace(
+        # Poster adapters
         people_per_person=people_to_posterspec_per_person,
         people_per_term=people_to_posterspec_per_term,
+        # Geo / map adapters
+        countries_to_mapspec=countries_to_mapspec,
+        image_from_flag=image_from_flag_url,
+        image_from_pick=image_from_pick_url,
+        label_country=label_country,
+        label_country_plus_pick=label_country_plus_pick,
+        render_portraits_for_picks=render_portraits_for_picks,
     )
+    
     reg = SimpleNamespace(
         root=root_path,
         settings=settings,
@@ -129,7 +145,7 @@ def make_registry(
 # services/registry.py
 def _build_series() -> WikidataSeries:
     sparql = WikidataSPARQL()
-    s = WikidataSeries(sparql, language="[AUTO_LANGUAGE],en")
+    s = WikidataSeries(sparql, language="en")
     s.register(PositionsProvider())
     s.register(AwardProvider())
     s.register(PreconfiguredProvider("potus","U.S. Presidents", base=PositionsProvider(), position_qids=["Q11696"]))
