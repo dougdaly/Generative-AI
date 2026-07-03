@@ -16,7 +16,10 @@ from agentic_multimodal.skills.series.labels import (
     repair_people_labels_and_images,
     unresolved_people_labels,
 )
-
+from agentic_multimodal.skills.assets.cache_policy import (
+    describe_cache_policy,
+    normalize_cache_policy,
+)
 
 def _validate_current_term(records: list[Any]) -> None:
     """Fail if a current office-holder style series looks stale."""
@@ -51,6 +54,8 @@ def run_people_series_poster(
     fail_on_missing_images: bool = True,
     outpath: str | Path | None = None,
     image_dir: str | Path | None = None,
+    allow_external_calls: bool = False,
+    allow_placeholders: bool = False,
 ) -> ArtifactResult:
     """Build and render a people-series poster.
 
@@ -64,6 +69,12 @@ def run_people_series_poster(
         -> poster renderer
         -> ArtifactResult
     """
+    cache_policy = normalize_cache_policy(cache_policy)
+
+    if cache_policy in {"refresh_missing", "force_rebuild"} and not allow_external_calls:
+        raise RuntimeError(
+            f"cache_policy={cache_policy!r} requires allow_external_calls=True."
+        )
 
     results_dir = Path(results_dir)
 
@@ -118,11 +129,12 @@ def run_people_series_poster(
             outdir=str(image_dir),
             skip_existing=False,
         )
-
     resolution = resolve_series_image_assets(
         records,
         outdir=image_dir,
         cache_policy=cache_policy,
+        allow_external_calls=allow_external_calls,
+        allow_placeholders=allow_placeholders,
         size=image_size,
         http_timeout=http_timeout,
     )
@@ -163,21 +175,30 @@ def run_people_series_poster(
             "image_dir": str(image_dir),
             "manifest_path": str(resolution.manifest_path) if resolution.manifest_path else None,
             "expect_open_current_term": expect_open_current_term,
+            "cache_policy": cache_policy,
+            "allow_external_calls": allow_external_calls,
+            "cache_policy_description": describe_cache_policy(
+                cache_policy,
+                allow_external_calls=allow_external_calls,
+            ),
         },
         cache_hits={
             "image_assets_reused": len(resolution.reused),
         },
         cache_misses={
             "image_assets_downloaded": len(resolution.downloaded),
-            "image_placeholders": len(resolution.placeholders),
-            "image_missing": len(resolution.missing),
+            "image_assets_missing": len(resolution.missing),
         },
         cache_summary={
             "cache_policy": cache_policy,
+            "allow_external_calls": allow_external_calls,
+            "description": describe_cache_policy(
+                cache_policy,
+                allow_external_calls=allow_external_calls,
+            ),
             "assets": len(resolution.assets),
             "reused": len(resolution.reused),
             "downloaded": len(resolution.downloaded),
-            "placeholders": len(resolution.placeholders),
             "missing": len(resolution.missing),
         },
         warnings=warnings,

@@ -2,7 +2,7 @@
 
 ## Current status
 
-All four notebooks run through the Phase 2 app-layer pattern:
+All four notebooks run through the app-layer pattern:
 
 - `01_animal_poster.ipynb`
 - `02_people_series_poster.ipynb`
@@ -10,6 +10,14 @@ All four notebooks run through the Phase 2 app-layer pattern:
 - `04_great_circle_route_map.ipynb`
 
 Each notebook now acts as a thin demo driver: setup, parameters, app call, display, trace inspection, and smoke check.
+
+Phase 3 cache behavior is now explicit for the main asset-heavy demos:
+
+- people-series portraits
+- animal poster images
+- geo flag maps
+
+The great-circle route app records cache settings, but cache enforcement remains graph-owned.
 
 ## Phase 1 closeout
 
@@ -28,28 +36,12 @@ Completed Phase 1 design changes:
 - Added fail-loud validation before rendering public people-series posters.
 - Added Wikimedia rate-limit handling for image downloads.
 - Added country display-name normalization for map labels.
-- Added country-map dedupe for duplicate country-like Wikidata entities, such as official wrapper entities and common country entities.
+- Added country-map dedupe for duplicate country-like Wikidata entities.
 - Preserved the shared poster renderer for both animal and people posters.
 
 ## Phase 2 app layer
 
 Phase 2 added reusable app workflows and a common result contract.
-
-New common result type:
-
-```text
-src/genai_demos/agentic_multimodal/apps/result.py
-```
-
-`ArtifactResult` standardizes what each app returns:
-
-- `path`
-- `kind`
-- `title`
-- `spec`
-- `trace`
-- `cache_summary`
-- `warnings`
 
 Current app wrappers:
 
@@ -60,13 +52,61 @@ src/genai_demos/agentic_multimodal/apps/geo_portrait_map.py
 src/genai_demos/agentic_multimodal/apps/great_circle_route_map.py
 ```
 
-The notebooks now import the specific app wrapper they demonstrate, for example:
+`ArtifactResult` standardizes what each app returns:
+
+- `path`
+- `kind`
+- `title`
+- `spec`
+- `trace`
+- `cache_hits`
+- `cache_misses`
+- `cache_summary`
+- `warnings`
+
+The notebooks import the specific app wrapper they demonstrate, for example:
 
 ```python
 from agentic_multimodal.apps.people_series_poster import run_people_series_poster
 ```
 
 This keeps each notebook explicit while still allowing `apps/__init__.py` to expose convenience imports.
+
+## Phase 3 cache contract
+
+Phase 3 made cache behavior explicit and moved notebooks toward reproducible cache-first defaults.
+
+Shared public cache settings:
+
+```python
+CACHE_POLICY = "reuse"
+ALLOW_EXTERNAL_CALLS = False
+```
+
+Supported policy names:
+
+- `reuse`
+- `refresh_missing`
+- `force_rebuild`
+- `cache_only`
+
+Policy behavior:
+
+```text
+reuse + False          -> use cache only; report missing assets
+reuse + True           -> use cache first; fetch/generate missing assets
+refresh_missing + True -> reuse cache and fill missing assets
+force_rebuild + True   -> ignore cache and rebuild assets
+cache_only             -> never make external calls
+```
+
+Placeholders are separate from cache policy. People-series posters use:
+
+```python
+ALLOW_PLACEHOLDERS = False
+```
+
+This avoids hiding missing portraits behind placeholder images unless explicitly requested.
 
 ## App workflow contracts
 
@@ -79,7 +119,7 @@ grouped animal selector
     ->
 prompt/image-pick records
     ->
-optional image generation or cache reuse
+cache reuse or explicit image generation
     ->
 PosterSpec
     ->
@@ -88,7 +128,13 @@ shared poster renderer
 ArtifactResult
 ```
 
-Current note: animal image resolution still supports a positional cache fallback for migration, but this should not be the long-term cache contract.
+Phase 3 status:
+
+- Supports `cache_policy`.
+- Supports `allow_external_calls`.
+- Cached reuse path validated.
+- `force_rebuild` generation path validated.
+- Positional cache fallback remains available only as a migration option.
 
 ### People-series poster
 
@@ -110,7 +156,14 @@ shared poster renderer
 ArtifactResult
 ```
 
-This is the strongest current app contract because it handles repeated people, sourced portraits, stable keys, manifests, strict label validation, and cache summaries.
+Phase 3 status:
+
+- Supports `cache_policy`.
+- Supports `allow_external_calls`.
+- Supports explicit `allow_placeholders`.
+- Cached reuse path validated.
+- Refresh/rebuild path validated.
+- Legacy policy names such as `reuse_then_source` were removed from the public app/notebook API.
 
 ### Geo portrait / flag map
 
@@ -121,18 +174,22 @@ geographic provider
     ->
 country/subdivision records
     ->
-optional per-country person selection
-    ->
 MapSpec
     ->
-flag or portrait asset resolution
+flag cache resolution or optional people selection
     ->
 map renderer
     ->
 ArtifactResult
 ```
 
-This app supports flag maps now and leaves room for U.S. state flags or famous-athlete-per-country maps as configuration modes rather than separate notebooks.
+Phase 3 status:
+
+- Flag mode supports `cache_policy`.
+- Flag mode supports `allow_external_calls`.
+- Cached flag reuse path validated.
+- Flag attachment is validated before rendering so smoke checks do not pass while the renderer shows fallback dots.
+- People mode is guarded: it currently requires `allow_external_calls=True` because per-country person selection is not yet manifest-backed.
 
 ### Great-circle route map
 
@@ -148,7 +205,11 @@ route artifact
 ArtifactResult
 ```
 
-This wrapper is intentionally thin because the graph already owns route parsing and rendering.
+Phase 3 status:
+
+- App records `cache_policy` and `allow_external_calls`.
+- App marks cache behavior as `graph_owned`.
+- Cache policy is not yet enforced inside the geo graph.
 
 ## Notable issues fixed
 
@@ -168,6 +229,10 @@ Wikimedia 429 responses are treated as temporary source failures. They should pa
 
 Some map sources can return both a common country entity and an official wrapper entity. The map adapter now normalizes display names and dedupes renderable country markers.
 
+### Geo flag fallback dots
+
+Geo flag smoke checks were updated to validate attached marker paths, not just resolver-returned paths. This prevents a false pass where cached flags exist but the renderer still shows fallback dots.
+
 ### Notebook-specific registry mutation
 
 Geo adapters now belong to the registry. The old `wire_geo_adapters(...)` path was deprecated.
@@ -176,7 +241,14 @@ Geo adapters now belong to the registry. The old `wire_geo_adapters(...)` path w
 
 Manual fresh-kernel notebook runs have passed for all four demos.
 
-Each Phase 2 notebook includes a lightweight smoke check, such as:
+Validated cache behavior:
+
+- people-series poster: cache reuse and refresh/rebuild behavior
+- animal poster: cache reuse and `force_rebuild` generation behavior
+- geo flag map: cache reuse with external calls disabled
+- great-circle route map: app-layer result and graph-owned cache trace
+
+Each notebook includes a lightweight smoke check, such as:
 
 - artifact exists,
 - expected result kind,
@@ -189,9 +261,10 @@ Each Phase 2 notebook includes a lightweight smoke check, such as:
 High-value next steps:
 
 - Add automated smoke tests for the four app functions.
-- Normalize cache policy names across apps.
-- Improve map label collision handling.
+- Standardize manifest files across all asset caches.
 - Add manifest-backed animal image resolution.
+- Add manifest-backed per-country people selection for geo people maps.
+- Improve map label collision handling.
 - Add a real NBA MVP or sports-award provider rather than keeping it as a stub idea.
 - Add small fixture datasets so tests do not require live Wikidata/Wikimedia access.
 - Add app-level examples to the README once the API stabilizes further.

@@ -1,11 +1,8 @@
-# skills/assets/series_images.py
 """Manifest-backed image resolution for people/award/office series posters.
 
-This module avoids the brittle pattern of joining sorted image files to sorted
-people records. Images are resolved by the record.image_key field instead.
-
-It also supports refresh policies, which matter while migrating away from dirty
-legacy caches that used ordinal filenames like 003_John_Adams.png.
+Images are resolved by the record.image_key field instead of by sorted file
+position. Cache behavior is controlled by the shared Phase 3 cache policy
+contract plus explicit external-call and placeholder flags.
 """
 
 from __future__ import annotations
@@ -22,16 +19,15 @@ import requests
 from agentic_multimodal.schemas.artifacts import ImageAsset
 from agentic_multimodal.skills.adapters.people_to_poster import SeriesRecord, _asset_from_path
 
+from agentic_multimodal.skills.assets.cache_policy import (
+    normalize_cache_policy,
+    should_attempt_external,
+    should_read_cache,
+    should_write_cache,
+)
+
 _IMAGE_EXTENSIONS = (".webp", ".png", ".jpg", ".jpeg")
 _SAFE_FILENAME = re.compile(r"[^A-Za-z0-9_.-]+")
-
-CACHE_POLICIES = {
-    "reuse",
-    "reuse_then_source",
-    "reuse_then_source_then_placeholder",
-    "refresh_source",
-    "refresh_source_then_placeholder",
-}
 
 
 @dataclass(frozen=True)
@@ -230,8 +226,11 @@ def _make_placeholder(name: str, *, size: tuple[int, int]) -> Image.Image:
     draw.text(((size[0] - small_w) / 2, size[1] * 0.68), display_name, fill=(80, 80, 80), font=font_small)
     return image
 
-
-def _manifest_record(record: SeriesRecord, asset: ImageAsset, source: str) -> dict:
+def _manifest_record(
+    record: SeriesRecord,
+    asset: ImageAsset | None,
+    source: str,
+) -> dict:
     return {
         "series_key": record.series_key,
         "record_id": record.record_id,
@@ -239,51 +238,41 @@ def _manifest_record(record: SeriesRecord, asset: ImageAsset, source: str) -> di
         "image_key": record.image_key,
         "display_name": record.display_name,
         "subtitle": record.subtitle,
-        "path": asset.path,
+        "path": asset.path if asset is not None else None,
         "source": source,
         "image_url": record.image_url,
     }
-
 
 def resolve_series_image_assets(
     records: Iterable[SeriesRecord],
     *,
     outdir: str | Path,
-    cache_policy: str = "reuse_then_source_then_placeholder",
+    cache_policy: str = "reuse",
+    allow_external_calls: bool = False,
+    allow_placeholders: bool = False,
     size: tuple[int, int] = (512, 768),
     http_timeout: int = 15,
     manifest_name: str = "manifest.jsonl",
 ) -> SeriesImageResolution:
     """Resolve images for series records by stable image_key.
 
-    cache_policy values:
-    - "reuse": use only existing keyed files.
-    - "reuse_then_source": reuse existing keyed files, then download record.image_url.
-    - "reuse_then_source_then_placeholder": reuse, then source, then placeholder.
-    - "refresh_source": ignore cached files and download source images only.
-    - "refresh_source_then_placeholder": ignore cached files, source when possible,
-      then create placeholders.
+    Phase 3 cache policy values:
+    - "reuse": read cache first; fetch missing only if allow_external_calls=True.
+    - "refresh_missing": read cache first; fetch missing only if allow_external_calls=True.
+    - "force_rebuild": ignore cache and fetch everything; requires allow_external_calls=True.
+    - "cache_only": read cache only; never fetch.
 
-    The refresh policies are useful for one cleanup run after migrating away
-    from ordinal/stale generated portrait caches.
+    Placeholders are controlled separately with allow_placeholders=True.
+    External network calls are controlled separately with allow_external_calls=True.
     """
-    if cache_policy not in CACHE_POLICIES:
-        raise ValueError(f"unknown cache_policy={cache_policy!r}")
+    cache_policy = normalize_cache_policy(cache_policy)
 
     outdir = Path(outdir)
     outdir.mkdir(parents=True, exist_ok=True)
 
-    refresh = cache_policy.startswith("refresh_")
-    allow_source = cache_policy in {
-        "reuse_then_source",
-        "reuse_then_source_then_placeholder",
-        "refresh_source",
-        "refresh_source_then_placeholder",
-    }
-    allow_placeholder = cache_policy in {
-        "reuse_then_source_then_placeholder",
-        "refresh_source_then_placeholder",
-    }
+    read_cache = should_read_cache(cache_policy)
+    write_cache = should_write_cache(cache_policy)
+    force_rebuild = cache_policy == "force_rebuild"
 
     unique: dict[str, SeriesRecord] = {}
     for record in records:
@@ -297,19 +286,28 @@ def resolve_series_image_assets(
     manifest_rows: list[dict] = []
 
     for image_key, record in unique.items():
-        if not refresh:
+        cached = None
+
+        if read_cache and not force_rebuild:
             cached = _find_cached(outdir, image_key)
-            if cached:
-                asset = _asset_from_path(cached)
-                assets[image_key] = asset
-                reused.append(image_key)
-                manifest_rows.append(_manifest_record(record, asset, "cache"))
-                continue
+
+        if cached:
+            asset = _asset_from_path(cached)
+            assets[image_key] = asset
+            reused.append(image_key)
+            manifest_rows.append(_manifest_record(record, asset, "hit"))
+            continue
 
         stem = safe_image_key(image_key)
         out_path = outdir / f"{stem}.webp"
 
-        if allow_source and record.image_url:
+        may_fetch = should_attempt_external(
+            cache_policy,
+            cache_hit=False,
+            allow_external_calls=allow_external_calls,
+        )
+
+        if may_fetch and record.image_url:
             image = _download_image(
                 record.image_url,
                 timeout=http_timeout,
@@ -317,16 +315,17 @@ def resolve_series_image_assets(
                 max_retries=3,
                 base_sleep=5.0,
             )
-            if image is not None:
+
+            if image is not None and write_cache:
                 image.save(out_path, format="WEBP", quality=92)
                 asset = _asset_from_path(out_path)
                 assets[image_key] = asset
                 downloaded.append(image_key)
-                manifest_rows.append(_manifest_record(record, asset, "source"))
+                manifest_rows.append(_manifest_record(record, asset, "fetched"))
                 time.sleep(3.0)
                 continue
 
-        if allow_placeholder:
+        if allow_placeholders and write_cache:
             image = _make_placeholder(record.display_name, size=size)
             image.save(out_path, format="WEBP", quality=92)
             asset = _asset_from_path(out_path)
@@ -336,6 +335,7 @@ def resolve_series_image_assets(
             continue
 
         missing.append(image_key)
+        manifest_rows.append(_manifest_record(record, None, "missing"))
 
     manifest_path = outdir / manifest_name
     with manifest_path.open("w", encoding="utf-8") as f:

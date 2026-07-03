@@ -1,6 +1,6 @@
 # Agentic Multimodal
 
-A suite of multimodal artifact-generation demos that combine structured data retrieval, image sourcing or generation, cache-aware asset handling, and deterministic rendering.
+A suite of multimodal artifact-generation demos that combine structured data retrieval, image sourcing or generation, explicit cache behavior, and deterministic rendering.
 
 The project is not just "prompt an image model." It demonstrates a repeatable pattern for turning a high-level content request into structured records, resolved visual assets, a render specification, and a final artifact with traceable metadata.
 
@@ -9,9 +9,10 @@ The project is not just "prompt an image model." It demonstrates a repeatable pa
 - Thin notebooks that call reusable app-layer workflows.
 - A shared `ArtifactResult` return contract for generated artifacts.
 - Structured data retrieval from providers such as Wikidata/Wikimedia.
-- Entity normalization before rendering.
+- Entity normalization and validation before rendering.
 - Stable image joins using keys such as Wikidata QIDs.
-- Cache-aware image sourcing with manifests and explicit fallback behavior.
+- Explicit cache policies that make external calls visible and optional.
+- Cache-aware image sourcing with manifests or cache summaries.
 - Shared poster rendering across generated animals and sourced people.
 - Deterministic map and poster rendering after data and assets are resolved.
 
@@ -24,7 +25,7 @@ Recommended order:
 3. `03_geo_portrait_map.ipynb`
 4. `04_great_circle_route_map.ipynb`
 
-Each notebook follows the same Phase 2 shape:
+Each notebook follows the same shape:
 
 ```python
 setup
@@ -57,7 +58,9 @@ Each app returns an `ArtifactResult` with:
 - `title`: display title or request
 - `spec`: render spec or raw graph artifact
 - `trace`: workflow metadata
-- `cache_summary`: cache and asset-resolution summary
+- `cache_hits`: cache reuse counters
+- `cache_misses`: fetched/generated/missing counters
+- `cache_summary`: compact cache and asset-resolution summary
 - `warnings`: non-fatal issues surfaced by the app
 
 Example:
@@ -72,7 +75,9 @@ result = run_people_series_poster(
     title="U.S. Presidents - Terms",
     mode="per_term",
     cols=6,
-    cache_policy="reuse_then_source",
+    cache_policy="reuse",
+    allow_external_calls=False,
+    allow_placeholders=False,
     expect_open_current_term=True,
 )
 
@@ -103,6 +108,32 @@ Deterministic renderer
 ArtifactResult
 ```
 
+## Cache policy contract
+
+Most notebooks default to cache reuse with external calls disabled:
+
+```python
+CACHE_POLICY = "reuse"
+ALLOW_EXTERNAL_CALLS = False
+```
+
+The shared cache policy names are:
+
+| Policy | Meaning |
+|---|---|
+| `reuse` | Use existing cache first. Missing assets are fetched or generated only when `allow_external_calls=True`. |
+| `refresh_missing` | Reuse valid cached assets and fetch/generate only missing assets. Requires `allow_external_calls=True`. |
+| `force_rebuild` | Ignore existing cached assets and rebuild. Requires `allow_external_calls=True`. |
+| `cache_only` | Read cache only. Never make external calls. |
+
+People-series posters also expose:
+
+```python
+ALLOW_PLACEHOLDERS = False
+```
+
+Placeholders are intentionally separate from cache policy so missing source images do not get hidden accidentally.
+
 ## Key design choices
 
 ### Registry-owned adapters
@@ -121,9 +152,9 @@ People-series posters resolve images by stable keys, usually Wikidata QIDs, rath
 
 For famous real people, the default path prefers sourced Wikimedia portraits over generated likenesses. Generated images remain more appropriate for synthetic examples such as animals.
 
-### Explicit cache behavior
+### Explicit external calls
 
-Cache policies are intentional. For people-series posters, `reuse_then_source` is the preferred public-demo default because missing images are surfaced instead of silently hidden with placeholders.
+External calls are opt-in at the notebook level. A normal demo run should be able to reuse cached assets without calling Wikimedia or an image-generation model.
 
 ### Deterministic rendering
 
@@ -146,32 +177,51 @@ CACHE = ctx.cache
 RESULTS = ctx.results
 ```
 
-For image generation demos, configure the relevant model/API settings used by the project. For sourced Wikimedia assets, live network access may be needed the first time a cache is populated.
+For normal cached demos, use:
 
-## Cache behavior
+```python
+CACHE_POLICY = "reuse"
+ALLOW_EXTERNAL_CALLS = False
+```
 
-The project writes artifacts and cache files under the project results/cache layout. It can also reuse legacy artifact/cache folders when present.
+To populate missing assets intentionally, use:
 
-Important cache patterns:
+```python
+CACHE_POLICY = "refresh_missing"
+ALLOW_EXTERNAL_CALLS = True
+```
 
-- People portraits are keyed by `image_key` and tracked through a manifest.
-- Wikimedia flags are cached before rendering maps.
-- Animal images can be generated or reused from cache. A positional cache fallback exists only for migration from older generated image folders.
+To rebuild generated or sourced assets intentionally, use:
+
+```python
+CACHE_POLICY = "force_rebuild"
+ALLOW_EXTERNAL_CALLS = True
+```
+
+## Current cache behavior
+
+- People portraits are keyed by `image_key`, usually Wikidata QID, and are resolved by a manifest-backed image resolver.
+- Animal posters now use the same public cache policy contract. Cached runs do not generate images unless external calls are enabled.
+- Geo flag maps use the shared cache policy contract. Cached flag runs do not call Wikimedia by default.
+- Geo people mode is supported as an explicit external-call mode, but per-country person selection is not yet manifest-backed.
+- Great-circle route maps record cache policy settings, but cache enforcement is currently owned by the underlying geo graph.
 - Live Wikimedia requests can be rate limited. Rate limits should stop or pause the cache-fill pass rather than silently creating bad artifacts.
 
 ## Current limitations
 
 - Map label collision handling is basic. Dense regions such as Europe can still overlap if many labels are enabled.
-- Animal image caching is safer than the original notebook, but it is not yet as manifest-backed as the people-series cache.
+- Animal image caching works with explicit policies, but it is not yet as manifest-backed as the people-series cache.
+- Geo people mode requires `allow_external_calls=True` until per-country selection has a manifest-backed cache.
+- The great-circle route app records cache settings but does not yet enforce them inside the graph.
 - The NBA MVP / future sports-award example remains a future provider idea until a real provider emits stable person records.
-- Cache policy names could be normalized across all apps.
 - The current validation is mostly notebook smoke checks rather than automated tests.
 
 ## Next steps
 
 - Add lightweight smoke tests for the four app functions.
-- Normalize cache policy names and behavior across apps.
+- Standardize manifest files across people portraits, animal images, geo flags, and geo portraits.
 - Improve map label collision handling.
 - Add manifest-backed animal image resolution.
+- Add manifest-backed per-country people selection for geo people maps.
 - Add a real non-Wikidata or sports-award provider.
 - Add small fixture-based tests for app-layer traces and `ArtifactResult` outputs.

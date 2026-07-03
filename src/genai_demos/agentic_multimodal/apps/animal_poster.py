@@ -11,6 +11,11 @@ from agentic_multimodal.skills.adapters.items_to_poster import (
 )
 from agentic_multimodal.skills.image_gen import batch_generate_subject_images, safe_slug
 from agentic_multimodal.skills.series.group_items import get_group_items
+from agentic_multimodal.skills.assets.cache_policy import (
+    describe_cache_policy,
+    normalize_cache_policy,
+    should_attempt_external,
+)
 
 
 _IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp"}
@@ -108,7 +113,8 @@ def run_animal_poster(
     title: str | None = None,
     selection_mode: str = "grouped_random",
     force_rebuild_items: bool = False,
-    run_image_generation: bool = False,
+    cache_policy: str = "reuse",
+    allow_external_calls: bool = False,
     fail_on_missing_images: bool = True,
     allow_positional_cache_fallback: bool = False,
     image_dir: str | Path | None = None,
@@ -150,6 +156,13 @@ def run_animal_poster(
     image_dir.mkdir(parents=True, exist_ok=True)
     outpath.parent.mkdir(parents=True, exist_ok=True)
 
+    cache_policy = normalize_cache_policy(cache_policy)
+
+    if cache_policy in {"refresh_missing", "force_rebuild"} and not allow_external_calls:
+        raise RuntimeError(
+            f"cache_policy={cache_policy!r} requires allow_external_calls=True."
+        )
+
     warnings: list[str] = []
 
     items = get_group_items(
@@ -164,19 +177,9 @@ def run_animal_poster(
 
     cached_before = set(_image_files(image_dir))
 
-    if run_image_generation:
-        paths = batch_generate_subject_images(
-            picks,
-            outdir=str(image_dir),
-            batch_size=batch_size,
-            size=image_size,
-            steps=steps,
-            cfg=cfg,
-            seed=1337,
-            skip_existing=skip_existing,
-            negative_prompt=negative_prompt,
-        )
-        missing: list[str] = []
+    if cache_policy == "force_rebuild":
+        paths = []
+        missing = [str(pick["name"]) for pick in picks]
         used_positional_fallback = False
     else:
         paths, missing, used_positional_fallback = _resolve_cached_animal_paths(
@@ -184,6 +187,32 @@ def run_animal_poster(
             image_dir=image_dir,
             batch_size=batch_size,
             allow_positional_cache_fallback=allow_positional_cache_fallback,
+        )
+
+    may_generate = bool(missing) and should_attempt_external(
+        cache_policy,
+        cache_hit=False,
+        allow_external_calls=allow_external_calls,
+    )
+
+    if may_generate:
+        batch_generate_subject_images(
+            picks,
+            outdir=str(image_dir),
+            batch_size=batch_size,
+            size=image_size,
+            steps=steps,
+            cfg=cfg,
+            seed=1337,
+            skip_existing=(cache_policy != "force_rebuild"),
+            negative_prompt=negative_prompt,
+        )
+
+        paths, missing, used_positional_fallback = _resolve_cached_animal_paths(
+            picks,
+            image_dir=image_dir,
+            batch_size=batch_size,
+            allow_positional_cache_fallback=False,
         )
 
     cached_after = set(_image_files(image_dir))
@@ -245,7 +274,6 @@ def run_animal_poster(
             "group_counts": group_counts,
             "image_dir": str(image_dir),
             "outpath": str(outpath),
-            "run_image_generation": run_image_generation,
             "allow_positional_cache_fallback": allow_positional_cache_fallback,
             "used_positional_cache_fallback": used_positional_fallback,
             "render_settings": {
@@ -257,6 +285,12 @@ def run_animal_poster(
                 "grid_cols": grid_cols,
             },
             "sample_items": [item.get("display") for item in items[:8]],
+            "cache_policy": cache_policy,
+            "allow_external_calls": allow_external_calls,
+            "cache_policy_description": describe_cache_policy(
+                cache_policy,
+                allow_external_calls=allow_external_calls,
+            ),
         },
         cache_hits={
             "resolved_images": len(paths),
@@ -267,6 +301,12 @@ def run_animal_poster(
             "generated_or_added": len(generated_or_added),
         },
         cache_summary={
+            "cache_policy": cache_policy,
+            "allow_external_calls": allow_external_calls,
+            "description": describe_cache_policy(
+                cache_policy,
+                allow_external_calls=allow_external_calls,
+            ),
             "image_dir": str(image_dir),
             "cached_before": len(cached_before),
             "cached_after": len(cached_after),
